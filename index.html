@@ -258,11 +258,11 @@
     .content-area {
       flex: 1;
       overflow-y: auto;
-      padding: 20px;
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
-      gap: 20px;
-      align-content: start;
+      padding: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      max-width: 100%;
     }
 
     /* Window Card */
@@ -275,6 +275,15 @@
       display: flex;
       flex-direction: column;
       transition: all 0.3s;
+      width: min(90vh, 800px);
+      max-width: calc(100vw - 180px);
+      height: min(85vh, calc(90vh - 80px));
+      max-height: calc(100vh - 120px);
+    }
+    
+    .window-card.square-window {
+      width: min(calc(100vh - 120px), 700px);
+      height: min(calc(100vh - 120px), 700px);
     }
 
     .window-card:hover {
@@ -283,7 +292,9 @@
     }
 
     .window-card.full-width {
-      grid-column: 1 / -1;
+      width: calc(100vw - 180px);
+      height: calc(100vh - 120px);
+      max-width: none;
     }
 
     .card-header {
@@ -325,6 +336,21 @@
 
     .card-content {
       padding: 24px;
+      overflow-y: auto;
+      flex: 1;
+    }
+
+    .card-content::-webkit-scrollbar {
+      width: 6px;
+    }
+
+    .card-content::-webkit-scrollbar-track {
+      background: rgba(0, 0, 0, 0.1);
+    }
+
+    .card-content::-webkit-scrollbar-thumb {
+      background: rgba(93, 109, 126, 0.3);
+      border-radius: 3px;
     }
 
     /* Home Card */
@@ -333,52 +359,54 @@
     }
 
     .profile-picture {
-      width: 120px;
-      height: 120px;
+      width: 100px;
+      height: 100px;
       border-radius: 50%;
-      margin: 0 auto 20px;
-      border: 4px solid rgba(93, 109, 126, 0.5);
-      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+      margin: 0 auto 16px;
+      border: 3px solid rgba(93, 109, 126, 0.5);
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
     }
 
     .profile-name {
-      font-size: 28px;
+      font-size: 24px;
       font-weight: 600;
-      margin-bottom: 8px;
+      margin-bottom: 6px;
       color: #FF8A4C;
       text-shadow: 0 2px 8px rgba(255, 138, 76, 0.3);
     }
 
     .profile-subtitle {
-      font-size: 15px;
+      font-size: 13px;
       color: #A89680;
-      margin-bottom: 20px;
+      margin-bottom: 16px;
     }
 
     .profile-description {
-      font-size: 14px;
+      font-size: 13px;
       line-height: 1.6;
-      color: rgba(255, 255, 255, 0.7);
-      margin-bottom: 24px;
+      color: rgba(255, 255, 255, 0.8);
+      margin-bottom: 12px;
       text-align: left;
     }
 
     .social-buttons {
-      display: flex;
-      gap: 12px;
-      justify-content: center;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+      margin-top: 16px;
     }
 
     .social-btn {
-      padding: 10px 20px;
+      padding: 10px 16px;
       background: rgba(255, 255, 255, 0.1);
       border: 1px solid rgba(255, 255, 255, 0.2);
       border-radius: 6px;
       color: #fff;
       text-decoration: none;
-      font-size: 13px;
+      font-size: 12px;
       display: flex;
       align-items: center;
+      justify-content: center;
       gap: 6px;
       transition: all 0.3s;
     }
@@ -498,6 +526,28 @@
     }
 
     /* Responsive */
+    @media (max-width: 1024px) {
+      .content-area {
+        padding: 30px;
+      }
+      
+      .window-card {
+        width: min(85vh, 700px);
+        max-width: calc(100vw - 120px);
+        height: min(80vh, calc(85vh - 80px));
+      }
+      
+      .window-card.square-window {
+        width: min(calc(100vh - 140px), 600px);
+        height: min(calc(100vh - 140px), 600px);
+      }
+      
+      .window-card.full-width {
+        width: calc(100vw - 120px);
+        height: calc(100vh - 120px);
+      }
+    }
+
     @media (max-width: 768px) {
       .sidebar {
         width: 100%;
@@ -518,16 +568,126 @@
       }
 
       .content-area {
-        grid-template-columns: 1fr;
         padding: 12px;
+        display: block;
+      }
+      
+      .window-card {
+        width: calc(100% - 24px);
+        max-width: none;
+        min-height: auto;
+        height: auto;
+        max-height: none;
+        aspect-ratio: 0.85 / 1;
+        margin: 12px auto;
+      }
+      
+      .window-card.square-window {
+        width: calc(100% - 24px);
+        height: auto;
+        aspect-ratio: 0.85 / 1;
+      }
+      
+      .window-card.full-width {
+        width: calc(100% - 24px);
+        height: auto;
+        aspect-ratio: 0.85 / 1;
+      }
+      
+      .card-content {
+        padding: 16px;
+        font-size: 13px;
+      }
+      
+      .profile-picture {
+        width: 80px;
+        height: 80px;
+        margin-bottom: 12px;
+        border-width: 2px;
+      }
+      
+      .profile-name {
+        font-size: 20px;
+      }
+      
+      .profile-subtitle {
+        font-size: 12px;
+        margin-bottom: 12px;
+      }
+      
+      .profile-description {
+        font-size: 12px;
+        line-height: 1.5;
+        margin-bottom: 10px;
+      }
+      
+      .social-buttons {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 8px;
+        margin-top: 12px;
+      }
+      
+      .social-btn {
+        padding: 8px 12px;
+        font-size: 11px;
       }
 
       .project-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+      }
+      
+      .project-item {
+        padding: 12px;
+      }
+      
+      .project-icon {
+        font-size: 36px;
+      }
+      
+      .project-title {
+        font-size: 11px;
+      }
+      
+      .skill-tags {
+        gap: 6px;
+      }
+      
+      .skill-tag {
+        padding: 5px 10px;
+        font-size: 11px;
+      }
+      
+      .skills-section h3 {
+        font-size: 14px;
+        margin-bottom: 12px;
+      }
+      
+      .terminal-content {
+        font-size: 11px;
+        padding: 12px;
       }
 
       .nav-tabs {
         overflow-x: auto;
+        flex-shrink: 1;
+      }
+      
+      .nav-tab {
+        font-size: 11px;
+        padding: 5px 10px;
+      }
+      
+      .open-windows-tabs {
+        display: none;
+      }
+      
+      .topbar {
+        padding: 0 12px;
+      }
+      
+      .topbar-right {
+        font-size: 10px;
       }
 
       .sidebar-item.active::before {
@@ -537,6 +697,81 @@
         width: 20px;
         height: 3px;
         border-radius: 3px 3px 0 0;
+      }
+    }
+    
+    @media (max-width: 480px) {
+      .content-area {
+        padding: 8px;
+      }
+      
+      .window-card {
+        width: calc(100% - 16px);
+        aspect-ratio: 0.8 / 1;
+        border-radius: 10px;
+        margin: 8px auto;
+      }
+      
+      .window-card.square-window {
+        width: calc(100% - 16px);
+        aspect-ratio: 0.8 / 1;
+      }
+      
+      .window-card.full-width {
+        width: calc(100% - 16px);
+      }
+      
+      .card-header {
+        padding: 10px 12px;
+      }
+      
+      .card-title {
+        font-size: 12px;
+      }
+      
+      .card-content {
+        padding: 12px;
+      }
+      
+      .profile-picture {
+        width: 70px;
+        height: 70px;
+      }
+      
+      .profile-name {
+        font-size: 18px;
+      }
+      
+      .profile-subtitle {
+        font-size: 11px;
+      }
+      
+      .profile-description {
+        font-size: 11px;
+        margin-bottom: 8px;
+      }
+      
+      .social-btn {
+        padding: 8px 10px;
+        font-size: 10px;
+      }
+      
+      .social-btn svg {
+        width: 12px;
+        height: 12px;
+      }
+      
+      .project-grid {
+        grid-template-columns: 1fr;
+      }
+      
+      .topbar {
+        height: 32px;
+      }
+      
+      .nav-tab {
+        font-size: 10px;
+        padding: 4px 8px;
       }
     }
   </style>
@@ -607,7 +842,7 @@
       <!-- Content Area -->
       <div class="content-area">
         <!-- Home Card -->
-        <div class="window-card full-width" id="homeCard">
+        <div class="window-card square-window" id="homeCard">
           <div class="card-header">
             <div class="card-title">Home</div>
             <div class="card-controls">
@@ -621,7 +856,7 @@
             <div class="profile-name">Anand Mohankumar</div>
             <div class="profile-subtitle">Security and Compliance Professional</div>
             <div class="profile-description">
-              I help organizations build trust by connecting cybersecurity, compliance, and business operations. With over three years of hands-on experience in Security Operations, I've investigated incidents, managed vulnerabilities, and strengthened defenses that protect organizational assets. My background in incident response, SIEM analysis, and email forensics gives me a deep technical understanding of how threats emerge — and how to contain them quickly.
+              I help organizations build trust by connecting cybersecurity, compliance, and business operations. With over three years of hands-on experience in Security Operations, I've investigated incidents, managed vulnerabilities, and strengthened defenses that protect organizational assets. My background in EQS SecOps gives me a deep technical understanding of how threats emerge — and how to contain them quickly.
             </div>
             <div class="profile-description">
               Currently, as a Revenue Operations Analyst at EQS Group, I bridge the gap between security assurance and business enablement. I manage Due Diligence, and regulatory compliance initiatives, ensuring that every customer interaction aligns with our security and data protection standards. This cross-functional exposure has deepened my expertise in TPRM, ISMS frameworks, and product security governance.
@@ -722,7 +957,7 @@
         </div>
 
         <!-- Skills Card -->
-        <div class="window-card full-width" id="skillsCard" style="display: none;">
+        <div class="window-card square-window" id="skillsCard" style="display: none;">
           <div class="card-header">
             <div class="card-title">Skills</div>
             <div class="card-controls">
