@@ -1,9 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Anand Mohankumar - Portfolio</title>
+
+  <!-- Google Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+
   <style>
     * {
       margin: 0;
@@ -11,8 +17,9 @@
       box-sizing: border-box;
     }
 
+    /* Use Google Sans across the UI (terminal excluded) */
     body {
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, sans-serif;
+      font-family: 'Google Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, sans-serif;
       background: linear-gradient(135deg, #4A5C6A 0%, #5D6D7E 25%, #6B7C8A 50%, #8B6F5E 75%, #6B4E3D 100%);
       height: 100vh;
       overflow: hidden;
@@ -499,7 +506,7 @@
       border-color: rgba(93, 109, 126, 0.5);
     }
 
-    /* Terminal Card */
+    /* Terminal Card: preserve monospace */
     .terminal-content {
       background: rgba(20, 25, 30, 0.9);
       padding: 16px;
@@ -535,6 +542,10 @@
     .content-area::-webkit-scrollbar-thumb {
       background: linear-gradient(180deg, rgba(93, 109, 126, 0.5) 0%, rgba(107, 78, 61, 0.5) 100%);
       border-radius: 4px;
+    }
+
+    .content-area::-webkit-scrollbar-thumb:hover {
+      background: linear-gradient(180deg, rgba(93, 109, 126, 0.7) 0%, rgba(107, 78, 61, 0.7) 100%);
     }
 
     .content-area::-webkit-scrollbar-thumb:hover {
@@ -961,20 +972,20 @@
           </div>
           <div class="card-content">
             <div class="terminal-content">
-              <div class="terminal-line"><span class="terminal-prompt">anand@security:~$</span> whoami</div>
-              <div class="terminal-line">Security Analyst | Incident Responder | Threat Hunter</div>
-              <div class="terminal-line"><span class="terminal-prompt">anand@security:~$</span> cat experience.txt</div>
+              <div class="terminal-line"><span class="terminal-prompt">anand@cybramo:~$</span> whoami</div>
+              <div class="terminal-line">Security Analyst | Compliance Professional</div>
+              <div class="terminal-line"><span class="terminal-prompt">anand@cybramo:~$</span> cat experience.txt</div>
               <div class="terminal-line">└─ Revenue Operations Analyst (Security & Compliance) - EQS Group</div>
               <div class="terminal-line">└─ Associate Engineer - Information Security - EQS Group</div>
               <div class="terminal-line">└─ 3+ years in Security Operations</div>
-              <div class="terminal-line"><span class="terminal-prompt">anand@security:~$</span> ls -la certifications/</div>
+              <div class="terminal-line"><span class="terminal-prompt">anand@cybramo:~$</span> ls -la certifications/</div>
               <div class="terminal-line">├── ISC2 Certified in Cybersecurity (CC)</div>
               <div class="terminal-line">├── Cyber Threat Hunting Level 1</div>
               <div class="terminal-line">├── SOC Analyst Level 1</div>
               <div class="terminal-line">└── CCNA Routing & Switching</div>
-              <div class="terminal-line"><span class="terminal-prompt">anand@security:~$</span> echo $INTERESTS</div>
+              <div class="terminal-line"><span class="terminal-prompt">anand@cybramo:~$</span> echo $INTERESTS</div>
               <div class="terminal-line">CTF | OSINT | Threat Hunting</div>
-              <div class="terminal-line"><span class="terminal-prompt">anand@security:~$</span> <span style="animation: blink 1s infinite;">_</span></div>
+              <div class="terminal-line"><span class="terminal-prompt">anand@cybramo:~$</span> <span style="animation: blink 1s infinite;">_</span></div>
             </div>
           </div>
         </div>
