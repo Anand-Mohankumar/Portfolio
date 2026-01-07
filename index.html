@@ -20,8 +20,8 @@
     /* Use Google Sans across the UI (terminal excluded) */
     body {
       font-family: 'Google Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, sans-serif;
-      /* Background handled by WebGL, fallback gradient updated to Orange/Peach */
-      background: linear-gradient(135deg, #C45A2A 0%, #1F4F55 100%);
+      /* Background handled by WebGL, fallback gradient updated to Orange/Teal */
+      background: linear-gradient(135deg, #1F4F55 0%, #C45A2A 100%);
       height: 100vh;
       overflow: hidden;
       color: #fff;
@@ -1178,10 +1178,14 @@
         if (windowName === activeWindow) {
           tab.classList.add('active-window-tab');
         }
+        // Small icon for tab
+        let icon = '📄';
+        if (windowName === 'home') icon = '🏠';
+        else if (windowName === 'terminal') icon = '💻';
+        else if (windowName === 'projects') icon = '💼';
+        else if (windowName === 'skills') icon = '⚡';
         
-        // Removed emoji icons, just text now
-        tab.textContent = windowTitles[windowName];
-        
+        tab.innerHTML = `${windowTitles[windowName]}`;
         tab.onclick = () => showView(windowName);
         container.appendChild(tab);
       });
@@ -1422,49 +1426,40 @@
         float grain = random(uv * 3.0 + u_time * 0.05); 
         vec2 frostedUV = uv + (vec2(random(uv), random(uv + 1.2)) - 0.5) * 0.005;
 
-        // 2. Large Scale Abstract Fluid
-        // Significantly reduced frequency (multiply by smaller numbers) for massive shapes
-        float t = u_time * 0.15; // Slow motion
-        vec2 flowUV = frostedUV * 0.8; // Zoom in (scale up shapes)
+        // 2. Complex Domain-Warped Fluid (Randomized Shapes)
+        float t = u_time * 0.12; 
+        vec2 flowUV = frostedUV * 2.0; // Zoom out to see more shape variation
         
-        // Two layers of sine waves for complex, organic interaction
-        float v1 = sin(flowUV.x * 2.0 + t);
-        float v2 = sin(flowUV.y * 1.5 + t * 0.7);
-        float v3 = sin((flowUV.x + flowUV.y) * 1.8 + t * 0.5);
+        // Base wave
+        float v_base = sin(flowUV.x * 2.0 + t) + cos(flowUV.y * 1.5 + t * 1.2);
         
-        // Combined wave value
-        float v = v1 + v2 + v3;
+        // Warp coordinates based on base wave
+        vec2 warpedUV = flowUV + vec2(v_base * 0.5, v_base * 0.3);
         
-        // Normalize roughly to 0..1, but allow wide range for contrast
-        v = v * 0.3 + 0.5;
+        // Detailed wave layers on warped coordinates
+        float v1 = sin(warpedUV.x * 3.0 - t * 0.5);
+        float v2 = cos(warpedUV.y * 2.5 + t * 0.8);
+        float v3 = sin(length(warpedUV - 1.0) * 4.0 + t * 0.2);
+        
+        // Combine
+        float v = v_base + v1 + v2 + v3;
+        
+        // Normalize (approx range -4 to 4 -> 0 to 1)
+        v = v * 0.15 + 0.5;
 
-        // Colors: Balanced Light/Dark Palette
-        // Dark Group (Teal/Charcoal)
-        vec3 dark1 = vec3(0.12, 0.31, 0.33); // Deep Teal #1F4F55
-        vec3 dark2 = vec3(0.07, 0.09, 0.10); // Charcoal #12181A
+        // Colors: Slate, Teal, Orange
+        vec3 c_teal     = vec3(0.12, 0.31, 0.33); // Deep Teal #1F4F55
+        vec3 c_slate    = vec3(0.50, 0.54, 0.56); // Slate #818a8f
+        vec3 c_orange   = vec3(0.77, 0.35, 0.16); // Burnt Orange #C45A2A
         
-        // Light/Warm Group (Orange/Peach)
-        vec3 light1 = vec3(0.77, 0.35, 0.16); // Burnt Orange #C45A2A
-        vec3 light2 = vec3(0.85, 0.64, 0.60); // Dusty Peach #D8A39A
+        // Start with Teal as base
+        vec3 col = c_teal;
         
-        // Mixing Logic for Balance
-        // We use smoothstep thresholds centered around 0.5 to ensure equal coverage
-        // The sine wave 'v' naturally oscillates around 0.5
+        // Mix in Slate in the mid-tones
+        col = mix(col, c_slate, smoothstep(0.3, 0.6, v));
         
-        vec3 col;
-        
-        // Base mix: mostly Dark vs Light split
-        // < 0.5 = Dark, > 0.5 = Light
-        float mixVal = smoothstep(0.3, 0.7, v);
-        
-        // Internal mixing for richness
-        // Dark side varies between Teal and Charcoal
-        vec3 darkSide = mix(dark2, dark1, smoothstep(0.0, 0.4, v));
-        
-        // Light side varies between Orange and Peach
-        vec3 lightSide = mix(light1, light2, smoothstep(0.6, 1.0, v));
-        
-        col = mix(darkSide, lightSide, mixVal);
+        // Highlight with Orange
+        col = mix(col, c_orange, smoothstep(0.65, 1.0, v));
         
         // 3. Texture Finish
         // Blend grain for paper/glass feel
