@@ -132,86 +132,170 @@
 
     .desktop {
       height: 100vh;
-      display: flex;
+      display: block; /* Changed from flex to block to allow absolute positioning of dock */
+      position: relative;
     }
 
-    /* GLASS SIDEBAR */
+    /* --- DOCK STYLING (MacBook Style for All Views) --- */
     .sidebar {
-      width: 60px;
-      background: rgba(20, 25, 30, 0.3);
-      backdrop-filter: blur(25px) saturate(180%);
-      -webkit-backdrop-filter: blur(25px) saturate(180%);
+      position: fixed;
+      bottom: 24px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: auto;
+      height: auto;
+      
+      /* Glass Material */
+      background: rgba(20, 25, 30, 0.6);
+      backdrop-filter: blur(20px) saturate(180%);
+      -webkit-backdrop-filter: blur(20px) saturate(180%);
+      
+      /* Dock Shape */
+      border-radius: 24px;
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      padding: 10px 20px;
       display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding: 16px 0;
-      border-right: 1px solid rgba(255, 255, 255, 0.08);
+      flex-direction: row;
       gap: 16px;
-      z-index: 10000; /* High z-index to stay above windows */
-      box-shadow: 5px 0 25px rgba(0,0,0,0.1);
+      z-index: 10000;
+      box-shadow: 
+        0 15px 35px rgba(0,0,0,0.3),
+        0 0 0 1px rgba(255,255,255,0.05) inset;
+      
+      /* Smooth transitions for boot animation */
+      transition: 
+        width 0.4s ease, 
+        height 0.4s ease, 
+        padding 0.4s ease, 
+        border-radius 0.4s ease, 
+        bottom 0.5s cubic-bezier(0.2, 0.8, 0.2, 1),
+        opacity 0.5s ease,
+        gap 0.4s ease,
+        background 0.4s ease,
+        border 0.4s ease,
+        box-shadow 0.4s ease;
+    }
+
+    /* --- BOOT ANIMATION STATES --- */
+    
+    /* 1. Hidden (During Boot) */
+    .sidebar.dock-hidden {
+      opacity: 0;
+      bottom: -60px; /* Hidden below screen */
+      pointer-events: none;
+    }
+
+    /* 2. Water Drop State (Initial appearance) */
+    .sidebar.dock-drop {
+      opacity: 1;
+      bottom: 24px;
+      min-width: 0;
+      width: 14px; /* Tiny drop */
+      height: 14px;
+      padding: 0;
+      border-radius: 50%;
+      gap: 0;
+      border: 1px solid rgba(255, 255, 255, 0.9); /* Bright border */
+      background: rgba(255, 255, 255, 1); /* Solid white core */
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+    }
+
+    /* 3. Splash State (Expanding to pill) */
+    .sidebar.dock-splash {
+      width: 50px; /* Slightly wider */
+      height: 50px;
+      background: rgba(20, 25, 30, 0.6); /* Revert to glass */
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      border-radius: 25px;
+      padding: 0;
+      box-shadow: 0 15px 35px rgba(0,0,0,0.3);
     }
 
     .sidebar-item {
-      width: 44px;
-      height: 44px;
+      width: 50px;
+      height: 50px;
       display: flex;
       align-items: center;
       justify-content: center;
       cursor: pointer;
       border-radius: 14px;
-      transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+      
+      /* Smooth transitions for interactions & boot reveal */
+      transition: 
+        all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1), /* Hover effects */
+        width 0.4s cubic-bezier(0.34, 1.56, 0.64, 1), /* Pop in width */
+        opacity 0.3s ease,
+        transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1); /* Pop in scale */
+        
       position: relative;
-      color: rgba(255, 255, 255, 0.6);
+      color: rgba(255, 255, 255, 0.8);
+      background: rgba(255, 255, 255, 0.05);
     }
 
+    /* Boot: Hidden Icon State */
+    .sidebar-item.dock-item-hidden {
+      width: 0;
+      flex-grow: 0;
+      opacity: 0;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      transform: scale(0);
+      pointer-events: none;
+    }
+
+    /* Dock Hover Effect (Magnification simulation) */
     .sidebar-item:hover {
-      background: rgba(255, 255, 255, 0.1);
+      background: rgba(255, 255, 255, 0.15);
       color: #fff;
-      transform: scale(1.05);
-      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+      transform: translateY(-8px) scale(1.15);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+      z-index: 10;
     }
 
+    /* Active Indicator (Dot below icon) */
     .sidebar-item.active {
-      background: rgba(255, 255, 255, 0.15);
+      background: rgba(255, 255, 255, 0.2);
       color: #fff;
       box-shadow: 
         inset 0 0 0 1px rgba(255,255,255,0.1),
-        0 4px 15px rgba(0,0,0,0.3);
+        0 5px 15px rgba(0,0,0,0.2);
     }
 
     .sidebar-item.active::before {
       content: '';
       position: absolute;
-      left: -6px;
-      width: 4px;
-      height: 20px;
-      background: #fff;
-      border-radius: 0 4px 4px 0;
-      box-shadow: 0 0 10px rgba(255,255,255,0.5);
+      bottom: -6px; /* Outside the icon */
+      left: 50%;
+      transform: translateX(-50%);
+      width: 5px;
+      height: 5px;
+      background: #50fa7b; /* Bright Green Dot */
+      border-radius: 50%;
+      box-shadow: 0 0 8px rgba(80, 250, 123, 0.8);
     }
 
-    /* SIDEBAR MENU TRIGGER (The 3 Dots) */
+    /* SIDEBAR MENU TRIGGER (The 3 Dots) - Adjusted for Dock */
     .sidebar-menu-trigger {
       position: absolute;
-      bottom: -4px;
-      right: -4px;
-      width: 18px;
-      height: 18px;
-      background: rgba(20, 25, 30, 0.9);
-      border: 1px solid rgba(255,255,255,0.2);
+      top: -6px; /* Moved to top-right for dock style */
+      right: -6px;
+      width: 20px;
+      height: 20px;
+      background: rgba(30, 35, 40, 0.95);
+      border: 1px solid rgba(80, 250, 123, 0.5); /* Green hint */
       border-radius: 50%;
       display: flex;
       align-items: center;
       justify-content: center;
       cursor: pointer;
-      z-index: 10;
+      z-index: 20;
       transition: all 0.2s;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+      box-shadow: 0 2px 8px rgba(0,0,0,0.4);
     }
 
     .sidebar-menu-trigger:hover {
-      background: #50fa7b; /* Green highlight */
-      border-color: #50fa7b;
+      background: #50fa7b;
       transform: scale(1.1);
     }
     
@@ -225,58 +309,67 @@
       fill: #000;
     }
 
-    /* GRID POPUP */
+    /* GRID POPUP - Optimized for Bottom Dock */
     .sidebar-popup-grid {
       position: absolute;
-      left: 100%; /* Default Desktop: To the right */
-      top: 0;
-      margin-left: 10px;
-      background: rgba(30, 35, 40, 0.95);
-      backdrop-filter: blur(15px);
-      -webkit-backdrop-filter: blur(15px);
-      padding: 8px;
-      border-radius: 12px;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: 100%; /* Opens Upwards */
+      margin-bottom: 15px; /* Spacing from dock */
+      top: auto;
+      
+      background: rgba(30, 35, 40, 0.85);
+      backdrop-filter: blur(25px);
+      -webkit-backdrop-filter: blur(25px);
+      padding: 10px;
+      border-radius: 16px;
       border: 1px solid rgba(255,255,255,0.1);
-      display: none; /* Hidden by default */
-      grid-template-columns: repeat(2, 1fr);
-      gap: 8px;
+      display: none;
+      grid-template-columns: repeat(3, 1fr); /* Slightly wider grid */
+      gap: 10px;
       width: max-content;
-      min-width: 80px;
-      box-shadow: 0 5px 20px rgba(0,0,0,0.4);
-      z-index: 20000; /* Extremely high z-index to overlay windows */
-      animation: popIn 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      min-width: 100px;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+      z-index: 20000;
+      animation: dockPopUp 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     }
     
     .sidebar-popup-grid.visible {
       display: grid;
     }
-
+    
+    @keyframes dockPopUp {
+      from { opacity: 0; transform: translateX(-50%) translateY(20px) scale(0.9); }
+      to { opacity: 1; transform: translateX(-50%) translateY(0) scale(1); }
+    }
+    
     .grid-item {
-      width: 36px;
-      height: 36px;
+      width: 40px;
+      height: 40px;
       background: rgba(255,255,255,0.05);
-      border-radius: 8px;
+      border-radius: 10px;
       display: flex;
       align-items: center;
       justify-content: center;
       cursor: pointer;
       border: 1px solid transparent;
       transition: all 0.2s;
-      font-size: 16px;
+      font-size: 18px;
       position: relative;
     }
     
     .grid-item:hover {
-      background: rgba(255,255,255,0.15);
-      border-color: rgba(255,255,255,0.2);
+      background: rgba(255,255,255,0.2);
+      border-color: rgba(255,255,255,0.3);
+      transform: scale(1.05);
     }
     
     .grid-item.active-item {
-      background: rgba(80, 250, 123, 0.15);
-      border-color: rgba(80, 250, 123, 0.4);
-      box-shadow: 0 0 10px rgba(80, 250, 123, 0.2);
+      background: rgba(80, 250, 123, 0.2);
+      border-color: rgba(80, 250, 123, 0.5);
+      box-shadow: 0 0 15px rgba(80, 250, 123, 0.2);
     }
-    
+
     /* GLASS TOPBAR */
     .topbar {
       height: 50px;
@@ -289,6 +382,9 @@
       border-bottom: 1px solid rgba(255, 255, 255, 0.08);
       justify-content: space-between;
       z-index: 90;
+      position: absolute; /* Ensures it stays top */
+      top: 0;
+      width: 100%;
     }
 
     .topbar-left {
@@ -300,18 +396,30 @@
     }
 
     .app-logo {
-      width: 32px;
-      height: 32px;
+      width: 30px; /* Matched to Home button height */
+      height: 30px;
       flex-shrink: 0;
-      opacity: 0.95;
-      filter: drop-shadow(0 0 5px rgba(255,255,255,0.3));
-      cursor: pointer; /* Make logo look clickable */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      
+      /* Lighter Glass Circle Style */
+      background: rgba(255, 255, 255, 0.15); /* Slightly lighter than before */
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 50%;
+      padding: 5px; /* Adjusted padding for new size */
+      
+      /* No visual interactivity cues */
+      cursor: default;
     }
 
     .app-logo img {
       width: 100%;
       height: 100%;
       object-fit: contain;
+      opacity: 1;
+      /* stronger shadow to make it pop */
+      filter: drop-shadow(0 2px 3px rgba(0,0,0,0.5));
     }
 
     .nav-tabs {
@@ -383,14 +491,13 @@
       box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     }
 
-    /* Overflow Indicator for Hidden Windows */
     .tabs-overflow-indicator {
-      display: none; /* Hidden by default */
+      display: none;
       align-items: center;
       justify-content: center;
       width: 28px;
       height: 28px;
-      background: rgba(80, 250, 123, 0.2); /* Green tint to match theme */
+      background: rgba(80, 250, 123, 0.2);
       border: 1px solid rgba(80, 250, 123, 0.4);
       border-radius: 50%;
       margin-left: 4px;
@@ -422,7 +529,8 @@
 
     /* Main Content */
     .main-content {
-      flex: 1;
+      width: 100%;
+      height: 100%;
       display: flex;
       flex-direction: column;
       overflow: hidden;
@@ -431,7 +539,7 @@
     .content-area {
       flex: 1;
       overflow: hidden;
-      padding: 40px;
+      padding: 70px 40px 100px 40px; /* Top padding for topbar, bottom for dock */
       position: relative;
       max-width: 100%;
     }
@@ -451,15 +559,60 @@
         
       display: flex;
       flex-direction: column;
-      transition: transform 0.2s, opacity 0.2s, width 0.3s, height 0.3s;
+      
+      /* --- DYNAMIC WINDOW ANIMATIONS --- */
+      transition: 
+        transform 0.5s cubic-bezier(0.19, 1, 0.22, 1), 
+        opacity 0.5s ease, 
+        border-radius 0.5s ease,
+        width 0.3s ease, 
+        height 0.3s ease;
+      
+      /* Responsive Sizing Defaults */
       width: min(calc(100vh - 120px), 750px);
       height: min(calc(100vh - 120px), 650px);
-      max-width: calc(100vw - 180px);
+      max-width: 95vw;
+      max-height: 85vh; /* Ensure it fits between topbar and dock */
+      
       position: absolute;
       left: 50%;
       top: 50%;
       transform: translate(-50%, -50%);
       overflow: hidden;
+    }
+
+    /* Window Opening Animation - Desktop (Liquid Drop Style) */
+    @keyframes liquidOpenDesktop {
+        0% {
+            opacity: 0;
+            transform: translate(-50%, -50%) scale(0.2);
+            border-radius: 50%; /* Start as circle/drop */
+        }
+        40% {
+            opacity: 1;
+        }
+        100% {
+            opacity: 1;
+            transform: translate(-50%, -50%) scale(1);
+            border-radius: 16px; /* End as window */
+        }
+    }
+
+    /* Window Opening Animation - Mobile (Liquid Drop Style) */
+    @keyframes liquidOpenMobile {
+        0% {
+            opacity: 0;
+            transform: scale(0.2);
+            border-radius: 50%;
+        }
+        40% {
+            opacity: 1;
+        }
+        100% {
+            opacity: 1;
+            transform: scale(1);
+            border-radius: 16px;
+        }
     }
 
     /* Active window pops slightly */
@@ -477,13 +630,13 @@
     }
 
     .window-card.full-width {
-      width: calc(100vw - 120px);
-      height: calc(100vh - 100px);
+      width: calc(100vw - 40px);
+      height: calc(100vh - 160px); /* Leave room for dock */
       max-width: none;
       left: 50%;
       top: 50%;
       transform: translate(-50%, -50%);
-      border-radius: 12px;
+      border-radius: 16px;
     }
 
     .card-header {
@@ -509,7 +662,7 @@
     /* PREMIUM CONTROLS */
     .card-controls {
       display: flex;
-      gap: 12px; /* Increased gap for elegance */
+      gap: 12px;
       align-items: center;
     }
 
@@ -520,28 +673,15 @@
       cursor: pointer;
       position: relative;
       overflow: hidden;
-      
-      /* Flexbox for Perfect Centering */
       display: flex;
       align-items: center;
       justify-content: center;
-      
-      /* Base Glass Material */
       background: linear-gradient(145deg, rgba(220, 240, 255, 0.15), rgba(220, 240, 255, 0.05));
       backdrop-filter: blur(8px);
       -webkit-backdrop-filter: blur(8px);
-      
-      /* Delicate Border */
       border: 1px solid rgba(255, 255, 255, 0.25);
-      
-      /* Lighting Effects */
-      box-shadow: 
-        inset 0 1px 0 rgba(255, 255, 255, 0.3), /* Top highlight */
-        0 2px 4px rgba(0, 0, 0, 0.1); /* Drop shadow */
-        
+      box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3), 0 2px 4px rgba(0, 0, 0, 0.1);
       transition: all 0.2s cubic-bezier(0.25, 0.8, 0.25, 1);
-      
-      /* Icon Color */
       color: rgba(255, 255, 255, 0.85);
     }
     
@@ -550,19 +690,14 @@
       border-color: rgba(255, 255, 255, 0.5);
       color: #fff;
       transform: translateY(-1px);
-      box-shadow: 
-        inset 0 1px 0 rgba(255, 255, 255, 0.5),
-        0 4px 8px rgba(0, 0, 0, 0.15);
+      box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), 0 4px 8px rgba(0, 0, 0, 0.15);
     }
     
     .control-btn:active {
         transform: translateY(0) scale(0.96);
-        box-shadow: 
-            inset 0 2px 4px rgba(0,0,0,0.1),
-            0 1px 2px rgba(0,0,0,0.1);
+        box-shadow: inset 0 2px 4px rgba(0,0,0,0.1), 0 1px 2px rgba(0,0,0,0.1);
     }
     
-    /* Specific Hover Colors for functionality hint */
     .btn-close:hover {
         background: linear-gradient(145deg, rgba(255, 95, 87, 0.4), rgba(255, 95, 87, 0.2));
         border-color: rgba(255, 95, 87, 0.5);
@@ -637,7 +772,7 @@
       color: rgba(255, 255, 255, 0.85);
       margin-bottom: 16px;
       text-align: left;
-      background: rgba(0,0,0,0.2); /* Slight darken for text contrast */
+      background: rgba(0,0,0,0.2);
       padding: 15px;
       border-radius: 10px;
       border: 1px solid rgba(255,255,255,0.03);
@@ -761,7 +896,7 @@
       transform: scale(1.05);
     }
 
-    /* Terminal Card: glass effect for terminal too */
+    /* Terminal Card */
     .terminal-content {
       background: rgba(10, 15, 20, 0.6);
       padding: 20px;
@@ -810,51 +945,33 @@
 
     /* Responsive */
     @media (max-width: 1024px) {
-      .content-area {
-        padding: 30px;
-      }
-      
       .window-card {
         width: min(calc(100vh - 140px), 600px);
         height: min(calc(100vh - 140px), 600px);
-        max-width: calc(100vw - 120px);
       }
     }
 
     @media (max-width: 768px) {
+      /* Mobile Dock Styling */
       .sidebar {
-        width: 100%;
-        height: 60px;
-        flex-direction: row;
-        padding: 0 10px; /* Reduced padding */
-        border-right: none;
-        border-top: 1px solid rgba(255, 255, 255, 0.1);
-        order: 2;
-        justify-content: space-evenly; /* Better spacing */
-        background: rgba(20, 25, 30, 0.95); /* More solid bg */
-        flex-shrink: 0;
+        padding: 8px 16px;
+        bottom: 16px;
+        gap: 12px;
       }
-
-      .desktop {
-        flex-direction: column;
-      }
-
-      .main-content {
-        order: 1;
-        height: calc(100vh - 60px); /* Adjust height */
+      
+      .sidebar-item {
+        width: 44px;
+        height: 44px;
       }
 
       .content-area {
-        padding: 12px;
+        padding: 55px 12px 90px 12px; /* Adjusted padding for mobile */
         display: flex; /* Changed to flex */
         flex-direction: column; /* Stack vertically */
         overflow-y: auto;
         scroll-behavior: smooth;
       }
       
-      /* Aggressive reset for mobile to override desktop styles 
-         Using !important to ensure specificity wins against inline or desktop classes 
-      */
       .window-card {
         position: relative !important; /* Force relative positioning to enable flex stacking */
         left: auto !important;
@@ -866,7 +983,6 @@
         margin-bottom: 20px;
         order: 2; /* Default order (bottom) */
         
-        /* Reset mobile specific sizes */
         max-width: none;
         max-height: none;
         margin-left: 0;
@@ -874,7 +990,7 @@
       }
 
       .window-card.mobile-active {
-        order: 1; /* Jump to top (Fallback if JS DOM move fails) */
+        order: 1; /* Jump to top */
         border: 1px solid rgba(255, 255, 255, 0.3);
       }
       
@@ -928,47 +1044,12 @@
         flex-shrink: 0;
       }
       
-      /* Enhanced Mobile Sidebar Active State */
-      .sidebar-item {
-        position: relative; /* Ensure ::before is relative to this */
-      }
-
-      .sidebar-item.active {
-        background: rgba(255, 255, 255, 0.15); /* More visible background */
-        color: #fff;
-        box-shadow: 0 0 15px rgba(80, 250, 123, 0.2); /* Green glow around the button */
-        border: 1px solid rgba(80, 250, 123, 0.3); /* Green border hint */
-      }
-
       .sidebar-item.active::before {
-        content: '';
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
-        bottom: 4px; /* Visible inside the button */
-        top: auto;
-        width: 20px;
-        height: 3px;
-        background: #50fa7b; /* Bright Green */
-        border-radius: 2px;
-        box-shadow: 0 0 5px rgba(80, 250, 123, 0.8);
-      }
-      
-      /* Sub-view Overlapping Badge (Squircle) */
-      .sidebar-menu-trigger {
-        right: -8px; /* Offset to not cover content on small screens */
-        bottom: -8px;
-        width: 22px;
-        height: 22px;
+        bottom: -4px; /* Ensure dot stays outside on mobile too */
       }
       
       /* Re-orient Grid Popup for Mobile */
       .sidebar-popup-grid {
-        left: 50%;
-        transform: translateX(-50%);
-        top: auto;
-        bottom: 100%; /* Popup UPWARDS on mobile */
-        margin-left: 0;
         margin-bottom: 12px;
       }
     }
@@ -1015,33 +1096,7 @@
   </div>
 
   <div class="desktop">
-    <!-- Sidebar -->
-    <div class="sidebar">
-      <div class="sidebar-item active" data-view="home" title="Home">
-        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
-          <polyline points="9 22 9 12 15 12 15 22"/>
-        </svg>
-      </div>
-      <div class="sidebar-item" data-view="projects" title="Projects">
-        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <rect x="2" y="7" width="20" height="14" rx="2" ry="2"/>
-          <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/>
-        </svg>
-      </div>
-      <div class="sidebar-item" data-view="skills" title="Skills">
-        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
-        </svg>
-      </div>
-      <div class="sidebar-item" data-view="terminal" title="Terminal">
-        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <polyline points="4 17 10 11 4 5"/>
-          <line x1="12" y1="19" x2="20" y2="19"/>
-        </svg>
-      </div>
-    </div>
-
+    
     <!-- Main Content -->
     <div class="main-content">
       <!-- Top Bar -->
@@ -1077,8 +1132,8 @@
 
       <!-- Content Area -->
       <div class="content-area">
-        <!-- Home Card (MOBILE ACTIVE BY DEFAULT) -->
-        <div class="window-card mobile-active" id="homeCard">
+        <!-- Home Card (Initially Hidden, waiting for boot sequence) -->
+        <div class="window-card mobile-active" id="homeCard" style="display: none;">
           <div class="card-header">
             <div class="card-title">Home</div>
             <div class="card-controls">
@@ -1332,6 +1387,33 @@
         </div>
       </div>
     </div>
+    
+    <!-- DOCK SIDEBAR (Moved out of Desktop wrapper to be global) -->
+    <div class="sidebar dock-hidden">
+      <div class="sidebar-item dock-item-hidden active" data-view="home" title="Home">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+          <polyline points="9 22 9 12 15 12 15 22"/>
+        </svg>
+      </div>
+      <div class="sidebar-item dock-item-hidden" data-view="projects" title="Projects">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <rect x="2" y="7" width="20" height="14" rx="2" ry="2"/>
+          <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/>
+        </svg>
+      </div>
+      <div class="sidebar-item dock-item-hidden" data-view="skills" title="Skills">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
+        </svg>
+      </div>
+      <div class="sidebar-item dock-item-hidden" data-view="terminal" title="Terminal">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <polyline points="4 17 10 11 4 5"/>
+          <line x1="12" y1="19" x2="20" y2="19"/>
+        </svg>
+      </div>
+    </div>
   </div>
 
   <script>
@@ -1366,12 +1448,52 @@
           if (index === messages.length - 1) {
             setTimeout(() => {
               document.getElementById('bootScreen').classList.add('hidden');
-              updateOpenWindowsTabs();
+              
+              // Trigger Dock Animation, then Show Home
+              animateDockEntry(() => {
+                  showView('home');
+              });
             }, 800);
           }
         }, delay);
       });
     });
+    
+    // Function to animate the dock "Water Drop" entry
+    function animateDockEntry(onComplete) {
+      const dock = document.querySelector('.sidebar');
+      const items = document.querySelectorAll('.sidebar-item');
+      
+      if (!dock) return;
+      
+      // 1. Reveal Drop
+      dock.classList.remove('dock-hidden');
+      dock.classList.add('dock-drop');
+      
+      // 2. Expand to "Splash" pill after 400ms
+      setTimeout(() => {
+        dock.classList.remove('dock-drop');
+        dock.classList.add('dock-splash');
+        
+        // 3. Expand fully and reveal icons sequentially after another 300ms
+        setTimeout(() => {
+          dock.classList.remove('dock-splash');
+          
+          // Reveal items one by one
+          items.forEach((item, index) => {
+            setTimeout(() => {
+              item.classList.remove('dock-item-hidden');
+              // Check if this is the last item to trigger completion
+              if (index === items.length - 1 && onComplete) {
+                  setTimeout(onComplete, 400); // Wait for last icon to pop
+              }
+            }, index * 100); // 100ms stagger between icons
+          });
+          
+        }, 300);
+        
+      }, 400);
+    }
     
     // Clock
     function updateClock() {
@@ -1408,8 +1530,8 @@
       iframe: { id: 'iframe', parent: 'projects', title: 'Content', icon: '🌐' }
     };
 
-    let openWindows = ['home']; // Track open windows
-    let activeWindow = 'home';
+    let openWindows = []; // START EMPTY: Home opens after boot sequence
+    let activeWindow = null;
     let draggedWindow = null;
     let dragOffset = { x: 0, y: 0 };
     let isDragging = false;
@@ -1452,7 +1574,10 @@
     if (tabsContainer) {
       tabsContainer.addEventListener('scroll', checkTabsOverflow);
     }
-    window.addEventListener('resize', checkTabsOverflow);
+    window.addEventListener('resize', () => {
+        checkTabsOverflow();
+        constrainAllWindows(); // Resizing browser window constraints open windows
+    });
     
     // Allow clicking the indicators to scroll
     if (overflowIndicatorRight) {
@@ -1469,6 +1594,41 @@
           tabsContainer.scrollBy({ left: -100, behavior: 'smooth' });
         }
       });
+    }
+
+    // NEW: Window Constraint Logic to handle Resizing
+    function constrainAllWindows() {
+        const contentArea = document.querySelector('.content-area');
+        if (!contentArea) return;
+        const bounds = contentArea.getBoundingClientRect();
+        
+        document.querySelectorAll('.window-card').forEach(win => {
+            if (win.style.display === 'none') return;
+            
+            // If on mobile (flex mode), constraints are handled by CSS flex/order
+            // Only constrain absolute windows (Desktop view)
+            if (window.getComputedStyle(win).position === 'absolute') {
+                const rect = win.getBoundingClientRect();
+                
+                // Horizontal Check
+                if (rect.right > window.innerWidth) {
+                    // Too far right, snap back
+                    win.style.left = (window.innerWidth - rect.width / 2 - 20) + 'px'; 
+                    win.style.transform = 'translate(-50%, -50%)'; // Reset centering logic if messed up
+                }
+                
+                // Vertical Check
+                // 80px buffer for bottom dock
+                if (rect.bottom > window.innerHeight - 80) {
+                    win.style.top = (window.innerHeight - 80 - rect.height / 2) + 'px';
+                }
+                
+                // Top Check (Don't go under topbar)
+                if (rect.top < 60) {
+                    win.style.top = (60 + rect.height/2) + 'px';
+                }
+            }
+        });
     }
 
     function updateOpenWindowsTabs() {
@@ -1589,42 +1749,94 @@
         }
     });
 
-    function showView(viewName) {
-      // Show selected card (don't hide others)
-      if (cards[viewName]) {
-        cards[viewName].style.display = 'flex';
-        // Small animation reset
-        cards[viewName].style.animation = 'none';
-        cards[viewName].offsetHeight; /* trigger reflow */
-        cards[viewName].style.animation = 'fadeIn 0.3s ease-out';
-        bringToFront(cards[viewName]);
+    // Helper: Get Icon Position for Genie Effect
+    function getIconPosition(viewName) {
+        // Find configuration to know parent
+        const config = viewConfig[viewName];
+        let parentKey = config ? config.parent : viewName;
         
-        // --- MOBILE OPTIMIZATION: Handle stacking order ---
-        // 1. Remove "mobile-active" from ALL cards so they drop to order: 2
-        Object.values(cards).forEach(card => {
-            if(card) card.classList.remove('mobile-active');
-        });
-
-        // 2. Add "mobile-active" to CURRENT card so it jumps to order: 1 (top)
-        cards[viewName].classList.add('mobile-active');
-
-        // 3. PHYSICAL DOM REORDERING (The Pro Fix)
-        const contentArea = document.querySelector('.content-area');
-        if (window.innerWidth <= 768) {
-            contentArea.insertBefore(cards[viewName], contentArea.firstChild);
-            contentArea.scrollTop = 0;
+        // Find the icon element
+        const icon = document.querySelector(`.sidebar-item[data-view="${parentKey}"]`);
+        
+        if (icon) {
+            const rect = icon.getBoundingClientRect();
+            // Return center of icon
+            return {
+                x: rect.left + rect.width / 2,
+                y: rect.top + rect.height / 2
+            };
         }
+        
+        // Fallback center screen
+        return { x: window.innerWidth / 2, y: window.innerHeight / 2 };
+    }
+
+    function showView(viewName) {
+      const card = cards[viewName];
+      if (!card) return;
+
+      const isAlreadyOpen = openWindows.includes(viewName);
+
+      // Make sure it's visible in DOM to calculate styles
+      card.style.display = 'flex';
+      
+      // If opening for the first time or re-opening, Ensure Center Origin
+      if (!isAlreadyOpen) {
+          // RESET POSITION TO CENTER so animation calculates correctly
+          card.style.left = '50%';
+          card.style.top = '50%';
+          
+          const iconPos = getIconPosition(viewName);
+          const screenCenter = { x: window.innerWidth / 2, y: window.innerHeight / 2 };
+          
+          // Calculate delta. 
+          // Note: Cards are centered by translate(-50%, -50%). 
+          // To move to icon, we add the difference between icon and screen center.
+          const deltaX = iconPos.x - screenCenter.x;
+          const deltaY = iconPos.y - screenCenter.y;
+          
+          // Initial State (At Icon)
+          card.style.transition = 'none'; // Disable transition for setup
+          card.style.transform = `translate(calc(-50% + ${deltaX}px), calc(-50% + ${deltaY}px)) scale(0.1)`;
+          card.style.opacity = '0';
+          card.style.borderRadius = '50%'; // Circle drop
+          
+          // Trigger Reflow
+          card.offsetHeight;
+          
+          // Final State (Center Screen)
+          card.style.transition = 'transform 0.5s cubic-bezier(0.19, 1, 0.22, 1), opacity 0.5s ease, border-radius 0.5s ease';
+          card.style.transform = 'translate(-50%, -50%) scale(1)';
+          card.style.opacity = '1';
+          card.style.borderRadius = '16px';
+          
+          // Add to open windows list
+          openWindows.push(viewName);
       }
       
-      // Add to open windows if not already there
-      if (!openWindows.includes(viewName)) {
-        openWindows.push(viewName);
+      // Always bring to front regardless
+      bringToFront(card);
+      
+      // --- MOBILE OPTIMIZATION: Handle stacking order ---
+      // 1. Remove "mobile-active" from ALL cards so they drop to order: 2
+      Object.values(cards).forEach(c => {
+          if(c) c.classList.remove('mobile-active');
+      });
+
+      // 2. Add "mobile-active" to CURRENT card so it jumps to order: 1 (top)
+      card.classList.add('mobile-active');
+
+      // 3. PHYSICAL DOM REORDERING (The Pro Fix)
+      const contentArea = document.querySelector('.content-area');
+      if (window.innerWidth <= 768) {
+          contentArea.insertBefore(card, contentArea.firstChild);
+          contentArea.scrollTop = 0;
       }
       
       activeWindow = viewName;
       
       // Update UI components
-      updateSidebar(viewName); // Call the centralized function
+      updateSidebar(viewName); 
       updateOpenWindowsTabs();
     }
     
@@ -1652,11 +1864,27 @@
           isDragging = true;
           draggedWindow = windowCard;
           
+          // Apply dragging class first to disable transitions
+          windowCard.classList.add('dragging');
+          
+          // Calculate current position relative to container to freeze it
+          const contentArea = document.querySelector('.content-area');
+          const contentRect = contentArea.getBoundingClientRect();
           const rect = windowCard.getBoundingClientRect();
+          
+          // Calculate exact position relative to content area
+          const relativeLeft = rect.left - contentRect.left;
+          const relativeTop = rect.top - contentRect.top;
+          
+          // Swap from % centering to fixed pixel positioning without visual jump
+          windowCard.style.left = relativeLeft + 'px';
+          windowCard.style.top = relativeTop + 'px';
+          windowCard.style.transform = 'none';
+          
+          // Set drag offsets
           dragOffset.x = e.clientX - rect.left;
           dragOffset.y = e.clientY - rect.top;
           
-          windowCard.classList.add('dragging');
           bringToFront(windowCard);
           
           e.preventDefault();
@@ -1675,11 +1903,16 @@
       
       // Constrain to content area
       const windowRect = draggedWindow.getBoundingClientRect();
+      
+      // Strict constraints: Window must remain fully inside contentArea
+      const minX = 0;
       const maxX = contentRect.width - windowRect.width;
+      const minY = 0;
       const maxY = contentRect.height - windowRect.height;
       
-      newX = Math.max(-windowRect.width/2, Math.min(newX, contentRect.width - windowRect.width/2));
-      newY = Math.max(0, Math.min(newY, maxY));
+      // Apply strict clamping to prevent overflow
+      newX = Math.max(minX, Math.min(newX, maxX));
+      newY = Math.max(minY, Math.min(newY, maxY));
       
       draggedWindow.style.left = newX + 'px';
       draggedWindow.style.top = newY + 'px';
@@ -1710,27 +1943,51 @@
     }, 100);
 
     function closeWindow(viewName) {
-      openWindows = openWindows.filter(w => w !== viewName);
-      if (cards[viewName]) {
-        cards[viewName].style.display = 'none';
-      }
-      
-      // Show home if closing active window
-      if (activeWindow === viewName) {
-        if (openWindows.length > 0) {
-          showView(openWindows[openWindows.length - 1]);
-        } else {
-          showView('home');
-        }
-      } else {
-        updateOpenWindowsTabs();
-        // Update sidebar to reflect the new active window (usually home)
-        if (openWindows.length === 0) {
-             updateSidebar('home');
-        } else if (activeWindow) {
-             updateSidebar(activeWindow);
-        }
-      }
+      const card = cards[viewName];
+      if (!card) return;
+
+      // Calculate position to shrink back to
+      const iconPos = getIconPosition(viewName);
+      const screenCenter = { x: window.innerWidth / 2, y: window.innerHeight / 2 };
+      const deltaX = iconPos.x - screenCenter.x;
+      const deltaY = iconPos.y - screenCenter.y;
+
+      // Apply Closing Animation
+      card.style.transition = 'transform 0.4s ease-in, opacity 0.4s ease, border-radius 0.4s ease';
+      card.style.transform = `translate(calc(-50% + ${deltaX}px), calc(-50% + ${deltaY}px)) scale(0.1)`;
+      card.style.opacity = '0';
+      card.style.borderRadius = '50%';
+
+      // After animation, hide and cleanup
+      setTimeout(() => {
+          card.style.display = 'none';
+          
+          // CRITICAL FIX: Reset styles to default centered state for next open
+          // This prevents the window from "jumping" if it was previously dragged to a specific pixel location
+          card.style.left = '50%';
+          card.style.top = '50%';
+          card.style.transform = 'translate(-50%, -50%)'; 
+          card.style.borderRadius = '16px';
+          
+          openWindows = openWindows.filter(w => w !== viewName);
+          
+          // Show home if closing active window
+          if (activeWindow === viewName) {
+            if (openWindows.length > 0) {
+              showView(openWindows[openWindows.length - 1]);
+            } else {
+              showView('home');
+            }
+          } else {
+            updateOpenWindowsTabs();
+            // Update sidebar to reflect the new active window (usually home)
+            if (openWindows.length === 0) {
+                 updateSidebar('home');
+            } else if (activeWindow) {
+                 updateSidebar(activeWindow);
+            }
+          }
+      }, 400); // Match transition duration
     }
 
     // Sidebar navigation
