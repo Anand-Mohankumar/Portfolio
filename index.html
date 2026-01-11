@@ -9,6 +9,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <!-- Font for Boot Log -->
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400&display=swap" rel="stylesheet">
 
   <style>
     * {
@@ -34,7 +36,8 @@
       left: 0;
       width: 100%;
       height: 100%;
-      background: #1a1a1a;
+      /* Vignette Background */
+      background: radial-gradient(circle at center, #2a2a2a 0%, #000000 100%);
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -48,26 +51,55 @@
       pointer-events: none;
     }
     
+    /* Heatmap Logo Style - Resized to 150px */
     .boot-logo {
       width: 150px;
       height: 150px;
       margin-bottom: 40px;
       animation: logoFadeIn 1s ease-out;
       border-radius: 32px;
-      background: rgba(255, 255, 255, 0.05);
-      backdrop-filter: blur(10px);
-      border: 1px solid rgba(255, 255, 255, 0.1);
-      box-shadow: 0 0 40px rgba(0,0,0,0.5);
+      
+      /* Heatmap Gradient Simulation - Updated to Dark Teal/Orange Palette */
+      /* #C45A2A (Orange), #1F4F55 (Teal), #12181A (Charcoal) */
+      background: conic-gradient(from 0deg, #C45A2A, #1F4F55, #12181A, #C45A2A);
+      background-size: 200% 200%;
+      
+      /* Glowing effect - adjusted to orange tint */
+      box-shadow: 0 0 50px rgba(196, 90, 42, 0.3); 
+      
+      position: relative;
       display: flex;
       align-items: center;
       justify-content: center;
+      overflow: hidden;
+    }
+    
+    /* Animated Heatmap Overlay */
+    .boot-logo::before {
+        content: '';
+        position: absolute;
+        inset: -50%;
+        /* Matching Dark Palette for the moving animation */
+        background: conic-gradient(from 0deg, #C45A2A, #12181A, #1F4F55, #C45A2A);
+        animation: heatmapRotate 2s linear infinite; /* Speed adjusted for "1.59" feel */
+        filter: blur(20px); /* Creates the soft "contour" feel */
+        opacity: 0.8;
+    }
+    
+    @keyframes heatmapRotate {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
     }
     
     .boot-logo img {
       width: 65%;
       height: 65%;
       object-fit: contain;
-      filter: drop-shadow(0 0 10px rgba(255,255,255,0.2));
+      z-index: 2;
+      /* Strong shadow to make logo stand out */
+      filter: drop-shadow(0 4px 20px rgba(0,0,0,0.8));
+      /* Mix blend mode as requested in snippet */
+      mix-blend-mode: lighten; 
     }
     
     @keyframes logoFadeIn {
@@ -76,40 +108,27 @@
     }
     
     .loading-container {
-      width: 240px;
-      text-align: center;
-    }
-    
-    .loading-text {
-      font-size: 13px;
-      color: rgba(255, 255, 255, 0.5);
-      margin-bottom: 12px;
-      letter-spacing: 2px;
-      text-transform: uppercase;
-      font-weight: 500;
-    }
-    
-    .loading-bar {
       width: 100%;
-      height: 2px;
-      background: rgba(255, 255, 255, 0.1);
-      border-radius: 2px;
+      max-width: 600px;
+      text-align: center;
+      padding: 0 20px;
+      min-height: 24px; /* Prevent layout shift */
+    }
+    
+    /* Clean Single-Line Boot Text */
+    .boot-text {
+      font-family: 'Fira Code', monospace;
+      font-size: 13px;
+      color: rgba(255, 255, 255, 0.7);
+      letter-spacing: 0.5px;
+      text-shadow: 0 1px 2px rgba(0,0,0,0.8);
+      white-space: nowrap;
       overflow: hidden;
+      text-overflow: ellipsis;
     }
-    
-    .loading-progress {
-      height: 100%;
-      background: #fff;
-      width: 0%;
-      border-radius: 2px;
-      animation: loadingProgress 2.2s cubic-bezier(0.22, 1, 0.36, 1) forwards;
-      box-shadow: 0 0 10px rgba(255,255,255,0.5);
-    }
-    
-    @keyframes loadingProgress {
-      0% { width: 0%; }
-      100% { width: 100%; }
-    }
+
+    .log-green { color: #50fa7b; font-weight: bold; }
+    .log-white { color: #f8f8f2; }
 
     .desktop {
       height: 100vh;
@@ -128,7 +147,7 @@
       padding: 16px 0;
       border-right: 1px solid rgba(255, 255, 255, 0.08);
       gap: 16px;
-      z-index: 100;
+      z-index: 10000; /* High z-index to stay above windows */
       box-shadow: 5px 0 25px rgba(0,0,0,0.1);
     }
 
@@ -171,6 +190,93 @@
       box-shadow: 0 0 10px rgba(255,255,255,0.5);
     }
 
+    /* SIDEBAR MENU TRIGGER (The 3 Dots) */
+    .sidebar-menu-trigger {
+      position: absolute;
+      bottom: -4px;
+      right: -4px;
+      width: 18px;
+      height: 18px;
+      background: rgba(20, 25, 30, 0.9);
+      border: 1px solid rgba(255,255,255,0.2);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      z-index: 10;
+      transition: all 0.2s;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    }
+
+    .sidebar-menu-trigger:hover {
+      background: #50fa7b; /* Green highlight */
+      border-color: #50fa7b;
+      transform: scale(1.1);
+    }
+    
+    .sidebar-menu-trigger svg {
+      width: 12px;
+      height: 12px;
+      fill: #fff;
+    }
+    
+    .sidebar-menu-trigger:hover svg {
+      fill: #000;
+    }
+
+    /* GRID POPUP */
+    .sidebar-popup-grid {
+      position: absolute;
+      left: 100%; /* Default Desktop: To the right */
+      top: 0;
+      margin-left: 10px;
+      background: rgba(30, 35, 40, 0.95);
+      backdrop-filter: blur(15px);
+      -webkit-backdrop-filter: blur(15px);
+      padding: 8px;
+      border-radius: 12px;
+      border: 1px solid rgba(255,255,255,0.1);
+      display: none; /* Hidden by default */
+      grid-template-columns: repeat(2, 1fr);
+      gap: 8px;
+      width: max-content;
+      min-width: 80px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.4);
+      z-index: 20000; /* Extremely high z-index to overlay windows */
+      animation: popIn 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
+    
+    .sidebar-popup-grid.visible {
+      display: grid;
+    }
+
+    .grid-item {
+      width: 36px;
+      height: 36px;
+      background: rgba(255,255,255,0.05);
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      border: 1px solid transparent;
+      transition: all 0.2s;
+      font-size: 16px;
+      position: relative;
+    }
+    
+    .grid-item:hover {
+      background: rgba(255,255,255,0.15);
+      border-color: rgba(255,255,255,0.2);
+    }
+    
+    .grid-item.active-item {
+      background: rgba(80, 250, 123, 0.15);
+      border-color: rgba(80, 250, 123, 0.4);
+      box-shadow: 0 0 10px rgba(80, 250, 123, 0.2);
+    }
+    
     /* GLASS TOPBAR */
     .topbar {
       height: 50px;
@@ -199,6 +305,7 @@
       flex-shrink: 0;
       opacity: 0.95;
       filter: drop-shadow(0 0 5px rgba(255,255,255,0.3));
+      cursor: pointer; /* Make logo look clickable */
     }
 
     .app-logo img {
@@ -274,6 +381,33 @@
       border: 1px solid rgba(255, 255, 255, 0.1);
       color: #fff;
       box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    /* Overflow Indicator for Hidden Windows */
+    .tabs-overflow-indicator {
+      display: none; /* Hidden by default */
+      align-items: center;
+      justify-content: center;
+      width: 28px;
+      height: 28px;
+      background: rgba(80, 250, 123, 0.2); /* Green tint to match theme */
+      border: 1px solid rgba(80, 250, 123, 0.4);
+      border-radius: 50%;
+      margin-left: 4px;
+      margin-right: 4px;
+      cursor: pointer;
+      color: #fff;
+      flex-shrink: 0;
+      backdrop-filter: blur(4px);
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
+      animation: pulse-green 2s infinite;
+      z-index: 20;
+    }
+
+    @keyframes pulse-green {
+      0% { box-shadow: 0 0 0 0 rgba(80, 250, 123, 0.4); }
+      70% { box-shadow: 0 0 0 6px rgba(80, 250, 123, 0); }
+      100% { box-shadow: 0 0 0 0 rgba(80, 250, 123, 0); }
     }
 
     .topbar-right {
@@ -692,12 +826,13 @@
         width: 100%;
         height: 60px;
         flex-direction: row;
-        padding: 0 20px;
+        padding: 0 10px; /* Reduced padding */
         border-right: none;
         border-top: 1px solid rgba(255, 255, 255, 0.1);
         order: 2;
-        justify-content: space-around;
-        background: rgba(20, 25, 30, 0.6); /* Less transparent on mobile for legibility */
+        justify-content: space-evenly; /* Better spacing */
+        background: rgba(20, 25, 30, 0.95); /* More solid bg */
+        flex-shrink: 0;
       }
 
       .desktop {
@@ -706,25 +841,41 @@
 
       .main-content {
         order: 1;
+        height: calc(100vh - 60px); /* Adjust height */
       }
 
       .content-area {
         padding: 12px;
-        display: block;
+        display: flex; /* Changed to flex */
+        flex-direction: column; /* Stack vertically */
         overflow-y: auto;
+        scroll-behavior: smooth;
       }
       
+      /* Aggressive reset for mobile to override desktop styles 
+         Using !important to ensure specificity wins against inline or desktop classes 
+      */
       .window-card {
-        position: relative;
+        position: relative !important; /* Force relative positioning to enable flex stacking */
         left: auto !important;
         top: auto !important;
         transform: none !important;
-        width: calc(100vw - 40px);
-        height: calc(100vw - 20px); /* Taller on mobile */
+        width: 100% !important;
+        height: auto !important;
+        min-height: 500px;
+        margin-bottom: 20px;
+        order: 2; /* Default order (bottom) */
+        
+        /* Reset mobile specific sizes */
         max-width: none;
         max-height: none;
-        margin: 12px auto;
-        min-height: 500px;
+        margin-left: 0;
+        margin-right: 0;
+      }
+
+      .window-card.mobile-active {
+        order: 1; /* Jump to top (Fallback if JS DOM move fails) */
+        border: 1px solid rgba(255, 255, 255, 0.3);
       }
       
       .card-header {
@@ -732,9 +883,8 @@
       }
       
       .window-card.full-width {
-        width: calc(100% - 24px);
-        height: auto;
-        max-height: none;
+        width: 100% !important;
+        height: auto !important;
       }
       
       .card-content {
@@ -759,20 +909,73 @@
       .topbar {
         padding: 0 16px;
       }
+
+      /* Aggressive Hide clock on mobile */
+      #clock {
+        display: none !important;
+      }
+
+      /* Scrollable topbar tabs */
+      .topbar-left {
+        width: 100%;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        padding-right: 10px;
+        mask-image: linear-gradient(to right, black 90%, transparent 100%);
+      }
       
+      .nav-tab, .window-tab {
+        flex-shrink: 0;
+      }
+      
+      /* Enhanced Mobile Sidebar Active State */
+      .sidebar-item {
+        position: relative; /* Ensure ::before is relative to this */
+      }
+
+      .sidebar-item.active {
+        background: rgba(255, 255, 255, 0.15); /* More visible background */
+        color: #fff;
+        box-shadow: 0 0 15px rgba(80, 250, 123, 0.2); /* Green glow around the button */
+        border: 1px solid rgba(80, 250, 123, 0.3); /* Green border hint */
+      }
+
       .sidebar-item.active::before {
-        left: auto;
-        bottom: -16px;
+        content: '';
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 4px; /* Visible inside the button */
         top: auto;
         width: 20px;
-        height: 4px;
-        border-radius: 4px 4px 0 0;
+        height: 3px;
+        background: #50fa7b; /* Bright Green */
+        border-radius: 2px;
+        box-shadow: 0 0 5px rgba(80, 250, 123, 0.8);
+      }
+      
+      /* Sub-view Overlapping Badge (Squircle) */
+      .sidebar-menu-trigger {
+        right: -8px; /* Offset to not cover content on small screens */
+        bottom: -8px;
+        width: 22px;
+        height: 22px;
+      }
+      
+      /* Re-orient Grid Popup for Mobile */
+      .sidebar-popup-grid {
+        left: 50%;
+        transform: translateX(-50%);
+        top: auto;
+        bottom: 100%; /* Popup UPWARDS on mobile */
+        margin-left: 0;
+        margin-bottom: 12px;
       }
     }
     
     @media (max-width: 480px) {
       .window-card {
-        width: calc(100vw - 24px);
+        width: 100% !important;
         margin: 6px auto;
       }
       
@@ -805,9 +1008,8 @@
       <img src="https://github.com/Anand-Mohankumar/Anand-Mohankumar/blob/main/App%20Logo.png?raw=true" alt="Logo">
     </div>
     <div class="loading-container">
-      <div class="loading-text">Initializing System...</div>
-      <div class="loading-bar">
-        <div class="loading-progress"></div>
+      <div class="boot-text" id="bootText">
+        <!-- Text injected by JS -->
       </div>
     </div>
   </div>
@@ -856,15 +1058,27 @@
               Home
             </div>
           </div>
+          <!-- Left Overflow Indicator -->
+          <div class="tabs-overflow-indicator" id="tabsOverflowIndicatorLeft" title="Scroll Left">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="15 18 9 12 15 6"></polyline>
+            </svg>
+          </div>
           <div class="open-windows-tabs" id="openWindowsTabs"></div>
+          <!-- Right Overflow Indicator -->
+          <div class="tabs-overflow-indicator" id="tabsOverflowIndicator" title="More windows available">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+          </div>
         </div>
         <div class="topbar-right" id="clock">00:00</div>
       </div>
 
       <!-- Content Area -->
       <div class="content-area">
-        <!-- Home Card -->
-        <div class="window-card" id="homeCard">
+        <!-- Home Card (MOBILE ACTIVE BY DEFAULT) -->
+        <div class="window-card mobile-active" id="homeCard">
           <div class="card-header">
             <div class="card-title">Home</div>
             <div class="card-controls">
@@ -944,7 +1158,7 @@
                 <div class="project-icon">🔬</div>
                 <div class="project-title">Labs, Research<br>and CTF</div>
               </div>
-              <div class="project-item" onclick="openInIframe('https://www.inoreader.com/stream/user/1005486907/tag/Infosec%20News/view/html?t=InfoSec%20Daily&l=https%3A%2F%2Fgithub.com%2FAnand-Mohankumar%2FAnand-Mohankumar%2Fblob%2Fmain%2FApp%2520Logo.png&lw=5&cs=m&c=0xe0e0e0&bc=0x0a141a&lh=5&lc=0xe56a40', 'InfoSec Daily')">
+              <div class="project-item" onclick="openInIframe('https://www.inoreader.com/stream/user/1005486907/tag/Infosec%20News/view/html?t=InfoSec%20Daily&l=https%3A%2F%2Fgithub.com%2FAnand-Mohankumar%2FAnand-Mohankumar%2Fblob%2Fmain%2FApp%2520Logo.png&lw=5&cs=m&c=0xe0e0e0&bc=0x0a141a&lh=5&lc=0xe56a40', 'InfoSec Daily', '📋')">
                 <div class="project-icon">📋</div>
                 <div class="project-title">InfoSec Daily</div>
               </div>
@@ -983,7 +1197,7 @@
               <div class="terminal-line"><span class="terminal-prompt">anand@cybramo:~$</span> cat experience.txt</div>
               <div class="terminal-line">└─ Revenue Operations Analyst (Security & Compliance) - EQS Group</div>
               <div class="terminal-line">└─ Associate Engineer - Information Security - EQS Group</div>
-              <div class="terminal-line">└─ 3+ years in Security Operations</div>
+              <div class="terminal-line">&nbsp;&nbsp;&nbsp;└─ 3+ years in Security Operations</div>
               <div class="terminal-line"><span class="terminal-prompt">anand@cybramo:~$</span> ls -la certifications/</div>
               <div class="terminal-line">├── ISC2 Certified in Cybersecurity (CC)</div>
               <div class="terminal-line">├── Cyber Threat Hunting Level 1</div>
@@ -1121,12 +1335,42 @@
   </div>
 
   <script>
-    // Boot screen
+    // Realistic Linux Boot Sequence
     window.addEventListener('load', () => {
-      setTimeout(() => {
-        document.getElementById('bootScreen').classList.add('hidden');
-        updateOpenWindowsTabs();
-      }, 2500); // Slightly shorter for snappier feel
+      const bootText = document.getElementById('bootText');
+      const messages = [
+        "[  <span class='log-green'>OK</span>  ] Started Update UTMP about System Runlevel Changes.",
+        "[  <span class='log-green'>OK</span>  ] Started Service to check if key is pressed.",
+        "[  <span class='log-green'>OK</span>  ] Listening on Load/Save RF Kill Switch Status /dev/rfkill Watch.",
+        "[  <span class='log-green'>OK</span>  ] Reached target System Initialization.",
+        "[  <span class='log-green'>OK</span>  ] Started CUPS Scheduler.",
+        "[  <span class='log-green'>OK</span>  ] Started Network Manager.",
+        "[  <span class='log-green'>OK</span>  ] Reached target Network.",
+        "[  <span class='log-green'>OK</span>  ] Reached target Host and Network Name Lookups.",
+        "[  <span class='log-green'>OK</span>  ] Started GNOME Display Manager.",
+        "[  <span class='log-green'>OK</span>  ] Reached target Graphical Interface.",
+        "<span class='log-white'>Initializing Desktop Environment...</span>"
+      ];
+
+      let delay = 0;
+      
+      messages.forEach((msg, index) => {
+        // Randomize delay to simulate processing
+        delay += Math.random() * 300 + 100;
+        
+        setTimeout(() => {
+          // Update text content in place (one line)
+          bootText.innerHTML = msg;
+          
+          // If last message, close boot screen
+          if (index === messages.length - 1) {
+            setTimeout(() => {
+              document.getElementById('bootScreen').classList.add('hidden');
+              updateOpenWindowsTabs();
+            }, 800);
+          }
+        }, delay);
+      });
     });
     
     // Clock
@@ -1154,23 +1398,82 @@
       iframe: document.getElementById('iframeCard')
     };
 
+    // Global View Configuration (Unified)
+    const viewConfig = {
+      home: { id: 'home', parent: 'home', title: 'Home', icon: '🏠' },
+      projects: { id: 'projects', parent: 'projects', title: 'Projects', icon: '💼' },
+      skills: { id: 'skills', parent: 'skills', title: 'Skills', icon: '⚡' },
+      terminal: { id: 'terminal', parent: 'terminal', title: 'Terminal', icon: '💻' },
+      research: { id: 'research', parent: 'projects', title: 'Labs & Research', icon: '🔬' },
+      iframe: { id: 'iframe', parent: 'projects', title: 'Content', icon: '🌐' }
+    };
+
     let openWindows = ['home']; // Track open windows
     let activeWindow = 'home';
     let draggedWindow = null;
     let dragOffset = { x: 0, y: 0 };
     let isDragging = false;
 
+    // OVERFLOW DETECTION LOGIC
+    const tabsContainer = document.getElementById('openWindowsTabs');
+    const overflowIndicatorRight = document.getElementById('tabsOverflowIndicator');
+    const overflowIndicatorLeft = document.getElementById('tabsOverflowIndicatorLeft');
+
+    function checkTabsOverflow() {
+      if (!tabsContainer) return;
+      
+      const tolerance = 2; // Pixel tolerance
+      
+      // Check for overflow (content wider than container)
+      const isScrollable = tabsContainer.scrollWidth > tabsContainer.clientWidth;
+      
+      // Right Indicator Logic
+      if (overflowIndicatorRight) {
+          const isScrolledToEnd = Math.abs(tabsContainer.scrollWidth - tabsContainer.clientWidth - tabsContainer.scrollLeft) < tolerance;
+          if (isScrollable && !isScrolledToEnd) {
+            overflowIndicatorRight.style.display = 'flex';
+          } else {
+            overflowIndicatorRight.style.display = 'none';
+          }
+      }
+
+      // Left Indicator Logic
+      if (overflowIndicatorLeft) {
+          const isScrolledStart = tabsContainer.scrollLeft < tolerance;
+          if (isScrollable && !isScrolledStart) {
+            overflowIndicatorLeft.style.display = 'flex';
+          } else {
+            overflowIndicatorLeft.style.display = 'none';
+          }
+      }
+    }
+
+    // Hook up overflow listeners
+    if (tabsContainer) {
+      tabsContainer.addEventListener('scroll', checkTabsOverflow);
+    }
+    window.addEventListener('resize', checkTabsOverflow);
+    
+    // Allow clicking the indicators to scroll
+    if (overflowIndicatorRight) {
+      overflowIndicatorRight.addEventListener('click', () => {
+        if(tabsContainer) {
+          tabsContainer.scrollBy({ left: 100, behavior: 'smooth' });
+        }
+      });
+    }
+    
+    if (overflowIndicatorLeft) {
+      overflowIndicatorLeft.addEventListener('click', () => {
+        if(tabsContainer) {
+          tabsContainer.scrollBy({ left: -100, behavior: 'smooth' });
+        }
+      });
+    }
+
     function updateOpenWindowsTabs() {
       const container = document.getElementById('openWindowsTabs');
       container.innerHTML = '';
-      
-      const windowTitles = {
-        home: 'Home',
-        projects: 'Projects',
-        skills: 'Skills',
-        terminal: 'Terminal',
-        iframe: document.getElementById('iframeTitle').textContent
-      };
       
       openWindows.forEach(windowName => {
         const tab = document.createElement('div');
@@ -1178,18 +1481,113 @@
         if (windowName === activeWindow) {
           tab.classList.add('active-window-tab');
         }
-        // Small icon for tab
-        let icon = '📄';
-        if (windowName === 'home') icon = '🏠';
-        else if (windowName === 'terminal') icon = '💻';
-        else if (windowName === 'projects') icon = '💼';
-        else if (windowName === 'skills') icon = '⚡';
         
-        tab.innerHTML = `${windowTitles[windowName]}`;
+        // Logic to construct "Parent/Child" path using global viewConfig
+        let displayTitle = windowName; // fallback
+        const config = viewConfig[windowName];
+        
+        if (config) {
+            if (config.parent && config.parent !== config.id && viewConfig[config.parent]) {
+                // It's a child: Show "Parent/Child"
+                displayTitle = `${viewConfig[config.parent].title}/${config.title}`;
+            } else {
+                // It's a root: Show "Title"
+                displayTitle = config.title;
+            }
+        } else {
+             // Handle undefined cases gracefully
+             displayTitle = windowName.charAt(0).toUpperCase() + windowName.slice(1);
+        }
+        
+        tab.textContent = displayTitle;
         tab.onclick = () => showView(windowName);
         container.appendChild(tab);
       });
+      
+      // Check for overflow after DOM update
+      setTimeout(checkTabsOverflow, 50);
     }
+
+    // NEW: Centralized Sidebar Update Logic with 3-Dot Menu
+    function updateSidebar(viewName) {
+      // Close any open popups first
+      document.querySelectorAll('.sidebar-popup-grid').forEach(grid => grid.classList.remove('visible'));
+
+      document.querySelectorAll('.sidebar-item').forEach(item => {
+        // 1. Reset
+        item.classList.remove('active');
+        const oldTrigger = item.querySelector('.sidebar-menu-trigger');
+        if (oldTrigger) oldTrigger.remove();
+        const oldGrid = item.querySelector('.sidebar-popup-grid');
+        if (oldGrid) oldGrid.remove();
+
+        // 2. Determine Active State based on current view
+        const currentConfig = viewConfig[viewName];
+        const category = item.dataset.view; // e.g., 'projects'
+
+        if (currentConfig && currentConfig.parent === category) {
+          item.classList.add('active');
+        }
+
+        // 3. Scan for OPEN windows belonging to this category
+        const categoryOpenWindows = openWindows.filter(win => {
+            return viewConfig[win] && viewConfig[win].parent === category;
+        });
+
+        // 4. If open windows exist for this category, add the 3-dots Menu
+        if (categoryOpenWindows.length > 0) {
+            // Create Trigger (3 Dots)
+            const trigger = document.createElement('div');
+            trigger.className = 'sidebar-menu-trigger';
+            // Simple SVG dots icon
+            trigger.innerHTML = `<svg viewBox="0 0 24 24"><circle cx="5" cy="12" r="2"/><circle cx="12" cy="12" r="2"/><circle cx="19" cy="12" r="2"/></svg>`;
+            
+            // Create Grid Container
+            const grid = document.createElement('div');
+            grid.className = 'sidebar-popup-grid';
+            
+            // Populate Grid
+            categoryOpenWindows.forEach(win => {
+                const winConfig = viewConfig[win];
+                const gridItem = document.createElement('div');
+                gridItem.className = 'grid-item';
+                if (win === viewName) gridItem.classList.add('active-item');
+                gridItem.innerHTML = winConfig.icon || '📄';
+                gridItem.title = winConfig.title; // Tooltip
+                
+                gridItem.onclick = (e) => {
+                    e.stopPropagation();
+                    showView(win);
+                    grid.classList.remove('visible'); // Close on select
+                };
+                grid.appendChild(gridItem);
+            });
+
+            // Trigger Click Handler
+            trigger.onclick = (e) => {
+                e.stopPropagation();
+                // Toggle this grid
+                const wasVisible = grid.classList.contains('visible');
+                // Close all others
+                document.querySelectorAll('.sidebar-popup-grid').forEach(g => g.classList.remove('visible'));
+                
+                if (!wasVisible) {
+                    grid.classList.add('visible');
+                }
+            };
+
+            item.appendChild(trigger);
+            item.appendChild(grid);
+        }
+      });
+    }
+    
+    // Close popups when clicking outside
+    document.addEventListener('click', (e) => {
+        if (!e.target.closest('.sidebar-item')) {
+            document.querySelectorAll('.sidebar-popup-grid').forEach(g => g.classList.remove('visible'));
+        }
+    });
 
     function showView(viewName) {
       // Show selected card (don't hide others)
@@ -1200,6 +1598,22 @@
         cards[viewName].offsetHeight; /* trigger reflow */
         cards[viewName].style.animation = 'fadeIn 0.3s ease-out';
         bringToFront(cards[viewName]);
+        
+        // --- MOBILE OPTIMIZATION: Handle stacking order ---
+        // 1. Remove "mobile-active" from ALL cards so they drop to order: 2
+        Object.values(cards).forEach(card => {
+            if(card) card.classList.remove('mobile-active');
+        });
+
+        // 2. Add "mobile-active" to CURRENT card so it jumps to order: 1 (top)
+        cards[viewName].classList.add('mobile-active');
+
+        // 3. PHYSICAL DOM REORDERING (The Pro Fix)
+        const contentArea = document.querySelector('.content-area');
+        if (window.innerWidth <= 768) {
+            contentArea.insertBefore(cards[viewName], contentArea.firstChild);
+            contentArea.scrollTop = 0;
+        }
       }
       
       // Add to open windows if not already there
@@ -1209,14 +1623,8 @@
       
       activeWindow = viewName;
       
-      // Update sidebar active state
-      document.querySelectorAll('.sidebar-item').forEach(item => {
-        item.classList.remove('active');
-        if (item.dataset.view === viewName) {
-          item.classList.add('active');
-        }
-      });
-      
+      // Update UI components
+      updateSidebar(viewName); // Call the centralized function
       updateOpenWindowsTabs();
     }
     
@@ -1316,6 +1724,12 @@
         }
       } else {
         updateOpenWindowsTabs();
+        // Update sidebar to reflect the new active window (usually home)
+        if (openWindows.length === 0) {
+             updateSidebar('home');
+        } else if (activeWindow) {
+             updateSidebar(activeWindow);
+        }
       }
     }
 
@@ -1328,11 +1742,27 @@
           bringToFront(cards[view]);
           activeWindow = view;
           updateOpenWindowsTabs();
+          updateSidebar(view); // Ensure sidebar updates even if just bringing to front
+          
+          // Added logic for Mobile click on already open window: Scroll to top AND Move to DOM top
+          const contentArea = document.querySelector('.content-area');
+          if (window.innerWidth <= 768) {
+              Object.values(cards).forEach(card => card && card.classList.remove('mobile-active'));
+              cards[view].classList.add('mobile-active');
+              
+              // Move to top of DOM
+              contentArea.insertBefore(cards[view], contentArea.firstChild);
+              contentArea.scrollTop = 0;
+          }
         } else {
           showView(view);
         }
       });
     });
+
+    // Topbar navigation (Logo and Home Tab)
+    document.querySelector('.app-logo').addEventListener('click', () => showView('home'));
+    document.querySelector('.nav-tab[data-tab="home"]').addEventListener('click', () => showView('home'));
 
     // Window control buttons
     document.querySelectorAll('.control-btn').forEach(btn => {
@@ -1356,7 +1786,7 @@
       });
     });
     
-    // Click on window to bring to front
+    // Click on window to bring to front (UPDATED TO FIX SIDEBAR HIGHLIGHT)
     document.querySelectorAll('.window-card').forEach(win => {
       win.addEventListener('mousedown', () => {
         bringToFront(win);
@@ -1364,14 +1794,22 @@
         if (viewName) {
           activeWindow = viewName;
           updateOpenWindowsTabs();
+          updateSidebar(viewName); // This fixes the issue where clicking a window didn't update the sidebar
         }
       });
     });
 
     // Iframe functions
-    function openInIframe(url, title) {
+    function openInIframe(url, title, icon) {
       document.getElementById('contentIframe').src = url;
       document.getElementById('iframeTitle').textContent = title;
+      
+      // Update the global config dynamically for the iframe window
+      if(viewConfig.iframe) {
+          viewConfig.iframe.title = title;
+          viewConfig.iframe.icon = icon || '🌐';
+      }
+      
       showView('iframe');
       
       // Offset iframe window slightly from center
@@ -1447,19 +1885,29 @@
         // Normalize (approx range -4 to 4 -> 0 to 1)
         v = v * 0.15 + 0.5;
 
-        // Colors: Slate, Teal, Orange
+        // Colors: Balanced Light/Dark Palette
+        // Dark Group (Teal/Charcoal/Slate)
+        vec3 c_charcoal = vec3(0.07, 0.09, 0.10); // Charcoal #12181A
         vec3 c_teal     = vec3(0.12, 0.31, 0.33); // Deep Teal #1F4F55
-        vec3 c_slate    = vec3(0.50, 0.54, 0.56); // Slate #818a8f
+        vec3 c_slate    = vec3(0.50, 0.54, 0.56); // Slate #818a8f (Replaced Light Teal)
+        
+        // Warm Group (Orange/Brick/Lava)
         vec3 c_orange   = vec3(0.77, 0.35, 0.16); // Burnt Orange #C45A2A
+        vec3 c_brick    = vec3(0.42, 0.09, 0.05); // Dark Brick #6c180d
+        vec3 c_lava     = vec3(0.90, 0.12, 0.12); // Lava Red #e62020
         
-        // Start with Teal as base
-        vec3 col = c_teal;
+        // Complex Mixing Logic for Multi-Tone Gradient
+        // We sequence the colors based on wave height 'v'
+        vec3 col = c_charcoal; // Start dark
         
-        // Mix in Slate in the mid-tones
-        col = mix(col, c_slate, smoothstep(0.3, 0.6, v));
+        // Transition up through cool tones
+        col = mix(col, c_teal,   smoothstep(0.2, 0.4, v));
+        col = mix(col, c_slate,  smoothstep(0.4, 0.5, v));
         
-        // Highlight with Orange
-        col = mix(col, c_orange, smoothstep(0.65, 1.0, v));
+        // Transition into warm tones
+        col = mix(col, c_orange, smoothstep(0.5, 0.7, v));
+        col = mix(col, c_brick,  smoothstep(0.7, 0.85, v)); 
+        col = mix(col, c_lava,   smoothstep(0.85, 1.0, v)); // Highest peaks get lava glow
         
         // 3. Texture Finish
         // Blend grain for paper/glass feel
