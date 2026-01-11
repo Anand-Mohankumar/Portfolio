@@ -624,7 +624,7 @@
     }
     
     .window-card.dragging {
-      transition: none;
+      transition: none !important; /* Force override to prevent jump */
       cursor: move;
       box-shadow: 0 40px 70px rgba(0, 0, 0, 0.6);
     }
@@ -1867,6 +1867,9 @@
           // Apply dragging class first to disable transitions
           windowCard.classList.add('dragging');
           
+          // [FIX] Force Reflow: Ensure transition disable applies before moving
+          void windowCard.offsetWidth;
+
           // Calculate current position relative to container to freeze it
           const contentArea = document.querySelector('.content-area');
           const contentRect = contentArea.getBoundingClientRect();
