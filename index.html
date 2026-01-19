@@ -545,7 +545,7 @@
       max-width: 100%;
     }
 
-    /* GLASS WINDOW CARD */
+    /* GLASS WINDOW CARD - FIXED FOR MACBOOK/SAFARI RENDERING */
     .window-card {
       /* The core frosted glass effect */
       background: rgba(40, 45, 55, 0.55);
@@ -578,7 +578,17 @@
       position: absolute;
       left: 50%;
       top: 50%;
-      transform: translate(-50%, -50%);
+      /* MACBOOK FIX: Use translate3d instead of translate to force GPU acceleration.
+         This prevents shadow clipping and z-index overlap glitches in Safari.
+      */
+      transform: translate3d(-50%, -50%, 0); 
+      
+      /* MACBOOK FIX: Isolation creates a new stacking context, preventing background
+         filters from bleeding into other windows or malfunctioning.
+      */
+      isolation: isolate; 
+      will-change: transform, opacity;
+      
       overflow: hidden;
     }
 
@@ -586,7 +596,7 @@
     @keyframes liquidOpenDesktop {
         0% {
             opacity: 0;
-            transform: translate(-50%, -50%) scale(0.2);
+            transform: translate3d(-50%, -50%, 0) scale(0.2); /* Updated to 3D */
             border-radius: 50%; /* Start as circle/drop */
         }
         40% {
@@ -594,7 +604,7 @@
         }
         100% {
             opacity: 1;
-            transform: translate(-50%, -50%) scale(1);
+            transform: translate3d(-50%, -50%, 0) scale(1); /* Updated to 3D */
             border-radius: 16px; /* End as window */
         }
     }
@@ -636,7 +646,7 @@
       max-width: none;
       left: 50%;
       top: 50%;
-      transform: translate(-50%, -50%);
+      transform: translate3d(-50%, -50%, 0); /* Updated to 3D */
       border-radius: 16px;
     }
 
@@ -1962,6 +1972,7 @@
 
     // View switching
     const cards = {
+      // UPDATED: 'resources' mapped to the new card ID
       resources: document.getElementById('resourcesCard'),
       labs: document.getElementById('labsCard'), // NEW
       lectureNotes: document.getElementById('lectureNotesCard'), // NEW: Lecture Notes
@@ -1981,6 +1992,7 @@
       skills: { id: 'skills', parent: 'skills', title: 'Skills', icon: '⚡' },
       terminal: { id: 'terminal', parent: 'terminal', title: 'Terminal', icon: '💻' },
       
+      // UPDATED: 'resources' config replacing 'research'
       resources: { id: 'resources', parent: 'projects', title: 'Resources', icon: '📚' },
       // NEW CONFIGS
       labs: { id: 'labs', parent: 'projects', title: 'Labs & Research', icon: '🔬' },
@@ -2075,7 +2087,8 @@
                 if (rect.right > window.innerWidth) {
                     // Too far right, snap back
                     win.style.left = (window.innerWidth - rect.width / 2 - 20) + 'px'; 
-                    win.style.transform = 'translate(-50%, -50%)'; // Reset centering logic if messed up
+                    // Updated to 3D Transform
+                    win.style.transform = 'translate3d(-50%, -50%, 0)'; 
                 }
                 
                 // Vertical Check
@@ -2258,7 +2271,8 @@
           
           // Initial State (At Icon)
           card.style.transition = 'none'; // Disable transition for setup
-          card.style.transform = `translate(calc(-50% + ${deltaX}px), calc(-50% + ${deltaY}px)) scale(0.1)`;
+          // Updated to 3D Transform
+          card.style.transform = `translate3d(calc(-50% + ${deltaX}px), calc(-50% + ${deltaY}px), 0) scale(0.1)`;
           card.style.opacity = '0';
           card.style.borderRadius = '50%'; // Circle drop
           
@@ -2267,7 +2281,8 @@
           
           // Final State (Center Screen)
           card.style.transition = 'transform 0.5s cubic-bezier(0.19, 1, 0.22, 1), opacity 0.5s ease, border-radius 0.5s ease';
-          card.style.transform = 'translate(-50%, -50%) scale(1)';
+          // Updated to 3D Transform
+          card.style.transform = 'translate3d(-50%, -50%, 0) scale(1)';
           card.style.opacity = '1';
           card.style.borderRadius = '16px';
           
@@ -2418,7 +2433,8 @@
 
       // Apply Closing Animation
       card.style.transition = 'transform 0.4s ease-in, opacity 0.4s ease, border-radius 0.4s ease';
-      card.style.transform = `translate(calc(-50% + ${deltaX}px), calc(-50% + ${deltaY}px)) scale(0.1)`;
+      // Updated to 3D Transform
+      card.style.transform = `translate3d(calc(-50% + ${deltaX}px), calc(-50% + ${deltaY}px), 0) scale(0.1)`;
       card.style.opacity = '0';
       card.style.borderRadius = '50%';
 
@@ -2430,7 +2446,8 @@
           // This prevents the window from "jumping" if it was previously dragged to a specific pixel location
           card.style.left = '50%';
           card.style.top = '50%';
-          card.style.transform = 'translate(-50%, -50%)'; 
+          // Updated to 3D Transform
+          card.style.transform = 'translate3d(-50%, -50%, 0)'; 
           card.style.borderRadius = '16px';
           
           openWindows = openWindows.filter(w => w !== viewName);
@@ -2501,7 +2518,7 @@
           if (card.classList.contains('full-width')) {
             card.style.left = '50%';
             card.style.top = '50%';
-            card.style.transform = 'translate(-50%, -50%)';
+            card.style.transform = 'translate3d(-50%, -50%, 0)';
           }
         }
       });
