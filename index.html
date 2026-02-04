@@ -536,12 +536,11 @@
       overflow: hidden;
     }
 
-    /* FIXED: Content Area now handles overflow and has larger padding for shadows */
+    /* FIXED: Content Area now handles overflow correctly for shadows on Mac */
     .content-area {
       flex: 1;
-      /* Allow vertical scrolling if windows go out of bounds */
+      /* ALLOW scrolling so large shadows don't get clipped by bounding box */
       overflow-y: auto; 
-      /* Prevent horizontal scroll */
       overflow-x: hidden;
       /* INCREASED PADDING to ensure shadows are not clipped by Safari */
       padding: 80px 60px 120px 60px; 
@@ -553,6 +552,8 @@
     .window-card {
       /* The core frosted glass effect */
       background: rgba(40, 45, 55, 0.55);
+      
+      /* Standard & WebKit Backdrop Filter */
       backdrop-filter: blur(40px) saturate(160%);
       -webkit-backdrop-filter: blur(40px) saturate(160%);
       
@@ -585,14 +586,9 @@
       /* MACBOOK FIX: Use translate3d instead of translate to force GPU acceleration */
       transform: translate3d(-50%, -50%, 0);
       
-      /* FIXED: Removed 'will-change' to allow Safari to render live blur */
-      /* will-change: transform, opacity; */
-      
-      /* FIXED: Removed 'isolation' to prevent stacking context issues */
-      /* isolation: isolate; */
-      
-      /* FIXED: REMOVED overflow:hidden from here to allow shadows to render on Mac */
-      /* overflow: hidden; */
+      /* CRITICAL MAC FIX: REMOVED 'isolation: isolate' and 'will-change' 
+         These properties break transparency/backdrop-filter on Safari by creating
+         new stacking contexts that isolate the blur from the background. */
     }
 
     /* Window Opening Animation - Desktop (Liquid Drop Style) */
@@ -2663,8 +2659,9 @@
     const gl = canvas.getContext('webgl');
 
     function resizeGL() {
-      // Fix for Mac Retina Performance: Cap pixel density
-      const dpr = Math.min(window.devicePixelRatio, 1.5);
+      // Fix for Mac Retina Performance: Cap pixel density to 1.5
+      // This prevents GPU crash on 5K/Retina screens which causes fallback to static gradient
+      const dpr = Math.min(window.devicePixelRatio || 1, 1.5);
       canvas.width = window.innerWidth * dpr;
       canvas.height = window.innerHeight * dpr;
       gl.viewport(0, 0, canvas.width, canvas.height);
