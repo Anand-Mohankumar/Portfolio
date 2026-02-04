@@ -22,8 +22,8 @@
     /* Use Google Sans across the UI (terminal excluded) */
     body {
       font-family: 'Google Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, sans-serif;
-      /* FIXED: Removed static gradient that was hiding the WebGL canvas */
-      background-color: #12181A; 
+      /* Background handled by WebGL, fallback gradient updated to Orange/Teal */
+      background: linear-gradient(135deg, #1F4F55 0%, #C45A2A 100%);
       height: 100vh;
       overflow: hidden;
       color: #fff;
@@ -134,7 +134,6 @@
       height: 100vh;
       display: block; /* Changed from flex to block to allow absolute positioning of dock */
       position: relative;
-      z-index: 1; /* Ensure content sits above canvas */
     }
 
     /* --- DOCK STYLING (MacBook Style for All Views) --- */
@@ -537,14 +536,10 @@
       overflow: hidden;
     }
 
-    /* FIXED: Content Area now handles overflow correctly for shadows on Mac */
     .content-area {
       flex: 1;
-      /* MAC FIX: Safari clips shadows if overflow is not visible. 
-         Since we have a fixed layout, visible overflow allows shadows to paint outside. */
-      overflow: visible; 
-      /* INCREASED PADDING to ensure shadows are not clipped by Safari */
-      padding: 80px 60px 120px 60px; 
+      overflow: hidden;
+      padding: 70px 40px 100px 40px; /* Top padding for topbar, bottom for dock */
       position: relative;
       max-width: 100%;
     }
@@ -553,8 +548,6 @@
     .window-card {
       /* The core frosted glass effect */
       background: rgba(40, 45, 55, 0.55);
-      
-      /* Standard & WebKit Backdrop Filter */
       backdrop-filter: blur(40px) saturate(160%);
       -webkit-backdrop-filter: blur(40px) saturate(160%);
       
@@ -584,12 +577,20 @@
       position: absolute;
       left: 50%;
       top: 50%;
-      /* MACBOOK FIX: Use translate3d instead of translate to force GPU acceleration */
+      /* MACBOOK FIX: Use translate3d instead of translate to force GPU acceleration.
+         This prevents shadow clipping and z-index overlap glitches in Safari/Chrome Mac.
+      */
       transform: translate3d(-50%, -50%, 0);
+      /* backface-visibility: hidden; REMOVED to prevent animation glitch */
       
-      /* CRITICAL MAC FIX: REMOVED 'isolation: isolate' and 'will-change' 
-         These properties break transparency/backdrop-filter on Safari by creating
-         new stacking contexts that isolate the blur from the background. */
+      /* MACBOOK FIX: Isolation creates a new stacking context, preventing background
+         filters from bleeding into other windows or malfunctioning.
+      */
+      isolation: isolate; 
+      will-change: transform, opacity;
+      
+      /* FIXED: REMOVED overflow:hidden from here to allow shadows to render on Mac */
+      /* overflow: hidden; */
     }
 
     /* Window Opening Animation - Desktop (Liquid Drop Style) */
@@ -1288,7 +1289,7 @@
     #webgl-bg {
       position: fixed;
       inset: 0;
-      z-index: 0; /* Move from -1 to 0 to be visible over body bg */
+      z-index: -1;
       width: 100vw;
       height: 100vh;
       pointer-events: none;
@@ -1776,6 +1777,72 @@
                 </div>
                 <div class="art-arrow">→</div>
               </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="window-card" id="skillsCard" style="display: none;">
+          <div class="card-header">
+            <div class="card-title">Skills</div>
+            <div class="card-controls">
+              <div class="control-btn btn-minimize" title="Minimize">
+                <svg width="10" height="2" viewBox="0 0 10 2" fill="none"><rect width="10" height="2" rx="1" fill="currentColor"/></svg>
+              </div>
+              <div class="control-btn btn-maximize" title="Maximize">
+                <svg width="10" height="10" viewBox="0 0 10 10" fill="none"><rect x="0.5" y="0.5" width="9" height="9" rx="1.5" stroke="currentColor" stroke-width="1.5"/></svg>
+              </div>
+              <div class="control-btn btn-close" title="Close">
+                <svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M1 1L9 9M9 1L1 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+              </div>
+            </div>
+          </div>
+          <div class="card-content skills-section">
+            <h3>Industry Knowledge</h3>
+            <div class="skill-tags">
+              <div class="skill-tag">Security Incident Management</div>
+              <div class="skill-tag">OSINT</div>
+              <div class="skill-tag">Cloud Computing</div>
+              <div class="skill-tag">OWASP</div>
+              <div class="skill-tag">Monitoring and Investigation</div>
+              <div class="skill-tag">Networking concepts</div>
+              <div class="skill-tag">Vulnerability Management</div>
+              <div class="skill-tag">Log Analysis</div>
+              <div class="skill-tag">Compliance Frameworks</div>
+              <div class="skill-tag">Cyber Security</div>
+              <div class="skill-tag">TCP/IP</div>
+              <div class="skill-tag">TPRM</div>
+              <div class="skill-tag">SCRM</div>
+            </div>
+            
+            <h3>Tools and Technologies</h3>
+            <div class="skill-tags">
+              <div class="skill-tag">Wazuh</div>
+              <div class="skill-tag">EDR</div>
+              <div class="skill-tag">XDR</div>
+              <div class="skill-tag">SIEM</div>
+              <div class="skill-tag">Splunk</div>
+              <div class="skill-tag">AWS</div>
+              <div class="skill-tag">Linux</div>
+              <div class="skill-tag">Nmap</div>
+              <div class="skill-tag">OpenVAS</div>
+              <div class="skill-tag">ZAP</div>
+              <div class="skill-tag">MITRE ATT&CK</div>
+              <div class="skill-tag">Active Directory</div>
+              <div class="skill-tag">Email Forensics</div>
+              <div class="skill-tag">Wireshark</div>
+            </div>
+            
+            <h3>Interpersonal Skills</h3>
+            <div class="skill-tags">
+              <div class="skill-tag">Communication</div>
+              <div class="skill-tag">Problem Solving</div>
+            </div>
+            
+            <h3>Interests</h3>
+            <div class="skill-tags">
+              <div class="skill-tag">CTF</div>
+              <div class="skill-tag">OSINT</div>
+              <div class="skill-tag">Threat Hunting</div>
             </div>
           </div>
         </div>
@@ -2591,20 +2658,11 @@
     
     /* WebGL animated background (Updated for Large-Scale Balanced Abstraction) */
     const canvas = document.getElementById('webgl-bg');
-    
-    // FIX FOR MAC: Request WebGL context without alpha channel to prevent composition issues
-    // and force the browser to treat the canvas as the opaque background layer.
-    const gl = canvas.getContext('webgl', { alpha: false, antialias: false });
+    const gl = canvas.getContext('webgl');
 
     function resizeGL() {
-      // Fix for Mac Retina Performance: Cap pixel density to 1.5
-      // This prevents GPU crash on 5K/Retina screens which causes fallback to static gradient
-      const dpr = Math.min(window.devicePixelRatio || 1, 1.5);
-      
-      // MAC FIX: Ensure canvas dimensions are integers. Floating point dimensions can 
-      // sometimes cause silent WebGL rendering failures in Safari.
-      canvas.width = Math.floor(window.innerWidth * dpr);
-      canvas.height = Math.floor(window.innerHeight * dpr);
+      canvas.width = window.innerWidth * devicePixelRatio;
+      canvas.height = window.innerHeight * devicePixelRatio;
       gl.viewport(0, 0, canvas.width, canvas.height);
     }
     window.addEventListener('resize', resizeGL);
@@ -2618,13 +2676,9 @@
 
     // Frosted Glass + Large Scale Abstract Liquid Shader
     const fragmentSrc = `
-      // MAC FIX: Use mediump for time to prevent potential overflow/precision issues on some drivers
-      precision mediump float; 
+      precision highp float;
       uniform float u_time;
       uniform vec2 u_res;
-
-      // Use highp for position/color calculations where precision matters
-      precision highp float;
 
       // Pseudo-random function for glass grain
       float random(vec2 st) {
@@ -2701,10 +2755,6 @@
       const s = gl.createShader(type);
       gl.shaderSource(s, src);
       gl.compileShader(s);
-      // Optional: Check for compilation errors
-      if (!gl.getShaderParameter(s, gl.COMPILE_STATUS)) {
-          console.error('Shader compile error:', gl.getShaderInfoLog(s));
-      }
       return s;
     }
 
@@ -2728,7 +2778,6 @@
     const uTime = gl.getUniformLocation(program, 'u_time');
     const uRes = gl.getUniformLocation(program, 'u_res');
 
-    // Initial resize to ensure canvas size is set before first render
     resizeGL();
 
     const start = performance.now();
