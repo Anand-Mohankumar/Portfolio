@@ -536,10 +536,15 @@
       overflow: hidden;
     }
 
+    /* FIXED: Content Area now handles overflow and has larger padding for shadows */
     .content-area {
       flex: 1;
-      overflow: hidden;
-      padding: 70px 40px 100px 40px; /* Top padding for topbar, bottom for dock */
+      /* Allow vertical scrolling if windows go out of bounds */
+      overflow-y: auto; 
+      /* Prevent horizontal scroll */
+      overflow-x: hidden;
+      /* INCREASED PADDING to ensure shadows are not clipped by Safari */
+      padding: 80px 60px 120px 60px; 
       position: relative;
       max-width: 100%;
     }
@@ -577,17 +582,14 @@
       position: absolute;
       left: 50%;
       top: 50%;
-      /* MACBOOK FIX: Use translate3d instead of translate to force GPU acceleration.
-         This prevents shadow clipping and z-index overlap glitches in Safari/Chrome Mac.
-      */
+      /* MACBOOK FIX: Use translate3d instead of translate to force GPU acceleration */
       transform: translate3d(-50%, -50%, 0);
-      /* backface-visibility: hidden; REMOVED to prevent animation glitch */
       
-      /* MACBOOK FIX: Isolation creates a new stacking context, preventing background
-         filters from bleeding into other windows or malfunctioning.
-      */
-      isolation: isolate; 
-      will-change: transform, opacity;
+      /* FIXED: Removed 'will-change' to allow Safari to render live blur */
+      /* will-change: transform, opacity; */
+      
+      /* FIXED: Removed 'isolation' to prevent stacking context issues */
+      /* isolation: isolate; */
       
       /* FIXED: REMOVED overflow:hidden from here to allow shadows to render on Mac */
       /* overflow: hidden; */
@@ -2661,8 +2663,10 @@
     const gl = canvas.getContext('webgl');
 
     function resizeGL() {
-      canvas.width = window.innerWidth * devicePixelRatio;
-      canvas.height = window.innerHeight * devicePixelRatio;
+      // Fix for Mac Retina Performance: Cap pixel density
+      const dpr = Math.min(window.devicePixelRatio, 1.5);
+      canvas.width = window.innerWidth * dpr;
+      canvas.height = window.innerHeight * dpr;
       gl.viewport(0, 0, canvas.width, canvas.height);
     }
     window.addEventListener('resize', resizeGL);
