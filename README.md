@@ -9,7 +9,7 @@ Welcome to the repository for my interactive personal portfolio! This project is
 * **OS Desktop Experience:** A simulated desktop environment complete with a boot sequence, top navigation bar, and an animated MacBook-style dock.
 * **Glassmorphism UI:** Draggable, maximizable, and minimizable windows built with frosted glass effects and dynamic drop shadows.
 * **Custom WebGL Background:** A highly optimized, abstract fluid/heatmap shader running in the background via WebGL.
-* **Interactive Terminal:** A fully functional command-line interface simulation. Try typing `whoami`, `n8n`, `help`, or `clear`.
+* **Interactive Terminal:** A fully functional command-line interface simulation. Try typing `whoami`, `help`, or `clear`.
 * **Resource & Infographic Gallery:** A structured knowledgebase hosting my lecture notes, InfoSec resources, AI workflows, and custom infographics.
 * **Fully Responsive:** Adapts seamlessly from a sprawling desktop view to a stacked, touch-friendly mobile layout.
 
