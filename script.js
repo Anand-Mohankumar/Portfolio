@@ -455,8 +455,10 @@
       allWindows.forEach(w => {
         const z = parseInt(w.style.zIndex || 1000);
         if (z > maxZ) maxZ = z;
+        w.classList.remove('active-window');
       });
       window.style.zIndex = maxZ + 1;
+      window.classList.add('active-window');
     }
 
     // Draggable windows

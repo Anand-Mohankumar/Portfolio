@@ -538,9 +538,7 @@
       
       border-radius: 16px;
       border: 1px solid rgba(255, 255, 255, 0.12);
-      box-shadow: 
-        0 20px 50px rgba(0, 0, 0, 0.4),
-        0 0 0 1px rgba(255, 255, 255, 0.05) inset; /* Inner glow */
+      box-shadow: none;
         
       display: flex;
       flex-direction: column;
@@ -568,11 +566,7 @@
       transform: translate3d(-50%, -50%, 0);
       /* backface-visibility: hidden; REMOVED to prevent animation glitch */
       
-      /* MACBOOK FIX: Isolation creates a new stacking context, preventing background
-         filters from bleeding into other windows or malfunctioning.
-      */
-      isolation: isolate; 
-      will-change: transform, opacity;
+      /* Removed isolation and will-change as they cause grey square-corner artifacts around shadow bounding boxes in Chrome when using backdrop-filter */
       
       /* FIXED: REMOVED overflow:hidden from here to allow shadows to render on Mac */
       /* overflow: hidden; */
@@ -612,12 +606,10 @@
         }
     }
 
-    /* Active window pops slightly */
-    .window-card[style*="z-index"]:not([style*="z-index: auto"]) {
-        box-shadow: 
-        0 30px 60px rgba(0, 0, 0, 0.5),
-        0 0 0 1px rgba(255, 255, 255, 0.15) inset;
-        border-color: rgba(255,255,255,0.2);
+    /* Active window pops significantly with premium layered shadows */
+    .window-card.active-window {
+        box-shadow: none;
+        border-color: rgba(255,255,255,0.25);
     }
     
     .window-card.dragging {
