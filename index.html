@@ -1,19 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Anand Mohankumar - Portfolio</title>
-  
-  <link rel="icon" href="https://github.com/Anand-Mohankumar/Anand-Mohankumar/blob/main/App%20Logo.png?raw=true" type="image/png">
+
+  <link rel="icon" href="https://github.com/Anand-Mohankumar/Anand-Mohankumar/blob/main/App%20Logo.png?raw=true"
+    type="image/png">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap"
+    rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
   <canvas id="webgl-bg"></canvas>
   <div class="boot-screen" id="bootScreen">
@@ -22,34 +26,37 @@
     </div>
     <div class="loading-container">
       <div class="boot-text" id="bootText">
-        </div>
+      </div>
     </div>
   </div>
 
   <div class="desktop">
-    
+
     <div class="main-content">
       <div class="topbar">
         <div class="topbar-left">
           <div class="app-logo">
-            <img src="https://github.com/Anand-Mohankumar/Anand-Mohankumar/blob/main/App%20Logo.png?raw=true" alt="Logo">
+            <img src="https://github.com/Anand-Mohankumar/Anand-Mohankumar/blob/main/App%20Logo.png?raw=true"
+              alt="Logo">
           </div>
           <div class="nav-tabs">
             <div class="nav-tab active" data-tab="home">
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
               </svg>
               Home
             </div>
           </div>
           <div class="tabs-overflow-indicator" id="tabsOverflowIndicatorLeft" title="Scroll Left">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
               <polyline points="15 18 9 12 15 6"></polyline>
             </svg>
           </div>
           <div class="open-windows-tabs" id="openWindowsTabs"></div>
           <div class="tabs-overflow-indicator" id="tabsOverflowIndicator" title="More windows available">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
               <polyline points="9 18 15 12 9 6"></polyline>
             </svg>
           </div>
@@ -63,72 +70,95 @@
             <div class="card-title">Home</div>
             <div class="card-controls">
               <div class="control-btn btn-minimize" title="Minimize">
-                <svg width="10" height="2" viewBox="0 0 10 2" fill="none"><rect width="10" height="2" rx="1" fill="currentColor"/></svg>
+                <svg width="10" height="2" viewBox="0 0 10 2" fill="none">
+                  <rect width="10" height="2" rx="1" fill="currentColor" />
+                </svg>
               </div>
               <div class="control-btn btn-maximize" title="Maximize">
-                <svg width="10" height="10" viewBox="0 0 10 10" fill="none"><rect x="0.5" y="0.5" width="9" height="9" rx="1.5" stroke="currentColor" stroke-width="1.5"/></svg>
+                <svg width="10" height="10" viewBox="0 0 10 10" fill="none">
+                  <rect x="0.5" y="0.5" width="9" height="9" rx="1.5" stroke="currentColor" stroke-width="1.5" />
+                </svg>
               </div>
               <div class="control-btn btn-close" title="Close">
-                <svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M1 1L9 9M9 1L1 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+                <svg width="10" height="10" viewBox="0 0 10 10" fill="none">
+                  <path d="M1 1L9 9M9 1L1 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                </svg>
               </div>
             </div>
           </div>
           <div class="card-content profile-section">
-            <img src="https://avatars.githubusercontent.com/u/158495282?v=4" alt="Anand Mohankumar" class="profile-picture">
+            <img src="https://avatars.githubusercontent.com/u/158495282?v=4" alt="Anand Mohankumar"
+              class="profile-picture">
 
             <div class="icon-group">
-                <a href="mailto:anand.mohankumar@outlook.com" class="icon-circle glowing-btn hover-btn" target="_blank" rel="noopener noreferrer" style="--btn-glow-color: #C45A2A;" title="Email">
-                  <span class="inner-bg"></span>
-                  <span class="inner"></span>
-                  <span class="btn-text">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
-                      <path d="M0 3v18h24v-18h-24zm6.623 7.929l-4.623 5.712v-9.458l4.623 3.746zm-4.141-5.929h19.035l-9.517 7.713-9.518-7.713zm5.694 7.188l3.824 3.099 3.83-3.104 5.612 6.817h-18.779l5.513-6.812zm9.208-1.264l4.616-3.741v9.348l-4.616-5.607z"/>
-                    </svg>
-                  </span>
-                </a>
-                <a href="https://linkedin.com/in/anandmohankumar" class="icon-circle glowing-btn hover-btn" target="_blank" rel="noopener noreferrer" style="--btn-glow-color: #1F4F55;" title="LinkedIn">
-                  <span class="inner-bg"></span>
-                  <span class="inner"></span>
-                  <span class="btn-text">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
-                      <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
-                    </svg>
-                  </span>
-                </a>
-                <a href="https://github.com/Anand-Mohankumar" class="icon-circle glowing-btn hover-btn" target="_blank" rel="noopener noreferrer" style="--btn-glow-color: #818a8f;" title="GitHub">
-                  <span class="inner-bg"></span>
-                  <span class="inner"></span>
-                  <span class="btn-text">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
-                      <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-                    </svg>
-                  </span>
-                </a>
+              <a href="mailto:anand.mohankumar@outlook.com" class="icon-circle glowing-btn hover-btn" target="_blank"
+                rel="noopener noreferrer" style="--btn-glow-color: #C45A2A;" title="Email">
+                <span class="inner-bg"></span>
+                <span class="inner"></span>
+                <span class="btn-text">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                      d="M0 3v18h24v-18h-24zm6.623 7.929l-4.623 5.712v-9.458l4.623 3.746zm-4.141-5.929h19.035l-9.517 7.713-9.518-7.713zm5.694 7.188l3.824 3.099 3.83-3.104 5.612 6.817h-18.779l5.513-6.812zm9.208-1.264l4.616-3.741v9.348l-4.616-5.607z" />
+                  </svg>
+                </span>
+              </a>
+              <a href="https://linkedin.com/in/anandmohankumar" class="icon-circle glowing-btn hover-btn"
+                target="_blank" rel="noopener noreferrer" style="--btn-glow-color: #1F4F55;" title="LinkedIn">
+                <span class="inner-bg"></span>
+                <span class="inner"></span>
+                <span class="btn-text">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                      d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                  </svg>
+                </span>
+              </a>
+              <a href="https://github.com/Anand-Mohankumar" class="icon-circle glowing-btn hover-btn" target="_blank"
+                rel="noopener noreferrer" style="--btn-glow-color: #818a8f;" title="GitHub">
+                <span class="inner-bg"></span>
+                <span class="inner"></span>
+                <span class="btn-text">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                      d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                  </svg>
+                </span>
+              </a>
             </div>
 
             <div class="profile-name">Anand Mohankumar</div>
             <div class="profile-subtitle">Security and Compliance Professional</div>
-            
+
             <div style="margin-bottom: 16px; display: flex; justify-content: center;">
-              <a href="https://github.com/Anand-Mohankumar/Anand-Mohankumar/blob/main/Resume.pdf?raw=true" class="social-btn glowing-btn hover-btn" target="_blank" rel="noopener noreferrer" style="--btn-glow-color: #e62020; width: fit-content; padding-left: 20px; padding-right: 20px;">
+              <a href="https://github.com/Anand-Mohankumar/Anand-Mohankumar/blob/main/Resume.pdf?raw=true"
+                class="social-btn glowing-btn hover-btn" target="_blank" rel="noopener noreferrer"
+                style="--btn-glow-color: #e62020; width: fit-content; padding-left: 20px; padding-right: 20px;">
                 <span class="inner-bg"></span>
                 <span class="inner"></span>
                 <span class="btn-text">
                   <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"/>
+                    <path
+                      d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z" />
                   </svg>
                   Download Resume
                 </span>
               </a>
             </div>
             <div class="profile-description">
-              I help organizations build trust by connecting cybersecurity, compliance, and business operations. With over three years of hands-on experience in Security Operations, I've investigated incidents, managed vulnerabilities, and strengthened defenses that protect organizational assets. My background in EQS SecOps gives me a deep technical understanding of how threats emerge — and how to contain them quickly.
+              I help organizations build trust by connecting cybersecurity, compliance, and business operations. With
+              over three years of hands-on experience in Security Operations, I've investigated incidents, managed
+              vulnerabilities, and strengthened defenses that protect organizational assets. My background in EQS SecOps
+              gives me a deep technical understanding of how threats emerge — and how to contain them quickly.
             </div>
             <div class="profile-description">
-              Currently, as a Revenue Operations Analyst at EQS Group, I bridge the gap between security assurance and business enablement. I manage Due Diligence, and regulatory compliance initiatives, ensuring that every customer interaction aligns with our security and data protection standards. This cross-functional exposure has deepened my expertise in TPRM, ISMS frameworks, and product security governance.
+              Currently, as a Revenue Operations Analyst at EQS Group, I bridge the gap between security assurance and
+              business enablement. I manage Due Diligence, and regulatory compliance initiatives, ensuring that every
+              customer interaction aligns with our security and data protection standards. This cross-functional
+              exposure has deepened my expertise in TPRM, ISMS frameworks, and product security governance.
             </div>
             <div class="profile-description">
-              I'm passionate about uniting technical defense with organizational resilience — helping teams move beyond just detecting threats to building secure systems that earn customer confidence.
+              I'm passionate about uniting technical defense with organizational resilience — helping teams move beyond
+              just detecting threats to building secure systems that earn customer confidence.
             </div>
           </div>
         </div>
@@ -138,13 +168,19 @@
             <div class="card-title">Projects</div>
             <div class="card-controls">
               <div class="control-btn btn-minimize" title="Minimize">
-                <svg width="10" height="2" viewBox="0 0 10 2" fill="none"><rect width="10" height="2" rx="1" fill="currentColor"/></svg>
+                <svg width="10" height="2" viewBox="0 0 10 2" fill="none">
+                  <rect width="10" height="2" rx="1" fill="currentColor" />
+                </svg>
               </div>
               <div class="control-btn btn-maximize" title="Maximize">
-                <svg width="10" height="10" viewBox="0 0 10 10" fill="none"><rect x="0.5" y="0.5" width="9" height="9" rx="1.5" stroke="currentColor" stroke-width="1.5"/></svg>
+                <svg width="10" height="10" viewBox="0 0 10 10" fill="none">
+                  <rect x="0.5" y="0.5" width="9" height="9" rx="1.5" stroke="currentColor" stroke-width="1.5" />
+                </svg>
               </div>
               <div class="control-btn btn-close" title="Close">
-                <svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M1 1L9 9M9 1L1 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+                <svg width="10" height="10" viewBox="0 0 10 10" fill="none">
+                  <path d="M1 1L9 9M9 1L1 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                </svg>
               </div>
             </div>
           </div>
@@ -155,15 +191,18 @@
                 <div class="project-icon">📚</div>
                 <div class="project-title">Resources &<br>Knowledgebase</div>
               </div>
-              <div class="project-item" onclick="openInIframe('https://www.inoreader.com/stream/user/1005486907/tag/Infosec%20News/view/html?t=InfoSec%20Daily&l=https%3A%2F%2Fgithub.com%2FAnand-Mohankumar%2FAnand-Mohankumar%2Fblob%2Fmain%2FApp%2520Logo.png&lw=5&cs=m&c=0xe0e0e0&bc=0x0a141a&lh=5&lc=0xe56a40', 'InfoSec Daily', '📋')">
+              <div class="project-item"
+                onclick="openInIframe('https://www.inoreader.com/stream/user/1005486907/tag/Infosec%20News/view/html?t=InfoSec%20Daily&l=https%3A%2F%2Fgithub.com%2FAnand-Mohankumar%2FAnand-Mohankumar%2Fblob%2Fmain%2FApp%2520Logo.png&lw=5&cs=m&c=0xe0e0e0&bc=0x0a141a&lh=5&lc=0xe56a40', 'InfoSec Daily', '📋')">
                 <div class="project-icon">📋</div>
                 <div class="project-title">InfoSec Daily</div>
               </div>
-              <div class="project-item" onclick="window.open('https://github.com/Anand-Mohankumar/Anand-Mohankumar/blob/main/Resume.pdf?raw=true', '_blank')">
+              <div class="project-item"
+                onclick="window.open('https://github.com/Anand-Mohankumar/Anand-Mohankumar/blob/main/Resume.pdf?raw=true', '_blank')">
                 <div class="project-icon">📄</div>
                 <div class="project-title">Anand_Resume.pdf</div>
               </div>
-              <div class="project-item" onclick="window.open('https://www.credly.com/users/anandmohankumar/badges', '_blank')">
+              <div class="project-item"
+                onclick="window.open('https://www.credly.com/users/anandmohankumar/badges', '_blank')">
                 <div class="project-icon">📝</div>
                 <div class="project-title">Certifications.html</div>
               </div>
@@ -176,13 +215,19 @@
             <div class="card-title">Terminal</div>
             <div class="card-controls">
               <div class="control-btn btn-minimize" title="Minimize">
-                <svg width="10" height="2" viewBox="0 0 10 2" fill="none"><rect width="10" height="2" rx="1" fill="currentColor"/></svg>
+                <svg width="10" height="2" viewBox="0 0 10 2" fill="none">
+                  <rect width="10" height="2" rx="1" fill="currentColor" />
+                </svg>
               </div>
               <div class="control-btn btn-maximize" title="Maximize">
-                <svg width="10" height="10" viewBox="0 0 10 10" fill="none"><rect x="0.5" y="0.5" width="9" height="9" rx="1.5" stroke="currentColor" stroke-width="1.5"/></svg>
+                <svg width="10" height="10" viewBox="0 0 10 10" fill="none">
+                  <rect x="0.5" y="0.5" width="9" height="9" rx="1.5" stroke="currentColor" stroke-width="1.5" />
+                </svg>
               </div>
               <div class="control-btn btn-close" title="Close">
-                <svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M1 1L9 9M9 1L1 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+                <svg width="10" height="10" viewBox="0 0 10 10" fill="none">
+                  <path d="M1 1L9 9M9 1L1 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                </svg>
               </div>
             </div>
           </div>
@@ -194,7 +239,8 @@
               <div class="terminal-line">└─ Revenue Operations Analyst (Security & Compliance) - EQS Group</div>
               <div class="terminal-line">└─ Associate Engineer - Information Security - EQS Group</div>
               <div class="terminal-line">&nbsp;&nbsp;&nbsp;└─ 3+ years in Security Operations</div>
-              <div class="terminal-line"><span class="terminal-prompt">anand@cybramo:~$</span> ls -la certifications/</div>
+              <div class="terminal-line"><span class="terminal-prompt">anand@cybramo:~$</span> ls -la certifications/
+              </div>
               <div class="terminal-line">├── ISC2 Certified in Cybersecurity (CC)</div>
               <div class="terminal-line">├── Cyber Threat Hunting Level 1</div>
               <div class="terminal-line">├── SOC Analyst Level 1</div>
@@ -202,8 +248,8 @@
               <div class="terminal-line"><span class="terminal-prompt">anand@cybramo:~$</span> echo $INTERESTS</div>
               <div class="terminal-line">CTF | OSINT | Threat Hunting</div>
               <div class="terminal-line" id="terminalInputLine">
-                  <span class="terminal-prompt">anand@cybramo:~$</span>
-                  <input type="text" id="termInput" autocomplete="off" spellcheck="false" autofocus>
+                <span class="terminal-prompt">anand@cybramo:~$</span>
+                <input type="text" id="termInput" autocomplete="off" spellcheck="false" autofocus>
               </div>
             </div>
           </div>
@@ -214,18 +260,24 @@
             <div class="card-title">Resources and Knowledgebase</div>
             <div class="card-controls">
               <div class="control-btn btn-minimize" title="Minimize">
-                <svg width="10" height="2" viewBox="0 0 10 2" fill="none"><rect width="10" height="2" rx="1" fill="currentColor"/></svg>
+                <svg width="10" height="2" viewBox="0 0 10 2" fill="none">
+                  <rect width="10" height="2" rx="1" fill="currentColor" />
+                </svg>
               </div>
               <div class="control-btn btn-maximize" title="Maximize">
-                <svg width="10" height="10" viewBox="0 0 10 10" fill="none"><rect x="0.5" y="0.5" width="9" height="9" rx="1.5" stroke="currentColor" stroke-width="1.5"/></svg>
+                <svg width="10" height="10" viewBox="0 0 10 10" fill="none">
+                  <rect x="0.5" y="0.5" width="9" height="9" rx="1.5" stroke="currentColor" stroke-width="1.5" />
+                </svg>
               </div>
               <div class="control-btn btn-close" title="Close">
-                <svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M1 1L9 9M9 1L1 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+                <svg width="10" height="10" viewBox="0 0 10 10" fill="none">
+                  <path d="M1 1L9 9M9 1L1 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                </svg>
               </div>
             </div>
           </div>
           <div class="card-content">
-            
+
             <div class="resource-hero-grid">
               <div class="resource-hero-card" onclick="showView('labs')">
                 <div class="res-icon">🔬</div>
@@ -253,10 +305,11 @@
             </div>
 
             <div class="section-header">Latest Articles</div>
-            
+
             <div class="article-list">
-              
-              <div class="article-item" onclick="openInIframe('https://cyberamo.work/labs-research-and-ctf/lecture-notes/linux-fundamentals/', 'Linux Fundamentals', '🐧')">
+
+              <div class="article-item"
+                onclick="openInIframe('https://cyberamo.work/labs-research-and-ctf/lecture-notes/linux-fundamentals/', 'Linux Fundamentals', '🐧')">
                 <div class="art-thumb">🐧</div>
                 <div class="art-info">
                   <div class="art-title">Linux Fundamentals</div>
@@ -265,7 +318,8 @@
                 <div class="art-arrow">→</div>
               </div>
 
-              <div class="article-item" onclick="openInIframe('https://cyberamo.work/labs-research-and-ctf/lecture-notes/networking-fundamentals/', 'Networking Fundamentals', '📄')">
+              <div class="article-item"
+                onclick="openInIframe('https://cyberamo.work/labs-research-and-ctf/lecture-notes/networking-fundamentals/', 'Networking Fundamentals', '📄')">
                 <div class="art-thumb">📄</div>
                 <div class="art-info">
                   <div class="art-title">Networking Fundamentals</div>
@@ -283,13 +337,19 @@
             <div class="card-title">Labs, Research & CTF</div>
             <div class="card-controls">
               <div class="control-btn btn-minimize" title="Minimize">
-                <svg width="10" height="2" viewBox="0 0 10 2" fill="none"><rect width="10" height="2" rx="1" fill="currentColor"/></svg>
+                <svg width="10" height="2" viewBox="0 0 10 2" fill="none">
+                  <rect width="10" height="2" rx="1" fill="currentColor" />
+                </svg>
               </div>
               <div class="control-btn btn-maximize" title="Maximize">
-                <svg width="10" height="10" viewBox="0 0 10 10" fill="none"><rect x="0.5" y="0.5" width="9" height="9" rx="1.5" stroke="currentColor" stroke-width="1.5"/></svg>
+                <svg width="10" height="10" viewBox="0 0 10 10" fill="none">
+                  <rect x="0.5" y="0.5" width="9" height="9" rx="1.5" stroke="currentColor" stroke-width="1.5" />
+                </svg>
               </div>
               <div class="control-btn btn-close" title="Close">
-                <svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M1 1L9 9M9 1L1 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+                <svg width="10" height="10" viewBox="0 0 10 10" fill="none">
+                  <path d="M1 1L9 9M9 1L1 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                </svg>
               </div>
             </div>
           </div>
@@ -321,9 +381,10 @@
             </div>
 
             <div class="section-header">Latest Articles</div>
-            
+
             <div class="article-list">
-              <div class="article-item" onclick="openInIframe('https://cyberamo.work/labs-research-and-ctf/lecture-notes/linux-fundamentals/', 'Linux Fundamentals', '🐧')">
+              <div class="article-item"
+                onclick="openInIframe('https://cyberamo.work/labs-research-and-ctf/lecture-notes/linux-fundamentals/', 'Linux Fundamentals', '🐧')">
                 <div class="art-thumb">🐧</div>
                 <div class="art-info">
                   <div class="art-title">Linux Fundamentals</div>
@@ -332,7 +393,8 @@
                 <div class="art-arrow">→</div>
               </div>
 
-              <div class="article-item" onclick="openInIframe('https://cyberamo.work/labs-research-and-ctf/lecture-notes/networking-fundamentals/', 'Networking Fundamentals', '📄')">
+              <div class="article-item"
+                onclick="openInIframe('https://cyberamo.work/labs-research-and-ctf/lecture-notes/networking-fundamentals/', 'Networking Fundamentals', '📄')">
                 <div class="art-thumb">📄</div>
                 <div class="art-info">
                   <div class="art-title">Networking Fundamentals</div>
@@ -349,19 +411,26 @@
             <div class="card-title">Lecture Notes</div>
             <div class="card-controls">
               <div class="control-btn btn-minimize" title="Minimize">
-                <svg width="10" height="2" viewBox="0 0 10 2" fill="none"><rect width="10" height="2" rx="1" fill="currentColor"/></svg>
+                <svg width="10" height="2" viewBox="0 0 10 2" fill="none">
+                  <rect width="10" height="2" rx="1" fill="currentColor" />
+                </svg>
               </div>
               <div class="control-btn btn-maximize" title="Maximize">
-                <svg width="10" height="10" viewBox="0 0 10 10" fill="none"><rect x="0.5" y="0.5" width="9" height="9" rx="1.5" stroke="currentColor" stroke-width="1.5"/></svg>
+                <svg width="10" height="10" viewBox="0 0 10 10" fill="none">
+                  <rect x="0.5" y="0.5" width="9" height="9" rx="1.5" stroke="currentColor" stroke-width="1.5" />
+                </svg>
               </div>
               <div class="control-btn btn-close" title="Close">
-                <svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M1 1L9 9M9 1L1 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+                <svg width="10" height="10" viewBox="0 0 10 10" fill="none">
+                  <path d="M1 1L9 9M9 1L1 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                </svg>
               </div>
             </div>
           </div>
           <div class="card-content">
             <div class="resource-hero-grid" style="grid-template-columns: repeat(2, 1fr);">
-              <div class="resource-hero-card" onclick="openInIframe('https://cyberamo.work/labs-research-and-ctf/lecture-notes/networking-fundamentals/', 'Networking Fundamentals', '📡')">
+              <div class="resource-hero-card"
+                onclick="openInIframe('https://cyberamo.work/labs-research-and-ctf/lecture-notes/networking-fundamentals/', 'Networking Fundamentals', '📡')">
                 <div class="res-icon">📡</div>
                 <div class="res-title">Networking Fundamentals</div>
                 <div class="res-desc">
@@ -369,7 +438,8 @@
                 </div>
               </div>
 
-              <div class="resource-hero-card" onclick="openInIframe('https://cyberamo.work/labs-research-and-ctf/lecture-notes/linux-fundamentals/', 'Linux Fundamentals', '🐧')">
+              <div class="resource-hero-card"
+                onclick="openInIframe('https://cyberamo.work/labs-research-and-ctf/lecture-notes/linux-fundamentals/', 'Linux Fundamentals', '🐧')">
                 <div class="res-icon">🐧</div>
                 <div class="res-title">Linux Fundamentals</div>
                 <div class="res-desc">
@@ -379,9 +449,10 @@
             </div>
 
             <div class="section-header">Latest Articles</div>
-            
+
             <div class="article-list">
-              <div class="article-item" onclick="openInIframe('https://cyberamo.work/labs-research-and-ctf/lecture-notes/linux-fundamentals/', 'Linux Fundamentals', '🐧')">
+              <div class="article-item"
+                onclick="openInIframe('https://cyberamo.work/labs-research-and-ctf/lecture-notes/linux-fundamentals/', 'Linux Fundamentals', '🐧')">
                 <div class="art-thumb">🐧</div>
                 <div class="art-info">
                   <div class="art-title">Linux Fundamentals</div>
@@ -390,7 +461,8 @@
                 <div class="art-arrow">→</div>
               </div>
 
-              <div class="article-item" onclick="openInIframe('https://cyberamo.work/labs-research-and-ctf/lecture-notes/networking-fundamentals/', 'Networking Fundamentals', '📄')">
+              <div class="article-item"
+                onclick="openInIframe('https://cyberamo.work/labs-research-and-ctf/lecture-notes/networking-fundamentals/', 'Networking Fundamentals', '📄')">
                 <div class="art-thumb">📄</div>
                 <div class="art-info">
                   <div class="art-title">Networking Fundamentals</div>
@@ -407,13 +479,19 @@
             <div class="card-title">AI & Automation</div>
             <div class="card-controls">
               <div class="control-btn btn-minimize" title="Minimize">
-                <svg width="10" height="2" viewBox="0 0 10 2" fill="none"><rect width="10" height="2" rx="1" fill="currentColor"/></svg>
+                <svg width="10" height="2" viewBox="0 0 10 2" fill="none">
+                  <rect width="10" height="2" rx="1" fill="currentColor" />
+                </svg>
               </div>
               <div class="control-btn btn-maximize" title="Maximize">
-                <svg width="10" height="10" viewBox="0 0 10 10" fill="none"><rect x="0.5" y="0.5" width="9" height="9" rx="1.5" stroke="currentColor" stroke-width="1.5"/></svg>
+                <svg width="10" height="10" viewBox="0 0 10 10" fill="none">
+                  <rect x="0.5" y="0.5" width="9" height="9" rx="1.5" stroke="currentColor" stroke-width="1.5" />
+                </svg>
               </div>
               <div class="control-btn btn-close" title="Close">
-                <svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M1 1L9 9M9 1L1 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+                <svg width="10" height="10" viewBox="0 0 10 10" fill="none">
+                  <path d="M1 1L9 9M9 1L1 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                </svg>
               </div>
             </div>
           </div>
@@ -437,9 +515,10 @@
             </div>
 
             <div class="section-header">Latest Articles</div>
-            
+
             <div class="article-list">
-              <div class="article-item" onclick="openInIframe('https://cyberamo.work/labs-research-and-ctf/lecture-notes/linux-fundamentals/', 'Linux Fundamentals', '🐧')">
+              <div class="article-item"
+                onclick="openInIframe('https://cyberamo.work/labs-research-and-ctf/lecture-notes/linux-fundamentals/', 'Linux Fundamentals', '🐧')">
                 <div class="art-thumb">🐧</div>
                 <div class="art-info">
                   <div class="art-title">Linux Fundamentals</div>
@@ -448,7 +527,8 @@
                 <div class="art-arrow">→</div>
               </div>
 
-              <div class="article-item" onclick="openInIframe('https://cyberamo.work/labs-research-and-ctf/lecture-notes/networking-fundamentals/', 'Networking Fundamentals', '📄')">
+              <div class="article-item"
+                onclick="openInIframe('https://cyberamo.work/labs-research-and-ctf/lecture-notes/networking-fundamentals/', 'Networking Fundamentals', '📄')">
                 <div class="art-thumb">📄</div>
                 <div class="art-info">
                   <div class="art-title">Networking Fundamentals</div>
@@ -465,19 +545,26 @@
             <div class="card-title">Infographics</div>
             <div class="card-controls">
               <div class="control-btn btn-minimize" title="Minimize">
-                <svg width="10" height="2" viewBox="0 0 10 2" fill="none"><rect width="10" height="2" rx="1" fill="currentColor"/></svg>
+                <svg width="10" height="2" viewBox="0 0 10 2" fill="none">
+                  <rect width="10" height="2" rx="1" fill="currentColor" />
+                </svg>
               </div>
               <div class="control-btn btn-maximize" title="Maximize">
-                <svg width="10" height="10" viewBox="0 0 10 10" fill="none"><rect x="0.5" y="0.5" width="9" height="9" rx="1.5" stroke="currentColor" stroke-width="1.5"/></svg>
+                <svg width="10" height="10" viewBox="0 0 10 10" fill="none">
+                  <rect x="0.5" y="0.5" width="9" height="9" rx="1.5" stroke="currentColor" stroke-width="1.5" />
+                </svg>
               </div>
               <div class="control-btn btn-close" title="Close">
-                <svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M1 1L9 9M9 1L1 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+                <svg width="10" height="10" viewBox="0 0 10 10" fill="none">
+                  <path d="M1 1L9 9M9 1L1 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                </svg>
               </div>
             </div>
           </div>
           <div class="card-content">
-            
-            <div style="margin-bottom: 24px; text-align: center; color: rgba(255,255,255,0.7); font-size: 14px; background: rgba(80, 250, 123, 0.1); border: 1px solid rgba(80, 250, 123, 0.2); padding: 10px; border-radius: 8px;">
+
+            <div
+              style="margin-bottom: 24px; text-align: center; color: rgba(255,255,255,0.7); font-size: 14px; background: rgba(80, 250, 123, 0.1); border: 1px solid rgba(80, 250, 123, 0.2); padding: 10px; border-radius: 8px;">
               ℹ️ Select a folder to view the infographics inside.
             </div>
 
@@ -500,9 +587,10 @@
             </div>
 
             <div class="section-header">Latest Articles</div>
-            
+
             <div class="article-list">
-              <div class="article-item" onclick="openInIframe('https://cyberamo.work/labs-research-and-ctf/lecture-notes/linux-fundamentals/', 'Linux Fundamentals', '🐧')">
+              <div class="article-item"
+                onclick="openInIframe('https://cyberamo.work/labs-research-and-ctf/lecture-notes/linux-fundamentals/', 'Linux Fundamentals', '🐧')">
                 <div class="art-thumb">🐧</div>
                 <div class="art-info">
                   <div class="art-title">Linux Fundamentals</div>
@@ -511,7 +599,8 @@
                 <div class="art-arrow">→</div>
               </div>
 
-              <div class="article-item" onclick="openInIframe('https://cyberamo.work/labs-research-and-ctf/lecture-notes/networking-fundamentals/', 'Networking Fundamentals', '📄')">
+              <div class="article-item"
+                onclick="openInIframe('https://cyberamo.work/labs-research-and-ctf/lecture-notes/networking-fundamentals/', 'Networking Fundamentals', '📄')">
                 <div class="art-thumb">📄</div>
                 <div class="art-info">
                   <div class="art-title">Networking Fundamentals</div>
@@ -528,49 +617,68 @@
             <div class="card-title">AI Fundamentals</div>
             <div class="card-controls">
               <div class="control-btn btn-minimize" title="Minimize">
-                <svg width="10" height="2" viewBox="0 0 10 2" fill="none"><rect width="10" height="2" rx="1" fill="currentColor"/></svg>
+                <svg width="10" height="2" viewBox="0 0 10 2" fill="none">
+                  <rect width="10" height="2" rx="1" fill="currentColor" />
+                </svg>
               </div>
               <div class="control-btn btn-maximize" title="Maximize">
-                <svg width="10" height="10" viewBox="0 0 10 10" fill="none"><rect x="0.5" y="0.5" width="9" height="9" rx="1.5" stroke="currentColor" stroke-width="1.5"/></svg>
+                <svg width="10" height="10" viewBox="0 0 10 10" fill="none">
+                  <rect x="0.5" y="0.5" width="9" height="9" rx="1.5" stroke="currentColor" stroke-width="1.5" />
+                </svg>
               </div>
               <div class="control-btn btn-close" title="Close">
-                <svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M1 1L9 9M9 1L1 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+                <svg width="10" height="10" viewBox="0 0 10 10" fill="none">
+                  <path d="M1 1L9 9M9 1L1 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                </svg>
               </div>
             </div>
           </div>
           <div class="card-content">
-            <div style="margin-bottom: 24px; text-align: center; color: rgba(255,255,255,0.7); font-size: 14px; background: rgba(80, 250, 123, 0.1); border: 1px solid rgba(80, 250, 123, 0.2); padding: 10px; border-radius: 8px;">
+            <div
+              style="margin-bottom: 24px; text-align: center; color: rgba(255,255,255,0.7); font-size: 14px; background: rgba(80, 250, 123, 0.1); border: 1px solid rgba(80, 250, 123, 0.2); padding: 10px; border-radius: 8px;">
               ℹ️ Tip: Click thumbnail to view full size. Right click and download the original image for use.
             </div>
 
             <div class="infographic-grid">
-              <div class="infographic-item" onclick="window.open('https://github.com/Anand-Mohankumar/Portfolio/blob/main/infographics/AI%20Core%20concepts.png?raw=true', '_blank')">
-                <img src="infographics/thumbnails/AI%20Core%20concepts.png" alt="AI Core concepts" class="infographic-thumb">
+              <div class="infographic-item"
+                onclick="window.open('https://github.com/Anand-Mohankumar/Portfolio/blob/main/infographics/AI%20Core%20concepts.png?raw=true', '_blank')">
+                <img src="infographics/thumbnails/AI%20Core%20concepts.png" alt="AI Core concepts"
+                  class="infographic-thumb">
                 <div class="infographic-caption">AI Core concepts</div>
               </div>
 
-              <div class="infographic-item" onclick="window.open('https://github.com/Anand-Mohankumar/Portfolio/blob/main/infographics/AI%20model%20selection%20overview.png?raw=true', '_blank')">
-                <img src="infographics/thumbnails/AI%20model%20selection%20overview.png" alt="AI model selection overview" class="infographic-thumb">
+              <div class="infographic-item"
+                onclick="window.open('https://github.com/Anand-Mohankumar/Portfolio/blob/main/infographics/AI%20model%20selection%20overview.png?raw=true', '_blank')">
+                <img src="infographics/thumbnails/AI%20model%20selection%20overview.png"
+                  alt="AI model selection overview" class="infographic-thumb">
                 <div class="infographic-caption">AI model selection overview</div>
               </div>
 
-              <div class="infographic-item" onclick="window.open('https://github.com/Anand-Mohankumar/Portfolio/blob/main/infographics/Context%20window%20perspectives.png?raw=true', '_blank')">
-                <img src="infographics/thumbnails/Context%20window%20perspectives.png" alt="Context window perspectives" class="infographic-thumb">
+              <div class="infographic-item"
+                onclick="window.open('https://github.com/Anand-Mohankumar/Portfolio/blob/main/infographics/Context%20window%20perspectives.png?raw=true', '_blank')">
+                <img src="infographics/thumbnails/Context%20window%20perspectives.png" alt="Context window perspectives"
+                  class="infographic-thumb">
                 <div class="infographic-caption">Context window perspectives</div>
               </div>
 
-              <div class="infographic-item" onclick="window.open('https://github.com/Anand-Mohankumar/Portfolio/blob/main/infographics/Expert%20AI%20Prompting%20Guide%20Infographic.png?raw=true', '_blank')">
-                <img src="infographics/thumbnails/Expert%20AI%20Prompting%20Guide%20Infographic.png" alt="Expert AI Prompting Guide" class="infographic-thumb">
+              <div class="infographic-item"
+                onclick="window.open('https://github.com/Anand-Mohankumar/Portfolio/blob/main/infographics/Expert%20AI%20Prompting%20Guide%20Infographic.png?raw=true', '_blank')">
+                <img src="infographics/thumbnails/Expert%20AI%20Prompting%20Guide%20Infographic.png"
+                  alt="Expert AI Prompting Guide" class="infographic-thumb">
                 <div class="infographic-caption">Expert AI Prompting Guide</div>
               </div>
 
-              <div class="infographic-item" onclick="window.open('https://github.com/Anand-Mohankumar/Portfolio/blob/main/infographics/Mastering%20AI_%20A%2030-Day%20Guide.png?raw=true', '_blank')">
-                <img src="infographics/thumbnails/Mastering%20AI_%20A%2030-Day%20Guide.png" alt="Mastering AI: A 30-Day Guide" class="infographic-thumb">
+              <div class="infographic-item"
+                onclick="window.open('https://github.com/Anand-Mohankumar/Portfolio/blob/main/infographics/Mastering%20AI_%20A%2030-Day%20Guide.png?raw=true', '_blank')">
+                <img src="infographics/thumbnails/Mastering%20AI_%20A%2030-Day%20Guide.png"
+                  alt="Mastering AI: A 30-Day Guide" class="infographic-thumb">
                 <div class="infographic-caption">Mastering AI: A 30-Day Guide</div>
               </div>
 
-              <div class="infographic-item" onclick="window.open('https://github.com/Anand-Mohankumar/Portfolio/blob/913a894187a6203b1ba002d647bec670faf69b8c/infographics/Prompting%20Techniques.png?raw=true', '_blank')">
-                <img src="infographics/thumbnails/Prompting%20Techniques.png" alt="Prompting Techniques" class="infographic-thumb">
+              <div class="infographic-item"
+                onclick="window.open('https://github.com/Anand-Mohankumar/Portfolio/blob/913a894187a6203b1ba002d647bec670faf69b8c/infographics/Prompting%20Techniques.png?raw=true', '_blank')">
+                <img src="infographics/thumbnails/Prompting%20Techniques.png" alt="Prompting Techniques"
+                  class="infographic-thumb">
                 <div class="infographic-caption">Prompting Techniques</div>
               </div>
             </div>
@@ -582,38 +690,50 @@
             <div class="card-title">AI Advanced</div>
             <div class="card-controls">
               <div class="control-btn btn-minimize" title="Minimize">
-                <svg width="10" height="2" viewBox="0 0 10 2" fill="none"><rect width="10" height="2" rx="1" fill="currentColor"/></svg>
+                <svg width="10" height="2" viewBox="0 0 10 2" fill="none">
+                  <rect width="10" height="2" rx="1" fill="currentColor" />
+                </svg>
               </div>
               <div class="control-btn btn-maximize" title="Maximize">
-                <svg width="10" height="10" viewBox="0 0 10 10" fill="none"><rect x="0.5" y="0.5" width="9" height="9" rx="1.5" stroke="currentColor" stroke-width="1.5"/></svg>
+                <svg width="10" height="10" viewBox="0 0 10 10" fill="none">
+                  <rect x="0.5" y="0.5" width="9" height="9" rx="1.5" stroke="currentColor" stroke-width="1.5" />
+                </svg>
               </div>
               <div class="control-btn btn-close" title="Close">
-                <svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M1 1L9 9M9 1L1 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+                <svg width="10" height="10" viewBox="0 0 10 10" fill="none">
+                  <path d="M1 1L9 9M9 1L1 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                </svg>
               </div>
             </div>
           </div>
           <div class="card-content">
-            <div style="margin-bottom: 24px; text-align: center; color: rgba(255,255,255,0.7); font-size: 14px; background: rgba(80, 250, 123, 0.1); border: 1px solid rgba(80, 250, 123, 0.2); padding: 10px; border-radius: 8px;">
+            <div
+              style="margin-bottom: 24px; text-align: center; color: rgba(255,255,255,0.7); font-size: 14px; background: rgba(80, 250, 123, 0.1); border: 1px solid rgba(80, 250, 123, 0.2); padding: 10px; border-radius: 8px;">
               ℹ️ Tip: Click thumbnail to view full size. Right click and download the original image for use.
             </div>
 
             <div class="infographic-grid">
-              <div class="infographic-item" onclick="window.open('https://github.com/Anand-Mohankumar/Portfolio/blob/f3f9e21bee895d31ee629133cab291f273664384/infographics/2025%20AI%20Mastery%20Roadmap%20Infographic.png?raw=true', '_blank')">
-                <img src="infographics/thumbnails/2025%20AI%20Mastery%20Roadmap%20Infographic.png" alt="2025 AI Mastery Roadmap Infographic" class="infographic-thumb">
+              <div class="infographic-item"
+                onclick="window.open('https://github.com/Anand-Mohankumar/Portfolio/blob/f3f9e21bee895d31ee629133cab291f273664384/infographics/2025%20AI%20Mastery%20Roadmap%20Infographic.png?raw=true', '_blank')">
+                <img src="infographics/thumbnails/2025%20AI%20Mastery%20Roadmap%20Infographic.png"
+                  alt="2025 AI Mastery Roadmap Infographic" class="infographic-thumb">
                 <div class="infographic-caption">2025 AI Mastery Roadmap Infographic</div>
               </div>
 
-              <div class="infographic-item" onclick="window.open('https://github.com/Anand-Mohankumar/Portfolio/blob/main/infographics/MCP%20Explained.png?raw=true', '_blank')">
+              <div class="infographic-item"
+                onclick="window.open('https://github.com/Anand-Mohankumar/Portfolio/blob/main/infographics/MCP%20Explained.png?raw=true', '_blank')">
                 <img src="infographics/thumbnails/MCP%20Explained.png" alt="MCP Explained" class="infographic-thumb">
                 <div class="infographic-caption">MCP Explained</div>
               </div>
 
-              <div class="infographic-item" onclick="window.open('https://github.com/Anand-Mohankumar/Portfolio/blob/main/infographics/RAG%20explained1.png?raw=true', '_blank')">
+              <div class="infographic-item"
+                onclick="window.open('https://github.com/Anand-Mohankumar/Portfolio/blob/main/infographics/RAG%20explained1.png?raw=true', '_blank')">
                 <img src="infographics/thumbnails/RAG%20explained1.png" alt="RAG explained1" class="infographic-thumb">
                 <div class="infographic-caption">RAG explained1</div>
               </div>
 
-              <div class="infographic-item" onclick="window.open('https://github.com/Anand-Mohankumar/Portfolio/blob/main/infographics/RAG%20explained2.png?raw=true', '_blank')">
+              <div class="infographic-item"
+                onclick="window.open('https://github.com/Anand-Mohankumar/Portfolio/blob/main/infographics/RAG%20explained2.png?raw=true', '_blank')">
                 <img src="infographics/thumbnails/RAG%20explained2.png" alt="RAG explained2" class="infographic-thumb">
                 <div class="infographic-caption">RAG explained2</div>
               </div>
@@ -626,63 +746,69 @@
             <div class="card-title">Skills</div>
             <div class="card-controls">
               <div class="control-btn btn-minimize" title="Minimize">
-                <svg width="10" height="2" viewBox="0 0 10 2" fill="none"><rect width="10" height="2" rx="1" fill="currentColor"/></svg>
+                <svg width="10" height="2" viewBox="0 0 10 2" fill="none">
+                  <rect width="10" height="2" rx="1" fill="currentColor" />
+                </svg>
               </div>
               <div class="control-btn btn-maximize" title="Maximize">
-                <svg width="10" height="10" viewBox="0 0 10 10" fill="none"><rect x="0.5" y="0.5" width="9" height="9" rx="1.5" stroke="currentColor" stroke-width="1.5"/></svg>
+                <svg width="10" height="10" viewBox="0 0 10 10" fill="none">
+                  <rect x="0.5" y="0.5" width="9" height="9" rx="1.5" stroke="currentColor" stroke-width="1.5" />
+                </svg>
               </div>
               <div class="control-btn btn-close" title="Close">
-                <svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M1 1L9 9M9 1L1 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+                <svg width="10" height="10" viewBox="0 0 10 10" fill="none">
+                  <path d="M1 1L9 9M9 1L1 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                </svg>
               </div>
             </div>
           </div>
           <div class="card-content skills-section">
             <h3>Industry Knowledge</h3>
             <div class="skill-tags">
-              <div class="skill-tag">Security Incident Management</div>
-              <div class="skill-tag">OSINT</div>
-              <div class="skill-tag">Cloud Computing</div>
-              <div class="skill-tag">OWASP</div>
-              <div class="skill-tag">Monitoring and Investigation</div>
-              <div class="skill-tag">Networking concepts</div>
-              <div class="skill-tag">Vulnerability Management</div>
-              <div class="skill-tag">Log Analysis</div>
-              <div class="skill-tag">Compliance Frameworks</div>
-              <div class="skill-tag">Cyber Security</div>
-              <div class="skill-tag">TCP/IP</div>
-              <div class="skill-tag">TPRM</div>
-              <div class="skill-tag">SCRM</div>
+              <div class="skill-tag hover-btn">Security Incident Management</div>
+              <div class="skill-tag hover-btn">OSINT</div>
+              <div class="skill-tag hover-btn">Cloud Computing</div>
+              <div class="skill-tag hover-btn">OWASP</div>
+              <div class="skill-tag hover-btn">Monitoring and Investigation</div>
+              <div class="skill-tag hover-btn">Networking concepts</div>
+              <div class="skill-tag hover-btn">Vulnerability Management</div>
+              <div class="skill-tag hover-btn">Log Analysis</div>
+              <div class="skill-tag hover-btn">Compliance Frameworks</div>
+              <div class="skill-tag hover-btn">Cyber Security</div>
+              <div class="skill-tag hover-btn">TCP/IP</div>
+              <div class="skill-tag hover-btn">TPRM</div>
+              <div class="skill-tag hover-btn">SCRM</div>
             </div>
-            
+
             <h3>Tools and Technologies</h3>
             <div class="skill-tags">
-              <div class="skill-tag">Wazuh</div>
-              <div class="skill-tag">EDR</div>
-              <div class="skill-tag">XDR</div>
-              <div class="skill-tag">SIEM</div>
-              <div class="skill-tag">Splunk</div>
-              <div class="skill-tag">AWS</div>
-              <div class="skill-tag">Linux</div>
-              <div class="skill-tag">Nmap</div>
-              <div class="skill-tag">OpenVAS</div>
-              <div class="skill-tag">ZAP</div>
-              <div class="skill-tag">MITRE ATT&CK</div>
-              <div class="skill-tag">Active Directory</div>
-              <div class="skill-tag">Email Forensics</div>
-              <div class="skill-tag">Wireshark</div>
+              <div class="skill-tag hover-btn">Wazuh</div>
+              <div class="skill-tag hover-btn">EDR</div>
+              <div class="skill-tag hover-btn">XDR</div>
+              <div class="skill-tag hover-btn">SIEM</div>
+              <div class="skill-tag hover-btn">Splunk</div>
+              <div class="skill-tag hover-btn">AWS</div>
+              <div class="skill-tag hover-btn">Linux</div>
+              <div class="skill-tag hover-btn">Nmap</div>
+              <div class="skill-tag hover-btn">OpenVAS</div>
+              <div class="skill-tag hover-btn">ZAP</div>
+              <div class="skill-tag hover-btn">MITRE ATT&CK</div>
+              <div class="skill-tag hover-btn">Active Directory</div>
+              <div class="skill-tag hover-btn">Email Forensics</div>
+              <div class="skill-tag hover-btn">Wireshark</div>
             </div>
-            
+
             <h3>Interpersonal Skills</h3>
             <div class="skill-tags">
-              <div class="skill-tag">Communication</div>
-              <div class="skill-tag">Problem Solving</div>
+              <div class="skill-tag hover-btn">Communication</div>
+              <div class="skill-tag hover-btn">Problem Solving</div>
             </div>
-            
+
             <h3>Interests</h3>
             <div class="skill-tags">
-              <div class="skill-tag">CTF</div>
-              <div class="skill-tag">OSINT</div>
-              <div class="skill-tag">Threat Hunting</div>
+              <div class="skill-tag hover-btn">CTF</div>
+              <div class="skill-tag hover-btn">OSINT</div>
+              <div class="skill-tag hover-btn">Threat Hunting</div>
             </div>
           </div>
         </div>
@@ -692,45 +818,54 @@
             <div class="card-title" id="iframeTitle">Content</div>
             <div class="card-controls">
               <div class="control-btn btn-minimize" title="Minimize">
-                <svg width="10" height="2" viewBox="0 0 10 2" fill="none"><rect width="10" height="2" rx="1" fill="currentColor"/></svg>
+                <svg width="10" height="2" viewBox="0 0 10 2" fill="none">
+                  <rect width="10" height="2" rx="1" fill="currentColor" />
+                </svg>
               </div>
               <div class="control-btn btn-maximize" title="Maximize">
-                <svg width="10" height="10" viewBox="0 0 10 10" fill="none"><rect x="0.5" y="0.5" width="9" height="9" rx="1.5" stroke="currentColor" stroke-width="1.5"/></svg>
+                <svg width="10" height="10" viewBox="0 0 10 10" fill="none">
+                  <rect x="0.5" y="0.5" width="9" height="9" rx="1.5" stroke="currentColor" stroke-width="1.5" />
+                </svg>
               </div>
               <div class="control-btn btn-close" onclick="closeIframe()" title="Close">
-                <svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M1 1L9 9M9 1L1 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+                <svg width="10" height="10" viewBox="0 0 10 10" fill="none">
+                  <path d="M1 1L9 9M9 1L1 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                </svg>
               </div>
             </div>
           </div>
           <div class="card-content" style="padding: 0; flex: 1;">
-            <iframe id="contentIframe" style="width: 100%; height: 100%; border: none; border-radius: 0 0 16px 16px;"></iframe>
+            <iframe id="contentIframe"
+              style="width: 100%; height: 100%; border: none; border-radius: 0 0 16px 16px;"></iframe>
           </div>
         </div>
       </div>
     </div>
-    
+
     <div class="sidebar dock-hidden">
-      <div class="sidebar-item dock-item-hidden active" data-view="home" title="Home">
+      <div class="sidebar-item dock-item-hidden hover-btn active" data-view="home" title="Home">
         <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
-          <polyline points="9 22 9 12 15 12 15 22"/>
+          <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+          <polyline points="9 22 9 12 15 12 15 22" />
         </svg>
       </div>
-      <div class="sidebar-item dock-item-hidden" data-view="projects" title="Projects">
+      <div class="sidebar-item dock-item-hidden hover-btn" data-view="projects" title="Projects">
         <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <rect x="2" y="7" width="20" height="14" rx="2" ry="2"/>
-          <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/>
+          <rect x="2" y="7" width="20" height="14" rx="2" ry="2" />
+          <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" />
         </svg>
       </div>
-      <div class="sidebar-item dock-item-hidden" data-view="skills" title="Skills">
-        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
+      <div class="sidebar-item dock-item-hidden hover-btn" data-view="skills" title="Skills">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+          stroke-linecap="round" stroke-linejoin="round">
+          <path
+            d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z" />
         </svg>
       </div>
-      <div class="sidebar-item dock-item-hidden" data-view="terminal" title="Terminal">
+      <div class="sidebar-item dock-item-hidden hover-btn" data-view="terminal" title="Terminal">
         <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <polyline points="4 17 10 11 4 5"/>
-          <line x1="12" y1="19" x2="20" y2="19"/>
+          <polyline points="4 17 10 11 4 5" />
+          <line x1="12" y1="19" x2="20" y2="19" />
         </svg>
       </div>
     </div>
@@ -738,4 +873,5 @@
 
   <script src="script.js"></script>
 </body>
+
 </html>

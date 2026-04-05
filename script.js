@@ -1,800 +1,800 @@
-    // Realistic Linux Boot Sequence
-    window.addEventListener('load', () => {
-      const bootText = document.getElementById('bootText');
-      const messages = [
-        "[  <span class='log-green'>OK</span>  ] Started Update UTMP about System Runlevel Changes.",
-        "[  <span class='log-green'>OK</span>  ] Started Service to check if key is pressed.",
-        "[  <span class='log-green'>OK</span>  ] Listening on Load/Save RF Kill Switch Status /dev/rfkill Watch.",
-        "[  <span class='log-green'>OK</span>  ] Reached target System Initialization.",
-        "[  <span class='log-green'>OK</span>  ] Started CUPS Scheduler.",
-        "[  <span class='log-green'>OK</span>  ] Started Network Manager.",
-        "[  <span class='log-green'>OK</span>  ] Reached target Network.",
-        "[  <span class='log-green'>OK</span>  ] Reached target Host and Network Name Lookups.",
-        "[  <span class='log-green'>OK</span>  ] Started GNOME Display Manager.",
-        "[  <span class='log-green'>OK</span>  ] Reached target Graphical Interface.",
-        "<span class='log-white'>Initializing Desktop Environment...</span>"
-      ];
+// Realistic Linux Boot Sequence
+window.addEventListener('load', () => {
+  const bootText = document.getElementById('bootText');
+  const messages = [
+    "[  <span class='log-green'>OK</span>  ] Started Update UTMP about System Runlevel Changes.",
+    "[  <span class='log-green'>OK</span>  ] Started Service to check if key is pressed.",
+    "[  <span class='log-green'>OK</span>  ] Listening on Load/Save RF Kill Switch Status /dev/rfkill Watch.",
+    "[  <span class='log-green'>OK</span>  ] Reached target System Initialization.",
+    "[  <span class='log-green'>OK</span>  ] Started CUPS Scheduler.",
+    "[  <span class='log-green'>OK</span>  ] Started Network Manager.",
+    "[  <span class='log-green'>OK</span>  ] Reached target Network.",
+    "[  <span class='log-green'>OK</span>  ] Reached target Host and Network Name Lookups.",
+    "[  <span class='log-green'>OK</span>  ] Started GNOME Display Manager.",
+    "[  <span class='log-green'>OK</span>  ] Reached target Graphical Interface.",
+    "<span class='log-white'>Initializing Desktop Environment...</span>"
+  ];
 
-      let delay = 0;
-      
-      messages.forEach((msg, index) => {
-        // Randomize delay to simulate processing
-        delay += Math.random() * 300 + 100;
-        
+  let delay = 0;
+
+  messages.forEach((msg, index) => {
+    // Randomize delay to simulate processing
+    delay += Math.random() * 300 + 100;
+
+    setTimeout(() => {
+      // Update text content in place (one line)
+      bootText.innerHTML = msg;
+
+      // If last message, close boot screen
+      if (index === messages.length - 1) {
         setTimeout(() => {
-          // Update text content in place (one line)
-          bootText.innerHTML = msg;
-          
-          // If last message, close boot screen
-          if (index === messages.length - 1) {
-            setTimeout(() => {
-              document.getElementById('bootScreen').classList.add('hidden');
-              
-              // Trigger Dock Animation, then Show Home
-              animateDockEntry(() => {
-                  showView('home');
-              });
-            }, 800);
-          }
-        }, delay);
-      });
-    });
-    
-    // Function to animate the dock "Water Drop" entry
-    function animateDockEntry(onComplete) {
-      const dock = document.querySelector('.sidebar');
-      const items = document.querySelectorAll('.sidebar-item');
-      
-      if (!dock) return;
-      
-      // 1. Reveal Drop
-      dock.classList.remove('dock-hidden');
-      dock.classList.add('dock-drop');
-      
-      // 2. Expand to "Splash" pill after 400ms
-      setTimeout(() => {
-        dock.classList.remove('dock-drop');
-        dock.classList.add('dock-splash');
-        
-        // 3. Expand fully and reveal icons sequentially after another 300ms
-        setTimeout(() => {
-          dock.classList.remove('dock-splash');
-          
-          // Reveal items one by one
-          items.forEach((item, index) => {
-            setTimeout(() => {
-              item.classList.remove('dock-item-hidden');
-              // Check if this is the last item to trigger completion
-              if (index === items.length - 1 && onComplete) {
-                  setTimeout(onComplete, 400); // Wait for last icon to pop
-              }
-            }, index * 100); // 100ms stagger between icons
+          document.getElementById('bootScreen').classList.add('hidden');
+
+          // Trigger Dock Animation, then Show Home
+          animateDockEntry(() => {
+            showView('home');
           });
-          
-        }, 300);
-        
-      }, 400);
-    }
-    
-    // Clock
-    function updateClock() {
-      const now = new Date();
-      const days = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
-      const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
-      const day = days[now.getDay()];
-      const month = months[now.getMonth()];
-      const date = now.getDate();
-      const hours = String(now.getHours()).padStart(2, '0');
-      const minutes = String(now.getMinutes()).padStart(2, '0');
-      document.getElementById('clock').textContent = `${day}, ${month} ${date} | ${hours}:${minutes}`;
-    }
-    updateClock();
-    setInterval(updateClock, 1000);
-
-    // View switching
-    const cards = {
-      // UPDATED: 'resources' mapped to the new card ID
-      resources: document.getElementById('resourcesCard'),
-      labs: document.getElementById('labsCard'), // NEW
-      lectureNotes: document.getElementById('lectureNotesCard'), // NEW: Lecture Notes
-      ai: document.getElementById('aiCard'),     // NEW
-      infographics: document.getElementById('infographicsCard'), // NEW: Infographics
-      aiFundamentals: document.getElementById('aiFundamentalsCard'), // NEW: AI Fundamentals Folder
-      aiAdvanced: document.getElementById('aiAdvancedCard'), // NEW: AI Advanced Folder
-      home: document.getElementById('homeCard'),
-      projects: document.getElementById('projectsCard'),
-      skills: document.getElementById('skillsCard'),
-      terminal: document.getElementById('terminalCard'),
-      iframe: document.getElementById('iframeCard')
-    };
-
-    // Global View Configuration (Unified)
-    const viewConfig = {
-      home: { id: 'home', parent: 'home', title: 'Home', icon: '🏠' },
-      projects: { id: 'projects', parent: 'projects', title: 'Projects', icon: '💼' },
-      skills: { id: 'skills', parent: 'skills', title: 'Skills', icon: '⚡' },
-      terminal: { id: 'terminal', parent: 'terminal', title: 'Terminal', icon: '💻' },
-      
-      // UPDATED: 'resources' config replacing 'research'
-      resources: { id: 'resources', parent: 'projects', title: 'Resources', icon: '📚' },
-      // NEW CONFIGS
-      labs: { id: 'labs', parent: 'projects', title: 'Labs & Research', icon: '🔬' },
-      lectureNotes: { id: 'lectureNotes', parent: 'projects', title: 'Lecture Notes', icon: '📓' },
-      ai: { id: 'ai', parent: 'projects', title: 'AI & Automation', icon: '🧠' },
-      infographics: { id: 'infographics', parent: 'projects', title: 'Infographics', icon: '📊' },
-      aiFundamentals: { id: 'aiFundamentals', parent: 'projects', title: 'AI Fundamentals', icon: '📁' },
-      aiAdvanced: { id: 'aiAdvanced', parent: 'projects', title: 'AI Advanced', icon: '📂' },
-      
-      iframe: { id: 'iframe', parent: 'projects', title: 'Content', icon: '🌐' }
-    };
-
-    let openWindows = []; // START EMPTY: Home opens after boot sequence
-    let activeWindow = null;
-    let draggedWindow = null;
-    let dragOffset = { x: 0, y: 0 };
-    let isDragging = false;
-
-    // OVERFLOW DETECTION LOGIC
-    const tabsContainer = document.getElementById('openWindowsTabs');
-    const overflowIndicatorRight = document.getElementById('tabsOverflowIndicator');
-    const overflowIndicatorLeft = document.getElementById('tabsOverflowIndicatorLeft');
-
-    function checkTabsOverflow() {
-      if (!tabsContainer) return;
-      
-      const tolerance = 2; // Pixel tolerance
-      
-      // Check for overflow (content wider than container)
-      const isScrollable = tabsContainer.scrollWidth > tabsContainer.clientWidth;
-      
-      // Right Indicator Logic
-      if (overflowIndicatorRight) {
-          const isScrolledToEnd = Math.abs(tabsContainer.scrollWidth - tabsContainer.clientWidth - tabsContainer.scrollLeft) < tolerance;
-          if (isScrollable && !isScrolledToEnd) {
-            overflowIndicatorRight.style.display = 'flex';
-          } else {
-            overflowIndicatorRight.style.display = 'none';
-          }
+        }, 800);
       }
+    }, delay);
+  });
+});
 
-      // Left Indicator Logic
-      if (overflowIndicatorLeft) {
-          const isScrolledStart = tabsContainer.scrollLeft < tolerance;
-          if (isScrollable && !isScrolledStart) {
-            overflowIndicatorLeft.style.display = 'flex';
-          } else {
-            overflowIndicatorLeft.style.display = 'none';
+// Function to animate the dock "Water Drop" entry
+function animateDockEntry(onComplete) {
+  const dock = document.querySelector('.sidebar');
+  const items = document.querySelectorAll('.sidebar-item');
+
+  if (!dock) return;
+
+  // 1. Reveal Drop
+  dock.classList.remove('dock-hidden');
+  dock.classList.add('dock-drop');
+
+  // 2. Expand to "Splash" pill after 400ms
+  setTimeout(() => {
+    dock.classList.remove('dock-drop');
+    dock.classList.add('dock-splash');
+
+    // 3. Expand fully and reveal icons sequentially after another 300ms
+    setTimeout(() => {
+      dock.classList.remove('dock-splash');
+
+      // Reveal items one by one
+      items.forEach((item, index) => {
+        setTimeout(() => {
+          item.classList.remove('dock-item-hidden');
+          // Check if this is the last item to trigger completion
+          if (index === items.length - 1 && onComplete) {
+            setTimeout(onComplete, 400); // Wait for last icon to pop
           }
-      }
-    }
+        }, index * 100); // 100ms stagger between icons
+      });
 
-    // Hook up overflow listeners
+    }, 300);
+
+  }, 400);
+}
+
+// Clock
+function updateClock() {
+  const now = new Date();
+  const days = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+  const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+  const day = days[now.getDay()];
+  const month = months[now.getMonth()];
+  const date = now.getDate();
+  const hours = String(now.getHours()).padStart(2, '0');
+  const minutes = String(now.getMinutes()).padStart(2, '0');
+  document.getElementById('clock').textContent = `${day}, ${month} ${date} | ${hours}:${minutes}`;
+}
+updateClock();
+setInterval(updateClock, 1000);
+
+// View switching
+const cards = {
+  // UPDATED: 'resources' mapped to the new card ID
+  resources: document.getElementById('resourcesCard'),
+  labs: document.getElementById('labsCard'), // NEW
+  lectureNotes: document.getElementById('lectureNotesCard'), // NEW: Lecture Notes
+  ai: document.getElementById('aiCard'),     // NEW
+  infographics: document.getElementById('infographicsCard'), // NEW: Infographics
+  aiFundamentals: document.getElementById('aiFundamentalsCard'), // NEW: AI Fundamentals Folder
+  aiAdvanced: document.getElementById('aiAdvancedCard'), // NEW: AI Advanced Folder
+  home: document.getElementById('homeCard'),
+  projects: document.getElementById('projectsCard'),
+  skills: document.getElementById('skillsCard'),
+  terminal: document.getElementById('terminalCard'),
+  iframe: document.getElementById('iframeCard')
+};
+
+// Global View Configuration (Unified)
+const viewConfig = {
+  home: { id: 'home', parent: 'home', title: 'Home', icon: '🏠' },
+  projects: { id: 'projects', parent: 'projects', title: 'Projects', icon: '💼' },
+  skills: { id: 'skills', parent: 'skills', title: 'Skills', icon: '⚡' },
+  terminal: { id: 'terminal', parent: 'terminal', title: 'Terminal', icon: '💻' },
+
+  // UPDATED: 'resources' config replacing 'research'
+  resources: { id: 'resources', parent: 'projects', title: 'Resources', icon: '📚' },
+  // NEW CONFIGS
+  labs: { id: 'labs', parent: 'projects', title: 'Labs & Research', icon: '🔬' },
+  lectureNotes: { id: 'lectureNotes', parent: 'projects', title: 'Lecture Notes', icon: '📓' },
+  ai: { id: 'ai', parent: 'projects', title: 'AI & Automation', icon: '🧠' },
+  infographics: { id: 'infographics', parent: 'projects', title: 'Infographics', icon: '📊' },
+  aiFundamentals: { id: 'aiFundamentals', parent: 'projects', title: 'AI Fundamentals', icon: '📁' },
+  aiAdvanced: { id: 'aiAdvanced', parent: 'projects', title: 'AI Advanced', icon: '📂' },
+
+  iframe: { id: 'iframe', parent: 'projects', title: 'Content', icon: '🌐' }
+};
+
+let openWindows = []; // START EMPTY: Home opens after boot sequence
+let activeWindow = null;
+let draggedWindow = null;
+let dragOffset = { x: 0, y: 0 };
+let isDragging = false;
+
+// OVERFLOW DETECTION LOGIC
+const tabsContainer = document.getElementById('openWindowsTabs');
+const overflowIndicatorRight = document.getElementById('tabsOverflowIndicator');
+const overflowIndicatorLeft = document.getElementById('tabsOverflowIndicatorLeft');
+
+function checkTabsOverflow() {
+  if (!tabsContainer) return;
+
+  const tolerance = 2; // Pixel tolerance
+
+  // Check for overflow (content wider than container)
+  const isScrollable = tabsContainer.scrollWidth > tabsContainer.clientWidth;
+
+  // Right Indicator Logic
+  if (overflowIndicatorRight) {
+    const isScrolledToEnd = Math.abs(tabsContainer.scrollWidth - tabsContainer.clientWidth - tabsContainer.scrollLeft) < tolerance;
+    if (isScrollable && !isScrolledToEnd) {
+      overflowIndicatorRight.style.display = 'flex';
+    } else {
+      overflowIndicatorRight.style.display = 'none';
+    }
+  }
+
+  // Left Indicator Logic
+  if (overflowIndicatorLeft) {
+    const isScrolledStart = tabsContainer.scrollLeft < tolerance;
+    if (isScrollable && !isScrolledStart) {
+      overflowIndicatorLeft.style.display = 'flex';
+    } else {
+      overflowIndicatorLeft.style.display = 'none';
+    }
+  }
+}
+
+// Hook up overflow listeners
+if (tabsContainer) {
+  tabsContainer.addEventListener('scroll', checkTabsOverflow);
+}
+window.addEventListener('resize', () => {
+  checkTabsOverflow();
+  constrainAllWindows(); // Resizing browser window constraints open windows
+});
+
+// Allow clicking the indicators to scroll
+if (overflowIndicatorRight) {
+  overflowIndicatorRight.addEventListener('click', () => {
     if (tabsContainer) {
-      tabsContainer.addEventListener('scroll', checkTabsOverflow);
+      tabsContainer.scrollBy({ left: 100, behavior: 'smooth' });
     }
-    window.addEventListener('resize', () => {
-        checkTabsOverflow();
-        constrainAllWindows(); // Resizing browser window constraints open windows
-    });
-    
-    // Allow clicking the indicators to scroll
-    if (overflowIndicatorRight) {
-      overflowIndicatorRight.addEventListener('click', () => {
-        if(tabsContainer) {
-          tabsContainer.scrollBy({ left: 100, behavior: 'smooth' });
-        }
-      });
-    }
-    
-    if (overflowIndicatorLeft) {
-      overflowIndicatorLeft.addEventListener('click', () => {
-        if(tabsContainer) {
-          tabsContainer.scrollBy({ left: -100, behavior: 'smooth' });
-        }
-      });
-    }
+  });
+}
 
-    // NEW: Window Constraint Logic to handle Resizing
-    function constrainAllWindows() {
-        const contentArea = document.querySelector('.content-area');
-        if (!contentArea) return;
-        const bounds = contentArea.getBoundingClientRect();
-        
-        document.querySelectorAll('.window-card').forEach(win => {
-            if (win.style.display === 'none') return;
-            
-            // If on mobile (flex mode), constraints are handled by CSS flex/order
-            // Only constrain absolute windows (Desktop view)
-            if (window.getComputedStyle(win).position === 'absolute') {
-                const rect = win.getBoundingClientRect();
-                
-                // Horizontal Check
-                if (rect.right > window.innerWidth) {
-                    // Too far right, snap back
-                    win.style.left = (window.innerWidth - rect.width / 2 - 20) + 'px'; 
-                    // Updated to 3D Transform
-                    win.style.transform = 'translate3d(-50%, -50%, 0)'; 
-                }
-                
-                // Vertical Check
-                // 80px buffer for bottom dock
-                if (rect.bottom > window.innerHeight - 80) {
-                    win.style.top = (window.innerHeight - 80 - rect.height / 2) + 'px';
-                }
-                
-                // Top Check (Don't go under topbar)
-                if (rect.top < 60) {
-                    win.style.top = (60 + rect.height/2) + 'px';
-                }
-            }
-        });
+if (overflowIndicatorLeft) {
+  overflowIndicatorLeft.addEventListener('click', () => {
+    if (tabsContainer) {
+      tabsContainer.scrollBy({ left: -100, behavior: 'smooth' });
     }
+  });
+}
 
-    function updateOpenWindowsTabs() {
-      const container = document.getElementById('openWindowsTabs');
-      container.innerHTML = '';
-      
-      openWindows.forEach(windowName => {
-        const tab = document.createElement('div');
-        tab.className = 'window-tab';
-        if (windowName === activeWindow) {
-          tab.classList.add('active-window-tab');
-        }
-        
-        // Logic to construct "Parent/Child" path using global viewConfig
-        let displayTitle = windowName; // fallback
-        const config = viewConfig[windowName];
-        
-        if (config) {
-            if (config.parent && config.parent !== config.id && viewConfig[config.parent]) {
-                // It's a child: Show "Parent/Child"
-                displayTitle = `${viewConfig[config.parent].title}/${config.title}`;
-            } else {
-                // It's a root: Show "Title"
-                displayTitle = config.title;
-            }
-        } else {
-             // Handle undefined cases gracefully
-             displayTitle = windowName.charAt(0).toUpperCase() + windowName.slice(1);
-        }
-        
-        tab.textContent = displayTitle;
-        tab.onclick = () => showView(windowName);
-        container.appendChild(tab);
-      });
-      
-      // Check for overflow after DOM update
-      setTimeout(checkTabsOverflow, 50);
+// NEW: Window Constraint Logic to handle Resizing
+function constrainAllWindows() {
+  const contentArea = document.querySelector('.content-area');
+  if (!contentArea) return;
+  const bounds = contentArea.getBoundingClientRect();
+
+  document.querySelectorAll('.window-card').forEach(win => {
+    if (win.style.display === 'none') return;
+
+    // If on mobile (flex mode), constraints are handled by CSS flex/order
+    // Only constrain absolute windows (Desktop view)
+    if (window.getComputedStyle(win).position === 'absolute') {
+      const rect = win.getBoundingClientRect();
+
+      // Horizontal Check
+      if (rect.right > window.innerWidth) {
+        // Too far right, snap back
+        win.style.left = (window.innerWidth - rect.width / 2 - 20) + 'px';
+        // Updated to 3D Transform
+        win.style.transform = 'translate3d(-50%, -50%, 0)';
+      }
+
+      // Vertical Check
+      // 80px buffer for bottom dock
+      if (rect.bottom > window.innerHeight - 80) {
+        win.style.top = (window.innerHeight - 80 - rect.height / 2) + 'px';
+      }
+
+      // Top Check (Don't go under topbar)
+      if (rect.top < 60) {
+        win.style.top = (60 + rect.height / 2) + 'px';
+      }
+    }
+  });
+}
+
+function updateOpenWindowsTabs() {
+  const container = document.getElementById('openWindowsTabs');
+  container.innerHTML = '';
+
+  openWindows.forEach(windowName => {
+    const tab = document.createElement('div');
+    tab.className = 'window-tab';
+    if (windowName === activeWindow) {
+      tab.classList.add('active-window-tab');
     }
 
-    // NEW: Centralized Sidebar Update Logic with 3-Dot Menu
-    function updateSidebar(viewName) {
-      // Close any open popups first
-      document.querySelectorAll('.sidebar-popup-grid').forEach(grid => grid.classList.remove('visible'));
+    // Logic to construct "Parent/Child" path using global viewConfig
+    let displayTitle = windowName; // fallback
+    const config = viewConfig[windowName];
 
-      document.querySelectorAll('.sidebar-item').forEach(item => {
-        // 1. Reset
-        item.classList.remove('active');
-        const oldTrigger = item.querySelector('.sidebar-menu-trigger');
-        if (oldTrigger) oldTrigger.remove();
-        const oldGrid = item.querySelector('.sidebar-popup-grid');
-        if (oldGrid) oldGrid.remove();
-
-        // 2. Determine Active State based on current view
-        const currentConfig = viewConfig[viewName];
-        const category = item.dataset.view; // e.g., 'projects'
-
-        if (currentConfig && currentConfig.parent === category) {
-          item.classList.add('active');
-        }
-
-        // 3. Scan for OPEN windows belonging to this category
-        const categoryOpenWindows = openWindows.filter(win => {
-            return viewConfig[win] && viewConfig[win].parent === category;
-        });
-
-        // 4. If open windows exist for this category, add the 3-dots Menu
-        if (categoryOpenWindows.length > 0) {
-            // Create Trigger (3 Dots)
-            const trigger = document.createElement('div');
-            trigger.className = 'sidebar-menu-trigger';
-            // Simple SVG dots icon
-            trigger.innerHTML = `<svg viewBox="0 0 24 24"><circle cx="5" cy="12" r="2"/><circle cx="12" cy="12" r="2"/><circle cx="19" cy="12" r="2"/></svg>`;
-            
-            // Create Grid Container
-            const grid = document.createElement('div');
-            grid.className = 'sidebar-popup-grid';
-            
-            // Populate Grid
-            categoryOpenWindows.forEach(win => {
-                const winConfig = viewConfig[win];
-                const gridItem = document.createElement('div');
-                gridItem.className = 'grid-item';
-                if (win === viewName) gridItem.classList.add('active-item');
-                gridItem.innerHTML = winConfig.icon || '📄';
-                gridItem.title = winConfig.title; // Tooltip
-                
-                gridItem.onclick = (e) => {
-                    e.stopPropagation();
-                    showView(win);
-                    grid.classList.remove('visible'); // Close on select
-                };
-                grid.appendChild(gridItem);
-            });
-
-            // Trigger Click Handler
-            trigger.onclick = (e) => {
-                e.stopPropagation();
-                // Toggle this grid
-                const wasVisible = grid.classList.contains('visible');
-                // Close all others
-                document.querySelectorAll('.sidebar-popup-grid').forEach(g => g.classList.remove('visible'));
-                
-                if (!wasVisible) {
-                    grid.classList.add('visible');
-                }
-            };
-
-            item.appendChild(trigger);
-            item.appendChild(grid);
-        }
-      });
+    if (config) {
+      if (config.parent && config.parent !== config.id && viewConfig[config.parent]) {
+        // It's a child: Show "Parent/Child"
+        displayTitle = `${viewConfig[config.parent].title}/${config.title}`;
+      } else {
+        // It's a root: Show "Title"
+        displayTitle = config.title;
+      }
+    } else {
+      // Handle undefined cases gracefully
+      displayTitle = windowName.charAt(0).toUpperCase() + windowName.slice(1);
     }
-    
-    // Close popups when clicking outside
-    document.addEventListener('click', (e) => {
-        if (!e.target.closest('.sidebar-item')) {
-            document.querySelectorAll('.sidebar-popup-grid').forEach(g => g.classList.remove('visible'));
-        }
+
+    tab.textContent = displayTitle;
+    tab.onclick = () => showView(windowName);
+    container.appendChild(tab);
+  });
+
+  // Check for overflow after DOM update
+  setTimeout(checkTabsOverflow, 50);
+}
+
+// NEW: Centralized Sidebar Update Logic with 3-Dot Menu
+function updateSidebar(viewName) {
+  // Close any open popups first
+  document.querySelectorAll('.sidebar-popup-grid').forEach(grid => grid.classList.remove('visible'));
+
+  document.querySelectorAll('.sidebar-item').forEach(item => {
+    // 1. Reset
+    item.classList.remove('active');
+    const oldTrigger = item.querySelector('.sidebar-menu-trigger');
+    if (oldTrigger) oldTrigger.remove();
+    const oldGrid = item.querySelector('.sidebar-popup-grid');
+    if (oldGrid) oldGrid.remove();
+
+    // 2. Determine Active State based on current view
+    const currentConfig = viewConfig[viewName];
+    const category = item.dataset.view; // e.g., 'projects'
+
+    if (currentConfig && currentConfig.parent === category) {
+      item.classList.add('active');
+    }
+
+    // 3. Scan for OPEN windows belonging to this category
+    const categoryOpenWindows = openWindows.filter(win => {
+      return viewConfig[win] && viewConfig[win].parent === category;
     });
 
-    // Helper: Get Icon Position for Genie Effect
-    function getIconPosition(viewName) {
-        // Find configuration to know parent
-        const config = viewConfig[viewName];
-        let parentKey = config ? config.parent : viewName;
-        
-        // Find the icon element
-        const icon = document.querySelector(`.sidebar-item[data-view="${parentKey}"]`);
-        
-        if (icon) {
-            const rect = icon.getBoundingClientRect();
-            // Return center of icon
-            return {
-                x: rect.left + rect.width / 2,
-                y: rect.top + rect.height / 2
-            };
+    // 4. If open windows exist for this category, add the 3-dots Menu
+    if (categoryOpenWindows.length > 0) {
+      // Create Trigger (3 Dots)
+      const trigger = document.createElement('div');
+      trigger.className = 'sidebar-menu-trigger';
+      // Simple SVG dots icon
+      trigger.innerHTML = `<svg viewBox="0 0 24 24"><circle cx="5" cy="12" r="2"/><circle cx="12" cy="12" r="2"/><circle cx="19" cy="12" r="2"/></svg>`;
+
+      // Create Grid Container
+      const grid = document.createElement('div');
+      grid.className = 'sidebar-popup-grid';
+
+      // Populate Grid
+      categoryOpenWindows.forEach(win => {
+        const winConfig = viewConfig[win];
+        const gridItem = document.createElement('div');
+        gridItem.className = 'grid-item';
+        if (win === viewName) gridItem.classList.add('active-item');
+        gridItem.innerHTML = winConfig.icon || '📄';
+        gridItem.title = winConfig.title; // Tooltip
+
+        gridItem.onclick = (e) => {
+          e.stopPropagation();
+          showView(win);
+          grid.classList.remove('visible'); // Close on select
+        };
+        grid.appendChild(gridItem);
+      });
+
+      // Trigger Click Handler
+      trigger.onclick = (e) => {
+        e.stopPropagation();
+        // Toggle this grid
+        const wasVisible = grid.classList.contains('visible');
+        // Close all others
+        document.querySelectorAll('.sidebar-popup-grid').forEach(g => g.classList.remove('visible'));
+
+        if (!wasVisible) {
+          grid.classList.add('visible');
         }
-        
-        // Fallback center screen
-        return { x: window.innerWidth / 2, y: window.innerHeight / 2 };
+      };
+
+      item.appendChild(trigger);
+      item.appendChild(grid);
     }
+  });
+}
 
-    function showView(viewName) {
-      const card = cards[viewName];
-      if (!card) return;
+// Close popups when clicking outside
+document.addEventListener('click', (e) => {
+  if (!e.target.closest('.sidebar-item')) {
+    document.querySelectorAll('.sidebar-popup-grid').forEach(g => g.classList.remove('visible'));
+  }
+});
 
-      const isAlreadyOpen = openWindows.includes(viewName);
+// Helper: Get Icon Position for Genie Effect
+function getIconPosition(viewName) {
+  // Find configuration to know parent
+  const config = viewConfig[viewName];
+  let parentKey = config ? config.parent : viewName;
 
-      // Make sure it's visible in DOM to calculate styles
-      card.style.display = 'flex';
-      
-      // If opening for the first time or re-opening, Ensure Center Origin
-      if (!isAlreadyOpen) {
-          // RESET POSITION TO CENTER so animation calculates correctly
-          card.style.left = '50%';
-          card.style.top = '50%';
-          
-          const iconPos = getIconPosition(viewName);
-          const screenCenter = { x: window.innerWidth / 2, y: window.innerHeight / 2 };
-          
-          // Calculate delta. 
-          // Note: Cards are centered by translate(-50%, -50%). 
-          // To move to icon, we add the difference between icon and screen center.
-          const deltaX = iconPos.x - screenCenter.x;
-          const deltaY = iconPos.y - screenCenter.y;
-          
-          // Initial State (At Icon)
-          card.style.transition = 'none'; // Disable transition for setup
-          // Updated to 3D Transform
-          card.style.transform = `translate3d(calc(-50% + ${deltaX}px), calc(-50% + ${deltaY}px), 0) scale(0.1)`;
-          card.style.opacity = '0';
-          card.style.borderRadius = '50%'; // Circle drop
-          
-          // Trigger Reflow
-          card.offsetHeight;
-          
-          // Final State (Center Screen)
-          card.style.transition = 'transform 0.5s cubic-bezier(0.19, 1, 0.22, 1), opacity 0.5s ease, border-radius 0.5s ease';
-          // Updated to 3D Transform
-          card.style.transform = 'translate3d(-50%, -50%, 0) scale(1)';
-          card.style.opacity = '1';
-          card.style.borderRadius = '16px';
-          
-          // Add to open windows list
-          openWindows.push(viewName);
-      }
-      
-      // Always bring to front regardless
-      bringToFront(card);
-      
-      // --- MOBILE OPTIMIZATION: Handle stacking order ---
-      // 1. Remove "mobile-active" from ALL cards so they drop to order: 2
-      Object.values(cards).forEach(c => {
-          if(c) c.classList.remove('mobile-active');
-      });
+  // Find the icon element
+  const icon = document.querySelector(`.sidebar-item[data-view="${parentKey}"]`);
 
-      // 2. Add "mobile-active" to CURRENT card so it jumps to order: 1 (top)
-      card.classList.add('mobile-active');
+  if (icon) {
+    const rect = icon.getBoundingClientRect();
+    // Return center of icon
+    return {
+      x: rect.left + rect.width / 2,
+      y: rect.top + rect.height / 2
+    };
+  }
 
-      // 3. PHYSICAL DOM REORDERING (The Pro Fix)
-      const contentArea = document.querySelector('.content-area');
-      if (window.innerWidth <= 768) {
-          contentArea.insertBefore(card, contentArea.firstChild);
-          contentArea.scrollTop = 0;
-      }
-      
-      activeWindow = viewName;
-      
-      // Update UI components
-      updateSidebar(viewName); 
-      updateOpenWindowsTabs();
-      
-      // NEW: Auto-focus terminal input if terminal is opened
-      if (viewName === 'terminal') {
-          setTimeout(() => {
-              const input = document.getElementById('termInput');
-              if (input) input.focus();
-          }, 500); // Wait for animation
-      }
-    }
-    
-    function bringToFront(window) {
-      const allWindows = document.querySelectorAll('.window-card');
-      let maxZ = 1000;
-      allWindows.forEach(w => {
-        const z = parseInt(w.style.zIndex || 1000);
-        if (z > maxZ) maxZ = z;
-        w.classList.remove('active-window');
-      });
-      window.style.zIndex = maxZ + 1;
-      window.classList.add('active-window');
-    }
+  // Fallback center screen
+  return { x: window.innerWidth / 2, y: window.innerHeight / 2 };
+}
 
-    // Draggable windows
-    function initDraggable() {
-      const allWindows = document.querySelectorAll('.window-card');
-      
-      allWindows.forEach(windowCard => {
-        const header = windowCard.querySelector('.card-header');
-        
-        header.addEventListener('mousedown', (e) => {
-          // Don't drag if clicking on control buttons
-          if (e.target.closest('.control-btn')) return;
-          
-          isDragging = true;
-          draggedWindow = windowCard;
-          
-          // Apply dragging class first to disable transitions
-          windowCard.classList.add('dragging');
-          
-          // [FIX] Force Reflow: Ensure transition disable applies before moving
-          void windowCard.offsetWidth;
+function showView(viewName) {
+  const card = cards[viewName];
+  if (!card) return;
 
-          // Calculate current position relative to container to freeze it
-          const contentArea = document.querySelector('.content-area');
-          const contentRect = contentArea.getBoundingClientRect();
-          const rect = windowCard.getBoundingClientRect();
-          
-          // Calculate exact position relative to content area
-          const relativeLeft = rect.left - contentRect.left;
-          const relativeTop = rect.top - contentRect.top;
-          
-          // Swap from % centering to fixed pixel positioning without visual jump
-          windowCard.style.left = relativeLeft + 'px';
-          windowCard.style.top = relativeTop + 'px';
-          windowCard.style.transform = 'none';
-          
-          // Set drag offsets
-          dragOffset.x = e.clientX - rect.left;
-          dragOffset.y = e.clientY - rect.top;
-          
-          bringToFront(windowCard);
-          
-          e.preventDefault();
-        });
-      });
-    }
-    
-    document.addEventListener('mousemove', (e) => {
-      if (!isDragging || !draggedWindow) return;
-      
+  const isAlreadyOpen = openWindows.includes(viewName);
+
+  // Make sure it's visible in DOM to calculate styles
+  card.style.display = 'flex';
+
+  // If opening for the first time or re-opening, Ensure Center Origin
+  if (!isAlreadyOpen) {
+    // RESET POSITION TO CENTER so animation calculates correctly
+    card.style.left = '50%';
+    card.style.top = '50%';
+
+    const iconPos = getIconPosition(viewName);
+    const screenCenter = { x: window.innerWidth / 2, y: window.innerHeight / 2 };
+
+    // Calculate delta. 
+    // Note: Cards are centered by translate(-50%, -50%). 
+    // To move to icon, we add the difference between icon and screen center.
+    const deltaX = iconPos.x - screenCenter.x;
+    const deltaY = iconPos.y - screenCenter.y;
+
+    // Initial State (At Icon)
+    card.style.transition = 'none'; // Disable transition for setup
+    // Updated to 3D Transform
+    card.style.transform = `translate3d(calc(-50% + ${deltaX}px), calc(-50% + ${deltaY}px), 0) scale(0.1)`;
+    card.style.opacity = '0';
+    card.style.borderRadius = '50%'; // Circle drop
+
+    // Trigger Reflow
+    card.offsetHeight;
+
+    // Final State (Center Screen)
+    card.style.transition = 'transform 0.5s cubic-bezier(0.19, 1, 0.22, 1), opacity 0.5s ease, border-radius 0.5s ease';
+    // Updated to 3D Transform
+    card.style.transform = 'translate3d(-50%, -50%, 0) scale(1)';
+    card.style.opacity = '1';
+    card.style.borderRadius = '16px';
+
+    // Add to open windows list
+    openWindows.push(viewName);
+  }
+
+  // Always bring to front regardless
+  bringToFront(card);
+
+  // --- MOBILE OPTIMIZATION: Handle stacking order ---
+  // 1. Remove "mobile-active" from ALL cards so they drop to order: 2
+  Object.values(cards).forEach(c => {
+    if (c) c.classList.remove('mobile-active');
+  });
+
+  // 2. Add "mobile-active" to CURRENT card so it jumps to order: 1 (top)
+  card.classList.add('mobile-active');
+
+  // 3. PHYSICAL DOM REORDERING (The Pro Fix)
+  const contentArea = document.querySelector('.content-area');
+  if (window.innerWidth <= 768) {
+    contentArea.insertBefore(card, contentArea.firstChild);
+    contentArea.scrollTop = 0;
+  }
+
+  activeWindow = viewName;
+
+  // Update UI components
+  updateSidebar(viewName);
+  updateOpenWindowsTabs();
+
+  // NEW: Auto-focus terminal input if terminal is opened
+  if (viewName === 'terminal') {
+    setTimeout(() => {
+      const input = document.getElementById('termInput');
+      if (input) input.focus();
+    }, 500); // Wait for animation
+  }
+}
+
+function bringToFront(window) {
+  const allWindows = document.querySelectorAll('.window-card');
+  let maxZ = 1000;
+  allWindows.forEach(w => {
+    const z = parseInt(w.style.zIndex || 1000);
+    if (z > maxZ) maxZ = z;
+    w.classList.remove('active-window');
+  });
+  window.style.zIndex = maxZ + 1;
+  window.classList.add('active-window');
+}
+
+// Draggable windows
+function initDraggable() {
+  const allWindows = document.querySelectorAll('.window-card');
+
+  allWindows.forEach(windowCard => {
+    const header = windowCard.querySelector('.card-header');
+
+    header.addEventListener('mousedown', (e) => {
+      // Don't drag if clicking on control buttons
+      if (e.target.closest('.control-btn')) return;
+
+      isDragging = true;
+      draggedWindow = windowCard;
+
+      // Apply dragging class first to disable transitions
+      windowCard.classList.add('dragging');
+
+      // [FIX] Force Reflow: Ensure transition disable applies before moving
+      void windowCard.offsetWidth;
+
+      // Calculate current position relative to container to freeze it
       const contentArea = document.querySelector('.content-area');
       const contentRect = contentArea.getBoundingClientRect();
-      
-      let newX = e.clientX - contentRect.left - dragOffset.x;
-      let newY = e.clientY - contentRect.top - dragOffset.y;
-      
-      // Constrain to content area
-      const windowRect = draggedWindow.getBoundingClientRect();
-      
-      // Strict constraints: Window must remain fully inside contentArea
-      const minX = 0;
-      const maxX = contentRect.width - windowRect.width;
-      const minY = 0;
-      const maxY = contentRect.height - windowRect.height;
-      
-      // Apply strict clamping to prevent overflow
-      newX = Math.max(minX, Math.min(newX, maxX));
-      newY = Math.max(minY, Math.min(newY, maxY));
-      
-      draggedWindow.style.left = newX + 'px';
-      draggedWindow.style.top = newY + 'px';
-      draggedWindow.style.transform = 'none';
+      const rect = windowCard.getBoundingClientRect();
+
+      // Calculate exact position relative to content area
+      const relativeLeft = rect.left - contentRect.left;
+      const relativeTop = rect.top - contentRect.top;
+
+      // Swap from % centering to fixed pixel positioning without visual jump
+      windowCard.style.left = relativeLeft + 'px';
+      windowCard.style.top = relativeTop + 'px';
+      windowCard.style.transform = 'none';
+
+      // Set drag offsets
+      dragOffset.x = e.clientX - rect.left;
+      dragOffset.y = e.clientY - rect.top;
+
+      bringToFront(windowCard);
+
+      e.preventDefault();
     });
-    
-    document.addEventListener('mouseup', () => {
-      if (draggedWindow) {
-        draggedWindow.classList.remove('dragging');
+  });
+}
+
+document.addEventListener('mousemove', (e) => {
+  if (!isDragging || !draggedWindow) return;
+
+  const contentArea = document.querySelector('.content-area');
+  const contentRect = contentArea.getBoundingClientRect();
+
+  let newX = e.clientX - contentRect.left - dragOffset.x;
+  let newY = e.clientY - contentRect.top - dragOffset.y;
+
+  // Constrain to content area
+  const windowRect = draggedWindow.getBoundingClientRect();
+
+  // Strict constraints: Window must remain fully inside contentArea
+  const minX = 0;
+  const maxX = contentRect.width - windowRect.width;
+  const minY = 0;
+  const maxY = contentRect.height - windowRect.height;
+
+  // Apply strict clamping to prevent overflow
+  newX = Math.max(minX, Math.min(newX, maxX));
+  newY = Math.max(minY, Math.min(newY, maxY));
+
+  draggedWindow.style.left = newX + 'px';
+  draggedWindow.style.top = newY + 'px';
+  draggedWindow.style.transform = 'none';
+});
+
+document.addEventListener('mouseup', () => {
+  if (draggedWindow) {
+    draggedWindow.classList.remove('dragging');
+  }
+  isDragging = false;
+  draggedWindow = null;
+});
+
+// Initialize draggable after DOM is ready
+setTimeout(() => {
+  initDraggable();
+
+  // Cascade windows slightly for visual clarity
+  const windowsToOffset = ['projects', 'skills', 'terminal'];
+  windowsToOffset.forEach((view, index) => {
+    if (cards[view]) {
+      const offset = (index + 1) * 30;
+      cards[view].style.left = `calc(50% + ${offset}px)`;
+      cards[view].style.top = `calc(50% + ${offset}px)`;
+    }
+  });
+}, 100);
+
+function closeWindow(viewName) {
+  const card = cards[viewName];
+  if (!card) return;
+
+  // Calculate position to shrink back to
+  const iconPos = getIconPosition(viewName);
+  const screenCenter = { x: window.innerWidth / 2, y: window.innerHeight / 2 };
+  const deltaX = iconPos.x - screenCenter.x;
+  const deltaY = iconPos.y - screenCenter.y;
+
+  // Apply Closing Animation
+  card.style.transition = 'transform 0.4s ease-in, opacity 0.4s ease, border-radius 0.4s ease';
+  // Updated to 3D Transform
+  card.style.transform = `translate3d(calc(-50% + ${deltaX}px), calc(-50% + ${deltaY}px), 0) scale(0.1)`;
+  card.style.opacity = '0';
+  card.style.borderRadius = '50%';
+
+  // After animation, hide and cleanup
+  setTimeout(() => {
+    card.style.display = 'none';
+
+    // CRITICAL FIX: Reset styles to default centered state for next open
+    // This prevents the window from "jumping" if it was previously dragged to a specific pixel location
+    card.style.left = '50%';
+    card.style.top = '50%';
+    // Updated to 3D Transform
+    card.style.transform = 'translate3d(-50%, -50%, 0)';
+    card.style.borderRadius = '16px';
+
+    openWindows = openWindows.filter(w => w !== viewName);
+
+    // Show home if closing active window
+    if (activeWindow === viewName) {
+      if (openWindows.length > 0) {
+        showView(openWindows[openWindows.length - 1]);
+      } else {
+        showView('home');
       }
-      isDragging = false;
-      draggedWindow = null;
-    });
-    
-    // Initialize draggable after DOM is ready
-    setTimeout(() => {
-      initDraggable();
-      
-      // Cascade windows slightly for visual clarity
-      const windowsToOffset = ['projects', 'skills', 'terminal'];
-      windowsToOffset.forEach((view, index) => {
-        if (cards[view]) {
-          const offset = (index + 1) * 30;
-          cards[view].style.left = `calc(50% + ${offset}px)`;
-          cards[view].style.top = `calc(50% + ${offset}px)`;
-        }
-      });
-    }, 100);
-
-    function closeWindow(viewName) {
-      const card = cards[viewName];
-      if (!card) return;
-
-      // Calculate position to shrink back to
-      const iconPos = getIconPosition(viewName);
-      const screenCenter = { x: window.innerWidth / 2, y: window.innerHeight / 2 };
-      const deltaX = iconPos.x - screenCenter.x;
-      const deltaY = iconPos.y - screenCenter.y;
-
-      // Apply Closing Animation
-      card.style.transition = 'transform 0.4s ease-in, opacity 0.4s ease, border-radius 0.4s ease';
-      // Updated to 3D Transform
-      card.style.transform = `translate3d(calc(-50% + ${deltaX}px), calc(-50% + ${deltaY}px), 0) scale(0.1)`;
-      card.style.opacity = '0';
-      card.style.borderRadius = '50%';
-
-      // After animation, hide and cleanup
-      setTimeout(() => {
-          card.style.display = 'none';
-          
-          // CRITICAL FIX: Reset styles to default centered state for next open
-          // This prevents the window from "jumping" if it was previously dragged to a specific pixel location
-          card.style.left = '50%';
-          card.style.top = '50%';
-          // Updated to 3D Transform
-          card.style.transform = 'translate3d(-50%, -50%, 0)'; 
-          card.style.borderRadius = '16px';
-          
-          openWindows = openWindows.filter(w => w !== viewName);
-          
-          // Show home if closing active window
-          if (activeWindow === viewName) {
-            if (openWindows.length > 0) {
-              showView(openWindows[openWindows.length - 1]);
-            } else {
-              showView('home');
-            }
-          } else {
-            updateOpenWindowsTabs();
-            // Update sidebar to reflect the new active window (usually home)
-            if (openWindows.length === 0) {
-                 updateSidebar('home');
-            } else if (activeWindow) {
-                 updateSidebar(activeWindow);
-            }
-          }
-      }, 400); // Match transition duration
-    }
-
-    // Sidebar navigation
-    document.querySelectorAll('.sidebar-item').forEach(item => {
-      item.addEventListener('click', () => {
-        const view = item.dataset.view;
-        // If window is already open, just bring to front
-        if (openWindows.includes(view) && cards[view].style.display === 'flex') {
-          bringToFront(cards[view]);
-          activeWindow = view;
-          updateOpenWindowsTabs();
-          updateSidebar(view); // Ensure sidebar updates even if just bringing to front
-          
-          // Added logic for Mobile click on already open window: Scroll to top AND Move to DOM top
-          const contentArea = document.querySelector('.content-area');
-          if (window.innerWidth <= 768) {
-              Object.values(cards).forEach(card => card && card.classList.remove('mobile-active'));
-              cards[view].classList.add('mobile-active');
-              
-              // Move to top of DOM
-              contentArea.insertBefore(cards[view], contentArea.firstChild);
-              contentArea.scrollTop = 0;
-          }
-        } else {
-          showView(view);
-        }
-      });
-    });
-
-    // Topbar navigation (Logo and Home Tab)
-    document.querySelector('.app-logo').addEventListener('click', () => showView('home'));
-    document.querySelector('.nav-tab[data-tab="home"]').addEventListener('click', () => showView('home'));
-
-    // Window control buttons
-    document.querySelectorAll('.control-btn').forEach(btn => {
-      btn.addEventListener('click', (e) => {
-        e.stopPropagation();
-        const card = btn.closest('.window-card');
-        const viewName = Object.keys(cards).find(key => cards[key] === card);
-
-        if (btn.classList.contains('btn-close')) {
-          closeWindow(viewName);
-        } else if (btn.classList.contains('btn-minimize')) {
-          closeWindow(viewName);
-        } else if (btn.classList.contains('btn-maximize')) {
-          card.classList.toggle('full-width');
-          if (card.classList.contains('full-width')) {
-            card.style.left = '50%';
-            card.style.top = '50%';
-            card.style.transform = 'translate3d(-50%, -50%, 0)';
-          }
-        }
-      });
-    });
-    
-    // Click on window to bring to front (UPDATED TO FIX SIDEBAR HIGHLIGHT)
-    document.querySelectorAll('.window-card').forEach(win => {
-      win.addEventListener('mousedown', () => {
-        bringToFront(win);
-        const viewName = Object.keys(cards).find(key => cards[key] === win);
-        if (viewName) {
-          activeWindow = viewName;
-          updateOpenWindowsTabs();
-          updateSidebar(viewName); // This fixes the issue where clicking a window didn't update the sidebar
-        }
-      });
-    });
-
-    // Iframe functions
-    function openInIframe(url, title, icon) {
-      document.getElementById('contentIframe').src = url;
-      document.getElementById('iframeTitle').textContent = title;
-      
-      // Update the global config dynamically for the iframe window
-      if(viewConfig.iframe) {
-          viewConfig.iframe.title = title;
-          viewConfig.iframe.icon = icon || '🌐';
+    } else {
+      updateOpenWindowsTabs();
+      // Update sidebar to reflect the new active window (usually home)
+      if (openWindows.length === 0) {
+        updateSidebar('home');
+      } else if (activeWindow) {
+        updateSidebar(activeWindow);
       }
-      
-      showView('iframe');
-      
-      // Offset iframe window slightly from center
-      const iframeCard = document.getElementById('iframeCard');
-      setTimeout(() => {
-        iframeCard.style.left = 'calc(50% + 30px)';
-        iframeCard.style.top = 'calc(50% + 30px)';
-        bringToFront(iframeCard);
-      }, 50);
     }
+  }, 400); // Match transition duration
+}
 
-    function closeIframe() {
-      document.getElementById('contentIframe').src = '';
-      closeWindow('iframe');
+// Sidebar navigation
+document.querySelectorAll('.sidebar-item').forEach(item => {
+  item.addEventListener('click', () => {
+    const view = item.dataset.view;
+    // If window is already open, just bring to front
+    if (openWindows.includes(view) && cards[view].style.display === 'flex') {
+      bringToFront(cards[view]);
+      activeWindow = view;
+      updateOpenWindowsTabs();
+      updateSidebar(view); // Ensure sidebar updates even if just bringing to front
+
+      // Added logic for Mobile click on already open window: Scroll to top AND Move to DOM top
+      const contentArea = document.querySelector('.content-area');
+      if (window.innerWidth <= 768) {
+        Object.values(cards).forEach(card => card && card.classList.remove('mobile-active'));
+        cards[view].classList.add('mobile-active');
+
+        // Move to top of DOM
+        contentArea.insertBefore(cards[view], contentArea.firstChild);
+        contentArea.scrollTop = 0;
+      }
+    } else {
+      showView(view);
     }
-    
-    // NEW: TERMINAL LOGIC
-    const termInput = document.getElementById('termInput');
-    const termOutput = document.getElementById('terminalOutput');
+  });
+});
 
-    if(termInput) {
-        termInput.addEventListener('keydown', function(e) {
-            if (e.key === 'Enter') {
-                const command = this.value.trim();
-                
-                // Create a history line in the DOM
-                const newLine = document.createElement('div');
-                newLine.className = 'terminal-line';
-                // Sanitize input slightly to prevent HTML injection if displayed
-                const sanitizedCommand = command.replace(/</g, "&lt;").replace(/>/g, "&gt;");
-                newLine.innerHTML = `<span class="terminal-prompt">anand@cybramo:~$</span> ${sanitizedCommand}`;
-                
-                // Insert before the input line
-                const inputLine = document.getElementById('terminalInputLine');
-                termOutput.insertBefore(newLine, inputLine);
+// Topbar navigation (Logo and Home Tab)
+document.querySelector('.app-logo').addEventListener('click', () => showView('home'));
+document.querySelector('.nav-tab[data-tab="home"]').addEventListener('click', () => showView('home'));
 
-                // Command Logic
-                if (command === 'n8n') {
-                    window.open('https://n8ncloud.cyberamo.work/', '_blank');
-                    const resLine = document.createElement('div');
-                    resLine.className = 'terminal-line';
-                    resLine.innerText = "Opening n8n Cloud in a new tab...";
-                    termOutput.insertBefore(resLine, inputLine);
-                } 
-                else if (command === 'clear') {
-                     const lines = termOutput.querySelectorAll('.terminal-line:not(#terminalInputLine)');
-                     lines.forEach(line => line.remove());
-                } 
-                else if (command === 'help') {
-                     const helpLine = document.createElement('div');
-                     helpLine.className = 'terminal-line';
-                     helpLine.innerHTML = "Available commands:<br> - n8n: Access Automation Cloud<br> - clear: Clear terminal<br> - whoami: Display user info<br> - help: Show this message";
-                     termOutput.insertBefore(helpLine, inputLine);
-                }
-                else if (command === 'whoami') {
-                     const whoLine = document.createElement('div');
-                     whoLine.className = 'terminal-line';
-                     whoLine.innerText = "Security Analyst | Compliance Professional";
-                     termOutput.insertBefore(whoLine, inputLine);
-                }
-                else if (command !== "") {
-                     const errLine = document.createElement('div');
-                     errLine.className = 'terminal-line';
-                     errLine.innerText = `Command not found: ${sanitizedCommand}. Type 'help' for available commands.`;
-                     termOutput.insertBefore(errLine, inputLine);
-                }
+// Window control buttons
+document.querySelectorAll('.control-btn').forEach(btn => {
+  btn.addEventListener('click', (e) => {
+    e.stopPropagation();
+    const card = btn.closest('.window-card');
+    const viewName = Object.keys(cards).find(key => cards[key] === card);
 
-                // Reset and Scroll
-                this.value = '';
-                termOutput.scrollTop = termOutput.scrollHeight;
-            }
-        });
-
-        // Click anywhere in terminal to focus input
-        document.getElementById('terminalCard').addEventListener('click', () => {
-            termInput.focus();
-        });
+    if (btn.classList.contains('btn-close')) {
+      closeWindow(viewName);
+    } else if (btn.classList.contains('btn-minimize')) {
+      closeWindow(viewName);
+    } else if (btn.classList.contains('btn-maximize')) {
+      card.classList.toggle('full-width');
+      if (card.classList.contains('full-width')) {
+        card.style.left = '50%';
+        card.style.top = '50%';
+        card.style.transform = 'translate3d(-50%, -50%, 0)';
+      }
     }
-  
-    
-    /* WebGL animated background (Updated for Large-Scale Balanced Abstraction) */
-    const canvas = document.getElementById('webgl-bg');
-    const gl = canvas.getContext('webgl');
+  });
+});
 
-    function resizeGL() {
-      canvas.width = window.innerWidth * devicePixelRatio;
-      canvas.height = window.innerHeight * devicePixelRatio;
-      gl.viewport(0, 0, canvas.width, canvas.height);
+// Click on window to bring to front (UPDATED TO FIX SIDEBAR HIGHLIGHT)
+document.querySelectorAll('.window-card').forEach(win => {
+  win.addEventListener('mousedown', () => {
+    bringToFront(win);
+    const viewName = Object.keys(cards).find(key => cards[key] === win);
+    if (viewName) {
+      activeWindow = viewName;
+      updateOpenWindowsTabs();
+      updateSidebar(viewName); // This fixes the issue where clicking a window didn't update the sidebar
     }
-    window.addEventListener('resize', resizeGL);
+  });
+});
 
-    const dpr = window.devicePixelRatio || 1;
+// Iframe functions
+function openInIframe(url, title, icon) {
+  document.getElementById('contentIframe').src = url;
+  document.getElementById('iframeTitle').textContent = title;
 
-    function resizeCanvas() {
-      canvas.width = window.innerWidth * dpr;
-      canvas.height = window.innerHeight * dpr;
-      canvas.style.width = window.innerWidth + "px";
-      canvas.style.height = window.innerHeight + "px";
+  // Update the global config dynamically for the iframe window
+  if (viewConfig.iframe) {
+    viewConfig.iframe.title = title;
+    viewConfig.iframe.icon = icon || '🌐';
+  }
+
+  showView('iframe');
+
+  // Offset iframe window slightly from center
+  const iframeCard = document.getElementById('iframeCard');
+  setTimeout(() => {
+    iframeCard.style.left = 'calc(50% + 30px)';
+    iframeCard.style.top = 'calc(50% + 30px)';
+    bringToFront(iframeCard);
+  }, 50);
+}
+
+function closeIframe() {
+  document.getElementById('contentIframe').src = '';
+  closeWindow('iframe');
+}
+
+// NEW: TERMINAL LOGIC
+const termInput = document.getElementById('termInput');
+const termOutput = document.getElementById('terminalOutput');
+
+if (termInput) {
+  termInput.addEventListener('keydown', function (e) {
+    if (e.key === 'Enter') {
+      const command = this.value.trim();
+
+      // Create a history line in the DOM
+      const newLine = document.createElement('div');
+      newLine.className = 'terminal-line';
+      // Sanitize input slightly to prevent HTML injection if displayed
+      const sanitizedCommand = command.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+      newLine.innerHTML = `<span class="terminal-prompt">anand@cybramo:~$</span> ${sanitizedCommand}`;
+
+      // Insert before the input line
+      const inputLine = document.getElementById('terminalInputLine');
+      termOutput.insertBefore(newLine, inputLine);
+
+      // Command Logic
+      if (command === 'n8n') {
+        window.open('https://n8ncloud.cyberamo.work/', '_blank');
+        const resLine = document.createElement('div');
+        resLine.className = 'terminal-line';
+        resLine.innerText = "Opening n8n Cloud in a new tab...";
+        termOutput.insertBefore(resLine, inputLine);
+      }
+      else if (command === 'clear') {
+        const lines = termOutput.querySelectorAll('.terminal-line:not(#terminalInputLine)');
+        lines.forEach(line => line.remove());
+      }
+      else if (command === 'help') {
+        const helpLine = document.createElement('div');
+        helpLine.className = 'terminal-line';
+        helpLine.innerHTML = "Available commands:<br> - n8n: Access Automation Cloud<br> - clear: Clear terminal<br> - whoami: Display user info<br> - help: Show this message";
+        termOutput.insertBefore(helpLine, inputLine);
+      }
+      else if (command === 'whoami') {
+        const whoLine = document.createElement('div');
+        whoLine.className = 'terminal-line';
+        whoLine.innerText = "Security Analyst | Compliance Professional";
+        termOutput.insertBefore(whoLine, inputLine);
+      }
+      else if (command !== "") {
+        const errLine = document.createElement('div');
+        errLine.className = 'terminal-line';
+        errLine.innerText = `Command not found: ${sanitizedCommand}. Type 'help' for available commands.`;
+        termOutput.insertBefore(errLine, inputLine);
+      }
+
+      // Reset and Scroll
+      this.value = '';
+      termOutput.scrollTop = termOutput.scrollHeight;
     }
+  });
 
-    resizeCanvas();
-    window.addEventListener("resize", resizeCanvas);
+  // Click anywhere in terminal to focus input
+  document.getElementById('terminalCard').addEventListener('click', () => {
+    termInput.focus();
+  });
+}
 
-    const vertexSrc = `
+
+/* WebGL animated background (Updated for Large-Scale Balanced Abstraction) */
+const canvas = document.getElementById('webgl-bg');
+const gl = canvas.getContext('webgl');
+
+function resizeGL() {
+  canvas.width = window.innerWidth * devicePixelRatio;
+  canvas.height = window.innerHeight * devicePixelRatio;
+  gl.viewport(0, 0, canvas.width, canvas.height);
+}
+window.addEventListener('resize', resizeGL);
+
+const dpr = window.devicePixelRatio || 1;
+
+function resizeCanvas() {
+  canvas.width = window.innerWidth * dpr;
+  canvas.height = window.innerHeight * dpr;
+  canvas.style.width = window.innerWidth + "px";
+  canvas.style.height = window.innerHeight + "px";
+}
+
+resizeCanvas();
+window.addEventListener("resize", resizeCanvas);
+
+const vertexSrc = `
       attribute vec2 position;
       void main() {
         gl_Position = vec4(position, 0.0, 1.0);
       }
     `;
 
-    // Frosted Glass + Large Scale Abstract Liquid Shader
-    const fragmentSrc = `
+// Frosted Glass + Large Scale Abstract Liquid Shader
+const fragmentSrc = `
       precision highp float;
       uniform float u_time;
       uniform vec2 u_res;
@@ -870,55 +870,55 @@
       }
     `;
 
-    function compile(type, src) {
-      const s = gl.createShader(type);
-      gl.shaderSource(s, src);
-      gl.compileShader(s);
-      return s;
-    }
+function compile(type, src) {
+  const s = gl.createShader(type);
+  gl.shaderSource(s, src);
+  gl.compileShader(s);
+  return s;
+}
 
-    const program = gl.createProgram();
-    gl.attachShader(program, compile(gl.VERTEX_SHADER, vertexSrc));
-    gl.attachShader(program, compile(gl.FRAGMENT_SHADER, fragmentSrc));
-    gl.linkProgram(program);
-    gl.useProgram(program);
+const program = gl.createProgram();
+gl.attachShader(program, compile(gl.VERTEX_SHADER, vertexSrc));
+gl.attachShader(program, compile(gl.FRAGMENT_SHADER, fragmentSrc));
+gl.linkProgram(program);
+gl.useProgram(program);
 
-    const buffer = gl.createBuffer();
-    gl.bindBuffer(gl.ARRAY_BUFFER, buffer);
-    gl.bufferData(gl.ARRAY_BUFFER, new Float32Array([
-      -1, -1,  1, -1, -1,  1,
-      -1,  1,  1, -1,  1,  1
-    ]), gl.STATIC_DRAW);
+const buffer = gl.createBuffer();
+gl.bindBuffer(gl.ARRAY_BUFFER, buffer);
+gl.bufferData(gl.ARRAY_BUFFER, new Float32Array([
+  -1, -1, 1, -1, -1, 1,
+  -1, 1, 1, -1, 1, 1
+]), gl.STATIC_DRAW);
 
-    const pos = gl.getAttribLocation(program, 'position');
-    gl.enableVertexAttribArray(pos);
-    gl.vertexAttribPointer(pos, 2, gl.FLOAT, false, 0, 0);
+const pos = gl.getAttribLocation(program, 'position');
+gl.enableVertexAttribArray(pos);
+gl.vertexAttribPointer(pos, 2, gl.FLOAT, false, 0, 0);
 
-    const uTime = gl.getUniformLocation(program, 'u_time');
-    const uRes = gl.getUniformLocation(program, 'u_res');
+const uTime = gl.getUniformLocation(program, 'u_time');
+const uRes = gl.getUniformLocation(program, 'u_res');
 
-    resizeGL();
+resizeGL();
 
-    const start = performance.now();
+const start = performance.now();
 
-    function render() {
-      const t = (performance.now() - start) * 0.001;
-      gl.uniform1f(uTime, t);
-      gl.uniform2f(uRes, canvas.width, canvas.height);
-      gl.drawArrays(gl.TRIANGLES, 0, 6);
-      requestAnimationFrame(render);
-    }
-    render();
+function render() {
+  const t = (performance.now() - start) * 0.001;
+  gl.uniform1f(uTime, t);
+  gl.uniform2f(uRes, canvas.width, canvas.height);
+  gl.drawArrays(gl.TRIANGLES, 0, 6);
+  requestAnimationFrame(render);
+}
+render();
 
-    // Rotating Gradient Button Hover Tracking
-    const hoverBtns = document.querySelectorAll('.hover-btn');
-    hoverBtns.forEach(btn => {
-      btn.addEventListener('mousemove', (e) => {
-        const rect = btn.getBoundingClientRect();
-        const x = e.clientX - rect.left;
-        const y = e.clientY - rect.top;
-        
-        btn.style.setProperty('--mouseX', `${x}px`);
-        btn.style.setProperty('--mouseY', `${y}px`);
-      });
-    });
+// Rotating Gradient Button Hover Tracking
+const hoverBtns = document.querySelectorAll('.hover-btn');
+hoverBtns.forEach(btn => {
+  btn.addEventListener('mousemove', (e) => {
+    const rect = btn.getBoundingClientRect();
+    const x = e.clientX - rect.left;
+    const y = e.clientY - rect.top;
+
+    btn.style.setProperty('--mouseX', `${x}px`);
+    btn.style.setProperty('--mouseY', `${y}px`);
+  });
+});
