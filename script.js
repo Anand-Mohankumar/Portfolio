@@ -415,7 +415,7 @@ function showView(viewName) {
     openWindows.push(viewName);
   }
 
-  // Always bring to front regardless
+  // Always bring to front regardless (bringToFront also calls repositionStack)
   bringToFront(card);
 
   // --- MOBILE OPTIMIZATION: Handle stacking order ---
@@ -449,16 +449,82 @@ function showView(viewName) {
   }
 }
 
-function bringToFront(window) {
-  const allWindows = document.querySelectorAll('.window-card');
-  let maxZ = 1000;
-  allWindows.forEach(w => {
-    const z = parseInt(w.style.zIndex || 1000);
-    if (z > maxZ) maxZ = z;
+function bringToFront(winEl) {
+  // Find this window's name so we can reorder openWindows
+  const viewName = Object.keys(cards).find(key => cards[key] === winEl);
+
+  // Promote to top of openWindows stack (move to end = foreground)
+  if (viewName && openWindows.includes(viewName)) {
+    openWindows = openWindows.filter(w => w !== viewName);
+    openWindows.push(viewName);
+  }
+
+  // Assign z-indices based on stack order
+  const BASE_Z = 1000;
+  openWindows.forEach((name, i) => {
+    const c = cards[name];
+    if (c) c.style.zIndex = BASE_Z + i;
+  });
+
+  // Mark active / clear old active
+  document.querySelectorAll('.window-card').forEach(w => {
     w.classList.remove('active-window');
   });
-  window.style.zIndex = maxZ + 1;
-  window.classList.add('active-window');
+  winEl.classList.add('active-window');
+
+  // Physically reposition all background windows
+  repositionStack();
+}
+
+/**
+ * Repositions every open window so that background windows appear
+ * shifted to the left and downward relative to the foreground window,
+ * creating a real depth-of-stack illusion.
+ *
+ * openWindows order: [bottommost, ..., foreground]
+ * depth 0 = foreground (last), depth 1 = one behind, etc.
+ */
+function repositionStack() {
+  const STEP_X = -18;  // px shift left per depth level
+  const STEP_Y =  18;  // px shift down per depth level
+
+  const n = openWindows.length;
+
+  openWindows.forEach((name, i) => {
+    const c = cards[name];
+    if (!c || c.style.display === 'none') return;
+
+    const depth = n - 1 - i; // 0 = foreground, 1 = one behind, ...
+
+    if (depth === 0) {
+      // Foreground window: restore centred position
+      // Only reset if it's still using the transform-based centering
+      // (don't override if the user has manually dragged it)
+      const currentTransform = c.style.transform || '';
+      const hasPixelPos = c.style.left && !c.style.left.includes('%');
+      if (!hasPixelPos) {
+        c.style.transform = 'translate3d(-50%, -50%, 0)';
+      }
+    } else {
+      // Background windows: offset proportionally to depth
+      const offsetX = STEP_X * depth;
+      const offsetY = STEP_Y * depth;
+
+      const hasPixelPos = c.style.left && !c.style.left.includes('%');
+      if (hasPixelPos) {
+        // Window was dragged: grab its current pixel position and nudge it
+        // We store _baseLeft/_baseTop as the "foreground" position anchor
+        // and shift from there.
+        // For simplicity, just shift from its current absolute position.
+        // (Dragged windows keep their pixel coords; we only add the depth nudge
+        //  via a CSS custom-property transform so we don't corrupt left/top.)
+        c.style.transform = `translate(${offsetX}px, ${offsetY}px)`;
+      } else {
+        // Still using the centred % transform
+        c.style.transform = `translate3d(calc(-50% + ${offsetX}px), calc(-50% + ${offsetY}px), 0)`;
+      }
+    }
+  });
 }
 
 // Draggable windows
@@ -544,16 +610,6 @@ document.addEventListener('mouseup', () => {
 // Initialize draggable after DOM is ready
 setTimeout(() => {
   initDraggable();
-
-  // Cascade windows slightly for visual clarity
-  const windowsToOffset = ['projects', 'skills', 'terminal'];
-  windowsToOffset.forEach((view, index) => {
-    if (cards[view]) {
-      const offset = (index + 1) * 30;
-      cards[view].style.left = `calc(50% + ${offset}px)`;
-      cards[view].style.top = `calc(50% + ${offset}px)`;
-    }
-  });
 }, 100);
 
 function closeWindow(viewName) {
@@ -602,6 +658,8 @@ function closeWindow(viewName) {
       } else if (activeWindow) {
         updateSidebar(activeWindow);
       }
+      // Reposition remaining windows now that the stack has changed
+      repositionStack();
     }
   }, 400); // Match transition duration
 }

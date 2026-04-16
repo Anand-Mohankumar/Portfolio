@@ -580,7 +580,7 @@
 
     .content-area {
       flex: 1;
-      overflow: hidden;
+      overflow: visible;
       padding: 70px 40px 100px 40px;
       /* Top padding for topbar, bottom for dock */
       position: relative;
@@ -677,6 +677,16 @@
     .window-card.active-window {
       box-shadow: none;
       border-color: rgba(255, 255, 255, 0.25);
+    }
+
+    /* ---- REAL WINDOW STACKING ----
+       Background windows are physically repositioned by repositionStack() in JS.
+       This transition makes the shift animate smoothly. */
+    .window-card:not(.active-window):not(.dragging) {
+      transition:
+        transform 0.45s cubic-bezier(0.19, 1, 0.22, 1),
+        opacity   0.45s ease,
+        z-index   0s;
     }
 
     .window-card.dragging {
