@@ -129,6 +129,7 @@ const viewConfig = {
 };
 
 let openWindows = []; // START EMPTY: Home opens after boot sequence
+let minimizedWindows = new Set(); // Track which windows are minimized (hidden)
 let activeWindow = null;
 let draggedWindow = null;
 let dragOffset = { x: 0, y: 0 };
@@ -267,7 +268,7 @@ function updateOpenWindowsTabs() {
   setTimeout(checkTabsOverflow, 50);
 }
 
-// NEW: Centralized Sidebar Update Logic with 3-Dot Menu
+// NEW: Centralized Sidebar Update Logic with 3-Dot Menu (Projects only)
 function updateSidebar(viewName) {
   // Close any open popups first
   document.querySelectorAll('.sidebar-popup-grid').forEach(grid => grid.classList.remove('visible'));
@@ -288,12 +289,15 @@ function updateSidebar(viewName) {
       item.classList.add('active');
     }
 
-    // 3. Scan for OPEN windows belonging to this category
+    // 3. Only add 3-dot menu for the 'projects' dock item
+    if (category !== 'projects') return;
+
+    // 4. Scan for OPEN (non-minimized) windows belonging to this category
     const categoryOpenWindows = openWindows.filter(win => {
       return viewConfig[win] && viewConfig[win].parent === category;
     });
 
-    // 4. If open windows exist for this category, add the 3-dots Menu
+    // 5. If open windows exist for projects, add the 3-dots Menu
     if (categoryOpenWindows.length > 0) {
       // Create Trigger (3 Dots)
       const trigger = document.createElement('div');
@@ -375,6 +379,41 @@ function showView(viewName) {
   if (!card) return;
 
   const isAlreadyOpen = openWindows.includes(viewName);
+  const isMinimized = minimizedWindows.has(viewName);
+
+  // If the window was minimized, restore it
+  if (isMinimized) {
+    minimizedWindows.delete(viewName);
+
+    // Reset position to centered % (in case it was dragged to pixel coords)
+    card.style.left = '50%';
+    card.style.top = '50%';
+    card.style.borderRadius = '16px';
+    card.style.display = 'flex';
+    card.style.opacity = '0';
+
+    // Start from icon position (tiny scale)
+    const iconPos = getIconPosition(viewName);
+    const screenCenter = { x: window.innerWidth / 2, y: window.innerHeight / 2 };
+    const deltaX = iconPos.x - screenCenter.x;
+    const deltaY = iconPos.y - screenCenter.y;
+
+    // Disable transition for initial setup
+    card.style.transition = 'none';
+    card.style.transform = `translate3d(calc(-50% + ${deltaX}px), calc(-50% + ${deltaY}px), 0) scale(0.1)`;
+    card.offsetHeight; // Force reflow
+
+    // Animate to center
+    card.style.transition = 'transform 0.45s cubic-bezier(0.19, 1, 0.22, 1), opacity 0.4s ease';
+    card.style.transform = 'translate3d(-50%, -50%, 0) scale(1)';
+    card.style.opacity = '1';
+
+    bringToFront(card);
+    activeWindow = viewName;
+    updateSidebar(viewName);
+    updateOpenWindowsTabs();
+    return;
+  }
 
   // Make sure it's visible in DOM to calculate styles
   card.style.display = 'flex';
@@ -642,11 +681,14 @@ function closeWindow(viewName) {
     card.style.borderRadius = '16px';
 
     openWindows = openWindows.filter(w => w !== viewName);
+    minimizedWindows.delete(viewName); // Also clean up from minimized set if it was there
 
     // Show home if closing active window
     if (activeWindow === viewName) {
-      if (openWindows.length > 0) {
-        showView(openWindows[openWindows.length - 1]);
+      // Find a non-minimized window to switch to
+      const nextVisibleWindow = openWindows.slice().reverse().find(w => !minimizedWindows.has(w));
+      if (nextVisibleWindow) {
+        showView(nextVisibleWindow);
       } else {
         showView('home');
       }
@@ -668,8 +710,15 @@ function closeWindow(viewName) {
 document.querySelectorAll('.sidebar-item').forEach(item => {
   item.addEventListener('click', () => {
     const view = item.dataset.view;
-    // If window is already open, just bring to front
-    if (openWindows.includes(view) && cards[view].style.display === 'flex') {
+
+    // If the window is minimized, restore it
+    if (minimizedWindows.has(view)) {
+      showView(view);
+      return;
+    }
+
+    // If window is already open and visible, just bring to front
+    if (openWindows.includes(view) && cards[view] && cards[view].style.display === 'flex') {
       bringToFront(cards[view]);
       activeWindow = view;
       updateOpenWindowsTabs();
@@ -705,7 +754,7 @@ document.querySelectorAll('.control-btn').forEach(btn => {
     if (btn.classList.contains('btn-close')) {
       closeWindow(viewName);
     } else if (btn.classList.contains('btn-minimize')) {
-      closeWindow(viewName);
+      minimizeWindow(viewName);
     } else if (btn.classList.contains('btn-maximize')) {
       card.classList.toggle('full-width');
       if (card.classList.contains('full-width')) {
@@ -716,6 +765,49 @@ document.querySelectorAll('.control-btn').forEach(btn => {
     }
   });
 });
+
+// NEW: Minimize function — hides the window but keeps it in openWindows
+function minimizeWindow(viewName) {
+  const card = cards[viewName];
+  if (!card) return;
+
+  // Animate shrink toward icon
+  const iconPos = getIconPosition(viewName);
+  const screenCenter = { x: window.innerWidth / 2, y: window.innerHeight / 2 };
+  const deltaX = iconPos.x - screenCenter.x;
+  const deltaY = iconPos.y - screenCenter.y;
+
+  card.style.transition = 'transform 0.35s cubic-bezier(0.4, 0, 0.6, 1), opacity 0.35s ease, border-radius 0.35s ease';
+  card.style.transform = `translate3d(calc(-50% + ${deltaX}px), calc(-50% + ${deltaY}px), 0) scale(0.1)`;
+  card.style.opacity = '0';
+  card.style.borderRadius = '50%';
+
+  setTimeout(() => {
+    card.style.display = 'none';
+    // Mark as minimized — do NOT remove from openWindows
+    minimizedWindows.add(viewName);
+
+    // Switch focus to another open non-minimized window if this was active
+    if (activeWindow === viewName) {
+      const nextWindow = openWindows.slice().reverse().find(w => w !== viewName && !minimizedWindows.has(w));
+      if (nextWindow) {
+        showView(nextWindow);
+      } else {
+        // No visible windows — show home if home is open, else update UI
+        if (openWindows.includes('home') && !minimizedWindows.has('home')) {
+          showView('home');
+        } else {
+          activeWindow = null;
+          updateOpenWindowsTabs();
+          updateSidebar('');
+        }
+      }
+    } else {
+      updateOpenWindowsTabs();
+      updateSidebar(activeWindow || '');
+    }
+  }, 350);
+}
 
 // Click on window to bring to front (UPDATED TO FIX SIDEBAR HIGHLIGHT)
 document.querySelectorAll('.window-card').forEach(win => {
