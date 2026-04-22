@@ -7,8 +7,7 @@
     /* Use Google Sans across the UI (terminal excluded) */
     body {
       font-family: 'Google Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, sans-serif;
-      /* Background handled by WebGL, fallback gradient updated to Orange/Teal */
-      background: linear-gradient(135deg, #1F4F55 0%, #C45A2A 100%);
+      background-color: #12181A;
       height: 100vh;
       overflow: hidden;
       color: #fff;

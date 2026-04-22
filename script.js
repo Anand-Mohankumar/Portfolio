@@ -918,23 +918,15 @@ const canvas = document.getElementById('webgl-bg');
 const gl = canvas.getContext('webgl');
 
 function resizeGL() {
-  canvas.width = window.innerWidth * devicePixelRatio;
-  canvas.height = window.innerHeight * devicePixelRatio;
+  const currentDpr = window.devicePixelRatio || 1;
+  canvas.width = window.innerWidth * currentDpr;
+  canvas.height = window.innerHeight * currentDpr;
+  canvas.style.width = window.innerWidth + "px";
+  canvas.style.height = window.innerHeight + "px";
   gl.viewport(0, 0, canvas.width, canvas.height);
 }
 window.addEventListener('resize', resizeGL);
-
-const dpr = window.devicePixelRatio || 1;
-
-function resizeCanvas() {
-  canvas.width = window.innerWidth * dpr;
-  canvas.height = window.innerHeight * dpr;
-  canvas.style.width = window.innerWidth + "px";
-  canvas.style.height = window.innerHeight + "px";
-}
-
-resizeCanvas();
-window.addEventListener("resize", resizeCanvas);
+resizeGL();
 
 const vertexSrc = `
       attribute vec2 position;
