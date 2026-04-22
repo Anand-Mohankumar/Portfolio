@@ -871,10 +871,10 @@ if (termInput) {
 
       // Command Logic
       if (command === 'n8n') {
-        window.open('https://n8ncloud.cyberamo.work/', '_blank');
+        window.open('https://n8n.cyberamo.work/', '_blank');
         const resLine = document.createElement('div');
         resLine.className = 'terminal-line';
-        resLine.innerText = "Opening n8n Cloud in a new tab...";
+        resLine.innerText = "Opening n8n in a new tab...";
         termOutput.insertBefore(resLine, inputLine);
       }
       else if (command === 'clear') {
