@@ -829,6 +829,12 @@
       color: #fff;
     }
 
+    .btn-maximize:hover {
+      background: linear-gradient(145deg, rgba(0, 150, 136, 0.4), rgba(0, 150, 136, 0.2));
+      border-color: rgba(0, 150, 136, 0.5);
+      color: #fff;
+    }
+
     .card-content {
       padding: 30px;
       overflow-y: auto;
