@@ -99,6 +99,8 @@ const cards = {
   lectureNotes: document.getElementById('lectureNotesCard'), // NEW: Lecture Notes
   ai: document.getElementById('aiCard'),     // NEW
   infographics: document.getElementById('infographicsCard'), // NEW: Infographics
+  aiInfographics: document.getElementById('aiInfographicsCard'), // NEW: AI Infographics Folder
+  aiClaude: document.getElementById('aiClaudeCard'), // NEW: AI Claude Folder
   aiFundamentals: document.getElementById('aiFundamentalsCard'), // NEW: AI Fundamentals Folder
   aiAdvanced: document.getElementById('aiAdvancedCard'), // NEW: AI Advanced Folder
   home: document.getElementById('homeCard'),
@@ -122,6 +124,8 @@ const viewConfig = {
   lectureNotes: { id: 'lectureNotes', parent: 'projects', title: 'Lecture Notes', icon: '📓' },
   ai: { id: 'ai', parent: 'projects', title: 'AI & Automation', icon: '🧠' },
   infographics: { id: 'infographics', parent: 'projects', title: 'Infographics', icon: '📊' },
+  aiInfographics: { id: 'aiInfographics', parent: 'projects', title: 'AI Infographics', icon: '📂' },
+  aiClaude: { id: 'aiClaude', parent: 'projects', title: 'Claude', icon: '📁' },
   aiFundamentals: { id: 'aiFundamentals', parent: 'projects', title: 'AI Fundamentals', icon: '📁' },
   aiAdvanced: { id: 'aiAdvanced', parent: 'projects', title: 'AI Advanced', icon: '📂' },
 

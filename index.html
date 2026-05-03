@@ -567,20 +567,12 @@
               ℹ️ Select a folder to view the infographics inside.
             </div>
 
-            <div class="resource-hero-grid" style="grid-template-columns: repeat(2, 1fr);">
-              <div class="resource-hero-card" onclick="showView('aiFundamentals')">
+            <div class="resource-hero-grid" style="grid-template-columns: repeat(1, 1fr);">
+              <div class="resource-hero-card" onclick="showView('aiInfographics')">
                 <div class="res-icon">📂</div>
-                <div class="res-title">AI Fundamentals</div>
+                <div class="res-title">AI</div>
                 <div class="res-desc">
-                  Core concepts, prompting guides, and beginner overviews.
-                </div>
-              </div>
-
-              <div class="resource-hero-card" onclick="showView('aiAdvanced')">
-                <div class="res-icon">📂</div>
-                <div class="res-title">AI Advanced</div>
-                <div class="res-desc">
-                  RAG architectures, mastery roadmaps, and advanced topics.
+                  AI fundamentals, advanced concepts, prompting guides, and roadmaps.
                 </div>
               </div>
             </div>
@@ -606,6 +598,62 @@
                   <div class="art-meta">Feb 14, 2023 • labs-research-and-ctf/lecture-notes/networking-fundamentals</div>
                 </div>
                 <div class="art-arrow">→</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="window-card" id="aiInfographicsCard" style="display: none;">
+          <div class="card-header">
+            <div class="card-title">AI Infographics</div>
+            <div class="card-controls">
+              <div class="control-btn btn-minimize" title="Minimize">
+                <svg width="10" height="2" viewBox="0 0 10 2" fill="none">
+                  <rect width="10" height="2" rx="1" fill="currentColor" />
+                </svg>
+              </div>
+              <div class="control-btn btn-maximize" title="Maximize">
+                <svg width="10" height="10" viewBox="0 0 10 10" fill="none">
+                  <rect x="0.5" y="0.5" width="9" height="9" rx="1.5" stroke="currentColor" stroke-width="1.5" />
+                </svg>
+              </div>
+              <div class="control-btn btn-close" title="Close">
+                <svg width="10" height="10" viewBox="0 0 10 10" fill="none">
+                  <path d="M1 1L9 9M9 1L1 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="card-content">
+
+            <div
+              style="margin-bottom: 24px; text-align: center; color: rgba(255,255,255,0.7); font-size: 14px; background: rgba(80, 250, 123, 0.1); border: 1px solid rgba(80, 250, 123, 0.2); padding: 10px; border-radius: 8px;">
+              ℹ️ Select a folder to view the infographics inside.
+            </div>
+
+            <div class="resource-hero-grid" style="grid-template-columns: repeat(3, 1fr);">
+              <div class="resource-hero-card" onclick="showView('aiFundamentals')">
+                <div class="res-icon">📂</div>
+                <div class="res-title">AI Fundamentals</div>
+                <div class="res-desc">
+                  Core concepts, prompting guides, and beginner overviews.
+                </div>
+              </div>
+
+              <div class="resource-hero-card" onclick="showView('aiAdvanced')">
+                <div class="res-icon">📂</div>
+                <div class="res-title">AI Advanced</div>
+                <div class="res-desc">
+                  RAG architectures, mastery roadmaps, and advanced topics.
+                </div>
+              </div>
+
+              <div class="resource-hero-card" onclick="showView('aiClaude')">
+                <div class="res-icon">📂</div>
+                <div class="res-title">Claude</div>
+                <div class="res-desc">
+                  Claude specific cheatsheets and token usage guides.
+                </div>
               </div>
             </div>
           </div>
@@ -747,6 +795,51 @@
                 onclick="window.open('https://github.com/Anand-Mohankumar/Portfolio/blob/main/infographics/RAG%20explained2.png?raw=true', '_blank')">
                 <img src="infographics/thumbnails/RAG%20explained2.png" alt="RAG explained2" class="infographic-thumb">
                 <div class="infographic-caption">RAG explained2</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="window-card" id="aiClaudeCard" style="display: none;">
+          <div class="card-header">
+            <div class="card-title">Claude</div>
+            <div class="card-controls">
+              <div class="control-btn btn-minimize" title="Minimize">
+                <svg width="10" height="2" viewBox="0 0 10 2" fill="none">
+                  <rect width="10" height="2" rx="1" fill="currentColor" />
+                </svg>
+              </div>
+              <div class="control-btn btn-maximize" title="Maximize">
+                <svg width="10" height="10" viewBox="0 0 10 10" fill="none">
+                  <rect x="0.5" y="0.5" width="9" height="9" rx="1.5" stroke="currentColor" stroke-width="1.5" />
+                </svg>
+              </div>
+              <div class="control-btn btn-close" title="Close">
+                <svg width="10" height="10" viewBox="0 0 10 10" fill="none">
+                  <path d="M1 1L9 9M9 1L1 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="card-content">
+            <div
+              style="margin-bottom: 24px; text-align: center; color: rgba(255,255,255,0.7); font-size: 14px; background: rgba(80, 250, 123, 0.1); border: 1px solid rgba(80, 250, 123, 0.2); padding: 10px; border-radius: 8px;">
+              ℹ️ Tip: Click thumbnail to view full size. Right click and download the original image for use.
+            </div>
+
+            <div class="infographic-grid">
+              <div class="infographic-item"
+                onclick="window.open('https://github.com/Anand-Mohankumar/Portfolio/blob/main/infographics/7%20Hacks%20to%20Reduce%20Claude%20Token%20usage.png?raw=true', '_blank')">
+                <img src="infographics/thumbnails/7%20Hacks%20to%20Reduce%20Claude%20Token%20usage.png"
+                  alt="7 Hacks to Reduce Claude Token usage" class="infographic-thumb">
+                <div class="infographic-caption">7 Hacks to Reduce Claude Token usage</div>
+              </div>
+
+              <div class="infographic-item"
+                onclick="window.open('https://github.com/Anand-Mohankumar/Portfolio/blob/main/infographics/Claude%20cheetsheet%20commands.png?raw=true', '_blank')">
+                <img src="infographics/thumbnails/Claude%20cheetsheet%20commands.png"
+                  alt="Claude cheetsheet commands" class="infographic-thumb">
+                <div class="infographic-caption">Claude cheetsheet commands</div>
               </div>
             </div>
           </div>
