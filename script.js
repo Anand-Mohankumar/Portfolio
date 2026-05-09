@@ -1098,21 +1098,77 @@ function getMarkdown() {
 }
 
 if (mdfyToggleVisual && mdfyToggleSource) {
+  const mdfyWorkspace = document.querySelector('.markdownify-workspace');
+
   mdfyToggleVisual.addEventListener('click', () => {
     mdfyToggleVisual.classList.add('active');
     mdfyToggleSource.classList.remove('active');
+    
+    mdfyWorkspace.classList.remove('split-view');
     mdfySource.style.display = 'none';
+    
+    // Parse markdown back to visual if typing in source
+    if (window.marked && mdfySource.value !== getMarkdown()) {
+      mdfyEditor.innerHTML = marked.parse(mdfySource.value);
+      saveHistoryState();
+    }
+    
     mdfyEditor.style.display = 'block';
+    
+    // Show toolbar
+    const toolbar = document.querySelector('.markdownify-toolbar');
+    if (toolbar) toolbar.style.display = 'flex';
   });
 
   mdfyToggleSource.addEventListener('click', () => {
     mdfyToggleSource.classList.add('active');
     mdfyToggleVisual.classList.remove('active');
-    mdfyEditor.style.display = 'none';
+    
+    mdfyWorkspace.classList.add('split-view');
+    mdfyEditor.style.display = 'block';
     mdfySource.style.display = 'block';
     mdfySource.value = getMarkdown();
+    
+    // Hide toolbar
+    const toolbar = document.querySelector('.markdownify-toolbar');
+    if (toolbar) toolbar.style.display = 'none';
+  });
+
+  // Live preview logic from Source to Editor
+  mdfySource.addEventListener('input', () => {
+    if (window.marked) {
+      mdfyEditor.innerHTML = marked.parse(mdfySource.value);
+    }
   });
 }
+
+// --- UNDO/REDO HISTORY LOGIC ---
+let undoStack = [];
+let redoStack = [];
+const MAX_HISTORY = 3;
+let isUndoRedoAction = false;
+
+function saveHistoryState() {
+  if (isUndoRedoAction) return;
+  const content = mdfyEditor.innerHTML;
+  if (undoStack.length === 0 || undoStack[undoStack.length - 1] !== content) {
+    undoStack.push(content);
+    if (undoStack.length > MAX_HISTORY + 1) { // Keep current state + up to 3 previous
+      undoStack.shift();
+    }
+    redoStack = [];
+  }
+}
+
+// Save initial state
+saveHistoryState();
+
+// Save state when typing (debounced)
+let historyTimeout;
+mdfyEditor.addEventListener('input', () => {
+  clearTimeout(historyTimeout);
+  historyTimeout = setTimeout(() => saveHistoryState(), 500);
+});
 
 if (mdfyBtnCopy) {
   mdfyBtnCopy.addEventListener('click', () => {
@@ -1185,6 +1241,10 @@ toolbarBtns.forEach(btn => {
     const command = btn.getAttribute('data-command');
     const value = btn.getAttribute('data-value') || null;
 
+    if (command !== 'undo' && command !== 'redo') {
+      saveHistoryState();
+    }
+
     if (command === 'createLink') {
       const url = prompt('Enter link URL:');
       if (url) document.execCommand('createLink', false, url);
@@ -1221,8 +1281,27 @@ toolbarBtns.forEach(btn => {
       } else {
         document.execCommand('formatBlock', false, targetBlock);
       }
+    } else if (command === 'undo') {
+      if (undoStack.length > 1) {
+        isUndoRedoAction = true;
+        redoStack.push(undoStack.pop());
+        mdfyEditor.innerHTML = undoStack[undoStack.length - 1];
+        isUndoRedoAction = false;
+      }
+    } else if (command === 'redo') {
+      if (redoStack.length > 0) {
+        isUndoRedoAction = true;
+        const nextState = redoStack.pop();
+        undoStack.push(nextState);
+        mdfyEditor.innerHTML = nextState;
+        isUndoRedoAction = false;
+      }
     } else {
       document.execCommand(command, false, value);
+    }
+    
+    if (command !== 'undo' && command !== 'redo') {
+      setTimeout(saveHistoryState, 10);
     }
     
     syncToolbarState();

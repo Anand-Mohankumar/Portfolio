@@ -1736,6 +1736,17 @@
       overflow: hidden;
       position: relative;
     }
+    .markdownify-workspace.split-view {
+      flex-direction: row;
+    }
+    .markdownify-workspace.split-view .markdownify-editor,
+    .markdownify-workspace.split-view .markdownify-source {
+      width: 50%;
+      flex: 0 0 50%;
+    }
+    .markdownify-workspace.split-view .markdownify-editor {
+      border-left: 1px solid rgba(255, 255, 255, 0.1);
+    }
     .markdownify-editor, .markdownify-source {
       flex: 1;
       width: 100%;
