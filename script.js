@@ -1114,6 +1114,7 @@ if (mdfyToggleVisual && mdfyToggleSource) {
     }
     
     mdfyEditor.style.display = 'block';
+    mdfyEditor.contentEditable = 'true'; // Enable typing in Visual mode
     
     // Show toolbar
     const toolbar = document.querySelector('.markdownify-toolbar');
@@ -1126,6 +1127,7 @@ if (mdfyToggleVisual && mdfyToggleSource) {
     
     mdfyWorkspace.classList.add('split-view');
     mdfyEditor.style.display = 'block';
+    mdfyEditor.contentEditable = 'false'; // Make preview read-only in Markdown mode
     mdfySource.style.display = 'block';
     mdfySource.value = getMarkdown();
     
@@ -1213,6 +1215,18 @@ function syncToolbarState() {
     } else if (cmd === 'formatBlockquote') {
        const block = document.queryCommandValue('formatBlock');
        if (block && block.toLowerCase() === 'blockquote') isActive = true;
+    } else if (cmd === 'inlineCode') {
+       const selection = window.getSelection();
+       if (selection && selection.anchorNode) {
+         let parent = selection.anchorNode;
+         while (parent && parent !== mdfyEditor && parent !== document.body) {
+           if (parent.nodeName === 'CODE') {
+             isActive = true;
+             break;
+           }
+           parent = parent.parentNode;
+         }
+       }
     } else {
       try {
         isActive = document.queryCommandState(cmd);
@@ -1253,7 +1267,24 @@ toolbarBtns.forEach(btn => {
       if (url) document.execCommand('insertImage', false, url);
     } else if (command === 'inlineCode') {
       const selection = window.getSelection();
-      if (!selection.isCollapsed) {
+      let isCode = false;
+      let codeNode = null;
+      if (selection && selection.anchorNode) {
+        let parent = selection.anchorNode;
+        while (parent && parent !== mdfyEditor && parent !== document.body) {
+          if (parent.nodeName === 'CODE') {
+            isCode = true;
+            codeNode = parent;
+            break;
+          }
+          parent = parent.parentNode;
+        }
+      }
+      
+      if (isCode && codeNode) {
+        const text = codeNode.innerHTML;
+        codeNode.outerHTML = text;
+      } else if (selection && !selection.isCollapsed) {
         const text = selection.toString();
         document.execCommand('insertHTML', false, `<code>${text}</code>`);
       }
