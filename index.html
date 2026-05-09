@@ -917,6 +917,80 @@
           </div>
         </div>
 
+        <div class="window-card" id="markdownifyCard" style="display: none;">
+          <div class="card-header markdownify-header">
+            <div class="card-title">Markdownify</div>
+            <div class="markdownify-doc-controls">
+              <button class="doc-control-btn" id="mdfy-btn-download" title="Download .md">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+              </button>
+              <button class="doc-control-btn" id="mdfy-btn-copy" title="Copy Markdown">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+              </button>
+              <div class="view-toggle-group">
+                <button class="view-toggle-btn active" id="mdfy-toggle-visual">Visual</button>
+                <button class="view-toggle-btn" id="mdfy-toggle-source">Markdown</button>
+              </div>
+            </div>
+            <div class="card-controls">
+              <div class="control-btn btn-minimize" title="Minimize">
+                <svg width="10" height="2" viewBox="0 0 10 2" fill="none"><rect width="10" height="2" rx="1" fill="currentColor" /></svg>
+              </div>
+              <div class="control-btn btn-maximize" title="Maximize">
+                <svg width="10" height="10" viewBox="0 0 10 10" fill="none"><rect x="0.5" y="0.5" width="9" height="9" rx="1.5" stroke="currentColor" stroke-width="1.5" /></svg>
+              </div>
+              <div class="control-btn btn-close" title="Close">
+                <svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M1 1L9 9M9 1L1 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" /></svg>
+              </div>
+            </div>
+          </div>
+          <div class="markdownify-toolbar">
+            <div class="toolbar-group">
+              <button class="toolbar-btn" data-command="undo"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 7v6h6"></path><path d="M21 17a9 9 0 0 0-9-9 9 9 0 0 0-6 2.3L3 13"></path></svg><span class="toolbar-tooltip">Undo</span></button>
+              <button class="toolbar-btn" data-command="redo"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 7v6h-6"></path><path d="M3 17a9 9 0 0 1 9-9 9 9 0 0 1 6 2.3l3 2.7"></path></svg><span class="toolbar-tooltip">Redo</span></button>
+            </div>
+            <div class="toolbar-group">
+              <button class="toolbar-btn" data-command="formatBlock" data-value="H1"><b>H1</b><span class="toolbar-tooltip">Heading 1</span></button>
+              <button class="toolbar-btn" data-command="formatBlock" data-value="H2"><b>H2</b><span class="toolbar-tooltip">Heading 2</span></button>
+              <button class="toolbar-btn" data-command="formatBlock" data-value="H3"><b>H3</b><span class="toolbar-tooltip">Heading 3</span></button>
+            </div>
+            <div class="toolbar-group">
+              <button class="toolbar-btn" data-command="bold"><b>B</b><span class="toolbar-tooltip">Bold (Ctrl+B)</span></button>
+              <button class="toolbar-btn" data-command="italic"><i>I</i><span class="toolbar-tooltip">Italic (Ctrl+I)</span></button>
+              <button class="toolbar-btn" data-command="strikeThrough"><s>S</s><span class="toolbar-tooltip">Strikethrough</span></button>
+              <button class="toolbar-btn" data-command="inlineCode"><code>&lt;/&gt;</code><span class="toolbar-tooltip">Inline Code</span></button>
+            </div>
+            <div class="toolbar-group">
+              <button class="toolbar-btn" data-command="createLink"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg><span class="toolbar-tooltip">Link</span></button>
+              <button class="toolbar-btn" data-command="insertImage"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><polyline points="21 15 16 10 5 21"></polyline></svg><span class="toolbar-tooltip">Image</span></button>
+              <button class="toolbar-btn" data-command="insertTable"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="3" y1="9" x2="21" y2="9"></line><line x1="3" y1="15" x2="21" y2="15"></line><line x1="9" y1="3" x2="9" y2="21"></line><line x1="15" y1="3" x2="15" y2="21"></line></svg><span class="toolbar-tooltip">Table (3x3)</span></button>
+              <button class="toolbar-btn" data-command="insertHorizontalRule"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line></svg><span class="toolbar-tooltip">Horizontal Rule</span></button>
+            </div>
+            <div class="toolbar-group">
+              <button class="toolbar-btn" data-command="insertUnorderedList"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="8" y1="6" x2="21" y2="6"></line><line x1="8" y1="12" x2="21" y2="12"></line><line x1="8" y1="18" x2="21" y2="18"></line><line x1="3" y1="6" x2="3.01" y2="6"></line><line x1="3" y1="12" x2="3.01" y2="12"></line><line x1="3" y1="18" x2="3.01" y2="18"></line></svg><span class="toolbar-tooltip">Bullet List</span></button>
+              <button class="toolbar-btn" data-command="insertOrderedList"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="10" y1="6" x2="21" y2="6"></line><line x1="10" y1="12" x2="21" y2="12"></line><line x1="10" y1="18" x2="21" y2="18"></line><path d="M4 6h1v4"></path><path d="M4 10h2"></path><path d="M6 18H4c0-1 2-2 2-3s-1-1.5-2-1"></path></svg><span class="toolbar-tooltip">Ordered List</span></button>
+              <button class="toolbar-btn" data-command="insertTaskList"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 11 12 14 22 4"></polyline><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path></svg><span class="toolbar-tooltip">Task List</span></button>
+            </div>
+            <div class="toolbar-group">
+              <button class="toolbar-btn" data-command="formatBlockquote"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg><span class="toolbar-tooltip">Blockquote</span></button>
+              <button class="toolbar-btn" data-command="insertCodeBlock"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg><span class="toolbar-tooltip">Code Block</span></button>
+            </div>
+          </div>
+          <div class="card-content markdownify-workspace" style="position: relative; padding: 0;">
+            <div class="markdownify-editor article-body" id="mdfy-editor" contenteditable="true" spellcheck="false">
+              <h1>Welcome to Markdownify</h1>
+              <p>Start writing your document here...</p>
+            </div>
+            <textarea class="markdownify-source" id="mdfy-source" style="display: none;" spellcheck="false"></textarea>
+            
+            <div class="markdownify-floating-dock">
+              <button class="floating-btn hover-btn" id="mdfy-dock-new" title="New Document">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="12" y1="18" x2="12" y2="12"></line><line x1="9" y1="15" x2="15" y2="15"></line></svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
         <div class="window-card" id="iframeCard" style="display: none;">
           <div class="card-header">
             <div class="card-title" id="iframeTitle">Content</div>
@@ -969,6 +1043,13 @@
             d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z" />
         </svg>
       </div>
+      <div class="sidebar-item dock-item-hidden hover-btn" data-view="markdownify" title="Markdownify">
+        <span class="dock-tooltip">Markdownify</span>
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M14 2H6a2 2 0 0 0-2 2v16c0 1.1.9 2 2 2h12a2 2 0 0 0 2-2V8l-6-6z"/>
+          <path d="M14 3v5h5M16 13H8M16 17H8M10 9H8"/>
+        </svg>
+      </div>
       <div class="sidebar-item dock-item-hidden hover-btn" data-view="terminal" title="Terminal">
         <span class="dock-tooltip">Terminal</span>
         <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -979,6 +1060,8 @@
     </div>
   </div>
 
+  <script src="https://unpkg.com/turndown/dist/turndown.js"></script>
+  <script src="https://unpkg.com/turndown-plugin-gfm/dist/turndown-plugin-gfm.js"></script>
   <script src="script.js"></script>
 </body>
 

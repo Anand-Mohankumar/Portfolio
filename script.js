@@ -107,6 +107,7 @@ const cards = {
   projects: document.getElementById('projectsCard'),
   skills: document.getElementById('skillsCard'),
   terminal: document.getElementById('terminalCard'),
+  markdownify: document.getElementById('markdownifyCard'),
   iframe: document.getElementById('iframeCard')
 };
 
@@ -128,6 +129,7 @@ const viewConfig = {
   aiClaude: { id: 'aiClaude', parent: 'projects', title: 'Claude', icon: '📁' },
   aiFundamentals: { id: 'aiFundamentals', parent: 'projects', title: 'AI Fundamentals', icon: '📁' },
   aiAdvanced: { id: 'aiAdvanced', parent: 'projects', title: 'AI Advanced', icon: '📂' },
+  markdownify: { id: 'markdownify', parent: 'markdownify', title: 'Markdownify', icon: '📝' },
 
   iframe: { id: 'iframe', parent: 'projects', title: 'Content', icon: '🌐' }
 };
@@ -1067,4 +1069,171 @@ hoverBtns.forEach(btn => {
     btn.style.setProperty('--mouseX', `${x}px`);
     btn.style.setProperty('--mouseY', `${y}px`);
   });
+});
+
+// --- MARKDOWNIFY LOGIC ---
+const mdfyEditor = document.getElementById('mdfy-editor');
+const mdfySource = document.getElementById('mdfy-source');
+const mdfyToggleVisual = document.getElementById('mdfy-toggle-visual');
+const mdfyToggleSource = document.getElementById('mdfy-toggle-source');
+const mdfyBtnDownload = document.getElementById('mdfy-btn-download');
+const mdfyBtnCopy = document.getElementById('mdfy-btn-copy');
+
+let turndownService = null;
+function initTurndown() {
+  if (!turndownService && window.TurndownService) {
+    turndownService = new TurndownService({ headingStyle: 'atx', codeBlockStyle: 'fenced' });
+    if (window.turndownPluginGfm) {
+      turndownService.use(window.turndownPluginGfm.gfm);
+    }
+  }
+}
+
+function getMarkdown() {
+  initTurndown();
+  if (turndownService && mdfyEditor) {
+    return turndownService.turndown(mdfyEditor.innerHTML);
+  }
+  return '';
+}
+
+if (mdfyToggleVisual && mdfyToggleSource) {
+  mdfyToggleVisual.addEventListener('click', () => {
+    mdfyToggleVisual.classList.add('active');
+    mdfyToggleSource.classList.remove('active');
+    mdfySource.style.display = 'none';
+    mdfyEditor.style.display = 'block';
+  });
+
+  mdfyToggleSource.addEventListener('click', () => {
+    mdfyToggleSource.classList.add('active');
+    mdfyToggleVisual.classList.remove('active');
+    mdfyEditor.style.display = 'none';
+    mdfySource.style.display = 'block';
+    mdfySource.value = getMarkdown();
+  });
+}
+
+if (mdfyBtnCopy) {
+  mdfyBtnCopy.addEventListener('click', () => {
+    const md = mdfySource.style.display === 'block' ? mdfySource.value : getMarkdown();
+    navigator.clipboard.writeText(md).then(() => {
+      const originalTitle = mdfyBtnCopy.getAttribute('title');
+      mdfyBtnCopy.setAttribute('title', 'Copied!');
+      setTimeout(() => mdfyBtnCopy.setAttribute('title', originalTitle), 2000);
+    });
+  });
+}
+
+if (mdfyBtnDownload) {
+  mdfyBtnDownload.addEventListener('click', () => {
+    const md = mdfySource.style.display === 'block' ? mdfySource.value : getMarkdown();
+    const blob = new Blob([md], { type: 'text/markdown' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = 'article.md';
+    a.click();
+    URL.revokeObjectURL(url);
+  });
+}
+
+// Toolbar state sync
+const toolbarBtns = document.querySelectorAll('.markdownify-toolbar .toolbar-btn');
+
+function syncToolbarState() {
+  toolbarBtns.forEach(btn => {
+    const cmd = btn.getAttribute('data-command');
+    const val = btn.getAttribute('data-value');
+    let isActive = false;
+    
+    if (cmd === 'formatBlock') {
+      const block = document.queryCommandValue(cmd);
+      if (block && block.toLowerCase() === val.toLowerCase()) {
+        isActive = true;
+      }
+    } else if (cmd === 'insertUnorderedList' || cmd === 'insertOrderedList') {
+       try { isActive = document.queryCommandState(cmd); } catch(e) {}
+    } else if (cmd === 'formatBlockquote') {
+       const block = document.queryCommandValue('formatBlock');
+       if (block && block.toLowerCase() === 'blockquote') isActive = true;
+    } else {
+      try {
+        isActive = document.queryCommandState(cmd);
+      } catch(e) {}
+    }
+    
+    if (isActive) {
+      btn.classList.add('active');
+    } else {
+      btn.classList.remove('active');
+    }
+  });
+}
+
+mdfyEditor.addEventListener('keyup', syncToolbarState);
+mdfyEditor.addEventListener('mouseup', syncToolbarState);
+mdfyEditor.addEventListener('click', syncToolbarState);
+
+// Markdownify Toolbar Logic
+toolbarBtns.forEach(btn => {
+  btn.addEventListener('click', (e) => {
+    e.preventDefault();
+    if (mdfySource.style.display === 'block') return; // disabled in source mode
+    
+    mdfyEditor.focus();
+    const command = btn.getAttribute('data-command');
+    const value = btn.getAttribute('data-value') || null;
+
+    if (command === 'createLink') {
+      const url = prompt('Enter link URL:');
+      if (url) document.execCommand('createLink', false, url);
+    } else if (command === 'insertImage') {
+      const url = prompt('Enter image URL:');
+      if (url) document.execCommand('insertImage', false, url);
+    } else if (command === 'inlineCode') {
+      const selection = window.getSelection();
+      if (!selection.isCollapsed) {
+        const text = selection.toString();
+        document.execCommand('insertHTML', false, `<code>${text}</code>`);
+      }
+    } else if (command === 'insertCodeBlock') {
+      document.execCommand('insertHTML', false, `<pre><code>// code here\n</code></pre><p><br></p>`);
+    } else if (command === 'insertTable') {
+      const tableHTML = `
+        <table border="1">
+          <thead><tr><th>Header 1</th><th>Header 2</th><th>Header 3</th></tr></thead>
+          <tbody>
+            <tr><td>Cell 1</td><td>Cell 2</td><td>Cell 3</td></tr>
+            <tr><td>Cell 4</td><td>Cell 5</td><td>Cell 6</td></tr>
+          </tbody>
+        </table><p><br></p>`;
+      document.execCommand('insertHTML', false, tableHTML);
+    } else if (command === 'insertTaskList') {
+      const listHTML = `<ul class="task-list"><li><input type="checkbox"> Task</li></ul><p><br></p>`;
+      document.execCommand('insertHTML', false, listHTML);
+    } else if (command === 'formatBlock' || command === 'formatBlockquote') {
+      // Toggle logic for blocks
+      const currentBlock = document.queryCommandValue('formatBlock');
+      const targetBlock = command === 'formatBlockquote' ? 'blockquote' : value;
+      if (currentBlock && currentBlock.toLowerCase() === targetBlock.toLowerCase()) {
+        document.execCommand('formatBlock', false, 'p');
+      } else {
+        document.execCommand('formatBlock', false, targetBlock);
+      }
+    } else {
+      document.execCommand(command, false, value);
+    }
+    
+    syncToolbarState();
+  });
+});
+
+// Internal Floating Dock actions
+const dockNew = document.getElementById('mdfy-dock-new');
+if (dockNew) dockNew.addEventListener('click', () => {
+  if (confirm('Start a new document? Any unsaved changes will be lost.')) {
+    mdfyEditor.innerHTML = '<h1>Untitled Document</h1><p>Start writing here...</p>';
+    if (mdfySource.style.display === 'block') mdfyToggleVisual.click();
+  }
 });

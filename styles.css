@@ -1602,6 +1602,301 @@
       }
     }
 
+    /* Markdownify Specific Styles */
+    .markdownify-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 16px;
+    }
+    .markdownify-doc-controls {
+      display: flex;
+      gap: 12px;
+      align-items: center;
+      margin: 0 auto;
+    }
+    .doc-control-btn {
+      background: transparent;
+      border: none;
+      color: rgba(255, 255, 255, 0.7);
+      cursor: pointer;
+      padding: 4px;
+      border-radius: 6px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.2s;
+    }
+    .doc-control-btn:hover {
+      background: rgba(255, 255, 255, 0.1);
+      color: #fff;
+    }
+    .view-toggle-group {
+      display: flex;
+      background: rgba(0, 0, 0, 0.3);
+      border-radius: 6px;
+      padding: 2px;
+      margin-left: 12px;
+    }
+    .view-toggle-btn {
+      background: transparent;
+      border: none;
+      color: rgba(255, 255, 255, 0.6);
+      padding: 4px 12px;
+      font-size: 12px;
+      cursor: pointer;
+      border-radius: 4px;
+      transition: all 0.2s;
+    }
+    .view-toggle-btn.active {
+      background: rgba(255, 255, 255, 0.15);
+      color: #fff;
+    }
+    .markdownify-toolbar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px 16px;
+      padding: 12px 16px;
+      background: rgba(0, 0, 0, 0.15);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    }
+    .toolbar-group {
+      display: flex;
+      gap: 4px;
+      padding-right: 16px;
+      border-right: 1px solid rgba(255, 255, 255, 0.08);
+    }
+    .toolbar-group:last-child {
+      border-right: none;
+    }
+    .toolbar-btn {
+      position: relative;
+      background: transparent;
+      border: 1px solid transparent;
+      color: rgba(255, 255, 255, 0.8);
+      cursor: pointer;
+      width: 28px;
+      height: 28px;
+      border-radius: 6px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 13px;
+      transition: all 0.2s;
+    }
+    .toolbar-btn:hover {
+      background: rgba(255, 255, 255, 0.1);
+      border-color: rgba(255, 255, 255, 0.2);
+    }
+    .toolbar-tooltip {
+      position: absolute;
+      top: 50%;
+      left: calc(100% + 10px);
+      transform: translateY(-50%) translateX(-4px);
+      background: rgba(20, 25, 30, 1);
+      backdrop-filter: blur(20px) saturate(180%);
+      -webkit-backdrop-filter: blur(20px) saturate(180%);
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35), 0 0 0 1px rgba(255, 255, 255, 0.04) inset;
+      color: rgba(255, 255, 255, 0.92);
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 0.4px;
+      white-space: nowrap;
+      padding: 5px 10px;
+      border-radius: 8px;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.18s ease, transform 0.18s cubic-bezier(0.25, 0.8, 0.25, 1);
+      transition-delay: 0.12s;
+      z-index: 100;
+    }
+    .toolbar-tooltip::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      right: 100%;
+      transform: translateY(-50%);
+      border: 5px solid transparent;
+      border-right-color: rgba(255, 255, 255, 0.18);
+    }
+    .toolbar-btn:hover .toolbar-tooltip {
+      opacity: 1;
+      transform: translateY(-50%) translateX(0);
+    }
+    .toolbar-btn.active {
+      background: rgba(196, 90, 42, 0.25);
+      border-color: rgba(196, 90, 42, 0.5);
+      color: #fff;
+    }
+    .markdownify-workspace {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      position: relative;
+    }
+    .markdownify-editor, .markdownify-source {
+      flex: 1;
+      width: 100%;
+      height: 100%;
+      padding: 32px 40px;
+      overflow-y: auto;
+      border: none;
+      outline: none;
+      color: rgba(232, 239, 245, 0.9);
+      font-size: 15px;
+      line-height: 1.6;
+    }
+    .markdownify-editor {
+      background: transparent;
+    }
+    .markdownify-source {
+      background: rgba(10, 15, 20, 0.8);
+      font-family: 'Fira Code', monospace;
+      font-size: 14px;
+      resize: none;
+      color: #ccc;
+    }
+    .markdownify-floating-dock {
+      position: absolute;
+      bottom: 24px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: rgba(20, 25, 30, 0.7);
+      backdrop-filter: blur(15px);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 20px;
+      display: flex;
+      gap: 8px;
+      padding: 6px 12px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+      z-index: 10;
+    }
+    .floating-btn {
+      background: transparent;
+      border: none;
+      color: rgba(255, 255, 255, 0.8);
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .floating-btn:hover {
+      background: rgba(255, 255, 255, 0.15);
+      color: #fff;
+    }
+    
+    /* Markdownify Editor Formatting Styles */
+    .markdownify-editor h1, .markdownify-editor h2, .markdownify-editor h3 {
+      color: #fff;
+      margin-top: 1.5em;
+      margin-bottom: 0.5em;
+      font-weight: 600;
+    }
+    .markdownify-editor h1 { font-size: 2em; }
+    .markdownify-editor h2 { font-size: 1.5em; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 0.3em; }
+    .markdownify-editor h3 { font-size: 1.25em; }
+    .markdownify-editor p { margin-bottom: 1em; }
+    .markdownify-editor code {
+      font-family: 'Fira Code', monospace;
+      background: rgba(87, 231, 128, 0.1);
+      color: #50fa7b;
+      padding: 0.2em 0.4em;
+      border-radius: 4px;
+      font-size: 0.9em;
+    }
+    .markdownify-editor pre {
+      background: rgba(10, 15, 20, 0.8);
+      padding: 16px;
+      border-radius: 8px;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      overflow-x: auto;
+      margin-bottom: 1em;
+    }
+    .markdownify-editor pre code {
+      background: transparent;
+      padding: 0;
+      color: #e8eff5;
+    }
+    .markdownify-editor blockquote {
+      border-left: 4px solid #C45A2A;
+      padding-left: 16px;
+      margin-left: 0;
+      color: rgba(255, 255, 255, 0.7);
+      font-style: italic;
+      background: rgba(196, 90, 42, 0.05);
+      padding-top: 8px;
+      padding-bottom: 8px;
+      border-radius: 0 8px 8px 0;
+    }
+    .markdownify-editor img {
+      max-width: 100%;
+      border-radius: 8px;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    .markdownify-editor table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 1em;
+    }
+    .markdownify-editor th, .markdownify-editor td {
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      padding: 8px 12px;
+      text-align: left;
+    }
+    .markdownify-editor th {
+      background: rgba(255, 255, 255, 0.05);
+      font-weight: 600;
+    }
+    .markdownify-editor a {
+      color: #7EC8C8;
+      text-decoration: none;
+    }
+    .markdownify-editor a:hover {
+      text-decoration: underline;
+    }
+    .markdownify-editor ul, .markdownify-editor ol {
+      margin-bottom: 1em;
+      padding-left: 2em;
+    }
+    .markdownify-editor hr {
+      border: 0;
+      border-top: 1px solid rgba(255, 255, 255, 0.2);
+      margin: 2em 0;
+    }
+    .markdownify-editor input[type="checkbox"] {
+      margin-right: 8px;
+      accent-color: #C45A2A;
+    }
+    .markdownify-editor ul.task-list {
+      list-style-type: none;
+      padding-left: 0;
+    }
+
+    /* Markdownify Scrollbar */
+    .markdownify-editor::-webkit-scrollbar,
+    .markdownify-source::-webkit-scrollbar {
+      width: 6px;
+    }
+    .markdownify-editor::-webkit-scrollbar-track,
+    .markdownify-source::-webkit-scrollbar-track {
+      background: transparent;
+    }
+    .markdownify-editor::-webkit-scrollbar-thumb,
+    .markdownify-source::-webkit-scrollbar-thumb {
+      background: rgba(255, 255, 255, 0.15);
+      border-radius: 3px;
+    }
+    .markdownify-editor::-webkit-scrollbar-thumb:hover,
+    .markdownify-source::-webkit-scrollbar-thumb:hover {
+      background: rgba(255, 255, 255, 0.3);
+    }
+
     /* WebGL Background */
     #webgl-bg {
       position: fixed;
