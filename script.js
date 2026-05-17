@@ -1347,3 +1347,67 @@ if (dockNew) dockNew.addEventListener('click', () => {
     if (mdfySource.style.display === 'block') mdfyToggleVisual.click();
   }
 });
+
+// --- Dynamic Auto-Sorting Logic ---
+function sortContainer(container, itemSelector, titleSelector) {
+  const items = Array.from(container.querySelectorAll(itemSelector));
+  if (items.length <= 1) return;
+  
+  items.sort((a, b) => {
+    let textA = titleSelector ? (a.querySelector(titleSelector)?.textContent || '') : a.textContent;
+    let textB = titleSelector ? (b.querySelector(titleSelector)?.textContent || '') : b.textContent;
+    
+    return textA.trim().toLowerCase().localeCompare(textB.trim().toLowerCase());
+  });
+  
+  // Re-append in sorted order
+  items.forEach(item => container.appendChild(item));
+}
+
+function autoSortAll() {
+  const config = [
+    { containerClass: '.project-grid', itemClass: '.project-item', titleClass: '.project-title' },
+    { containerClass: '.resource-hero-grid', itemClass: '.resource-hero-card', titleClass: '.res-title' },
+    { containerClass: '.article-list', itemClass: '.article-item', titleClass: '.art-title' },
+    { containerClass: '.infographic-grid', itemClass: '.infographic-item', titleClass: '.infographic-caption' },
+    { containerClass: '.skill-tags', itemClass: '.skill-tag', titleClass: null }
+  ];
+
+  config.forEach(({ containerClass, itemClass, titleClass }) => {
+    document.querySelectorAll(containerClass).forEach(container => {
+      sortContainer(container, itemClass, titleClass);
+    });
+  });
+}
+
+// Initial sorting
+document.addEventListener('DOMContentLoaded', autoSortAll);
+
+// Observer to auto-sort when elements are added
+const sortingObserver = new MutationObserver((mutations) => {
+  let shouldSort = false;
+  for (let mutation of mutations) {
+    if (mutation.type === 'childList' && mutation.addedNodes.length > 0) {
+      const addedElements = Array.from(mutation.addedNodes).filter(n => n.nodeType === Node.ELEMENT_NODE);
+      if (addedElements.length > 0) {
+        shouldSort = true;
+        break;
+      }
+    }
+  }
+  
+  if (shouldSort) {
+    sortingObserver.disconnect();
+    autoSortAll();
+    observeMutations();
+  }
+});
+
+function observeMutations() {
+  const contentArea = document.querySelector('.content-area');
+  if (contentArea) {
+    sortingObserver.observe(contentArea, { childList: true, subtree: true });
+  }
+}
+
+document.addEventListener('DOMContentLoaded', observeMutations);
