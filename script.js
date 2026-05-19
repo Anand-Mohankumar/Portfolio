@@ -124,7 +124,7 @@ const viewConfig = {
   labs: { id: 'labs', parent: 'projects', title: 'Labs & Research', icon: '🔬' },
   lectureNotes: { id: 'lectureNotes', parent: 'projects', title: 'Lecture Notes', icon: '📓' },
   ai: { id: 'ai', parent: 'projects', title: 'AI & Automation', icon: '🧠' },
-  infographics: { id: 'infographics', parent: 'projects', title: 'Infographics', icon: '🖼️' },
+  infographics: { id: 'infographics', parent: 'projects', title: 'Infographics', icon: '📊' },
   aiInfographics: { id: 'aiInfographics', parent: 'projects', title: 'AI Infographics', icon: '📂' },
   aiClaude: { id: 'aiClaude', parent: 'projects', title: 'Claude', icon: '📁' },
   aiFundamentals: { id: 'aiFundamentals', parent: 'projects', title: 'AI Fundamentals', icon: '📁' },
