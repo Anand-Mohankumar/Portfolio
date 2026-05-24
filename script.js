@@ -96,6 +96,7 @@ const cards = {
   // UPDATED: 'resources' mapped to the new card ID
   resources: document.getElementById('resourcesCard'),
   labs: document.getElementById('labsCard'), // NEW
+  labsContent: document.getElementById('labsContentCard'),
   lectureNotes: document.getElementById('lectureNotesCard'), // NEW: Lecture Notes
   ai: document.getElementById('aiCard'),     // NEW
   infographics: document.getElementById('infographicsCard'), // NEW: Infographics
@@ -122,6 +123,7 @@ const viewConfig = {
   resources: { id: 'resources', parent: 'projects', title: 'Resources', icon: '📚' },
   // NEW CONFIGS
   labs: { id: 'labs', parent: 'projects', title: 'Labs & Research', icon: '🔬' },
+  labsContent: { id: 'labsContent', parent: 'labs', title: 'Labs', icon: '🧪' },
   lectureNotes: { id: 'lectureNotes', parent: 'projects', title: 'Lecture Notes', icon: '📓' },
   ai: { id: 'ai', parent: 'projects', title: 'AI & Automation', icon: '🧠' },
   infographics: { id: 'infographics', parent: 'projects', title: 'Infographics', icon: '📊' },
