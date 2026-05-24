@@ -1,0 +1,2348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>n8n on Google Cloud Free Tier & Installing ZeroClaw | Anand Mohankumar</title>
+    <link rel="stylesheet" href="../../../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        /* ── CRITICAL: override styles.css desktop-UI rules that kill scrolling ── */
+        html {
+            height: auto !important;
+            overflow-y: auto !important;
+        }
+        html, body {
+            margin: 0; padding: 0;
+            height: auto !important;
+            overflow: visible !important;
+            min-height: 100vh;
+            background: #12181A;
+            font-family: 'Outfit', system-ui, sans-serif;
+            color: #E8EFF5;
+        }
+        body { padding: 2rem 1rem 4rem; }
+
+        /* Back nav */
+        .lecture-breadcrumb { max-width: 900px; margin: 0 auto 1.5rem; }
+        .lecture-breadcrumb a {
+            display: inline-flex; align-items: center; gap: 0.4rem;
+            color: #7EC8C8; text-decoration: none;
+            font-size: 0.9rem; font-weight: 500;
+            opacity: 0.75; transition: opacity 0.2s;
+        }
+        .lecture-breadcrumb a:hover { opacity: 1; }
+
+        /* Card */
+        .lecture-card {
+            max-width: 900px; margin: 0 auto;
+            background: rgba(255,255,255,0.04);
+            border: 1px solid rgba(255,255,255,0.08);
+            border-radius: 16px;
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            box-shadow: 0 4px 6px rgba(0,0,0,.18), 0 20px 60px rgba(0,0,0,.45),
+                        inset 0 1px 0 rgba(255,255,255,.06);
+        }
+
+        /* Traffic-light header */
+        .lecture-card-header {
+            display: flex; align-items: center; gap: .75rem;
+            padding: 1rem 1.5rem;
+            background: rgba(255,255,255,.03);
+            border-bottom: 1px solid rgba(255,255,255,.07);
+            border-radius: 16px 16px 0 0;
+        }
+        .lecture-card-dots { display: flex; gap: 6px; }
+        .lecture-card-dots span { width: 12px; height: 12px; border-radius: 50%; }
+        .dot-red    { background: #FF5F57; }
+        .dot-yellow { background: #FFBD2E; }
+        .dot-green  { background: #28CA41; }
+        .lecture-card-title { font-size: .85rem; font-weight: 500; color: rgba(255,255,255,.5); }
+
+        /* Body */
+        .lecture-body { padding: 2.5rem 2.5rem 3rem; line-height: 1.75; }
+
+        .lecture-page-title {
+            margin: 0 0 .5rem; font-size: 2rem; font-weight: 700;
+            background: linear-gradient(135deg, #E8EFF5 0%, #7EC8C8 100%);
+            -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .lecture-page-subtitle {
+            margin: 0 0 2.5rem; font-size: .925rem;
+            color: rgba(255,255,255,.4);
+            border-bottom: 1px solid rgba(255,255,255,.07);
+            padding-bottom: 1.5rem;
+        }
+
+        /* Headings */
+        .lecture-body h1,.lecture-body h2,.lecture-body h3,.lecture-body h4 {
+            color: #E8EFF5; font-family: 'Outfit', sans-serif;
+            font-weight: 600; margin: 2rem 0 .75rem;
+        }
+        .lecture-body h1 { font-size: 1.6rem; }
+        .lecture-body h2 { font-size: 1.2rem; padding-bottom: .4rem; border-bottom: 1px solid rgba(255,255,255,.08); }
+        .lecture-body h3 { font-size: 1.05rem; color: rgba(232,239,245,.85); }
+
+        /* Paragraphs */
+        .lecture-body .para, .lecture-body p { margin: .4rem 0; color: rgba(232,239,245,.82); }
+
+        /* HR */
+        .lecture-body hr { border: none; border-top: 1px solid rgba(255,255,255,.08); margin: 2rem 0; }
+
+        /* Images */
+        .lecture-body img {
+            max-width: 100%; height: auto; border-radius: 8px;
+            margin: .75rem 0; border: 1px solid rgba(255,255,255,.07);
+            background: rgba(0,0,0,.2);
+        }
+
+        /* Tables */
+        .lecture-body en-table, .lecture-body .container, .lecture-body .table-wrapper {
+            width: 100%; overflow-x: auto; display: block; margin: 1rem 0;
+        }
+        .lecture-body table {
+            width: 100% !important; border-collapse: collapse;
+            font-size: .875rem;
+        }
+        .lecture-body td {
+            padding: .6rem .85rem;
+            border: 1px solid rgba(255,255,255,.1);
+            vertical-align: top;
+            color: var(--text-color-darkmode, rgba(232,239,245,.88));
+            background: var(--background-color-darkmode, transparent);
+        }
+        .lecture-body th {
+            padding: .6rem .85rem;
+            border: 1px solid rgba(255,255,255,.1);
+            vertical-align: top;
+            color: var(--text-color-darkmode, rgba(232,239,245,.88));
+            background: rgba(255,255,255,.07) !important; font-weight: 500;
+        }
+        .lecture-body td[data-background-luminance-darkmode="dark"] {
+            background: rgba(255,255,255,.07) !important; font-weight: 500;
+        }
+
+        /* Lists */
+        .lecture-body ul,.lecture-body ol { padding-left: 1.5rem; margin: .5rem 0; color: rgba(232,239,245,.82); }
+        .lecture-body li { margin: .25rem 0; }
+
+        /* Links */
+        .lecture-body a { color: #7EC8C8; text-decoration: none; }
+        .lecture-body a:hover { text-decoration: underline; }
+
+        /* Bold */
+        .lecture-body b, .lecture-body strong { color: #E8EFF5; }
+
+        /* Code and Pre */
+        .lecture-body code {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: .875em;
+            background: rgba(87, 231, 128, .08);
+            color: rgb(87, 231, 128);
+            padding: .1em .35em; border-radius: 4px;
+        }
+        .lecture-body pre {
+            background: rgba(0,0,0,0.3);
+            border: 1px solid rgba(255,255,255,0.08);
+            padding: 1rem;
+            border-radius: 8px;
+            overflow-x: auto;
+            color: #E8EFF5;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: .875em;
+        }
+        .lecture-body pre code {
+            background: none;
+            padding: 0;
+            color: inherit;
+        }
+
+        @media (max-width: 640px) {
+            body { padding: 1rem .5rem 3rem; }
+            .lecture-body { padding: 1.5rem 1.25rem 2rem; }
+            .lecture-page-title { font-size: 1.4rem; }
+        }
+    </style>
+</head>
+<body>
+    <nav class="lecture-breadcrumb"><a href="../../index.html">&#8592; Back to Portfolio</a></nav>
+    <article class="lecture-card">
+        <div class="lecture-card-header">
+            <div class="lecture-card-dots"><span class="dot-red"></span><span class="dot-yellow"></span><span class="dot-green"></span></div>
+            <span class="lecture-card-title">n8n on Google Cloud Free Tier & Installing ZeroClaw</span>
+        </div>
+        <div class="lecture-body">
+            <h1 class="lecture-page-title">n8n on Google Cloud Free Tier & Installing ZeroClaw</h1>
+            <p class="lecture-page-subtitle">A Complete Self-Hosting Setup Guide</p>
+<h1><strong>Suggested Placeholder Values</strong></h1>
+<p>To make this guide actionable, please replace all bracketed placeholders with your specific values. Here are example values:</p>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th style="text-align: center;">Placeholder</th>
+<th style="text-align: center;">Example Value</th>
+<th style="text-align: left;">Context/Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">[YOUR_DOMAIN]</td>
+<td style="text-align: center;">n8n.yourwebsite.com</td>
+<td style="text-align: left;">The public subdomain URL for n8n.</td>
+</tr>
+<tr>
+<td style="text-align: center;">[YOUR_ROOT_DOMAIN]</td>
+<td style="text-align: center;">yourwebsite.com</td>
+<td style="text-align: left;">Your root domain managed by your DNS provider.</td>
+</tr>
+<tr>
+<td style="text-align: center;">[YOUR_STATIC_IP]</td>
+<td style="text-align: center;">34.xx.xx.xx</td>
+<td style="text-align: left;">The External IP address of your GCP VM.</td>
+</tr>
+<tr>
+<td style="text-align: center;">[YOUR_TIMEZONE]</td>
+<td style="text-align: center;">Asia/Kolkata</td>
+<td style="text-align: left;">Used for n8n scheduled workflows.</td>
+</tr>
+<tr>
+<td style="text-align: center;">[YOUR_USERNAME]</td>
+<td style="text-align: center;">yourusername</td>
+<td style="text-align: left;">Your GCP Linux username.</td>
+</tr>
+<tr>
+<td style="text-align: center;">YourStrongPasswordHere</td>
+<td style="text-align: center;">Yourpassw0rd</td>
+<td style="text-align: left;">The strong password for n8n's basic authentication.</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>n8n on Google Cloud Free Tier</strong></p>
+<p>A Complete Self-Hosting Setup Guide</p>
+<p><em>Always Free e2-micro VM · Custom Domain · SSL · Security Hardening · $0/month</em></p>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th style="text-align: left;">Parameter</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Target Platform</td>
+<td style="text-align: left;">Google Cloud Platform (GCP) — Always Free Tier (no credits required)</td>
+</tr>
+<tr>
+<td style="text-align: left;">Region</td>
+<td style="text-align: left;">us-central1 (Iowa) — required for Always Free eligibility</td>
+</tr>
+<tr>
+<td style="text-align: left;">VM Specification</td>
+<td style="text-align: left;">e2-micro · 1 vCPU (bursting) · 1 GB RAM · 30 GB standard persistent disk</td>
+</tr>
+<tr>
+<td style="text-align: left;">Operating System</td>
+<td style="text-align: left;">Ubuntu 22.04 LTS</td>
+</tr>
+<tr>
+<td style="text-align: left;">Automation Engine</td>
+<td style="text-align: left;">n8n (Community Edition, self-hosted via Docker)</td>
+</tr>
+<tr>
+<td style="text-align: left;">Local AI</td>
+<td style="text-align: left;">None — e2-micro RAM is insufficient for local LLMs. Use external API integrations (Gemini, OpenAI, etc.) via n8n nodes.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Reverse Proxy</td>
+<td style="text-align: left;">Nginx + Let's Encrypt SSL (auto-renewing)</td>
+</tr>
+<tr>
+<td style="text-align: left;">Public URL</td>
+<td style="text-align: left;">[YOUR_DOMAIN] → VM static IP</td>
+</tr>
+<tr>
+<td style="text-align: left;">Monthly Cost</td>
+<td style="text-align: left;">$0 — within GCP Always Free tier limits (30 GB standard disk, 1 e2-micro, 1 GB egress)</td>
+</tr>
+<tr>
+<td style="text-align: left;">Free Tier Constraint</td>
+<td style="text-align: left;">Static IP is FREE while attached to a running VM. Billed at \~$0.004/hr only if VM is stopped.</td>
+</tr>
+</tbody>
+</table></div>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th style="text-align: left;">ℹ  NOTE This guide deploys n8n on GCP's Always Free tier — no trial credits needed, no monthly bill as long as you stay within free limits. The e2-micro VM (1 vCPU, 1 GB RAM) is enough to run n8n reliably for automation workflows. It cannot run local LLMs — connect to external AI APIs (Gemini Free tier, OpenAI, etc.) via n8n's built-in HTTP and AI nodes instead. Every command is explained. Every security decision is justified. An appendix documents all GCP Always Free products.</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+</tr>
+</tbody>
+</table></div>
+<h1><strong>Prerequisites &amp; Cost Overview</strong></h1>
+<h2><strong>What You Need Before Starting</strong></h2>
+<ul>
+<li>
+<p>A Google Cloud account with an active billing account (free tier still requires a billing account on file)</p>
+</li>
+<li>
+<p>A GCP project created and linked to that billing account</p>
+</li>
+<li>
+<p>A domain managed by your DNS provider (this guide uses [YOUR_ROOT_DOMAIN])</p>
+</li>
+<li>
+<p>A modern browser with access to console.cloud.google.com</p>
+</li>
+<li>
+<p>Basic comfort with a Linux terminal</p>
+</li>
+</ul>
+<h2><strong>Understanding the Always Free Cost</strong></h2>
+<p>This setup is designed to run entirely within GCP's Always Free tier limits. There are no time-limited credits involved — this is the permanent free offering.</p>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th style="text-align: left;">Item</th>
+<th style="text-align: left;">Cost</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">e2-micro VM (1 vCPU, 1 GB RAM)</td>
+<td style="text-align: left;">$0 — 1 VM free per month in eligible US regions</td>
+</tr>
+<tr>
+<td style="text-align: left;">30 GB standard persistent disk</td>
+<td style="text-align: left;">$0 — included in free tier</td>
+</tr>
+<tr>
+<td style="text-align: left;">Static IP (while VM is running)</td>
+<td style="text-align: left;">$0 — free when attached to a running VM</td>
+</tr>
+<tr>
+<td style="text-align: left;">Static IP (while VM is STOPPED)</td>
+<td style="text-align: left;">\~$0.004/hr — billed only when VM is off</td>
+</tr>
+<tr>
+<td style="text-align: left;">Outbound egress (North America)</td>
+<td style="text-align: left;">$0 — first 1 GB/month free</td>
+</tr>
+<tr>
+<td style="text-align: left;">Egress beyond 1 GB/month</td>
+<td style="text-align: left;">Billed at standard rates (\~$0.08–0.12/GB)</td>
+</tr>
+<tr>
+<td style="text-align: left;">Total (normal operation)</td>
+<td style="text-align: left;">$0/month</td>
+</tr>
+</tbody>
+</table></div>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th style="text-align: left;">✖  CRITICAL The Always Free e2-micro VM is available ONLY in us-west1 (Oregon), us-central1 (Iowa), and us-east1 (South Carolina). Any other region — including asia-south1 (Mumbai) — will be billed normally. This guide uses us-central1. Accept the higher latency from India as the tradeoff for zero cost.</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+</tr>
+</tbody>
+</table></div>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th style="text-align: left;">⚠  WARNING The free tier allows 1 GB outbound egress per month. n8n's web UI, webhooks, and API calls all consume egress. For personal/low-traffic use this is unlikely to be exceeded. Monitor your egress in GCP Console → Billing → Reports if concerned.</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+</tr>
+</tbody>
+</table></div>
+<h2><strong>Why This Stack?</strong></h2>
+<p>This architecture is chosen for zero cost, correct security posture, and practical automation capability.</p>
+<ul>
+<li>
+<p><strong>n8n</strong> is a self-hostable workflow automation tool. Running it on your own VM means your workflows, credentials, and data never leave your infrastructure.</p>
+</li>
+<li>
+<p><strong>e2-micro</strong> has 1 GB RAM — enough for n8n at idle (\~200–400 MB). It cannot run local LLMs. Connect to external AI APIs (Gemini, OpenAI, Anthropic) using n8n's built-in HTTP Request or LLM nodes instead.</p>
+</li>
+<li>
+<p><strong>Docker Compose</strong> manages the n8n container. One config file defines the entire stack — reproducible and easy to update or restore.</p>
+</li>
+<li>
+<p><strong>Nginx</strong> acts as a reverse proxy in front of n8n. It handles SSL termination, security headers, and rate limiting — responsibilities n8n is not designed to handle at the edge.</p>
+</li>
+</ul>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th style="text-align: left;">PHASE 1  Create the GCP Virtual Machine <em>Provision the Always Free e2-micro instance with correct region, disk type, and static IP.</em></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+</tr>
+</tbody>
+</table></div>
+<h2><strong>Step 1.1 — Select the Correct Project</strong></h2>
+<ol>
+<li>
+<p>Go to console.cloud.google.com</p>
+</li>
+<li>
+<p>Click the project selector dropdown at the top of the page (next to the Google Cloud logo)</p>
+</li>
+<li>
+<p>Select your project</p>
+</li>
+</ol>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th style="text-align: left;">⚠  WARNING Always verify the active project before creating any resource. GCP bills resources to the active project. Selecting the wrong project can result in unexpected charges.</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+</tr>
+</tbody>
+</table></div>
+<h2><strong>Step 1.2 — Navigate to VM Instances</strong></h2>
+<ol>
+<li>
+<p>Click the hamburger menu (☰) in the top-left corner</p>
+</li>
+<li>
+<p>Scroll to Compute Engine → click VM instances</p>
+</li>
+<li>
+<p>If prompted to enable the Compute Engine API, click Enable and wait \~60 seconds</p>
+</li>
+</ol>
+<p>Enabling the API registers your project to use virtual machines. This is a one-time action per project.</p>
+<h2><strong>Step 1.3 — Create the Instance</strong></h2>
+<p>Click CREATE INSTANCE at the top of the VM instances page. Fill in the following:</p>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th style="text-align: left;">Field</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Name</td>
+<td style="text-align: left;">n8n-freetier</td>
+</tr>
+<tr>
+<td style="text-align: left;">Region</td>
+<td style="text-align: left;">us-central1 (Iowa)  ← REQUIRED for Always Free eligibility</td>
+</tr>
+<tr>
+<td style="text-align: left;">Zone</td>
+<td style="text-align: left;">us-central1-a</td>
+</tr>
+</tbody>
+</table></div>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th style="text-align: left;">✖  CRITICAL The region MUST be us-central1, us-west1, or us-east1 for the e2-micro to be free. Any other region will be billed. This guide uses us-central1-a.</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+</tr>
+</tbody>
+</table></div>
+<h2><strong>Step 1.4 — Machine Configuration</strong></h2>
+<ol>
+<li>
+<p>Under Machine configuration, set Series to E2</p>
+</li>
+<li>
+<p>Set Machine type to e2-micro (1 vCPU, 1 GB memory)</p>
+</li>
+</ol>
+<p>The e2-micro is GCP's Always Free compute instance. It has 1 vCPU (burstable) and 1 GB RAM. This is sufficient to run n8n at idle (200–400 MB RAM) with headroom for the OS and Docker. Do not attempt to run Ollama or any local LLM on this VM — it will exhaust memory and cause the OS to kill processes.</p>
+<h2><strong>Step 1.5 — Boot Disk Configuration</strong></h2>
+<p>Click CHANGE under Boot disk and set:</p>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th style="text-align: left;">Field</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Operating System</td>
+<td style="text-align: left;">Ubuntu</td>
+</tr>
+<tr>
+<td style="text-align: left;">Version</td>
+<td style="text-align: left;">Ubuntu 22.04 LTS  ← important: not 24.04 or 25.x</td>
+</tr>
+<tr>
+<td style="text-align: left;">Boot disk type</td>
+<td style="text-align: left;">Standard persistent disk  ← NOT SSD (SSD is not covered by free tier)</td>
+</tr>
+<tr>
+<td style="text-align: left;">Size</td>
+<td style="text-align: left;">30 GB  ← maximum included in free tier</td>
+</tr>
+<tr>
+<td style="text-align: left;">Snapshot schedule</td>
+<td style="text-align: left;">No schedule</td>
+</tr>
+</tbody>
+</table></div>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th style="text-align: left;">✖  CRITICAL Use Standard persistent disk, NOT SSD. The Always Free tier covers 30 GB of standard persistent disk. SSD persistent disk is billed separately even within free tier. Also keep the disk at exactly 30 GB — any size above 30 GB will incur charges.</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+</tr>
+</tbody>
+</table></div>
+<p>30 GB standard disk is sufficient for: Ubuntu OS (\~8 GB used), Docker images (\~1.5 GB for n8n), and n8n workflow data (\~1 GB). Total realistic usage: \~12–15 GB, leaving comfortable headroom.</p>
+<h2><strong>Step 1.6 — Firewall Rules</strong></h2>
+<p>Under Firewall, check both boxes:</p>
+<ul>
+<li>
+<p>Allow HTTP traffic</p>
+</li>
+<li>
+<p>Allow HTTPS traffic</p>
+</li>
+</ul>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th style="text-align: left;">⚠  WARNING These checkboxes enable GCP-level firewall rules for ports 80 and 443. This is separate from UFW (the OS-level firewall configured in Phase 2). Both must be configured. Forgetting either one will cause connection issues — the GCP firewall blocks traffic before it ever reaches UFW.</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+</tr>
+</tbody>
+</table></div>
+<p>Port 5678 (n8n's native port) is intentionally not opened here. n8n will only be reachable through Nginx on port 443, which proxies internally to 5678. This means n8n is never directly exposed to the internet.</p>
+<h2><strong>Step 1.7 — Reserve a Static IP Address</strong></h2>
+<p>This step is critical. Without a static IP, your VM's public IP changes on every reboot, breaking your DNS record.</p>
+<ol>
+<li>
+<p>Scroll down and expand Advanced options</p>
+</li>
+<li>
+<p>Click Networking</p>
+</li>
+<li>
+<p>Under Network interfaces, click the edit (pencil) icon on the default interface</p>
+</li>
+<li>
+<p>Scroll to External IPv4 address</p>
+</li>
+<li>
+<p>Change the dropdown from Ephemeral to Create IP address</p>
+</li>
+<li>
+<p>Name it: n8n-freetier-ip</p>
+</li>
+<li>
+<p>Click Reserve, then Done</p>
+</li>
+</ol>
+<p>A reserved static IP costs \~$0.004/hour ONLY when it is not attached to a running VM. While your VM is running, the static IP is completely free. Keep your VM running to avoid this charge.</p>
+<h2><strong>Step 1.8 — Verify Cost Estimate and Create</strong></h2>
+<p>Before clicking Create, check the Monthly estimate panel on the right side of the screen. With the e2-micro in us-central1 and a 30 GB standard disk, the estimate should show $0.00 or a negligible amount (the calculator may not reflect all free tier credits automatically — the actual bill will be $0 within free tier limits).</p>
+<p>Click CREATE. The VM takes 60–90 seconds to provision. A green checkmark will appear when it is ready.</p>
+<h2><strong>Step 1.9 — Record Your Static IP</strong></h2>
+<p>In the VM instances list, note the External IP shown in the table. It will look like [YOUR_STATIC_IP]. You will need this IP in Phase 6 when adding the DNS record.</p>
+<h2><strong>Troubleshooting — Phase 1</strong></h2>
+<h3><strong>Compute Engine API fails to enable</strong></h3>
+<p>This usually means billing is not properly linked to the project. Go to Billing in the GCP Console and confirm a billing account is associated with the project. A billing account is required even for free tier usage.</p>
+<h3><strong>Cost estimate shows a non-zero amount</strong></h3>
+<p>Verify: (1) region is set to us-central1, us-west1, or us-east1 — not any other region; (2) machine type is e2-micro specifically; (3) disk type is Standard persistent disk, not SSD; (4) disk size is 30 GB or less; (5) snapshot schedule is set to No schedule.</p>
+<h3><strong>Cannot find e2-micro in the machine type dropdown</strong></h3>
+<p>Make sure the Series is set to E2 first. Machine types are filtered by series. Then look for e2-micro specifically in the dropdown — it is at the top of the E2 list as the smallest option.</p>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th style="text-align: left;">PHASE 2  SSH Access &amp; Server Hardening <em>Secure the VM before installing anything. A freshly provisioned cloud VM receives automated probe traffic within minutes of going live.</em></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+</tr>
+</tbody>
+</table></div>
+<h2><strong>Step 2.1 — Connect via GCP Browser SSH</strong></h2>
+<ol>
+<li>
+<p>Go to Compute Engine → VM instances</p>
+</li>
+<li>
+<p>Find n8n-freetier in the list</p>
+</li>
+<li>
+<p>Under the Connect column, click SSH</p>
+</li>
+<li>
+<p>A browser-based terminal will open and authenticate automatically</p>
+</li>
+</ol>
+<p>GCP manages short-lived SSH certificates on your behalf. You do not need to manage keys manually. The connection is encrypted and authenticated via your Google account.</p>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th style="text-align: left;">ℹ  NOTE GCP automatically creates a Linux user matching your Google account username (e.g. yourname@n8n-freetier:\~$). This is your working user for the entire guide. All commands below use sudo for elevated actions rather than switching to root. Do not run a persistent root shell (sudo -i) for routine work.</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+</tr>
+</tbody>
+</table></div>
+<h2><strong>Step 2.2 — Update the System</strong></h2>
+<pre><code class="language-bash">sudo apt update &amp;&amp;
+sudo apt upgrade -y
+</code></pre>
+<p>This refreshes the package index and installs all pending security patches. Run this before anything else — you are building on top of whatever state the image shipped in.</p>
+<p>This may take 2–4 minutes. Wait for it to complete fully before proceeding.</p>
+<h2><strong>Step 2.3 — Configure UFW Firewall</strong></h2>
+<p>UFW (Uncomplicated Firewall) is Ubuntu's built-in firewall manager. You will define exactly which ports are allowed and deny everything else.</p>
+<pre><code class="language-bash"># Set default policies
+sudo ufw default deny incoming
+sudo ufw default allow outgoing
+# Allow only required ports
+sudo ufw allow ssh
+sudo ufw allow 80/tcp
+sudo ufw allow 443/tcp
+# Enable and verify
+sudo ufw enable
+sudo ufw status verbose
+</code></pre>
+<p>Why these three ports only:</p>
+<ul>
+<li>
+<p><strong>ssh (port 22)</strong> — required for you to connect and manage the server</p>
+</li>
+<li>
+<p><strong>80/tcp</strong> — HTTP, required for Let's Encrypt certificate validation in Phase 5</p>
+</li>
+<li>
+<p><strong>443/tcp</strong> — HTTPS, the only port n8n will be publicly accessible on</p>
+</li>
+</ul>
+<p>Expected output of ufw status verbose:</p>
+<pre><code class="language-bash">Status: active
+To                         Action      From
+--                         ------      ----
+22/tcp                     ALLOW IN    Anywhere
+80/tcp                     ALLOW IN    Anywhere
+443/tcp                    ALLOW IN    Anywhere
+</code></pre>
+<h2><strong>Step 2.4 — Install and Configure fail2ban</strong></h2>
+<pre><code class="language-bash">sudo apt install fail2ban -y
+</code></pre>
+<p>Create a dedicated override config file for the SSH jail. Never edit jail.conf directly — it gets overwritten on updates.</p>
+<pre><code class="language-bash">sudo
+nano /etc/fail2ban/jail.d/sshd-custom.conf
+</code></pre>
+<p>Paste the following content exactly (no # characters at the start of any line):</p>
+<pre><code class="language-bash">[sshd] enabled \= true port \= ssh maxretry \= 5 bantime \= 3600 findtime \= 600
+</code></pre>
+<p>Save and exit: Ctrl+O → Enter → Ctrl+X</p>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th style="text-align: left;">Setting</th>
+<th style="text-align: left;">Effect</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">enabled \= true</td>
+<td style="text-align: left;">Activates the SSH jail</td>
+</tr>
+<tr>
+<td style="text-align: left;">maxretry \= 5</td>
+<td style="text-align: left;">Triggers a ban after 5 failed login attempts</td>
+</tr>
+<tr>
+<td style="text-align: left;">bantime \= 3600</td>
+<td style="text-align: left;">Bans the offending IP for 3600 seconds (1 hour)</td>
+</tr>
+<tr>
+<td style="text-align: left;">findtime \= 600</td>
+<td style="text-align: left;">Counts failures within a 10-minute sliding window</td>
+</tr>
+</tbody>
+</table></div>
+<pre><code class="language-bash">sudo systemctl enable fail2ban
+sudo systemctl start fail2ban
+sudo fail2ban-client status sshd
+</code></pre>
+<p>Expected output includes File list: /var/log/auth.log and Currently banned: 0.</p>
+<h2><strong>Step 2.5 — Enable Unattended Security Upgrades</strong></h2>
+<pre><code class="language-bash">sudo apt install unattended-upgrades -y
+sudo dpkg-reconfigure --priority=low unattended-upgrades
+</code></pre>
+<p>Select Yes when the dialog appears. This automatically installs security patches in the background. Only security updates are applied — major version upgrades are not. This is standard hardening for any internet-facing server.</p>
+<h2><strong>Step 2.6 — Disable Root SSH Login</strong></h2>
+<pre><code class="language-bash">sudo
+nano /etc/ssh/sshd_config
+</code></pre>
+<p>Find the PermitRootLogin line (use Ctrl+W to search) and set it to:</p>
+<pre><code class="language-bash">PermitRootLogin no
+</code></pre>
+<p>Save and exit: Ctrl+O → Enter → Ctrl+X. Then restart SSH:</p>
+<pre><code class="language-bash">sudo systemctl restart sshd
+</code></pre>
+<p>Even with fail2ban active, disabling root SSH login means an attacker who compromises one credential still cannot obtain a root shell directly. They would need both a valid user account and sudo access.</p>
+<h2><strong>Troubleshooting — Phase 2</strong></h2>
+<h3><strong>fail2ban status shows ERROR or is not running</strong></h3>
+<p>The most common cause is a syntax error in the config file. Check for any # characters at the start of the lines in sshd-custom.conf — all lines in that file should be uncommented (no leading #). Run sudo systemctl status fail2ban for the specific error message.</p>
+<h3><strong>ufw enable warning about disrupting SSH</strong></h3>
+<p>This is expected. UFW warns you that enabling the firewall could break your SSH session if port 22 is not allowed. Since you already ran sudo ufw allow ssh before enabling, it is safe to proceed.</p>
+<h3><strong>jail.local vs jail.d approach</strong></h3>
+<p>If you copied jail.conf to jail.local and edited it, everything in that file is commented out by default (lines starting with #). Commented-out lines are ignored. Use the jail.d/sshd-custom.conf approach in this guide — it is cleaner and survives package updates without conflict.</p>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th style="text-align: left;">PHASE 3  Install Docker &amp; Docker Compose <em>Install the container runtime that will host n8n.</em></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+</tr>
+</tbody>
+</table></div>
+<h2><strong>Step 3.1 — Remove Old Docker Versions</strong></h2>
+<pre><code class="language-bash">sudo apt remove
+docker docker-engine docker.io containerd runc -y
+</code></pre>
+<p>Ubuntu sometimes ships with unofficial Docker packages. Removing them prevents version conflicts. "Package not found" messages are normal — it just means they were not installed.</p>
+<h2><strong>Step 3.2 — Install Prerequisites</strong></h2>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th style="text-align: left;">sudo apt install -y ca-certificates curl gnupg lsb-release</th>
+<th style="text-align: left;"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Package</strong></td>
+<td style="text-align: left;"><strong>Purpose</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;">ca-certificates</td>
+<td style="text-align: left;">Validates SSL certificates when downloading packages</td>
+</tr>
+<tr>
+<td style="text-align: left;">curl</td>
+<td style="text-align: left;">Downloads files from the internet</td>
+</tr>
+<tr>
+<td style="text-align: left;">gnupg</td>
+<td style="text-align: left;">Handles GPG cryptographic key verification</td>
+</tr>
+<tr>
+<td style="text-align: left;">lsb-release</td>
+<td style="text-align: left;">Detects your Ubuntu version for the correct package repository</td>
+</tr>
+</tbody>
+</table></div>
+<h2><strong>Step 3.3 — Add Docker's Official GPG Key</strong></h2>
+<pre><code class="language-bash">sudo install -m 0755 -d /etc/apt/keyrings
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg |
+sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
+sudo chmod a+r /etc/apt/keyrings/docker.gpg
+</code></pre>
+<p>This downloads Docker's official cryptographic signing key. When you install Docker packages, apt uses this key to verify the packages have not been tampered with. This is the security-correct way to add third-party repositories.</p>
+<h2><strong>Step 3.4 — Add Docker's Official Repository</strong></h2>
+<pre><code class="language-bash">echo \\   &quot;deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu \\   $(lsb_release -cs) stable&quot; |
+sudo tee /etc/apt/sources.list.d/docker.list \&gt; /dev/null
+</code></pre>
+<p>This tells apt where to find Docker packages. Using Docker's own repository ensures you get the latest stable version. Ubuntu's default repository often ships an older version.</p>
+<h2><strong>Step 3.5 — Install Docker Engine</strong></h2>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th style="text-align: left;">sudo apt update sudo apt install -y docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin</th>
+<th style="text-align: left;"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Package</strong></td>
+<td style="text-align: left;"><strong>Purpose</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;">docker-ce</td>
+<td style="text-align: left;">The Docker engine (CE \= Community Edition, free)</td>
+</tr>
+<tr>
+<td style="text-align: left;">docker-ce-cli</td>
+<td style="text-align: left;">The docker command line tool</td>
+</tr>
+<tr>
+<td style="text-align: left;">containerd.io</td>
+<td style="text-align: left;">The low-level container runtime Docker sits on top of</td>
+</tr>
+<tr>
+<td style="text-align: left;">docker-buildx-plugin</td>
+<td style="text-align: left;">Extended build capabilities</td>
+</tr>
+<tr>
+<td style="text-align: left;">docker-compose-plugin</td>
+<td style="text-align: left;">Modern Docker Compose as a plugin — gives you the docker compose command</td>
+</tr>
+</tbody>
+</table></div>
+<h2><strong>Step 3.6 — Add Your User to the Docker Group</strong></h2>
+<pre><code class="language-bash">sudo usermod -aG
+docker $USER
+</code></pre>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th style="text-align: left;">⚠  WARNING When GCP creates your VM, it automatically sets up a user matching your Google account username (e.g. [YOUR_USERNAME]). Use that username explicitly if $USER does not resolve correctly. You can verify with: whoami. If needed, substitute your actual username: sudo usermod -aG docker yourusername</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+</tr>
+</tbody>
+</table></div>
+<p>Log out and reconnect via SSH to apply the group change. Then verify:</p>
+<pre><code class="language-bash">groups #
+docker should appear in the output
+</code></pre>
+<h2><strong>Step 3.7 — Verify Docker Works</strong></h2>
+<pre><code class="language-bash">docker run hello-world
+docker compose version
+</code></pre>
+<p>The hello-world container should print "Hello from Docker!" confirming the engine works. Docker Compose should return a version string like Docker Compose version v2.x.x.</p>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th style="text-align: left;">ℹ  NOTE Use docker compose (with a space) throughout this guide. This is the modern plugin syntax. The older docker-compose (with a hyphen) is a legacy standalone binary and is not installed here.</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+</tr>
+</tbody>
+</table></div>
+<h2><strong>Troubleshooting — Phase 3</strong></h2>
+<h3><strong>docker: permission denied after adding to group</strong></h3>
+<p>The group change requires a fresh login session to take effect. Close the browser SSH window completely and reconnect via GCP Console → SSH. newgrp docker works for the current shell session but does not always propagate correctly in GCP's browser SSH environment.</p>
+<h3><strong>version attribute warning in docker-compose.yml</strong></h3>
+<p>Newer Docker Compose v2.x no longer requires the version: field at the top of docker-compose.yml. If you see WARN: the attribute version is obsolete, remove the version: "3.8" line from your file. This is a warning, not an error — your containers still start correctly.</p>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th style="text-align: left;">PHASE 4  Deploy n8n via Docker Compose <em>Define and start the n8n container with a single configuration file. Configure memory swap for the e2-micro.</em></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+</tr>
+</tbody>
+</table></div>
+<h2><strong>Architecture Overview</strong></h2>
+<p>Before running any commands, understand what you are building:</p>
+<pre><code class="language-bash">Internet     │    443 (HTTPS)     │   Nginx  ← (Phase 5: handles SSL \+ security headers)     │   5678 (localhost only)     │   n8n container     │   External AI APIs (Gemini, OpenAI, Anthropic, etc.)   via n8n HTTP Request or LLM nodes — outbound only
+</code></pre>
+<p>n8n's port 5678 is only accessible from within the VM itself (localhost). All public traffic enters on port 443 via Nginx and is forwarded internally. No application port is directly exposed to the internet.</p>
+<h2><strong>Step 4.1 — Add Swap Space (Critical for e2-micro)</strong></h2>
+<p>The e2-micro has only 1 GB RAM. Without swap, the OS may kill the n8n process under brief memory pressure (e.g. during workflow execution or startup). Adding 1 GB of swap gives the system a safety buffer.</p>
+<pre><code class="language-bash"># Create a 1 GB swap file
+sudo fallocate -l 1G /swapfile
+sudo chmod 600 /swapfile
+sudo mkswap /swapfile
+sudo swapon /swapfile
+# Make swap permanent across reboots echo '/swapfile none swap sw 0 0' |
+sudo tee -a /etc/fstab
+# Verify swap is active free -h
+</code></pre>
+<p>Expected output of free -h should now show a Swap row with 1.0G total. Without this step, n8n may intermittently crash on the e2-micro under load.</p>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th style="text-align: left;">ℹ  NOTE Swap on a standard persistent disk is slower than RAM. This is acceptable for occasional overflow — it prevents crashes. It should not be relied on for sustained heavy workloads.</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+</tr>
+</tbody>
+</table></div>
+<h2><strong>Step 4.2 — Create Working Directory and Volume</strong></h2>
+<pre><code class="language-bash">mkdir -p \~/n8n-stack &amp;&amp; cd \~/n8n-stack
+docker volume create n8n_data
+</code></pre>
+<p>Docker volumes store data outside the container on the host disk. Your n8n workflows, credentials, and settings persist across container restarts, updates, or recreations.</p>
+<h2><strong>Step 4.3 — Create docker-compose.yml</strong></h2>
+<pre><code class="language-bash">nano \~/n8n-stack/docker-compose.yml
+</code></pre>
+<p>Paste the following content (replace the password value before saving):</p>
+<pre><code class="language-bash">services:
+  n8n:
+    image: n8nio/n8n:latest
+    container_name: n8n
+    restart: unless-stopped
+    ports:
+
+   - &quot;127.0.0.1:5678:5678&quot;
+    volumes:
+
+   - n8n_data:/home/node/.n8n
+    environment:
+
+   - N8N_HOST=[YOUR_DOMAIN]
+
+   - N8N_PORT=5678
+
+   - N8N_PROTOCOL=https
+
+   - WEBHOOK_URL=https://[YOUR_DOMAIN]/
+
+   - N8N_EDITOR_BASE_URL=https://[YOUR_DOMAIN]/
+
+   - GENERIC_TIMEZONE=[YOUR_TIMEZONE]
+
+   - N8N_BASIC_AUTH_ACTIVE=true
+
+   - N8N_BASIC_AUTH_USER=admin
+
+   - N8N_BASIC_AUTH_PASSWORD=YourStrongPasswordHere
+
+   - NODE_OPTIONS=--max-old-space-size=512 volumes:
+  n8n_data:
+    external: true
+</code></pre>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th style="text-align: left;">✖  CRITICAL Before saving, replace YourStrongPasswordHere with a strong password (16+ characters, mixed case, numbers, symbols). This is the password protecting your n8n instance from the internet.</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+</tr>
+</tbody>
+</table></div>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th style="text-align: left;">Setting</th>
+<th style="text-align: left;">Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">restart: unless-stopped</td>
+<td style="text-align: left;">n8n auto-restarts after VM reboots unless manually stopped</td>
+</tr>
+<tr>
+<td style="text-align: left;">127.0.0.1:5678:5678</td>
+<td style="text-align: left;">Binds n8n port to localhost only — not the public internet. Critical security setting.</td>
+</tr>
+<tr>
+<td style="text-align: left;">n8n_data:/home/node/.n8n</td>
+<td style="text-align: left;">Persists all n8n data (workflows, credentials, settings) across container restarts</td>
+</tr>
+<tr>
+<td style="text-align: left;">N8N_HOST / WEBHOOK_URL</td>
+<td style="text-align: left;">Tells n8n its public URL so webhook URLs are generated correctly</td>
+</tr>
+<tr>
+<td style="text-align: left;">GENERIC_TIMEZONE=[YOUR_TIMEZONE]</td>
+<td style="text-align: left;">Sets correct timezone for scheduled workflows (adjust if needed)</td>
+</tr>
+<tr>
+<td style="text-align: left;">NODE_OPTIONS=--max-old-space-size=512</td>
+<td style="text-align: left;">Caps n8n's Node.js memory to 512 MB — prevents it from consuming all 1 GB RAM on e2-micro</td>
+</tr>
+</tbody>
+</table></div>
+<h2><strong>Step 4.4 — Start n8n</strong></h2>
+<pre><code class="language-bash">cd \~/n8n-stack
+docker compose up -d
+</code></pre>
+<p>The -d flag runs the container in detached mode (background). First run pulls the n8n image from Docker Hub and takes 2–3 minutes. Verify it is running:</p>
+<pre><code class="language-bash">docker compose ps
+</code></pre>
+<p>Expected output:</p>
+<pre><code class="language-bash">NAME   IMAGE              STATUS         PORTS
+n8n    n8nio/n8n:latest   Up X seconds   127.0.0.1:5678-\&gt;5678/tcp
+</code></pre>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th style="text-align: left;">✖  CRITICAL Confirm the port binding shows 127.0.0.1:5678-&gt;5678/tcp — NOT 0.0.0.0:5678. The 127.0.0.1 prefix means n8n is only reachable from within the VM itself, not from the internet. This is the critical security binding.</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+</tr>
+</tbody>
+</table></div>
+<h2><strong>Troubleshooting — Phase 4</strong></h2>
+<h3><strong>Container shows Exit or Restarting status</strong></h3>
+<p>Run docker compose logs n8n to see the error. Common causes: wrong password format in the environment variable (avoid special shell characters like $ without escaping), insufficient disk space (check df -h), or a syntax error in docker-compose.yml.</p>
+<h3><strong>n8n uses too much memory and gets killed (OOMKilled)</strong></h3>
+<p>Verify the swap was successfully created: free -h should show 1.0G swap. Also confirm NODE_OPTIONS=--max-old-space-size=512 is present in docker-compose.yml. If n8n is still being killed, reduce the memory cap to 384: NODE_OPTIONS=--max-old-space-size=384.</p>
+<h3><strong>n8n port bound to 0.0.0.0 instead of 127.0.0.1</strong></h3>
+<p>The 127.0.0.1: prefix was accidentally omitted from the ports line in docker-compose.yml. Stop the stack with docker compose down, fix the file, and run docker compose up -d again. This is a critical security issue — n8n should never bind to all interfaces directly.</p>
+<h3><strong>version attribute warning</strong></h3>
+<p>Newer Docker Compose v2.x no longer requires the version: field. If you see WARN: the attribute version is obsolete, remove any version: line from the top of docker-compose.yml. This is a warning, not an error.</p>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th style="text-align: left;">PHASE 5  Nginx Reverse Proxy + Let's Encrypt SSL <em>Put Nginx in front of n8n to handle HTTPS termination, security headers, and rate limiting.</em></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+</tr>
+</tbody>
+</table></div>
+<h2><strong>Step 5.1 — Install Nginx and Certbot</strong></h2>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th style="text-align: left;">sudo apt install -y nginx certbot python3-certbot-nginx</th>
+<th style="text-align: left;"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Package</strong></td>
+<td style="text-align: left;"><strong>Purpose</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;">nginx</td>
+<td style="text-align: left;">The reverse proxy web server</td>
+</tr>
+<tr>
+<td style="text-align: left;">certbot</td>
+<td style="text-align: left;">The Let's Encrypt certificate management CLI</td>
+</tr>
+<tr>
+<td style="text-align: left;">python3-certbot-nginx</td>
+<td style="text-align: left;">Certbot plugin that automatically edits Nginx config for SSL</td>
+</tr>
+</tbody>
+</table></div>
+<pre><code class="language-bash">sudo systemctl enable nginx
+sudo systemctl start nginx
+sudo systemctl status nginx
+</code></pre>
+<p>Look for active (running). Nginx should now be serving on port 80.</p>
+<h2><strong>Step 5.2 — Create the Nginx Site Config</strong></h2>
+<pre><code class="language-bash"># Remove the default site
+sudo rm /etc/nginx/sites-enabled/default
+# Create config for your subdomain
+sudo
+nano /etc/nginx/sites-available/n8n
+</code></pre>
+<p>Paste this initial HTTP-only config (Certbot will upgrade it to HTTPS automatically):</p>
+<pre><code class="language-bash">server {
+    listen 80;
+    server_name [YOUR_DOMAIN];
+    location / {
+        proxy_pass http://127.0.0.1:5678;
+        proxy_http_version 1.1;
+        proxy_set_header Upgrade $http_upgrade;
+        proxy_set_header Connection &quot;upgrade&quot;;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header X-Forwarded-Proto $scheme;
+        proxy_read_timeout 300s;
+        proxy_connect_timeout 300s;
+        proxy_send_timeout 300s;
+        chunked_transfer_encoding off;
+    }
+}
+</code></pre>
+<p>Replace [YOUR_DOMAIN] with your actual subdomain. Save and exit: Ctrl+O → Enter → Ctrl+X.</p>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th style="text-align: left;">Directive</th>
+<th style="text-align: left;">Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">proxy_pass http://127.0.0.1:5678</td>
+<td style="text-align: left;">Forwards all requests to n8n on localhost</td>
+</tr>
+<tr>
+<td style="text-align: left;">Upgrade + Connection: upgrade</td>
+<td style="text-align: left;">Required for n8n's WebSocket connections (real-time UI)</td>
+</tr>
+<tr>
+<td style="text-align: left;">X-Real-IP / X-Forwarded-For</td>
+<td style="text-align: left;">Passes real client IPs to n8n so logs show actual visitors</td>
+</tr>
+<tr>
+<td style="text-align: left;">proxy_read_timeout 300s</td>
+<td style="text-align: left;">Allows long-running n8n workflows up to 5 minutes</td>
+</tr>
+</tbody>
+</table></div>
+<h2><strong>Step 5.3 — Enable the Site and Test Config</strong></h2>
+<pre><code class="language-bash">sudo ln -s /etc/nginx/sites-available/n8n /etc/nginx/sites-enabled/
+sudo nginx -t
+sudo systemctl reload nginx
+</code></pre>
+<p>nginx -t must return:</p>
+<pre><code class="language-bash">nginx: the configuration file /etc/nginx/nginx.conf syntax is ok
+nginx: configuration file /etc/nginx/nginx.conf test is successful
+</code></pre>
+<p>Fix any errors before proceeding. Do not proceed to Certbot with a broken Nginx config.</p>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th style="text-align: left;">✖  CRITICAL The DNS A record (Phase 6) must be added and propagated BEFORE running Certbot. Let's Encrypt validates domain ownership by making an HTTP request to your server. If DNS is not pointing to your VM yet, certificate issuance will fail with a timeout error.</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+</tr>
+</tbody>
+</table></div>
+<h2><strong>Step 5.4 — Issue the SSL Certificate</strong></h2>
+<p>After confirming DNS is propagated (see Phase 6), run:</p>
+<pre><code class="language-bash">sudo certbot --nginx -d [YOUR_DOMAIN]
+</code></pre>
+<p>Certbot will:</p>
+<ol>
+<li>
+<p>Contact Let's Encrypt and prove you control the domain via HTTP challenge</p>
+</li>
+<li>
+<p>Download a signed SSL certificate to /etc/letsencrypt/live/[YOUR_DOMAIN]/</p>
+</li>
+<li>
+<p>Automatically edit your Nginx config to add the SSL/443 block</p>
+</li>
+<li>
+<p>Set up a systemd timer for automatic renewal</p>
+</li>
+</ol>
+<p>When prompted: enter your email address, accept terms of service (Y), and choose whether to share your email with EFF.</p>
+<p>Expected success output:</p>
+<pre><code class="language-bash">Successfully received certificate.
+Certificate is saved at: /etc/letsencrypt/live/[YOUR_DOMAIN]/fullchain.pem
+Congratulations\! You have successfully enabled HTTPS on https://[YOUR_DOMAIN]
+</code></pre>
+<h2><strong>Step 5.5 — Verify Auto-Renewal</strong></h2>
+<pre><code class="language-bash">sudo certbot renew --dry-run
+</code></pre>
+<p>Expected: Congratulations, all simulated renewals succeeded. The certificate expires every 90 days and will renew automatically — no manual action needed.</p>
+<h2><strong>Step 5.6 — Harden the Nginx Config</strong></h2>
+<p>After Certbot has issued your certificate, replace the Nginx site config with a hardened version:</p>
+<pre><code class="language-bash">sudo
+nano /etc/nginx/sites-available/n8n
+</code></pre>
+<p>Replace the entire file contents with:</p>
+<pre><code class="language-bash"># Redirect HTTP to HTTPS
+server {
+    listen 80;
+    server_name [YOUR_DOMAIN];
+    return 301 https://$host$request_uri;
+    }
+server {
+    listen 443 ssl;
+    server_name [YOUR_DOMAIN];
+    ssl_certificate /etc/letsencrypt/live/[YOUR_DOMAIN]/fullchain.pem;
+    ssl_certificate_key /etc/letsencrypt/live/[YOUR_DOMAIN]/privkey.pem;
+    include /etc/letsencrypt/options-ssl-nginx.conf;
+    ssl_dhparam /etc/letsencrypt/ssl-dhparams.pem;
+    add_header Strict-Transport-Security &quot;max-age=31536000;
+    includeSubDomains&quot; always;
+    add_header X-Frame-Options &quot;SAMEORIGIN&quot; always;
+    add_header X-Content-Type-Options &quot;nosniff&quot; always;
+    add_header X-XSS-Protection &quot;1;
+    mode=block&quot; always;
+    add_header Referrer-Policy &quot;strict-origin-when-cross-origin&quot; always;
+    add_header Permissions-Policy &quot;geolocation=(), microphone=(), camera=()&quot; always;
+    server_tokens off;
+    limit_req zone=n8n_limit burst=20 nodelay;
+        proxy_pass http://127.0.0.1:5678;
+        proxy_http_version 1.1;
+        proxy_set_header Upgrade $http_upgrade;
+        proxy_set_header Connection &quot;upgrade&quot;;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header X-Forwarded-Proto $scheme;
+        proxy_read_timeout 300s;
+        proxy_connect_timeout 300s;
+        proxy_send_timeout 300s;
+        chunked_transfer_encoding off;
+    }
+}
+  location / {
+</code></pre>
+<p>Add the rate limiting zone to the main Nginx config:</p>
+<pre><code class="language-bash">sudo
+nano /etc/nginx/nginx.conf
+</code></pre>
+<p>Inside the http { block (add as the first line after http {):</p>
+<pre><code class="language-bash">limit_req_zone $binary_remote_addr zone=n8n_limit:10m rate=10r/s;
+</code></pre>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th style="text-align: left;">Header / Directive</th>
+<th style="text-align: left;">Security Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Strict-Transport-Security</td>
+<td style="text-align: left;">Forces browsers to use HTTPS for 1 year (HSTS)</td>
+</tr>
+<tr>
+<td style="text-align: left;">X-Frame-Options: SAMEORIGIN</td>
+<td style="text-align: left;">Prevents clickjacking attacks</td>
+</tr>
+<tr>
+<td style="text-align: left;">X-Content-Type-Options: nosniff</td>
+<td style="text-align: left;">Prevents MIME type sniffing attacks</td>
+</tr>
+<tr>
+<td style="text-align: left;">server_tokens off</td>
+<td style="text-align: left;">Hides Nginx version from HTTP response headers</td>
+</tr>
+<tr>
+<td style="text-align: left;">limit_req zone=n8n_limit</td>
+<td style="text-align: left;">Rate limits to 10 requests/second per IP — blocks brute force</td>
+</tr>
+<tr>
+<td style="text-align: left;">return 301 https://</td>
+<td style="text-align: left;">Permanently redirects all HTTP to HTTPS</td>
+</tr>
+</tbody>
+</table></div>
+<pre><code class="language-bash">sudo nginx -t &amp;&amp;
+sudo systemctl reload nginx
+</code></pre>
+<p>Verify the security headers are present:</p>
+<pre><code class="language-bash">curl -I https://[YOUR_DOMAIN]
+</code></pre>
+<h2><strong>Troubleshooting — Phase 5</strong></h2>
+<h3><strong>Certbot fails with "Timeout during connect (likely firewall problem)"</strong></h3>
+<p>This means the GCP-level firewall is blocking port 80. This is separate from UFW. Go to GCP Console → Compute Engine → VM instances → click the VM → scroll to Network interfaces → verify the VM has the http-server and https-server network tags. If missing, go to VPC Network → Firewall and confirm the default-allow-http and default-allow-https rules exist and target those tags. Alternatively, on the VM details page, check the Firewall section under the instance — both Allow HTTP traffic and Allow HTTPS traffic should be checked.</p>
+<h3><strong>nginx -t returns unknown directive "limit_req"</strong></h3>
+<p>This means the limit_req_zone line was added outside the http { } block. Open /etc/nginx/nginx.conf, find the http { line, and add the limit_req_zone directive as the very first line inside that block.</p>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th style="text-align: left;">PHASE 6  Configure DNS — Point Subdomain to VM <em>Create the DNS A record that maps your subdomain to the VM's static IP.</em></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+</tr>
+</tbody>
+</table></div>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th style="text-align: left;">⚠  WARNING This phase should be done BEFORE running the Certbot command in Phase 5, Step 5.4. Let's Encrypt needs DNS to resolve to your VM's IP to complete domain validation. Do Phases 5.1–5.3 first, then do Phase 6, wait for DNS propagation, then do Phase 5.4.</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+</tr>
+</tbody>
+</table></div>
+<h2><strong>Step 6.1 — Get Your VM's Static IP</strong></h2>
+<pre><code class="language-bash">curl -s ifconfig.me
+</code></pre>
+<p>This returns your VM's public IP address. Confirm it matches the External IP shown in GCP Console → VM instances.</p>
+<h2><strong>Step 6.2 — Add the DNS A Record</strong></h2>
+<ol>
+<li>
+<p>Log in to your domain registrar or DNS provider's control panel.</p>
+</li>
+<li>
+<p>Navigate to the DNS management section for your domain.</p>
+</li>
+<li>
+<p>Add a new DNS record with the following details:</p>
+</li>
+</ol>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th style="text-align: left;">Field</th>
+<th style="text-align: left;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Type</td>
+<td style="text-align: left;">A</td>
+</tr>
+<tr>
+<td style="text-align: left;">Name/Host</td>
+<td style="text-align: left;">n8n (This creates [YOUR_DOMAIN])</td>
+</tr>
+<tr>
+<td style="text-align: left;">Target/Value/IPv4 address</td>
+<td style="text-align: left;">Your VM's static IP from Step 6.1</td>
+</tr>
+<tr>
+<td style="text-align: left;">TTL</td>
+<td style="text-align: left;">Default or Auto</td>
+</tr>
+</tbody>
+</table></div>
+<ol>
+<li>Save the record.</li>
+</ol>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th style="text-align: left;">✖  CRITICAL If your DNS provider offers a proxy service (like Cloudflare's "orange cloud"), ensure the record is set to "DNS only" (unproxied). Proxied records change the IP that Let's Encrypt sees during certificate validation, which will cause Certbot to fail.</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+</tr>
+</tbody>
+</table></div>
+<h2><strong>Step 6.3 — Verify DNS Propagation</strong></h2>
+<pre><code class="language-bash">dig [YOUR_DOMAIN] \+short
+</code></pre>
+<p>This should return your VM's IP address. If it returns nothing or a different IP, wait a few minutes and try again. DNS changes can take anywhere from a few minutes to a few hours to propagate depending on your provider.</p>
+<p>Only proceed to Certbot (Phase 5, Step 5.4) once this command returns your correct VM IP.</p>
+<h2><strong>Troubleshooting — Phase 6</strong></h2>
+<h3><strong>dig returns nothing after 10+ minutes</strong></h3>
+<p>Verify the A record was saved correctly in your DNS provider's dashboard — go back to DNS settings and confirm the record exists with the correct IP. Also confirm you are querying the right subdomain name. Check for typos.</p>
+<h3><strong>dig returns a different IP instead of your VM IP</strong></h3>
+<p>If your DNS provider uses proxying (e.g., Cloudflare), the record might be set to proxied. Edit the record and ensure it is set to "DNS only" (unproxied). Wait a few minutes and re-check.</p>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th style="text-align: left;">PHASE 7  Set Up n8n — First Workflow <em>Create your n8n account and build a test workflow to confirm the stack is working end to end.</em></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+</tr>
+</tbody>
+</table></div>
+<h2><strong>Step 7.1 — Set Up Your n8n Owner Account</strong></h2>
+<p>Open https://[YOUR_DOMAIN] in your browser. You should see the n8n "Set up owner account" page served over HTTPS (padlock visible in the address bar).</p>
+<ol>
+<li>
+<p>Enter your email address</p>
+</li>
+<li>
+<p>Enter your first and last name</p>
+</li>
+<li>
+<p>Set a strong password (16+ characters)</p>
+</li>
+<li>
+<p>Click Next and complete any additional setup prompts</p>
+</li>
+<li>
+<p>Activate the Community Edition if prompted — a code will be sent to your email</p>
+</li>
+</ol>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th style="text-align: left;">ℹ  NOTE n8n's newer versions use their own internal account system rather than the N8N_BASIC_AUTH settings in docker-compose.yml. The account you create on this screen is your primary login. Store the password securely.</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+</tr>
+</tbody>
+</table></div>
+<h2><strong>Step 7.2 — Understanding External AI in n8n</strong></h2>
+<p>The e2-micro cannot run local LLMs. Connect to external AI APIs instead. n8n has built-in nodes for:</p>
+<ul>
+<li>
+<p><strong>Google Gemini</strong> — Gemini 1.5 Flash is free up to 15 requests/minute and 1 million tokens/day via Google AI Studio. No billing required for the free tier.</p>
+</li>
+<li>
+<p><strong>OpenAI</strong> — Requires a paid API key. Integrates via n8n's built-in OpenAI node.</p>
+</li>
+<li>
+<p><strong>Anthropic (Claude)</strong> — Requires a paid API key. Integrates via n8n's Anthropic node or HTTP Request node.</p>
+</li>
+<li>
+<p><strong>HTTP Request node</strong> — Connects to any REST API. Use this for any AI provider not natively supported by n8n.</p>
+</li>
+</ul>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th style="text-align: left;">💡 TIP Google Gemini API free tier is the best fit for this zero-cost setup. Get a free API key at aistudio.google.com — no credit card required.</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+</tr>
+</tbody>
+</table></div>
+<h2><strong>Step 7.3 — Build a Test Workflow</strong></h2>
+<p>This workflow tests that n8n is running, can execute logic, and can reach an external API.</p>
+<ol>
+<li>
+<p>Click + New workflow on the n8n canvas</p>
+</li>
+<li>
+<p>Click + → search for Manual Trigger → add it</p>
+</li>
+<li>
+<p>Click + → search for HTTP Request → add it</p>
+</li>
+<li>
+<p>In the HTTP Request node, configure:</p>
+<ul>
+<li>
+<p>Method: POST</p>
+</li>
+<li>
+<p>URL: https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=YOUR_GEMINI_API_KEY</p>
+</li>
+<li>
+<p>Body Content Type: JSON</p>
+</li>
+<li>
+<p>Body: { "contents": [{ "parts": [{ "text": "What is n8n? Answer in 2 sentences." }] }] }</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Connect Manual Trigger → HTTP Request</p>
+</li>
+<li>
+<p>Click Test workflow → click the Manual Trigger's Test step button</p>
+</li>
+</ol>
+<p>The HTTP Request node should return a 200 response with a JSON body containing Gemini's answer. This confirms n8n is running correctly and outbound internet access works from the VM.</p>
+<h2><strong>Troubleshooting — Phase 7</strong></h2>
+<h3><strong>Browser cannot reach https://n8n.yourdomain.com</strong></h3>
+<p>Check: (1) docker compose ps shows n8n as Up; (2) sudo systemctl status nginx shows active; (3) dig [YOUR_DOMAIN] +short returns your VM's IP address.</p>
+<h3><strong>HTTP Request node returns 403 or API key error</strong></h3>
+<p>Verify the Gemini API key is correct and was generated from aistudio.google.com. Ensure the key is pasted in the URL with no extra spaces. The free tier key works without any billing setup.</p>
+<h3><strong>n8n shows login page instead of setup page</strong></h3>
+<p>The owner account was already created. Log in with your email and password. If you forgot the password, reset n8n completely: docker compose down → docker volume rm n8n_data → docker volume create n8n_data → docker compose up -d. This wipes all n8n data and restarts fresh.</p>
+<h1><strong>Quick Reference</strong></h1>
+<h2><strong>Essential Commands</strong></h2>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th style="text-align: left;">Task</th>
+<th style="text-align: left;">Command</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Check container status</td>
+<td style="text-align: left;">docker compose ps</td>
+</tr>
+<tr>
+<td style="text-align: left;">View n8n logs</td>
+<td style="text-align: left;">docker compose logs n8n</td>
+</tr>
+<tr>
+<td style="text-align: left;">Follow n8n logs live</td>
+<td style="text-align: left;">docker compose logs -f n8n</td>
+</tr>
+<tr>
+<td style="text-align: left;">Restart n8n</td>
+<td style="text-align: left;">docker compose restart n8n</td>
+</tr>
+<tr>
+<td style="text-align: left;">Stop n8n</td>
+<td style="text-align: left;">docker compose down</td>
+</tr>
+<tr>
+<td style="text-align: left;">Start n8n</td>
+<td style="text-align: left;">docker compose up -d</td>
+</tr>
+<tr>
+<td style="text-align: left;">Check disk usage</td>
+<td style="text-align: left;">df -h</td>
+</tr>
+<tr>
+<td style="text-align: left;">Check RAM and swap usage</td>
+<td style="text-align: left;">free -h</td>
+</tr>
+<tr>
+<td style="text-align: left;">Check swap is active</td>
+<td style="text-align: left;">swapon --show</td>
+</tr>
+<tr>
+<td style="text-align: left;">Check container resource usage</td>
+<td style="text-align: left;">docker stats</td>
+</tr>
+<tr>
+<td style="text-align: left;">Check fail2ban SSH status</td>
+<td style="text-align: left;">sudo fail2ban-client status sshd</td>
+</tr>
+<tr>
+<td style="text-align: left;">Check UFW firewall status</td>
+<td style="text-align: left;">sudo ufw status verbose</td>
+</tr>
+<tr>
+<td style="text-align: left;">Test Nginx config</td>
+<td style="text-align: left;">sudo nginx -t</td>
+</tr>
+<tr>
+<td style="text-align: left;">Reload Nginx</td>
+<td style="text-align: left;">sudo systemctl reload nginx</td>
+</tr>
+<tr>
+<td style="text-align: left;">View Nginx error log</td>
+<td style="text-align: left;">sudo tail -f /var/log/nginx/error.log</td>
+</tr>
+</tbody>
+</table></div>
+<h2><strong>File Locations</strong></h2>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th style="text-align: left;">Resource</th>
+<th style="text-align: left;">Path</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Docker Compose file</td>
+<td style="text-align: left;">\~/n8n-stack/docker-compose.yml</td>
+</tr>
+<tr>
+<td style="text-align: left;">Nginx site config</td>
+<td style="text-align: left;">/etc/nginx/sites-available/n8n</td>
+</tr>
+<tr>
+<td style="text-align: left;">Nginx main config</td>
+<td style="text-align: left;">/etc/nginx/nginx.conf</td>
+</tr>
+<tr>
+<td style="text-align: left;">SSL Certificate</td>
+<td style="text-align: left;">/etc/letsencrypt/live/[YOUR_DOMAIN]/fullchain.pem</td>
+</tr>
+<tr>
+<td style="text-align: left;">SSL Private Key</td>
+<td style="text-align: left;">/etc/letsencrypt/live/[YOUR_DOMAIN]/privkey.pem</td>
+</tr>
+<tr>
+<td style="text-align: left;">Let's Encrypt renewal config</td>
+<td style="text-align: left;">/etc/letsencrypt/renewal/[YOUR_DOMAIN].conf</td>
+</tr>
+<tr>
+<td style="text-align: left;">fail2ban SSH jail config</td>
+<td style="text-align: left;">/etc/fail2ban/jail.d/sshd-custom.conf</td>
+</tr>
+<tr>
+<td style="text-align: left;">SSH daemon config</td>
+<td style="text-align: left;">/etc/ssh/sshd_config</td>
+</tr>
+<tr>
+<td style="text-align: left;">Swap file</td>
+<td style="text-align: left;">/swapfile</td>
+</tr>
+<tr>
+<td style="text-align: left;">Nginx access log</td>
+<td style="text-align: left;">/var/log/nginx/access.log</td>
+</tr>
+<tr>
+<td style="text-align: left;">Nginx error log</td>
+<td style="text-align: left;">/var/log/nginx/error.log</td>
+</tr>
+<tr>
+<td style="text-align: left;">Let's Encrypt log</td>
+<td style="text-align: left;">/var/log/letsencrypt/letsencrypt.log</td>
+</tr>
+<tr>
+<td style="text-align: left;">Auth log (fail2ban watches)</td>
+<td style="text-align: left;">/var/log/auth.log</td>
+</tr>
+</tbody>
+</table></div>
+<h2><strong>Free AI APIs Compatible with n8n</strong></h2>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th style="text-align: left;">Provider</th>
+<th style="text-align: left;">Details</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Google Gemini 1.5 Flash</td>
+<td style="text-align: left;">Free — 15 req/min, 1M tokens/day. Get key at aistudio.google.com</td>
+</tr>
+<tr>
+<td style="text-align: left;">Google Gemini 1.5 Pro</td>
+<td style="text-align: left;">Free — 2 req/min, 50 req/day. Get key at aistudio.google.com</td>
+</tr>
+<tr>
+<td style="text-align: left;">Groq (Llama, Mistral, Gemma)</td>
+<td style="text-align: left;">Free tier with fast inference. console.groq.com</td>
+</tr>
+<tr>
+<td style="text-align: left;">Together AI</td>
+<td style="text-align: left;">Free $1 credit on signup. api.together.xyz</td>
+</tr>
+<tr>
+<td style="text-align: left;">Hugging Face Inference API</td>
+<td style="text-align: left;">Free for public models. huggingface.co/inference-api</td>
+</tr>
+<tr>
+<td style="text-align: left;">OpenRouter (free models)</td>
+<td style="text-align: left;">Select models free. openrouter.ai</td>
+</tr>
+</tbody>
+</table></div>
+<h2><strong>Security Posture Summary</strong></h2>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th style="text-align: left;">Layer</th>
+<th style="text-align: left;">Configuration</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">GCP Firewall</td>
+<td style="text-align: left;">Ports 80 and 443 only — HTTP/HTTPS</td>
+</tr>
+<tr>
+<td style="text-align: left;">UFW Firewall</td>
+<td style="text-align: left;">Ports 22, 80, 443 only — all else denied inbound</td>
+</tr>
+<tr>
+<td style="text-align: left;">fail2ban</td>
+<td style="text-align: left;">SSH: 5 failed attempts triggers 1-hour IP ban</td>
+</tr>
+<tr>
+<td style="text-align: left;">Root SSH Login</td>
+<td style="text-align: left;">Disabled via PermitRootLogin no in sshd_config</td>
+</tr>
+<tr>
+<td style="text-align: left;">n8n Port Exposure</td>
+<td style="text-align: left;">Bound to 127.0.0.1:5678 only — never directly public</td>
+</tr>
+<tr>
+<td style="text-align: left;">Memory Cap</td>
+<td style="text-align: left;">NODE_OPTIONS limits n8n to 512 MB — prevents OOM on e2-micro</td>
+</tr>
+<tr>
+<td style="text-align: left;">Swap</td>
+<td style="text-align: left;">1 GB swap file — prevents OS killing n8n under brief memory pressure</td>
+</tr>
+<tr>
+<td style="text-align: left;">HTTPS</td>
+<td style="text-align: left;">Let's Encrypt TLS — auto-renewing every 90 days</td>
+</tr>
+<tr>
+<td style="text-align: left;">HSTS</td>
+<td style="text-align: left;">Strict-Transport-Security: 1 year — browsers force HTTPS permanently</td>
+</tr>
+<tr>
+<td style="text-align: left;">Security Headers</td>
+<td style="text-align: left;">X-Frame-Options, X-Content-Type-Options, XSS-Protection, Referrer-Policy</td>
+</tr>
+<tr>
+<td style="text-align: left;">Rate Limiting</td>
+<td style="text-align: left;">Nginx: 10 req/s per IP with burst of 20 — blocks brute force</td>
+</tr>
+<tr>
+<td style="text-align: left;">Unattended Upgrades</td>
+<td style="text-align: left;">Security patches applied automatically in background</td>
+</tr>
+</tbody>
+</table></div>
+<h1><strong>Appendix: GCP Always Free Tier — Full Product Reference</strong></h1>
+<p>This appendix documents every GCP Always Free product with monthly usage limits that never expire. These are complementary services you can integrate with your n8n instance at zero additional cost.</p>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th style="text-align: left;">⚠  WARNING Source: Official GCP documentation at docs.cloud.google.com/free/docs/free-cloud-features — verified March 2026. These limits are subject to change with 30 days notice from Google. Always verify current limits on the official page before designing a project around them.</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+</tr>
+</tbody>
+</table></div>
+<h2><strong>Your VM in the Always Free Table</strong></h2>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th style="text-align: left;">✔  SUCCESS This guide already uses the Always Free Compute Engine tier: 1 e2-micro VM in us-central1, 30 GB standard persistent disk, 1 GB outbound transfer/month. These are the exact limits GCP grants permanently at no cost. Every other product in the table below is an additional free resource you can layer on top of this setup.</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+</tr>
+</tbody>
+</table></div>
+<h2><strong>Complete Always Free Tier Table</strong></h2>
+<p>Source: Google Cloud Free Program documentation. All limits are per billing account per month unless otherwise noted.</p>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th style="text-align: left;">Product</th>
+<th style="text-align: left;">Always Free Limit</th>
+<th style="text-align: left;">Relevance to This n8n Stack</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Compute Engine</td>
+<td style="text-align: left;">1 e2-micro VM/month (us-west1, us-central1, us-east1 only) 30 GB standard persistent disk 1 GB outbound transfer/month (North America only)</td>
+<td style="text-align: left;">✅ THIS GUIDE — Already in use. Hosts your n8n instance at $0/month.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Cloud Storage</td>
+<td style="text-align: left;">5 GB regional storage (US regions only) 5,000 Class A Ops/month 50,000 Class B Ops/month 100 GB outbound transfer/month (excl. China/Australia)</td>
+<td style="text-align: left;">✅ Useful — store n8n workflow exports, backups, or files processed by workflows.</td>
+</tr>
+<tr>
+<td style="text-align: left;">BigQuery</td>
+<td style="text-align: left;">1 TiB queries/month 10 GiB storage/month</td>
+<td style="text-align: left;">✅ Useful — store and query n8n workflow logs or event data at scale for free.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Cloud Run</td>
+<td style="text-align: left;">2M requests/month 360,000 GB-seconds memory 180,000 vCPU-seconds compute 1 GB outbound transfer/month (North America)</td>
+<td style="text-align: left;">✅ Useful — run serverless functions that n8n triggers via HTTP webhook.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Cloud Run Functions</td>
+<td style="text-align: left;">2M invocations/month 400,000 GB-seconds compute 200,000 GHz-seconds compute 5 GB outbound transfer/month</td>
+<td style="text-align: left;">✅ Useful — lightweight serverless handlers for n8n webhook triggers.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Firestore</td>
+<td style="text-align: left;">1 GiB storage/project 50,000 reads/day 20,000 writes/day 20,000 deletes/day 10 GiB outbound transfer/month</td>
+<td style="text-align: left;">✅ Useful — free NoSQL database for persisting workflow state or n8n output data.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Cloud Shell</td>
+<td style="text-align: left;">Free access to Cloud Shell 5 GB persistent disk storage</td>
+<td style="text-align: left;">✅ Always useful — browser-based terminal for managing GCP resources without SSH.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Google Cloud Observability (Logging + Monitoring)</td>
+<td style="text-align: left;">First 50 GiB log data/project/month Default retention at no cost All non-chargeable metrics 1M time series/month (Monitoring API reads)</td>
+<td style="text-align: left;">✅ Highly relevant — monitor VM health, Docker container status, and set billing alerts.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Secret Manager</td>
+<td style="text-align: left;">6 active secret versions/month 10,000 access operations/month 3 secret rotation notifications/month</td>
+<td style="text-align: left;">✅ Useful — store n8n API keys and credentials securely outside docker-compose.yml.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Security Command Center</td>
+<td style="text-align: left;">Standard tier — misconfiguration scanning, vulnerability detection, compliance</td>
+<td style="text-align: left;">✅ SecOps relevant — free automated scanning of your GCP project security posture.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Pub/Sub</td>
+<td style="text-align: left;">10 GiB messages/month</td>
+<td style="text-align: left;">✅ Useful — trigger n8n workflows from GCP events (VM alerts, storage events, etc.).</td>
+</tr>
+<tr>
+<td style="text-align: left;">Cloud Build</td>
+<td style="text-align: left;">2,500 build-minutes/month (e2-standard-2)</td>
+<td style="text-align: left;">✅ Useful — auto-rebuild and redeploy n8n Docker image when you update configs.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Artifact Registry</td>
+<td style="text-align: left;">0.5 GB storage/month</td>
+<td style="text-align: left;">⚠ Limited — enough for 1 small Docker image. Useful if customising the n8n image.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Cloud Source Repositories</td>
+<td style="text-align: left;">5 users/billing account 50 GB storage/month 50 GB outbound transfer/month</td>
+<td style="text-align: left;">✅ Useful — version-control your docker-compose.yml and Nginx configs privately.</td>
+</tr>
+<tr>
+<td style="text-align: left;">GKE (Kubernetes Engine)</td>
+<td style="text-align: left;">1 free Autopilot or zonal Standard cluster/month (cluster charge only — compute billed separately)</td>
+<td style="text-align: left;">⚠ Advanced — overkill for a single n8n instance. Relevant for future scaling.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Workflows</td>
+<td style="text-align: left;">5,000 internal steps/month 2,000 external HTTP calls/month</td>
+<td style="text-align: left;">✅ Useful — GCP-native orchestration that can complement n8n automation flows.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Cloud Natural Language API</td>
+<td style="text-align: left;">5,000 units/month</td>
+<td style="text-align: left;">✅ Useful — free NLP (sentiment, entity extraction) callable from n8n HTTP Request nodes.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Cloud Vision</td>
+<td style="text-align: left;">1,000 units/month</td>
+<td style="text-align: left;">✅ Useful — free image analysis callable from n8n workflows via HTTP Request.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Speech-to-Text</td>
+<td style="text-align: left;">60 minutes/month (V1 API)</td>
+<td style="text-align: left;">✅ Useful — transcribe audio inputs in n8n automation flows.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Video Intelligence API</td>
+<td style="text-align: left;">1,000 units/month</td>
+<td style="text-align: left;">Low relevance for this stack unless building video processing workflows.</td>
+</tr>
+<tr>
+<td style="text-align: left;">reCAPTCHA</td>
+<td style="text-align: left;">10,000 assessments/month</td>
+<td style="text-align: left;">✅ Useful — protect n8n webhook endpoints or any forms you expose publicly.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Web Risk</td>
+<td style="text-align: left;">100,000 uri.search calls/month</td>
+<td style="text-align: left;">✅ SecOps relevant — check URLs in n8n security monitoring or threat-intel workflows.</td>
+</tr>
+<tr>
+<td style="text-align: left;">App Engine</td>
+<td style="text-align: left;">28 F1 instance hours/day 9 B1 instance hours/day 1 GB outbound transfer/day</td>
+<td style="text-align: left;">⚠ Alternative hosting option — not needed since n8n runs on e2-micro here.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Agent Engine</td>
+<td style="text-align: left;">180,000 vCPU-seconds/month 360,000 GiB-seconds/month</td>
+<td style="text-align: left;">✅ Useful — run GCP AI agents that integrate with or are triggered by n8n workflows.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Application Integration</td>
+<td style="text-align: left;">400 executions/month 20 GiB data processed/month 2 free connection nodes (Google services)</td>
+<td style="text-align: left;">✅ Useful — GCP-native integration layer that complements n8n for Google service workflows.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Cloud Key Management Service</td>
+<td style="text-align: left;">100 active key versions/month 10,000 cryptographic operations/month (Autokey-created keys only)</td>
+<td style="text-align: left;">✅ SecOps relevant — encrypt secrets and API keys used in n8n credentials.</td>
+</tr>
+</tbody>
+</table></div>
+<h2><strong>Scaling Up: When to Upgrade Beyond Free Tier</strong></h2>
+<p>This setup runs n8n indefinitely at $0/month. The e2-micro is sufficient for personal automation, low-traffic webhooks, and scheduled workflows. There are two scenarios where you may want to upgrade:</p>
+<h3><strong>Scenario A — n8n Performance Degradation</strong></h3>
+<p>If you notice n8n becoming slow or crashing under heavier workflow loads, the 1 GB RAM ceiling of the e2-micro is the bottleneck. Upsize to e2-small (2 GB RAM) or e2-medium (4 GB RAM) without recreating the VM:</p>
+<pre><code class="language-bash"># Resize without data loss:
+# 1\. Stop the VM in GCP Console (Compute Engine → VM instances → Stop)
+# 2\. Click Edit on the stopped VM
+# 3\. Change Machine type to e2-small or e2-medium
+# 4\. Save and Start the VM
+# Docker, n8n data, Nginx config, and SSL certs are all preserved
+# e2-small:  2 GB RAM — \~$13/month
+# e2-medium: 4 GB RAM — \~$27/month
+</code></pre>
+<h3><strong>Scenario B — Add a Local LLM (Ollama)</strong></h3>
+<p>If you want to run a local LLM alongside n8n without paying for external AI API calls, you need at minimum 16 GB RAM. Upgrade to e2-standard-4 and add Ollama back:</p>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th style="text-align: left;">Machine Type</th>
+<th style="text-align: left;">Specs</th>
+<th style="text-align: left;">Est. Cost</th>
+<th style="text-align: left;">Use Case</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">e2-micro (this guide)</td>
+<td style="text-align: left;">1 vCPU, 1 GB RAM</td>
+<td style="text-align: left;">$0/month (free tier)</td>
+<td style="text-align: left;">n8n only + external AI APIs</td>
+</tr>
+<tr>
+<td style="text-align: left;">e2-small</td>
+<td style="text-align: left;">2 vCPU, 2 GB RAM</td>
+<td style="text-align: left;">\~$13/month</td>
+<td style="text-align: left;">n8n with more headroom</td>
+</tr>
+<tr>
+<td style="text-align: left;">e2-medium</td>
+<td style="text-align: left;">2 vCPU, 4 GB RAM</td>
+<td style="text-align: left;">\~$27/month</td>
+<td style="text-align: left;">n8n + small Python scripts</td>
+</tr>
+<tr>
+<td style="text-align: left;">e2-standard-4</td>
+<td style="text-align: left;">4 vCPU, 16 GB RAM</td>
+<td style="text-align: left;">\~$117/month</td>
+<td style="text-align: left;">n8n + Ollama + 7-8B LLM</td>
+</tr>
+<tr>
+<td style="text-align: left;">e2-standard-8</td>
+<td style="text-align: left;">8 vCPU, 32 GB RAM</td>
+<td style="text-align: left;">\~$235/month</td>
+<td style="text-align: left;">n8n + Ollama + 13B LLM</td>
+</tr>
+</tbody>
+</table></div>
+<h1><strong>Sudo Permissions for GCP user :</strong></h1>
+<h2><strong>Startup Script Method</strong></h2>
+<p>Step 1 — Go to your VM in GCP Console</p>
+<ul>
+<li>Compute Engine → VM Instances → click your VM → Edit</li>
+</ul>
+<p>Step 2 — Stop the VM first<br />
+The VM must be stopped to edit metadata safely.</p>
+<p>Step 3 — Add the startup script<br />
+Scroll down to Metadata section → Add item:</p>
+<ul>
+<li>Key: startup-script  </li>
+<li>Value:</li>
+</ul>
+<p>bash</p>
+<p><code>#!/bin/bash</code><br />
+<em><code># Add user to the sudo group explicitly</code></em><br />
+<code>usermod -aG sudo [YOUR_USERNAME]</code></p>
+<p><em><code># Recreate the GCP sudoers drop-in file in case it's missing/corrupt</code></em><br />
+<code>echo "%google-sudoers ALL=(ALL:ALL) NOPASSWD:ALL" &gt; /etc/sudoers.d/google_sudoers</code><br />
+<code>chmod 440 /etc/sudoers.d/google_sudoers</code></p>
+<p><em><code># Also add a direct user entry as a fallback</code></em><br />
+<code>echo "[YOUR_USERNAME] ALL=(ALL) NOPASSWD:ALL" &gt; /etc/sudoers.d/[YOUR_USERNAME]</code><br />
+<code>chmod 440 /etc/sudoers.d/[YOUR_USERNAME]</code></p>
+<p><em><code># Replace sudo-rs with classic sudo</code></em><br />
+<code>apt-get install -y sudo</code></p>
+<p>Step 4 — Save and Start the VM<br />
+The script runs automatically as root on boot, before you log in.</p>
+<p>Step 5 — SSH in and test</p>
+<p>bash</p>
+<p><code>sudo whoami</code><br />
+<em><code># Expected output: root</code></em></p>
+<p>Step 6 — Clean up (important)<br />
+Once sudo works, remove the startup script from metadata so it doesn't re-run on every reboot:</p>
+<ul>
+<li>VM → Edit → Metadata → delete the startup-script entry → Save</li>
+</ul>
+<hr />
+<p>[Inference] The direct /etc/sudoers.d/[YOUR_USERNAME] entry is included as a belt-and-suspenders fallback in case the google-sudoers group rule is still not picked up by sudo-rs. This is expected to work but is not guaranteed — behavior depends on your exact OS image version on GCP.</p>
+<h1><strong>Installing ZeroClaw</strong></h1>
+<p><strong>⚠️ Critical Free-Tier Analysis First</strong></p>
+<p>Before a single command, here is the constraint check against your e2-micro:</p>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th style="text-align: left;">Factor</th>
+<th style="text-align: left;">Your VM</th>
+<th style="text-align: left;">Zeroclaw Requirement</th>
+<th style="text-align: left;">Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>RAM (runtime)</strong></td>
+<td style="text-align: left;">1 GB + 1 GB swap</td>
+<td style="text-align: left;"><strong>\&lt; 5 MB</strong> runtime</td>
+<td style="text-align: left;">✅ Safe</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>RAM (build from source)</strong></td>
+<td style="text-align: left;">\~500 MB headroom</td>
+<td style="text-align: left;"><strong>2–4 GB minimum</strong></td>
+<td style="text-align: left;">❌ DO NOT build from source</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Disk</strong></td>
+<td style="text-align: left;">\~15 GB free</td>
+<td style="text-align: left;">\~50 MB binary</td>
+<td style="text-align: left;">✅ Safe</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Port conflict</strong></td>
+<td style="text-align: left;">n8n on 5678</td>
+<td style="text-align: left;">Gateway on 42617</td>
+<td style="text-align: left;">✅ No conflict</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>UFW changes needed</strong></td>
+<td style="text-align: left;">Ports 22/80/443</td>
+<td style="text-align: left;">None — gateway is localhost-only</td>
+<td style="text-align: left;">✅ No changes</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>GCP cost</strong></td>
+<td style="text-align: left;">$0/month</td>
+<td style="text-align: left;">No new resources</td>
+<td style="text-align: left;">✅ Free</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The golden rule for your machine: always install the pre-built binary. Never run ./bootstrap.sh without --prebuilt-only, and never run cargo build. A source build will exhaust your RAM and OOM-kill both Zeroclaw AND n8n.</strong><a href="https://docs.google.com/document/d/1eF6aTNWVQue-_kLKYjRGMlYv4Lc6mB0B/edit#bookmark=id.yhpu8hd45rsg">[1]</a></p>
+<p><strong>Objective</strong></p>
+<p>Install Zeroclaw on your existing n8n-freetier VM (Ubuntu 22.04, e2-micro, us-central1) <strong>without affecting n8n</strong>, using the pre-built binary to stay within the 1 GB RAM hard limit.</p>
+<p><strong>What We Are Building</strong></p>
+<p>Internet<br />
+    │<br />
+   443 (HTTPS)<br />
+    │<br />
+  Nginx  ← existing, handling n8n SSL<br />
+    │<br />
+  ┌──────────────────────────────────┐<br />
+  │  VM (e2-micro)                   │<br />
+  │  ├── n8n container  :5678        │<br />
+  │  └── zeroclaw daemon :42617      │  ← new, localhost-only<br />
+  └──────────────────────────────────┘</p>
+<p>Zeroclaw's gateway binds to 127.0.0.1:42617 by default — just like n8n's 127.0.0.1:5678 — so nothing is exposed to the internet.<a href="https://docs.google.com/document/d/1eF6aTNWVQue-_kLKYjRGMlYv4Lc6mB0B/edit#bookmark=id.yhpu8hd45rsg">[1]</a></p>
+<p><strong>Prerequisites</strong></p>
+<ul>
+<li>
+<p>SSH into your VM via GCP Console → VM instances → SSH</p>
+</li>
+<li>
+<p>n8n is already running (docker compose ps shows it as Up)</p>
+</li>
+<li>
+<p>You have sudo access</p>
+</li>
+</ul>
+<p><strong>Step 1 — Verify Resources Before Starting</strong></p>
+<p><strong>Description:</strong> Confirm you have enough free RAM and disk before proceeding.</p>
+<p><strong>Why:</strong> The e2-micro has 1 GB RAM. n8n occupies 200–400 MB. You must confirm there is headroom before adding any new process.<a href="https://docs.google.com/document/d/1eF6aTNWVQue-_kLKYjRGMlYv4Lc6mB0B/edit#bookmark=id.oxymqxocinna">[2]</a></p>
+<p># Check RAM and swap<br />
+free -h</p>
+<p># Check disk<br />
+df -h /</p>
+<p># Confirm n8n is healthy<br />
+cd \~/n8n-stack &amp;&amp; docker compose ps</p>
+<p><strong>Expected result:</strong></p>
+<ul>
+<li>
+<p>free -h shows \~500–700 MB used, with \~300–500 MB available + 1 GB swap</p>
+</li>
+<li>
+<p>df -h / shows at least 4 GB free (you need \~200 MB for the install itself)</p>
+</li>
+<li>
+<p>docker compose ps shows n8n as Up</p>
+</li>
+</ul>
+<p><strong>Cost/free-tier check:</strong> This is read-only diagnostics. Zero cost impact.</p>
+<p><strong>Pause here and run Step 1. Reply with: Done, Need help, or paste the exact output.</strong></p>
+<p><strong>Step 2 — Install Build Essentials (Lightweight)</strong></p>
+<p><strong>Description:</strong> Install curl and tar which are needed to download and extract the pre-built binary.</p>
+<p><strong>Why:</strong> The pre-built binary approach skips Rust entirely. You only need curl to download it and tar to extract it. Both are tiny and already likely installed, but this command is idempotent.<a href="https://docs.google.com/document/d/1eF6aTNWVQue-_kLKYjRGMlYv4Lc6mB0B/edit#bookmark=id.yhpu8hd45rsg">[1]</a></p>
+<p>sudo apt install -y curl tar</p>
+<p><strong>Expected result:</strong> Either packages are installed fresh, or output says already the newest version. Either is correct.</p>
+<p><strong>Cost/free-tier check:</strong> These are base Ubuntu packages. No disk concern — curl and tar are under 5 MB combined.</p>
+<p><strong>Pause here. Reply with: Done, Need help, or paste the exact error.</strong></p>
+<p><strong>Step 3 — Download the Pre-Built Binary</strong></p>
+<p><strong>Description:</strong> Download the Zeroclaw pre-built binary directly from the official GitHub releases page for x86_64 Linux (your VM's architecture).</p>
+<p><strong>Why:</strong> This bypasses cargo build entirely. The pre-built binary is \~8.8 MB. Your VM's architecture is x86_64 because GCP e2-micro is Intel/AMD.<a href="https://docs.google.com/document/d/1eF6aTNWVQue-_kLKYjRGMlYv4Lc6mB0B/edit#bookmark=id.yhpu8hd45rsg">[1]</a></p>
+<p># Move to home directory<br />
+cd \~</p>
+<p># Download the latest pre-built binary for x86_64 Linux<br />
+curl -fsSLO https://github.com/zeroclaw-labs/zeroclaw/releases/latest/download/zeroclaw-x86_64-unknown-linux-gnu.tar.gz</p>
+<p># Verify the file downloaded<br />
+ls -lh zeroclaw-x86_64-unknown-linux-gnu.tar.gz</p>
+<p><strong>Command breakdown:</strong></p>
+<ol>
+<li>
+<p>curl -fsSL — fail silently on error (-f), suppress progress bars (-sS), follow redirects (-L)</p>
+</li>
+<li>
+<p>-O — save the file with its original filename</p>
+</li>
+<li>
+<p>The filename zeroclaw-x86_64-unknown-linux-gnu.tar.gz is the standard Rust binary target triple for Intel/AMD 64-bit Linux<a href="https://docs.google.com/document/d/1eF6aTNWVQue-_kLKYjRGMlYv4Lc6mB0B/edit#bookmark=id.yhpu8hd45rsg">[1]</a></p>
+</li>
+</ol>
+<p><strong>Expected result:</strong> File downloaded, size shown as approximately 8–12 MB.</p>
+<p><strong>Cost/free-tier check:</strong> This is a single outbound download from GitHub. Counts against your 1 GB egress allowance but uses only \~10 MB. No billing risk.</p>
+<p><strong>Pause here. Reply with: Done, Need help, or paste the exact error.</strong></p>
+<p><strong>Step 4 — Extract and Install the Binary</strong></p>
+<p><strong>Description:</strong> Extract the archive and install the binary to /usr/local/bin so it is available system-wide.</p>
+<p><strong>Why:</strong> /usr/local/bin is in every user's $PATH on Ubuntu. Installing here means you can run zeroclaw from any directory without any PATH changes.<a href="https://docs.google.com/document/d/1eF6aTNWVQue-_kLKYjRGMlYv4Lc6mB0B/edit#bookmark=id.yhpu8hd45rsg">[1]</a></p>
+<p># Extract the archive<br />
+tar xzf zeroclaw-x86_64-unknown-linux-gnu.tar.gz</p>
+<p># See what was extracted<br />
+ls -lh zeroclaw*</p>
+<p># Install the binary system-wide<br />
+sudo install -m 0755 zeroclaw /usr/local/bin/zeroclaw</p>
+<p># Verify it is accessible<br />
+zeroclaw --version</p>
+<p><strong>Command breakdown:</strong></p>
+<ul>
+<li>
+<p>tar xzf — extract (x), decompress gzip (z), from file (f)</p>
+</li>
+<li>
+<p>install -m 0755 — copy the file and set permissions to executable by owner, readable/executable by group and others</p>
+</li>
+<li>
+<p>/usr/local/bin/zeroclaw — the installation destination in PATH</p>
+</li>
+</ul>
+<p><strong>Expected result:</strong></p>
+<p>zeroclaw 0.1.7</p>
+<p>(or the current latest version number)</p>
+<p><strong>Cost/free-tier check:</strong> Installing a binary to /usr/local/bin uses \~9 MB of disk. No billing impact.</p>
+<p><strong>Pause here. Reply with: Done, Need help, or paste the exact output.</strong></p>
+<p><strong>Step 5 — Run System Diagnostics</strong></p>
+<p><strong>Description:</strong> Run Zeroclaw's built-in doctor to confirm the environment is ready.</p>
+<p><strong>Why:</strong> zeroclaw doctor checks that required dependencies are present and reports any missing components before you start configuring.<a href="https://docs.google.com/document/d/1eF6aTNWVQue-_kLKYjRGMlYv4Lc6mB0B/edit#bookmark=id.yhpu8hd45rsg">[1]</a></p>
+<p>zeroclaw doctor</p>
+<p><strong>Expected result:</strong> A status table showing components as ✅ OK. It may flag that no config exists yet — that is expected since we haven't onboarded yet.</p>
+<p><strong>Pause here. Reply with: Done, Need help, or paste the exact output.</strong></p>
+<p><strong>Step 6 — Onboard Zeroclaw (Interactive Setup)</strong></p>
+<p><strong>Description:</strong> Run the interactive onboarding wizard to configure your AI provider, memory backend, and gateway settings.</p>
+<p><strong>Why:</strong> zeroclaw onboard --interactive walks you through every configuration option and writes \~/.zeroclaw/config.toml. You must choose an external AI provider here — <strong>do NOT configure Ollama or any local LLM</strong>, as the e2-micro cannot run them.<a href="https://docs.google.com/document/d/1eF6aTNWVQue-_kLKYjRGMlYv4Lc6mB0B/edit#bookmark=id.oxymqxocinna">[2]</a><a href="https://docs.google.com/document/d/1eF6aTNWVQue-_kLKYjRGMlYv4Lc6mB0B/edit#bookmark=id.yhpu8hd45rsg">[1]</a></p>
+<p>zeroclaw onboard --interactive</p>
+<p><strong>During the wizard, use these settings:</strong></p>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th style="text-align: left;">Prompt</th>
+<th style="text-align: left;">Recommended Value</th>
+<th style="text-align: left;">Reason</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>AI Provider</strong></td>
+<td style="text-align: left;">openrouter or openai or gemini</td>
+<td style="text-align: left;">Use the same API you already use with n8n</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>API Key</strong></td>
+<td style="text-align: left;">Your existing key</td>
+<td style="text-align: left;">Reuse what you have</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Model</strong></td>
+<td style="text-align: left;">openrouter/auto or gemini-1.5-flash</td>
+<td style="text-align: left;">Free-tier compatible models</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Memory backend</strong></td>
+<td style="text-align: left;">sqlite</td>
+<td style="text-align: left;">Lightweight, no external DB needed</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Gateway host</strong></td>
+<td style="text-align: left;">127.0.0.1 (default)</td>
+<td style="text-align: left;"><strong>Keep this — do NOT change to 0.0.0.0</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Gateway port</strong></td>
+<td style="text-align: left;">42617 (default)</td>
+<td style="text-align: left;">No conflict with n8n's 5678</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Autonomy level</strong></td>
+<td style="text-align: left;">supervised</td>
+<td style="text-align: left;">Safer for a shared VM</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Runtime kind</strong></td>
+<td style="text-align: left;">native</td>
+<td style="text-align: left;">Docker mode is optional; native uses less memory</td>
+</tr>
+</tbody>
+</table></div>
+<p>💡 <strong>Tip:</strong> If you already have a free Gemini API key from Google AI Studio (used in n8n), you can reuse it here with provider gemini.<a href="https://docs.google.com/document/d/1eF6aTNWVQue-_kLKYjRGMlYv4Lc6mB0B/edit#bookmark=id.oxymqxocinna">[2]</a></p>
+<p><strong>Expected result:</strong> Wizard completes and says config saved to \~/.zeroclaw/config.toml.</p>
+<p><strong>Cost/free-tier check:</strong> No GCP resources are created. AI API calls go outbound over the internet — counts against your 1 GB/month egress allowance, but typical conversational usage is well under this limit.</p>
+<p><strong>Pause here. Reply with: Done, Need help, or paste the exact output.</strong></p>
+<p><strong>Step 7 — Verify the Config</strong></p>
+<p><strong>Description:</strong> Inspect the generated config to confirm gateway is bound to localhost and runtime is native.</p>
+<p><strong>Why:</strong> You need to confirm the security-critical binding before starting the daemon.<a href="https://docs.google.com/document/d/1eF6aTNWVQue-_kLKYjRGMlYv4Lc6mB0B/edit#bookmark=id.yhpu8hd45rsg">[1]</a></p>
+<p># View the config<br />
+cat \~/.zeroclaw/config.toml</p>
+<p># Quick check: confirm localhost binding<br />
+grep -E "host|port|kind" \~/.zeroclaw/config.toml</p>
+<p><strong>Expected output (key lines):</strong></p>
+<p>[gateway]<br />
+port \= 42617<br />
+host \= "127.0.0.1"    ← MUST be 127.0.0.1, not 0.0.0.0</p>
+<p>[runtime]<br />
+kind \= "native"       ← MUST be native, not docker (unless you chose docker)</p>
+<p>⚠️ <strong>WARNING:</strong> If host shows 0.0.0.0, edit the config immediately: nano \~/.zeroclaw/config.toml and change it to 127.0.0.1. A public-facing gateway with no firewall rule is a security risk.</p>
+<p><strong>Pause here. Reply with: Done, Need help, or paste the relevant config lines.</strong></p>
+<p><strong>Step 8 — Test the Agent</strong></p>
+<p><strong>Description:</strong> Run a quick one-shot agent message to confirm Zeroclaw can reach your AI provider and respond.</p>
+<p><strong>Why:</strong> This confirms end-to-end connectivity: binary → config → API key → AI provider → response.<a href="https://docs.google.com/document/d/1eF6aTNWVQue-_kLKYjRGMlYv4Lc6mB0B/edit#bookmark=id.yhpu8hd45rsg">[1]</a></p>
+<p>zeroclaw agent -m "Hello! What is today's date and time?"</p>
+<p><strong>Expected result:</strong> Zeroclaw responds with a message from your configured AI provider.</p>
+<p><strong>Pause here. Reply with: Done, Need help, or paste the exact output.</strong></p>
+<p><strong>Step 9 — Install as a Systemd Service</strong></p>
+<p><strong>Description:</strong> Register Zeroclaw as a persistent background service so it survives VM reboots alongside n8n.</p>
+<p><strong>Why:</strong> n8n uses Docker's restart: unless-stopped policy. Zeroclaw uses systemd user-level service for the same effect — automatic startup on reboot, no manual intervention needed.<a href="https://docs.google.com/document/d/1eF6aTNWVQue-_kLKYjRGMlYv4Lc6mB0B/edit#bookmark=id.yhpu8hd45rsg">[1]</a></p>
+<p># Install the systemd user service<br />
+zeroclaw service install</p>
+<p># Start the service<br />
+zeroclaw service start</p>
+<p># Check status<br />
+zeroclaw service status</p>
+<p># Verify it is running<br />
+zeroclaw status</p>
+<p><strong>Command breakdown:</strong></p>
+<ul>
+<li>
+<p>zeroclaw service install — creates a systemd user unit file at \~/.config/systemd/user/zeroclaw.service</p>
+</li>
+<li>
+<p>zeroclaw service start — starts the daemon now</p>
+</li>
+<li>
+<p>zeroclaw status — shows full runtime status including gateway, memory, channels</p>
+</li>
+</ul>
+<p><strong>Expected result from zeroclaw status:</strong></p>
+<p>Gateway:  running on 127.0.0.1:42617<br />
+Memory:   sqlite (auto-save: on)<br />
+Service:  active (running)</p>
+<p><strong>Cost/free-tier check:</strong> Zeroclaw daemon uses \&lt;5 MB RAM at runtime. With n8n using \~200–400 MB, total is still well within the 1 GB + 1 GB swap envelope. No GCP billing impact.<a href="https://docs.google.com/document/d/1eF6aTNWVQue-_kLKYjRGMlYv4Lc6mB0B/edit#bookmark=id.yhpu8hd45rsg">[1]</a></p>
+<p><strong>Pause here. Reply with: Done, Need help, or paste the exact output.</strong></p>
+<p><strong>Step 10 — Verify Both Services Coexist</strong></p>
+<p><strong>Description:</strong> Confirm n8n and Zeroclaw are both running and using separate resources without conflict.</p>
+<p><strong>Why:</strong> This is the final health check before you consider the installation complete.<a href="https://docs.google.com/document/d/1eF6aTNWVQue-_kLKYjRGMlYv4Lc6mB0B/edit#bookmark=id.oxymqxocinna">[2]</a><a href="https://docs.google.com/document/d/1eF6aTNWVQue-_kLKYjRGMlYv4Lc6mB0B/edit#bookmark=id.yhpu8hd45rsg">[1]</a></p>
+<p># Check n8n is still healthy<br />
+cd \~/n8n-stack &amp;&amp; docker compose ps</p>
+<p># Check Zeroclaw service<br />
+zeroclaw service status</p>
+<p># Check total memory usage<br />
+free -h</p>
+<p># Check disk usage<br />
+df -h /</p>
+<p># Optional: see per-process RAM usage<br />
+docker stats --no-stream</p>
+<p><strong>Expected result:</strong></p>
+<ul>
+<li>
+<p>n8n: Up X minutes — unchanged</p>
+</li>
+<li>
+<p>Zeroclaw: active (running)</p>
+</li>
+<li>
+<p>RAM: still within comfortable bounds (under 900 MB used including swap)</p>
+</li>
+</ul>
+<p><strong>Pause here. Reply with: Done, Need help, or paste the exact output.</strong></p>
+<p><strong>Concepts Learned</strong></p>
+<ul>
+<li>
+<p><strong>Pre-built binary vs. source build</strong> — Rust compilation is RAM-hungry at build time (2–4 GB), but the resulting binary is tiny at runtime (\&lt;5 MB). Always use pre-built binaries on constrained machines.<a href="https://docs.google.com/document/d/1eF6aTNWVQue-_kLKYjRGMlYv4Lc6mB0B/edit#bookmark=id.yhpu8hd45rsg">[1]</a></p>
+</li>
+<li>
+<p><strong>Port isolation</strong> — Zeroclaw gateway defaults to 127.0.0.1:42617, identical security posture to n8n's 127.0.0.1:5678. Neither is directly internet-accessible.<a href="https://docs.google.com/document/d/1eF6aTNWVQue-_kLKYjRGMlYv4Lc6mB0B/edit#bookmark=id.yhpu8hd45rsg">[1]</a></p>
+</li>
+<li>
+<p><strong>Systemd user services</strong> — Unlike Docker's restart: unless-stopped, Zeroclaw uses a systemd user unit. Both achieve the same outcome: automatic restart on reboot.<a href="https://docs.google.com/document/d/1eF6aTNWVQue-_kLKYjRGMlYv4Lc6mB0B/edit#bookmark=id.yhpu8hd45rsg">[1]</a></p>
+</li>
+<li>
+<p><strong>Trait-driven provider architecture</strong> — Zeroclaw's AI provider, memory, channels, and tools are all swappable via config.toml. You can switch from Gemini to OpenRouter with one line change and a service restart.<a href="https://docs.google.com/document/d/1eF6aTNWVQue-_kLKYjRGMlYv4Lc6mB0B/edit#bookmark=id.yhpu8hd45rsg">[1]</a></p>
+</li>
+</ul>
+<p><strong>Quick Reference</strong></p>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th style="text-align: left;">Task</th>
+<th style="text-align: left;">Command</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Start Zeroclaw</td>
+<td style="text-align: left;">zeroclaw service start</td>
+</tr>
+<tr>
+<td style="text-align: left;">Stop Zeroclaw</td>
+<td style="text-align: left;">zeroclaw service stop</td>
+</tr>
+<tr>
+<td style="text-align: left;">Check status</td>
+<td style="text-align: left;">zeroclaw status</td>
+</tr>
+<tr>
+<td style="text-align: left;">View logs</td>
+<td style="text-align: left;">journalctl --user -u zeroclaw -f</td>
+</tr>
+<tr>
+<td style="text-align: left;">Chat with agent</td>
+<td style="text-align: left;">zeroclaw agent</td>
+</tr>
+<tr>
+<td style="text-align: left;">Edit config</td>
+<td style="text-align: left;">nano \~/.zeroclaw/config.toml</td>
+</tr>
+<tr>
+<td style="text-align: left;">Restart after config change</td>
+<td style="text-align: left;">zeroclaw service restart</td>
+</tr>
+<tr>
+<td style="text-align: left;">Check n8n still running</td>
+<td style="text-align: left;">cd \~/n8n-stack &amp;&amp; docker compose ps</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Optional Next Step — Expose Gateway via Nginx</strong></p>
+<p>If you later want to reach the Zeroclaw gateway from outside the VM (for webhooks), add a new Nginx server block pointing to 127.0.0.1:42617, exactly like the existing n8n block points to 127.0.0.1:5678. You would create a new subdomain (e.g., zeroclaw.[YOUR_ROOT_DOMAIN]), add a DNS record, and issue a new Let's Encrypt certificate with Certbot.</p>
+<p>[Inference] This optional step follows the exact same pattern as Phase 5 and Phase 6 in your existing guide — no new concepts are required.</p>
+<p><em>End of Guide</em></p>
+        </div>
+    </article>
+</body>
+</html>
