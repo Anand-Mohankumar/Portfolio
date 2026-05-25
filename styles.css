@@ -35,13 +35,13 @@
       pointer-events: none;
     }
 
-    /* Heatmap Logo Style - Resized to 150px */
+    /* Heatmap Logo Style - Resized to 120px */
     .boot-logo {
-      width: 150px;
-      height: 150px;
+      width: 120px;
+      height: 120px;
       margin-bottom: 40px;
       animation: logoFadeIn 1s ease-out;
-      border-radius: 32px;
+      border-radius: 26px;
 
       /* Heatmap Gradient Simulation - Updated to Dark Teal/Orange Palette */
       /* #C45A2A (Orange), #1F4F55 (Teal), #12181A (Charcoal) */
@@ -83,8 +83,8 @@
     }
 
     .boot-logo img {
-      width: 65%;
-      height: 65%;
+      width: 60%;
+      height: 60%;
       object-fit: contain;
       z-index: 2;
       /* Strong shadow to make logo stand out */
