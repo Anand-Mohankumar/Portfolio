@@ -1917,3 +1917,105 @@
       height: 100vh;
       pointer-events: none;
     }
+
+    /* Image Generation Prompts Showcase */
+    .prompt-showcase {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      height: 100%;
+    }
+
+    .prompt-image-container {
+      position: relative;
+      display: inline-block;
+      width: fit-content;
+      height: fit-content;
+      max-width: 100%;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+      isolation: isolate;
+    }
+
+    .prompt-image {
+      display: block;
+      max-width: 100%;
+      max-height: calc(100vh - 250px);
+      width: auto;
+      height: auto;
+      object-fit: contain;
+      border-radius: 12px;
+      transition: transform 0.3s ease;
+    }
+
+    .prompt-overlay {
+      position: absolute;
+      top: -2px;
+      left: -2px;
+      right: -2px;
+      bottom: -2px;
+      background: rgba(0, 0, 0, 0.85);
+      backdrop-filter: blur(5px);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      border-radius: 12px;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      color: white;
+    }
+
+    .prompt-image-container:hover .prompt-overlay {
+      opacity: 1;
+    }
+
+    .prompt-text {
+      font-size: 14px;
+      line-height: 1.5;
+      text-align: center;
+      margin-bottom: 20px;
+      max-height: 80%;
+      overflow-y: auto;
+      padding: 0 15px;
+    }
+
+    .prompt-text::-webkit-scrollbar {
+      width: 6px;
+    }
+
+    .prompt-text::-webkit-scrollbar-track {
+      background: transparent;
+    }
+
+    .prompt-text::-webkit-scrollbar-thumb {
+      background: rgba(255, 255, 255, 0.15);
+      border-radius: 3px;
+    }
+
+    .prompt-text::-webkit-scrollbar-thumb:hover {
+      background: rgba(255, 255, 255, 0.3);
+    }
+
+    .copy-prompt-btn {
+      background: rgba(196, 90, 42, 0.8);
+      border: 1px solid rgba(196, 90, 42, 1);
+      color: white;
+      padding: 8px 16px;
+      border-radius: 8px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-family: inherit;
+      font-size: 14px;
+      transition: background 0.2s, transform 0.2s;
+    }
+
+    .copy-prompt-btn:hover {
+      background: rgba(196, 90, 42, 1);
+      transform: scale(1.05);
+    }

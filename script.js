@@ -97,6 +97,7 @@ const cards = {
   resources: document.getElementById('resourcesCard'),
   labs: document.getElementById('labsCard'), // NEW
   labsContent: document.getElementById('labsContentCard'),
+  labsContent: document.getElementById('labsContentCard'),
   lectureNotes: document.getElementById('lectureNotesCard'), // NEW: Lecture Notes
   ai: document.getElementById('aiCard'),     // NEW
   infographics: document.getElementById('infographicsCard'), // NEW: Infographics
@@ -104,6 +105,8 @@ const cards = {
   aiClaude: document.getElementById('aiClaudeCard'), // NEW: AI Claude Folder
   aiFundamentals: document.getElementById('aiFundamentalsCard'), // NEW: AI Fundamentals Folder
   aiAdvanced: document.getElementById('aiAdvancedCard'), // NEW: AI Advanced Folder
+  aiPrompts: document.getElementById('aiPromptsCard'),
+  aiImageGenPrompts: document.getElementById('aiImageGenPromptsCard'),
   home: document.getElementById('homeCard'),
   projects: document.getElementById('projectsCard'),
   skills: document.getElementById('skillsCard'),
@@ -131,11 +134,12 @@ const viewConfig = {
   aiClaude: { id: 'aiClaude', parent: 'projects', title: 'Claude', icon: '📁' },
   aiFundamentals: { id: 'aiFundamentals', parent: 'projects', title: 'AI Fundamentals', icon: '📁' },
   aiAdvanced: { id: 'aiAdvanced', parent: 'projects', title: 'AI Advanced', icon: '📂' },
+  aiPrompts: { id: 'aiPrompts', parent: 'projects', title: 'Prompts', icon: '💬' },
+  aiImageGenPrompts: { id: 'aiImageGenPrompts', parent: 'projects', title: 'Image Gen Prompts', icon: '🖼️' },
   markdownify: { id: 'markdownify', parent: 'markdownify', title: 'Markdownify', icon: '📝' },
 
   iframe: { id: 'iframe', parent: 'projects', title: 'Content', icon: '🌐' }
 };
-
 let openWindows = []; // START EMPTY: Home opens after boot sequence
 let minimizedWindows = new Set(); // Track which windows are minimized (hidden)
 let activeWindow = null;
@@ -1413,3 +1417,14 @@ function observeMutations() {
 }
 
 document.addEventListener('DOMContentLoaded', observeMutations);
+
+function copyPromptText(elementId, btn) {
+  const text = document.getElementById(elementId).innerText;
+  navigator.clipboard.writeText(text).then(() => {
+    const originalHtml = btn.innerHTML;
+    btn.innerHTML = `<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg><span>Copied!</span>`;
+    setTimeout(() => {
+      btn.innerHTML = originalHtml;
+    }, 2000);
+  });
+}
