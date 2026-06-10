@@ -1,6 +1,6 @@
-# CLAUDE.md
+# AGENTS.md
 
-This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
+This file provides guidance to Codex (Codex.ai/code) when working with code in this repository.
 
 ## Overview
 
@@ -36,7 +36,7 @@ Resource content lives in topic directories that are linked from the desktop and
 
 - `labs-research-and-ctf/` — Labs, CTF writeups, and `lecture-notes/` (generated HTML, see build command above).
 - `ai-and-automation/` — `n8n-workflows/` and `prompts/` (incl. `prompts/Image Generation/`). The AI & Automation windows have buttons for these sections; sections with no content yet are wired to a "coming soon" `alert()` (search `coming soon` in `index.html`). When real content is added, replace that placeholder with a button that opens the proper window/view.
-- `infographics/` — image gallery. Full-size PNGs are organized into category subfolders that mirror the website's window nesting: `infographics/AI/{AI Fundamentals, AI Advanced, Claude}/`. `infographics/thumbnails/` mirrors the same subfolder tree (`thumbnails/AI/<Category>/`). In `index.html`, each infographic's thumbnail `<img src>` points at the `thumbnails/AI/<Category>/<file>` path and its `onclick` opens the full-size GitHub raw URL `…/blob/main/infographics/AI/<Category>/<file>?raw=true`. **Whenever folders or files are added to `infographics/`, `index.html` must also be edited so they show up in the UI** (the directory and the site are kept one-to-one):
+- `infographics/` — image gallery. Full-size PNGs are organized into category subfolders that mirror the website's window nesting: `infographics/AI/{AI Fundamentals, AI Advanced, Codex}/`. `infographics/thumbnails/` mirrors the same subfolder tree (`thumbnails/AI/<Category>/`). In `index.html`, each infographic's thumbnail `<img src>` points at the `thumbnails/AI/<Category>/<file>` path and its `onclick` opens the full-size GitHub raw URL `…/blob/main/infographics/AI/<Category>/<file>?raw=true`. **Whenever folders or files are added to `infographics/`, `index.html` must also be edited so they show up in the UI** (the directory and the site are kept one-to-one):
   - **New image in an existing category** → place the full-size image and its thumbnail under the matching `AI/<Category>/` path in both trees, and add an `infographic-item` (thumbnail `<img src>` + full-size `onclick`) to the correct category window (`#aiFundamentalsCard` / `#aiAdvancedCard` / `#aiClaudeCard`).
   - **New category folder** (or new top-level group) → add a matching `window-card` + `viewConfig` entry and a `resource-hero-card` button wired to `showView('<view>')` inside its parent window, following the existing `#aiFundamentalsCard` / `#aiAdvancedCard` / `#aiClaudeCard` pattern, then populate it with `infographic-item`s.
 

@@ -6,33 +6,6 @@ This guide defines a reusable visual system for building websites and webapps th
 
 Use this guide for future portfolio pages, article interfaces, dashboards, resource galleries, tools, and webapps such as Markdownify.
 
-## Brand Feel
-
-The theme should communicate:
-
-- Technical credibility.
-- Security and operations awareness.
-- Modern desktop software.
-- Calm focus.
-- High contrast without harshness.
-- Subtle motion and depth.
-- A handcrafted personal portfolio identity.
-
-The design should avoid looking like a generic SaaS landing page. It should feel like a usable workspace.
-
-## Visual Keywords
-
-- Dark operating system.
-- Frosted glass.
-- Heatmap glow.
-- Floating windows.
-- Compact controls.
-- Technical notes.
-- Security console.
-- Knowledge base.
-- Soft depth.
-- Orange and teal signal accents.
-
 ## Color System
 
 ### Core Colors
