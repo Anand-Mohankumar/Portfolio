@@ -187,19 +187,9 @@
             <h3 style="color: rgba(255,255,255,0.7); margin-bottom: 20px; font-weight:500;">My Work</h3>
             <div class="project-grid">
               <div class="project-item"
-                onclick="openInIframe('https://www.inoreader.com/stream/user/1005486907/tag/AI/view/html?t=AI%20Daily&l=https%3A%2F%2Fgithub.com%2FAnand-Mohankumar%2FAnand-Mohankumar%2Fblob%2Fmain%2FApp%2520Logo.png&lw=5&cs=m&c=0xe0e0e0&bc=0x0a141a&lh=5&lc=0xe56a40', 'AI Daily', '📰')">
-                <div class="project-icon">📰</div>
-                <div class="project-title">AI Daily</div>
-              </div>
-              <div class="project-item"
                 onclick="window.open('https://www.credly.com/users/anandmohankumar/badges', '_blank')">
                 <div class="project-icon">🏅</div>
                 <div class="project-title">Certifications.html</div>
-              </div>
-              <div class="project-item"
-                onclick="openInIframe('https://www.inoreader.com/stream/user/1005486907/tag/Infosec%20News/view/html?t=InfoSec%20Daily&l=https%3A%2F%2Fgithub.com%2FAnand-Mohankumar%2FAnand-Mohankumar%2Fblob%2Fmain%2FApp%2520Logo.png&lw=5&cs=m&c=0xe0e0e0&bc=0x0a141a&lh=5&lc=0xe56a40', 'InfoSec Daily', '📰')">
-                <div class="project-icon">📰</div>
-                <div class="project-title">InfoSec Daily</div>
               </div>
               <div class="project-item" onclick="showView('resources')">
                 <div class="project-icon">📚</div>
@@ -1181,6 +1171,40 @@
           </div>
         </div>
 
+        <div class="window-card" id="newsfeedCard" style="display: none;">
+          <div class="card-header markdownify-header">
+            <div class="card-title">Newsfeed</div>
+            <div class="markdownify-doc-controls">
+              <div class="view-toggle-group">
+                <button class="view-toggle-btn active" id="newsfeed-toggle-ai">AI</button>
+                <button class="view-toggle-btn" id="newsfeed-toggle-infosec">InfoSec</button>
+              </div>
+            </div>
+            <div class="card-controls">
+              <div class="control-btn btn-minimize" title="Minimize">
+                <svg width="10" height="2" viewBox="0 0 10 2" fill="none">
+                  <rect width="10" height="2" rx="1" fill="currentColor" />
+                </svg>
+              </div>
+              <div class="control-btn btn-maximize" title="Maximize">
+                <svg width="10" height="10" viewBox="0 0 10 10" fill="none">
+                  <rect x="0.5" y="0.5" width="9" height="9" rx="1.5" stroke="currentColor" stroke-width="1.5" />
+                </svg>
+              </div>
+              <div class="control-btn btn-close" title="Close">
+                <svg width="10" height="10" viewBox="0 0 10 10" fill="none">
+                  <path d="M1 1L9 9M9 1L1 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="card-content" style="padding: 0; flex: 1;">
+            <iframe id="newsfeedIframe"
+              src="https://www.inoreader.com/stream/user/1005486907/tag/AI/view/html?t=AI%20Daily&l=https%3A%2F%2Fgithub.com%2FAnand-Mohankumar%2FAnand-Mohankumar%2Fblob%2Fmain%2FApp%2520Logo.png&lw=5&cs=m&c=0xe0e0e0&bc=0x0a141a&lh=5&lc=0xe56a40"
+              style="width: 100%; height: 100%; border: none; border-radius: 0 0 16px 16px;"></iframe>
+          </div>
+        </div>
+
         <div class="window-card" id="iframeCard" style="display: none;">
           <div class="card-header">
             <div class="card-title" id="iframeTitle">Content</div>
@@ -1237,6 +1261,15 @@
         <span class="dock-tooltip">Markdownify</span>
         <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
           <polyline points="4 20 4 4 12 12 20 4 20 20" />
+        </svg>
+      </div>
+      <div class="sidebar-item dock-item-hidden hover-btn" data-view="newsfeed" title="Newsfeed">
+        <span class="dock-tooltip">Newsfeed</span>
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M4 22h16a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v16a2 2 0 0 1-2 2Zm0 0a2 2 0 0 1-2-2v-9c0-1.1.9-2 2-2h2"></path>
+          <path d="M18 14h-8"></path>
+          <path d="M15 18h-5"></path>
+          <path d="M10 6h8v4h-8V6Z"></path>
         </svg>
       </div>
       <div class="sidebar-item dock-item-hidden hover-btn" data-view="terminal" title="Terminal">

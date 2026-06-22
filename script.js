@@ -112,6 +112,7 @@ const cards = {
   skills: document.getElementById('skillsCard'),
   terminal: document.getElementById('terminalCard'),
   markdownify: document.getElementById('markdownifyCard'),
+  newsfeed: document.getElementById('newsfeedCard'),
   iframe: document.getElementById('iframeCard')
 };
 
@@ -137,6 +138,7 @@ const viewConfig = {
   aiPrompts: { id: 'aiPrompts', parent: 'projects', title: 'Prompts', icon: '💬' },
   aiImageGenPrompts: { id: 'aiImageGenPrompts', parent: 'projects', title: 'Image Gen Prompts', icon: '🖼️' },
   markdownify: { id: 'markdownify', parent: 'markdownify', title: 'Markdownify', icon: '📝' },
+  newsfeed: { id: 'newsfeed', parent: 'newsfeed', title: 'Newsfeed', icon: '📰' },
 
   iframe: { id: 'iframe', parent: 'projects', title: 'Content', icon: '🌐' }
 };
@@ -1076,6 +1078,25 @@ hoverBtns.forEach(btn => {
     btn.style.setProperty('--mouseY', `${y}px`);
   });
 });
+
+// --- NEWSFEED LOGIC ---
+const newsfeedToggleAI = document.getElementById('newsfeed-toggle-ai');
+const newsfeedToggleInfosec = document.getElementById('newsfeed-toggle-infosec');
+const newsfeedIframe = document.getElementById('newsfeedIframe');
+
+if (newsfeedToggleAI && newsfeedToggleInfosec && newsfeedIframe) {
+  newsfeedToggleAI.addEventListener('click', () => {
+    newsfeedToggleAI.classList.add('active');
+    newsfeedToggleInfosec.classList.remove('active');
+    newsfeedIframe.src = 'https://www.inoreader.com/stream/user/1005486907/tag/AI/view/html?t=AI%20Daily&l=https%3A%2F%2Fgithub.com%2FAnand-Mohankumar%2FAnand-Mohankumar%2Fblob%2Fmain%2FApp%2520Logo.png&lw=5&cs=m&c=0xe0e0e0&bc=0x0a141a&lh=5&lc=0xe56a40';
+  });
+
+  newsfeedToggleInfosec.addEventListener('click', () => {
+    newsfeedToggleInfosec.classList.add('active');
+    newsfeedToggleAI.classList.remove('active');
+    newsfeedIframe.src = 'https://www.inoreader.com/stream/user/1005486907/tag/Infosec%20News/view/html?t=InfoSec%20Daily&l=https%3A%2F%2Fgithub.com%2FAnand-Mohankumar%2FAnand-Mohankumar%2Fblob%2Fmain%2FApp%2520Logo.png&lw=5&cs=m&c=0xe0e0e0&bc=0x0a141a&lh=5&lc=0xe56a40';
+  });
+}
 
 // --- MARKDOWNIFY LOGIC ---
 const mdfyEditor = document.getElementById('mdfy-editor');
