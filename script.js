@@ -877,7 +877,7 @@ if (termInput) {
       newLine.className = 'terminal-line';
       // Sanitize input slightly to prevent HTML injection if displayed
       const sanitizedCommand = command.replace(/</g, "&lt;").replace(/>/g, "&gt;");
-      newLine.innerHTML = `<span class="terminal-prompt">anand@cybramo:~$</span> ${sanitizedCommand}`;
+      newLine.innerHTML = `<span class="terminal-prompt">anand@cyberamo:~$</span> ${sanitizedCommand}`;
 
       // Insert before the input line
       const inputLine = document.getElementById('terminalInputLine');
@@ -904,7 +904,7 @@ if (termInput) {
       else if (command === 'whoami') {
         const whoLine = document.createElement('div');
         whoLine.className = 'terminal-line';
-        whoLine.innerText = "Security Analyst | Compliance Professional";
+        whoLine.innerText = "GRC & AI Enablement Specialist | Customer Assurance | Security Operations Background";
         termOutput.insertBefore(whoLine, inputLine);
       }
       else if (command !== "") {
