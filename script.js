@@ -1057,14 +1057,38 @@ resizeGL();
 
 const start = performance.now();
 
-function render() {
+const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+let bgRunning = false;
+
+function drawFrame() {
   const t = (performance.now() - start) * 0.001;
   gl.uniform1f(uTime, t);
   gl.uniform2f(uRes, canvas.width, canvas.height);
   gl.drawArrays(gl.TRIANGLES, 0, 6);
+}
+
+function render() {
+  if (!bgRunning) return;
+  drawFrame();
   requestAnimationFrame(render);
 }
-render();
+
+function startBg() {
+  if (bgRunning || reducedMotion) return;
+  bgRunning = true;
+  requestAnimationFrame(render);
+}
+
+document.addEventListener('visibilitychange', () => {
+  if (document.hidden) bgRunning = false;
+  else startBg();
+});
+
+if (reducedMotion) {
+  drawFrame(); // single static frame
+} else {
+  startBg();
+}
 
 // Rotating Gradient Button Hover Tracking
 const hoverBtns = document.querySelectorAll('.hover-btn');
@@ -1286,12 +1310,27 @@ toolbarBtns.forEach(btn => {
       saveHistoryState();
     }
 
-    if (command === 'createLink') {
-      const url = prompt('Enter link URL:');
-      if (url) document.execCommand('createLink', false, url);
-    } else if (command === 'insertImage') {
-      const url = prompt('Enter image URL:');
-      if (url) document.execCommand('insertImage', false, url);
+    if (command === 'createLink' || command === 'insertImage') {
+      // Save the selection: the dialog steals focus and would collapse it
+      const sel = window.getSelection();
+      const savedRange = (sel && sel.rangeCount > 0) ? sel.getRangeAt(0).cloneRange() : null;
+      const isLink = command === 'createLink';
+      glassDialog({
+        title: isLink ? 'Insert Link' : 'Insert Image',
+        input: true,
+        placeholder: isLink ? 'https://example.com' : 'https://example.com/image.png'
+      }).then(url => {
+        if (!url) return;
+        mdfyEditor.focus();
+        if (savedRange) {
+          const s = window.getSelection();
+          s.removeAllRanges();
+          s.addRange(savedRange);
+        }
+        document.execCommand(command, false, url);
+        setTimeout(saveHistoryState, 10);
+        syncToolbarState();
+      });
     } else if (command === 'inlineCode') {
       const selection = window.getSelection();
       let isCode = false;
@@ -1369,10 +1408,15 @@ toolbarBtns.forEach(btn => {
 // Internal Floating Dock actions
 const dockNew = document.getElementById('mdfy-dock-new');
 if (dockNew) dockNew.addEventListener('click', () => {
-  if (confirm('Start a new document? Any unsaved changes will be lost.')) {
+  glassDialog({
+    title: 'New Document',
+    message: 'Start a new document? Any unsaved changes will be lost.',
+    confirm: true
+  }).then(ok => {
+    if (!ok) return;
     mdfyEditor.innerHTML = '<h1>Untitled Document</h1><p>Start writing here...</p>';
     if (mdfySource.style.display === 'block') mdfyToggleVisual.click();
-  }
+  });
 });
 
 // --- Dynamic Auto-Sorting Logic ---
@@ -1438,6 +1482,51 @@ function observeMutations() {
 }
 
 document.addEventListener('DOMContentLoaded', observeMutations);
+
+// --- Glass Dialog (themed replacement for alert/confirm/prompt) ---
+// Resolves: alert -> true; confirm -> true/false; input -> string or null
+function glassDialog({ title = '', message = '', input = false, confirm = false, placeholder = '' } = {}) {
+  return new Promise(resolve => {
+    const overlay = document.createElement('div');
+    overlay.className = 'glass-dialog-overlay';
+    overlay.innerHTML = `
+      <div class="glass-dialog" role="dialog" aria-modal="true">
+        ${title ? '<h3></h3>' : ''}
+        ${message ? '<p></p>' : ''}
+        ${input ? '<input type="text">' : ''}
+        <div class="glass-dialog-actions">
+          ${(input || confirm) ? '<button class="glass-dialog-btn" data-act="cancel">Cancel</button>' : ''}
+          <button class="glass-dialog-btn primary" data-act="ok">OK</button>
+        </div>
+      </div>`;
+    if (title) overlay.querySelector('h3').textContent = title;
+    if (message) overlay.querySelector('p').textContent = message;
+    const field = overlay.querySelector('input');
+    if (field) field.placeholder = placeholder;
+    document.body.appendChild(overlay);
+    requestAnimationFrame(() => overlay.classList.add('visible'));
+
+    const close = (val) => {
+      document.removeEventListener('keydown', onKey, true);
+      overlay.classList.remove('visible');
+      setTimeout(() => overlay.remove(), 200);
+      resolve(val);
+    };
+    const ok = () => close(input ? (field.value.trim() || null) : true);
+    const cancel = () => close(input ? null : (confirm ? false : true));
+    const onKey = (e) => {
+      if (e.key === 'Enter') { e.preventDefault(); e.stopPropagation(); ok(); }
+      else if (e.key === 'Escape') { e.stopPropagation(); cancel(); }
+    };
+
+    overlay.querySelector('[data-act="ok"]').addEventListener('click', ok);
+    const cancelBtn = overlay.querySelector('[data-act="cancel"]');
+    if (cancelBtn) cancelBtn.addEventListener('click', cancel);
+    overlay.addEventListener('click', (e) => { if (e.target === overlay) cancel(); });
+    document.addEventListener('keydown', onKey, true);
+    (field || overlay.querySelector('[data-act="ok"]')).focus();
+  });
+}
 
 function copyPromptText(elementId, btn) {
   const text = document.getElementById(elementId).innerText;
