@@ -987,12 +987,12 @@
       align-items: center;
       justify-content: center;
       gap: 16px;
-      margin-bottom: 16px;
+      margin-bottom: 8px;
     }
 
     .icon-circle {
-      width: 34px;
-      height: 34px;
+      width: 28px;
+      height: 28px;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -1031,7 +1031,7 @@
     .profile-subtitle {
       font-size: 14px;
       color: rgba(255, 255, 255, 0.7);
-      margin-bottom: 16px;
+      margin-bottom: 8px;
       background: rgba(255, 255, 255, 0.05);
       display: inline-block;
       padding: 4px 12px;
@@ -1042,7 +1042,7 @@
       font-size: 14px;
       line-height: 1.6;
       color: rgba(255, 255, 255, 0.85);
-      margin-bottom: 12px;
+      margin-bottom: 6px;
       text-align: left;
       background: rgba(0, 0, 0, 0.2);
       padding: 12px 14px;
