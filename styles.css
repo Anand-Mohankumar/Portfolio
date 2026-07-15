@@ -957,25 +957,9 @@
       height: 96px;
       border-radius: 50%;
       margin: 0 auto 12px;
-      border: 3px solid transparent;
-      background:
-        linear-gradient(#12181A, #12181A) padding-box,
-        conic-gradient(from var(--ring-angle, 0deg), #C45A2A, #7EC8C8, #1F4F55, #C45A2A) border-box;
+      border: 3px solid #fff;
       box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4), 0 0 30px rgba(196, 90, 42, 0.25);
       transition: transform 0.3s;
-      animation: ringSpin 6s linear infinite;
-    }
-
-    @property --ring-angle {
-      syntax: '<angle>';
-      initial-value: 0deg;
-      inherits: false;
-    }
-
-    @keyframes ringSpin {
-      to {
-        --ring-angle: 360deg;
-      }
     }
 
     .profile-picture:hover {
@@ -2221,10 +2205,10 @@
     .profile-section > *:nth-child(7) { animation-delay: 0.35s; }
     .profile-section > *:nth-child(n+8) { animation-delay: 0.4s; }
 
-    /* The avatar keeps its ring spin alongside the entrance rise */
+    /* The avatar entrance rise */
     .profile-section > .profile-picture {
-      animation: heroRise 0.5s cubic-bezier(0.19, 1, 0.22, 1) backwards, ringSpin 6s linear infinite;
-      animation-delay: 0.05s, 0s;
+      animation: heroRise 0.5s cubic-bezier(0.19, 1, 0.22, 1) backwards;
+      animation-delay: 0.05s;
     }
 
     /* Glass dialog (replaces native alert/confirm/prompt) */
