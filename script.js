@@ -30,9 +30,12 @@ window.addEventListener('load', () => {
         setTimeout(() => {
           document.getElementById('bootScreen').classList.add('hidden');
 
-          // Trigger Dock Animation, then Show Home
+          // Trigger Dock Animation, then wiggle Home button
           animateDockEntry(() => {
-            showView('home');
+            const homeBtn = document.querySelector('.sidebar-item[data-view="home"]');
+            if (homeBtn) {
+              homeBtn.classList.add('wiggle');
+            }
           });
         }, 800);
       }
@@ -697,20 +700,35 @@ function closeWindow(viewName) {
     openWindows = openWindows.filter(w => w !== viewName);
     minimizedWindows.delete(viewName); // Also clean up from minimized set if it was there
 
+    if (viewName === 'home') {
+      const homeBtn = document.querySelector('.sidebar-item[data-view="home"]');
+      if (homeBtn) {
+        homeBtn.classList.add('wiggle');
+      }
+    }
+
     // Show home if closing active window
     if (activeWindow === viewName) {
       // Find a non-minimized window to switch to
       const nextVisibleWindow = openWindows.slice().reverse().find(w => !minimizedWindows.has(w));
       if (nextVisibleWindow) {
         showView(nextVisibleWindow);
-      } else {
+      } else if (viewName !== 'home') {
         showView('home');
+      } else {
+        activeWindow = null;
+        updateOpenWindowsTabs();
+        updateSidebar(null);
       }
     } else {
       updateOpenWindowsTabs();
       // Update sidebar to reflect the new active window (usually home)
       if (openWindows.length === 0) {
-        updateSidebar('home');
+        if (viewName !== 'home') {
+          updateSidebar('home');
+        } else {
+          updateSidebar(null);
+        }
       } else if (activeWindow) {
         updateSidebar(activeWindow);
       }
@@ -723,6 +741,7 @@ function closeWindow(viewName) {
 // Sidebar navigation
 document.querySelectorAll('.sidebar-item').forEach(item => {
   item.addEventListener('click', () => {
+    item.classList.remove('wiggle');
     const view = item.dataset.view;
 
     // If the window is minimized, restore it

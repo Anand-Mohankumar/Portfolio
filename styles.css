@@ -319,6 +319,20 @@
       z-index: 10;
     }
 
+    @keyframes dockWiggle {
+      0%, 100% { transform: translateY(0) scale(1) rotate(0deg); }
+      15% { transform: translateY(-6px) scale(1.1) rotate(-4deg); }
+      30% { transform: translateY(-6px) scale(1.1) rotate(4deg); }
+      45% { transform: translateY(-6px) scale(1.1) rotate(-2deg); }
+      60% { transform: translateY(-6px) scale(1.1) rotate(2deg); }
+      75% { transform: translateY(0) scale(1) rotate(0deg); }
+    }
+
+    .sidebar-item.wiggle {
+      animation: dockWiggle 2.5s ease-in-out infinite;
+      color: #fff;
+    }
+
     .sidebar-item:active {
       transform: translateY(-2px) scale(0.98);
     }
