@@ -684,7 +684,7 @@ function updateCloseAllButton() {
 
       const btn = document.createElement('button');
       btn.className = 'global-close-all-btn';
-      btn.innerText = 'Close All';
+      btn.innerText = 'Close all';
       
       // Stop propagation on all press events so it doesn't trigger window focus/drag
       btn.onmousedown = (e) => e.stopPropagation();
