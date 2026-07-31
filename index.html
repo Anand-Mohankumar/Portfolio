@@ -30,6 +30,12 @@
   </div>
 
   <div class="desktop">
+    
+    <div class="desktop-clock-widget" id="desktopClock">
+      <div class="clock-time" id="clockTime">05:05</div>
+      <div class="clock-ampm" id="clockAmPm">AM</div>
+      <div class="clock-date" id="clockDate">Friday, July 31</div>
+    </div>
 
     <div class="main-content">
       <div class="topbar">
@@ -59,7 +65,33 @@
             </svg>
           </div>
         </div>
-        <div class="topbar-right" id="clock">00:00</div>
+        <div class="topbar-right system-icons">
+          <!-- Wifi Icon (Lower Signal) -->
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M5 12.55a11 11 0 0 1 14.08 0"></path>
+            <!-- Dim outer arc for lower signal -->
+            <path d="M1.42 9a16 16 0 0 1 21.16 0" stroke-opacity="0.3"></path>
+            <path d="M8.53 16.11a6 6 0 0 1 6.95 0"></path>
+            <line x1="12" y1="20" x2="12.01" y2="20"></line>
+          </svg>
+          <!-- Bluetooth Icon (Greyed Out) -->
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="opacity: 0.4;">
+            <polyline points="6.5 6.5 17.5 17.5 12 23 12 1 17.5 6.5 6.5 17.5"></polyline>
+          </svg>
+          <!-- Volume Icon -->
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+            <path d="M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+            <path d="M19.07 4.93a10 10 0 0 1 0 14.14"></path>
+          </svg>
+          <!-- Battery Icon -->
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2" y="6" width="18" height="12" rx="2" ry="2"></rect>
+            <line x1="23" y1="11" x2="23" y2="13"></line>
+            <!-- Internal fill representing charge level -->
+            <rect x="4" y="8" width="12" height="8" rx="1" fill="currentColor" stroke="none"></rect>
+          </svg>
+        </div>
       </div>
 
       <div class="content-area">

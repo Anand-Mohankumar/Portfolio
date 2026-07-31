@@ -426,7 +426,9 @@
       right: -6px;
       width: 20px;
       height: 20px;
-      background: rgba(30, 20, 10, 0.98);
+      background: rgba(30, 20, 10, 0.5);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
       border: 1px solid rgba(196, 90, 42, 0.7);
       /* Orange hint */
       border-radius: 50%;
@@ -466,10 +468,10 @@
       /* Spacing from dock */
       top: auto;
 
-      /* Fully opaque - no transparency */
-      background: rgb(18, 22, 26);
-      backdrop-filter: none;
-      -webkit-backdrop-filter: none;
+      /* Glassmorphism */
+      background: rgba(18, 22, 26, 0.65);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
       padding: 10px;
       border-radius: 16px;
       border: 1px solid rgba(196, 90, 42, 0.35);
@@ -692,9 +694,22 @@
       font-weight: 500;
       color: rgba(255, 255, 255, 0.9);
       background: rgba(0, 0, 0, 0.2);
-      padding: 4px 12px;
+      padding: 6px 14px;
       border-radius: 20px;
       border: 1px solid rgba(255, 255, 255, 0.05);
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+    
+    .topbar-right svg {
+      opacity: 0.85;
+      transition: opacity 0.2s ease;
+      cursor: pointer;
+    }
+
+    .topbar-right svg:hover {
+      opacity: 1;
     }
 
     /* Main Content */
@@ -2322,4 +2337,85 @@
         animation-iteration-count: 1 !important;
         transition-duration: 0.01ms !important;
       }
-    }
+    }
+/* GLOBAL CLOSE ALL BUTTON */
+.global-close-all-btn {
+  position: relative; /* So it flows in flex container */
+  background: linear-gradient(145deg, rgba(220, 240, 255, 0.15), rgba(220, 240, 255, 0.05));
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3), 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s cubic-bezier(0.25, 0.8, 0.25, 1);
+  color: rgba(255, 255, 255, 0.85);
+  padding: 0 12px;
+  height: 24px;
+  border-radius: 12px;
+  font-family: 'Outfit', 'Google Sans', sans-serif;
+  font-size: 12px; /* slightly larger since not all caps */
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+.global-close-all-btn:hover {
+  background: linear-gradient(145deg, rgba(255, 95, 87, 0.4), rgba(255, 95, 87, 0.2));
+  border-color: rgba(255, 95, 87, 0.5);
+  color: #fff;
+  transform: translateY(-1px);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+.global-close-all-btn:active {
+  transform: translateY(0) scale(0.96);
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* --- Desktop Clock Widget --- */
+.desktop-clock-widget {
+  position: absolute;
+  top: 15vh;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  /* 20% more translucent font color (0.75 -> 0.55) */
+  color: rgba(255, 255, 255, 0.55);
+  font-family: 'Outfit', 'Google Sans', sans-serif;
+  z-index: 1; /* Above webgl-bg, below windows */
+  pointer-events: none;
+  user-select: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  /* Softer font edges */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* Enhanced glassy glow: broader white diffusion, lighter dark shadow */
+  text-shadow: 0 4px 16px rgba(0, 0, 0, 0.1), 0 0 16px rgba(255, 255, 255, 0.25);
+}
+
+.clock-time {
+  font-size: 5.5rem;
+  font-weight: 200; /* Softer, thinner weight */
+  line-height: 1;
+  letter-spacing: 2px;
+}
+
+.clock-ampm {
+  font-size: 1rem;
+  font-weight: 300;
+  margin-top: 6px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+.clock-date {
+  font-size: 1.2rem;
+  font-weight: 300;
+  margin-top: 10px;
+  letter-spacing: 0.5px;
+  /* Removed explicit color so it inherits the 55% translucent color from the parent */
+}

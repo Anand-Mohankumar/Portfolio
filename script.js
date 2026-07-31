@@ -79,20 +79,7 @@ function animateDockEntry(onComplete) {
   }, 400);
 }
 
-// Clock
-function updateClock() {
-  const now = new Date();
-  const days = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
-  const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
-  const day = days[now.getDay()];
-  const month = months[now.getMonth()];
-  const date = now.getDate();
-  const hours = String(now.getHours()).padStart(2, '0');
-  const minutes = String(now.getMinutes()).padStart(2, '0');
-  document.getElementById('clock').textContent = `${day}, ${month} ${date} | ${hours}:${minutes}`;
-}
-updateClock();
-setInterval(updateClock, 1000);
+// Clock (Top bar clock removed; replaced by fake system icons)
 
 // View switching
 const cards = {
@@ -283,6 +270,7 @@ function updateOpenWindowsTabs() {
 
   // Check for overflow after DOM update
   setTimeout(checkTabsOverflow, 50);
+  updateCloseAllButton();
 }
 
 // NEW: Centralized Sidebar Update Logic with 3-Dot Menu (Projects only)
@@ -668,6 +656,61 @@ setTimeout(() => {
   initDraggable();
 }, 100);
 
+function closeAllWindows() {
+  // Create a copy of openWindows because it gets modified during iteration
+  const windowsToClose = [...openWindows];
+  windowsToClose.forEach(win => {
+    closeWindow(win);
+  });
+}
+
+function updateCloseAllButton() {
+  const existingBtn = document.querySelector('.global-close-all-btn');
+
+  // Only show the button if more than 1 window is open
+  if (openWindows.length > 1) {
+    const activeView = openWindows[openWindows.length - 1];
+    const activeCard = cards[activeView];
+    
+    // Make sure we have a valid DOM element and it's not minimized
+    if (activeCard && !minimizedWindows.has(activeView)) {
+      
+      // If the button is already attached to this active window, do nothing!
+      if (existingBtn && existingBtn.parentNode === activeCard) {
+        return;
+      }
+      
+      if (existingBtn) existingBtn.remove();
+
+      const btn = document.createElement('button');
+      btn.className = 'global-close-all-btn';
+      btn.innerText = 'Close All';
+      
+      // Stop propagation on all press events so it doesn't trigger window focus/drag
+      btn.onmousedown = (e) => e.stopPropagation();
+      btn.ontouchstart = (e) => e.stopPropagation();
+      btn.onpointerdown = (e) => e.stopPropagation();
+      
+      btn.onclick = (e) => {
+        e.stopPropagation();
+        closeAllWindows();
+      };
+      
+      // Append inside the active window's card controls (statusbar)
+      const controls = activeCard.querySelector('.card-controls');
+      if (controls) {
+        controls.appendChild(btn);
+      } else {
+        activeCard.appendChild(btn);
+      }
+    } else {
+      if (existingBtn) existingBtn.remove();
+    }
+  } else {
+    if (existingBtn) existingBtn.remove();
+  }
+}
+
 function closeWindow(viewName) {
   const card = cards[viewName];
   if (!card) return;
@@ -713,8 +756,6 @@ function closeWindow(viewName) {
       const nextVisibleWindow = openWindows.slice().reverse().find(w => !minimizedWindows.has(w));
       if (nextVisibleWindow) {
         showView(nextVisibleWindow);
-      } else if (viewName !== 'home') {
-        showView('home');
       } else {
         activeWindow = null;
         updateOpenWindowsTabs();
@@ -724,11 +765,7 @@ function closeWindow(viewName) {
       updateOpenWindowsTabs();
       // Update sidebar to reflect the new active window (usually home)
       if (openWindows.length === 0) {
-        if (viewName !== 'home') {
-          updateSidebar('home');
-        } else {
-          updateSidebar(null);
-        }
+        updateSidebar(null);
       } else if (activeWindow) {
         updateSidebar(activeWindow);
       }
@@ -1557,3 +1594,31 @@ function copyPromptText(elementId, btn) {
     }, 2000);
   });
 }
+
+// --- Desktop Clock Widget ---
+function updateDesktopClock() {
+  const timeEl = document.getElementById('clockTime');
+  const ampmEl = document.getElementById('clockAmPm');
+  const dateEl = document.getElementById('clockDate');
+  if (!timeEl || !ampmEl || !dateEl) return;
+
+  const now = new Date();
+  
+  let hours = now.getHours();
+  let minutes = now.getMinutes();
+  const ampm = hours >= 12 ? 'PM' : 'AM';
+  hours = hours % 12;
+  hours = hours ? hours : 12; 
+  minutes = minutes < 10 ? '0' + minutes : minutes;
+  const strHours = hours < 10 ? '0' + hours : hours;
+  
+  timeEl.textContent = `${strHours}:${minutes}`;
+  ampmEl.textContent = ampm;
+
+  const options = { weekday: 'long', month: 'long', day: 'numeric' };
+  dateEl.textContent = now.toLocaleDateString('en-US', options);
+}
+
+// Initialize clock
+updateDesktopClock();
+setInterval(updateDesktopClock, 1000);
