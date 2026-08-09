@@ -1516,7 +1516,17 @@ const sortingObserver = new MutationObserver((mutations) => {
   for (let mutation of mutations) {
     if (mutation.type === 'childList' && mutation.addedNodes.length > 0) {
       const addedElements = Array.from(mutation.addedNodes).filter(n => n.nodeType === Node.ELEMENT_NODE);
-      if (addedElements.length > 0) {
+      
+      // Ignore UI elements that are dynamically added during user interaction (like the close-all button)
+      // to prevent DOM detachment from cancelling in-flight click events.
+      const hasSortable = addedElements.some(el => {
+        if (el.classList && el.classList.contains('global-close-all-btn')) return false;
+        
+        const selectors = ['.project-item', '.resource-hero-card', '.article-item', '.infographic-item', '.skill-tag'];
+        return selectors.some(sel => el.matches && el.matches(sel) || (el.querySelector && el.querySelector(sel)));
+      });
+
+      if (hasSortable) {
         shouldSort = true;
         break;
       }
