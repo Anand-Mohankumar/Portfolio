@@ -1,0 +1,53 @@
+{
+  "base": {
+    "file": "base-no-iris.png",
+    "width": 1254,
+    "height": 1254
+  },
+  "eyes": {
+    "left": {
+      "center_px": [
+        460.54,
+        546.87
+      ],
+      "asset": "left-iris.png",
+      "iris_canvas_px": [
+        256,
+        256
+      ],
+      "recommended_render_width_px": 48,
+      "recommended_render_height_px": 48,
+      "max_gaze_offset_px": {
+        "x": 8,
+        "y": 4
+      },
+      "occlusion": "left-eye-occlusion.png",
+      "mask": "left-eye-mask.png"
+    },
+    "right": {
+      "center_px": [
+        658.12,
+        536.13
+      ],
+      "asset": "right-iris.png",
+      "iris_canvas_px": [
+        256,
+        256
+      ],
+      "recommended_render_width_px": 48,
+      "recommended_render_height_px": 48,
+      "max_gaze_offset_px": {
+        "x": 8,
+        "y": 4
+      },
+      "occlusion": "right-eye-occlusion.png",
+      "mask": "right-eye-mask.png"
+    }
+  },
+  "notes": [
+    "Coordinates are in the 1254x1254 base-no-iris image.",
+    "Place each iris centered at the specified center; keep movement within the suggested gaze offset.",
+    "Render the occlusion layer above the iris so eyelids and lashes hide the iris edges.",
+    "The eye masks are grayscale: white = visible eye aperture; black = outside the aperture."
+  ]
+}

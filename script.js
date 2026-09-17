@@ -1549,6 +1549,133 @@ function observeMutations() {
 
 document.addEventListener('DOMContentLoaded', observeMutations);
 
+// --- Home profile character: photo whose eyes (and, subtly, head) follow the cursor ---
+// Layers live in #profileCharacter (index.html); geometry lives in styles.css (.avatar-*).
+// pointermove only records the cursor; all measuring and updating happens inside one
+// requestAnimationFrame loop that runs only while something is still moving, and every
+// update is a CSS custom property feeding a transform (no layout-triggering writes).
+(function initProfileCharacter() {
+  const character = document.getElementById('profileCharacter');
+  if (!character) return;
+
+  const finePointer = window.matchMedia('(hover: hover) and (pointer: fine)').matches;
+  // Touch devices and reduced-motion users get the plain static portrait.
+  if (!finePointer || reducedMotion) return;
+
+  // --- Calibration -------------------------------------------------------
+  // Iris travel, % of the 67px sprite: 10px / 4.7px at the 1254px source (placement.json suggests 8 / 4).
+  const GAZE_MAX_X = 15;
+  const GAZE_MAX_Y = 7;      // vertical travel is much smaller than horizontal, as in a real eye
+  const HEAD_MAX_X = 0.5;    // figure (face + body) drift limit, % of the character width: very subtle
+  const HEAD_MAX_Y = 0.25;
+  const REACH = 3.2;         // gaze saturates once the cursor is this many avatar-widths away
+  const EYE_EASE = 0.16;     // eyes move quickly (saccade-like)...
+  const HEAD_EASE = 0.045;   // ...the head follows slowly and heavily
+  const REST_AFTER = 4500;   // ms of a still cursor before the gaze drifts back to centre
+
+  // Eyebrow expression. The face zone is an ellipse in portrait coordinates (fractions of
+  // the container, from the 1254px source: centre (560,620), radii 230 x 300). Inside it
+  // the brows are fully raised; within NEAR_ZONE radii of it they rise partially, easing
+  // to neutral at the outer edge. Opacity transitions in CSS provide the 200ms smoothing.
+  const FACE = { cx: 0.447, cy: 0.494, rx: 0.183, ry: 0.239 };
+  const NEAR_ZONE = 1.9;
+  const RAISE_OVER = 0.85;
+  const RAISE_NEAR = 0.35;
+  const BROW_LIFT = 0.022;   // raised-brow lift at full raise, fraction of the portrait width
+  const ZOOM_MAX = 1.6;      // frame scale when the cursor is over the face
+  const brows = character.querySelector('.avatar-brows');
+  const frame = character.closest('.profile-avatar-frame');
+
+  let pointer = null;         // latest cursor position, or null when resting
+  let browRaise = 0;          // last value written to --brow-raise
+  let targetX = 0, targetY = 0; // cursor normalised to [-1, 1] relative to the face
+  let eyeX = 0, eyeY = 0;     // eased gaze
+  let headX = 0, headY = 0;   // eased head pose (lags the gaze)
+  let raf = null;
+  let restTimer = null;
+
+  const clamp1 = v => Math.max(-1, Math.min(1, v));
+  const fmt = v => v.toFixed(3);
+
+  function schedule() {
+    if (raf === null) raf = requestAnimationFrame(tick);
+  }
+
+  // 0 outside the near zone, RAISE_NEAR..0 across it (smoothstep), RAISE_OVER on the face.
+  function browTargetFor(rect) {
+    if (!pointer) return 0;
+    const nx = ((pointer.x - rect.left) / rect.width - FACE.cx) / FACE.rx;
+    const ny = ((pointer.y - rect.top) / rect.height - FACE.cy) / FACE.ry;
+    const d = Math.hypot(nx, ny);
+    if (d <= 1) return RAISE_OVER;
+    if (d >= NEAR_ZONE) return 0;
+    const t = (NEAR_ZONE - d) / (NEAR_ZONE - 1);
+    return RAISE_NEAR * t * t * (3 - 2 * t);
+  }
+
+  // Writes the expression: brow crossfade + lift, and the frame's lean-in zoom.
+  // baseWidth is the un-zoomed avatar width, so the lift stays proportional to the portrait.
+  function setBrowRaise(value, baseWidth) {
+    if (!brows || Math.abs(value - browRaise) < 0.005) return;
+    browRaise = value;
+    brows.style.setProperty('--brow-raise', fmt(value));
+    brows.style.setProperty('--brow-lift', fmt(value * baseWidth * BROW_LIFT) + 'px');
+    if (frame) frame.style.setProperty('--avatar-zoom', fmt(1 + (value / RAISE_OVER) * (ZOOM_MAX - 1)));
+  }
+
+  function updateTarget() {
+    if (!pointer) { targetX = 0; targetY = 0; setBrowRaise(0, 0); return true; }
+    const rect = character.getBoundingClientRect();
+    if (!rect.width) return false; // Home window hidden or minimised: nothing to animate
+    const cx = rect.left + rect.width / 2;
+    const cy = rect.top + rect.height * 0.43; // measure from the eye line, not the frame centre
+    const reach = rect.width * REACH;
+    targetX = clamp1((pointer.x - cx) / reach);
+    targetY = clamp1((pointer.y - cy) / reach);
+    setBrowRaise(browTargetFor(rect), character.offsetWidth);
+    return true;
+  }
+
+  function tick() {
+    raf = null;
+    if (!updateTarget()) return;
+
+    eyeX += (targetX - eyeX) * EYE_EASE;
+    eyeY += (targetY - eyeY) * EYE_EASE;
+    headX += (targetX - headX) * HEAD_EASE;
+    headY += (targetY - headY) * HEAD_EASE;
+
+    const s = character.style;
+    s.setProperty('--gaze-x', fmt(eyeX * GAZE_MAX_X) + '%');
+    s.setProperty('--gaze-y', fmt(eyeY * GAZE_MAX_Y) + '%');
+    s.setProperty('--head-x', fmt(headX * HEAD_MAX_X) + '%');
+    s.setProperty('--head-y', fmt(headY * HEAD_MAX_Y) + '%');
+
+    const settled = Math.abs(targetX - eyeX) < 0.002 && Math.abs(targetY - eyeY) < 0.002 &&
+                    Math.abs(targetX - headX) < 0.002 && Math.abs(targetY - headY) < 0.002;
+    if (!settled) raf = requestAnimationFrame(tick);
+  }
+
+  function rest() {
+    pointer = null;
+    schedule();
+  }
+
+  function onPointerMove(e) {
+    pointer = { x: e.clientX, y: e.clientY };
+    clearTimeout(restTimer);
+    restTimer = setTimeout(rest, REST_AFTER);
+    schedule();
+  }
+
+  function onLeave() {
+    clearTimeout(restTimer);
+    rest();
+  }
+
+  document.addEventListener('pointermove', onPointerMove, { passive: true });
+  document.documentElement.addEventListener('mouseleave', onLeave);
+})();
 // --- Glass Dialog (themed replacement for alert/confirm/prompt) ---
 // Resolves: alert -> true; confirm -> true/false; input -> string or null
 function glassDialog({ title = '', message = '', input = false, confirm = false, placeholder = '' } = {}) {

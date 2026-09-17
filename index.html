@@ -117,9 +117,45 @@
             </div>
           </div>
           <div class="card-content profile-section">
-            <img src="https://avatars.githubusercontent.com/u/158495282?v=4" alt="Anand Mohankumar"
-              class="profile-picture">
-
+            <div class="profile-avatar">
+              <div class="profile-avatar-frame">
+                <!-- Interactive character: no-iris portrait, moving iris sprites, eyelid occlusion on top.
+                     Driven by initProfileCharacter() in script.js; geometry in styles.css (.avatar-*). -->
+                <div class="avatar-character" id="profileCharacter">
+                  <!-- Static scene: the full portrait stays put -->
+                  <img class="avatar-layer" src="assets/character/base-600.jpg"
+                    alt="Anand Mohankumar" width="600" height="600" draggable="false" decoding="async">
+                  <!-- Moving figure: the same portrait masked to the head silhouette, plus the eyes and brows -->
+                  <div class="avatar-figure" aria-hidden="true">
+                    <img class="avatar-layer avatar-cutout" src="assets/character/base-600.jpg"
+                      alt="" width="600" height="600" draggable="false" decoding="async">
+                    <div class="avatar-eye avatar-eye--left">
+                      <img class="avatar-iris" src="assets/character/left-iris.png" alt=""
+                        width="256" height="256" draggable="false" decoding="async">
+                      <img class="avatar-occlusion" src="assets/character/left-eye-occlusion.png" alt=""
+                        width="145" height="95" draggable="false" decoding="async">
+                    </div>
+                    <div class="avatar-eye avatar-eye--right">
+                      <img class="avatar-iris" src="assets/character/right-iris.png" alt=""
+                        width="256" height="256" draggable="false" decoding="async">
+                      <img class="avatar-occlusion" src="assets/character/right-eye-occlusion.png" alt=""
+                        width="145" height="95" draggable="false" decoding="async">
+                    </div>
+                    <!-- Eyebrow expression: neutral is the default, raised crossfades in as the cursor nears the face -->
+                    <div class="avatar-brows">
+                      <img class="avatar-brow avatar-brow--left avatar-brow--neutral" src="assets/character/brows-neutral.png"
+                        alt="" width="139" height="53" draggable="false" decoding="async">
+                      <img class="avatar-brow avatar-brow--left avatar-brow--raised" src="assets/character/brows-raised.png"
+                        alt="" width="142" height="58" draggable="false" decoding="async">
+                      <img class="avatar-brow avatar-brow--right avatar-brow--neutral" src="assets/character/brows-neutral.png"
+                        alt="" width="139" height="53" draggable="false" decoding="async">
+                      <img class="avatar-brow avatar-brow--right avatar-brow--raised" src="assets/character/brows-raised.png"
+                        alt="" width="142" height="58" draggable="false" decoding="async">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
             <div class="icon-group">
               <a href="mailto:anand.mohankumar@outlook.com" class="icon-circle glowing-btn hover-btn" target="_blank"
                 rel="noopener noreferrer" style="--btn-glow-color: #C45A2A;" title="Email">
