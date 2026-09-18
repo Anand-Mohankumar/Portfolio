@@ -982,66 +982,47 @@
       box-shadow: 0 10px 36px rgba(0, 0, 0, 0.45), 0 0 40px rgba(196, 90, 42, 0.4);
     }
 
-    /* Interactive character layers (see assets/character/source/placement.json).
-       Stack per eye: base photo (white sclera)  ->  moving iris sprite  ->  eyelid occlusion crop.
-       Every measure is a percentage of the 1254px source portrait so the rig scales with the avatar:
-         occlusion crops sit at (400,495) and (590,495), 145x95 px
-         iris centres are (460.5,546.9) and (658.1,536.1); the 256px sprite renders 50px wide. */
+    /* Interactive character (layers in assets/avatar/, see its README).
+       Three PNG layers plus an SVG eyes overlay share one square 1254px canvas, so they
+       stack with no offsets. The canvas (.avatar-stage) is drawn larger than the circular
+       frame and offset so the head fills the circle; the frame's overflow:hidden crops it.
+       script.js writes only transforms: translate/rotate on the layers, translate on the
+       SVG pupils (gaze) and lids (blink). */
     .avatar-character {
-      --head-x: 0%;
-      --head-y: 0%;
-      --gaze-x: 0%;
-      --gaze-y: 0%;
       position: relative;
       width: 100%;
       height: 100%;
       user-select: none;
+      cursor: pointer;
     }
 
-    .avatar-layer {
+    .avatar-character {
+      /* Light backdrop behind the cut-out character, filling the whole circle */
+      background: radial-gradient(120% 120% at 50% 18%, #F7F2EA 0%, #E6E1D8 55%, #D3DCE3 100%);
+    }
+
+    .avatar-stage {
+      --stage-size: 108%;
       position: absolute;
-      inset: 0;
-      width: 100%;
-      height: 100%;
-      display: block;
+      width: var(--stage-size);
+      height: var(--stage-size);
+      /* The canvas point placed at the circle's centre (fractions of the 1254 canvas):
+         the nose sits at ~0.50 across, and 0.41 down keeps the hair inside the ring */
+      left: calc(50% - 0.50 * var(--stage-size));
+      top: calc(50% - 0.41 * var(--stage-size));
       pointer-events: none;
-      -webkit-user-drag: none;
+      contain: layout style;
     }
 
-    /* The figure (head silhouette + eyes + brows) drifts toward the cursor over the
-       static scene. The cutout is the same portrait masked by figure-mask-600.png,
-       a silhouette derived from the base photo (head to collar). */
-    .avatar-figure {
+    .av-layer {
       position: absolute;
       inset: 0;
-      transform: translate(var(--head-x), var(--head-y));
       will-change: transform;
-    }
-
-    .avatar-cutout {
-      -webkit-mask-image: url("assets/character/figure-mask-600.png");
-      mask-image: url("assets/character/figure-mask-600.png");
-      -webkit-mask-size: 100% 100%;
-      mask-size: 100% 100%;
-      -webkit-mask-repeat: no-repeat;
-      mask-repeat: no-repeat;
-    }
-
-    /* Each eye box is exactly the occlusion crop's footprint. overflow:hidden also
-       guarantees the iris can never escape the eye region. */
-    .avatar-eye {
-      position: absolute;
-      width: 11.563%;
-      height: 7.576%;
-      top: 39.474%;
-      overflow: hidden;
       pointer-events: none;
     }
 
-    .avatar-eye--left  { left: 31.898%; }
-    .avatar-eye--right { left: 47.049%; }
-
-    .avatar-occlusion {
+    .av-layer img,
+    .av-layer svg {
       position: absolute;
       inset: 0;
       width: 100%;
@@ -1050,60 +1031,19 @@
       -webkit-user-drag: none;
     }
 
-    .avatar-iris {
-      position: absolute;
-      width: 46%;             /* 67px of the 145px crop: large enough to tuck under the upper lid */
-      height: auto;
-      aspect-ratio: 1 / 1;
-      display: block;
-      -webkit-user-drag: none;
-      /* The sprite carries a pale rim at the edge of the disc; fade it out so the
-         iris meets the sclera softly instead of with a hard ring. */
-      -webkit-mask-image: radial-gradient(circle, #000 70%, transparent 78%);
-      mask-image: radial-gradient(circle, #000 70%, transparent 78%);
-      /* --gaze-x/--gaze-y are percentages of the sprite size, set by script.js */
-      transform: translate(calc(-50% + var(--gaze-x)), calc(-50% + var(--gaze-y)));
-      will-change: transform;
-    }
+    /* rotation pivots: head and hair turn around the neck, the shirt about its hem */
+    .av-head { transform-origin: 50% 74%; }
+    .av-hair { transform-origin: 50% 74%; }
+    .av-body { transform-origin: 50% 100%; }
 
-    /* Centres from placement.json, raised ~3px so the upper eyelid overlaps the iris */
-    .avatar-eye--left  .avatar-iris { left: 41.72%; top: 51.5%; }
-    .avatar-eye--right .avatar-iris { left: 46.97%; top: 40.1%; }
-
-    /* Eyebrow expression layer (assets/character/brows-*.png). Each brow state is
-       anchored by its bottom-centre so a taller "raised" sprite arches upward from the
-       same brow line. The single supplied brow is mirrored for the left side.
-       Anchors in the 1254px portrait: left brow (445, 519), right brow (661, 498).
-       --brow-raise (0..1) is set by script.js; opacity carries the whole expression. */
-    .avatar-brows {
-      --brow-raise: 0;
-      position: absolute;
-      inset: 0;
-      pointer-events: none;
-    }
-
-    .avatar-brow {
-      position: absolute;
-      height: auto;
-      display: block;
-      -webkit-user-drag: none;
-      transform: translateX(-50%);
-      /* The sprites have a pale anti-aliased fringe; multiply lets only the dark hairs
-         darken the skin (and vanish over the dark fringe of hair), so no halo shows. */
-      mix-blend-mode: multiply;
-      transition: opacity 200ms ease;
-    }
-
-    .avatar-brow--left  { left: 35.49%; bottom: 57.6%; }
-    .avatar-brow--right { left: 52.75%; bottom: 59.8%; }
-
-    .avatar-brow--neutral { width: 11.084%; opacity: calc(1 - var(--brow-raise)); }
-    /* The raised sprite also lifts by --brow-lift (px, ~2% of the portrait at full raise,
-       set by script.js) so the arch visibly moves up rather than only darkening. */
-    .avatar-brow--raised  { width: 11.324%; opacity: var(--brow-raise); transition: opacity 200ms ease, transform 200ms ease; }
-    .avatar-brow--left.avatar-brow--neutral { transform: translateX(-50%) scaleX(-1); }
-    .avatar-brow--left.avatar-brow--raised  { transform: translate(-50%, calc(var(--brow-lift, 0px) * -1)) scaleX(-1); }
-    .avatar-brow--right.avatar-brow--raised { transform: translate(-50%, calc(var(--brow-lift, 0px) * -1)); }
+    /* Eye colours sampled from the artwork */
+    .av-sclera    { fill: #efb388; }
+    .av-iris      { fill: #4a2e23; }
+    .av-pupil-dot { fill: #2a1710; }
+    .av-shine     { fill: #ffffff; }
+    .av-lid       { fill: #d8935e; }
+    .av-lash      { fill: none; stroke: #3a2418; stroke-width: 8; stroke-linecap: round; }
+    .av-lidline   { fill: none; stroke: #4a2a1a; stroke-width: 7; stroke-linecap: round; opacity: 0; }
 
     /* The avatar leans in (scales up, no reflow) while the cursor is near the face so the
        expression is readable at the 96px display size. --avatar-zoom is set by script.js. */
@@ -1115,7 +1055,7 @@
     }
 
     @media (prefers-reduced-motion: reduce) {
-      .avatar-brow, .profile-avatar-frame { transition: none; }
+      .profile-avatar-frame { transition: none; }
     }
     .icon-group {
       display: flex;

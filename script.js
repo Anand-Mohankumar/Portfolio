@@ -1549,132 +1549,244 @@ function observeMutations() {
 
 document.addEventListener('DOMContentLoaded', observeMutations);
 
-// --- Home profile character: photo whose eyes (and, subtly, head) follow the cursor ---
-// Layers live in #profileCharacter (index.html); geometry lives in styles.css (.avatar-*).
-// pointermove only records the cursor; all measuring and updating happens inside one
-// requestAnimationFrame loop that runs only while something is still moving, and every
-// update is a CSS custom property feeding a transform (no layout-triggering writes).
+// --- Home profile character: paper-cut portrait that follows the cursor ---
+// Layers live in #profileCharacter
+// (index.html) and share one 1254px canvas; layout is in styles.css (.avatar-* / .av-*).
+//   - eyes follow the cursor / finger (clamped, eased)
+//   - head and hair lean toward the cursor; the hair is a spring, so it overshoots
+//   - random blinks, sometimes a double blink
+//   - idle: breathing, slow sway and random glances while the cursor is still
+//   - click / tap: a quick nod plus a double blink
+//   - the frame leans in (zooms) while the cursor is near the face
+//   - prefers-reduced-motion: eyes still track, no idle motion or lean
+// The frame loop only runs while the Home window is on screen and the tab is visible.
 (function initProfileCharacter() {
   const character = document.getElementById('profileCharacter');
   if (!character) return;
+  const stage = character.querySelector('.avatar-stage');
+  const head = character.querySelector('.av-head');
+  const hair = character.querySelector('.av-hair');
+  const body = character.querySelector('.av-body');
+  if (!stage || !head || !hair || !body) return;
 
-  const finePointer = window.matchMedia('(hover: hover) and (pointer: fine)').matches;
-  // Touch devices and reduced-motion users get the plain static portrait.
-  if (!finePointer || reducedMotion) return;
+  const CANVAS = 1254; // px: the coordinate space every layer shares
+  const o = {
+    // how far the cursor can pull each layer (px in canvas space). Body, head and hair are
+    // kept very small and close to each other so the layering is barely perceptible;
+    // the eyes carry the interaction.
+    body: { x: 1.5, y: 0.8 },
+    head: { x: 6, y: 3, rot: 0.6 },
+    hair: { x: 7, y: 3.5, rot: 0.7 },
+    eyes: { x: 20, y: 9 },
+    reach: 320,              // screen px from the eyes for full deflection
+    easeEyes: 0.14,
+    easeHead: 0.07,
+    hairSpring: { stiffness: 0.045, damping: 0.78 },
+    blinkMin: 2.4, blinkMax: 6.0,      // seconds between blinks
+    blinkClose: 0.11, blinkOpen: 0.14, // seconds
+    doubleBlinkChance: 0.18,
+    idleAfter: 2.2,                    // seconds without cursor movement before idle glances
+    glanceEvery: [1.6, 4.5],
+    glanceHold: [0.6, 1.4],
+    zoomMax: 1.45,                     // frame scale when the cursor is over the face
+    zoomNear: 2.6                      // frame radii over which the zoom eases in
+  };
 
-  // --- Calibration -------------------------------------------------------
-  // Iris travel, % of the 67px sprite: 10px / 4.7px at the 1254px source (placement.json suggests 8 / 4).
-  const GAZE_MAX_X = 15;
-  const GAZE_MAX_Y = 7;      // vertical travel is much smaller than horizontal, as in a real eye
-  const HEAD_MAX_X = 0.5;    // figure (face + body) drift limit, % of the character width: very subtle
-  const HEAD_MAX_Y = 0.25;
-  const REACH = 3.2;         // gaze saturates once the cursor is this many avatar-widths away
-  const EYE_EASE = 0.16;     // eyes move quickly (saccade-like)...
-  const HEAD_EASE = 0.045;   // ...the head follows slowly and heavily
-  const REST_AFTER = 4500;   // ms of a still cursor before the gaze drifts back to centre
-
-  // Eyebrow expression. The face zone is an ellipse in portrait coordinates (fractions of
-  // the container, from the 1254px source: centre (560,620), radii 230 x 300). Inside it
-  // the brows are fully raised; within NEAR_ZONE radii of it they rise partially, easing
-  // to neutral at the outer edge. Opacity transitions in CSS provide the 200ms smoothing.
-  const FACE = { cx: 0.447, cy: 0.494, rx: 0.183, ry: 0.239 };
-  const NEAR_ZONE = 1.9;
-  const RAISE_OVER = 0.85;
-  const RAISE_NEAR = 0.35;
-  const BROW_LIFT = 0.022;   // raised-brow lift at full raise, fraction of the portrait width
-  const ZOOM_MAX = 1.6;      // frame scale when the cursor is over the face
-  const brows = character.querySelector('.avatar-brows');
   const frame = character.closest('.profile-avatar-frame');
+  const pupils = character.querySelectorAll('.av-pupil');
+  const lids = character.querySelectorAll('.av-lid');
+  const lashes = character.querySelectorAll('.av-lash');
+  const lidlines = character.querySelectorAll('.av-lidline');
 
-  let pointer = null;         // latest cursor position, or null when resting
-  let browRaise = 0;          // last value written to --brow-raise
-  let targetX = 0, targetY = 0; // cursor normalised to [-1, 1] relative to the face
-  let eyeX = 0, eyeY = 0;     // eased gaze
-  let headX = 0, headY = 0;   // eased head pose (lags the gaze)
-  let raf = null;
-  let restTimer = null;
+  const rand = (a, b) => a + Math.random() * (b - a);
+  const clamp = (v, lo, hi) => (v < lo ? lo : v > hi ? hi : v);
 
-  const clamp1 = v => Math.max(-1, Math.min(1, v));
-  const fmt = v => v.toFixed(3);
+  // ---- state ---------------------------------------------------------------
+  const target = { x: 0, y: 0 };   // where the cursor wants us to look (-1..1)
+  const gaze = { x: 0, y: 0 };     // eased eye gaze
+  const lean = { x: 0, y: 0 };     // eased head lean
+  const hairV = { x: 0, y: 0 };    // hair spring velocity
+  const hairP = { x: 0, y: 0 };    // hair spring position
+  let blink = 0;                   // 0 open .. 1 closed
+  let blinkTimer = rand(o.blinkMin, o.blinkMax);
+  let blinkPhase = null;           // null | {t, dur, from, to, again} | {pending}
+  let lastMove = performance.now() / 1000;
+  let glance = null;               // {until}
+  let nextGlance = rand(o.glanceEvery[0], o.glanceEvery[1]);
+  let nod = 0;                     // click reaction, 1 -> 0
+  let zoom = 1;                    // last frame zoom written
+  let pointer = null;              // latest cursor position on screen
+  let scale = 0;                   // css px per canvas px
+  let last = performance.now();
+  let raf = 0;
+  let visible = false;
 
-  function schedule() {
-    if (raf === null) raf = requestAnimationFrame(tick);
+  function measure() { scale = stage.clientWidth / CANVAS; }
+
+  // ---- input ---------------------------------------------------------------
+  function point(cx, cy) {
+    pointer = { x: cx, y: cy };
+    lastMove = performance.now() / 1000;
+    glance = null;
+  }
+  // The stage may be hidden or resized (Home window closed, mobile layout), so the
+  // cursor is measured against the live rect each frame rather than on the event.
+  function aim() {
+    if (!pointer) return;
+    const r = stage.getBoundingClientRect();
+    if (!r.width) return;
+    // the eyes sit at ~(47%, 42%) of the canvas
+    const ox = r.left + r.width * 0.47, oy = r.top + r.height * 0.42;
+    target.x = clamp((pointer.x - ox) / o.reach, -1, 1);
+    target.y = clamp((pointer.y - oy) / o.reach, -1, 1);
+  }
+  document.addEventListener('pointermove', e => point(e.clientX, e.clientY), { passive: true });
+  document.addEventListener('touchstart', e => { const t = e.touches[0]; if (t) point(t.clientX, t.clientY); }, { passive: true });
+  document.documentElement.addEventListener('mouseleave', () => { pointer = null; target.x = 0; target.y = 0; });
+  character.addEventListener('pointerdown', () => { nod = 1; scheduleBlink(0, true); });
+
+  // ---- blinking ------------------------------------------------------------
+  function scheduleBlink(delay, twice) {
+    blinkTimer = delay;
+    blinkPhase = twice ? { pending: 'double' } : null;
+  }
+  function stepBlink(dt) {
+    if (blinkPhase && blinkPhase.dur) {
+      blinkPhase.t += dt;
+      let k = clamp(blinkPhase.t / blinkPhase.dur, 0, 1);
+      k = blinkPhase.to > blinkPhase.from ? k * k : 1 - (1 - k) * (1 - k);
+      blink = blinkPhase.from + (blinkPhase.to - blinkPhase.from) * k;
+      if (blinkPhase.t >= blinkPhase.dur) {
+        if (blinkPhase.to === 1) {
+          blinkPhase = { t: 0, dur: o.blinkOpen, from: 1, to: 0, again: blinkPhase.again };
+        } else {
+          const again = blinkPhase.again;
+          blinkPhase = again ? { pending: 'single' } : null;
+          blinkTimer = again ? 0.12 : rand(o.blinkMin, o.blinkMax);
+        }
+      }
+      return;
+    }
+    blinkTimer -= dt;
+    if (blinkTimer <= 0) {
+      const twice = blinkPhase && blinkPhase.pending === 'double' ? true
+        : blinkPhase && blinkPhase.pending === 'single' ? false
+        : Math.random() < o.doubleBlinkChance;
+      blinkPhase = { t: 0, dur: o.blinkClose, from: 0, to: 1, again: twice };
+    }
   }
 
-  // 0 outside the near zone, RAISE_NEAR..0 across it (smoothstep), RAISE_OVER on the face.
-  function browTargetFor(rect) {
-    if (!pointer) return 0;
-    const nx = ((pointer.x - rect.left) / rect.width - FACE.cx) / FACE.rx;
-    const ny = ((pointer.y - rect.top) / rect.height - FACE.cy) / FACE.ry;
-    const d = Math.hypot(nx, ny);
-    if (d <= 1) return RAISE_OVER;
-    if (d >= NEAR_ZONE) return 0;
-    const t = (NEAR_ZONE - d) / (NEAR_ZONE - 1);
-    return RAISE_NEAR * t * t * (3 - 2 * t);
+  // ---- idle glances --------------------------------------------------------
+  function stepIdle(now, dt) {
+    if (reducedMotion) return;
+    if (now - lastMove < o.idleAfter) return;
+    if (glance) {
+      if (now > glance.until) {
+        glance = null;
+        nextGlance = rand(o.glanceEvery[0], o.glanceEvery[1]);
+        target.x = 0; target.y = 0;
+      }
+      return;
+    }
+    nextGlance -= dt;
+    if (nextGlance <= 0) {
+      glance = { until: now + rand(o.glanceHold[0], o.glanceHold[1]) };
+      target.x = rand(-0.9, 0.9);
+      target.y = rand(-0.5, 0.6);
+    }
   }
 
-  // Writes the expression: brow crossfade + lift, and the frame's lean-in zoom.
-  // baseWidth is the un-zoomed avatar width, so the lift stays proportional to the portrait.
-  function setBrowRaise(value, baseWidth) {
-    if (!brows || Math.abs(value - browRaise) < 0.005) return;
-    browRaise = value;
-    brows.style.setProperty('--brow-raise', fmt(value));
-    brows.style.setProperty('--brow-lift', fmt(value * baseWidth * BROW_LIFT) + 'px');
-    if (frame) frame.style.setProperty('--avatar-zoom', fmt(1 + (value / RAISE_OVER) * (ZOOM_MAX - 1)));
+  // ---- lean-in zoom: 1 far away, zoomMax with the cursor over the face -----
+  function stepZoom() {
+    if (!frame) return;
+    let z = 1;
+    if (pointer && !reducedMotion) {
+      const r = frame.getBoundingClientRect();
+      if (r.width) {
+        const radius = (r.width / zoom) / 2; // un-zoomed radius
+        const d = Math.hypot(pointer.x - (r.left + r.width / 2), pointer.y - (r.top + r.height / 2)) / radius;
+        if (d <= 1) z = o.zoomMax;
+        else if (d < o.zoomNear) {
+          const t = (o.zoomNear - d) / (o.zoomNear - 1);
+          z = 1 + (o.zoomMax - 1) * t * t * (3 - 2 * t);
+        }
+      }
+    }
+    if (Math.abs(z - zoom) > 0.004) {
+      zoom = z;
+      frame.style.setProperty('--avatar-zoom', z.toFixed(3));
+    }
   }
 
-  function updateTarget() {
-    if (!pointer) { targetX = 0; targetY = 0; setBrowRaise(0, 0); return true; }
-    const rect = character.getBoundingClientRect();
-    if (!rect.width) return false; // Home window hidden or minimised: nothing to animate
-    const cx = rect.left + rect.width / 2;
-    const cy = rect.top + rect.height * 0.43; // measure from the eye line, not the frame centre
-    const reach = rect.width * REACH;
-    targetX = clamp1((pointer.x - cx) / reach);
-    targetY = clamp1((pointer.y - cy) / reach);
-    setBrowRaise(browTargetFor(rect), character.offsetWidth);
-    return true;
+  // ---- frame ---------------------------------------------------------------
+  function tick(ts) {
+    raf = visible ? requestAnimationFrame(tick) : 0;
+    const dt = Math.min(0.05, (ts - last) / 1000); last = ts;
+    const now = ts / 1000;
+    if (!scale) measure();
+    if (!scale) return;
+
+    if (!glance) aim();
+    stepBlink(dt);
+    stepIdle(now, dt);
+    stepZoom();
+
+    gaze.x += (target.x - gaze.x) * o.easeEyes;
+    gaze.y += (target.y - gaze.y) * o.easeEyes;
+    const leanTarget = glance ? { x: target.x * 0.35, y: target.y * 0.25 } : target;
+    lean.x += (leanTarget.x - lean.x) * o.easeHead;
+    lean.y += (leanTarget.y - lean.y) * o.easeHead;
+
+    // hair spring chases the head with overshoot
+    hairV.x = (hairV.x + (lean.x - hairP.x) * o.hairSpring.stiffness) * o.hairSpring.damping;
+    hairV.y = (hairV.y + (lean.y - hairP.y) * o.hairSpring.stiffness) * o.hairSpring.damping;
+    hairP.x += hairV.x; hairP.y += hairV.y;
+
+    // idle breathing / sway (amplitudes in canvas px, kept tiny)
+    let br = 0, sw = 0, bob = 0;
+    if (!reducedMotion) {
+      br = Math.sin(now * 2 * Math.PI / 4.6);        // breath cycle ~4.6s
+      sw = Math.sin(now * 2 * Math.PI / 7.3) * 0.6;  // slow sway
+      bob = Math.sin(now * 2 * Math.PI / 4.6 + 0.6);
+    }
+    if (nod > 0) nod = Math.max(0, nod - dt * 2.2);
+    const nodY = Math.sin(nod * Math.PI) * 5;
+
+    const s = scale, hm = reducedMotion ? 0 : 1;
+    body.style.transform = 'translate(' + (lean.x * o.body.x * s * hm) + 'px,' + ((lean.y * o.body.y + br * 0.8) * s * hm) + 'px)';
+    head.style.transform = 'translate(' + ((lean.x * o.head.x + sw * 0.8) * s * hm) + 'px,' + ((lean.y * o.head.y + bob * 0.9 + nodY) * s * hm) + 'px) rotate(' + ((lean.x * o.head.rot + sw * 0.15) * hm) + 'deg)';
+    hair.style.transform = 'translate(' + ((hairP.x * o.hair.x + sw * 0.9) * s * hm) + 'px,' + ((hairP.y * o.hair.y + bob * 1.0 + nodY * 1.05) * s * hm) + 'px) rotate(' + ((hairP.x * o.hair.rot + sw * 0.17) * hm) + 'deg)';
+
+    const px = gaze.x * o.eyes.x, py = gaze.y * o.eyes.y - nodY * 0.2;
+    for (let i = 0; i < pupils.length; i++) pupils[i].setAttribute('transform', 'translate(' + px.toFixed(2) + ' ' + py.toFixed(2) + ')');
+    for (let j = 0; j < lids.length; j++) {
+      const h = +lids[j].getAttribute('data-h');
+      lids[j].setAttribute('transform', 'translate(0 ' + (blink * h).toFixed(2) + ')');
+      // the open-eye lash fades into the closed-eye crease as the lid comes down
+      lashes[j].style.opacity = (1 - 0.4 * blink * blink).toFixed(3);
+      lidlines[j].style.opacity = (blink * blink).toFixed(3);
+    }
   }
 
-  function tick() {
-    raf = null;
-    if (!updateTarget()) return;
-
-    eyeX += (targetX - eyeX) * EYE_EASE;
-    eyeY += (targetY - eyeY) * EYE_EASE;
-    headX += (targetX - headX) * HEAD_EASE;
-    headY += (targetY - headY) * HEAD_EASE;
-
-    const s = character.style;
-    s.setProperty('--gaze-x', fmt(eyeX * GAZE_MAX_X) + '%');
-    s.setProperty('--gaze-y', fmt(eyeY * GAZE_MAX_Y) + '%');
-    s.setProperty('--head-x', fmt(headX * HEAD_MAX_X) + '%');
-    s.setProperty('--head-y', fmt(headY * HEAD_MAX_Y) + '%');
-
-    const settled = Math.abs(targetX - eyeX) < 0.002 && Math.abs(targetY - eyeY) < 0.002 &&
-                    Math.abs(targetX - headX) < 0.002 && Math.abs(targetY - headY) < 0.002;
-    if (!settled) raf = requestAnimationFrame(tick);
+  // ---- run only while on screen ---------------------------------------------
+  function setVisible(v) {
+    visible = v && !document.hidden;
+    if (visible && !raf) { last = performance.now(); measure(); raf = requestAnimationFrame(tick); }
   }
-
-  function rest() {
-    pointer = null;
-    schedule();
+  let onScreen = true;
+  if ('IntersectionObserver' in window) {
+    onScreen = false;
+    // bringToFront()/showView() re-insert the Home card in the DOM, which delivers a
+    // "left, re-entered" pair in one batch: only the latest entry counts.
+    new IntersectionObserver(entries => {
+      onScreen = entries[entries.length - 1].isIntersecting;
+      setVisible(onScreen);
+    }).observe(character);
   }
-
-  function onPointerMove(e) {
-    pointer = { x: e.clientX, y: e.clientY };
-    clearTimeout(restTimer);
-    restTimer = setTimeout(rest, REST_AFTER);
-    schedule();
-  }
-
-  function onLeave() {
-    clearTimeout(restTimer);
-    rest();
-  }
-
-  document.addEventListener('pointermove', onPointerMove, { passive: true });
-  document.documentElement.addEventListener('mouseleave', onLeave);
+  if ('ResizeObserver' in window) new ResizeObserver(measure).observe(stage);
+  else window.addEventListener('resize', measure);
+  document.addEventListener('visibilitychange', () => setVisible(onScreen));
+  setVisible(onScreen);
 })();
 // --- Glass Dialog (themed replacement for alert/confirm/prompt) ---
 // Resolves: alert -> true; confirm -> true/false; input -> string or null

@@ -119,38 +119,60 @@
           <div class="card-content profile-section">
             <div class="profile-avatar">
               <div class="profile-avatar-frame">
-                <!-- Interactive character: no-iris portrait, moving iris sprites, eyelid occlusion on top.
-                     Driven by initProfileCharacter() in script.js; geometry in styles.css (.avatar-*). -->
-                <div class="avatar-character" id="profileCharacter">
-                  <!-- Static scene: the full portrait stays put -->
-                  <img class="avatar-layer" src="assets/character/base-600.jpg"
-                    alt="Anand Mohankumar" width="600" height="600" draggable="false" decoding="async">
-                  <!-- Moving figure: the same portrait masked to the head silhouette, plus the eyes and brows -->
-                  <div class="avatar-figure" aria-hidden="true">
-                    <img class="avatar-layer avatar-cutout" src="assets/character/base-600.jpg"
-                      alt="" width="600" height="600" draggable="false" decoding="async">
-                    <div class="avatar-eye avatar-eye--left">
-                      <img class="avatar-iris" src="assets/character/left-iris.png" alt=""
-                        width="256" height="256" draggable="false" decoding="async">
-                      <img class="avatar-occlusion" src="assets/character/left-eye-occlusion.png" alt=""
-                        width="145" height="95" draggable="false" decoding="async">
+                <!-- Interactive character (paper-cut portrait, layers in assets/avatar/). Layers share one
+                     1254px canvas: head + SVG eyes, hair, shirt. Driven by initProfileCharacter() in
+                     script.js; layout in styles.css (.avatar-*). The canvas is oversized inside the
+                     circle so the face fills the frame. -->
+                <div class="avatar-character" id="profileCharacter" role="img"
+                  aria-label="Anand Mohankumar, illustrated portrait that follows the cursor">
+                  <div class="avatar-stage" aria-hidden="true">
+                    <div class="av-layer av-head">
+                      <img src="assets/avatar/head-400.png" alt="" width="400" height="400" draggable="false" decoding="async" loading="lazy">
+                      <!-- Eyes overlay: pupils translate for gaze, lids translate down to blink -->
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1254 1254" class="av-eyes" aria-hidden="true">
+                        <defs>
+                          <path id="av-eyeL" d="M424 531 Q484 446 544 519 Q490 596 424 531 Z"/>
+                          <path id="av-eyeR" d="M632 526 Q696 432 760 510 Q702 586 632 526 Z"/>
+                          <clipPath id="av-clipL"><use href="#av-eyeL"/></clipPath>
+                          <clipPath id="av-clipR"><use href="#av-eyeR"/></clipPath>
+                        </defs>
+                        <g class="av-eye">
+                          <use href="#av-eyeL" class="av-sclera"/>
+                          <g clip-path="url(#av-clipL)">
+                            <g class="av-pupil">
+                              <circle class="av-iris" cx="487" cy="527" r="29"/>
+                              <circle class="av-pupil-dot" cx="487" cy="527" r="13"/>
+                              <circle class="av-shine" cx="477" cy="517" r="5"/>
+                            </g>
+                            <g class="av-lid" data-h="84">
+                              <path d="M400 392 H570 V470 Q486 494 400 470 Z"/>
+                              <path class="av-lidline" d="M424 446 Q486 468 548 446"/>
+                            </g>
+                          </g>
+                          <path class="av-lash" d="M430 528 Q484 452 540 517"/>
+                        </g>
+                        <g class="av-eye">
+                          <use href="#av-eyeR" class="av-sclera"/>
+                          <g clip-path="url(#av-clipR)">
+                            <g class="av-pupil">
+                              <circle class="av-iris" cx="700" cy="517" r="29"/>
+                              <circle class="av-pupil-dot" cx="700" cy="517" r="13"/>
+                              <circle class="av-shine" cx="690" cy="507" r="5"/>
+                            </g>
+                            <g class="av-lid" data-h="84">
+                              <path d="M610 382 H790 V460 Q698 484 610 460 Z"/>
+                              <path class="av-lidline" d="M636 436 Q698 458 764 436"/>
+                            </g>
+                          </g>
+                          <path class="av-lash" d="M638 523 Q696 438 755 510"/>
+                        </g>
+                      </svg>
                     </div>
-                    <div class="avatar-eye avatar-eye--right">
-                      <img class="avatar-iris" src="assets/character/right-iris.png" alt=""
-                        width="256" height="256" draggable="false" decoding="async">
-                      <img class="avatar-occlusion" src="assets/character/right-eye-occlusion.png" alt=""
-                        width="145" height="95" draggable="false" decoding="async">
+                    <div class="av-layer av-hair">
+                      <img src="assets/avatar/hair-400.png" alt="" width="400" height="400" draggable="false" decoding="async" loading="lazy">
                     </div>
-                    <!-- Eyebrow expression: neutral is the default, raised crossfades in as the cursor nears the face -->
-                    <div class="avatar-brows">
-                      <img class="avatar-brow avatar-brow--left avatar-brow--neutral" src="assets/character/brows-neutral.png"
-                        alt="" width="139" height="53" draggable="false" decoding="async">
-                      <img class="avatar-brow avatar-brow--left avatar-brow--raised" src="assets/character/brows-raised.png"
-                        alt="" width="142" height="58" draggable="false" decoding="async">
-                      <img class="avatar-brow avatar-brow--right avatar-brow--neutral" src="assets/character/brows-neutral.png"
-                        alt="" width="139" height="53" draggable="false" decoding="async">
-                      <img class="avatar-brow avatar-brow--right avatar-brow--raised" src="assets/character/brows-raised.png"
-                        alt="" width="142" height="58" draggable="false" decoding="async">
+                    <div class="av-layer av-body">
+                      <img src="assets/avatar/body-400.png" alt="" width="400" height="400" draggable="false" decoding="async" loading="lazy">
                     </div>
                   </div>
                 </div>
