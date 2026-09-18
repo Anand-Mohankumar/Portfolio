@@ -1,0 +1,47 @@
+<!doctype html>
+<!-- CyberAmo slide, 1920 x 1080 (16:9). Use as a slide image, or render with the text removed
+     as a background image for an editable PPTX slide (see references/pptx.md).
+     Render: python scripts/render.py this.html out.png --width 1920 --height 1080 --scale 1
+     Type floor at 1x: title >= 56px, body >= 28px, captions >= 22px. -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Slide</title>
+<link rel="stylesheet" href="../theme.css">
+<style>
+  .canvas { width: 1920px; height: 1080px; }
+  .content { padding: 88px 112px; display: flex; flex-direction: column; }
+  .eyebrow { font-size: 22px; }
+  .headline { font-size: 64px; margin-top: 16px; max-width: 24ch; }
+  .subhead { font-size: 30px; margin-top: 18px; max-width: 50ch; }
+  .grid-3 { margin-top: 56px; }
+  .panel { padding: 32px 36px; }
+  .panel-label { font-size: 15px; }
+  .panel h3 { margin: 0 0 10px; font-size: 30px; color: var(--text); font-weight: 600; }
+  .panel p { font-size: 24px; color: var(--text-secondary); margin: 0; }
+  .brand-footer { margin-top: auto; font-size: 20px; }
+</style>
+</head>
+<body>
+<div class="canvas">
+  <div class="ambient preset-1">
+    <div class="blob orange"></div><div class="blob teal"></div><div class="blob burnt"></div>
+    <div class="vignette"></div>
+  </div>
+  <div class="content">
+    <p class="eyebrow">Section</p>
+    <h1 class="headline">Slide title</h1>
+    <p class="subhead">Supporting sentence.</p>
+    <div class="grid-3 gap-6">
+      <div class="panel"><div class="panel-label">One</div><h3>Point</h3><p>Detail.</p></div>
+      <div class="panel"><div class="panel-label">Two</div><h3>Point</h3><p>Detail.</p></div>
+      <div class="panel"><div class="panel-label">Three</div><h3>Point</h3><p>Detail.</p></div>
+    </div>
+    <div class="brand-footer">
+      <span class="wordmark">Cyber<b>Amo</b></span>
+      <span>cyberamo.work</span>
+    </div>
+  </div>
+</div>
+</body>
+</html>

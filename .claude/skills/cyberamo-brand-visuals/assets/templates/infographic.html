@@ -1,0 +1,74 @@
+<!doctype html>
+<!-- CyberAmo infographic. Width is fixed; height grows with content and the renderer measures it.
+     Site gallery images are 1376 x 768 landscape; for those use --width 1376 --height 768.
+     For long-form (LinkedIn document, blog) use --width 1200 --height auto.
+     Render: python scripts/render.py this.html out.png --width 1376 --height auto --scale 2
+     Type floor at 1x for a 1376px wide board: title >= 44px, section heads >= 22px,
+     body >= 17px, captions >= 15px. Nothing smaller: the gallery thumbnail is 400px wide
+     and viewers zoom the full image, so 15px is the smallest that survives. -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Infographic</title>
+<link rel="stylesheet" href="../theme.css">
+<style>
+  .canvas { width: 1376px; min-height: 768px; }
+  .content { min-height: 768px; padding: 40px 44px 32px; display: flex; flex-direction: column; gap: 24px; }
+  .brand-footer { margin-top: auto; }
+  header { display: flex; align-items: flex-end; justify-content: space-between; gap: 32px; }
+  .headline { font-size: 46px; max-width: 22ch; }
+  .subhead { font-size: 19px; margin-top: 10px; max-width: 60ch; }
+  .eyebrow { font-size: 15px; }
+  .panel { padding: 22px 24px; }
+  .panel-label { font-size: 13px; }
+  .panel h3 { margin: 0 0 8px; font-size: 22px; color: var(--text); font-weight: 600; }
+  .panel p, .panel li { font-size: 17px; color: var(--text-secondary); margin: 0; }
+  .panel ul { margin: 0; padding-left: 20px; }
+  .panel li + li { margin-top: 6px; }
+  .num { font-size: 40px; }
+  .caption { font-size: 15px; color: var(--text-muted); }
+  .brand-footer { font-size: 15px; padding-top: 8px; border-top: 1px solid var(--hairline); }
+</style>
+</head>
+<body>
+<div class="canvas">
+  <div class="ambient preset-2">
+    <div class="blob teal"></div><div class="blob orange"></div><div class="blob teal-soft"></div>
+    <div class="vignette"></div>
+  </div>
+  <div class="content">
+    <header>
+      <div>
+        <p class="eyebrow">Topic</p>
+        <h1 class="headline">Infographic title</h1>
+        <p class="subhead">One sentence describing what the reader gets.</p>
+      </div>
+      <span class="pill orange">Optional badge</span>
+    </header>
+
+    <div class="grid-3 gap-4">
+      <section class="panel">
+        <div class="panel-label">1. Section</div>
+        <h3>Section title</h3>
+        <p>Body copy for this section.</p>
+      </section>
+      <section class="panel">
+        <div class="panel-label">2. Section</div>
+        <h3>Section title</h3>
+        <ul><li>Point one</li><li>Point two</li></ul>
+      </section>
+      <section class="panel accent">
+        <div class="panel-label">Metric</div>
+        <div class="num">80%</div>
+        <p class="caption">What the number means.</p>
+      </section>
+    </div>
+
+    <div class="brand-footer">
+      <span class="wordmark">Cyber<b>Amo</b></span>
+      <span>cyberamo.work</span>
+    </div>
+  </div>
+</div>
+</body>
+</html>

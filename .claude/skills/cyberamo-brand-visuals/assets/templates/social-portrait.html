@@ -1,0 +1,55 @@
+<!doctype html>
+<!-- CyberAmo social post, 1080 x 1350 (Instagram portrait, LinkedIn feed).
+     Render: python scripts/render.py this.html out.png --width 1080 --height 1350 --scale 2
+     Type floor at 1x: headline >= 64px, body >= 30px, list items >= 28px, footer >= 24px. -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Social post portrait</title>
+<link rel="stylesheet" href="../theme.css">
+<style>
+  .canvas { width: 1080px; height: 1350px; }
+  .content { padding: 72px; display: flex; flex-direction: column; }
+  .eyebrow { font-size: 24px; }
+  .headline { font-size: 72px; margin-top: 20px; }
+  .subhead { font-size: 32px; margin-top: 20px; max-width: 28ch; }
+  .list { margin-top: 44px; gap: 20px; }
+  .item { padding: 26px 30px; display: flex; gap: 22px; align-items: flex-start; }
+  .item .step-num { font-size: 26px; }
+  .item h3 { margin: 0; font-size: 32px; color: var(--text); font-weight: 600; }
+  .item p { margin: 6px 0 0; font-size: 27px; color: var(--text-secondary); }
+  .brand-footer { margin-top: auto; font-size: 24px; }
+</style>
+</head>
+<body>
+<div class="canvas">
+  <div class="ambient preset-2">
+    <div class="blob teal"></div><div class="blob orange"></div><div class="blob teal-soft"></div>
+    <div class="vignette"></div>
+  </div>
+  <div class="content">
+    <p class="eyebrow">Eyebrow label</p>
+    <h1 class="headline">A list style headline</h1>
+    <p class="subhead">Supporting sentence.</p>
+    <div class="stack list">
+      <div class="panel solid item">
+        <span class="step-num">1</span>
+        <div><h3>First point</h3><p>One sentence of explanation.</p></div>
+      </div>
+      <div class="panel solid item">
+        <span class="step-num">2</span>
+        <div><h3>Second point</h3><p>One sentence of explanation.</p></div>
+      </div>
+      <div class="panel solid item">
+        <span class="step-num">3</span>
+        <div><h3>Third point</h3><p>One sentence of explanation.</p></div>
+      </div>
+    </div>
+    <div class="brand-footer">
+      <span class="wordmark">Cyber<b>Amo</b></span>
+      <span>cyberamo.work</span>
+    </div>
+  </div>
+</div>
+</body>
+</html>

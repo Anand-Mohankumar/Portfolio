@@ -1,0 +1,44 @@
+<!doctype html>
+<!-- CyberAmo story / reel cover, 1080 x 1920 (Instagram and LinkedIn stories).
+     Render: python scripts/render.py this.html out.png --width 1080 --height 1920 --scale 2
+     Keep everything inside the safe zone: 250px from the top and bottom edges are covered
+     by platform UI. Type floor at 1x: headline >= 80px, body >= 34px. -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Story</title>
+<link rel="stylesheet" href="../theme.css">
+<style>
+  .canvas { width: 1080px; height: 1920px; }
+  .content { padding: 250px 80px; display: flex; flex-direction: column; justify-content: center; }
+  .eyebrow { font-size: 28px; }
+  .headline { font-size: 92px; margin-top: 24px; }
+  .subhead { font-size: 38px; margin-top: 28px; }
+  .panel { padding: 44px 48px; margin-top: 56px; }
+  .panel-label { font-size: 22px; }
+  .body { font-size: 36px; }
+  .brand-footer { margin-top: 64px; font-size: 28px; }
+</style>
+</head>
+<body>
+<div class="canvas">
+  <div class="ambient preset-1">
+    <div class="blob orange"></div><div class="blob teal"></div><div class="blob burnt"></div>
+    <div class="vignette"></div>
+  </div>
+  <div class="content">
+    <p class="eyebrow">Eyebrow label</p>
+    <h1 class="headline">Tall format headline</h1>
+    <p class="subhead">Supporting sentence.</p>
+    <div class="panel solid">
+      <div class="panel-label">Key point</div>
+      <p class="body">The single idea this story carries.</p>
+    </div>
+    <div class="brand-footer">
+      <span class="wordmark">Cyber<b>Amo</b></span>
+      <span>cyberamo.work</span>
+    </div>
+  </div>
+</div>
+</body>
+</html>

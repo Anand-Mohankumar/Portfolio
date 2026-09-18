@@ -1,0 +1,224 @@
+/* CyberAmo brand theme for rendered visuals (social posts, infographics, slides).
+   Source of truth: Designguide.md and BrandStyleGuide.md in the repo root.
+   Every value here is a pixel value at 1x; scale comes from the renderer, not the CSS. */
+
+@font-face {
+  font-family: 'Google Sans';
+  src: local('Google Sans'), local('GoogleSans'), local('Google Sans Regular');
+  font-weight: 100 900;
+}
+
+:root {
+  /* Colors */
+  --bg: #12181A;
+  --bg-deep: #0A0F14;
+  --orange: #C45A2A;
+  --orange-deep: #8B2E0E;
+  --teal: #1F4F55;
+  --teal-deep: #0D3D3A;
+  --teal-soft: #1A4A45;
+  --teal-link: #7EC8C8;
+  --green: #4CD964;
+  --text: #FFFFFF;
+  --text-body: #E8EFF5;
+  --text-secondary: rgba(255, 255, 255, 0.72);
+  --text-muted: rgba(255, 255, 255, 0.55);
+  --glass: rgba(40, 45, 55, 0.55);
+  --glass-solid: rgba(40, 45, 55, 0.78);   /* use behind dense text */
+  --glass-dark: rgba(20, 25, 30, 0.6);
+  --glass-deep: rgba(10, 15, 20, 0.6);
+  --border: rgba(255, 255, 255, 0.12);
+  --border-strong: rgba(255, 255, 255, 0.2);
+  --hairline: rgba(255, 255, 255, 0.08);
+
+  /* Type */
+  --font-ui: 'Google Sans', 'Inter', 'Segoe UI', system-ui, sans-serif;
+  --font-mono: 'Fira Code', 'JetBrains Mono', 'Cascadia Code', 'Consolas', monospace;
+
+  /* Shape */
+  --r-panel: 16px;
+  --r-card: 12px;
+  --r-pill: 999px;
+
+  /* Spacing scale */
+  --s-1: 4px; --s-2: 8px; --s-3: 12px; --s-4: 16px; --s-5: 20px;
+  --s-6: 24px; --s-8: 32px; --s-10: 40px; --s-12: 48px; --s-16: 64px;
+}
+
+* { box-sizing: border-box; }
+
+html, body { margin: 0; padding: 0; }
+
+body {
+  background: var(--bg);
+  color: var(--text-body);
+  font-family: var(--font-ui);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  line-height: 1.35;
+}
+
+/* ---------- Canvas: the fixed-size artboard ---------- */
+.canvas {
+  position: relative;
+  overflow: hidden;
+  background: var(--bg);
+  isolation: isolate;
+}
+
+/* ---------- Ambient background: soft blurred colour fields ----------
+   Blobs are decorative. Keep text off the brightest part of the orange blob,
+   or place it inside a panel: the panel's blur and tint restore contrast. */
+.ambient { position: absolute; inset: 0; z-index: 0; pointer-events: none; }
+.blob { position: absolute; border-radius: 50%; filter: blur(140px); opacity: 0.55; }
+.blob.orange { background: var(--orange); }
+.blob.burnt  { background: var(--orange-deep); }
+.blob.teal   { background: var(--teal-deep); }
+.blob.teal-soft { background: var(--teal-soft); }
+.ambient .vignette {
+  position: absolute; inset: 0;
+  background: radial-gradient(120% 90% at 50% 40%, transparent 55%, rgba(10, 15, 20, 0.55) 100%);
+}
+
+/* A ready-made arrangement; override positions per composition if needed */
+.ambient.preset-1 .blob.orange { width: 55%; height: 55%; left: -12%; top: -18%; }
+.ambient.preset-1 .blob.teal   { width: 60%; height: 60%; right: -18%; bottom: -22%; }
+.ambient.preset-1 .blob.burnt  { width: 35%; height: 35%; right: 8%; top: -10%; opacity: 0.35; }
+.ambient.preset-2 .blob.teal   { width: 65%; height: 50%; left: -15%; top: -10%; }
+.ambient.preset-2 .blob.orange { width: 50%; height: 50%; right: -10%; bottom: -15%; }
+.ambient.preset-2 .blob.teal-soft { width: 40%; height: 40%; left: 30%; bottom: -20%; opacity: 0.4; }
+
+/* ---------- Content layer ---------- */
+.content { position: relative; z-index: 1; height: 100%; }
+
+/* ---------- Glass panels ---------- */
+.panel {
+  background: var(--glass);
+  backdrop-filter: blur(40px) saturate(160%);
+  -webkit-backdrop-filter: blur(40px) saturate(160%);
+  border: 1px solid var(--border);
+  border-radius: var(--r-panel);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.06);
+}
+.panel.solid { background: var(--glass-solid); }      /* dense text, small type */
+.panel.dark  { background: var(--glass-dark); }
+.panel.deep  { background: var(--glass-deep); border-color: rgba(255, 255, 255, 0.06); }
+.panel.accent { border-color: rgba(196, 90, 42, 0.55); box-shadow: 0 0 0 1px rgba(196, 90, 42, 0.15), inset 0 1px 0 rgba(255,255,255,0.06); }
+
+.panel-label {
+  font-size: 0.72em;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  padding-bottom: var(--s-2);
+  margin-bottom: var(--s-3);
+  border-bottom: 1px solid var(--hairline);
+}
+
+/* ---------- Typography helpers (sizes set per template) ---------- */
+.headline { color: var(--text); font-weight: 700; letter-spacing: -0.02em; line-height: 1.08; margin: 0; }
+.headline .accent { color: var(--orange); }
+.headline .gradient {
+  background: linear-gradient(135deg, #E8EFF5 0%, #7EC8C8 100%);
+  -webkit-background-clip: text; background-clip: text; color: transparent;
+}
+.subhead { color: var(--text-secondary); font-weight: 400; line-height: 1.3; margin: 0; }
+.body { color: var(--text-body); line-height: 1.45; margin: 0; }
+.small { color: var(--text-secondary); line-height: 1.4; margin: 0; }
+.eyebrow { color: var(--orange); font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; margin: 0; }
+.mono { font-family: var(--font-mono); }
+.num { color: var(--orange); font-weight: 700; letter-spacing: -0.02em; line-height: 1; }
+
+/* ---------- Components ---------- */
+.pill {
+  display: inline-flex; align-items: center; gap: var(--s-2);
+  padding: 0.35em 0.9em;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: var(--r-pill);
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: 500;
+  white-space: nowrap;
+}
+.pill.orange { border-color: rgba(196, 90, 42, 0.6); color: #F1B08F; background: rgba(196, 90, 42, 0.14); }
+.pill.green  { border-color: rgba(76, 217, 100, 0.45); color: #8CF0A3; background: rgba(76, 217, 100, 0.1); }
+
+.step-num {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 2em; height: 2em; flex: none;
+  border-radius: 50%;
+  background: rgba(196, 90, 42, 0.18);
+  border: 1px solid rgba(196, 90, 42, 0.6);
+  color: #F1B08F; font-weight: 700;
+}
+
+.divider { height: 1px; background: var(--hairline); border: 0; margin: var(--s-4) 0; }
+.accent-bar { width: 44px; height: 4px; border-radius: 2px; background: var(--orange); }
+
+.terminal {
+  background: var(--glass-deep);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 8px;
+  font-family: var(--font-mono);
+  color: #D6DEE5;
+  padding: var(--s-4) var(--s-5);
+}
+.terminal .prompt { color: var(--green); }
+
+.card {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid var(--hairline);
+  border-radius: var(--r-card);
+  padding: var(--s-4);
+}
+
+/* Illustration slot: artwork cropped from a source image with its background knocked out
+   (scripts/crop.ps1 -Transparent) floats directly on the glass. Size the slot, not the
+   image. Add .paper when a crop still has its light background and needs a tile. */
+.illus {
+  display: flex; align-items: center; justify-content: center;
+  overflow: hidden;
+}
+.illus img { max-width: 100%; max-height: 100%; width: auto; height: auto; object-fit: contain; display: block;
+  filter: drop-shadow(0 6px 14px rgba(0, 0, 0, 0.35)); }
+.illus.paper {
+  background: linear-gradient(160deg, #F7F3EC 0%, #E6E9EC 100%);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 12px;
+  padding: 8px;
+}
+.illus.paper img { filter: none; }
+
+.bar { height: 10px; border-radius: 5px; background: rgba(255, 255, 255, 0.08); overflow: hidden; }
+.bar > i { display: block; height: 100%; border-radius: 5px; background: var(--orange); }
+.bar.green > i { background: var(--green); }
+
+.icon-tile {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 2.4em; height: 2.4em; flex: none;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid var(--hairline);
+}
+
+/* ---------- Layout helpers ---------- */
+.stack { display: flex; flex-direction: column; }
+.row { display: flex; flex-direction: row; align-items: center; }
+.grid-2 { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.grid-3 { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.grid-4 { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); }
+.gap-2 { gap: var(--s-2); } .gap-3 { gap: var(--s-3); } .gap-4 { gap: var(--s-4); }
+.gap-6 { gap: var(--s-6); } .gap-8 { gap: var(--s-8); }
+.grow { flex: 1 1 auto; min-width: 0; }
+.center { text-align: center; }
+
+/* ---------- Footer / attribution ---------- */
+.brand-footer {
+  display: flex; align-items: center; justify-content: space-between;
+  color: var(--text-muted);
+  font-weight: 500;
+  letter-spacing: 0.3px;
+}
+.brand-footer .wordmark { color: rgba(255, 255, 255, 0.85); font-weight: 600; }
+.brand-footer .wordmark b { color: var(--orange); font-weight: 600; }
