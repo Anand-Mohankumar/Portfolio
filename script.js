@@ -382,6 +382,7 @@ function getIconPosition(viewName) {
 function showView(viewName) {
   const card = cards[viewName];
   if (!card) return;
+  if (viewName === 'markdownify') loadMarkdownifyLibs();
 
   const isAlreadyOpen = openWindows.includes(viewName);
   const isMinimized = minimizedWindows.has(viewName);
@@ -987,10 +988,14 @@ if (termInput) {
 const canvas = document.getElementById('webgl-bg');
 const gl = canvas.getContext('webgl');
 
+// Render at CSS-pixel resolution, ignoring devicePixelRatio (4-9x fewer pixels on HiDPI).
+// The fluid is soft; going lower makes the shader grain visibly blocky.
+const BG_RENDER_SCALE = 1;
+const BG_FRAME_MS = 1000 / 30;
+
 function resizeGL() {
-  const currentDpr = window.devicePixelRatio || 1;
-  canvas.width = window.innerWidth * currentDpr;
-  canvas.height = window.innerHeight * currentDpr;
+  canvas.width = Math.round(window.innerWidth * BG_RENDER_SCALE);
+  canvas.height = Math.round(window.innerHeight * BG_RENDER_SCALE);
   canvas.style.width = window.innerWidth + "px";
   canvas.style.height = window.innerHeight + "px";
   gl.viewport(0, 0, canvas.width, canvas.height);
@@ -1123,9 +1128,15 @@ function drawFrame() {
   gl.drawArrays(gl.TRIANGLES, 0, 6);
 }
 
-function render() {
+let lastBgFrame = 0;
+function render(now) {
   if (!bgRunning) return;
-  drawFrame();
+  const elapsed = now - lastBgFrame;
+  // Small tolerance so a 60Hz display lands on every 2nd frame despite timer jitter
+  if (elapsed >= BG_FRAME_MS - 2) {
+    lastBgFrame = now - (elapsed % BG_FRAME_MS);
+    drawFrame();
+  }
   requestAnimationFrame(render);
 }
 
@@ -1185,6 +1196,28 @@ const mdfyToggleVisual = document.getElementById('mdfy-toggle-visual');
 const mdfyToggleSource = document.getElementById('mdfy-toggle-source');
 const mdfyBtnDownload = document.getElementById('mdfy-btn-download');
 const mdfyBtnCopy = document.getElementById('mdfy-btn-copy');
+
+// Markdownify libs load on first open instead of blocking every page load
+let mdfyLibsPromise = null;
+function loadMarkdownifyLibs() {
+  if (mdfyLibsPromise) return mdfyLibsPromise;
+  const load = src => new Promise((resolve, reject) => {
+    const s = document.createElement('script');
+    s.src = src;
+    s.onload = resolve;
+    s.onerror = reject;
+    document.body.appendChild(s);
+  });
+  mdfyLibsPromise = Promise.all([
+    load('https://unpkg.com/turndown/dist/turndown.js')
+      .then(() => load('https://unpkg.com/turndown-plugin-gfm/dist/turndown-plugin-gfm.js')),
+    load('https://cdn.jsdelivr.net/npm/marked/marked.min.js')
+  ]).catch(err => {
+    mdfyLibsPromise = null; // allow retry on next open
+    console.error('Markdownify libraries failed to load', err);
+  });
+  return mdfyLibsPromise;
+}
 
 let turndownService = null;
 function initTurndown() {
