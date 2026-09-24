@@ -383,6 +383,7 @@ function showView(viewName) {
   const card = cards[viewName];
   if (!card) return;
   if (viewName === 'markdownify') loadMarkdownifyLibs();
+  pulseBackground(card);
 
   const isAlreadyOpen = openWindows.includes(viewName);
   const isMinimized = minimizedWindows.has(viewName);
@@ -497,6 +498,7 @@ function showView(viewName) {
 function bringToFront(winEl) {
   // Find this window's name so we can reorder openWindows
   const viewName = Object.keys(cards).find(key => cards[key] === winEl);
+  if (!winEl.classList.contains('active-window')) pulseBackground(winEl);
 
   // Promote to top of openWindows stack (move to end = foreground)
   if (viewName && openWindows.includes(viewName)) {
@@ -1015,6 +1017,10 @@ const fragmentSrc = `
       precision highp float;
       uniform float u_time;
       uniform vec2 u_res;
+      uniform vec2 u_mouse;     // smoothed pointer, 0-1 uv
+      uniform float u_hover;    // 0-1, fades in while the pointer is over the page
+      uniform vec2 u_pulsePos;  // where the last window opened/focused
+      uniform float u_pulse;    // 1 -> 0 as the ripple expands
 
       // Pseudo-random function for glass grain
       float random(vec2 st) {
@@ -1023,7 +1029,29 @@ const fragmentSrc = `
 
       void main() {
         vec2 uv = gl_FragCoord.xy / u_res.xy;
-        
+        vec2 aspect = vec2(u_res.x / u_res.y, 1.0);
+
+        // Cursor lens: swirl the fluid around the pointer.
+        // Compiled only into the INTERACTIVE variant, so idle frames cost the same as before.
+        float mInfluence = 0.0;
+        float ring = 0.0;
+        #ifdef INTERACTIVE
+        {
+          vec2 md = (uv - u_mouse) * aspect;
+          mInfluence = exp(-dot(md, md) * 9.0) * u_hover;
+          uv += vec2(-md.y, md.x) * mInfluence * 0.9 / aspect; // small-angle rotation, no trig
+        }
+
+        // Window ripple: an expanding ring that pushes the fluid outward
+        {
+          vec2 pd = (uv - u_pulsePos) * aspect;
+          float pDist = length(pd) + 1e-4;
+          float rd = (pDist - (1.0 - u_pulse) * 0.9) * 14.0;
+          ring = exp(-rd * rd) * u_pulse;
+          uv += pd / pDist / aspect * ring * 0.06;
+        }
+        #endif
+
         // 1. Frosted Glass Distortion
         // Reduced intensity for cleaner abstract look
         float grain = random(uv * 3.0 + u_time * 0.05); 
@@ -1074,6 +1102,10 @@ const fragmentSrc = `
         col = mix(col, c_brick,  smoothstep(0.7, 0.85, v)); 
         col = mix(col, c_lava,   smoothstep(0.85, 1.0, v)); // Highest peaks get lava glow
         
+        // Warm glow under the cursor, and a faint light on the ripple crest
+        col += c_orange * mInfluence * 0.32;
+        col += vec3(0.9, 0.55, 0.35) * ring * 0.18;
+
         // 3. Texture Finish
         // Blend grain for paper/glass feel
         float grainStrength = 0.04;
@@ -1094,11 +1126,21 @@ function compile(type, src) {
   return s;
 }
 
-const program = gl.createProgram();
-gl.attachShader(program, compile(gl.VERTEX_SHADER, vertexSrc));
-gl.attachShader(program, compile(gl.FRAGMENT_SHADER, fragmentSrc));
-gl.linkProgram(program);
-gl.useProgram(program);
+// Two variants of the same shader: plain (idle) and INTERACTIVE (cursor lens + ripple).
+// drawFrame picks the cheaper one whenever no effect is visible.
+function makeProgram(defines) {
+  const p = gl.createProgram();
+  gl.attachShader(p, compile(gl.VERTEX_SHADER, vertexSrc));
+  gl.attachShader(p, compile(gl.FRAGMENT_SHADER, defines + fragmentSrc));
+  gl.linkProgram(p);
+  const u = name => gl.getUniformLocation(p, name);
+  return {
+    p, pos: gl.getAttribLocation(p, 'position'),
+    uTime: u('u_time'), uRes: u('u_res'), uMouse: u('u_mouse'),
+    uHover: u('u_hover'), uPulsePos: u('u_pulsePos'), uPulse: u('u_pulse')
+  };
+}
+const bgPrograms = { idle: makeProgram(''), fx: makeProgram('#define INTERACTIVE\n') };
 
 const buffer = gl.createBuffer();
 gl.bindBuffer(gl.ARRAY_BUFFER, buffer);
@@ -1107,12 +1149,51 @@ gl.bufferData(gl.ARRAY_BUFFER, new Float32Array([
   -1, 1, 1, -1, 1, 1
 ]), gl.STATIC_DRAW);
 
-const pos = gl.getAttribLocation(program, 'position');
-gl.enableVertexAttribArray(pos);
-gl.vertexAttribPointer(pos, 2, gl.FLOAT, false, 0, 0);
+// Both programs bind 'position' from the same buffer
+Object.values(bgPrograms).forEach(({ pos }) => {
+  gl.enableVertexAttribArray(pos);
+  gl.vertexAttribPointer(pos, 2, gl.FLOAT, false, 0, 0);
+});
 
-const uTime = gl.getUniformLocation(program, 'u_time');
-const uRes = gl.getUniformLocation(program, 'u_res');
+// Pointer state, smoothed with a critically-damped-ish spring each frame
+const bgPointer = { x: 0.5, y: 0.5, tx: 0.5, ty: 0.5, vx: 0, vy: 0, hover: 0, active: false };
+const bgPulse = { x: 0.5, y: 0.5, start: -1 };
+const BG_PULSE_MS = 1400;
+
+document.addEventListener('pointermove', e => {
+  bgPointer.tx = e.clientX / window.innerWidth;
+  bgPointer.ty = 1 - e.clientY / window.innerHeight; // GL y is bottom-up
+  bgPointer.active = true;
+}, { passive: true });
+document.documentElement.addEventListener('pointerleave', () => { bgPointer.active = false; });
+// Touch has no hover: let the glow follow a finger, then fade on release
+document.addEventListener('pointerup', e => { if (e.pointerType !== 'mouse') bgPointer.active = false; }, { passive: true });
+document.addEventListener('pointercancel', () => { bgPointer.active = false; }, { passive: true });
+window.addEventListener('blur', () => { bgPointer.active = false; });
+
+// Ripple the background from a window's centre (called on open / focus).
+// Measured after a short delay so an opening window has flown in from its dock icon.
+var bgPulseTimer = 0; // var: showView may run before this line executes
+function pulseBackground(el) {
+  if (!el) return;
+  clearTimeout(bgPulseTimer);
+  bgPulseTimer = setTimeout(() => {
+    const r = el.getBoundingClientRect();
+    if (!r.width) return;
+    bgPulse.x = (r.left + r.width / 2) / window.innerWidth;
+    bgPulse.y = 1 - (r.top + r.height / 2) / window.innerHeight;
+    bgPulse.start = performance.now();
+  }, 220);
+}
+
+function stepPointer() {
+  const k = 0.08, damp = 0.72;
+  bgPointer.vx = (bgPointer.vx + (bgPointer.tx - bgPointer.x) * k) * damp;
+  bgPointer.vy = (bgPointer.vy + (bgPointer.ty - bgPointer.y) * k) * damp;
+  bgPointer.x += bgPointer.vx;
+  bgPointer.y += bgPointer.vy;
+  bgPointer.hover += ((bgPointer.active ? 1 : 0) - bgPointer.hover) * 0.06;
+}
 
 resizeGL();
 
@@ -1123,8 +1204,19 @@ let bgRunning = false;
 
 function drawFrame() {
   const t = (performance.now() - start) * 0.001;
-  gl.uniform1f(uTime, t);
-  gl.uniform2f(uRes, canvas.width, canvas.height);
+  stepPointer();
+  const pulseT = bgPulse.start < 0 ? 1 : (performance.now() - bgPulse.start) / BG_PULSE_MS;
+  const pulse = pulseT < 1 ? 1 - pulseT : 0;
+  const prog = (bgPointer.hover > 0.01 || pulse > 0) ? bgPrograms.fx : bgPrograms.idle;
+  gl.useProgram(prog.p);
+  gl.uniform1f(prog.uTime, t);
+  gl.uniform2f(prog.uRes, canvas.width, canvas.height);
+  if (prog === bgPrograms.fx) {
+    gl.uniform2f(prog.uMouse, bgPointer.x, bgPointer.y);
+    gl.uniform1f(prog.uHover, bgPointer.hover);
+    gl.uniform2f(prog.uPulsePos, bgPulse.x, bgPulse.y);
+    gl.uniform1f(prog.uPulse, pulse);
+  }
   gl.drawArrays(gl.TRIANGLES, 0, 6);
 }
 
@@ -1155,6 +1247,28 @@ if (reducedMotion) {
   drawFrame(); // single static frame
 } else {
   startBg();
+}
+
+// Glass edge light: windows' borders catch a light that follows the cursor.
+// Mouse/trackpad only; one rAF-batched update per frame for the visible windows.
+if (window.matchMedia('(hover: hover) and (pointer: fine)').matches && !reducedMotion) {
+  let edgeX = 0, edgeY = 0, edgeRaf = 0;
+  const updateEdges = () => {
+    edgeRaf = 0;
+    openWindows.forEach(name => {
+      const w = cards[name];
+      if (!w || w.style.display === 'none') return;
+      const r = w.getBoundingClientRect();
+      w.style.setProperty('--edge-x', `${edgeX - r.left}px`);
+      w.style.setProperty('--edge-y', `${edgeY - r.top}px`);
+    });
+  };
+  document.addEventListener('pointermove', e => {
+    edgeX = e.clientX;
+    edgeY = e.clientY;
+    if (!edgeRaf) edgeRaf = requestAnimationFrame(updateEdges);
+  }, { passive: true });
+  document.body.classList.add('edge-light');
 }
 
 // Rotating Gradient Button Hover Tracking
