@@ -2,8 +2,10 @@
    career-bg.js  —  "Assurance Graph" background for cyberamo.work
    Replaces the fluid WebGL background with a role-themed scene:
 
-   Layer A  #webgl-bg   low-res WebGL "latent field" in the brand palette
-                        (charcoal / teal / rust), lit by the cursor, rippled by clicks.
+   Layer A  #webgl-bg   low-res WebGL ambient "frosted glass" field per BrandStyleGuide.md:
+                        very dark base with huge, blurred copper and deep-teal glows (palette
+                        sampled from the infographics) swirling like liquid glass, lit by the
+                        cursor, rippled by clicks.
    Layer B  #career-bg  2D knowledge graph. RFx questions drift in from the edges,
                         an orchestrator agent routes them across the graph to
                         evidence / answer-library nodes, and evidence-linked
@@ -71,8 +73,8 @@
     });
     const fallback = () => {
       glCanvas.style.background =
-        'radial-gradient(60% 50% at 25% 70%, rgba(196,90,42,.35), transparent 70%),' +
-        'radial-gradient(55% 55% at 78% 30%, rgba(31,79,85,.55), transparent 70%), #12181A';
+        'radial-gradient(60% 55% at 12% 10%, rgba(102,57,34,.85), transparent 70%),' +
+        'radial-gradient(60% 60% at 88% 90%, rgba(12,45,47,.95), transparent 70%), #0E1618';
       return { ok: false, resize() {}, draw() {}, setScale() {} };
     };
     if (!gl) return fallback();
@@ -93,16 +95,30 @@
         return mix(mix(hash(i), hash(i+vec2(1.,0.)), u.x),
                    mix(hash(i+vec2(0.,1.)), hash(i+vec2(1.,1.)), u.x), u.y);
       }
-      float fbm(vec2 p){
-        float v = 0.0, a = 0.5;
-        for (int i = 0; i < 4; i++){ v += a*noise(p); p = p*2.03 + vec2(1.7, 9.2); a *= 0.5; }
-        return v;
+      // one extremely soft colour blob (gaussian falloff: no edges at any size)
+      float blob(vec2 p, vec2 c, float r){ vec2 d = p - c; return exp(-dot(d, d) / (r*r)); }
+
+      // Four glows orbit the centre on slow ellipses. Each warm/teal pair stays on
+      // opposite sides (warm corner vs teal corner, as in the infographics) while the
+      // pairs swirl past each other; a low-frequency warp bends them like liquid.
+      // Returns weights: x = warm A, y = teal A, z = warm B, w = teal B.
+      vec4 glows(vec2 p, float asp){
+        float T = u_time;
+        vec2 w = vec2(noise(p*1.3 + vec2(0.0, T*0.05)), noise(p*1.3 + vec2(4.1, 7.3) - T*0.05)) - 0.5;
+        p += w * 0.3;
+        vec2 C = vec2(0.5*asp, 0.5);
+        float a1 = T*0.06, a2 = T*0.045 + 2.1;
+        vec2 cW1 = C + vec2(cos(a1 + 2.4)*0.42*asp, sin(a1 + 2.4)*0.40);   // warm, starts top-left
+        vec2 cT1 = C + vec2(cos(a1 - 0.74)*0.42*asp, sin(a1 - 0.74)*0.40); // teal, opposite corner
+        vec2 cW2 = C + vec2(cos(-a2)*0.30*asp, sin(-a2*1.3)*0.28);
+        vec2 cT2 = C + vec2(cos(-a2 + 3.14)*0.34*asp, sin(-a2*1.3 + 3.14)*0.30);
+        return vec4(blob(p, cW1, 0.42), blob(p, cT1, 0.60), blob(p, cW2, 0.26), blob(p, cT2, 0.48));
       }
+
       void main(){
         vec2 uv = gl_FragCoord.xy / u_res;
         float asp = u_res.x / u_res.y;
-        vec2 p = vec2(uv.x*asp, uv.y);
-        float t = u_time * 0.028;
+        vec2 p = vec2(uv.x*asp, uv.y);        // y up: uv.y = 1 is the top edge
 
         // click ripple: radial displacement + rim light
         vec2 rc = vec2(u_ripple.x*asp, u_ripple.y);
@@ -111,39 +127,49 @@
         float ring = u_ripple.w * exp(-pow((rd - u_ripple.z*0.42)*10.0, 2.0)) * exp(-u_ripple.z*1.4);
         p += (d / (rd + 1e-4)) * ring * 0.035;
 
-        // domain-warped latent field (large, slow shapes like the original fluid)
-        vec2 q = vec2(fbm(p*1.1 + vec2(0.0, t)), fbm(p*1.1 + vec2(5.2, -t)));
-        vec2 r = vec2(fbm(p*0.9 + 1.7*q + vec2(1.7, 9.2) + t*1.2),
-                      fbm(p*0.9 + 1.7*q + vec2(8.3, 2.8) - t));
-        float f = fbm(p*0.8 + 1.9*r);
+        // Palette sampled from the infographics' background margins (BrandStyleGuide.md
+        // "ambient wallpaper layer"): a very dark base, deep saturated teal, muted copper.
+        vec3 base  = vec3(0.055, 0.086, 0.094); // #0E1618
+        vec3 tealD = vec3(0.031, 0.141, 0.149); // #082426
+        vec3 tealC = vec3(0.047, 0.176, 0.184); // #0C2D2F
+        vec3 tealB = vec3(0.059, 0.196, 0.204); // #0F3234
+        vec3 warmC = vec3(0.306, 0.169, 0.106); // #4E2B1B
+        vec3 warmP = vec3(0.400, 0.224, 0.133); // #663922
+        vec3 orange = vec3(0.769, 0.353, 0.165); // #C45A2A (cursor light / ripple only)
 
-        vec3 deep     = vec3(0.039, 0.059, 0.078); // #0A0F14
-        vec3 charcoal = vec3(0.071, 0.094, 0.102); // #12181A
-        vec3 teal     = vec3(0.122, 0.310, 0.333); // #1F4F55
-        vec3 slate    = vec3(0.290, 0.330, 0.350);
-        vec3 orange   = vec3(0.769, 0.353, 0.165); // #C45A2A
-        vec3 brick    = vec3(0.420, 0.090, 0.050); // #6C180D
+        vec4 G = glows(p, asp);
+        vec3 col = base;
+        col = mix(col, tealD, clamp(G.w * 1.1, 0.0, 1.0));
+        col = mix(col, tealC, G.y * 0.95);
+        col = mix(col, tealB, G.y * G.y * 0.6);
+        col = mix(col, warmC * 0.8, G.z * 0.55);
+        col = mix(col, warmC, G.x * 0.95);
+        col = mix(col, warmP, G.x * G.x * 0.7);
 
-        vec3 col = mix(charcoal, teal, smoothstep(0.22, 0.52, q.y) * 0.95);
-        col = mix(col, deep,   smoothstep(0.55, 0.75, 1.0 - f) * 0.45);
-        col = mix(col, slate,  smoothstep(0.50, 0.75, f) * 0.38);
-        col = mix(col, brick,  smoothstep(0.38, 0.60, r.x) * 0.6);
-        col = mix(col, orange, smoothstep(0.48, 0.74, r.x) * 0.8);
-        col = mix(col, vec3(0.90, 0.12, 0.12), smoothstep(0.82, 0.96, r.x) * 0.12); // rare lava
+        // liquid-glass light: treat the glow field as a smooth liquid surface lit from the
+        // top-left; its light-facing slopes pick up a faint moving sheen
+        const float E = 0.02;
+        const vec4 K = vec4(1.0, 1.0, 0.8, 0.8);
+        float h = dot(G, K);
+        vec2 grad = vec2(dot(glows(p + vec2(E, 0.0), asp), K) - h,
+                         dot(glows(p + vec2(0.0, E), asp), K) - h) / E;
+        float slope = length(grad);
+        float facing = max(dot(grad / (slope + 1e-4), vec2(-0.6, 0.8)), 0.0);
+        col += vec3(0.62, 0.76, 0.80) * pow(facing, 3.0) * smoothstep(0.0, 1.6, slope) * 0.045;
 
         // cursor light (soft warm light under the glass)
         vec2 m = vec2(u_mouse.x*asp, u_mouse.y);
         float g = exp(-dot(p-m, p-m) * 9.0) * u_mouse.z;
-        col += orange * g * 0.16 + vec3(0.49, 0.78, 0.78) * g * 0.035;
+        col += orange * g * 0.12 + vec3(0.49, 0.78, 0.78) * g * 0.03;
 
-        col *= 0.92;
-        col += orange * ring * 0.22;
-        col *= 1.0 + u_energy * 0.22;
+        col += orange * ring * 0.2;
+        col *= 1.0 + u_energy * 0.2;
 
-        // vignette + fine grain
+        // vignette + static sub-LSB dither: prevents banding in the dark gradients
+        // without visible (or shimmering) grain
         vec2 v = uv - 0.5;
-        col *= 1.0 - dot(v, v) * 0.7;
-        col += (hash(gl_FragCoord.xy + fract(u_time*7.0)*91.0) - 0.5) * 0.028;
+        col *= 1.0 - dot(v, v) * 0.5;
+        col += (hash(gl_FragCoord.xy) - 0.5) / 255.0;
 
         gl_FragColor = vec4(col, 1.0);
       }`;
@@ -1268,8 +1294,22 @@
     Field.draw(time, { x: pointer.x, y: pointer.y, k: pointer.k * (pointer.onBg ? 1 : 0.6) }, fieldRipple, energy);
   }
 
+  // Pause while the scene is completely hidden (boot screen, a maximised window, or an
+  // open window filling a phone screen): if none of a 3×3 grid of sample points shows
+  // the desktop, nothing is visible, so don't spend GPU/battery rendering it.
+  const COVER_PTS = [0.12, 0.5, 0.88];
+  let covered = false;
+  function checkCovered() {
+    if (REDUCED || document.hidden) return;
+    const now = COVER_PTS.every((fy) => COVER_PTS.every((fx) => underUI(W * fx, H * (0.15 + fy * 0.7))));
+    if (now === covered) return;
+    covered = now;
+    if (covered) stop(); else start();
+  }
+  setInterval(checkCovered, 700);
+
   function start() {
-    if (running || REDUCED || document.hidden) return;
+    if (running || REDUCED || document.hidden || covered) return;
     running = true;
     last = performance.now();
     raf = requestAnimationFrame(frame);

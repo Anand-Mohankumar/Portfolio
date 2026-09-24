@@ -1,6 +1,11 @@
 // Realistic Linux Boot Sequence
-window.addEventListener('load', () => {
+// Starts as soon as the DOM is ready (not on `load`, which would wait for every image
+// and iframe on the page). Return visits in the same session get a quicker replay.
+document.addEventListener('DOMContentLoaded', () => {
   const bootText = document.getElementById('bootText');
+  let repeatVisit = false;
+  try { repeatVisit = sessionStorage.getItem('booted') === '1'; sessionStorage.setItem('booted', '1'); } catch (_) { /* storage blocked */ }
+  const [stepMin, stepRand, settle] = repeatVisit ? [25, 40, 250] : [60, 120, 500];
   const messages = [
     "[  <span class='log-green'>OK</span>  ] Started Update UTMP about System Runlevel Changes.",
     "[  <span class='log-green'>OK</span>  ] Started Service to check if key is pressed.",
@@ -19,7 +24,7 @@ window.addEventListener('load', () => {
 
   messages.forEach((msg, index) => {
     // Randomize delay to simulate processing
-    delay += Math.random() * 300 + 100;
+    delay += Math.random() * stepRand + stepMin;
 
     setTimeout(() => {
       // Update text content in place (one line)
@@ -37,11 +42,31 @@ window.addEventListener('load', () => {
               homeBtn.classList.add('wiggle');
             }
           });
-        }, 800);
+          setTimeout(warmLazyImages, 3000);
+        }, settle);
       }
     }, delay);
   });
 });
+
+// Images inside closed windows are `loading="lazy"`, so they are not part of the first
+// load. Once the desktop is up, quietly pull them into the cache (low priority, one at
+// a time) so windows still open instantly — skipped on data-saver / slow connections.
+function warmLazyImages() {
+  const conn = navigator.connection;
+  if (conn && (conn.saveData || /(^|-)(2g|3g)$/.test(conn.effectiveType || ''))) return;
+  if (!conn && window.matchMedia('(pointer: coarse)').matches) return; // unknown mobile link: be frugal
+  const srcs = [...document.querySelectorAll('img[loading="lazy"]')].filter((img) => !img.complete).map((img) => img.src);
+  const next = () => {
+    const src = srcs.shift();
+    if (!src) return;
+    const img = new Image();
+    img.fetchPriority = 'low';
+    img.onload = img.onerror = () => setTimeout(next, 100);
+    img.src = src;
+  };
+  next();
+}
 
 // Function to animate the dock "Water Drop" entry
 function animateDockEntry(onComplete) {
@@ -382,6 +407,7 @@ function getIconPosition(viewName) {
 function showView(viewName) {
   const card = cards[viewName];
   if (!card) return;
+  if (viewName === 'markdownify') loadMarkdownLibs().catch(() => {}); // warm up its converters
 
   const isAlreadyOpen = openWindows.includes(viewName);
   const isMinimized = minimizedWindows.has(viewName);
@@ -1035,6 +1061,30 @@ const mdfyToggleSource = document.getElementById('mdfy-toggle-source');
 const mdfyBtnDownload = document.getElementById('mdfy-btn-download');
 const mdfyBtnCopy = document.getElementById('mdfy-btn-copy');
 
+// The HTML<->Markdown converters are only needed inside Markdownify, so they are loaded
+// on first open (pinned versions, downloaded in parallel, executed in order) instead of
+// blocking every page load.
+const MD_LIBS = [
+  'https://cdn.jsdelivr.net/npm/turndown@7.2.4/dist/turndown.js',
+  'https://cdn.jsdelivr.net/npm/turndown-plugin-gfm@1.0.2/dist/turndown-plugin-gfm.js',
+  'https://cdn.jsdelivr.net/npm/marked@15.0.12/marked.min.js' // the build the old unversioned URL served
+];
+let mdLibsPromise = null;
+function loadMarkdownLibs() {
+  if (!mdLibsPromise) {
+    mdLibsPromise = Promise.all(MD_LIBS.map((src) => new Promise((resolve, reject) => {
+      const s = document.createElement('script');
+      s.src = src;
+      s.async = false;
+      s.onload = resolve;
+      s.onerror = () => reject(new Error('Failed to load ' + src));
+      document.head.appendChild(s);
+    }))).catch((err) => { mdLibsPromise = null; throw err; });
+  }
+  return mdLibsPromise;
+}
+const withMarkdownLibs = (fn) => loadMarkdownLibs().then(fn, (err) => console.warn('[markdownify]', err));
+
 let turndownService = null;
 function initTurndown() {
   if (!turndownService && window.TurndownService) {
@@ -1064,10 +1114,12 @@ if (mdfyToggleVisual && mdfyToggleSource) {
     mdfySource.style.display = 'none';
     
     // Parse markdown back to visual if typing in source
-    if (window.marked && mdfySource.value !== getMarkdown()) {
-      mdfyEditor.innerHTML = marked.parse(mdfySource.value);
-      saveHistoryState();
-    }
+    withMarkdownLibs(() => {
+      if (mdfySource.value !== getMarkdown()) {
+        mdfyEditor.innerHTML = marked.parse(mdfySource.value);
+        saveHistoryState();
+      }
+    });
     
     mdfyEditor.style.display = 'block';
     mdfyEditor.contentEditable = 'true'; // Enable typing in Visual mode
@@ -1085,7 +1137,7 @@ if (mdfyToggleVisual && mdfyToggleSource) {
     mdfyEditor.style.display = 'block';
     mdfyEditor.contentEditable = 'false'; // Make preview read-only in Markdown mode
     mdfySource.style.display = 'block';
-    mdfySource.value = getMarkdown();
+    withMarkdownLibs(() => { mdfySource.value = getMarkdown(); });
     
     // Hide toolbar
     const toolbar = document.querySelector('.markdownify-toolbar');
@@ -1094,9 +1146,7 @@ if (mdfyToggleVisual && mdfyToggleSource) {
 
   // Live preview logic from Source to Editor
   mdfySource.addEventListener('input', () => {
-    if (window.marked) {
-      mdfyEditor.innerHTML = marked.parse(mdfySource.value);
-    }
+    withMarkdownLibs(() => { mdfyEditor.innerHTML = marked.parse(mdfySource.value); });
   });
 }
 
@@ -1129,18 +1179,18 @@ mdfyEditor.addEventListener('input', () => {
 });
 
 if (mdfyBtnCopy) {
-  mdfyBtnCopy.addEventListener('click', () => {
+  mdfyBtnCopy.addEventListener('click', () => withMarkdownLibs(() => {
     const md = mdfySource.style.display === 'block' ? mdfySource.value : getMarkdown();
     navigator.clipboard.writeText(md).then(() => {
       const originalTitle = mdfyBtnCopy.getAttribute('title');
       mdfyBtnCopy.setAttribute('title', 'Copied!');
       setTimeout(() => mdfyBtnCopy.setAttribute('title', originalTitle), 2000);
     });
-  });
+  }));
 }
 
 if (mdfyBtnDownload) {
-  mdfyBtnDownload.addEventListener('click', () => {
+  mdfyBtnDownload.addEventListener('click', () => withMarkdownLibs(() => {
     const md = mdfySource.style.display === 'block' ? mdfySource.value : getMarkdown();
     const blob = new Blob([md], { type: 'text/markdown' });
     const url = URL.createObjectURL(blob);
@@ -1149,7 +1199,7 @@ if (mdfyBtnDownload) {
     a.download = 'article.md';
     a.click();
     URL.revokeObjectURL(url);
-  });
+  }));
 }
 
 // Toolbar state sync
