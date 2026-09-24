@@ -24,7 +24,8 @@ The entire desktop UI lives in three root files:
   - `cards` — map of view name → DOM element (the window for that view).
   - `viewConfig` — the source of truth for windows: each entry has `id`, `parent`, `title`, `icon`. **To add a new window/view, add an entry here AND a matching `*Card` element in `index.html`.** The `parent` field drives breadcrumb/sidebar nesting (the resource hierarchy: projects → labs → labsContent, ai → prompts → image-gen, etc.).
   - Window lifecycle: `showView`, `closeWindow`, `minimizeWindow`, `bringToFront`, `repositionStack`, `initDraggable`. Desktop windows are absolutely positioned and draggable; mobile uses a stacked flex layout (see `constrainAllWindows`).
-  - Other subsystems in the same file: WebGL background (GLSL fragment shader, ~line 928), terminal command parser (~line 865), Markdownify editor (~line 1080), and a `MutationObserver`-based auto-sort that keeps resource cards alphabetized (`autoSortAll`, ~line 1357).
+  - Other subsystems in the same file: terminal command parser (~line 865, including hidden commands that replay background easter eggs via `window.CareerBG`), Markdownify editor, and a `MutationObserver`-based auto-sort that keeps resource cards alphabetized (`autoSortAll`).
+- **`career-bg.js`** — the animated "Assurance Graph" background, loaded before `script.js`. It draws a low-res WebGL field on `#webgl-bg` and a 2D knowledge-graph layer on `#career-bg` (cursor attention, career-themed shapes from `SHAPES` that the mesh forms every 40–65 s, clicks (3 quick clicks toggle shape ↔ spread) and typed easter eggs, adaptive quality, reduced-motion static frame) and exposes `window.CareerBG` (`has`, `trigger`, `eggs`, `stats`).
 
 ### Markdownify
 

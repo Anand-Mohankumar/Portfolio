@@ -2112,7 +2112,8 @@
     }
 
     /* WebGL Background */
-    #webgl-bg {
+    #webgl-bg,
+    #career-bg {
       position: fixed;
       inset: 0;
       z-index: -1;
@@ -2120,6 +2121,8 @@
       height: 100vh;
       pointer-events: none;
     }
+
+    #webgl-bg { background: #12181A; } /* rendered at ~half res, upscaled smoothly */
 
     /* Image Generation Prompts Showcase */
     .prompt-showcase {
