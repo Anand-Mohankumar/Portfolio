@@ -2501,31 +2501,3 @@
   letter-spacing: 0.5px;
   /* Removed explicit color so it inherits the 55% translucent color from the parent */
 }
-
-    /* Glass edge light: a rim highlight that tracks the cursor (enabled from script.js on mouse devices) */
-    .edge-light .window-card::before {
-      content: '';
-      position: absolute;
-      inset: -1px;
-      border-radius: inherit;
-      padding: 1px;
-      background: radial-gradient(320px circle at var(--edge-x, -9999px) var(--edge-y, -9999px),
-          rgba(255, 170, 120, 1), rgba(196, 90, 42, 0.9) 25%, rgba(255, 255, 255, 0.3) 45%, transparent 70%);
-      -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
-      -webkit-mask-composite: xor;
-      mask: linear-gradient(#000 0 0) content-box exclude, linear-gradient(#000 0 0);
-      pointer-events: none;
-      z-index: 2;
-    }
-
-    /* Soft sheen on the glass surface under the cursor */
-    .edge-light .window-card::after {
-      content: '';
-      position: absolute;
-      inset: 0;
-      border-radius: inherit;
-      background: radial-gradient(420px circle at var(--edge-x, -9999px) var(--edge-y, -9999px),
-          rgba(255, 255, 255, 0.06), transparent 60%);
-      pointer-events: none;
-      z-index: 2;
-    }
