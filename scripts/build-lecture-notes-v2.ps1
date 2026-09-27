@@ -175,7 +175,7 @@ function Build-Page {
 <body>
 '@
 
-    $cardOpen = "    <nav class=`"lecture-breadcrumb`"><a href=`"../../index.html`">&#8592; Back to Portfolio</a></nav>
+    $cardOpen = "    <nav class=`"lecture-breadcrumb`"><a href=`"/`">&#8592; Back to Portfolio</a></nav>
     <article class=`"lecture-card`">
         <div class=`"lecture-card-header`">
             <div class=`"lecture-card-dots`"><span class=`"dot-red`"></span><span class=`"dot-yellow`"></span><span class=`"dot-green`"></span></div>

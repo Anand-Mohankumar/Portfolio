@@ -259,6 +259,20 @@ function constrainAllWindows() {
   });
 }
 
+// Add keyboard semantics without changing the existing elements or their styling.
+function makeKeyboardButton(element, label) {
+  element.setAttribute('role', 'button');
+  element.tabIndex = 0;
+  if (label) element.setAttribute('aria-label', label);
+  element.addEventListener('keydown', (event) => {
+    // Nested popup controls must not also activate their parent dock item.
+    if (event.target !== element || (event.key !== 'Enter' && event.key !== ' ')) return;
+    event.preventDefault();
+    event.stopPropagation();
+    if (!event.repeat) element.click();
+  });
+}
+
 function updateOpenWindowsTabs() {
   const container = document.getElementById('openWindowsTabs');
   container.innerHTML = '';
@@ -288,6 +302,7 @@ function updateOpenWindowsTabs() {
     }
 
     tab.textContent = displayTitle;
+    makeKeyboardButton(tab, displayTitle);
     tab.onclick = () => showView(windowName);
     container.appendChild(tab);
   });
@@ -331,6 +346,7 @@ function updateSidebar(viewName) {
       // Create Trigger (3 Dots)
       const trigger = document.createElement('div');
       trigger.className = 'sidebar-menu-trigger';
+      makeKeyboardButton(trigger, 'Open project windows');
       // Simple SVG dots icon
       trigger.innerHTML = `<svg viewBox="0 0 24 24"><circle cx="5" cy="12" r="2"/><circle cx="12" cy="12" r="2"/><circle cx="19" cy="12" r="2"/></svg>`;
 
@@ -346,6 +362,7 @@ function updateSidebar(viewName) {
         if (win === viewName) gridItem.classList.add('active-item');
         gridItem.innerHTML = winConfig.icon || '📄';
         gridItem.title = winConfig.title; // Tooltip
+        makeKeyboardButton(gridItem, winConfig.title);
 
         gridItem.onclick = (e) => {
           e.stopPropagation();
@@ -795,6 +812,13 @@ function closeWindow(viewName) {
     }
   }, 400); // Match transition duration
 }
+
+// Reuse the existing focus-visible design and click handlers for keyboard input.
+document.querySelectorAll('.sidebar-item, .control-btn, .tabs-overflow-indicator, .project-item, .resource-hero-card, .article-item, .infographic-item[onclick], .infographic-item img[onclick]').forEach(element => {
+  makeKeyboardButton(element, element.getAttribute('title') || element.getAttribute('alt'));
+});
+makeKeyboardButton(document.querySelector('.app-logo'), 'Home');
+makeKeyboardButton(document.querySelector('.nav-tab[data-tab="home"]'), 'Home');
 
 // Sidebar navigation
 document.querySelectorAll('.sidebar-item').forEach(item => {
