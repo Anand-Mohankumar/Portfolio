@@ -242,8 +242,7 @@ function constrainAllWindows() {
       if (rect.right > window.innerWidth) {
         // Too far right, snap back
         win.style.left = (window.innerWidth - rect.width / 2 - 20) + 'px';
-        // Updated to 3D Transform
-        win.style.transform = 'translate3d(-50%, -50%, 0)';
+        win.style.transform = 'translate(-50%, -50%)';
       }
 
       // Vertical Check
@@ -431,12 +430,12 @@ function showView(viewName) {
 
     // Disable transition for initial setup
     card.style.transition = 'none';
-    card.style.transform = `translate3d(calc(-50% + ${deltaX}px), calc(-50% + ${deltaY}px), 0) scale(0.1)`;
+    card.style.transform = `translate(calc(-50% + ${deltaX}px), calc(-50% + ${deltaY}px)) scale(0.1)`;
     card.offsetHeight; // Force reflow
 
     // Animate to center
     card.style.transition = 'transform 0.45s cubic-bezier(0.19, 1, 0.22, 1), opacity 0.4s ease';
-    card.style.transform = 'translate3d(-50%, -50%, 0) scale(1)';
+    card.style.transform = 'translate(-50%, -50%) scale(1)';
     card.style.opacity = '1';
 
     bringToFront(card);
@@ -466,8 +465,7 @@ function showView(viewName) {
 
     // Initial State (At Icon)
     card.style.transition = 'none'; // Disable transition for setup
-    // Updated to 3D Transform
-    card.style.transform = `translate3d(calc(-50% + ${deltaX}px), calc(-50% + ${deltaY}px), 0) scale(0.1)`;
+    card.style.transform = `translate(calc(-50% + ${deltaX}px), calc(-50% + ${deltaY}px)) scale(0.1)`;
     card.style.opacity = '0';
     card.style.borderRadius = '50%'; // Circle drop
 
@@ -476,8 +474,7 @@ function showView(viewName) {
 
     // Final State (Center Screen)
     card.style.transition = 'transform 0.5s cubic-bezier(0.19, 1, 0.22, 1), opacity 0.5s ease, border-radius 0.5s ease';
-    // Updated to 3D Transform
-    card.style.transform = 'translate3d(-50%, -50%, 0) scale(1)';
+    card.style.transform = 'translate(-50%, -50%) scale(1)';
     card.style.opacity = '1';
     card.style.borderRadius = '16px';
 
@@ -573,7 +570,7 @@ function repositionStack() {
       const currentTransform = c.style.transform || '';
       const hasPixelPos = c.style.left && !c.style.left.includes('%');
       if (!hasPixelPos) {
-        c.style.transform = 'translate3d(-50%, -50%, 0)';
+        c.style.transform = 'translate(-50%, -50%)';
       }
     } else {
       // Background windows: offset proportionally to depth
@@ -591,7 +588,7 @@ function repositionStack() {
         c.style.transform = `translate(${offsetX}px, ${offsetY}px)`;
       } else {
         // Still using the centred % transform
-        c.style.transform = `translate3d(calc(-50% + ${offsetX}px), calc(-50% + ${offsetY}px), 0)`;
+        c.style.transform = `translate(calc(-50% + ${offsetX}px), calc(-50% + ${offsetY}px))`;
       }
     }
   });
@@ -749,8 +746,7 @@ function closeWindow(viewName) {
 
   // Apply Closing Animation
   card.style.transition = 'transform 0.4s ease-in, opacity 0.4s ease, border-radius 0.4s ease';
-  // Updated to 3D Transform
-  card.style.transform = `translate3d(calc(-50% + ${deltaX}px), calc(-50% + ${deltaY}px), 0) scale(0.1)`;
+  card.style.transform = `translate(calc(-50% + ${deltaX}px), calc(-50% + ${deltaY}px)) scale(0.1)`;
   card.style.opacity = '0';
   card.style.borderRadius = '50%';
 
@@ -762,8 +758,7 @@ function closeWindow(viewName) {
     // This prevents the window from "jumping" if it was previously dragged to a specific pixel location
     card.style.left = '50%';
     card.style.top = '50%';
-    // Updated to 3D Transform
-    card.style.transform = 'translate3d(-50%, -50%, 0)';
+    card.style.transform = 'translate(-50%, -50%)';
     card.style.borderRadius = '16px';
 
     openWindows = openWindows.filter(w => w !== viewName);
@@ -856,7 +851,7 @@ document.querySelectorAll('.control-btn').forEach(btn => {
       if (card.classList.contains('full-width')) {
         card.style.left = '50%';
         card.style.top = '50%';
-        card.style.transform = 'translate3d(-50%, -50%, 0)';
+        card.style.transform = 'translate(-50%, -50%)';
       }
     }
   });
@@ -874,7 +869,7 @@ function minimizeWindow(viewName) {
   const deltaY = iconPos.y - screenCenter.y;
 
   card.style.transition = 'transform 0.35s cubic-bezier(0.4, 0, 0.6, 1), opacity 0.35s ease, border-radius 0.35s ease';
-  card.style.transform = `translate3d(calc(-50% + ${deltaX}px), calc(-50% + ${deltaY}px), 0) scale(0.1)`;
+  card.style.transform = `translate(calc(-50% + ${deltaX}px), calc(-50% + ${deltaY}px)) scale(0.1)`;
   card.style.opacity = '0';
   card.style.borderRadius = '50%';
 
