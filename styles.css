@@ -186,10 +186,9 @@
       width: auto;
       height: auto;
 
-      /* Glass Material */
-      background: rgba(20, 25, 30, 0.6);
-      backdrop-filter: blur(20px) saturate(180%);
-      -webkit-backdrop-filter: blur(20px) saturate(180%);
+      /* The glass leaf is separate from the dock's icons and outer shadow. */
+      --dock-glass: rgba(20, 25, 30, 0.6);
+      background: transparent;
 
       /* Dock Shape */
       border-radius: 24px;
@@ -217,6 +216,20 @@
         box-shadow 0.4s ease;
     }
 
+    .sidebar::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      z-index: -1;
+      pointer-events: none;
+      border-radius: inherit;
+      overflow: hidden;
+      background: var(--dock-glass);
+      -webkit-backdrop-filter: blur(20px) saturate(180%);
+      backdrop-filter: blur(20px) saturate(180%);
+      transition: background 0.4s ease;
+    }
+
     /* --- BOOT ANIMATION STATES --- */
 
     /* 1. Hidden (During Boot) */
@@ -240,7 +253,7 @@
       gap: 0;
       border: 1px solid rgba(255, 255, 255, 0.9);
       /* Bright border */
-      background: rgba(255, 255, 255, 1);
+      --dock-glass: rgba(255, 255, 255, 1);
       /* Solid white core */
       box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
     }
@@ -269,7 +282,7 @@
 
       /* 3D Glassmorphism Inspired Background */
       background: linear-gradient(135deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.02));
-      /* no backdrop-filter: the dock's blur is the backdrop root, a nested blur only sees its flat fill */
+      /* The dock glass layer supplies the frost behind these icons. */
       border: 1px solid rgba(255, 255, 255, 0.15);
       
       /* Subtle 3D Depth Shadows */
@@ -725,12 +738,11 @@
       max-width: 100%;
     }
 
-    /* GLASS WINDOW CARD - FIXED FOR MACBOOK/CHROME RENDERING */
+    /* Glass window: content/shadow shell with a separate clipped glass layer. */
     .window-card {
-      /* The core frosted glass effect */
-      background: rgba(40, 45, 55, 0.55);
-      backdrop-filter: blur(40px) saturate(160%);
-      -webkit-backdrop-filter: blur(40px) saturate(160%);
+      /* Keep blur off the element that also paints text, scrolling and shadows. */
+      background: transparent;
+      z-index: 0; /* contain the negative glass layer before JS assigns stack order */
 
       border-radius: var(--radius-window);
       border: 1px solid rgba(255, 255, 255, 0.12);
@@ -757,24 +769,30 @@
       position: absolute;
       left: 50%;
       top: 50%;
-      /* MACBOOK FIX: Use translate3d instead of translate to force GPU acceleration.
-         This prevents shadow clipping and z-index overlap glitches in Safari/Chrome Mac.
-      */
-      transform: translate3d(-50%, -50%, 0);
-      /* backface-visibility: hidden; REMOVED to prevent animation glitch */
+      /* 2D centering preserves geometry without forcing a 3D content layer. */
+      transform: translate(-50%, -50%);
+      overflow: visible; /* keep the outer shadow outside the glass clip */
+    }
 
-      /* Removed isolation and will-change as they cause grey square-corner artifacts around shadow bounding boxes in Chrome when using backdrop-filter */
-
-      /* FIXED: REMOVED overflow:hidden from here to allow shadows to render on Mac */
-      /* overflow: hidden; */
+    .window-card::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      z-index: -1;
+      pointer-events: none;
+      border-radius: inherit;
+      overflow: hidden;
+      background: var(--color-surface);
+      -webkit-backdrop-filter: blur(40px) saturate(160%);
+      backdrop-filter: blur(40px) saturate(160%);
     }
 
     /* Window Opening Animation - Desktop (Liquid Drop Style) */
     @keyframes liquidOpenDesktop {
       0% {
         opacity: 0;
-        transform: translate3d(-50%, -50%, 0) scale(0.2);
-        /* Updated to 3D */
+        transform: translate(-50%, -50%) scale(0.2);
+
         border-radius: 50%;
         /* Start as circle/drop */
       }
@@ -785,8 +803,8 @@
 
       100% {
         opacity: 1;
-        transform: translate3d(-50%, -50%, 0) scale(1);
-        /* Updated to 3D */
+        transform: translate(-50%, -50%) scale(1);
+
         border-radius: 16px;
         /* End as window */
       }
@@ -841,8 +859,8 @@
       max-width: none;
       left: 50%;
       top: 50%;
-      transform: translate3d(-50%, -50%, 0);
-      /* Updated to 3D */
+      transform: translate(-50%, -50%);
+
       border-radius: 16px;
     }
 
@@ -855,6 +873,7 @@
       background: linear-gradient(to bottom, rgba(255, 255, 255, 0.06), transparent);
       border-radius: 16px 16px 0 0;
       cursor: move;
+      flex-shrink: 0;
       user-select: none;
       box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.08);
     }
@@ -888,8 +907,6 @@
       align-items: center;
       justify-content: center;
       background: linear-gradient(145deg, rgba(220, 240, 255, 0.15), rgba(220, 240, 255, 0.05));
-      backdrop-filter: blur(8px);
-      -webkit-backdrop-filter: blur(8px);
       border: 1px solid rgba(255, 255, 255, 0.25);
       box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3), 0 2px 4px rgba(0, 0, 0, 0.1);
       transition: all 0.2s cubic-bezier(0.25, 0.8, 0.25, 1);
@@ -925,12 +942,12 @@
       padding: 30px;
       overflow-y: auto;
       flex: 1;
+      min-height: 0; /* allow this flex child to scroll within the window */
       scrollbar-width: thin;
       scrollbar-color: rgba(196, 90, 42, 0.5) transparent;
 
-      /* FIXED: Added these to maintain rounded corners while parent has overflow:visible */
+      /* Clip scrolling content to the lower window corners. */
       border-radius: 0 0 16px 16px;
-      /* overflow: hidden;  <-- REMOVED THIS LINE TO RESTORE SCROLLING */
     }
 
     /* Glassy Scrollbar */
@@ -1143,7 +1160,6 @@
       justify-content: center;
       gap: 8px;
       transition: all 0.3s;
-      backdrop-filter: blur(5px);
     }
 
     .social-btn:hover {
@@ -1210,8 +1226,6 @@
       inset: 0;
       background: rgba(255, 255, 255, 0.05);
       /* Semi-transparent to match the rest of home page components */
-      backdrop-filter: blur(10px);
-      -webkit-backdrop-filter: blur(10px);
       z-index: -1;
       border-radius: 10px;
       /* match social-btn radius */
@@ -1389,7 +1403,6 @@
       color: rgba(255, 255, 255, 0.9);
       transition: all 0.2s;
       cursor: default;
-      backdrop-filter: blur(5px);
       position: relative;
       box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.08);
     }
@@ -2420,8 +2433,6 @@
 .global-close-all-btn {
   position: relative; /* So it flows in flex container */
   background: linear-gradient(145deg, rgba(220, 240, 255, 0.15), rgba(220, 240, 255, 0.05));
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
   border: 1px solid rgba(255, 255, 255, 0.25);
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3), 0 2px 4px rgba(0, 0, 0, 0.1);
   transition: all 0.2s cubic-bezier(0.25, 0.8, 0.25, 1);

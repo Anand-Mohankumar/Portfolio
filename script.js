@@ -242,8 +242,7 @@ function constrainAllWindows() {
       if (rect.right > window.innerWidth) {
         // Too far right, snap back
         win.style.left = (window.innerWidth - rect.width / 2 - 20) + 'px';
-        // Updated to 3D Transform
-        win.style.transform = 'translate3d(-50%, -50%, 0)';
+        win.style.transform = 'translate(-50%, -50%)';
       }
 
       // Vertical Check
@@ -257,6 +256,20 @@ function constrainAllWindows() {
         win.style.top = (60 + rect.height / 2) + 'px';
       }
     }
+  });
+}
+
+// Add keyboard semantics without changing the existing elements or their styling.
+function makeKeyboardButton(element, label) {
+  element.setAttribute('role', 'button');
+  element.tabIndex = 0;
+  if (label) element.setAttribute('aria-label', label);
+  element.addEventListener('keydown', (event) => {
+    // Nested popup controls must not also activate their parent dock item.
+    if (event.target !== element || (event.key !== 'Enter' && event.key !== ' ')) return;
+    event.preventDefault();
+    event.stopPropagation();
+    if (!event.repeat) element.click();
   });
 }
 
@@ -289,6 +302,7 @@ function updateOpenWindowsTabs() {
     }
 
     tab.textContent = displayTitle;
+    makeKeyboardButton(tab, displayTitle);
     tab.onclick = () => showView(windowName);
     container.appendChild(tab);
   });
@@ -332,6 +346,7 @@ function updateSidebar(viewName) {
       // Create Trigger (3 Dots)
       const trigger = document.createElement('div');
       trigger.className = 'sidebar-menu-trigger';
+      makeKeyboardButton(trigger, 'Open project windows');
       // Simple SVG dots icon
       trigger.innerHTML = `<svg viewBox="0 0 24 24"><circle cx="5" cy="12" r="2"/><circle cx="12" cy="12" r="2"/><circle cx="19" cy="12" r="2"/></svg>`;
 
@@ -347,6 +362,7 @@ function updateSidebar(viewName) {
         if (win === viewName) gridItem.classList.add('active-item');
         gridItem.innerHTML = winConfig.icon || '📄';
         gridItem.title = winConfig.title; // Tooltip
+        makeKeyboardButton(gridItem, winConfig.title);
 
         gridItem.onclick = (e) => {
           e.stopPropagation();
@@ -442,6 +458,14 @@ function showView(viewName) {
     card.style.transition = 'transform 0.45s cubic-bezier(0.19, 1, 0.22, 1), clip-path 0.45s cubic-bezier(0.19, 1, 0.22, 1)';
     card.style.transform = 'translate3d(-50%, -50%, 0)';
     card.style.clipPath = 'inset(0 round 16px)';
+    card.style.transition = 'none';
+    card.style.transform = `translate(calc(-50% + ${deltaX}px), calc(-50% + ${deltaY}px)) scale(0.1)`;
+    card.offsetHeight; // Force reflow
+
+    // Animate to center
+    card.style.transition = 'transform 0.45s cubic-bezier(0.19, 1, 0.22, 1), opacity 0.4s ease';
+    card.style.transform = 'translate(-50%, -50%) scale(1)';
+    card.style.opacity = '1';
 
     bringToFront(card);
     activeWindow = viewName;
@@ -478,6 +502,9 @@ function showView(viewName) {
     // surface changes its apparent translucency while the window opens.
     card.style.opacity = '1';
     card.style.borderRadius = '16px';
+    card.style.transform = `translate(calc(-50% + ${deltaX}px), calc(-50% + ${deltaY}px)) scale(0.1)`;
+    card.style.opacity = '0';
+    card.style.borderRadius = '50%'; // Circle drop
 
     // Trigger Reflow
     card.offsetHeight;
@@ -487,6 +514,10 @@ function showView(viewName) {
     // Updated to 3D Transform
     card.style.transform = 'translate3d(-50%, -50%, 0)';
     card.style.clipPath = 'inset(0 round 16px)';
+    card.style.transition = 'transform 0.5s cubic-bezier(0.19, 1, 0.22, 1), opacity 0.5s ease, border-radius 0.5s ease';
+    card.style.transform = 'translate(-50%, -50%) scale(1)';
+    card.style.opacity = '1';
+    card.style.borderRadius = '16px';
 
     // Add to open windows list
     openWindows.push(viewName);
@@ -580,7 +611,7 @@ function repositionStack() {
       const currentTransform = c.style.transform || '';
       const hasPixelPos = c.style.left && !c.style.left.includes('%');
       if (!hasPixelPos) {
-        c.style.transform = 'translate3d(-50%, -50%, 0)';
+        c.style.transform = 'translate(-50%, -50%)';
       }
     } else {
       // Background windows: offset proportionally to depth
@@ -598,7 +629,7 @@ function repositionStack() {
         c.style.transform = `translate(${offsetX}px, ${offsetY}px)`;
       } else {
         // Still using the centred % transform
-        c.style.transform = `translate3d(calc(-50% + ${offsetX}px), calc(-50% + ${offsetY}px), 0)`;
+        c.style.transform = `translate(calc(-50% + ${offsetX}px), calc(-50% + ${offsetY}px))`;
       }
     }
   });
@@ -759,6 +790,10 @@ function closeWindow(viewName) {
   // Updated to 3D Transform
   card.style.transform = `translate3d(calc(-50% + ${deltaX}px), calc(-50% + ${deltaY}px), 0)`;
   card.style.clipPath = 'inset(50% 50% 50% 50% round 50%)';
+  card.style.transition = 'transform 0.4s ease-in, opacity 0.4s ease, border-radius 0.4s ease';
+  card.style.transform = `translate(calc(-50% + ${deltaX}px), calc(-50% + ${deltaY}px)) scale(0.1)`;
+  card.style.opacity = '0';
+  card.style.borderRadius = '50%';
 
   // After animation, hide and cleanup
   setTimeout(() => {
@@ -768,8 +803,7 @@ function closeWindow(viewName) {
     // This prevents the window from "jumping" if it was previously dragged to a specific pixel location
     card.style.left = '50%';
     card.style.top = '50%';
-    // Updated to 3D Transform
-    card.style.transform = 'translate3d(-50%, -50%, 0)';
+    card.style.transform = 'translate(-50%, -50%)';
     card.style.borderRadius = '16px';
     card.style.clipPath = 'inset(0 round 16px)';
     card.style.opacity = '1';
@@ -808,6 +842,13 @@ function closeWindow(viewName) {
     }
   }, 400); // Match transition duration
 }
+
+// Reuse the existing focus-visible design and click handlers for keyboard input.
+document.querySelectorAll('.sidebar-item, .control-btn, .tabs-overflow-indicator, .project-item, .resource-hero-card, .article-item, .infographic-item[onclick], .infographic-item img[onclick]').forEach(element => {
+  makeKeyboardButton(element, element.getAttribute('title') || element.getAttribute('alt'));
+});
+makeKeyboardButton(document.querySelector('.app-logo'), 'Home');
+makeKeyboardButton(document.querySelector('.nav-tab[data-tab="home"]'), 'Home');
 
 // Sidebar navigation
 document.querySelectorAll('.sidebar-item').forEach(item => {
@@ -864,7 +905,7 @@ document.querySelectorAll('.control-btn').forEach(btn => {
       if (card.classList.contains('full-width')) {
         card.style.left = '50%';
         card.style.top = '50%';
-        card.style.transform = 'translate3d(-50%, -50%, 0)';
+        card.style.transform = 'translate(-50%, -50%)';
       }
     }
   });
@@ -884,6 +925,10 @@ function minimizeWindow(viewName) {
   card.style.transition = 'transform 0.35s cubic-bezier(0.4, 0, 0.6, 1), clip-path 0.35s ease';
   card.style.transform = `translate3d(calc(-50% + ${deltaX}px), calc(-50% + ${deltaY}px), 0)`;
   card.style.clipPath = 'inset(50% 50% 50% 50% round 50%)';
+  card.style.transition = 'transform 0.35s cubic-bezier(0.4, 0, 0.6, 1), opacity 0.35s ease, border-radius 0.35s ease';
+  card.style.transform = `translate(calc(-50% + ${deltaX}px), calc(-50% + ${deltaY}px)) scale(0.1)`;
+  card.style.opacity = '0';
+  card.style.borderRadius = '50%';
 
   setTimeout(() => {
     card.style.display = 'none';
