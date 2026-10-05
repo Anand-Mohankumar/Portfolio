@@ -436,16 +436,28 @@ function showView(viewName) {
     card.style.left = '50%';
     card.style.top = '50%';
     card.style.borderRadius = '16px';
+    card.style.transition = 'none';
     card.style.display = 'flex';
-    card.style.opacity = '0';
+    card.style.clipPath = 'inset(50% 50% 50% 50% round 50%)';
+    // Keep the glass fully visible during the restore animation. Fading the
+    // backdrop-filtered surface makes it look like the glass is loading in.
+    card.style.opacity = '1';
 
-    // Start from icon position (tiny scale)
+    // Start at the dock position and reveal the full-size glass surface with a
+    // clip path. The backdrop blur stays at its final strength throughout.
     const iconPos = getIconPosition(viewName);
     const screenCenter = { x: window.innerWidth / 2, y: window.innerHeight / 2 };
     const deltaX = iconPos.x - screenCenter.x;
     const deltaY = iconPos.y - screenCenter.y;
 
     // Disable transition for initial setup
+    card.style.transform = `translate3d(calc(-50% + ${deltaX}px), calc(-50% + ${deltaY}px), 0)`;
+    card.offsetHeight; // Force reflow
+
+    // Animate to center
+    card.style.transition = 'transform 0.45s cubic-bezier(0.19, 1, 0.22, 1), clip-path 0.45s cubic-bezier(0.19, 1, 0.22, 1)';
+    card.style.transform = 'translate3d(-50%, -50%, 0)';
+    card.style.clipPath = 'inset(0 round 16px)';
     card.style.transition = 'none';
     card.style.transform = `translate(calc(-50% + ${deltaX}px), calc(-50% + ${deltaY}px)) scale(0.1)`;
     card.offsetHeight; // Force reflow
@@ -463,6 +475,7 @@ function showView(viewName) {
   }
 
   // Make sure it's visible in DOM to calculate styles
+  if (!isAlreadyOpen) card.style.transition = 'none';
   card.style.display = 'flex';
 
   // If opening for the first time or re-opening, Ensure Center Origin
@@ -482,6 +495,13 @@ function showView(viewName) {
 
     // Initial State (At Icon)
     card.style.transition = 'none'; // Disable transition for setup
+    // Updated to 3D Transform
+    card.style.transform = `translate3d(calc(-50% + ${deltaX}px), calc(-50% + ${deltaY}px), 0)`;
+    card.style.clipPath = 'inset(50% 50% 50% 50% round 50%)';
+    // Keep the glass at its final opacity. Scaling or fading a backdrop-filtered
+    // surface changes its apparent translucency while the window opens.
+    card.style.opacity = '1';
+    card.style.borderRadius = '16px';
     card.style.transform = `translate(calc(-50% + ${deltaX}px), calc(-50% + ${deltaY}px)) scale(0.1)`;
     card.style.opacity = '0';
     card.style.borderRadius = '50%'; // Circle drop
@@ -490,6 +510,10 @@ function showView(viewName) {
     card.offsetHeight;
 
     // Final State (Center Screen)
+    card.style.transition = 'transform 0.5s cubic-bezier(0.19, 1, 0.22, 1), clip-path 0.5s cubic-bezier(0.19, 1, 0.22, 1)';
+    // Updated to 3D Transform
+    card.style.transform = 'translate3d(-50%, -50%, 0)';
+    card.style.clipPath = 'inset(0 round 16px)';
     card.style.transition = 'transform 0.5s cubic-bezier(0.19, 1, 0.22, 1), opacity 0.5s ease, border-radius 0.5s ease';
     card.style.transform = 'translate(-50%, -50%) scale(1)';
     card.style.opacity = '1';
@@ -755,13 +779,17 @@ function closeWindow(viewName) {
   const card = cards[viewName];
   if (!card) return;
 
-  // Calculate position to shrink back to
+  // Calculate the dock position for the closing transition.
   const iconPos = getIconPosition(viewName);
   const screenCenter = { x: window.innerWidth / 2, y: window.innerHeight / 2 };
   const deltaX = iconPos.x - screenCenter.x;
   const deltaY = iconPos.y - screenCenter.y;
 
   // Apply Closing Animation
+  card.style.transition = 'transform 0.4s ease-in, clip-path 0.4s ease-in';
+  // Updated to 3D Transform
+  card.style.transform = `translate3d(calc(-50% + ${deltaX}px), calc(-50% + ${deltaY}px), 0)`;
+  card.style.clipPath = 'inset(50% 50% 50% 50% round 50%)';
   card.style.transition = 'transform 0.4s ease-in, opacity 0.4s ease, border-radius 0.4s ease';
   card.style.transform = `translate(calc(-50% + ${deltaX}px), calc(-50% + ${deltaY}px)) scale(0.1)`;
   card.style.opacity = '0';
@@ -777,6 +805,8 @@ function closeWindow(viewName) {
     card.style.top = '50%';
     card.style.transform = 'translate(-50%, -50%)';
     card.style.borderRadius = '16px';
+    card.style.clipPath = 'inset(0 round 16px)';
+    card.style.opacity = '1';
 
     openWindows = openWindows.filter(w => w !== viewName);
     minimizedWindows.delete(viewName); // Also clean up from minimized set if it was there
@@ -886,12 +916,15 @@ function minimizeWindow(viewName) {
   const card = cards[viewName];
   if (!card) return;
 
-  // Animate shrink toward icon
+  // Animate toward the dock while the glass surface is clipped away.
   const iconPos = getIconPosition(viewName);
   const screenCenter = { x: window.innerWidth / 2, y: window.innerHeight / 2 };
   const deltaX = iconPos.x - screenCenter.x;
   const deltaY = iconPos.y - screenCenter.y;
 
+  card.style.transition = 'transform 0.35s cubic-bezier(0.4, 0, 0.6, 1), clip-path 0.35s ease';
+  card.style.transform = `translate3d(calc(-50% + ${deltaX}px), calc(-50% + ${deltaY}px), 0)`;
+  card.style.clipPath = 'inset(50% 50% 50% 50% round 50%)';
   card.style.transition = 'transform 0.35s cubic-bezier(0.4, 0, 0.6, 1), opacity 0.35s ease, border-radius 0.35s ease';
   card.style.transform = `translate(calc(-50% + ${deltaX}px), calc(-50% + ${deltaY}px)) scale(0.1)`;
   card.style.opacity = '0';
@@ -899,6 +932,8 @@ function minimizeWindow(viewName) {
 
   setTimeout(() => {
     card.style.display = 'none';
+    card.style.clipPath = 'inset(0 round 16px)';
+    card.style.opacity = '1';
     // Mark as minimized — do NOT remove from openWindows
     minimizedWindows.add(viewName);
 
