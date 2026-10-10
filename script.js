@@ -86,7 +86,17 @@ function animateDockEntry(onComplete) {
 
     // 3. Expand fully and reveal icons sequentially after another 300ms
     setTimeout(() => {
+      const splashWidth = dock.offsetWidth;
       dock.classList.remove('dock-splash');
+      const targetWidth = dock.scrollWidth || dock.offsetWidth;
+      dock.style.width = splashWidth + 'px';
+      // Force reflow
+      void dock.offsetWidth;
+      dock.style.width = targetWidth + 'px';
+
+      setTimeout(() => {
+        dock.style.width = '';
+      }, 450);
 
       // Reveal items one by one
       items.forEach((item, index) => {
@@ -96,7 +106,7 @@ function animateDockEntry(onComplete) {
           if (index === items.length - 1 && onComplete) {
             setTimeout(onComplete, 400); // Wait for last icon to pop
           }
-        }, index * 100); // 100ms stagger between icons
+        }, index * 80 + 80);
       });
 
     }, 300);
