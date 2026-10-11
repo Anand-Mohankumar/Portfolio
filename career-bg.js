@@ -69,7 +69,9 @@
   const Field = (() => {
     const gl = glCanvas.getContext('webgl', {
       antialias: false, alpha: false, depth: false, stencil: false,
-      preserveDrawingBuffer: false, powerPreference: 'low-power'
+      // The field draws on alternate frames and pauses behind glass windows.
+      // Retain its last frame when the compositor repaints those glass layers.
+      preserveDrawingBuffer: true, powerPreference: 'low-power'
     });
     const fallback = () => {
       glCanvas.style.background =
@@ -208,12 +210,14 @@
 
     return {
       ok: true,
-      setScale(s) { scale = s; this.resize(); },
+      setScale(s) { scale = s; },
       resize() {
         // The field is soft; rendering at ~half resolution is visually identical
         // and 4x cheaper than the old full-DPR shader.
-        glCanvas.width = Math.max(2, Math.round(W * scale));
-        glCanvas.height = Math.max(2, Math.round(H * scale));
+        const width = Math.max(2, Math.round(W * scale));
+        const height = Math.max(2, Math.round(H * scale));
+        if (glCanvas.width !== width) glCanvas.width = width;
+        if (glCanvas.height !== height) glCanvas.height = height;
         gl.viewport(0, 0, glCanvas.width, glCanvas.height);
       },
       draw(t, mouse, ripple, energy) {
@@ -365,8 +369,9 @@
     W = window.innerWidth;
     H = window.innerHeight;
     DPR = Math.min(window.devicePixelRatio || 1, quality === 2 ? 2 : quality === 1 ? 1.5 : 1);
-    fx.width = Math.round(W * DPR);
-    fx.height = Math.round(H * DPR);
+    const fxWidth = Math.round(W * DPR), fxHeight = Math.round(H * DPR);
+    if (fx.width !== fxWidth) fx.width = fxWidth;
+    if (fx.height !== fxHeight) fx.height = fxHeight;
     Field.resize();
 
     const spacing = Math.sqrt((W * H) / nodeBudget());
@@ -380,6 +385,13 @@
       for (const n of nodes) { n.x *= sx; n.y *= sy; }
     }
     if (REDUCED) renderStatic();
+    else {
+      // Resizing clears both canvas buffers. Paint immediately even while the
+      // animation is paused behind windows or in a background tab.
+      rebuildLinks();
+      drawField();
+      draw();
+    }
   }
 
   /* ---------------- graph helpers ---------------- */

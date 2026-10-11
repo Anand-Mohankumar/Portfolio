@@ -31,6 +31,8 @@
         inset 0 1px 0 rgba(255, 255, 255, 0.06);
       --shadow-ambient: 0 0 80px rgba(196, 90, 42, 0.07);
       --focus-ring: 0 0 0 2px #12181A, 0 0 0 4px #7EC8C8;
+      --workspace-top: 70px;
+      --workspace-bottom: calc(112px + env(safe-area-inset-bottom, 0px));
     }
 
     * {
@@ -45,6 +47,7 @@
       font-family: 'Google Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, sans-serif;
       background-color: #12181A;
       height: 100vh;
+      height: 100dvh;
       overflow: hidden;
       color: #fff;
     }
@@ -203,6 +206,7 @@
 
     .desktop {
       height: 100vh;
+      height: 100dvh;
       display: block;
       /* Changed from flex to block to allow absolute positioning of dock */
       position: relative;
@@ -211,7 +215,7 @@
     /* --- DOCK STYLING (MacBook Style for All Views) --- */
     .sidebar {
       position: fixed;
-      bottom: 24px;
+      bottom: calc(24px + env(safe-area-inset-bottom, 0px));
       left: 50%;
       transform: translateX(-50%);
       width: auto;
@@ -234,15 +238,9 @@
         0 15px 35px rgba(0, 0, 0, 0.3),
         0 0 0 1px rgba(255, 255, 255, 0.05) inset;
 
-      /* Smooth transitions for boot animation */
+      /* Keep the dock's layout stable; reveal its surface without resizing it. */
       transition:
-        width 0.4s ease,
-        height 0.4s ease,
-        padding 0.4s ease,
-        border-radius 0.4s ease,
-        bottom 0.5s cubic-bezier(0.2, 0.8, 0.2, 1),
         opacity 0.5s ease,
-        gap 0.4s ease,
         background 0.4s ease,
         border 0.4s ease,
         box-shadow 0.4s ease;
@@ -253,43 +251,29 @@
     /* 1. Hidden (During Boot) */
     .sidebar.dock-hidden {
       opacity: 0;
-      bottom: -60px;
-      /* Hidden below screen */
+      transform: translateX(-50%) translateY(30px);
       pointer-events: none;
     }
 
-    /* 2. Water Drop State (Initial appearance) */
-    .sidebar.dock-drop {
-      opacity: 1;
-      bottom: 24px;
-      min-width: 0;
-      width: 14px;
-      /* Tiny drop */
-      height: 14px;
-      padding: 0;
-      border-radius: 50%;
-      gap: 0;
-      border: 1px solid rgba(255, 255, 255, 0.9);
-      /* Bright border */
-      background: rgba(255, 255, 255, 1);
-      /* Solid white core */
-      box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
-      overflow: hidden;
+    .sidebar.dock-entering {
+      animation: dockReveal 650ms cubic-bezier(0.19, 1, 0.22, 1) both;
     }
 
-    /* 3. Splash State (Expanding to pill) */
-    .sidebar.dock-splash {
-      width: 50px;
-      /* Slightly wider */
-      height: 50px;
-      background: rgba(20, 25, 30, 0.6);
-      /* Revert to glass */
-      border: 1px solid rgba(255, 255, 255, 0.3);
-      border-radius: 25px;
-      padding: 0;
-      gap: 0;
-      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
-      overflow: hidden;
+    @keyframes dockReveal {
+      0% {
+        clip-path: inset(calc(50% - 7px) calc(50% - 7px) round 50px);
+        transform: translateX(-50%) translateY(30px);
+        background: #fff;
+      }
+      42% {
+        clip-path: inset(calc(50% - 25px) calc(50% - 25px) round 50px);
+        transform: translateX(-50%);
+        background: rgba(20, 25, 30, 0.6);
+      }
+      100% {
+        clip-path: inset(-50px -50px round 24px);
+        transform: translateX(-50%);
+      }
     }
 
     .sidebar-item {
@@ -341,6 +325,7 @@
     }
 
     /* Dock Hover Effect (Magnification simulation) */
+    @media (hover: hover) and (pointer: fine) {
     .sidebar-item:hover {
       background: linear-gradient(135deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.05));
       color: #fff;
@@ -352,6 +337,7 @@
           inset 1px 1px 3px rgba(255, 255, 255, 0.5),
           inset -1px -1px 3px rgba(0, 0, 0, 0.3);
       z-index: 10;
+    }
     }
 
     @keyframes dockWiggle {
@@ -423,7 +409,13 @@
     }
 
     /* Show tooltip on parent hover */
+    @media (hover: hover) and (pointer: fine) {
     .sidebar-item:hover .dock-tooltip {
+      opacity: 1;
+      transform: translateX(-50%) translateY(0);
+    }
+    }
+    .sidebar-item:focus-visible > .dock-tooltip {
       opacity: 1;
       transform: translateX(-50%) translateY(0);
     }
@@ -578,7 +570,7 @@
       border-bottom: 1px solid rgba(255, 255, 255, 0.08);
       box-shadow: 0 1px 0 rgba(255, 255, 255, 0.04), 0 8px 24px rgba(0, 0, 0, 0.25);
       justify-content: space-between;
-      z-index: 90;
+      z-index: 9000;
       position: absolute;
       /* Ensures it stays top */
       top: 0;
@@ -783,15 +775,13 @@
       transition:
         transform 0.5s cubic-bezier(0.19, 1, 0.22, 1),
         opacity 0.5s ease,
-        border-radius 0.5s ease,
-        width 0.3s ease,
-        height 0.3s ease;
+        border-radius 0.5s ease;
 
       /* Responsive Sizing Defaults */
-      width: min(calc(100vh - 120px), 750px);
+      width: min(max(calc(100dvh - 120px), 500px), 750px);
       height: min(calc(100vh - 120px), 650px);
       max-width: 95vw;
-      max-height: 85vh;
+      max-height: calc(100dvh - var(--workspace-top) - var(--workspace-bottom));
       /* Ensure it fits between topbar and dock */
 
       position: absolute;
@@ -876,7 +866,7 @@
 
     .window-card.full-width {
       width: calc(100vw - 40px);
-      height: calc(100vh - 160px);
+      height: calc(100dvh - var(--workspace-top) - var(--workspace-bottom));
       /* Leave room for dock */
       max-width: none;
       left: 50%;
@@ -892,14 +882,21 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
+      gap: 12px;
+      flex-shrink: 0;
       background: linear-gradient(to bottom, rgba(255, 255, 255, 0.06), transparent);
       border-radius: 16px 16px 0 0;
       cursor: move;
+      touch-action: none;
       user-select: none;
       box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.08);
     }
 
     .card-title {
+      min-width: 0;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
       font-size: 14px;
       font-weight: 600;
       letter-spacing: 0.3px;
@@ -915,6 +912,7 @@
       display: flex;
       gap: 12px;
       align-items: center;
+      flex-shrink: 0;
     }
 
     .control-btn {
@@ -928,8 +926,6 @@
       align-items: center;
       justify-content: center;
       background: linear-gradient(145deg, rgba(220, 240, 255, 0.15), rgba(220, 240, 255, 0.05));
-      backdrop-filter: blur(8px);
-      -webkit-backdrop-filter: blur(8px);
       border: 1px solid rgba(255, 255, 255, 0.25);
       box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3), 0 2px 4px rgba(0, 0, 0, 0.1);
       transition: all 0.2s cubic-bezier(0.25, 0.8, 0.25, 1);
@@ -965,6 +961,9 @@
       padding: 30px;
       overflow-y: auto;
       flex: 1;
+      min-height: 0;
+      min-width: 0;
+      overscroll-behavior: contain;
       scrollbar-width: thin;
       scrollbar-color: rgba(196, 90, 42, 0.5) transparent;
 
@@ -1702,8 +1701,25 @@
     /* Responsive */
     @media (max-width: 1024px) {
       .window-card {
-        width: min(calc(100vh - 140px), 600px);
+        width: min(max(calc(100dvh - 140px), 500px), 600px);
         height: min(calc(100vh - 140px), 600px);
+      }
+    }
+
+    @media (min-width: 769px) and (max-height: 600px) {
+      #markdownifyCard .markdownify-toolbar {
+        max-height: 100px;
+        overflow-y: auto;
+        flex-shrink: 0;
+      }
+      #markdownifyCard .markdownify-editor,
+      #markdownifyCard .markdownify-source { padding: 16px 20px; }
+      #markdownifyCard .markdownify-editor > :first-child { margin-top: 0; }
+      #markdownifyCard .markdownify-floating-dock {
+        bottom: 8px;
+        right: 8px;
+        left: auto;
+        transform: none;
       }
     }
 
@@ -1712,8 +1728,9 @@
       /* Mobile Dock Styling */
       .sidebar {
         padding: 8px 16px;
-        bottom: 16px;
-        gap: 12px;
+        bottom: calc(16px + env(safe-area-inset-bottom, 0px));
+        gap: clamp(6px, 2.8vw, 12px);
+        max-width: calc(100vw - 16px);
       }
 
       .sidebar-item {
@@ -1728,14 +1745,15 @@
       }
 
       .content-area {
-        padding: 55px 12px 90px 12px;
+        padding: 55px 12px calc(90px + env(safe-area-inset-bottom, 0px)) 12px;
         /* Adjusted padding for mobile */
         display: flex;
         /* Changed to flex */
         flex-direction: column;
         /* Stack vertically */
         overflow-y: auto;
-        scroll-behavior: smooth;
+        overflow-anchor: none;
+        scroll-padding-top: 55px;
       }
 
       .window-card {
@@ -1746,6 +1764,7 @@
         transform: none !important;
         width: 100% !important;
         height: auto !important;
+        flex-shrink: 0;
         min-height: 500px;
         margin-bottom: 20px;
         order: 2;
@@ -1765,6 +1784,17 @@
 
       .card-header {
         cursor: default;
+        touch-action: auto;
+        padding: 14px 16px;
+      }
+
+      .card-controls {
+        gap: 8px;
+      }
+
+      .card-title {
+        white-space: normal;
+        overflow-wrap: anywhere;
       }
 
       .window-card.full-width {
@@ -1796,17 +1826,30 @@
       }
 
       /* Aggressive Hide clock on mobile */
-      #clock {
+      #desktopClock {
         display: none !important;
       }
 
       /* Scrollable topbar tabs */
       .topbar-left {
-        width: 100%;
-        overflow-x: auto;
+        min-width: 0;
         -webkit-overflow-scrolling: touch;
         padding-right: 10px;
         mask-image: linear-gradient(to right, black 90%, transparent 100%);
+      }
+
+      .topbar-right { flex-shrink: 0; }
+      .topbar-left { gap: 10px; }
+      .topbar-right { gap: 8px; padding: 6px 10px; }
+      .open-windows-tabs { min-width: 0; }
+      #iframeCard .card-content { min-height: 60dvh; }
+      #markdownifyCard .markdownify-workspace { min-height: 400px; }
+      .markdownify-doc-controls { gap: 4px; flex-wrap: wrap; }
+      .markdownify-header { flex-wrap: wrap; }
+      .markdownify-header .markdownify-doc-controls {
+        order: 3;
+        flex: 0 0 100%;
+        justify-content: center;
       }
 
       .nav-tab,
@@ -1839,6 +1882,15 @@
       .project-grid {
         grid-template-columns: 1fr;
       }
+    }
+
+    @media (max-width: 360px) {
+      .sidebar { padding: 8px; gap: 6px; }
+      .sidebar-item { width: 40px; height: 40px; }
+      .topbar { padding: 0 12px; }
+      .topbar-right { gap: 6px; padding: 6px; }
+      .card-controls { gap: 6px; }
+      .global-close-all-btn { padding: 0 8px; }
     }
 
     /* Markdownify Specific Styles */
@@ -2207,10 +2259,21 @@
       opacity: 0;
       transition: opacity 0.3s ease;
       color: white;
+      visibility: hidden;
+      pointer-events: none;
     }
 
-    .prompt-image-container:hover .prompt-overlay {
+    @media (hover: hover) and (pointer: fine) {
+    .prompt-image-container:not(.prompt-dismissed):hover .prompt-overlay {
       opacity: 1;
+      visibility: visible;
+      pointer-events: auto;
+    }
+    }
+    .prompt-image-container.prompt-open .prompt-overlay {
+      opacity: 1;
+      visibility: visible;
+      pointer-events: auto;
     }
 
     .prompt-text {
@@ -2339,6 +2402,8 @@
       animation-delay: 0.05s;
     }
 
+    .profile-section > .entrance-complete { animation: none; }
+
     /* Glass dialog (replaces native alert/confirm/prompt) */
     .glass-dialog-overlay {
       position: fixed;
@@ -2455,14 +2520,13 @@
         animation-duration: 0.01ms !important;
         animation-iteration-count: 1 !important;
         transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
       }
     }
 /* GLOBAL CLOSE ALL BUTTON */
 .global-close-all-btn {
   position: relative; /* So it flows in flex container */
   background: linear-gradient(145deg, rgba(220, 240, 255, 0.15), rgba(220, 240, 255, 0.05));
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
   border: 1px solid rgba(255, 255, 255, 0.25);
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3), 0 2px 4px rgba(0, 0, 0, 0.1);
   transition: all 0.2s cubic-bezier(0.25, 0.8, 0.25, 1);
@@ -2479,6 +2543,8 @@
   align-items: center;
   justify-content: center;
   z-index: 1000;
+  flex-shrink: 0;
+  white-space: nowrap;
 }
 .global-close-all-btn:hover {
   background: linear-gradient(145deg, rgba(255, 95, 87, 0.4), rgba(255, 95, 87, 0.2));

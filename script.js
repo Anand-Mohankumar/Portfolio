@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const bootText = document.getElementById('bootText');
   let repeatVisit = false;
   try { repeatVisit = sessionStorage.getItem('booted') === '1'; sessionStorage.setItem('booted', '1'); } catch (_) { /* storage blocked */ }
-  const [stepMin, stepRand, settle] = repeatVisit ? [25, 40, 250] : [60, 120, 500];
+  const [stepMin, stepRand, settle] = repeatVisit ? [12, 18, 100] : [40, 70, 200];
   const messages = [
     "[  <span class='log-green'>OK</span>  ] Started Update UTMP about System Runlevel Changes.",
     "[  <span class='log-green'>OK</span>  ] Started Service to check if key is pressed.",
@@ -20,6 +20,28 @@ document.addEventListener('DOMContentLoaded', () => {
     "<span class='log-white'>Initializing Desktop Environment...</span>"
   ];
 
+  const desktop = document.querySelector('.desktop');
+  desktop.inert = true;
+  const finishBoot = () => {
+    const boot = document.getElementById('bootScreen');
+    boot.classList.add('hidden');
+    boot.setAttribute('aria-hidden', 'true');
+    boot.inert = true;
+    desktop.inert = false;
+    const removeBoot = event => {
+      if (event.target === boot) {
+        boot.style.display = 'none';
+        boot.removeEventListener('transitionend', removeBoot);
+      }
+    };
+    boot.addEventListener('transitionend', removeBoot);
+    animateDockEntry(() => document.querySelector('.sidebar-item[data-view="home"]')?.classList.add('wiggle'));
+    setTimeout(warmLazyImages, 3000);
+  };
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    finishBoot();
+    return;
+  }
   let delay = 0;
 
   messages.forEach((msg, index) => {
@@ -32,18 +54,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       // If last message, close boot screen
       if (index === messages.length - 1) {
-        setTimeout(() => {
-          document.getElementById('bootScreen').classList.add('hidden');
-
-          // Trigger Dock Animation, then wiggle Home button
-          animateDockEntry(() => {
-            const homeBtn = document.querySelector('.sidebar-item[data-view="home"]');
-            if (homeBtn) {
-              homeBtn.classList.add('wiggle');
-            }
-          });
-          setTimeout(warmLazyImages, 3000);
-        }, settle);
+        setTimeout(finishBoot, settle);
       }
     }, delay);
   });
@@ -71,47 +82,30 @@ function warmLazyImages() {
 // Function to animate the dock "Water Drop" entry
 function animateDockEntry(onComplete) {
   const dock = document.querySelector('.sidebar');
-  const items = document.querySelectorAll('.sidebar-item');
-
   if (!dock) return;
-
-  // 1. Reveal Drop
-  dock.classList.remove('dock-hidden');
-  dock.classList.add('dock-drop');
-
-  // 2. Expand to "Splash" pill after 400ms
-  setTimeout(() => {
-    dock.classList.remove('dock-drop');
-    dock.classList.add('dock-splash');
-
-    // 3. Expand fully and reveal icons sequentially after another 300ms
-    setTimeout(() => {
-      const splashWidth = dock.offsetWidth;
-      dock.classList.remove('dock-splash');
-      const targetWidth = dock.scrollWidth || dock.offsetWidth;
-      dock.style.width = splashWidth + 'px';
-      // Force reflow
-      void dock.offsetWidth;
-      dock.style.width = targetWidth + 'px';
-
-      setTimeout(() => {
-        dock.style.width = '';
-      }, 450);
-
-      // Reveal items one by one
-      items.forEach((item, index) => {
-        setTimeout(() => {
-          item.classList.remove('dock-item-hidden');
-          // Check if this is the last item to trigger completion
-          if (index === items.length - 1 && onComplete) {
-            setTimeout(onComplete, 400); // Wait for last icon to pop
-          }
-        }, index * 80 + 80);
-      });
-
-    }, 300);
-
-  }, 400);
+  const items = [...dock.querySelectorAll('.sidebar-item')];
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    dock.classList.remove('dock-hidden');
+    items.forEach(item => item.classList.remove('dock-item-hidden'));
+    onComplete?.();
+    return;
+  }
+  // One stable surface; no width measurements, forced reflows, or auto-size snap.
+  dock.classList.replace('dock-hidden', 'dock-entering');
+  items.forEach((item, index) => {
+    item.style.transitionDuration = '240ms, 200ms, 250ms, 250ms, 250ms, 250ms';
+    item.style.transitionDelay = `${220 + index * 35}ms, ${220 + index * 35}ms, 0ms, 0ms, 0ms, 0ms`;
+    item.classList.remove('dock-item-hidden');
+  });
+  dock.addEventListener('animationend', (event) => {
+    if (event.target !== dock || event.animationName !== 'dockReveal') return;
+    dock.classList.remove('dock-entering');
+    items.forEach(item => {
+      item.style.transitionDelay = '';
+      item.style.transitionDuration = '';
+    });
+    onComplete?.();
+  }, { once: true });
 }
 
 // Clock (Top bar clock removed; replaced by fake system icons)
@@ -121,7 +115,6 @@ const cards = {
   // UPDATED: 'resources' mapped to the new card ID
   resources: document.getElementById('resourcesCard'),
   labs: document.getElementById('labsCard'), // NEW
-  labsContent: document.getElementById('labsContentCard'),
   labsContent: document.getElementById('labsContentCard'),
   lectureNotes: document.getElementById('lectureNotesCard'), // NEW: Lecture Notes
   ai: document.getElementById('aiCard'),     // NEW
@@ -173,6 +166,91 @@ let activeWindow = null;
 let draggedWindow = null;
 let dragOffset = { x: 0, y: 0 };
 let isDragging = false;
+const windowPositions = new WeakMap(); // Drag anchors are always window centers.
+const windowMotion = new WeakMap(); // Cancel obsolete callbacks on every new action.
+const closingWindows = new Set();
+const windowReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+const mobileLayout = window.matchMedia('(max-width: 768px)');
+
+// Moving a mobile window in the DOM must not replay its finished hero stagger.
+cards.home.addEventListener('animationend', event => {
+  if (event.animationName === 'heroRise' && event.target.parentElement?.classList.contains('profile-section')) {
+    event.target.classList.add('entrance-complete');
+  }
+});
+
+window.visualViewport?.addEventListener('resize', () => {
+  // CSS handles the software keyboard on phones; desktop zoom can change bounds.
+  if (!mobileLayout.matches) constrainAllWindows();
+});
+
+function cancelWindowMotion(card) {
+  const motion = windowMotion.get(card);
+  if (motion) clearTimeout(motion.timer);
+  windowMotion.delete(card);
+  card.style.transition = 'none';
+  card.style.clipPath = '';
+  card.style.opacity = '';
+  card.style.pointerEvents = '';
+  card.inert = false;
+  card._restoreFocus = false;
+}
+
+function afterWindowMotion(card, duration, finish) {
+  const motion = { timer: null };
+  motion.timer = setTimeout(() => {
+    if (windowMotion.get(card) !== motion) return;
+    windowMotion.delete(card);
+    card.style.transition = '';
+    card.style.clipPath = ''; // Release the temporary clip so glass shadows can render.
+    finish?.();
+  }, duration);
+  windowMotion.set(card, motion);
+}
+
+function workspaceBounds() {
+  const area = document.querySelector('.content-area');
+  const rect = area.getBoundingClientRect();
+  const top = parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--workspace-top')) || 70;
+  // The card's max-height resolves dynamic viewport and safe-area CSS into pixels.
+  const reserve = rect.height - top - parseFloat(getComputedStyle(cards.home).maxHeight);
+  return { rect, left: 20, right: rect.width - 20, top, bottom: rect.height - reserve };
+}
+
+function positionWindow(card, depth = 0) {
+  if (mobileLayout.matches) {
+    card.style.left = card.style.top = card.style.transform = '';
+    return;
+  }
+  const bounds = workspaceBounds();
+  const center = windowPositions.get(card) || {
+    x: bounds.rect.width / 2, y: (bounds.top + bounds.bottom) / 2
+  };
+  const halfWidth = card.offsetWidth / 2;
+  const halfHeight = card.offsetHeight / 2;
+  const clampX = value => Math.max(bounds.left + halfWidth, Math.min(value, bounds.right - halfWidth));
+  const clampY = value => Math.max(bounds.top + halfHeight, Math.min(value, bounds.bottom - halfHeight));
+  const x = clampX(center.x);
+  const y = clampY(center.y);
+  const dx = clampX(x - depth * 18) - x;
+  const dy = clampY(y + depth * 18) - y;
+  // Centered windows follow viewport changes in CSS, even before resize fires.
+  card.style.left = windowPositions.has(card) ? `${x}px` : '50%';
+  card.style.top = windowPositions.has(card) ? `${y}px` : 'calc((100% + var(--workspace-top) - var(--workspace-bottom)) / 2)';
+  card.style.transform = `translate3d(calc(-50% + ${dx}px), calc(-50% + ${dy}px), 0)`;
+}
+
+function selectWindow(viewName, scrollToTop = false) {
+  activeWindow = viewName;
+  Object.values(cards).forEach(card => card?.classList.toggle('mobile-active', card === cards[viewName]));
+  if (mobileLayout.matches && cards[viewName] && scrollToTop) {
+    const area = document.querySelector('.content-area');
+    if (area.firstElementChild !== cards[viewName]) area.prepend(cards[viewName]);
+    area.scrollTop = 0;
+  }
+  updateSidebar(viewName);
+  updateOpenWindowsTabs();
+}
 
 // OVERFLOW DETECTION LOGIC
 const tabsContainer = document.getElementById('openWindowsTabs');
@@ -236,47 +314,32 @@ if (overflowIndicatorLeft) {
 
 // NEW: Window Constraint Logic to handle Resizing
 function constrainAllWindows() {
-  const contentArea = document.querySelector('.content-area');
-  if (!contentArea) return;
-  const bounds = contentArea.getBoundingClientRect();
-
-  document.querySelectorAll('.window-card').forEach(win => {
-    if (win.style.display === 'none') return;
-
-    // If on mobile (flex mode), constraints are handled by CSS flex/order
-    // Only constrain absolute windows (Desktop view)
-    if (window.getComputedStyle(win).position === 'absolute') {
-      const rect = win.getBoundingClientRect();
-
-      // Horizontal Check
-      if (rect.right > window.innerWidth) {
-        // Too far right, snap back
-        win.style.left = (window.innerWidth - rect.width / 2 - 20) + 'px';
-        // Updated to 3D Transform
-        win.style.transform = 'translate3d(-50%, -50%, 0)';
-      }
-
-      // Vertical Check
-      // 80px buffer for bottom dock
-      if (rect.bottom > window.innerHeight - 80) {
-        win.style.top = (window.innerHeight - 80 - rect.height / 2) + 'px';
-      }
-
-      // Top Check (Don't go under topbar)
-      if (rect.top < 60) {
-        win.style.top = (60 + rect.height / 2) + 'px';
-      }
-    }
+  endWindowDrag();
+  Object.values(cards).forEach(card => {
+    if (!card || card.style.display === 'none') return;
+    cancelWindowMotion(card);
   });
+  // Complete pending hides before changing coordinate systems at a breakpoint.
+  [...closingWindows].forEach(name => finishHidingWindow(name, false));
+  openWindows.filter(name => minimizedWindows.has(name)).forEach(name => finishHidingWindow(name, true));
+  repositionStack();
+  if (activeWindow) selectWindow(activeWindow, mobileLayout.matches);
 }
 
 function updateOpenWindowsTabs() {
   const container = document.getElementById('openWindowsTabs');
-  container.innerHTML = '';
+  const existing = new Map([...container.children].map(tab => [tab.dataset.view, tab]));
+  const focusedView = container.contains(document.activeElement) ? document.activeElement.dataset.view : null;
+  existing.forEach((tab, name) => { if (!openWindows.includes(name)) tab.remove(); });
 
-  openWindows.forEach(windowName => {
-    const tab = document.createElement('div');
+  openWindows.forEach((windowName, index) => {
+    const tab = existing.get(windowName) || document.createElement('div');
+    if (!existing.has(windowName)) {
+      tab.dataset.view = windowName;
+      makeKeyboardButton(tab, viewConfig[windowName]?.title || windowName);
+    }
     tab.className = 'window-tab';
+    tab.setAttribute('aria-pressed', String(windowName === activeWindow));
     if (windowName === activeWindow) {
       tab.classList.add('active-window-tab');
     }
@@ -298,13 +361,24 @@ function updateOpenWindowsTabs() {
       displayTitle = windowName.charAt(0).toUpperCase() + windowName.slice(1);
     }
 
-    tab.textContent = displayTitle;
+    if (tab.textContent !== displayTitle) tab.textContent = displayTitle;
     tab.onclick = () => showView(windowName);
-    container.appendChild(tab);
+    if (container.children[index] !== tab) container.insertBefore(tab, container.children[index] || null);
   });
+  if (focusedView) container.querySelector(`[data-view="${focusedView}"]`)?.focus({ preventScroll: true });
 
-  // Check for overflow after DOM update
-  setTimeout(checkTabsOverflow, 50);
+  // Keep the selected breadcrumb visible without scrolling the mobile workspace.
+  requestAnimationFrame(() => {
+    checkTabsOverflow();
+    const selected = container.querySelector('.active-window-tab');
+    if (selected) {
+      const bounds = container.getBoundingClientRect();
+      const rect = selected.getBoundingClientRect();
+      if (rect.right > bounds.right) container.scrollLeft += rect.right - bounds.right;
+      else if (rect.left < bounds.left) container.scrollLeft += rect.left - bounds.left;
+    }
+    checkTabsOverflow();
+  });
   updateCloseAllButton();
 }
 
@@ -316,6 +390,7 @@ function updateSidebar(viewName) {
   document.querySelectorAll('.sidebar-item').forEach(item => {
     // 1. Reset
     item.classList.remove('active');
+    item.setAttribute('aria-pressed', 'false');
     const oldTrigger = item.querySelector('.sidebar-menu-trigger');
     if (oldTrigger) oldTrigger.remove();
     const oldGrid = item.querySelector('.sidebar-popup-grid');
@@ -327,6 +402,7 @@ function updateSidebar(viewName) {
 
     if (currentConfig && currentConfig.parent === category) {
       item.classList.add('active');
+      item.setAttribute('aria-pressed', 'true');
     }
 
     // 3. Only add 3-dot menu for the 'projects' dock item
@@ -342,6 +418,7 @@ function updateSidebar(viewName) {
       // Create Trigger (3 Dots)
       const trigger = document.createElement('div');
       trigger.className = 'sidebar-menu-trigger';
+      makeKeyboardButton(trigger, 'Open project windows');
       // Simple SVG dots icon
       trigger.innerHTML = `<svg viewBox="0 0 24 24"><circle cx="5" cy="12" r="2"/><circle cx="12" cy="12" r="2"/><circle cx="19" cy="12" r="2"/></svg>`;
 
@@ -354,6 +431,7 @@ function updateSidebar(viewName) {
         const winConfig = viewConfig[win];
         const gridItem = document.createElement('div');
         gridItem.className = 'grid-item';
+        makeKeyboardButton(gridItem, winConfig.title);
         if (win === viewName) gridItem.classList.add('active-item');
         gridItem.innerHTML = winConfig.icon || '📄';
         gridItem.title = winConfig.title; // Tooltip
@@ -417,122 +495,35 @@ function getIconPosition(viewName) {
 function showView(viewName) {
   const card = cards[viewName];
   if (!card) return;
-  if (viewName === 'markdownify') loadMarkdownLibs().catch(() => {}); // warm up its converters
-
-  const isAlreadyOpen = openWindows.includes(viewName);
-  const isMinimized = minimizedWindows.has(viewName);
-
-  // If the window was minimized, restore it
-  if (isMinimized) {
-    minimizedWindows.delete(viewName);
-
-    // Reset position to centered % (in case it was dragged to pixel coords)
-    card.style.left = '50%';
-    card.style.top = '50%';
-    card.style.borderRadius = '16px';
-    card.style.transition = 'none';
-    card.style.display = 'flex';
-    card.style.clipPath = 'inset(50% 50% 50% 50% round 50%)';
-    // Keep the glass fully visible during the restore animation. Fading the
-    // backdrop-filtered surface makes it look like the glass is loading in.
-    card.style.opacity = '1';
-
-    // Start at the dock position and reveal the full-size glass surface with a
-    // clip path. The backdrop blur stays at its final strength throughout.
-    const iconPos = getIconPosition(viewName);
-    const screenCenter = { x: window.innerWidth / 2, y: window.innerHeight / 2 };
-    const deltaX = iconPos.x - screenCenter.x;
-    const deltaY = iconPos.y - screenCenter.y;
-
-    // Disable transition for initial setup
-    card.style.transform = `translate3d(calc(-50% + ${deltaX}px), calc(-50% + ${deltaY}px), 0)`;
-    card.offsetHeight; // Force reflow
-
-    // Animate to center
-    card.style.transition = 'transform 0.45s cubic-bezier(0.19, 1, 0.22, 1), clip-path 0.45s cubic-bezier(0.19, 1, 0.22, 1)';
-    card.style.transform = 'translate3d(-50%, -50%, 0)';
-    card.style.clipPath = 'inset(0 round 16px)';
-
-    bringToFront(card);
-    activeWindow = viewName;
-    updateSidebar(viewName);
-    updateOpenWindowsTabs();
-    return;
-  }
-
-  // Make sure it's visible in DOM to calculate styles
-  if (!isAlreadyOpen) card.style.transition = 'none';
+  if (viewName === 'markdownify') loadMarkdownLibs().catch(() => {});
+  const needsReveal = !openWindows.includes(viewName) || minimizedWindows.has(viewName) || closingWindows.has(viewName);
+  cancelWindowMotion(card);
+  closingWindows.delete(viewName);
+  minimizedWindows.delete(viewName);
+  if (!openWindows.includes(viewName)) openWindows.push(viewName);
   card.style.display = 'flex';
+  bringToFront(card);
+  selectWindow(viewName, true);
 
-  // If opening for the first time or re-opening, Ensure Center Origin
-  if (!isAlreadyOpen) {
-    // RESET POSITION TO CENTER so animation calculates correctly
-    card.style.left = '50%';
-    card.style.top = '50%';
-
-    const iconPos = getIconPosition(viewName);
-    const screenCenter = { x: window.innerWidth / 2, y: window.innerHeight / 2 };
-
-    // Calculate delta. 
-    // Note: Cards are centered by translate(-50%, -50%). 
-    // To move to icon, we add the difference between icon and screen center.
-    const deltaX = iconPos.x - screenCenter.x;
-    const deltaY = iconPos.y - screenCenter.y;
-
-    // Initial State (At Icon)
-    card.style.transition = 'none'; // Disable transition for setup
-    // Updated to 3D Transform
-    card.style.transform = `translate3d(calc(-50% + ${deltaX}px), calc(-50% + ${deltaY}px), 0)`;
+  if (needsReveal && !mobileLayout.matches && !windowReducedMotion.matches) {
+    const rect = card.getBoundingClientRect();
+    const icon = getIconPosition(viewName);
+    const dx = icon.x - (rect.left + rect.width / 2);
+    const dy = icon.y - (rect.top + rect.height / 2);
     card.style.clipPath = 'inset(50% 50% 50% 50% round 50%)';
-    // Keep the glass at its final opacity. Scaling or fading a backdrop-filtered
-    // surface changes its apparent translucency while the window opens.
-    card.style.opacity = '1';
-    card.style.borderRadius = '16px';
-
-    // Trigger Reflow
-    card.offsetHeight;
-
-    // Final State (Center Screen)
-    card.style.transition = 'transform 0.5s cubic-bezier(0.19, 1, 0.22, 1), clip-path 0.5s cubic-bezier(0.19, 1, 0.22, 1)';
-    // Updated to 3D Transform
+    card.style.transform = `translate3d(calc(-50% + ${dx}px), calc(-50% + ${dy}px), 0)`;
+    void card.offsetHeight;
+    card.style.transition = 'transform 0.32s cubic-bezier(0.19, 1, 0.22, 1), clip-path 0.32s cubic-bezier(0.19, 1, 0.22, 1)';
     card.style.transform = 'translate3d(-50%, -50%, 0)';
     card.style.clipPath = 'inset(0 round 16px)';
-
-    // Add to open windows list
-    openWindows.push(viewName);
+    afterWindowMotion(card, 320, repositionStack);
+  } else {
+    card.style.transition = '';
   }
 
-  // Always bring to front regardless (bringToFront also calls repositionStack)
-  bringToFront(card);
-
-  // --- MOBILE OPTIMIZATION: Handle stacking order ---
-  // 1. Remove "mobile-active" from ALL cards so they drop to order: 2
-  Object.values(cards).forEach(c => {
-    if (c) c.classList.remove('mobile-active');
-  });
-
-  // 2. Add "mobile-active" to CURRENT card so it jumps to order: 1 (top)
-  card.classList.add('mobile-active');
-
-  // 3. PHYSICAL DOM REORDERING (The Pro Fix)
-  const contentArea = document.querySelector('.content-area');
-  if (window.innerWidth <= 768) {
-    contentArea.insertBefore(card, contentArea.firstChild);
-    contentArea.scrollTop = 0;
-  }
-
-  activeWindow = viewName;
-
-  // Update UI components
-  updateSidebar(viewName);
-  updateOpenWindowsTabs();
-
-  // NEW: Auto-focus terminal input if terminal is opened
-  if (viewName === 'terminal') {
-    setTimeout(() => {
-      const input = document.getElementById('termInput');
-      if (input) input.focus();
-    }, 500); // Wait for animation
+  // Touch devices keep control of when the software keyboard opens.
+  if (viewName === 'terminal' && !window.matchMedia('(pointer: coarse)').matches) {
+    document.getElementById('termInput')?.focus({ preventScroll: true });
   }
 }
 
@@ -572,132 +563,65 @@ function bringToFront(winEl) {
  * depth 0 = foreground (last), depth 1 = one behind, etc.
  */
 function repositionStack() {
-  const STEP_X = -18;  // px shift left per depth level
-  const STEP_Y =  18;  // px shift down per depth level
-
-  const n = openWindows.length;
-
-  openWindows.forEach((name, i) => {
-    const c = cards[name];
-    if (!c || c.style.display === 'none') return;
-
-    const depth = n - 1 - i; // 0 = foreground, 1 = one behind, ...
-
-    if (depth === 0) {
-      // Foreground window: restore centred position
-      // Only reset if it's still using the transform-based centering
-      // (don't override if the user has manually dragged it)
-      const currentTransform = c.style.transform || '';
-      const hasPixelPos = c.style.left && !c.style.left.includes('%');
-      if (!hasPixelPos) {
-        c.style.transform = 'translate3d(-50%, -50%, 0)';
-      }
-    } else {
-      // Background windows: offset proportionally to depth
-      const offsetX = STEP_X * depth;
-      const offsetY = STEP_Y * depth;
-
-      const hasPixelPos = c.style.left && !c.style.left.includes('%');
-      if (hasPixelPos) {
-        // Window was dragged: grab its current pixel position and nudge it
-        // We store _baseLeft/_baseTop as the "foreground" position anchor
-        // and shift from there.
-        // For simplicity, just shift from its current absolute position.
-        // (Dragged windows keep their pixel coords; we only add the depth nudge
-        //  via a CSS custom-property transform so we don't corrupt left/top.)
-        c.style.transform = `translate(${offsetX}px, ${offsetY}px)`;
-      } else {
-        // Still using the centred % transform
-        c.style.transform = `translate3d(calc(-50% + ${offsetX}px), calc(-50% + ${offsetY}px), 0)`;
-      }
-    }
+  const visible = openWindows.filter(name => !minimizedWindows.has(name) && !closingWindows.has(name));
+  visible.forEach((name, index) => {
+    const card = cards[name];
+    if (!card || card.style.display === 'none' || windowMotion.has(card)) return;
+    positionWindow(card, visible.length - 1 - index);
   });
 }
 
 // Draggable windows
 function initDraggable() {
-  const allWindows = document.querySelectorAll('.window-card');
-
-  allWindows.forEach(windowCard => {
-    const header = windowCard.querySelector('.card-header');
-
-    header.addEventListener('mousedown', (e) => {
-      // Don't drag if clicking on control buttons
-      if (e.target.closest('.control-btn')) return;
-
+  document.querySelectorAll('.window-card').forEach(card => {
+    card.querySelector('.card-header').addEventListener('pointerdown', (event) => {
+      if (mobileLayout.matches || card.classList.contains('full-width') || event.button !== 0 ||
+          event.target.closest('button, .control-btn, input, select, a')) return;
+      cancelWindowMotion(card);
+      card.classList.add('dragging');
+      const rect = card.getBoundingClientRect();
+      const area = document.querySelector('.content-area').getBoundingClientRect();
+      windowPositions.set(card, { x: rect.left - area.left + rect.width / 2, y: rect.top - area.top + rect.height / 2 });
       isDragging = true;
-      draggedWindow = windowCard;
-
-      // Apply dragging class first to disable transitions
-      windowCard.classList.add('dragging');
-
-      // [FIX] Force Reflow: Ensure transition disable applies before moving
-      void windowCard.offsetWidth;
-
-      // Calculate current position relative to container to freeze it
-      const contentArea = document.querySelector('.content-area');
-      const contentRect = contentArea.getBoundingClientRect();
-      const rect = windowCard.getBoundingClientRect();
-
-      // Calculate exact position relative to content area
-      const relativeLeft = rect.left - contentRect.left;
-      const relativeTop = rect.top - contentRect.top;
-
-      // Swap from % centering to fixed pixel positioning without visual jump
-      windowCard.style.left = relativeLeft + 'px';
-      windowCard.style.top = relativeTop + 'px';
-      windowCard.style.transform = 'none';
-
-      // Set drag offsets
-      dragOffset.x = e.clientX - rect.left;
-      dragOffset.y = e.clientY - rect.top;
-
-      bringToFront(windowCard);
-
-      e.preventDefault();
+      draggedWindow = card;
+      dragOffset = { x: event.clientX - rect.left - rect.width / 2, y: event.clientY - rect.top - rect.height / 2 };
+      card.setPointerCapture(event.pointerId);
+      bringToFront(card);
+      selectWindow(Object.keys(cards).find(name => cards[name] === card));
+      event.preventDefault();
     });
   });
 }
 
-document.addEventListener('mousemove', (e) => {
+let dragFrame = null;
+document.addEventListener('pointermove', (event) => {
   if (!isDragging || !draggedWindow) return;
-
-  const contentArea = document.querySelector('.content-area');
-  const contentRect = contentArea.getBoundingClientRect();
-
-  let newX = e.clientX - contentRect.left - dragOffset.x;
-  let newY = e.clientY - contentRect.top - dragOffset.y;
-
-  // Constrain to content area
-  const windowRect = draggedWindow.getBoundingClientRect();
-
-  // Strict constraints: Window must remain fully inside contentArea
-  const minX = 0;
-  const maxX = contentRect.width - windowRect.width;
-  const minY = 0;
-  const maxY = contentRect.height - windowRect.height;
-
-  // Apply strict clamping to prevent overflow
-  newX = Math.max(minX, Math.min(newX, maxX));
-  newY = Math.max(minY, Math.min(newY, maxY));
-
-  draggedWindow.style.left = newX + 'px';
-  draggedWindow.style.top = newY + 'px';
-  draggedWindow.style.transform = 'none';
+  const area = document.querySelector('.content-area').getBoundingClientRect();
+  windowPositions.set(draggedWindow, { x: event.clientX - area.left - dragOffset.x, y: event.clientY - area.top - dragOffset.y });
+  if (dragFrame !== null) return;
+  dragFrame = requestAnimationFrame(() => {
+    dragFrame = null;
+    if (draggedWindow) positionWindow(draggedWindow);
+  });
 });
 
-document.addEventListener('mouseup', () => {
+function endWindowDrag() {
+  if (dragFrame !== null) cancelAnimationFrame(dragFrame);
+  dragFrame = null;
   if (draggedWindow) {
+    positionWindow(draggedWindow);
+    // Save the clamped center, so later stacking starts at the position on screen.
+    windowPositions.set(draggedWindow, { x: parseFloat(draggedWindow.style.left), y: parseFloat(draggedWindow.style.top) });
     draggedWindow.classList.remove('dragging');
+    draggedWindow.style.transition = '';
   }
   isDragging = false;
   draggedWindow = null;
-});
-
-// Initialize draggable after DOM is ready
-setTimeout(() => {
-  initDraggable();
-}, 100);
+}
+document.addEventListener('pointerup', endWindowDrag);
+document.addEventListener('pointercancel', endWindowDrag);
+window.addEventListener('blur', endWindowDrag);
+initDraggable();
 
 function closeAllWindows() {
   // Create a copy of openWindows because it gets modified during iteration
@@ -719,7 +643,7 @@ function updateCloseAllButton() {
     if (activeCard && !minimizedWindows.has(activeView)) {
       
       // If the button is already attached to this active window, do nothing!
-      if (existingBtn && existingBtn.parentNode === activeCard) {
+      if (existingBtn && existingBtn.parentNode === activeCard.querySelector('.card-controls')) {
         return;
       }
       
@@ -754,105 +678,76 @@ function updateCloseAllButton() {
   }
 }
 
-function closeWindow(viewName) {
+function finishHidingWindow(viewName, minimize) {
   const card = cards[viewName];
-  if (!card) return;
-
-  // Calculate the dock position for the closing transition.
-  const iconPos = getIconPosition(viewName);
-  const screenCenter = { x: window.innerWidth / 2, y: window.innerHeight / 2 };
-  const deltaX = iconPos.x - screenCenter.x;
-  const deltaY = iconPos.y - screenCenter.y;
-
-  // Apply Closing Animation
-  card.style.transition = 'transform 0.4s ease-in, clip-path 0.4s ease-in';
-  // Updated to 3D Transform
-  card.style.transform = `translate3d(calc(-50% + ${deltaX}px), calc(-50% + ${deltaY}px), 0)`;
-  card.style.clipPath = 'inset(50% 50% 50% 50% round 50%)';
-
-  // After animation, hide and cleanup
-  setTimeout(() => {
-    card.style.display = 'none';
-
-    // CRITICAL FIX: Reset styles to default centered state for next open
-    // This prevents the window from "jumping" if it was previously dragged to a specific pixel location
-    card.style.left = '50%';
-    card.style.top = '50%';
-    // Updated to 3D Transform
-    card.style.transform = 'translate3d(-50%, -50%, 0)';
-    card.style.borderRadius = '16px';
-    card.style.clipPath = 'inset(0 round 16px)';
-    card.style.opacity = '1';
-
-    openWindows = openWindows.filter(w => w !== viewName);
-    minimizedWindows.delete(viewName); // Also clean up from minimized set if it was there
-
-    if (viewName === 'home') {
-      const homeBtn = document.querySelector('.sidebar-item[data-view="home"]');
-      if (homeBtn) {
-        homeBtn.classList.add('wiggle');
-      }
-    }
-
-    // Show home if closing active window
-    if (activeWindow === viewName) {
-      // Find a non-minimized window to switch to
-      const nextVisibleWindow = openWindows.slice().reverse().find(w => !minimizedWindows.has(w));
-      if (nextVisibleWindow) {
-        showView(nextVisibleWindow);
-      } else {
-        activeWindow = null;
-        updateOpenWindowsTabs();
-        updateSidebar(null);
-      }
+  const restoreFocus = card.contains(document.activeElement) || (card._restoreFocus && document.activeElement === document.body);
+  card._restoreFocus = false;
+  cancelWindowMotion(card);
+  card.style.display = 'none';
+  card.classList.remove('active-window', 'mobile-active');
+  if (!minimize) {
+    openWindows = openWindows.filter(name => name !== viewName);
+    minimizedWindows.delete(viewName);
+    closingWindows.delete(viewName);
+    windowPositions.delete(card);
+    if (viewName === 'iframe') document.getElementById('contentIframe').removeAttribute('src');
+  }
+  if (activeWindow === viewName) {
+    const next = openWindows.slice().reverse().find(name => !minimizedWindows.has(name) && !closingWindows.has(name));
+    if (next) {
+      bringToFront(cards[next]);
+      selectWindow(next, true);
     } else {
-      updateOpenWindowsTabs();
-      // Update sidebar to reflect the new active window (usually home)
-      if (openWindows.length === 0) {
-        updateSidebar(null);
-      } else if (activeWindow) {
-        updateSidebar(activeWindow);
-      }
-      // Reposition remaining windows now that the stack has changed
-      repositionStack();
+      selectWindow(null);
+      if (!openWindows.length) document.querySelector('.sidebar-item[data-view="home"]')?.classList.add('wiggle');
     }
-  }, 400); // Match transition duration
+  } else {
+    updateOpenWindowsTabs();
+    updateSidebar(activeWindow);
+  }
+  repositionStack();
+  // Focus only needs repair when it was in the window being hidden.
+  if (restoreFocus) {
+    const target = activeWindow ? cards[activeWindow].querySelector('.btn-close') : document.querySelector('.sidebar-item[data-view="home"]');
+    target?.focus({ preventScroll: true });
+  }
 }
 
-// Sidebar navigation
+function hideWindow(viewName, minimize) {
+  const card = cards[viewName];
+  if (!card || !openWindows.includes(viewName) || closingWindows.has(viewName)) return;
+  if (minimize && minimizedWindows.has(viewName)) return;
+  cancelWindowMotion(card);
+  if (minimize) minimizedWindows.add(viewName);
+  else closingWindows.add(viewName);
+  if (mobileLayout.matches || windowReducedMotion.matches || card.style.display === 'none') {
+    finishHidingWindow(viewName, minimize);
+    return;
+  }
+  const rect = card.getBoundingClientRect();
+  const icon = getIconPosition(viewName);
+  const dx = icon.x - (rect.left + rect.width / 2);
+  const dy = icon.y - (rect.top + rect.height / 2);
+  card._restoreFocus = card.contains(document.activeElement);
+  card.style.pointerEvents = 'none';
+  card.inert = true;
+  card.style.transition = 'transform 0.24s ease-in, clip-path 0.24s ease-in';
+  card.style.transform = `translate3d(calc(-50% + ${dx}px), calc(-50% + ${dy}px), 0)`;
+  card.style.clipPath = 'inset(50% 50% 50% 50% round 50%)';
+  afterWindowMotion(card, 240, () => finishHidingWindow(viewName, minimize));
+}
+
+function closeWindow(viewName) { hideWindow(viewName, false); }
+function minimizeWindow(viewName) { hideWindow(viewName, true); }
+
+// Dock activation uses the same lifecycle for new, visible, and minimized windows.
 document.querySelectorAll('.sidebar-item').forEach(item => {
   item.addEventListener('click', () => {
     item.classList.remove('wiggle');
-    const view = item.dataset.view;
-
-    // If the window is minimized, restore it
-    if (minimizedWindows.has(view)) {
-      showView(view);
-      return;
-    }
-
-    // If window is already open and visible, just bring to front
-    if (openWindows.includes(view) && cards[view] && cards[view].style.display === 'flex') {
-      bringToFront(cards[view]);
-      activeWindow = view;
-      updateOpenWindowsTabs();
-      updateSidebar(view); // Ensure sidebar updates even if just bringing to front
-
-      // Added logic for Mobile click on already open window: Scroll to top AND Move to DOM top
-      const contentArea = document.querySelector('.content-area');
-      if (window.innerWidth <= 768) {
-        Object.values(cards).forEach(card => card && card.classList.remove('mobile-active'));
-        cards[view].classList.add('mobile-active');
-
-        // Move to top of DOM
-        contentArea.insertBefore(cards[view], contentArea.firstChild);
-        contentArea.scrollTop = 0;
-      }
-    } else {
-      showView(view);
-    }
+    showView(item.dataset.view);
   });
 });
+
 
 // Topbar navigation (Logo and Home Tab)
 document.querySelector('.app-logo').addEventListener('click', () => showView('home'));
@@ -870,69 +765,23 @@ document.querySelectorAll('.control-btn').forEach(btn => {
     } else if (btn.classList.contains('btn-minimize')) {
       minimizeWindow(viewName);
     } else if (btn.classList.contains('btn-maximize')) {
+      cancelWindowMotion(card);
       card.classList.toggle('full-width');
-      if (card.classList.contains('full-width')) {
-        card.style.left = '50%';
-        card.style.top = '50%';
-        card.style.transform = 'translate3d(-50%, -50%, 0)';
-      }
+      positionWindow(card);
+      card.style.transition = '';
+      btn.setAttribute('aria-label', card.classList.contains('full-width') ? 'Restore window size' : 'Maximize');
     }
   });
 });
 
-// NEW: Minimize function — hides the window but keeps it in openWindows
-function minimizeWindow(viewName) {
-  const card = cards[viewName];
-  if (!card) return;
-
-  // Animate toward the dock while the glass surface is clipped away.
-  const iconPos = getIconPosition(viewName);
-  const screenCenter = { x: window.innerWidth / 2, y: window.innerHeight / 2 };
-  const deltaX = iconPos.x - screenCenter.x;
-  const deltaY = iconPos.y - screenCenter.y;
-
-  card.style.transition = 'transform 0.35s cubic-bezier(0.4, 0, 0.6, 1), clip-path 0.35s ease';
-  card.style.transform = `translate3d(calc(-50% + ${deltaX}px), calc(-50% + ${deltaY}px), 0)`;
-  card.style.clipPath = 'inset(50% 50% 50% 50% round 50%)';
-
-  setTimeout(() => {
-    card.style.display = 'none';
-    card.style.clipPath = 'inset(0 round 16px)';
-    card.style.opacity = '1';
-    // Mark as minimized — do NOT remove from openWindows
-    minimizedWindows.add(viewName);
-
-    // Switch focus to another open non-minimized window if this was active
-    if (activeWindow === viewName) {
-      const nextWindow = openWindows.slice().reverse().find(w => w !== viewName && !minimizedWindows.has(w));
-      if (nextWindow) {
-        showView(nextWindow);
-      } else {
-        // No visible windows — show home if home is open, else update UI
-        if (openWindows.includes('home') && !minimizedWindows.has('home')) {
-          showView('home');
-        } else {
-          activeWindow = null;
-          updateOpenWindowsTabs();
-          updateSidebar('');
-        }
-      }
-    } else {
-      updateOpenWindowsTabs();
-      updateSidebar(activeWindow || '');
-    }
-  }, 350);
-}
-
-// Click on window to bring to front (UPDATED TO FIX SIDEBAR HIGHLIGHT)
-document.querySelectorAll('.window-card').forEach(win => {
-  win.addEventListener('mousedown', () => {
-    bringToFront(win);
-    const viewName = Object.keys(cards).find(key => cards[key] === win);
-    if (viewName) {
-      activeWindow = viewName;
-      updateOpenWindowsTabs();
-      updateSidebar(viewName); // This fixes the issue where clicking a window didn't update the sidebar
+// Raising a window must not rebuild controls during the press that activates them.
+document.querySelectorAll('.window-card').forEach(card => {
+  card.addEventListener('pointerdown', (event) => {
+    if (event.target.closest('.card-header') || closingWindows.has(Object.keys(cards).find(name => cards[name] === card))) return;
+    const name = Object.keys(cards).find(name => cards[name] === card);
+    if (name && activeWindow !== name) {
+      bringToFront(card);
+      selectWindow(name);
     }
   });
 });
@@ -950,19 +799,9 @@ function openInIframe(url, title, icon) {
 
   showView('iframe');
 
-  // Offset iframe window slightly from center
-  const iframeCard = document.getElementById('iframeCard');
-  setTimeout(() => {
-    iframeCard.style.left = 'calc(50% + 30px)';
-    iframeCard.style.top = 'calc(50% + 30px)';
-    bringToFront(iframeCard);
-  }, 50);
 }
 
-function closeIframe() {
-  document.getElementById('contentIframe').src = '';
-  closeWindow('iframe');
-}
+function closeIframe() { closeWindow('iframe'); }
 
 // NEW: TERMINAL LOGIC
 const termInput = document.getElementById('termInput');
@@ -1030,8 +869,8 @@ if (termInput) {
   });
 
   // Click anywhere in terminal to focus input
-  document.getElementById('terminalCard').addEventListener('click', () => {
-    termInput.focus();
+  document.getElementById('terminalCard').addEventListener('click', (event) => {
+    if (!event?.target?.closest('.card-header')) termInput.focus({ preventScroll: true });
   });
 }
 
@@ -1395,7 +1234,8 @@ if (dockNew) dockNew.addEventListener('click', () => {
 
 // --- Dynamic Auto-Sorting Logic ---
 function sortContainer(container, itemSelector, titleSelector) {
-  const items = Array.from(container.querySelectorAll(itemSelector));
+  const original = Array.from(container.children).filter(item => item.matches(itemSelector));
+  const items = [...original];
   if (items.length <= 1) return;
   
   items.sort((a, b) => {
@@ -1405,7 +1245,7 @@ function sortContainer(container, itemSelector, titleSelector) {
     return textA.trim().toLowerCase().localeCompare(textB.trim().toLowerCase());
   });
   
-  // Re-append in sorted order
+  if (items.every((item, index) => item === original[index])) return;
   items.forEach(item => container.appendChild(item));
 }
 
@@ -1439,6 +1279,7 @@ const sortingObserver = new MutationObserver((mutations) => {
       // to prevent DOM detachment from cancelling in-flight click events.
       const hasSortable = addedElements.some(el => {
         if (el.classList && el.classList.contains('global-close-all-btn')) return false;
+        if (Object.values(cards).includes(el)) return false; // A known window was only promoted.
         
         const selectors = ['.project-item', '.resource-hero-card', '.article-item', '.infographic-item', '.skill-tag'];
         return selectors.some(sel => el.matches && el.matches(sel) || (el.querySelector && el.querySelector(sel)));
@@ -1779,13 +1620,65 @@ function updateDesktopClock() {
   minutes = minutes < 10 ? '0' + minutes : minutes;
   const strHours = hours < 10 ? '0' + hours : hours;
   
-  timeEl.textContent = `${strHours}:${minutes}`;
-  ampmEl.textContent = ampm;
+  const clockText = `${strHours}:${minutes}`;
+  if (timeEl.textContent !== clockText) timeEl.textContent = clockText;
+  if (ampmEl.textContent !== ampm) ampmEl.textContent = ampm;
 
   const options = { weekday: 'long', month: 'long', day: 'numeric' };
-  dateEl.textContent = now.toLocaleDateString('en-US', options);
+  const dateText = now.toLocaleDateString('en-US', options);
+  if (dateEl.textContent !== dateText) dateEl.textContent = dateText;
 }
 
 // Initialize clock
 updateDesktopClock();
 setInterval(updateDesktopClock, 1000);
+
+
+function makeKeyboardButton(element, label) {
+  element.setAttribute('role', 'button');
+  element.tabIndex = 0;
+  element.setAttribute('aria-label', label);
+  element.addEventListener('keydown', event => {
+    if (event.target !== element || !['Enter', ' '].includes(event.key)) return;
+    event.preventDefault();
+    event.stopPropagation();
+    if (!event.repeat) element.click();
+  });
+}
+document.querySelectorAll('.sidebar-item, .control-btn, .app-logo, .nav-tab, .tabs-overflow-indicator, .resource-hero-card, .project-item, .article-item, .infographic-item').forEach(element => {
+  if (element.tagName === 'BUTTON' || element.tagName === 'A') return;
+  const label = element.title || element.querySelector('.res-title, .project-title, .art-title, .infographic-caption')?.textContent.trim() || element.textContent.trim() || 'Home';
+  makeKeyboardButton(element, label);
+});
+document.querySelectorAll('.card-title').forEach(title => title.title = title.textContent);
+document.addEventListener('keydown', event => {
+  if (event.key === 'Escape') document.querySelectorAll('.sidebar-popup-grid.visible').forEach(grid => grid.classList.remove('visible'));
+});
+
+// Touch browsers do not have a dependable hover state. Make prompt disclosure
+// explicit while keeping the existing image and overlay appearance.
+document.querySelectorAll('.prompt-image-container').forEach(container => {
+  const image = container.querySelector('.prompt-image');
+  makeKeyboardButton(image, 'Show image generation prompt');
+  image.setAttribute('aria-expanded', 'false');
+  image.addEventListener('click', () => {
+    const open = container.classList.toggle('prompt-open');
+    container.classList.toggle('prompt-dismissed', !open);
+    image.setAttribute('aria-expanded', String(open));
+  });
+  container.addEventListener('pointerleave', () => container.classList.remove('prompt-dismissed'));
+  container.addEventListener('keydown', event => {
+    if (event.key !== 'Escape') return;
+    container.classList.remove('prompt-open');
+    container.classList.add('prompt-dismissed');
+    image.setAttribute('aria-expanded', 'false');
+    if (container.contains(document.activeElement)) document.activeElement.blur();
+  });
+  container.addEventListener('click', event => {
+    if (event.target.closest('button, .prompt-text') || event.target === image) return;
+    container.classList.remove('prompt-open');
+    container.classList.add('prompt-dismissed');
+    image.setAttribute('aria-expanded', 'false');
+    if (container.contains(document.activeElement)) document.activeElement.blur();
+  });
+});
