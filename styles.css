@@ -561,9 +561,8 @@
     /* GLASS TOPBAR */
     .topbar {
       height: 50px;
-      background: rgba(15, 20, 26, 0.45);
-      backdrop-filter: blur(25px) saturate(180%);
-      -webkit-backdrop-filter: blur(25px) saturate(180%);
+      /* Stable shell surface: no live backdrop sampling over moving windows. */
+      background: rgba(15, 20, 26, 0.96);
       display: flex;
       align-items: center;
       padding: 0 20px;
@@ -571,9 +570,9 @@
       box-shadow: 0 1px 0 rgba(255, 255, 255, 0.04), 0 8px 24px rgba(0, 0, 0, 0.25);
       justify-content: space-between;
       z-index: 9000;
-      position: absolute;
-      /* Ensures it stays top */
+      position: fixed;
       top: 0;
+      left: 0;
       width: 100%;
     }
 
@@ -582,6 +581,7 @@
       gap: 20px;
       align-items: center;
       flex: 1;
+      min-width: 0;
       overflow: hidden;
     }
 
@@ -597,7 +597,7 @@
       border-radius: 50%;
       padding: 5px;
       cursor: default;
-      /* no backdrop-filter: nested inside the blurred topbar (its backdrop root) */
+      /* No live blur needed inside the tinted topbar. */
       box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
     }
 
@@ -629,7 +629,7 @@
       background: rgba(255, 255, 255, 0.1);
       border: 1px solid rgba(255, 255, 255, 0.15);
       color: rgba(255, 255, 255, 0.9);
-      /* no backdrop-filter: nested inside the blurred topbar (its backdrop root) */
+      /* No live blur needed inside the tinted topbar. */
       box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
     }
 
@@ -717,6 +717,7 @@
     }
 
     .topbar-right {
+      flex-shrink: 0;
       font-size: 13px;
       font-weight: 500;
       color: rgba(255, 255, 255, 0.9);
@@ -755,14 +756,19 @@
       /* Top padding for topbar, bottom for dock */
       position: relative;
       max-width: 100%;
+      min-height: 0;
+      /* Window z-indices stay inside the workspace, below shell controls. */
+      isolation: isolate;
+      z-index: 2; /* Above the desktop clock (1), below the topbar/dock. */
     }
 
-    /* GLASS WINDOW CARD - FIXED FOR MACBOOK/CHROME RENDERING */
+    /* Glass-style windows without overlapping live backdrop-filter layers. */
     .window-card {
-      /* The core frosted glass effect */
-      background: rgba(40, 45, 55, 0.55);
-      backdrop-filter: blur(40px) saturate(160%);
-      -webkit-backdrop-filter: blur(40px) saturate(160%);
+      /* Tinted glass and sheen retain the palette without sampling other windows.
+         Avoid the live-blur/3D-transform/animated-clip combination implicated
+         by the reported Mac rendering artifacts. */
+      background: linear-gradient(145deg, rgba(255, 255, 255, 0.06), transparent 60%),
+        rgba(40, 45, 55, 0.96);
 
       border-radius: var(--radius-window);
       border: 1px solid rgba(255, 255, 255, 0.12);
@@ -787,24 +793,16 @@
       position: absolute;
       left: 50%;
       top: 50%;
-      /* MACBOOK FIX: Use translate3d instead of translate to force GPU acceleration.
-         This prevents shadow clipping and z-index overlap glitches in Safari/Chrome Mac.
-      */
-      transform: translate3d(-50%, -50%, 0);
-      /* backface-visibility: hidden; REMOVED to prevent animation glitch */
-
-      /* Removed isolation and will-change as they cause grey square-corner artifacts around shadow bounding boxes in Chrome when using backdrop-filter */
-
-      /* FIXED: REMOVED overflow:hidden from here to allow shadows to render on Mac */
-      /* overflow: hidden; */
+      transform: translate(-50%, -50%);
+      /* Clip descendants to the rounded surface; outer box shadows remain visible. */
+      overflow: hidden;
     }
 
     /* Window Opening Animation - Desktop (Liquid Drop Style) */
     @keyframes liquidOpenDesktop {
       0% {
         opacity: 0;
-        transform: translate3d(-50%, -50%, 0) scale(0.2);
-        /* Updated to 3D */
+        transform: translate(-50%, -50%) scale(0.2);
         border-radius: 50%;
         /* Start as circle/drop */
       }
@@ -815,8 +813,7 @@
 
       100% {
         opacity: 1;
-        transform: translate3d(-50%, -50%, 0) scale(1);
-        /* Updated to 3D */
+        transform: translate(-50%, -50%) scale(1);
         border-radius: 16px;
         /* End as window */
       }
@@ -871,8 +868,7 @@
       max-width: none;
       left: 50%;
       top: 50%;
-      transform: translate3d(-50%, -50%, 0);
-      /* Updated to 3D */
+      transform: translate(-50%, -50%);
       border-radius: 16px;
     }
 
@@ -967,9 +963,7 @@
       scrollbar-width: thin;
       scrollbar-color: rgba(196, 90, 42, 0.5) transparent;
 
-      /* FIXED: Added these to maintain rounded corners while parent has overflow:visible */
-      border-radius: 0 0 16px 16px;
-      /* overflow: hidden;  <-- REMOVED THIS LINE TO RESTORE SCROLLING */
+      border-radius: 0 0 var(--radius-window) var(--radius-window);
     }
 
     /* Glassy Scrollbar */
@@ -1182,7 +1176,6 @@
       justify-content: center;
       gap: 8px;
       transition: all 0.3s;
-      backdrop-filter: blur(5px);
     }
 
     .social-btn:hover {
@@ -1249,8 +1242,6 @@
       inset: 0;
       background: rgba(255, 255, 255, 0.05);
       /* Semi-transparent to match the rest of home page components */
-      backdrop-filter: blur(10px);
-      -webkit-backdrop-filter: blur(10px);
       z-index: -1;
       border-radius: 10px;
       /* match social-btn radius */
@@ -1428,7 +1419,6 @@
       color: rgba(255, 255, 255, 0.9);
       transition: all 0.2s;
       cursor: default;
-      backdrop-filter: blur(5px);
       position: relative;
       box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.08);
     }
@@ -2064,7 +2054,6 @@
       left: 50%;
       transform: translateX(-50%);
       background: rgba(20, 25, 30, 0.7);
-      backdrop-filter: blur(15px);
       border: 1px solid rgba(255, 255, 255, 0.1);
       border-radius: 20px;
       display: flex;
