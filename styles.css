@@ -1795,6 +1795,10 @@
       .card-content {
         padding: 20px;
         font-size: 13px;
+        /* Mobile cards grow with their content; the workspace owns page scrolling.
+           A non-scrolling overflow:auto panel with overscroll:contain traps swipes. */
+        overflow: visible;
+        overscroll-behavior: auto;
       }
 
       .profile-avatar {

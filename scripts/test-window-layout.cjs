@@ -95,7 +95,47 @@ const { chromium } = require('playwright');
     if (process.env.SCREENSHOT_PATH) await page.screenshot({path: process.env.SCREENSHOT_PATH});
     await page.locator('.global-close-all-btn').click();
     await page.waitForFunction(() => [...document.querySelectorAll('.window-card')].every(card => card.style.display === 'none'));
-    console.log('PASS: five-window stack, topbar hit testing, drag bounds, minimize/restore, maximize, interrupted close, desktop/mobile resize, reduced motion, close all');
+    // Test actual touch gestures: viewport-only checks do not catch scroll-chain traps.
+    const android = await browser.newPage({
+      viewport: { width: 412, height: 839 }, isMobile: true, hasTouch: true,
+      deviceScaleFactor: 2, reducedMotion: 'reduce',
+      userAgent: 'Mozilla/5.0 (Linux; Android 13; Pixel 7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Mobile Safari/537.36'
+    });
+    android.on('pageerror', error => errors.push(error.message));
+    await android.route('**/*', route => {
+      const url = new URL(route.request().url());
+      return ['localhost', '127.0.0.1'].includes(url.hostname) ? route.continue() : route.abort();
+    });
+    await android.goto(process.argv[2] || 'http://localhost:8765', { waitUntil: 'domcontentloaded' });
+    await android.waitForFunction(() => !document.querySelector('.desktop').inert);
+    const touch = await android.context().newCDPSession(android);
+    const swipe = async (start, end) => {
+      await touch.send('Input.dispatchTouchEvent', {type: 'touchStart', touchPoints: [{x: 200, y: start}]});
+      for (let i = 1; i <= 12; i++) {
+        await touch.send('Input.dispatchTouchEvent', {type: 'touchMove', touchPoints: [{x: 200, y: start + (end - start) * i / 12}]});
+        await android.waitForTimeout(20);
+      }
+      await touch.send('Input.dispatchTouchEvent', {type: 'touchEnd', touchPoints: []});
+      await android.waitForTimeout(300);
+    };
+    const scrollTop = () => android.locator('.content-area').evaluate(area => area.scrollTop);
+    for (const viewport of [{width: 412, height: 839}, {width: 360, height: 640}]) {
+      await android.setViewportSize(viewport);
+      await android.locator('.sidebar-item[data-view="skills"]').click();
+      assert.equal(await scrollTop(), 0, 'newly selected mobile window starts at the top');
+      await swipe(500, 200);
+      const down = await scrollTop();
+      assert.ok(down > 100, 'swiping over mobile window content scrolls the workspace');
+      await swipe(200, 500);
+      assert.ok(await scrollTop() < down, 'reverse swipe scrolls back toward the top');
+      await android.locator('.sidebar-item[data-view="home"]').click();
+      await swipe(500, 200);
+      assert.ok(await scrollTop() > 100, 'touch scrolling works with multiple mobile windows');
+      assert.ok(await android.evaluate(() => !!document.elementFromPoint(innerWidth - 10, 25)?.closest('.topbar')), 'mobile topbar stays above scrolling content');
+    }
+    await android.close();
+    assert.deepEqual(errors, [], 'no uncaught desktop or Android page errors');
+    console.log('PASS: window lifecycle/layout checks and Android touch scrolling at 412×839 and 360×640, including reverse swipes and multiple windows');
   } finally {
     await browser.close();
   }
