@@ -189,7 +189,6 @@ function cancelWindowMotion(card) {
   if (motion) clearTimeout(motion.timer);
   windowMotion.delete(card);
   card.style.transition = 'none';
-  card.style.clipPath = '';
   card.style.opacity = '';
   card.style.pointerEvents = '';
   card.inert = false;
@@ -202,7 +201,7 @@ function afterWindowMotion(card, duration, finish) {
     if (windowMotion.get(card) !== motion) return;
     windowMotion.delete(card);
     card.style.transition = '';
-    card.style.clipPath = ''; // Release the temporary clip so glass shadows can render.
+    card.style.opacity = '';
     finish?.();
   }, duration);
   windowMotion.set(card, motion);
@@ -237,7 +236,7 @@ function positionWindow(card, depth = 0) {
   // Centered windows follow viewport changes in CSS, even before resize fires.
   card.style.left = windowPositions.has(card) ? `${x}px` : '50%';
   card.style.top = windowPositions.has(card) ? `${y}px` : 'calc((100% + var(--workspace-top) - var(--workspace-bottom)) / 2)';
-  card.style.transform = `translate3d(calc(-50% + ${dx}px), calc(-50% + ${dy}px), 0)`;
+  card.style.transform = `translate(calc(-50% + ${dx}px), calc(-50% + ${dy}px))`;
 }
 
 function selectWindow(viewName, scrollToTop = false) {
@@ -510,12 +509,12 @@ function showView(viewName) {
     const icon = getIconPosition(viewName);
     const dx = icon.x - (rect.left + rect.width / 2);
     const dy = icon.y - (rect.top + rect.height / 2);
-    card.style.clipPath = 'inset(50% 50% 50% 50% round 50%)';
-    card.style.transform = `translate3d(calc(-50% + ${dx}px), calc(-50% + ${dy}px), 0)`;
+    card.style.opacity = '0';
+    card.style.transform = `translate(calc(-50% + ${dx}px), calc(-50% + ${dy}px)) scale(0.2)`;
     void card.offsetHeight;
-    card.style.transition = 'transform 0.32s cubic-bezier(0.19, 1, 0.22, 1), clip-path 0.32s cubic-bezier(0.19, 1, 0.22, 1)';
-    card.style.transform = 'translate3d(-50%, -50%, 0)';
-    card.style.clipPath = 'inset(0 round 16px)';
+    card.style.transition = 'transform 0.32s cubic-bezier(0.19, 1, 0.22, 1), opacity 0.32s ease';
+    card.style.transform = 'translate(-50%, -50%)';
+    card.style.opacity = '1';
     afterWindowMotion(card, 320, repositionStack);
   } else {
     card.style.transition = '';
@@ -731,9 +730,9 @@ function hideWindow(viewName, minimize) {
   card._restoreFocus = card.contains(document.activeElement);
   card.style.pointerEvents = 'none';
   card.inert = true;
-  card.style.transition = 'transform 0.24s ease-in, clip-path 0.24s ease-in';
-  card.style.transform = `translate3d(calc(-50% + ${dx}px), calc(-50% + ${dy}px), 0)`;
-  card.style.clipPath = 'inset(50% 50% 50% 50% round 50%)';
+  card.style.transition = 'transform 0.24s ease-in, opacity 0.24s ease-in';
+  card.style.transform = `translate(calc(-50% + ${dx}px), calc(-50% + ${dy}px)) scale(0.2)`;
+  card.style.opacity = '0';
   afterWindowMotion(card, 240, () => finishHidingWindow(viewName, minimize));
 }
 
