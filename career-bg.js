@@ -2,7 +2,7 @@
    career-bg.js  —  "Assurance Graph" background for cyberamo.work
    Replaces the fluid WebGL background with a role-themed scene:
 
-   Layer A  #webgl-bg   low-res WebGL ambient "frosted glass" field per BrandStyleGuide.md:
+   Layer A  #webgl-bg   desktop WebGL / touch-native 2D ambient field per BrandStyleGuide.md:
                         very dark base with huge, blurred copper and deep-teal glows (palette
                         sampled from the infographics) swirling like liquid glass, lit by the
                         cursor, rippled by clicks.
@@ -23,7 +23,8 @@
      (the same words also work as Terminal commands)
 
    Performance: pre-rendered glow sprites (no shadowBlur), batched strokes,
-   field rendered at ~half resolution / 30 fps, DPR capped, adaptive quality,
+   desktop field rendered at ~half resolution / 30 fps, native ambient gradients on touch,
+   DPR capped, adaptive quality,
    pauses when the tab is hidden, single static frame for reduced motion.
    ========================================================================== */
 (() => {
@@ -67,18 +68,57 @@
      LAYER A — WebGL latent field
      ------------------------------------------------------------------------ */
   const Field = (() => {
-    const gl = glCanvas.getContext('webgl', {
-      antialias: false, alpha: false, depth: false, stencil: false,
-      // The field draws on alternate frames and pauses behind glass windows.
-      // Retain its last frame when the compositor repaints those glass layers.
-      preserveDrawingBuffer: true, powerPreference: 'low-power'
-    });
     const fallback = () => {
       glCanvas.style.background =
         'radial-gradient(60% 55% at 12% 10%, rgba(102,57,34,.85), transparent 70%),' +
         'radial-gradient(60% 60% at 88% 90%, rgba(12,45,47,.95), transparent 70%), #0E1618';
-      return { ok: false, resize() {}, draw() {}, setScale() {} };
+      return { ok: false, renderer: 'css', resize() {}, draw() {}, setScale() {} };
     };
+    // Touch devices use native smooth gradients instead of the low-resolution
+    // mediump noise shader, keeping mobile colour motion independent of shader
+    // precision while retaining the copper/teal palette and calmer ambient drift.
+    if (COARSE) {
+      const ambient = glCanvas.getContext('2d', { alpha: false });
+      if (!ambient) return fallback();
+      let scale = 1;
+      return {
+        ok: true,
+        renderer: 'canvas2d',
+        setScale(s) { scale = Math.max(0.5, Math.min(1, s * 2)); },
+        resize() {
+          const width = Math.max(2, Math.round(W * scale));
+          const height = Math.max(2, Math.round(H * scale));
+          if (glCanvas.width !== width) glCanvas.width = width;
+          if (glCanvas.height !== height) glCanvas.height = height;
+        },
+        draw(t) {
+          const width = glCanvas.width, height = glCanvas.height;
+          ambient.fillStyle = '#0E1618';
+          ambient.fillRect(0, 0, width, height);
+          const glow = (x, y, radius, rgb, opacity) => {
+            const gradient = ambient.createRadialGradient(x, y, 0, x, y, radius);
+            gradient.addColorStop(0, `rgba(${rgb},${opacity})`);
+            gradient.addColorStop(0.4, `rgba(${rgb},${opacity * 0.55})`);
+            gradient.addColorStop(1, `rgba(${rgb},0)`);
+            ambient.fillStyle = gradient;
+            ambient.fillRect(0, 0, width, height);
+          };
+          const radius = Math.max(width, height);
+          // Very small, continuous orbits: no noise cells or touch-following flashes.
+          glow(width * (0.12 + Math.sin(t * 0.025) * 0.06),
+            height * (0.18 + Math.cos(t * 0.02) * 0.05), radius * 0.85, '102,57,34', 0.8);
+          glow(width * (0.88 + Math.cos(t * 0.022) * 0.04),
+            height * (0.78 + Math.sin(t * 0.018) * 0.06), radius * 0.9, '12,45,47', 0.9);
+          glow(width * (0.65 + Math.sin(t * 0.018) * 0.04),
+            height * 0.12, radius * 0.65, '31,79,85', 0.18);
+        }
+      };
+    }
+    const gl = glCanvas.getContext('webgl', {
+      antialias: false, alpha: false, depth: false, stencil: false,
+      // Retain the last frame while the scene is paused behind windows.
+      preserveDrawingBuffer: true, powerPreference: 'low-power'
+    });
     if (!gl) return fallback();
 
     const vs = 'attribute vec2 p;void main(){gl_Position=vec4(p,0.,1.);}';
@@ -210,6 +250,7 @@
 
     return {
       ok: true,
+      renderer: 'webgl',
       setScale(s) { scale = s; },
       resize() {
         // The field is soft; rendering at ~half resolution is visually identical
@@ -766,7 +807,7 @@
     eggs: () => Object.keys(EGGS),
     has: (name) => Object.prototype.hasOwnProperty.call(EGGS, name),
     trigger: triggerEgg,
-    stats: () => ({ frameMs: +ema.toFixed(1), scriptMs: +jsMs.toFixed(2), quality, nodes: nodes.length })
+    stats: () => ({ frameMs: +ema.toFixed(1), scriptMs: +jsMs.toFixed(2), quality, nodes: nodes.length, renderer: Field.renderer })
   };
 
   /* ---------------- simulation ---------------- */

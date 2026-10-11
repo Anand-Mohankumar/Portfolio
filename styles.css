@@ -2198,10 +2198,11 @@
       z-index: -1;
       width: 100vw;
       height: 100vh;
+      height: 100dvh;
       pointer-events: none;
     }
 
-    #webgl-bg { background: #0E1618; } /* rendered at ~half res, upscaled smoothly */
+    #webgl-bg { background: #0E1618; } /* Soft ambient field: WebGL desktop / 2D touch. */
 
     /* Image Generation Prompts Showcase */
     .prompt-showcase {
