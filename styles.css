@@ -2192,6 +2192,7 @@
 
     /* WebGL Background */
     #webgl-bg,
+    #wallpaper-grain,
     #career-bg {
       position: fixed;
       inset: 0;
@@ -2202,7 +2203,16 @@
       pointer-events: none;
     }
 
-    #webgl-bg { background: #0E1618; } /* Soft ambient field: WebGL desktop / 2D touch. */
+    #webgl-bg { background: #050607; } /* Soft light: WebGL desktop / native 2D touch. */
+
+    /* Stationary film grain between the colour field and RFx graph. Inline SVG
+       stays crisp at every DPR without downloads, per-frame noise or a UI overlay. */
+    #wallpaper-grain {
+      opacity: 0.095;
+      background-size: 256px 256px;
+      background-repeat: repeat;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='256' height='256'%3E%3Cfilter id='grain'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3CfeComponentTransfer%3E%3CfeFuncR type='linear' slope='3' intercept='-1'/%3E%3CfeFuncG type='linear' slope='3' intercept='-1'/%3E%3CfeFuncB type='linear' slope='3' intercept='-1'/%3E%3C/feComponentTransfer%3E%3C/filter%3E%3Cpath fill='%23808080' filter='url(%23grain)' d='M0 0h256v256H0z'/%3E%3C/svg%3E");
+    }
 
     /* Image Generation Prompts Showcase */
     .prompt-showcase {
@@ -2598,3 +2608,4 @@
   letter-spacing: 0.5px;
   /* Removed explicit color so it inherits the 55% translucent color from the parent */
 }
+
