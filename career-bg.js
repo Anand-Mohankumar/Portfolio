@@ -8,8 +8,8 @@
             #wallpaper-grain  static, full-resolution film grain above the colour field.
    Layer B  #career-bg  2D knowledge graph. RFx questions drift in from the edges,
                         an orchestrator agent routes them across the graph to
-                        evidence / answer-library nodes, and evidence-linked
-                        answers travel back to where the question came from.
+                        evidence / answer-library / SME nodes, brings their results back
+                        to Questrix, then sends evidence-linked answers to the requester.
 
    Interactions (all passive – the canvases never take pointer events):
    • cursor  = a context window: nearby nodes are "attended" (attention lines)
@@ -299,7 +299,7 @@
           'sme://finance', 'sme://procurement', 'sme://contracts', 'sme://pricing', 'sme://sales-engineering',
           'sme://solutions-architecture', 'sme://customer-success', 'sme://support', 'sme://proposal-management',
           'sme://esg-sustainability', 'sme://accessibility'],
-    agent: ['agent://questrix  (say my name)']
+    agent: ['agent://Questrix']
   };
   const WHISPERS_EXTRA = ['mcp://answer-library  tools/list', 'rfx://queue  0 overdue', 'human-in-the-loop://sme-review',
     'rfp://due  friday 17:00', 'go-no-go://bid-review  approved', 'sme-review://2 approvals pending',
@@ -343,6 +343,23 @@
     return c;
   };
   const GLOW = { orange: sprite(RGB.orange, 128), teal: sprite(RGB.tealL, 96), white: sprite(RGB.text, 64) };
+  const AGENT_SCALE = 1.5;
+  // Pre-render the sun's warm photosphere once; no new per-frame blur/filter.
+  const SUN = (() => {
+    const c = document.createElement('canvas');
+    c.width = c.height = 64;
+    const g = c.getContext('2d');
+    const surface = g.createRadialGradient(27, 25, 0, 32, 32, 32);
+    surface.addColorStop(0, '#FFF4DE');
+    surface.addColorStop(0.45, '#FFE0C2');
+    surface.addColorStop(0.8, '#F4AC70');
+    surface.addColorStop(1, '#C45A2A');
+    g.fillStyle = surface;
+    g.beginPath();
+    g.arc(32, 32, 32, 0, TAU);
+    g.fill();
+    return c;
+  })();
   const glow = (img, x, y, r, a) => {
     if (a <= 0.003) return;
     ctx.globalAlpha = a;
@@ -467,7 +484,7 @@
     const cand = [];
     for (let i = 1; i < nodes.length; i++) {
       const t = nodes[i].type;
-      if (depth[i] >= 1 && depth[i] <= 5 && (t === 'doc' || t === 'kb')) cand.push(i);
+      if (depth[i] >= 1 && depth[i] <= 5 && (t === 'doc' || t === 'kb' || t === 'sme')) cand.push(i);
     }
     let target;
     if (cand.length) {
@@ -477,10 +494,10 @@
       for (let v = target; v >= 0; v = prev[v]) path.push(v);
       return path.reverse();
     }
-    // graph fragmented: fly straight to the nearest evidence node
+    // graph fragmented: connect directly to the nearest evidence, library or SME node
     let best = -1, bd = Infinity;
     for (let i = 1; i < nodes.length; i++) {
-      if (nodes[i].type !== 'doc') continue;
+      if (!['doc', 'kb', 'sme'].includes(nodes[i].type)) continue;
       const d = (nodes[i].x - agent.x) ** 2 + (nodes[i].y - agent.y) ** 2;
       if (d < bd) { bd = d; best = i; }
     }
@@ -519,9 +536,15 @@
     const id = p.path[p.path.length - 1];
     const n = nodes[id];
     n.glow = 1;
-    if (p.tool) return; // mcp tool call: no answer flight
+    // Retrieved information follows the same graph path back to Questrix.
+    // Only Questrix dispatches the completed answer to the original requester.
+    if (!p.returning) {
+      packets.push({ ...p, path: p.path.slice().reverse(), seg: 0, prog: 0, returning: true });
+      return;
+    }
+    if (p.tool) return; // MCP results return to Questrix without a customer answer.
     flights.push({
-      kind: 'a', from: id, ex: p.origin.x, ey: p.origin.y, t: 0,
+      kind: 'a', from: 0, ex: p.origin.x, ey: p.origin.y, t: 0,
       dur: rand(1.8, 2.6), bend: rand(-0.3, 0.3), batch: p.batch
     });
   }
@@ -540,7 +563,7 @@
     const batch = { x, y, total, done: 0, caption: true };
     ripples.push({ x, y, age: 0, life: 1.3, rgb: RGB.orange, r: 120 });
     fieldRipple.x = x; fieldRipple.y = y; fieldRipple.age = 0; fieldRipple.k = 1;
-    labels.push({ x, y: y - 20, text: `rfx batch · ${total} questions → agent`, age: 0, life: 2.2, rgb: RGB.orange });
+    labels.push({ x, y: y - 20, text: `rfx batch · ${total} questions → Questrix`, age: 0, life: 2.2, rgb: RGB.orange });
     for (let i = 0; i < total; i++) {
       queue.push({ at: time + i * 0.14, fn: () => { if (!spawnQuestion(x, y, batch, 1.25)) batch.total--; } });
     }
@@ -1151,23 +1174,28 @@
       }
     }
 
-    // ---- agent (orchestrator) ----
+    // ---- Questrix: a small sun at the heart of the evidence graph ----
     const pulse = agent.glow;
+    ctx.save();
+    ctx.translate(agent.x, agent.y);
+    ctx.scale(AGENT_SCALE, AGENT_SCALE);
+    ctx.translate(-agent.x, -agent.y);
     ctx.globalCompositeOperation = 'lighter';
-    glow(GLOW.orange, agent.x, agent.y, 44 + pulse * 26 + tw * 4, 0.42 + pulse * 0.35 + energy * 0.2);
+    glow(GLOW.orange, agent.x, agent.y, 44 + pulse * 26 + tw * 4, 0.32 + pulse * 0.3 + energy * 0.15);
     ctx.globalCompositeOperation = 'source-over';
     ctx.globalAlpha = 1;
-    ctx.beginPath();
-    ctx.arc(agent.x, agent.y, 3.6 + pulse * 1.2, 0, TAU);
-    ctx.fillStyle = `rgba(255,214,190,${0.85})`;
-    ctx.fill();
-    ctx.beginPath();
-    ctx.setLineDash([3, 5]);
-    ctx.lineDashOffset = -time * 8;
-    ctx.arc(agent.x, agent.y, 15 + pulse * 3, 0, TAU);
-    ctx.strokeStyle = `rgba(${RGB.orange},${0.45 + pulse * 0.3})`;
-    ctx.stroke();
-    ctx.setLineDash([]);
+    const core = 3.6 + pulse * 1.2;
+    ctx.drawImage(SUN, agent.x - core, agent.y - core, core * 2, core * 2);
+    // Faint, slowly moving coronal wisps replace the dashed agent ring.
+    ctx.lineWidth = 0.8;
+    ctx.strokeStyle = `rgba(${RGB.orange},${0.12 + pulse * 0.16})`;
+    for (let k = 0; k < 3; k++) {
+      const a = time * 0.08 + k * 2.1;
+      ctx.beginPath();
+      ctx.arc(agent.x, agent.y, 9 + k * 3 + pulse * 1.2, a, a + 0.65);
+      ctx.stroke();
+    }
+    ctx.lineWidth = 1;
     // sub-agents orbiting
     for (let k = 0; k < 3; k++) {
       const a = time * (0.55 + k * 0.18) + k * 2.1;
@@ -1177,6 +1205,8 @@
       ctx.fillStyle = `rgba(${k === 1 ? RGB.tealL : RGB.orange},0.7)`;
       ctx.fill();
     }
+
+    ctx.restore();
 
     // ---- packets travelling along edges (retrieval / tool calls) ----
     for (const p of packets) {
@@ -1375,7 +1405,7 @@
   // console easter egg
   try {
     console.log(
-      '%c agent://questrix %c online · routing RFx questions to evidence\n' +
+      '%c agent://Questrix %c online · routing RFx questions to evidence\n' +
       '%cpsst — the desktop is listening. try typing: questrix · mcp · hackathon · trust · lock · rfx · hunt · soc · govern · chip · ctf',
       'background:#C45A2A;color:#fff;border-radius:4px;padding:2px 6px;font-family:monospace',
       'color:#7EC8C8;font-family:monospace',
@@ -1386,4 +1416,3 @@
   resize();            // also paints the static frame when motion is reduced
   start();
 })();
-
