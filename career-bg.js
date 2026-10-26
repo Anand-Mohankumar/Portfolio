@@ -2,10 +2,10 @@
    career-bg.js  —  "Assurance Graph" background for cyberamo.work
    Replaces the fluid WebGL background with a role-themed scene:
 
-   Layer A  #webgl-bg   desktop WebGL / touch-native 2D ambient field per BrandStyleGuide.md:
-                        very dark base with huge, blurred copper and deep-teal glows (palette
-                        sampled from the infographics) swirling like liquid glass, lit by the
-                        cursor, rippled by clicks.
+   Layer A  #webgl-bg   desktop WebGL / touch-native 2D ambient field:
+                        near-black with slowly drifting peach/copper light below and
+                        a cool mist at the top, lit by the cursor and rippled by clicks.
+            #wallpaper-grain  static, full-resolution film grain above the colour field.
    Layer B  #career-bg  2D knowledge graph. RFx questions drift in from the edges,
                         an orchestrator agent routes them across the graph to
                         evidence / answer-library nodes, and evidence-linked
@@ -39,6 +39,15 @@
     fx.id = 'career-bg';
     glCanvas.insertAdjacentElement('afterend', fx);
   }
+  // Independent of the low-resolution colour field, so the grain stays fine on
+  // retina/touch screens and never shimmers as the light moves underneath it.
+  let grain = document.getElementById('wallpaper-grain');
+  if (!grain) {
+    grain = document.createElement('div');
+    grain.id = 'wallpaper-grain';
+    glCanvas.insertAdjacentElement('afterend', grain);
+  }
+  grain.setAttribute('aria-hidden', 'true');
   fx.setAttribute('aria-hidden', 'true');
   glCanvas.setAttribute('aria-hidden', 'true');
   const ctx = fx.getContext('2d');
@@ -70,13 +79,14 @@
   const Field = (() => {
     const fallback = () => {
       glCanvas.style.background =
-        'radial-gradient(60% 55% at 12% 10%, rgba(102,57,34,.85), transparent 70%),' +
-        'radial-gradient(60% 60% at 88% 90%, rgba(12,45,47,.95), transparent 70%), #0E1618';
+        'radial-gradient(ellipse 47vw 30vh at 10% 102%, #FFE0C2, transparent 100%),' +
+        'radial-gradient(ellipse 48vw 30vh at 65% 109%, #EB7436, transparent 100%),' +
+        'radial-gradient(ellipse 48vw 27vh at 87% -13%, #80999E, transparent 100%), #050607';
       return { ok: false, renderer: 'css', resize() {}, draw() {}, setScale() {} };
     };
     // Touch devices use native smooth gradients instead of the low-resolution
     // mediump noise shader, keeping mobile colour motion independent of shader
-    // precision while retaining the copper/teal palette and calmer ambient drift.
+    // precision while matching the desktop peach/copper light and cool upper mist.
     if (COARSE) {
       const ambient = glCanvas.getContext('2d', { alpha: false });
       if (!ambient) return fallback();
@@ -93,24 +103,29 @@
         },
         draw(t) {
           const width = glCanvas.width, height = glCanvas.height;
-          ambient.fillStyle = '#0E1618';
+          ambient.fillStyle = '#050607';
           ambient.fillRect(0, 0, width, height);
-          const glow = (x, y, radius, rgb, opacity) => {
-            const gradient = ambient.createRadialGradient(x, y, 0, x, y, radius);
-            gradient.addColorStop(0, `rgba(${rgb},${opacity})`);
-            gradient.addColorStop(0.4, `rgba(${rgb},${opacity * 0.55})`);
-            gradient.addColorStop(1, `rgba(${rgb},0)`);
+          const glow = (x, y, rx, ry, rgb, opacity) => {
+            ambient.save();
+            ambient.translate(x * width, y * height);
+            ambient.scale(rx * width, ry * height);
+            const gradient = ambient.createRadialGradient(0, 0, 0, 0, 0, 3);
+            // Sample the same Gaussian falloff as WebGL, with no hard glow edge.
+            for (let i = 0; i <= 24; i++) {
+              const r = i / 8;
+              gradient.addColorStop(i / 24, `rgba(${rgb},${i === 24 ? 0 : opacity * Math.exp(-r * r)})`);
+            }
             ambient.fillStyle = gradient;
-            ambient.fillRect(0, 0, width, height);
+            ambient.fillRect(-3, -3, 6, 6);
+            ambient.restore();
           };
-          const radius = Math.max(width, height);
-          // Very small, continuous orbits: no noise cells or touch-following flashes.
-          glow(width * (0.12 + Math.sin(t * 0.025) * 0.06),
-            height * (0.18 + Math.cos(t * 0.02) * 0.05), radius * 0.85, '102,57,34', 0.8);
-          glow(width * (0.88 + Math.cos(t * 0.022) * 0.04),
-            height * (0.78 + Math.sin(t * 0.018) * 0.06), radius * 0.9, '12,45,47', 0.9);
-          glow(width * (0.65 + Math.sin(t * 0.018) * 0.04),
-            height * 0.12, radius * 0.65, '31,79,85', 0.18);
+          // Keep the reference's dark centre; light breathes gently at the edges.
+          glow(0.87 + Math.sin(t * 0.022) * 0.045,
+            -0.13 + Math.sin(t * 0.018) * 0.025, 0.48, 0.27, '128,153,158', 0.9);
+          glow(0.65 + Math.sin(t * 0.025) * 0.045,
+            1.09 + Math.sin(t * 0.021) * 0.035, 0.48, 0.30, '235,116,54', 0.98);
+          glow(0.10 + Math.sin(t * 0.019) * 0.035,
+            1.02 + Math.sin(t * 0.023) * 0.025, 0.47, 0.30, '255,224,194', 0.98);
         }
       };
     }
@@ -131,30 +146,19 @@
       uniform float u_energy;  // easter-egg boost 0..1
 
       float hash(vec2 p){ p = fract(p*vec2(123.34, 456.21)); p += dot(p, p+45.32); return fract(p.x*p.y); }
-      float noise(vec2 p){
-        vec2 i = floor(p), f = fract(p);
-        vec2 u = f*f*(3.0-2.0*f);
-        return mix(mix(hash(i), hash(i+vec2(1.,0.)), u.x),
-                   mix(hash(i+vec2(0.,1.)), hash(i+vec2(1.,1.)), u.x), u.y);
-      }
       // one extremely soft colour blob (gaussian falloff: no edges at any size)
       float blob(vec2 p, vec2 c, float r){ vec2 d = p - c; return exp(-dot(d, d) / (r*r)); }
 
-      // Four glows orbit the centre on slow ellipses. Each warm/teal pair stays on
-      // opposite sides (warm corner vs teal corner, as in the infographics) while the
-      // pairs swirl past each other; a low-frequency warp bends them like liquid.
-      // Returns weights: x = warm A, y = teal A, z = warm B, w = teal B.
-      vec4 glows(vec2 p, float asp){
+      // Elliptical edge lights leave generous near-black space through the centre.
+      // Normalised coordinates keep the composition consistent in portrait/landscape.
+      vec3 glows(vec2 uv){
         float T = u_time;
-        vec2 w = vec2(noise(p*1.3 + vec2(0.0, T*0.05)), noise(p*1.3 + vec2(4.1, 7.3) - T*0.05)) - 0.5;
-        p += w * 0.3;
-        vec2 C = vec2(0.5*asp, 0.5);
-        float a1 = T*0.06, a2 = T*0.045 + 2.1;
-        vec2 cW1 = C + vec2(cos(a1 + 2.4)*0.42*asp, sin(a1 + 2.4)*0.40);   // warm, starts top-left
-        vec2 cT1 = C + vec2(cos(a1 - 0.74)*0.42*asp, sin(a1 - 0.74)*0.40); // teal, opposite corner
-        vec2 cW2 = C + vec2(cos(-a2)*0.30*asp, sin(-a2*1.3)*0.28);
-        vec2 cT2 = C + vec2(cos(-a2 + 3.14)*0.34*asp, sin(-a2*1.3 + 3.14)*0.30);
-        return vec4(blob(p, cW1, 0.42), blob(p, cT1, 0.60), blob(p, cW2, 0.26), blob(p, cT2, 0.48));
+        vec2 cool = vec2(0.87 + sin(T*0.022)*0.045, 1.13 - sin(T*0.018)*0.025);
+        vec2 copper = vec2(0.65 + sin(T*0.025)*0.045, -0.09 - sin(T*0.021)*0.035);
+        vec2 peach = vec2(0.10 + sin(T*0.019)*0.035, -0.02 - sin(T*0.023)*0.025);
+        return vec3(blob(uv / vec2(0.48, 0.27), cool / vec2(0.48, 0.27), 1.0),
+                    blob(uv / vec2(0.48, 0.30), copper / vec2(0.48, 0.30), 1.0),
+                    blob(uv / vec2(0.47, 0.30), peach / vec2(0.47, 0.30), 1.0));
       }
 
       void main(){
@@ -169,35 +173,16 @@
         float ring = u_ripple.w * exp(-pow((rd - u_ripple.z*0.42)*10.0, 2.0)) * exp(-u_ripple.z*1.4);
         p += (d / (rd + 1e-4)) * ring * 0.035;
 
-        // Palette sampled from the infographics' background margins (BrandStyleGuide.md
-        // "ambient wallpaper layer"): a very dark base, deep saturated teal, muted copper.
-        vec3 base  = vec3(0.055, 0.086, 0.094); // #0E1618
-        vec3 tealD = vec3(0.031, 0.141, 0.149); // #082426
-        vec3 tealC = vec3(0.047, 0.176, 0.184); // #0C2D2F
-        vec3 tealB = vec3(0.059, 0.196, 0.204); // #0F3234
-        vec3 warmC = vec3(0.306, 0.169, 0.106); // #4E2B1B
-        vec3 warmP = vec3(0.400, 0.224, 0.133); // #663922
-        vec3 orange = vec3(0.769, 0.353, 0.165); // #C45A2A (cursor light / ripple only)
+        vec3 base = vec3(0.020, 0.024, 0.027); // #050607
+        vec3 cool = vec3(0.502, 0.600, 0.620); // #80999E
+        vec3 copper = vec3(0.922, 0.455, 0.212); // #EB7436
+        vec3 peach = vec3(1.000, 0.878, 0.761); // #FFE0C2
+        vec3 orange = vec3(0.769, 0.353, 0.165); // existing RFx interaction accent
 
-        vec4 G = glows(p, asp);
-        vec3 col = base;
-        col = mix(col, tealD, clamp(G.w * 1.1, 0.0, 1.0));
-        col = mix(col, tealC, G.y * 0.95);
-        col = mix(col, tealB, G.y * G.y * 0.6);
-        col = mix(col, warmC * 0.8, G.z * 0.55);
-        col = mix(col, warmC, G.x * 0.95);
-        col = mix(col, warmP, G.x * G.x * 0.7);
-
-        // liquid-glass light: treat the glow field as a smooth liquid surface lit from the
-        // top-left; its light-facing slopes pick up a faint moving sheen
-        const float E = 0.02;
-        const vec4 K = vec4(1.0, 1.0, 0.8, 0.8);
-        float h = dot(G, K);
-        vec2 grad = vec2(dot(glows(p + vec2(E, 0.0), asp), K) - h,
-                         dot(glows(p + vec2(0.0, E), asp), K) - h) / E;
-        float slope = length(grad);
-        float facing = max(dot(grad / (slope + 1e-4), vec2(-0.6, 0.8)), 0.0);
-        col += vec3(0.62, 0.76, 0.80) * pow(facing, 3.0) * smoothstep(0.0, 1.6, slope) * 0.045;
+        vec3 G = glows(vec2(p.x / asp, p.y));
+        vec3 col = mix(base, cool, G.x * 0.90);
+        col = mix(col, copper, G.y * 0.98);
+        col = mix(col, peach, G.z * 0.98);
 
         // cursor light (soft warm light under the glass)
         vec2 m = vec2(u_mouse.x*asp, u_mouse.y);
@@ -207,11 +192,10 @@
         col += orange * ring * 0.2;
         col *= 1.0 + u_energy * 0.2;
 
-        // vignette + static sub-LSB dither: prevents banding in the dark gradients
-        // without visible (or shimmering) grain
-        vec2 v = uv - 0.5;
-        col *= 1.0 - dot(v, v) * 0.5;
-        col += (hash(gl_FragCoord.xy) - 0.5) / 255.0;
+        // Sub-LSB dither smooths the colour field. Visible film grain is a separate
+        // static CSS layer at screen resolution, never enlarged with this canvas.
+        // Bound coordinates before hashing to stay inside mediump float range.
+        col += (hash(mod(gl_FragCoord.xy, 128.0)) - 0.5) / 255.0;
 
         gl_FragColor = vec4(col, 1.0);
       }`;
@@ -1402,3 +1386,4 @@
   resize();            // also paints the static frame when motion is reduced
   start();
 })();
+
