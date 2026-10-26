@@ -598,6 +598,16 @@
       overflow: hidden;
     }
 
+    /* One quiet surface for the taskbar logo, Home and system icons. */
+    .app-logo,
+    .nav-tab,
+    .topbar-right {
+      background: rgba(0, 0, 0, 0.2);
+      border: 1px solid rgba(255, 255, 255, 0.05);
+      border-radius: 20px;
+      box-shadow: none;
+    }
+
     .app-logo {
       width: 32px;
       height: 32px;
@@ -605,22 +615,15 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      background: rgba(255, 255, 255, 0.1);
-      border: 1px solid rgba(255, 255, 255, 0.15);
-      border-radius: 50%;
       padding: 5px;
       cursor: default;
-      /* No live blur needed inside the tinted topbar. */
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
     }
 
     .app-logo img {
       width: 100%;
       height: 100%;
       object-fit: contain;
-      opacity: 1;
-      /* stronger shadow to make it pop */
-      filter: drop-shadow(0 2px 3px rgba(0, 0, 0, 0.5));
+      opacity: 0.85;
     }
 
     .nav-tabs {
@@ -634,21 +637,20 @@
       height: 32px;
       padding: 0;
       cursor: pointer;
-      border-radius: 50%;
       transition: all 0.2s;
       display: flex;
       align-items: center;
       justify-content: center;
-      background: rgba(255, 255, 255, 0.1);
-      border: 1px solid rgba(255, 255, 255, 0.15);
       color: rgba(255, 255, 255, 0.9);
-      /* No live blur needed inside the tinted topbar. */
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
     }
 
-    .nav-tab:hover {
-      background: rgba(255, 255, 255, 0.15);
-      border-color: rgba(255, 255, 255, 0.25);
+    .nav-tab svg {
+      opacity: 0.85;
+      transition: opacity 0.2s ease;
+    }
+
+    .nav-tab:hover svg {
+      opacity: 1;
     }
 
     .open-windows-tabs {
@@ -734,10 +736,7 @@
       font-size: 13px;
       font-weight: 500;
       color: rgba(255, 255, 255, 0.9);
-      background: rgba(0, 0, 0, 0.2);
       padding: 6px 14px;
-      border-radius: 20px;
-      border: 1px solid rgba(255, 255, 255, 0.05);
       display: flex;
       align-items: center;
       gap: 14px;
