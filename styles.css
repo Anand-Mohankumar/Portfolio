@@ -1,13 +1,26 @@
     /* Design tokens (see Designguide.md "Implementation Tokens") */
     :root {
-      --color-bg: #12181A;
-      --color-bg-deep: #0A0F14;
-      --color-surface: rgba(40, 45, 55, 0.55);
-      --color-surface-soft: rgba(255, 255, 255, 0.04);
-      --color-surface-hover: rgba(255, 255, 255, 0.08);
-      --color-border: rgba(255, 255, 255, 0.08);
-      --color-border-strong: rgba(255, 255, 255, 0.18);
-      --color-text: #E8EFF5;
+      /* Warm charcoal surfaces derived from the peach/copper wallpaper. */
+      --color-bg: #151311;
+      --color-bg-deep: #0D0C0B;
+      --color-surface: rgba(30, 27, 24, 0.97);
+      --color-surface-soft: rgba(255, 224, 194, 0.04);
+      --color-surface-hover: rgba(255, 224, 194, 0.08);
+      --color-shell: rgba(20, 18, 17, 0.96);
+      --color-shell-glass: rgba(24, 21, 19, 0.72);
+      --color-shell-solid: #181513;
+      --color-recessed: rgba(13, 12, 11, 0.8);
+      --color-border: rgba(255, 224, 194, 0.10);
+      --color-border-strong: rgba(255, 224, 194, 0.22);
+      --color-text: #F3EBE3;
+      --color-wallpaper-peach: #FFE0C2;
+      --color-wallpaper-cool: #80999E;
+      --surface-window:
+        radial-gradient(ellipse at 0% 100%, rgba(235, 116, 54, 0.085), transparent 65%),
+        radial-gradient(ellipse at 100% 0%, rgba(128, 153, 158, 0.055), transparent 60%),
+        var(--color-surface);
+      --surface-card: linear-gradient(145deg, rgba(255, 224, 194, 0.06), rgba(255, 224, 194, 0.02));
+      --surface-header: linear-gradient(to bottom, rgba(255, 224, 194, 0.065), transparent);
       --color-text-ui: rgba(255, 255, 255, 0.95);
       --color-text-secondary: rgba(255, 255, 255, 0.7);
       --color-text-muted: rgba(255, 255, 255, 0.5);
@@ -30,7 +43,7 @@
         0 8px 20px rgba(0, 0, 0, 0.35),
         inset 0 1px 0 rgba(255, 255, 255, 0.06);
       --shadow-ambient: 0 0 80px rgba(196, 90, 42, 0.07);
-      --focus-ring: 0 0 0 2px #12181A, 0 0 0 4px #7EC8C8;
+      --focus-ring: 0 0 0 2px var(--color-bg), 0 0 0 4px #7EC8C8;
       --workspace-top: 70px;
       --workspace-bottom: calc(112px + env(safe-area-inset-bottom, 0px));
     }
@@ -45,11 +58,11 @@
     /* Use Google Sans across the UI (terminal excluded) */
     body {
       font-family: 'Google Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, sans-serif;
-      background-color: #12181A;
+      background-color: var(--color-bg);
       height: 100vh;
       height: 100dvh;
       overflow: hidden;
-      color: #fff;
+      color: var(--color-text);
     }
 
     /* Boot Screen */
@@ -222,7 +235,7 @@
       height: auto;
 
       /* Glass Material */
-      background: rgba(20, 25, 30, 0.6);
+      background: var(--color-shell-glass);
       backdrop-filter: blur(20px) saturate(180%);
       -webkit-backdrop-filter: blur(20px) saturate(180%);
 
@@ -268,7 +281,7 @@
       42% {
         clip-path: inset(calc(50% - 25px) calc(50% - 25px) round 50px);
         transform: translateX(-50%);
-        background: rgba(20, 25, 30, 0.6);
+        background: var(--color-shell-glass);
       }
       100% {
         clip-path: inset(-50px -50px round 24px);
@@ -370,7 +383,7 @@
       transform: translateX(-50%) translateY(4px);
 
       /* Glassmorphism - matching the dock's own glass style */
-      background: rgba(20, 25, 30, 1); /* opaque: no backdrop blur needed */
+      background: var(--color-shell-solid); /* opaque: no backdrop blur needed */
       border: 1px solid rgba(255, 255, 255, 0.18);
       box-shadow:
         0 8px 24px rgba(0, 0, 0, 0.35),
@@ -498,7 +511,7 @@
       top: auto;
 
       /* Glassmorphism */
-      background: rgba(18, 22, 26, 0.65);
+      background: var(--color-shell-glass);
       backdrop-filter: blur(16px);
       -webkit-backdrop-filter: blur(16px);
       padding: 10px;
@@ -562,7 +575,7 @@
     .topbar {
       height: 50px;
       /* Stable shell surface: no live backdrop sampling over moving windows. */
-      background: rgba(15, 20, 26, 0.96);
+      background: var(--color-shell);
       display: flex;
       align-items: center;
       padding: 0 20px;
@@ -767,11 +780,10 @@
       /* Tinted glass and sheen retain the palette without sampling other windows.
          Avoid the live-blur/3D-transform/animated-clip combination implicated
          by the reported Mac rendering artifacts. */
-      background: linear-gradient(145deg, rgba(255, 255, 255, 0.06), transparent 60%),
-        rgba(40, 45, 55, 0.96);
+      background: var(--surface-window);
 
       border-radius: var(--radius-window);
-      border: 1px solid rgba(255, 255, 255, 0.12);
+      border: 1px solid var(--color-border-strong);
       box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35), inset 0 1px 0 rgba(255, 255, 255, 0.05);
 
       display: flex;
@@ -841,7 +853,7 @@
     /* Active window pops significantly with premium layered shadows */
     .window-card.active-window {
       box-shadow: var(--shadow-window), var(--shadow-ambient);
-      border-color: rgba(255, 255, 255, 0.28);
+      border-color: rgba(255, 224, 194, 0.30);
     }
 
     /* ---- REAL WINDOW STACKING ----
@@ -874,13 +886,13 @@
 
     .card-header {
       padding: 14px 20px;
-      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+      border-bottom: 1px solid var(--color-border);
       display: flex;
       justify-content: space-between;
       align-items: center;
       gap: 12px;
       flex-shrink: 0;
-      background: linear-gradient(to bottom, rgba(255, 255, 255, 0.06), transparent);
+      background: var(--surface-header);
       border-radius: 16px 16px 0 0;
       cursor: move;
       touch-action: none;
@@ -897,7 +909,7 @@
       font-weight: 600;
       letter-spacing: 0.3px;
       color: rgba(255, 255, 255, 0.95); /* fallback */
-      background: linear-gradient(120deg, #E8EFF5 30%, #7EC8C8 70%, #C45A2A 110%);
+      background: linear-gradient(120deg, var(--color-text) 30%, var(--color-wallpaper-peach) 75%, var(--color-wallpaper-cool) 110%);
       -webkit-background-clip: text;
       background-clip: text;
       -webkit-text-fill-color: transparent;
@@ -921,7 +933,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      background: linear-gradient(145deg, rgba(220, 240, 255, 0.15), rgba(220, 240, 255, 0.05));
+      background: linear-gradient(145deg, rgba(255, 224, 194, 0.15), rgba(255, 224, 194, 0.05));
       border: 1px solid rgba(255, 255, 255, 0.25);
       box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3), 0 2px 4px rgba(0, 0, 0, 0.1);
       transition: all 0.2s cubic-bezier(0.25, 0.8, 0.25, 1);
@@ -929,7 +941,7 @@
     }
 
     .control-btn:hover {
-      background: linear-gradient(145deg, rgba(220, 240, 255, 0.3), rgba(220, 240, 255, 0.1));
+      background: linear-gradient(145deg, rgba(255, 224, 194, 0.3), rgba(255, 224, 194, 0.1));
       border-color: rgba(255, 255, 255, 0.5);
       color: #fff;
       transform: translateY(-1px);
@@ -1125,7 +1137,7 @@
       font-weight: 700;
       margin-bottom: 4px;
       color: #fff; /* fallback */
-      background: linear-gradient(120deg, #E8EFF5 30%, #7EC8C8 70%, #C45A2A 110%);
+      background: linear-gradient(120deg, var(--color-text) 30%, var(--color-wallpaper-peach) 75%, var(--color-wallpaper-cool) 110%);
       -webkit-background-clip: text;
       background-clip: text;
       -webkit-text-fill-color: transparent;
@@ -1135,7 +1147,7 @@
       font-size: 14px;
       color: rgba(255, 255, 255, 0.7);
       margin-bottom: 8px;
-      background: rgba(255, 255, 255, 0.05);
+      background: var(--color-surface-soft);
       display: inline-block;
       padding: 4px 12px;
       border-radius: 12px;
@@ -1164,7 +1176,7 @@
 
     .social-btn {
       padding: 12px 16px;
-      background: rgba(255, 255, 255, 0.05);
+      background: var(--color-surface-soft);
       border: 1px solid rgba(255, 255, 255, 0.1);
       border-radius: 10px;
       color: #fff;
@@ -1335,7 +1347,7 @@
     }
 
     .project-item {
-      background: rgba(255, 255, 255, 0.03);
+      background: var(--color-surface-soft);
       padding: 24px 16px;
       border-radius: 12px;
       border: 1px solid rgba(255, 255, 255, 0.08);
@@ -1365,7 +1377,7 @@
     }
 
     .project-item:hover {
-      background: rgba(255, 255, 255, 0.08);
+      background: var(--color-surface-hover);
       border-color: rgba(255, 255, 255, 0.2);
       transform: translateY(-4px);
       box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
@@ -1412,7 +1424,7 @@
     .skill-tag {
       padding: 8px 16px;
       /* Background logic will be blended with glow pseudo element */
-      background: rgba(255, 255, 255, 0.05);
+      background: var(--color-surface-soft);
       border: 1px solid rgba(255, 255, 255, 0.1);
       border-radius: var(--radius-pill);
       font-size: 13px;
@@ -1432,7 +1444,7 @@
 
     /* Terminal Card */
     .terminal-content {
-      background: rgba(10, 15, 20, 0.6);
+      background: var(--color-recessed);
       padding: 20px;
       border-radius: var(--radius-control);
       border: 1px solid rgba(255, 255, 255, 0.05);
@@ -1504,8 +1516,8 @@
     }
 
     .resource-hero-card {
-      background: linear-gradient(145deg, rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0.02));
-      border: 1px solid rgba(255, 255, 255, 0.1);
+      background: var(--surface-card);
+      border: 1px solid var(--color-border);
       border-radius: 16px;
       padding: 24px 20px;
       display: flex;
@@ -1519,7 +1531,7 @@
     }
 
     .resource-hero-card:hover {
-      background: linear-gradient(145deg, rgba(255, 255, 255, 0.12), rgba(255, 255, 255, 0.04));
+      background: linear-gradient(145deg, rgba(255, 224, 194, 0.12), rgba(255, 224, 194, 0.04));
       transform: translateY(-6px);
       box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
       border-color: rgba(255, 255, 255, 0.25);
@@ -1553,7 +1565,7 @@
     }
 
     .infographic-item {
-      background: rgba(255, 255, 255, 0.03);
+      background: var(--color-surface-soft);
       border: 1px solid rgba(255, 255, 255, 0.1);
       border-radius: 12px;
       overflow: hidden;
@@ -1978,7 +1990,7 @@
       top: 50%;
       left: calc(100% + 10px);
       transform: translateY(-50%) translateX(-4px);
-      background: rgba(20, 25, 30, 1); /* opaque: no backdrop blur needed */
+      background: var(--color-shell-solid); /* opaque: no backdrop blur needed */
       border: 1px solid rgba(255, 255, 255, 0.18);
       box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35), 0 0 0 1px rgba(255, 255, 255, 0.04) inset;
       color: rgba(255, 255, 255, 0.92);
@@ -2046,7 +2058,7 @@
       background: transparent;
     }
     .markdownify-source {
-      background: rgba(10, 15, 20, 0.8);
+      background: var(--color-recessed);
       font-family: 'Fira Code', monospace;
       font-size: 14px;
       resize: none;
@@ -2057,7 +2069,7 @@
       bottom: 24px;
       left: 50%;
       transform: translateX(-50%);
-      background: rgba(20, 25, 30, 0.7);
+      background: var(--color-shell-glass);
       border: 1px solid rgba(255, 255, 255, 0.1);
       border-radius: 20px;
       display: flex;
@@ -2104,7 +2116,7 @@
       font-size: 0.9em;
     }
     .markdownify-editor pre {
-      background: rgba(10, 15, 20, 0.8);
+      background: var(--color-recessed);
       padding: 16px;
       border-radius: 8px;
       border: 1px solid rgba(255, 255, 255, 0.1);
@@ -2412,7 +2424,7 @@
     .glass-dialog-overlay {
       position: fixed;
       inset: 0;
-      background: rgba(10, 15, 20, 0.4);
+      background: rgba(13, 12, 11, 0.4);
       backdrop-filter: blur(4px);
       -webkit-backdrop-filter: blur(4px);
       z-index: 9999;
@@ -2428,7 +2440,7 @@
     }
 
     .glass-dialog {
-      background: rgba(40, 45, 55, 0.75);
+      background: var(--surface-window);
       backdrop-filter: blur(25px) saturate(160%);
       -webkit-backdrop-filter: blur(25px) saturate(160%);
       border: 1px solid rgba(255, 255, 255, 0.15);
@@ -2460,7 +2472,7 @@
 
     .glass-dialog input {
       width: 100%;
-      background: rgba(10, 15, 20, 0.5);
+      background: rgba(13, 12, 11, 0.5);
       border: 1px solid rgba(255, 255, 255, 0.12);
       border-radius: var(--radius-control);
       color: #fff;
@@ -2530,7 +2542,7 @@
 /* GLOBAL CLOSE ALL BUTTON */
 .global-close-all-btn {
   position: relative; /* So it flows in flex container */
-  background: linear-gradient(145deg, rgba(220, 240, 255, 0.15), rgba(220, 240, 255, 0.05));
+  background: linear-gradient(145deg, rgba(255, 224, 194, 0.15), rgba(255, 224, 194, 0.05));
   border: 1px solid rgba(255, 255, 255, 0.25);
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3), 0 2px 4px rgba(0, 0, 0, 0.1);
   transition: all 0.2s cubic-bezier(0.25, 0.8, 0.25, 1);

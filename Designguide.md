@@ -12,19 +12,19 @@ Use this guide for future portfolio pages, article interfaces, dashboards, resou
 
 | Role | Color | Usage |
 | --- | --- | --- |
-| Charcoal base | `#12181A` | Main background, page body, deep surfaces |
-| Near black | `#0A0F14` | Terminal panels, source views, deepest cards |
-| Glass surface | `rgba(40, 45, 55, 0.55)` | Main window cards |
-| Glass dock/topbar | `rgba(20, 25, 30, 0.6)` | Dock, navigation, floating controls |
+| Warm charcoal base | `#151311` | Main background, page body, deep surfaces |
+| Near black | `#0D0C0B` | Terminal panels, source views, deepest cards |
+| Glass surface | `rgba(30, 27, 24, 0.97)` | Main window cards |
+| Glass dock/topbar | `rgba(24, 21, 19, 0.72)` | Dock, navigation, floating controls |
 | Orange accent | `#C45A2A` | Primary accent, active dots, glow, important actions |
 | Teal accent | `#1F4F55` | Secondary accent, identity gradients, cool contrast |
 | Bright teal link | `#7EC8C8` | Links, breadcrumbs, subtle highlights |
-| Text primary | `#E8EFF5` | Main readable content |
+| Text primary | `#F3EBE3` | Main readable content |
 | White primary | `rgba(255, 255, 255, 0.95)` | UI titles and high-emphasis labels |
 | Text secondary | `rgba(255, 255, 255, 0.7)` | Supporting text |
 | Text muted | `rgba(255, 255, 255, 0.5)` | Metadata, disabled labels |
-| Hairline border | `rgba(255, 255, 255, 0.08)` | Separators and card borders |
-| Strong border | `rgba(255, 255, 255, 0.18)` | Active or hover borders |
+| Hairline border | `rgba(255, 224, 194, 0.10)` | Separators and card borders |
+| Strong border | `rgba(255, 224, 194, 0.22)` | Active or hover borders |
 
 ### System Colors
 
@@ -50,7 +50,7 @@ background: conic-gradient(from 0deg, #C45A2A, #1F4F55, #12181A, #C45A2A);
 Recommended text gradient:
 
 ```css
-background: linear-gradient(135deg, #E8EFF5 0%, #7EC8C8 100%);
+background: linear-gradient(135deg, #F3EBE3 0%, #FFE0C2 100%);
 ```
 
 Recommended card sheen:
@@ -151,14 +151,12 @@ Use these as defaults:
 
 ### Main Window Card
 
-Use for primary app panels.
+Use warm charcoal for primary app panels. A restrained peach/copper glow below and a muted cool tint above connect the surfaces to the animated wallpaper. Keep the fills nearly opaque for reading and overlapping windows; do not add live backdrop blur to window cards.
 
 ```css
 .window-card {
-  background: rgba(40, 45, 55, 0.55);
-  backdrop-filter: blur(40px) saturate(160%);
-  -webkit-backdrop-filter: blur(40px) saturate(160%);
-  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: var(--surface-window);
+  border: 1px solid var(--color-border-strong);
   border-radius: 16px;
   color: #fff;
 }
@@ -179,9 +177,7 @@ Use for persistent navigation and document status.
 ```css
 .topbar {
   height: 50px;
-  background: rgba(20, 25, 30, 0.3);
-  backdrop-filter: blur(25px) saturate(180%);
-  -webkit-backdrop-filter: blur(25px) saturate(180%);
+  background: var(--color-shell);
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
 ```
@@ -192,7 +188,7 @@ Use for primary sections or apps.
 
 ```css
 .dock {
-  background: rgba(20, 25, 30, 0.6);
+  background: var(--color-shell-glass);
   backdrop-filter: blur(20px) saturate(180%);
   -webkit-backdrop-filter: blur(20px) saturate(180%);
   border: 1px solid rgba(255, 255, 255, 0.15);
@@ -233,7 +229,7 @@ Window headers should include a title and controls. Use compact padding and a su
 .card-header {
   padding: 14px 20px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.03), transparent);
+  background: var(--surface-header);
   border-radius: 16px 16px 0 0;
 }
 ```
@@ -477,14 +473,27 @@ Use these CSS custom properties for new projects:
 
 ```css
 :root {
-  --color-bg: #12181A;
-  --color-bg-deep: #0A0F14;
-  --color-surface: rgba(40, 45, 55, 0.55);
-  --color-surface-soft: rgba(255, 255, 255, 0.04);
-  --color-surface-hover: rgba(255, 255, 255, 0.08);
-  --color-border: rgba(255, 255, 255, 0.08);
-  --color-border-strong: rgba(255, 255, 255, 0.18);
-  --color-text: #E8EFF5;
+  /* Warm charcoal surfaces derived from the peach/copper wallpaper. */
+  --color-bg: #151311;
+  --color-bg-deep: #0D0C0B;
+  --color-surface: rgba(30, 27, 24, 0.97);
+  --color-surface-soft: rgba(255, 224, 194, 0.04);
+  --color-surface-hover: rgba(255, 224, 194, 0.08);
+  --color-shell: rgba(20, 18, 17, 0.96);
+  --color-shell-glass: rgba(24, 21, 19, 0.72);
+  --color-shell-solid: #181513;
+  --color-recessed: rgba(13, 12, 11, 0.8);
+  --color-border: rgba(255, 224, 194, 0.10);
+  --color-border-strong: rgba(255, 224, 194, 0.22);
+  --color-text: #F3EBE3;
+  --color-wallpaper-peach: #FFE0C2;
+  --color-wallpaper-cool: #80999E;
+  --surface-window:
+    radial-gradient(ellipse at 0% 100%, rgba(235, 116, 54, 0.085), transparent 65%),
+    radial-gradient(ellipse at 100% 0%, rgba(128, 153, 158, 0.055), transparent 60%),
+    var(--color-surface);
+  --surface-card: linear-gradient(145deg, rgba(255, 224, 194, 0.06), rgba(255, 224, 194, 0.02));
+  --surface-header: linear-gradient(to bottom, rgba(255, 224, 194, 0.065), transparent);
   --color-text-ui: rgba(255, 255, 255, 0.95);
   --color-text-secondary: rgba(255, 255, 255, 0.7);
   --color-text-muted: rgba(255, 255, 255, 0.5);
@@ -519,4 +528,5 @@ For Markdownify specifically, the editor should use:
 - Mono source panels only when the user asks to inspect Markdown.
 
 The result should feel native to the portfolio: a serious technical tool running inside Anand's interactive desktop world.
+
 
