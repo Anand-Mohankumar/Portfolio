@@ -1186,16 +1186,6 @@
     ctx.globalAlpha = 1;
     const core = 3.6 + pulse * 1.2;
     ctx.drawImage(SUN, agent.x - core, agent.y - core, core * 2, core * 2);
-    // Faint, slowly moving coronal wisps replace the dashed agent ring.
-    ctx.lineWidth = 0.8;
-    ctx.strokeStyle = `rgba(${RGB.orange},${0.12 + pulse * 0.16})`;
-    for (let k = 0; k < 3; k++) {
-      const a = time * 0.08 + k * 2.1;
-      ctx.beginPath();
-      ctx.arc(agent.x, agent.y, 9 + k * 3 + pulse * 1.2, a, a + 0.65);
-      ctx.stroke();
-    }
-    ctx.lineWidth = 1;
     // sub-agents orbiting
     for (let k = 0; k < 3; k++) {
       const a = time * (0.55 + k * 0.18) + k * 2.1;
