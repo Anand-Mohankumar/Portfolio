@@ -177,7 +177,9 @@ Use for persistent navigation and document status.
 ```css
 .topbar {
   height: 50px;
-  background: var(--color-shell);
+  background: var(--color-shell-glass);
+  backdrop-filter: blur(20px) saturate(180%);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
 ```
