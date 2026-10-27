@@ -172,15 +172,17 @@ Active state:
 
 ### Topbar
 
-Use for persistent navigation and document status.
+Use for persistent navigation and document status. Combine broad backdrop blur with a translucent warm tint, a milky highlight, and a fine lower edge for a frosted-glass finish.
 
 ```css
 .topbar {
   height: 50px;
-  background: var(--color-shell-glass);
-  backdrop-filter: blur(20px) saturate(180%);
-  -webkit-backdrop-filter: blur(20px) saturate(180%);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  background: linear-gradient(180deg, rgba(255, 244, 230, 0.10), rgba(255, 244, 230, 0.025)),
+    rgba(24, 21, 19, 0.42);
+  backdrop-filter: blur(40px) saturate(140%) brightness(1.12);
+  -webkit-backdrop-filter: blur(40px) saturate(140%) brightness(1.12);
+  border-bottom: 1px solid rgba(255, 244, 230, 0.20);
+  box-shadow: inset 0 1px 0 rgba(255, 244, 230, 0.10), 0 8px 24px rgba(0, 0, 0, 0.18);
 }
 ```
 
