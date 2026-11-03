@@ -186,6 +186,8 @@ window.visualViewport?.addEventListener('resize', () => {
 
 function cancelWindowMotion(card) {
   const motion = windowMotion.get(card);
+  const liveTransform = motion ? getComputedStyle(card).transform : null;
+  const liveOpacity = motion ? getComputedStyle(card).opacity : null;
   if (motion) clearTimeout(motion.timer);
   windowMotion.delete(card);
   card.style.transition = 'none';
@@ -193,6 +195,7 @@ function cancelWindowMotion(card) {
   card.style.pointerEvents = '';
   card.inert = false;
   card._restoreFocus = false;
+  if (motion) { card.style.transform = liveTransform; card.style.opacity = liveOpacity; }
 }
 
 function afterWindowMotion(card, duration, finish) {
@@ -229,8 +232,9 @@ function positionWindow(card, depth = 0) {
   const halfHeight = card.offsetHeight / 2;
   const clampX = value => Math.max(bounds.left + halfWidth, Math.min(value, bounds.right - halfWidth));
   const clampY = value => Math.max(bounds.top + halfHeight, Math.min(value, bounds.bottom - halfHeight));
-  const x = clampX(center.x);
-  const y = clampY(center.y);
+  const resist = (value, bound) => bound + (value - bound) / (1 + Math.abs(value - bound) / 12);
+  const x = card.classList.contains('dragging') ? resist(center.x, clampX(center.x)) : clampX(center.x);
+  const y = card.classList.contains('dragging') ? resist(center.y, clampY(center.y)) : clampY(center.y);
   const dx = clampX(x - depth * 18) - x;
   const dy = clampY(y + depth * 18) - y;
   // Centered windows follow viewport changes in CSS, even before resize fires.
@@ -495,6 +499,10 @@ function showView(viewName) {
   const card = cards[viewName];
   if (!card) return;
   if (viewName === 'markdownify') loadMarkdownLibs().catch(() => {});
+  const interrupted = windowMotion.has(card);
+  const live = interrupted ? getComputedStyle(card) : null;
+  const liveTransform = live?.transform;
+  const liveOpacity = live?.opacity;
   const needsReveal = !openWindows.includes(viewName) || minimizedWindows.has(viewName) || closingWindows.has(viewName);
   cancelWindowMotion(card);
   closingWindows.delete(viewName);
@@ -509,11 +517,12 @@ function showView(viewName) {
     const icon = getIconPosition(viewName);
     const dx = icon.x - (rect.left + rect.width / 2);
     const dy = icon.y - (rect.top + rect.height / 2);
-    card.style.opacity = '0';
-    card.style.transform = `translate(calc(-50% + ${dx}px), calc(-50% + ${dy}px)) scale(0.2)`;
+    const destination = card.style.transform;
+    card.style.opacity = interrupted ? liveOpacity : '0';
+    card.style.transform = interrupted ? liveTransform : `translate(calc(-50% + ${dx}px), calc(-50% + ${dy}px)) scale(0.2)`;
     void card.offsetHeight;
     card.style.transition = 'transform 0.32s cubic-bezier(0.19, 1, 0.22, 1), opacity 0.32s ease';
-    card.style.transform = 'translate(-50%, -50%)';
+    card.style.transform = destination;
     card.style.opacity = '1';
     afterWindowMotion(card, 320, repositionStack);
   } else {
@@ -570,6 +579,8 @@ function repositionStack() {
   });
 }
 
+let dragOrigin = null;
+let dragStarted = false;
 // Draggable windows
 function initDraggable() {
   document.querySelectorAll('.window-card').forEach(card => {
@@ -577,7 +588,8 @@ function initDraggable() {
       if (mobileLayout.matches || card.classList.contains('full-width') || event.button !== 0 ||
           event.target.closest('button, .control-btn, input, select, a')) return;
       cancelWindowMotion(card);
-      card.classList.add('dragging');
+      dragOrigin = { x: event.clientX, y: event.clientY };
+      dragStarted = false;
       const rect = card.getBoundingClientRect();
       const area = document.querySelector('.content-area').getBoundingClientRect();
       windowPositions.set(card, { x: rect.left - area.left + rect.width / 2, y: rect.top - area.top + rect.height / 2 });
@@ -595,6 +607,11 @@ function initDraggable() {
 let dragFrame = null;
 document.addEventListener('pointermove', (event) => {
   if (!isDragging || !draggedWindow) return;
+  if (!dragStarted) {
+    if (Math.hypot(event.clientX - dragOrigin.x, event.clientY - dragOrigin.y) < 5) return;
+    dragStarted = true;
+    draggedWindow.classList.add('dragging');
+  }
   const area = document.querySelector('.content-area').getBoundingClientRect();
   windowPositions.set(draggedWindow, { x: event.clientX - area.left - dragOffset.x, y: event.clientY - area.top - dragOffset.y });
   if (dragFrame !== null) return;
@@ -608,11 +625,13 @@ function endWindowDrag() {
   if (dragFrame !== null) cancelAnimationFrame(dragFrame);
   dragFrame = null;
   if (draggedWindow) {
+    draggedWindow.classList.remove('dragging');
+    draggedWindow.style.transition = windowReducedMotion.matches ? 'none' : 'left 180ms ease-out, top 180ms ease-out, transform 180ms ease-out';
     positionWindow(draggedWindow);
     // Save the clamped center, so later stacking starts at the position on screen.
     windowPositions.set(draggedWindow, { x: parseFloat(draggedWindow.style.left), y: parseFloat(draggedWindow.style.top) });
     draggedWindow.classList.remove('dragging');
-    draggedWindow.style.transition = '';
+    afterWindowMotion(draggedWindow, windowReducedMotion.matches ? 0 : 180);
   }
   isDragging = false;
   draggedWindow = null;
