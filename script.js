@@ -499,6 +499,7 @@ function showView(viewName) {
   const card = cards[viewName];
   if (!card) return;
   if (viewName === 'markdownify') loadMarkdownLibs().catch(() => {});
+  if (viewName === 'newsfeed') loadNewsfeed();
   const interrupted = windowMotion.has(card);
   const live = interrupted ? getComputedStyle(card) : null;
   const liveTransform = live?.transform;
@@ -911,22 +912,148 @@ hoverBtns.forEach(btn => {
 });
 
 // --- NEWSFEED LOGIC ---
-const newsfeedToggleAI = document.getElementById('newsfeed-toggle-ai');
-const newsfeedToggleInfosec = document.getElementById('newsfeed-toggle-infosec');
-const newsfeedIframe = document.getElementById('newsfeedIframe');
+// Render text from public clips locally: Inoreader's `c` query parameter is
+// overloaded as both text color and continuation cursor in the HTML embed.
+const newsfeedState = { active: 'ai', cache: {}, pending: {}, pages: { ai: 0, infosec: 0 } };
+const newsfeedPageSize = 20;
+const newsfeedContent = document.getElementById('newsfeed-content');
+const newsfeedArticles = document.getElementById('newsfeed-articles');
+const newsfeedStatus = document.getElementById('newsfeed-status');
+const newsfeedHeading = document.getElementById('newsfeed-heading');
+const newsfeedPrev = document.getElementById('newsfeed-prev');
+const newsfeedNext = document.getElementById('newsfeed-next');
+const newsfeedRetry = document.getElementById('newsfeed-retry');
+const newsfeedPagination = document.querySelector('.newsfeed-pagination');
 
-if (newsfeedToggleAI && newsfeedToggleInfosec && newsfeedIframe) {
-  newsfeedToggleAI.addEventListener('click', () => {
-    newsfeedToggleAI.classList.add('active');
-    newsfeedToggleInfosec.classList.remove('active');
-    newsfeedIframe.src = 'https://www.inoreader.com/stream/user/1005486907/tag/AI/view/html?t=AI%20Daily&l=https%3A%2F%2Fgithub.com%2FAnand-Mohankumar%2FAnand-Mohankumar%2Fblob%2Fmain%2FApp%2520Logo.png&lw=5&cs=m&c=0xe0e0e0&bc=0x0a141a&lh=5&lc=0xe56a40';
-  });
+function newsfeedURL(value) {
+  try {
+    const url = new URL(value);
+    return ['https:', 'http:'].includes(url.protocol) ? url.href : '';
+  } catch { return ''; }
+}
 
-  newsfeedToggleInfosec.addEventListener('click', () => {
-    newsfeedToggleInfosec.classList.add('active');
-    newsfeedToggleAI.classList.remove('active');
-    newsfeedIframe.src = 'https://www.inoreader.com/stream/user/1005486907/tag/Infosec%20News/view/html?t=InfoSec%20Daily&l=https%3A%2F%2Fgithub.com%2FAnand-Mohankumar%2FAnand-Mohankumar%2Fblob%2Fmain%2FApp%2520Logo.png&lw=5&cs=m&c=0xe0e0e0&bc=0x0a141a&lh=5&lc=0xe56a40';
-  });
+function renderNewsfeed(focusHeading = false) {
+  const { active, cache, pages } = newsfeedState;
+  const data = cache[active];
+  newsfeedHeading.textContent = active === 'ai' ? 'AI Daily' : 'InfoSec Daily';
+  for (const key of ['ai', 'infosec']) {
+    const toggle = document.getElementById(`newsfeed-toggle-${key}`);
+    toggle.classList.toggle('active', key === active);
+    toggle.setAttribute('aria-pressed', String(key === active));
+  }
+  newsfeedArticles.replaceChildren();
+  newsfeedPagination.hidden = !data || !data.articles.length;
+  newsfeedRetry.hidden = true;
+  document.getElementById('newsfeed-updated').textContent = '';
+  if (!data) return;
+  newsfeedArticles.removeAttribute('aria-busy');
+  const total = data.articles.length;
+  const page = pages[active];
+  const start = page * newsfeedPageSize;
+  for (const item of data.articles.slice(start, start + newsfeedPageSize)) {
+    const article = document.createElement('article');
+    article.className = 'newsfeed-article';
+    if (newsfeedURL(item.image)) {
+      const image = document.createElement('img');
+      image.src = newsfeedURL(item.image);
+      image.alt = '';
+      image.loading = 'lazy';
+      image.decoding = 'async';
+      image.addEventListener('error', () => image.remove(), { once: true });
+      article.append(image);
+    }
+    const body = document.createElement('div');
+    const title = document.createElement('h3');
+    const link = document.createElement('a');
+    link.href = newsfeedURL(item.url);
+    link.target = '_blank';
+    link.rel = 'noopener noreferrer';
+    link.textContent = item.title;
+    title.append(link);
+    const source = document.createElement('p');
+    source.className = 'newsfeed-source';
+    source.textContent = item.source;
+    const summary = document.createElement('p');
+    summary.className = 'newsfeed-summary';
+    summary.textContent = item.summary;
+    body.append(title, source, summary);
+    article.append(body);
+    newsfeedArticles.append(article);
+  }
+  newsfeedStatus.textContent = total ? `Showing ${start + 1}–${Math.min(start + newsfeedPageSize, total)} of ${total} articles` : 'No articles available.';
+  document.getElementById('newsfeed-page').textContent = `Page ${page + 1} of ${Math.max(1, Math.ceil(total / newsfeedPageSize))}`;
+  newsfeedPrev.disabled = page === 0;
+  newsfeedNext.disabled = start + newsfeedPageSize >= total;
+  const updated = new Date(data.updatedAt);
+  if (!Number.isNaN(updated.getTime())) {
+    document.getElementById('newsfeed-updated').textContent = `Updated ${updated.toLocaleString([], { dateStyle: 'medium', timeStyle: 'short' })}`;
+  }
+  newsfeedContent.scrollTop = 0;
+  if (focusHeading) newsfeedHeading.focus({ preventScroll: true });
+}
+
+async function loadNewsfeed() {
+  if (!newsfeedArticles) return;
+  const key = newsfeedState.active;
+  renderNewsfeed();
+  if (newsfeedState.cache[key]) return;
+  newsfeedStatus.textContent = 'Loading articles…';
+  newsfeedArticles.setAttribute('aria-busy', 'true');
+  if (!newsfeedState.pending[key]) {
+    newsfeedState.pending[key] = (async () => {
+      // Actions bot commits do not trigger a Pages rebuild. Read the refreshed
+      // public JSON from GitHub; the deployed snapshot is a fallback when GitHub is unavailable.
+      const urls = [
+        `https://raw.githubusercontent.com/Anand-Mohankumar/Portfolio/main/newsfeed/${key}.json`,
+        `newsfeed/${key}.json`
+      ];
+      for (const url of urls) {
+        const controller = new AbortController();
+        const timeout = setTimeout(() => controller.abort(), 12000);
+        try {
+          const response = await fetch(url, { signal: controller.signal, cache: 'no-cache' });
+          if (!response.ok) throw new Error('Feed unavailable');
+          const data = await response.json();
+          if (!Array.isArray(data.articles)) throw new Error('Invalid feed');
+          data.articles = data.articles.filter(item => item && typeof item.title === 'string' && newsfeedURL(item.url));
+          newsfeedState.cache[key] = data;
+          return;
+        } catch { /* Try the deployed snapshot before showing the retry state. */ }
+        finally { clearTimeout(timeout); }
+      }
+      throw new Error('Feed unavailable');
+    })();
+  }
+  try {
+    await newsfeedState.pending[key];
+    if (key === newsfeedState.active) renderNewsfeed();
+  } catch {
+    if (key === newsfeedState.active) {
+      newsfeedStatus.textContent = 'Articles could not be loaded. Please try again.';
+      newsfeedRetry.hidden = false;
+    }
+  } finally {
+    delete newsfeedState.pending[key];
+    if (key === newsfeedState.active) newsfeedArticles.removeAttribute('aria-busy');
+  }
+}
+
+if (newsfeedArticles) {
+  for (const key of ['ai', 'infosec']) {
+    document.getElementById(`newsfeed-toggle-${key}`).addEventListener('click', () => {
+      newsfeedState.active = key;
+      loadNewsfeed();
+    });
+  }
+  const turnPage = delta => {
+    const key = newsfeedState.active;
+    const total = newsfeedState.cache[key]?.articles.length || 0;
+    newsfeedState.pages[key] = Math.max(0, Math.min(Math.max(0, Math.ceil(total / newsfeedPageSize) - 1), newsfeedState.pages[key] + delta));
+    renderNewsfeed(true);
+  };
+  newsfeedPrev.addEventListener('click', () => turnPage(-1));
+  newsfeedNext.addEventListener('click', () => turnPage(1));
+  newsfeedRetry.addEventListener('click', loadNewsfeed);
 }
 
 // --- MARKDOWNIFY LOGIC ---

@@ -1329,10 +1329,21 @@
               </button>
             </div>
           </div>
-          <div class="card-content" style="padding: 0; flex: 1;">
-            <iframe id="newsfeedIframe" loading="lazy"
-              src="https://www.inoreader.com/stream/user/1005486907/tag/AI/view/html?t=AI%20Daily&l=https%3A%2F%2Fgithub.com%2FAnand-Mohankumar%2FAnand-Mohankumar%2Fblob%2Fmain%2FApp%2520Logo.png&lw=5&cs=m&c=0xe0e0e0&bc=0x0a141a&lh=5&lc=0xe56a40"
-              style="width: 100%; height: 100%; border: none; border-radius: 0 0 16px 16px;"></iframe>
+          <div class="card-content newsfeed-content" id="newsfeed-content">
+            <div class="newsfeed-heading">
+              <div><h2 id="newsfeed-heading" tabindex="-1">AI Daily</h2>
+                <p>Curated by CyberAmo · <a href="https://www.inoreader.com" target="_blank" rel="noopener noreferrer">Inoreader</a></p>
+              </div>
+              <span id="newsfeed-updated" class="newsfeed-updated"></span>
+            </div>
+            <p id="newsfeed-status" role="status" aria-live="polite">Open the newsfeed to load articles.</p>
+            <div id="newsfeed-articles" aria-labelledby="newsfeed-heading"></div>
+            <nav class="newsfeed-pagination" aria-label="Newsfeed pages" hidden>
+              <button type="button" id="newsfeed-prev">← Previous 20 items</button>
+              <span id="newsfeed-page" aria-live="polite"></span>
+              <button type="button" id="newsfeed-next">Next 20 items →</button>
+            </nav>
+            <button type="button" id="newsfeed-retry" hidden>Try again</button>
           </div>
         </div>
 
