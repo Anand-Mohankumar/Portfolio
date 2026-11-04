@@ -1,6 +1,126 @@
 {
-  "updatedAt": "2026-11-04T10:56:36.081792+00:00",
+  "updatedAt": "2026-11-04T18:39:05.976983+00:00",
   "articles": [
+    {
+      "id": "at_51080010556",
+      "title": "Nothing teases a screen-free AI device ahead of launch next month",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1026586/nothing-screen-free-ai-device-carl-pei",
+      "summary": "Nothing CEO Carl Pei said in a post on X that the company's launching its first AI device in December. That's just a little over a year after Pei announced plans for \"AI-native\" devices and an AI operating system. He didn't give away much about what exactly the new device is, only that one feature it won't have is a screen: \"Our first...",
+      "source": "Stevie Bonifield via The Verge - Artificial Intelligences",
+      "image": "https://www.inoreader.com/camo/sc9aSQ80veMyrT1fCkDRQHUmtBDZsJJHFw_X1q39RK7k,q80,480x400,pf,b64/aHR0cHM6Ly9wbGF0Zm9ybS50aGV2ZXJnZS5jb20vd3AtY29udGVudC91cGxvYWRzL3NpdGVzLzIvMjAyNi8wMy9ub3RoaW5nLXBob25lLTRhLTIuanBnP3F1YWxpdHk9OTAmc3RyaXA9YWxsJmNyb3A9MCwwLDEwMCwxMDA"
+    },
+    {
+      "id": "at_51079829825",
+      "title": "ChatGPT will now make you animated GIFs",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1026474/openai-chatgpt-animated-gifs-images-2-6",
+      "summary": "ChatGPT can now create GIFs using a prompt or a photo uploaded to the AI chatbot. The update, which is rolling out alongside OpenAI's new Images 2.6 model, allows you to adjust the GIF's animation speed, edit individual frames, and share it with others. Before this change, ChatGPT couldn't natively generate GIFs in a single step. An...",
+      "source": "Emma Roth via The Verge - Artificial Intelligences",
+      "image": "https://www.inoreader.com/camo/s3hZKGx7GYf6Pw0LqVqmX1a7dmasaBMWF-0mjg3Rkafs,q80,480x400,pf,b64/aHR0cHM6Ly9wbGF0Zm9ybS50aGV2ZXJnZS5jb20vd3AtY29udGVudC91cGxvYWRzL3NpdGVzLzIvMjAyNi8wMy9TVEsxNTVfT1BFTl9BSV9DVmlyZ2luaWFfX0MuanBnP3F1YWxpdHk9OTAmc3RyaXA9YWxsJmNyb3A9MCwwLDEwMCwxMDA"
+    },
+    {
+      "id": "at_51079829827",
+      "title": "My therapist thinks I should chuck the Amazon Bee Frontier out a window",
+      "url": "https://www.theverge.com/column/1026464/optimizer-amazon-bee-frontier-ambient-listening-wearables",
+      "summary": "Also, can I just say this LED indicator light is way too small and unnoticeable? This is Optimizer, a weekly newsletter sent from Verge senior reviewer Victoria Song that dissects and discusses the latest gizmos and potions that swear they're going to change your life. Opt in for Optimizer here. \"How does that make you feel?\" I get asked...",
+      "source": "Victoria Song via The Verge - Artificial Intelligences",
+      "image": "https://www.inoreader.com/camo/sGXdXGH05_cC0SVZ6RJbZmgLYeL21GBzMTek6NbJTDxg,q80,480x400,pf,b64/aHR0cHM6Ly9wbGF0Zm9ybS50aGV2ZXJnZS5jb20vd3AtY29udGVudC91cGxvYWRzL3NpdGVzLzIvMjAyNi8xMC8yNjg4MTdfQmVlX0Zyb250aWVyX0FLcmFsZXNfMDA5OC5qcGc_cXVhbGl0eT05MCZzdHJpcD1hbGwmY3JvcD0wLDAsMTAwLDEwMA"
+    },
+    {
+      "id": "at_51079160477",
+      "title": "AI teams agreed on the wrong answer in 75% of debates — and lower token bills hid the failure",
+      "url": "https://venturebeat.com/orchestration/ai-teams-agreed-on-the-wrong-answer-in-75-of-debates-and-lower-token-bills-hid-the-failure",
+      "summary": "Presented by OutshiftRead more",
+      "source": "via VentureBeat",
+      "image": "https://www.inoreader.com/camo/sCiQzbKdhJDMqyVCttnVBmsYD3LJWkydb2zHlS2LP3Ik,q80,480x400,pf,b64/aHR0cHM6Ly9pbWFnZXMuY3RmYXNzZXRzLm5ldC9qZHR3cWh6dmMybjEvNGF5ZThIeVRja0NXY2lSc25WeERBeC82MmFkMzZmZDc5Njk1ZjgxMzAzYTVkMWVmZDEwNWJmMS9WaWlqb3lfUGFuZGV5LmpwZz93PTE2MDAmcT04MA"
+    },
+    {
+      "id": "at_51079056690",
+      "title": "I tried Apple’s Siri Recaps. They’re surprisingly useful — and a little unsettling",
+      "url": "https://techcrunch.com/2026/11/04/i-tried-apples-siri-recaps-theyre-surprisingly-useful-and-a-little-unsettling/",
+      "summary": "Apple's AI-powered Siri Recaps won me over in just one day, despite my privacy reservations. But there's still room for improvement.",
+      "source": "Sarah Perez via AI | TechCrunch",
+      "image": ""
+    },
+    {
+      "id": "at_51078803192",
+      "title": "RESULTS: Data center opponents have won 38 of the 39 local ballot measures fully counted from Tuesda...",
+      "url": "https://x.com/TheRundownAI/status/2118011880392548674",
+      "summary": "RESULTS: Data center opponents have won 38 of the 39 local ballot measures fully counted from Tuesday, in unofficial results. The one exception: Harwood, North Dakota.They’re also ahead in all 6 with partial counts, with one Maine town still yet to report.💬3🔄1❤️8👀2860📊4⚡ Powered by xgo.ing",
+      "source": "The Rundown AI (@TheRundownAI) via The Rundown AI(@TheRundownAI)",
+      "image": "https://www.inoreader.com/camo/s9os3lI1vJE0cfo5QXheQe2bWIwJJ2Q1vLeLR0J_fD2Y,q80,480x400,pf,b64/aHR0cHM6Ly9wYnMudHdpbWcuY29tL21lZGlhL0hXU3VvYjRXWUFBWFJjMC5qcGc"
+    },
+    {
+      "id": "at_51078624721",
+      "title": "Google faces backlash for plan that would turn off Search for schools that restrict AI",
+      "url": "https://techcrunch.com/2026/11/04/google-faces-backlash-for-plan-that-would-turn-off-search-for-schools-that-restrict-ai/",
+      "summary": "Politicians on the left, like NYC mayor Zohran Mamdani and former FTC chair Lina Khan, accused Google of acting as an unregulated monopoly.",
+      "source": "Amanda Silberling via AI | TechCrunch",
+      "image": "https://www.inoreader.com/camo/sPh9ICqMiYfiCgAY4uX97MjzUUFEBX-ImiOw6IKDZgFc,q80,480x400,pf,b64/aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNC8wMy9zdHVkZW50cy10eXBpbmctb24tbGFwdG9wcy1HZXR0eUltYWdlc18xNTEzNzQ0Nzc3LmpwZWc_dz0xMjAw"
+    },
+    {
+      "id": "at_51078540560",
+      "title": "Data centers lost the midterms",
+      "url": "https://www.theverge.com/policy/1026365/data-centers-midterms-results",
+      "summary": "Data center developers are poised to face a more restrictive building environment after voters across the country voted in candidates who favor moratoriums and ballot measures that put more obstacles on their expansion, delivering a stinging blow to a central pillar of the AI industry. Of voters polled by NBC News on Election Day, 76...",
+      "source": "Lauren Feiner via The Verge - Artificial Intelligences",
+      "image": "https://www.inoreader.com/camo/sqNKSXjoGRoAeJjlZjBWUiOBRHyMUlD01eLtbRz39syo,q80,480x400,pf,b64/aHR0cHM6Ly9wbGF0Zm9ybS50aGV2ZXJnZS5jb20vd3AtY29udGVudC91cGxvYWRzL3NpdGVzLzIvMjAyNi8wNi9TVEtTNTI4X0RBVEFfQ0VOVEVSUzJfRC5qcGc_cXVhbGl0eT05MCZzdHJpcD1hbGwmY3JvcD0wLDAsMTAwLDEwMA"
+    },
+    {
+      "id": "at_51078428725",
+      "title": "Uber only fulfilled 4 rides from AI agents last quarter",
+      "url": "https://www.theverge.com/transportation/1026306/uber-ai-agents-q3-earnings-disintermediation",
+      "summary": "AI agents won't be stealing Uber's lunch any time soon. Only four rides were arranged by third-party AI agents during the third quarter of 2026, Uber executives disclosed during an earnings call this morning. The volume of Uber Eats orders fulfilled by AI agents was a little higher, with the company recording \"around 500\" during the...",
+      "source": "Andrew J. Hawkins via The Verge - Artificial Intelligences",
+      "image": "https://www.inoreader.com/camo/sMquuraq30X0lP4mcPphV_9t-gZyIVgo3Hh1wKn-8WqU,q80,480x400,pf,b64/aHR0cHM6Ly9wbGF0Zm9ybS50aGV2ZXJnZS5jb20vd3AtY29udGVudC91cGxvYWRzL3NpdGVzLzIvMjAyNi8xMC9TVEtTNTM5X0FJX0FHRU5UU19TSE9QUElOR19DLmpwZz9xdWFsaXR5PTkwJnN0cmlwPWFsbCZjcm9wPTAsMCwxMDAsMTAw"
+    },
+    {
+      "id": "at_51078191123",
+      "title": "What the 'Blue Wave' in the 2026 midterm election means for the American AI industry and businesses",
+      "url": "https://venturebeat.com/technology/what-the-blue-wave-in-the-2026-midterm-election-means-for-the-american-ai-industry-and-businesses",
+      "summary": "Democrats won control of the House and Senate in last night’s U.S. midterm elections, breaking Republicans’ hold on Washington and giving President Donald Trump an opposition Congress for the final two years of his term. The Associated Press reported at least seven Republican Senate seats and more than two dozen House districts flipped.Read more",
+      "source": "[email protected] (Carl Franzen) via VentureBeat",
+      "image": "https://www.inoreader.com/camo/sObAPwf6Jm2M7kdNRXTk3-HUzNlNIjPSVeaF-dfPmgqo,q80,480x400,pf,b64/aHR0cHM6Ly9pbWFnZXMuY3RmYXNzZXRzLm5ldC9qZHR3cWh6dmMybjEvMVFVb0QzemdOQXd1aWlSdWpGd0hMTy9lNTA3MGYyN2ZjYjA4NDYwMzdjNTE1ZDNhYWU2YzBiZi9TaWx2ZXJfR1BVc19vdmVyX2NvYmFsdF93YXZlcy5wbmc_dz0xNjAwJnE9ODA"
+    },
+    {
+      "id": "at_51077715724",
+      "title": "Sam Altman addresses RAM comments: people should ‘put as much as they want in their computers’",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1026292/sam-altman-ram-shortage-pcs-comments",
+      "summary": "OpenAI CEO Sam Altman spent election night defending his position on PC RAM purchases. He changed his name on X to \"Ram Altman\" in response to another user's comment, saying, \"i actually do want the world to have tons of memory and people to put as much as they want in their computers, and it is fucking annoying that this was taken out...",
+      "source": "Stevie Bonifield via The Verge - Artificial Intelligences",
+      "image": "https://www.inoreader.com/camo/skVNTzOhn6we8v_MyIl97mdca4guFTTpQIbj7DiyrZn8,q80,480x400,pf,b64/aHR0cHM6Ly9wbGF0Zm9ybS50aGV2ZXJnZS5jb20vd3AtY29udGVudC91cGxvYWRzL3NpdGVzLzIvMjAyNi8wNy9nZXR0eWltYWdlcy0yMjM2NTQ0MDk3LmpwZz9xdWFsaXR5PTkwJnN0cmlwPWFsbCZjcm9wPTAsMCwxMDAsMTAw"
+    },
+    {
+      "id": "at_51076653502",
+      "title": "TechCrunch Founder Summit 2026: Doors open at 9 a.m. ET in Boston",
+      "url": "https://techcrunch.com/2026/11/04/techcrunch-founder-summit-2026-todays-the-day/",
+      "summary": "Today is the day to join TechCrunch Founder Summit 2026 in Boston's SoWa Power Station. Register now to join this founder-focused conference today.",
+      "source": "TechCrunch Events via AI | TechCrunch",
+      "image": ""
+    },
+    {
+      "id": "at_51076323575",
+      "title": "Read more: https://t.co/ku4OudOztj",
+      "url": "https://x.com/TheRundownAI/status/2117942512249720983",
+      "summary": "Read more: therundownai.beehiiv.com/p/apple-cracks…💬0🔄1❤️3👀1356📊1⚡ Powered by xgo.ing",
+      "source": "The Rundown AI (@TheRundownAI) via The Rundown AI(@TheRundownAI)",
+      "image": ""
+    },
+    {
+      "id": "at_51076323578",
+      "title": "Top stories in AI today: - Apple lets any app plug into Siri AI - Google won’t give schools Search ...",
+      "url": "https://x.com/TheRundownAI/status/2117942506935505343",
+      "summary": "Top stories in AI today:- Apple lets any app plug into Siri AI- Google won’t give schools Search without AI- Turn one product photo into three studio shots- CrowdStrike’s ‘kill switch’ to stop rogue AI agents💬20🔄2❤️9👀3661📊18⚡ Powered by xgo.ing",
+      "source": "The Rundown AI (@TheRundownAI) via The Rundown AI(@TheRundownAI)",
+      "image": "https://www.inoreader.com/camo/sAVU2CGh90MuxnVWqWWlO0Dkvuk956M_h7QBPpAeEElw,q80,480x400,pf,b64/aHR0cHM6Ly9wYnMudHdpbWcuY29tL21lZGlhL0hXUnhlOWVXWUFBN1lZci5qcGc"
+    },
+    {
+      "id": "at_51076014685",
+      "title": "Google hasn’t figured out how to make AI pay like its search engine",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1024862/google-search-ai-overviews-alphabet-earnings-q3",
+      "summary": "Google Chief Business Officer Philipp Schindler. | Bloomberg via Getty Images Search queries are growing at their fastest rate in five years, Google parent Alphabet said in its earnings report last week. However, Google's Search revenue growth slowed to 12 percent year over year in the third quarter, down from roughly 17 percent in the...",
+      "source": "Rani Molla via The Verge - Artificial Intelligences",
+      "image": "https://www.inoreader.com/camo/sT2D5_AcufC2ovq_6pkOdTWXVYw3jiYPdIDWCgrejJCo,q80,480x400,pf,b64/aHR0cHM6Ly9wbGF0Zm9ybS50aGV2ZXJnZS5jb20vd3AtY29udGVudC91cGxvYWRzL3NpdGVzLzIvMjAyNi8xMS9nZXR0eWltYWdlcy0xMDYwNTgzNDAuanBnP3F1YWxpdHk9OTAmc3RyaXA9YWxsJmNyb3A9MCwwLDEwMCwxMDA"
+    },
     {
       "id": "at_51070525440",
       "title": "The biggest modding site in PC gaming is taking a stance on AI",
@@ -1480,126 +1600,6 @@
       "summary": "Dream is grounded in real physics and construction standards. Just as LLMs learn from text, Dream's world model is trained on more than 100 million square feet of building data gathered from permit archives across the United States.",
       "source": "Marina Temkin via AI | TechCrunch",
       "image": "https://www.inoreader.com/camo/sl4o3a0iQhrSnm7PyjuKIr30Ta8Hf9JVu4p0EeC_I-JM,q80,480x400,pf,b64/aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNi8xMC9UZWFtUGhvdG9fMS5wbmc_cmVzaXplPTE2MDAsOTAw"
-    },
-    {
-      "id": "at_51013932356",
-      "title": "Mistral Large 4 'Le Chonk' arrives as the top open model outside China with improved coding performance and 63% lower cost-per-task",
-      "url": "https://venturebeat.com/technology/mistral-large-4-le-chonk-arrives-as-the-top-open-model-outside-china-with-improved-coding-performance-and-63-lower-cost-per-task",
-      "summary": "Mistral has released the downloadable open weights for its trillion-parameter Large 4 model under a custom license, giving enterprises a new option for running and customizing a near-frontier AI model themselves. Independent tests now show that its biggest advances over the preview involve efficiency, lower costs and fewer fabricated answers, alongside...",
-      "source": "[email protected] (Carl Franzen) via VentureBeat",
-      "image": "https://www.inoreader.com/camo/sMHQzgsX3mngvCKPVflo3dD4kiceH3ThGjeA9wJbvB_g,q80,480x400,pf,b64/aHR0cHM6Ly9pbWFnZXMuY3RmYXNzZXRzLm5ldC9qZHR3cWh6dmMybjEvMTFNU2lTN3hrYXozMjZwbEwyM255Ty85OTUzNGQ1MjIwYTFhZmNiOGZlNTM3NzFhYWQ5OGZlNy9NaWRjZW50dXJ5X2NvbGxhZ2VfY2F0X3R5cGluZ19hdF90aWx0ZWRfbW9uaXRvcnMucG5nP3c9MTYwMCZxPTgw"
-    },
-    {
-      "id": "at_51013792515",
-      "title": "Microsoft’s AI future has fewer jobs",
-      "url": "https://www.theverge.com/tech/1022023/microsoft-exit-offer-layoffs-notepad",
-      "summary": "To anyone listening closely to what Microsoft CEO Satya Nadella has been saying over the past couple of years, this week felt like the clearest sign yet that AI is about to fundamentally change the size of Microsoft's workforce. Microsoft is now offering voluntary buyouts to around 60,000 employees across the US, UK, Canada, and India....",
-      "source": "Tom Warren via The Verge - Artificial Intelligences",
-      "image": "https://www.inoreader.com/camo/srzsBCTMjHrS8X0DaBCpoDQgggtxED8HkowVQdscWU24,q80,480x400,pf,b64/aHR0cHM6Ly9wbGF0Zm9ybS50aGV2ZXJnZS5jb20vd3AtY29udGVudC91cGxvYWRzL3NpdGVzLzIvY2hvcnVzL3VwbG9hZHMvY2hvcnVzX2Fzc2V0L2ZpbGUvMjU4MzI5MTIvU1RLMDk1X01JQ1JPU09GVF8yX0NWaXJnaW5pYV9BLmpwZz9xdWFsaXR5PTkwJnN0cmlwPWFsbCZjcm9wPTAsMCwxMDAsMTAw"
-    },
-    {
-      "id": "at_51013124087",
-      "title": "The NYT Cooking app is testing AI recipe modifications",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/1022193/nyt-cooking-app-ai-recipe-modification-tool",
-      "summary": "The AI tool provides recommendations and adjusts the recipe accordingly. | Image: The New York Times The New York Times is testing a new AI feature for its Cooking app that helps users to modify recipes, and it has sparked some drama among users. Last Friday, NYT Cooking senior editor Genevieve Ko announced the feature, which can be used...",
-      "source": "Jess Weatherbed via The Verge - Artificial Intelligences",
-      "image": "https://www.inoreader.com/camo/sWn_7RLN1rEkcoSY2g2hmZnl41KSl5CFDFRAE9DfrrrM,q80,480x400,pf,b64/aHR0cHM6Ly9wbGF0Zm9ybS50aGV2ZXJnZS5jb20vd3AtY29udGVudC91cGxvYWRzL3NpdGVzLzIvMjAyNi8xMC9OWVQtQ29va2luZy1BSS1yZWNpcGUtbW9kaWZpY2F0aW9uLWZlYXR1cmUtaGVyby5qcGc_cXVhbGl0eT05MCZzdHJpcD1hbGwmY3JvcD0wLDAsMTAwLDEwMA"
-    },
-    {
-      "id": "at_51012967899",
-      "title": "Wabi, the AI agent that builds mini apps, now valued at $1.25B after latest round",
-      "url": "https://techcrunch.com/2026/10/29/wabi-the-ai-agent-that-builds-mini-apps-now-valued-at-1-25b-after-latest-round/",
-      "summary": "On Thursday, AI app Wabi, now describing itself as a \"personal agent,\" said it has raised $55 million at a $1.25 billion valuation.",
-      "source": "Sarah Perez via AI | TechCrunch",
-      "image": "https://www.inoreader.com/camo/sBbIRtgsrmG7dRQfo9bJR9vjMzufEGnNaOaKy3kT7uLo,q80,480x400,pf,b64/aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNi8wOS93YWJpLTIwLmpwZz9yZXNpemU9MTYwMCw4Mjc"
-    },
-    {
-      "id": "at_51012862865",
-      "title": "Agents are rewriting the book on security. Can your data layer keep up?",
-      "url": "https://venturebeat.com/security/agents-are-rewriting-the-book-on-security-can-your-data-layer-keep-up",
-      "summary": "Presented by Google CloudRead more",
-      "source": "via VentureBeat",
-      "image": "https://www.inoreader.com/camo/sNbLV-zObxvjEcDWpkfoVHXdUbjgY9_19VkVf-i-DKc0,q80,480x400,pf,b64/aHR0cHM6Ly9pbWFnZXMuY3RmYXNzZXRzLm5ldC9qZHR3cWh6dmMybjEvMUhMTVZZTlprbTFYTWR4Q2x1UXZwcS9jYTg2Y2Y5M2NhZTY0NjEwZmZhZjZiNGY2ZGRkNWNhZi9Hb29nbGVfQ2xvdWQuMi5wbmc_dz0xNjAwJnE9ODA"
-    },
-    {
-      "id": "at_51012584797",
-      "title": "Anthropic is asking Wall Street to believe in AGI",
-      "url": "https://www.theverge.com/podcast/1021322/anthropic-ipo-filing-s-1-claude-semianalysis-joey-brookhart-interview",
-      "summary": "Today on Decoder, I’m joined by Joey Brookhart, an analyst at the chip and AI research firm SemiAnalysis, to help me dig into the story inside the numbers of the Anthropic IPO filing — a document known as an S-1. Anthropic just filed its S-1 to go public on the Nasdaq, and it could start trading as soon as next month at a valuation...",
-      "source": "Nilay Patel via The Verge - Artificial Intelligences",
-      "image": "https://www.inoreader.com/camo/sPokbmqceJrMS_nYOMnhmFiBTRpCdBS9kfF4cJTmRvss,q80,480x400,pf,b64/aHR0cHM6Ly9wbGF0Zm9ybS50aGV2ZXJnZS5jb20vd3AtY29udGVudC91cGxvYWRzL3NpdGVzLzIvMjAyNi8xMC9WUkdfRENEX2FudGhyb3BpY19JUE8uanBnP3F1YWxpdHk9OTAmc3RyaXA9YWxsJmNyb3A9MCwwLDEwMCwxMDA"
-    },
-    {
-      "id": "at_51012171426",
-      "title": "Anthropic’s business plan: Build God or die trying",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/1021476/anthropic-s-1-compute-recursive",
-      "summary": "The Anthropic S-1 seems to have provided the financial justification for the company to spend as much as it possibly can on compute. If you are the kind of person who wonders if Anthropic is doing its level best to build a machine god while convincing Wall Street it's in the business of selling IT contracts, Anthropic has just offered...",
-      "source": "Elizabeth Lopatto via The Verge - Artificial Intelligences",
-      "image": "https://www.inoreader.com/camo/s0Dbj9MJoQRKeUGpUqkiJ8FuKMBRMHQGCnXEoivyfs8Y,q80,480x400,pf,b64/aHR0cHM6Ly9wbGF0Zm9ybS50aGV2ZXJnZS5jb20vd3AtY29udGVudC91cGxvYWRzL3NpdGVzLzIvMjAyNi8xMC9BbnRocm9waWNfZGFyaW8tYW1vZGVpX21vbmV5LmpwZz9xdWFsaXR5PTkwJnN0cmlwPWFsbCZjcm9wPTAsMCwxMDAsMTAw"
-    },
-    {
-      "id": "at_51011895924",
-      "title": "Amazon updates Alexa to help you manage shopping lists and subscriptions and update delivery instructions",
-      "url": "https://techcrunch.com/2026/10/29/amazon-updates-alexa-to-help-you-manage-shopping-lists-and-subscriptions-and-update-delivery-instructions/",
-      "summary": "The update allows you to use Alexa to create lists, register them, see what's on them, and add or edit items. You can also manage subscriptions.",
-      "source": "Ivan Mehta via AI | TechCrunch",
-      "image": "https://www.inoreader.com/camo/stphyAFvO8oL2gxHldeKZsOdws_noUfLXkqhrZ3VgzRY,q80,480x400,pf,b64/aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNi8xMC9HZXR0eUltYWdlcy0xMjUyNDY4NzM1LmpwZz9yZXNpemU9MTYwMCwxMDY3"
-    },
-    {
-      "id": "at_51011895927",
-      "title": "Deepgram acquires Pipecat-maker Daily to bolster its voice AI infrastructure",
-      "url": "https://techcrunch.com/2026/10/29/deepgram-acquires-pipecat-maker-daily-to-bolster-its-voice-ai-infrastructure/",
-      "summary": "With Pipecat, Deepgram will likely gain a deeper understanding of real-time voice and video infrastructure.",
-      "source": "Ivan Mehta via AI | TechCrunch",
-      "image": "https://www.inoreader.com/camo/sYsmtHmZSKvf3Qj1giCAQ2zfKV4rnmmoT8430xJOZ5EM,q80,480x400,pf,b64/aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNi8xMC9TY290dC1Ld2luLTEuanBnP3Jlc2l6ZT0xNjAwLDEwNjc"
-    },
-    {
-      "id": "at_51009964373",
-      "title": "AI has come for Arizona’s water",
-      "url": "https://www.theverge.com/cs/features/1016650/arizona-water-data-center-tsmc",
-      "summary": "A hulking gray giant rises from the desert. Inside, engineers create the force behind our phones and computers and appliances, our streaming services and search engines and chatbots and vibe-coded apps and websites. The complex is simultaneously massive and squat, dwarfed by the mountains that surround it, and it is endless. I drive past...",
-      "source": "Gaby Del Valle via The Verge - Artificial Intelligences",
-      "image": "https://www.inoreader.com/camo/she4e8CN7H4ZbnyfCK7r-7bhydgfaRW1crDYoQHHJgbI,q80,480x400,pf,b64/aHR0cHM6Ly9wbGF0Zm9ybS50aGV2ZXJnZS5jb20vd3AtY29udGVudC91cGxvYWRzL3NpdGVzLzIvMjAyNi8xMC8yNjg2NThfRGF0YV9jZW50ZXJfQVpfTEVERV9WT1NTUzUwLmpwZz9xdWFsaXR5PTkwJnN0cmlwPWFsbCZjcm9wPTAsMCwxMDAsMTAw"
-    },
-    {
-      "id": "at_51005123924",
-      "title": "Adam Mosseri says negativity around AI is ‘going to get worse’",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/1021644/adam-mosseri-instagram-ai-negativity",
-      "summary": "Asked about AI and the trend of college students booing tech CEOs at graduation ceremonies, Instagram head Adam Mosseri acknowledged in an interview that a lot of people really don't like AI, and it's not just young people and creatives. Appearing on the Colin and Samir podcast to talk about the launch of widescreen and long-form video...",
-      "source": "Stevie Bonifield via The Verge - Artificial Intelligences",
-      "image": "https://www.inoreader.com/camo/sm3Quz-ADjN0KgWsDE_L1VVvXHlQJGGVeSpQzbbsNjaI,q80,480x400,pf,b64/aHR0cHM6Ly9wbGF0Zm9ybS50aGV2ZXJnZS5jb20vd3AtY29udGVudC91cGxvYWRzL3NpdGVzLzIvMjAyNi8wNy9nZXR0eWltYWdlcy0yMjM5NTYxMDI4LmpwZz9xdWFsaXR5PTkwJnN0cmlwPWFsbCZjcm9wPTAsMCwxMDAsMTAw"
-    },
-    {
-      "id": "at_51004621956",
-      "title": "Akai is embracing vibe-coded mods with an open-source MPC",
-      "url": "https://www.theverge.com/gadgets/1021405/akai-open-source-mpc-sample-key",
-      "summary": "The MPC Sample Key looks like the MPC Sample just with keys instead of pads. | Image: Akai The MPC Sample Key isn't even formally announced yet, but Akai is already showing off what the modding community is cooking up through vibe coding. Akai has decided to embrace the explosion of hackers and custom firmware developers by giving them...",
-      "source": "Terrence O’Brien via The Verge - Artificial Intelligences",
-      "image": "https://www.inoreader.com/camo/sff12thOCPvdo0XLiaVgeh4EphxDbAau2KkYFIopt3v8,q80,480x400,pf,b64/aHR0cHM6Ly9wbGF0Zm9ybS50aGV2ZXJnZS5jb20vd3AtY29udGVudC91cGxvYWRzL3NpdGVzLzIvMjAyNi8xMC9Ba2FpLU1QQy1TYW1wbGUtS2V5LmpwZz9xdWFsaXR5PTkwJnN0cmlwPWFsbCZjcm9wPTAsMCwxMDAsMTAw"
-    },
-    {
-      "id": "at_51004600668",
-      "title": "Microsoft just shared Azure’s actual revenue in dollars: $33.2 billion",
-      "url": "https://techcrunch.com/2026/10/28/microsoft-just-shared-azures-actual-revenue-in-dollars-33-2-billion/",
-      "summary": "Microsoft has never disclosed Azure's quarterly revenue in dollars. But for the first time, we can see just how close it is getting to besting the biggest competitor in the market, AWS.",
-      "source": "Aditya Mehta via AI | TechCrunch",
-      "image": "https://www.inoreader.com/camo/sI1HRhQgQjaOOBnYkTD5f4ute9I5Cs-LjHYaYf0l3ro4,q80,480x400,pf,b64/aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNi8wNC9kb2xsYXItc2lnbnMtZGF0YS1jZW50ZXIucG5nP3c9MTAyNA"
-    },
-    {
-      "id": "at_51004527189",
-      "title": "Google expands AI Search ads globally as core ad growth slows",
-      "url": "https://techcrunch.com/2026/10/28/google-expands-ai-search-ads-globally-as-core-ad-growth-slows/",
-      "summary": "The announcement came alongside parent company Alphabet's third-quarter earnings report, which saw revenue grow 25% year over year to $127.6 billion.",
-      "source": "Lauren Forristal via AI | TechCrunch",
-      "image": "https://www.inoreader.com/camo/slAH0e2gwD-pDBztNrY-l4EY8D0HLcXW5M2cOksMv6pY,q80,480x400,pf,b64/aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNi8wNi9nb29nbGUtbG9nby5qcGc_cmVzaXplPTE2MDAsMTA2Nw"
-    },
-    {
-      "id": "at_51004445433",
-      "title": "Microsoft recorded $10 billion in revenue from OpenAI",
-      "url": "https://techcrunch.com/2026/10/28/microsoft-recorded-10-billion-in-revenue-from-openai/",
-      "summary": "Microsoft said it made $10 billion in revenue from commercial arrangements with OpenAI, including revenue-sharing payments, in the quarter ending September 30. It underscores the still-enormous financial dependency of the partnership.",
-      "source": "Rebecca Bellan via AI | TechCrunch",
-      "image": "https://www.inoreader.com/camo/spCD5IU5OPmq-H69WfGDMLTYIgzfr2EthfSendoKjEfg,q80,480x400,pf,b64/aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNC8wNy9HZXR0eUltYWdlcy0yMTUzNDc0NTc1LmpwZz9yZXNpemU9MTYwMCwxMDY3"
     }
   ]
 }
