@@ -1,6 +1,30 @@
 {
-  "updatedAt": "2026-11-05T00:23:08.989772+00:00",
+  "updatedAt": "2026-11-05T07:55:34.342769+00:00",
   "articles": [
+    {
+      "id": "at_51083180655",
+      "title": "After the midterms, a bigger clash over data centers could be coming",
+      "url": "https://techcrunch.com/2026/11/04/after-the-midterms-a-bigger-clash-over-data-centers-could-be-coming/",
+      "summary": "Data center opposition crossed party lines in Tuesday’s midterms.",
+      "source": "Dominic-Madori Davis via AI | TechCrunch",
+      "image": "https://www.inoreader.com/camo/sRl6eydRrjBletE3KHLKTWFEuoRm5TWWZq2Z-3MjJVAM,q80,480x400,pf,b64/aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNS8xMS91cy1jb25ncmVzcy1hdC1uaWdodC5qcGc_cmVzaXplPTE2MDAsOTAz"
+    },
+    {
+      "id": "at_51083128788",
+      "title": "Apple is reportedly cutting budgets for its internal AI usage",
+      "url": "https://techcrunch.com/2026/11/04/apple-is-reportedly-cutting-budgets-for-its-internal-ai-usage/",
+      "summary": "The company is said to be significantly dropping the amount it's spending on AI for its engineering teams.",
+      "source": "Lucas Ropek via AI | TechCrunch",
+      "image": "https://www.inoreader.com/camo/szNfdIkvIG1ZHZv4v9hP0kyK2_e1B_3-aiTmDv_xZYag,q80,480x400,pf,b64/aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNi8wNi9pcGhvbmUtdXNiLWNhYmxlLmpwZz9yZXNpemU9MTYwMCwxMDY3"
+    },
+    {
+      "id": "at_51082939385",
+      "title": "Ex-Googlers' new Apache 2.0 model Ripple-65B Preview claims the U.S. open coding lead on two major benchmarks",
+      "url": "https://venturebeat.com/technology/ex-googlers-new-apache-2-0-model-ripple-65b-preview-claims-the-u-s-open-coding-lead-on-two-major-benchmarks",
+      "summary": "There's another American victory worth paying attention to today: a new, open weights AI model that its creators claim scores the higher on coding performance on two third-party benchmarks compared to any other open model from the U.S.Read more",
+      "source": "[email protected] (Carl Franzen) via VentureBeat",
+      "image": "https://www.inoreader.com/camo/sGkmm53xZnIoXtjc1cK0HjJPWRoiFpPVGFBXNFC_i-zI,q80,480x400,pf,b64/aHR0cHM6Ly9pbWFnZXMuY3RmYXNzZXRzLm5ldC9qZHR3cWh6dmMybjEvNWtZdXZmcHprQUd2ZlZ1cHc3NW1INi84ZmI0M2JlZDE5NmJhMDE5MDhkZDk0MDA2NDY4NjFhMi9HUFVfUGx1bmdlX0ludG9fVHVycXVvaXNlX1JpcHBsZXMucG5nP3c9MTYwMCZxPTgw"
+    },
     {
       "id": "at_51082169092",
       "title": "The AI race is raising companies' bills, from GPUs to memory to Microsoft 365",
@@ -1576,30 +1600,6 @@
       "summary": "After months of bombarding mathematicians with a relentless stream of AI-generated results, OpenAI CEO Sam Altman says he sympathizes with researchers struggling to make sense of it all. But he has no intention of stopping - and hints there could be much more to come from the company's stockpile of discoveries. \"I think, on net, the...",
       "source": "Robert Hart via The Verge - Artificial Intelligences",
       "image": "https://www.inoreader.com/camo/sAIH_1PwKFjLlAsIQFx2ZxYAJAi-GZuc9q6KvBGrMnAs,q80,480x400,pf,b64/aHR0cHM6Ly9wbGF0Zm9ybS50aGV2ZXJnZS5jb20vd3AtY29udGVudC91cGxvYWRzL3NpdGVzLzIvMjAyNi8xMC9WcmdfaWxsb19TYW1fQWx0bWFuX3N0b2NrX3RyaWFsLmpwZz9xdWFsaXR5PTkwJnN0cmlwPWFsbCZjcm9wPTAsMCwxMDAsMTAw"
-    },
-    {
-      "id": "at_51024560359",
-      "title": "Can AI data centers be mass-produced like cars? This startup aims to find out",
-      "url": "https://techcrunch.com/2026/10/30/can-ai-data-centers-be-mass-produced-like-cars-and-online-in-48-hours-this-startup-aims-to-find-out/",
-      "summary": "Runware is building a factory to turn out prefabricated AI data centers on an assembly line. The real test will be whether it can deliver at that scale.",
-      "source": "Dominic-Madori Davis via AI | TechCrunch",
-      "image": "https://www.inoreader.com/camo/slwfa7aJqMehJDsc-dVQDpI4FRMlTsS-T_jEzoqtZDSc,q80,480x400,pf,b64/aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNi8xMC9SdW53YXJlLUZhY3RvcnktLmpwZz93PTEyMDA"
-    },
-    {
-      "id": "at_51023206433",
-      "title": "Maine’s data center revolt will decide who controls the Senate",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/1021080/maine-senate-race-susan-collins-ai-data-centers",
-      "summary": "Maine Sen. Susan Collins, a Republican, was midway through defending her record during the final debate of the midterms when an audience member cut her short. \"I'm terrified,\" a man shouted. \"AI data centers are destroying our climate. They are poisoning our water.\" Collins brushed off the outburst, tying the man to her Democratic challenger,...",
-      "source": "Abigail Bassett via The Verge - Artificial Intelligences",
-      "image": "https://www.inoreader.com/camo/syUzzQz1co28z5VSmoe73osKpGveJlSHGDKmbfSJG-gA,q80,480x400,pf,b64/aHR0cHM6Ly9wbGF0Zm9ybS50aGV2ZXJnZS5jb20vd3AtY29udGVudC91cGxvYWRzL3NpdGVzLzIvMjAyNi8xMC8yNjg4MTNfTUFJTkVfREFUQV9DRU5URVJTX0NWaXJnaW5pYS5qcGc_cXVhbGl0eT05MCZzdHJpcD1hbGwmY3JvcD0wLDAsMTAwLDEwMA"
-    },
-    {
-      "id": "at_51022040409",
-      "title": "Wikipedia’s operator says a bad AI copyright ruling could threaten the open web",
-      "url": "https://www.theverge.com/policy/1022880/wikipedia-openai-new-york-times-copyright",
-      "summary": "The Wikimedia Foundation is staking out a middle ground in a group of landmark AI copyright cases, pushing courts to legally protect large language models (LLMs) training on copyrighted work - but not chatbots regurgitating that work to users. An overly black-and-white ruling, it says, could either deprive Wikipedians of useful AI-based...",
-      "source": "Lauren Feiner via The Verge - Artificial Intelligences",
-      "image": "https://www.inoreader.com/camo/sZFPj9JV41P8KRuDweI8lvzojzFC8UmvatjOGscxyr1A,q80,480x400,pf,b64/aHR0cHM6Ly9wbGF0Zm9ybS50aGV2ZXJnZS5jb20vd3AtY29udGVudC91cGxvYWRzL3NpdGVzLzIvMjAyNi8wMi9TVEswMzdfV0lLSVBFRElBX0EuanBnP3F1YWxpdHk9OTAmc3RyaXA9YWxsJmNyb3A9MCwwLDEwMCwxMDA"
     }
   ]
 }
