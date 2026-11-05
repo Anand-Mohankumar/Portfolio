@@ -1,6 +1,94 @@
 {
-  "updatedAt": "2026-11-04T18:39:05.903108+00:00",
+  "updatedAt": "2026-11-05T00:23:08.999767+00:00",
   "articles": [
+    {
+      "id": "at_51082128679",
+      "title": "CrowdStrike introduces AI kill switch to manage rogue agents",
+      "url": "https://www.scworld.com/brief/crowdstrike-introduces-ai-kill-switch-to-manage-rogue-agents",
+      "summary": "CrowdStrike has launched an AI kill switch feature within its Falcon Guardian platform to help enterprises identify, monitor and terminate rogue AI agents, according to a recent report by Tech Radar.",
+      "source": "SC Staff via Latest articles from SC Magazine",
+      "image": "https://www.inoreader.com/camo/sanr1hEqPPkwoOevQSuDBW_8GD-XaNczUVO-ubCSfBPw,q80,480x400,pf,b64/aHR0cHM6Ly9maWxlcy5jeWJlcnJpc2thbGxpYW5jZS5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjQvMDcvMDcyNDI0X2Nyb3dkc3Rpa2VfbG9nby5qcGc"
+    },
+    {
+      "id": "at_51082128683",
+      "title": "WordPress Core bug added to CISA's exploited vulnerabilities list",
+      "url": "https://www.scworld.com/news/wordpress-core-bug-added-to-cisas-exploited-vulnerabilities-list",
+      "summary": "CISA flags actively exploited WordPress Core flaw allowing unauthenticated code execution during updates.",
+      "source": "Steve Zurier via Latest articles from SC Magazine",
+      "image": "https://www.inoreader.com/camo/s0iiPE2QHdScmj4vOXgHs56NEVDed3QJr3gKHySJjpnk,q80,480x400,pf,b64/aHR0cHM6Ly9maWxlcy5jeWJlcnJpc2thbGxpYW5jZS5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjUvMDEvQWRvYmVTdG9ja184Nzc2MDI1NDVfRWRpdG9yaWFsX1VzZV9Pbmx5LmpwZw"
+    },
+    {
+      "id": "at_51081581535",
+      "title": "Two Barracuda ESG Flaws Could Be Combined for Full Root Access; Patches Released",
+      "url": "https://securityaffairs.com/202440/security/two-barracuda-esg-flaws-could-be-combined-for-full-root-access-patches-released.html",
+      "summary": "Barracuda patched two flaws that can be chained to give attackers root access to Email Security Gateway appliances. Barracuda has patched two vulnerabilities that can be chained to gain root access to its Email Security Gateway (ESG) appliances. CVE-2026-116606 (CVSS score of 9.3) is an authentication bypass that lets unauthenticated attackers...",
+      "source": "Pierluigi Paganini via Security Affairs",
+      "image": "https://www.inoreader.com/camo/sFEbe1lqaEgItOXVHkpsFPtmNeTtSBkFi9JaBEWVMO5w,q80,480x400,pf,b64/aHR0cHM6Ly9zZWN1cml0eWFmZmFpcnMuY29tL3dwLWNvbnRlbnQvdXBsb2Fkcy8yMDEzLzA3L0JhcnJhY3VkYV9Mb2dvXzRDLmpwZw"
+    },
+    {
+      "id": "at_51081542004",
+      "title": "Vercel rolls out new protection against stolen session cookie attacks",
+      "url": "https://www.bleepingcomputer.com/news/security/vercel-rolls-out-new-protection-against-stolen-session-cookie-attacks/",
+      "summary": "Vercel is gradually rolling out Device Bound Session Credentials (DBSC) on its platform as a key defense against information stealer malware. [...]",
+      "source": "Bill Toulas via Bleeping Computer",
+      "image": "https://www.inoreader.com/camo/sF87WNOTC30_hxN-uj0i18yB3msQ86LG9VDn5MFsARAk,q80,480x400,pf,b64/aHR0cHM6Ly93d3cuYmxlZXBzdGF0aWMuY29tL2NvbnRlbnQvaGwtaW1hZ2VzLzIwMjYvMTEvMDQvdmVyY2VsLmpwZw"
+    },
+    {
+      "id": "at_51081417271",
+      "title": "Sovereign artificial intelligence agents pose potential national security risks",
+      "url": "https://www.scworld.com/brief/sovereign-artificial-intelligence-agents-pose-potential-national-security-risks",
+      "summary": "Sovereign agents operating outside of human control represent a significant emerging threat to global security, according to a recent report by The Register.",
+      "source": "SC Staff via Latest articles from SC Magazine",
+      "image": "https://www.inoreader.com/camo/sU_ZkThVpThqzpgM0ZsJeXMwM1vPF7GnKMyapLCNCgaA,q80,480x400,pf,b64/aHR0cHM6Ly9maWxlcy5jeWJlcnJpc2thbGxpYW5jZS5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjQvMDYvMDYyMDI0X2JhZF9ib3RzLmpwZw"
+    },
+    {
+      "id": "at_51081401263",
+      "title": "What happens when a fake coding test reaches a security company?",
+      "url": "https://www.sophos.com/en-us/blog/fake-coding-test-reaches-security-company",
+      "summary": "Fake job interviews are an established way to target developers",
+      "source": "via Naked Security",
+      "image": ""
+    },
+    {
+      "id": "at_51081239330",
+      "title": "Zyxel fixes zero-day exploited to hack nearly 1,000 network switches",
+      "url": "https://www.bleepingcomputer.com/news/security/zyxel-fixes-zero-day-exploited-to-hack-nearly-1-000-network-switches/",
+      "summary": "Zyxel has patched a zero-day vulnerability in its GS1900 series network switches that hackers exploited to compromise nearly 1,000 devices worldwide and steal configuration files and credentials. [...]",
+      "source": "Lawrence Abrams via Bleeping Computer",
+      "image": "https://www.inoreader.com/camo/s1mOTPzF0MtkQSnzPiIAOgfu_WPYXQ4a1XmfnJR0F6Vc,q80,480x400,pf,b64/aHR0cHM6Ly93d3cuYmxlZXBzdGF0aWMuY29tL2NvbnRlbnQvaGwtaW1hZ2VzLzIwMjYvMTEvMDQvenl4ZWwtZ3MxOTAwLmpwZw"
+    },
+    {
+      "id": "at_51080616451",
+      "title": "Cyberattack Hits French Blood Banks as Hackers Target Refrigeration Systems Across Europe",
+      "url": "https://securityaffairs.com/202431/hacking/cyberattack-hits-french-blood-banks-as-hackers-target-refrigeration-systems-across-europe.html",
+      "summary": "Cyberattacks disrupted refrigeration monitoring systems at three French blood banks, amid similar attacks targeting European supermarkets. A cyberattack has hit three regional blood banks in France, disrupting systems used to monitor and control refrigerated storage facilities. The incident took place overnight between Sunday and Monday, at...",
+      "source": "Pierluigi Paganini via Security Affairs",
+      "image": "https://www.inoreader.com/camo/sw3H_9SKHCZ_qY3l7hBGt8o9gXJE3BNNtsfz3D8dwq3k,q80,480x400,pf,b64/aHR0cHM6Ly9zZWN1cml0eWFmZmFpcnMuY29tL3dwLWNvbnRlbnQvdXBsb2Fkcy8yMDI2LzEwL2ltYWdlLTI5LnBuZw"
+    },
+    {
+      "id": "at_51080497056",
+      "title": "SkyW4lker Phishing Campaign Expands, Threatening US Enterprises with Microsoft 365 Account Takeovers",
+      "url": "https://cybersecuritynews.com/skyw4lker-phishing-campaign-expands-threatening-us-enterprises-with-microsoft-365-account-takeovers/",
+      "summary": "A phishing kit called SkyW4lker (also branded SkyW4lker x365 Sentinel) is quietly taking over Microsoft 365 accounts without ever stealing a password. Instead of cracking logins or breaking MFA, it tricks employees into approving a legitimate Microsoft device-code sign-in, handing attackers a valid session to corporate mailboxes, documents,...",
+      "source": "Balaji N via Cyber Security News",
+      "image": "https://www.inoreader.com/camo/sM5neASjOurcbMURdWpg79o7idMVM1fXViu_GKnv_an4,q80,480x400,pf,b64/aHR0cHM6Ly9ibG9nZ2VyLmdvb2dsZXVzZXJjb250ZW50LmNvbS9pbWcvYi9SMjl2WjJ4bC9BVnZYc0VpMGNfbURJUjJyc0FVUXJjUzk0d3NjMFE1ZkNKeHBIUDU1SF95aHltcnkycGlzbW8xeGRBbGIyUERTeVlBNTVTdFBxOGJidkwtMFdxQnFvMTBBY0NOZW1ka1dlbGxXdEdOek91bTRPd1ZlU3VSbkdWY2NUaHlXLWtzeWdyT1J4N1Y0TW1mYnlYNGlZUzlkVEx3dDNfQ3VfVm9EZjRGajdpQnZsTkVBZ2hBQUlUSVJNWUQwZUtlRnEtMHVaTjgvczE2MDAvU2t5VzRsa2VyLUFjdGl2aXR5LUFjcm9zcy1VUy1Pcmdhbml6YXRpb25zLTgxOXgxMDI0LndlYnA"
+    },
+    {
+      "id": "at_51080409439",
+      "title": "DreamHost confirms data breach exposed FTP logins and webmail sessions",
+      "url": "https://www.bleepingcomputer.com/news/security/dreamhost-confirms-data-breach-exposed-ftp-logins-and-webmail-sessions/",
+      "summary": "DreamHost is warning of a data breach after attackers gained access to its File Manager platform for two months and stole customers' FTP/SFTP usernames and passwords. [...]",
+      "source": "Bill Toulas via Bleeping Computer",
+      "image": "https://www.inoreader.com/camo/sPAZfhhpSyc6y9c2hlRCfJajh6z9r8FCJTUC6blHNQbA,q80,480x400,pf,b64/aHR0cHM6Ly93d3cuYmxlZXBzdGF0aWMuY29tL2NvbnRlbnQvaGwtaW1hZ2VzLzIwMjYvMTEvMDQvRHJlYW1Ib3N0LmpwZw"
+    },
+    {
+      "id": "at_51080235511",
+      "title": "AI doesn’t create new cyber threats – it just makes the old ones unstoppable",
+      "url": "https://www.scworld.com/perspective/ai-doesnt-create-new-cyber-threats-it-just-makes-the-old-ones-unstoppable",
+      "summary": "Here’s why teams have to prioritize threats by scale and exploitability, not novelty.",
+      "source": "Ivan Khamenka via Latest articles from SC Magazine",
+      "image": "https://www.inoreader.com/camo/s_Jq5co033-ZHGPcZzUlh3KVxnsch5etWHPBkCB3TrsI,q80,480x400,pf,b64/aHR0cHM6Ly9maWxlcy5jeWJlcnJpc2thbGxpYW5jZS5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjYvMTAvMTAxNTI2X2FpX2h1Yl9zZWN1cml0eS5qcGc"
+    },
     {
       "id": "at_51079971015",
       "title": "6 Challenges SOC Leaders Should Turn into Priorities in 2027",
@@ -1512,94 +1600,6 @@
       "summary": "Older iPhones used to store cryptocurrency seed phrases could expose owners to physical attacks that airplane mode cannot stop. OneKey founder Yishi has warned that wiping an aging iPhone and keeping it offline does not make it a secure cold wallet. The concern involves BootROM flaws that let attackers run code before iOS starts. However, this...",
       "source": "Abinaya via Cyber Security News",
       "image": "https://www.inoreader.com/camo/sW94fvyYAuuyvgGqr0gurfSjjjau55S8u-EDmnZLK-Lw,q80,480x400,pf,b64/aHR0cHM6Ly9jeWJlcnNlY3VyaXR5bmV3cy5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjYvMTEvSGFja2Vycy1Db3VsZC1FeHBsb2l0LWlQaG9uZS1Cb290LVJPTS1GbGF3cy10by1Db21wcm9taXNlLUNyeXB0b2N1cnJlbmN5LVdhbGxldC1TZWN1cml0eS53ZWJw"
-    },
-    {
-      "id": "at_51052828548",
-      "title": "Revolve Data Breach Impacts at Least 200,000 People",
-      "url": "https://www.securityweek.com/revolve-data-breach-impacts-at-least-180000-people/",
-      "summary": "Hackers accessed its online shopping platform and stole customers’ personal and payment card information. The post Revolve Data Breach Impacts at Least 200,000 People appeared first on SecurityWeek.",
-      "source": "Ionut Arghire via SecurityWeek",
-      "image": "https://www.inoreader.com/camo/sDYuAVHqGbxIuJ9t0dt4U9jOhtn_rHktnP-EkF975TSg,q80,480x400,pf,b64/aHR0cHM6Ly93d3cuc2VjdXJpdHl3ZWVrLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNS8wMi9kYXRhX2JyZWFjaC5qcGVn"
-    },
-    {
-      "id": "at_51052734135",
-      "title": "Google Introduces $250,000 Root-in-Cloud Bug Bounty Reward",
-      "url": "https://www.securityweek.com/google-introduces-250000-root-in-cloud-bug-bounty-reward/",
-      "summary": "The top payout is for high-impact architectural research demonstrating full administrative control. The post Google Introduces $250,000 Root-in-Cloud Bug Bounty Reward appeared first on SecurityWeek.",
-      "source": "Ionut Arghire via SecurityWeek",
-      "image": ""
-    },
-    {
-      "id": "at_51052543053",
-      "title": "Federal judge dismisses lawsuit challenging Alaska Senate candidate ballot",
-      "url": "https://www.scworld.com/brief/federal-judge-dismisses-lawsuit-challenging-alaska-senate-candidate-ballot",
-      "summary": "",
-      "source": "SC Staff via Latest articles from SC Magazine",
-      "image": "https://www.inoreader.com/camo/svunGcCkVR6JpiLgSQC87VovfTksMRboQVzoNy6HLvQM,q80,480x400,pf,b64/aHR0cHM6Ly9maWxlcy5jeWJlcnJpc2thbGxpYW5jZS5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjYvMTEvQWRvYmVTdG9ja18xMDU5MDQ2MjA3LTEtc2NhbGVkLmpwZWc"
-    },
-    {
-      "id": "at_51052543062",
-      "title": "The approved-app blind spot: When sanctioned AI becomes shadow AI",
-      "url": "https://www.scworld.com/native/the-approved-app-blind-spot-when-sanctioned-ai-becomes-shadow-ai",
-      "summary": "Approved AI apps can become shadow AI as identities, features and data flows change.",
-      "source": "Sponsored by Check Point via Latest articles from SC Magazine",
-      "image": "https://www.inoreader.com/camo/sBByjIg49qsoTS0T4jkJBw9Ic4RF8WvNfOBaHM3hlNro,q80,480x400,pf,b64/aHR0cHM6Ly9maWxlcy5jeWJlcnJpc2thbGxpYW5jZS5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjYvMTAvMTAyNzI2X3NoYWRvd19haS5qcGc"
-    },
-    {
-      "id": "at_51052369177",
-      "title": "Hackers Using Microsoft Teams Messages and Calls to Trick Users and Gain Remote Access to System",
-      "url": "https://cybersecuritynews.com/microsoft-teams-messages/",
-      "summary": "Hackers are using Microsoft Teams messages and voice calls to impersonate IT support staff, persuade employees to approve remote access, and move deeper into corporate networks. Two intrusions investigated by Microsoft show how a seemingly routine help desk conversation can lead to stolen data and access to highly privileged accounts. ...",
-      "source": "Tushar Subhra Dutta via Cyber Security News",
-      "image": "https://www.inoreader.com/camo/sdk4ugwl5nX9HnajRyJRB-W3Ht2i2NkwZuNDRDaJcYT8,q80,480x400,pf,b64/aHR0cHM6Ly9ibG9nZ2VyLmdvb2dsZXVzZXJjb250ZW50LmNvbS9pbWcvYi9SMjl2WjJ4bC9BVnZYc0VnNTl2UzRzb1g4ZlliTGJNX3J1MVM1OWRhbkM3dmpuVUEtNzV5dnFQMnFVQUJ2TzR0VV9mWXhESDYxaXN4aUV0YXFZbGtNMVhkekltSDlycVJ3TFhxNXZna3FNc1NIdUxabFcxRE1KWmNVV19KZVVkaW52WDEyMThmd2h3Y1c3ajJkelpjdENNdjF3NVd0ZkphM0g3OVdiV1dXZHoxbmNTckxNRk9tYzFYUXRCNnlDempLemJIdU42Zi11dkEvczE2MDAvQm90aCUyMGluY2lkZW50cyUyMGZvbGxvd2VkJTIwYSUyMHNoYXJlZCUyMGVudHJ5JTIwYW5kJTIwZXhlY3V0aW9uJTIwcGF0dGVybiUyMChTb3VyY2UlMjAtJTIwTWljcm9zb2Z0KS53ZWJw"
-    },
-    {
-      "id": "at_51052369182",
-      "title": "Northflank Security Breach Leads to Unauthorized AI API Key Usage, Customers Urged to Rotate Secrets",
-      "url": "https://cybersecuritynews.com/northflank-security-breach/",
-      "summary": "Northflank urged customers to rotate all platform secrets after reports of unauthorized AI API key use, warning that environment variables across workloads, secret groups, and global settings may have been exposed. Northflank is investigating a security incident involving reported misuse of AI keys but has not confirmed the entry point, identified...",
-      "source": "Abinaya via Cyber Security News",
-      "image": "https://www.inoreader.com/camo/splos5X4unPRMl8D2GUt6Yn4iMR5VJDhj-ohsrqPFVQg,q80,480x400,pf,b64/aHR0cHM6Ly9jeWJlcnNlY3VyaXR5bmV3cy5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjYvMTEvTm9ydGhmbGFuay1TZWN1cml0eS1CcmVhY2gtTGVhZHMtdG8tVW5hdXRob3JpemVkLUFJLUFQSS1LZXktVXNhZ2UtQ3VzdG9tZXJzLVVyZ2VkLXRvLVJvdGF0ZS1TZWNyZXRzLndlYnA"
-    },
-    {
-      "id": "at_51052369188",
-      "title": "POC Released for Windows WinSock Ancillary Privilege Escalation Vulnerability",
-      "url": "https://cybersecuritynews.com/poc-for-windows-winsock-ancillary-vulnerability/",
-      "summary": "A public proof-of-concept exploit for CVE-2023-21768 shows how attackers with local access can gain SYSTEM privileges through the Windows Ancillary Function Driver for WinSock. Researchers Valentina Palmiotti, known as chompie, and Ruben Boonen published the code. Their complete exploit targets vulnerable Windows 11 22H2 systems. The release...",
-      "source": "Abinaya via Cyber Security News",
-      "image": "https://www.inoreader.com/camo/s96k65CboQfTmnBsCE2VtxzSno_4GGXzuloCzo_jItpA,q80,480x400,pf,b64/aHR0cHM6Ly9jeWJlcnNlY3VyaXR5bmV3cy5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjYvMTEvUE9DLVJlbGVhc2VkLWZvci1XaW5kb3dzLVdpblNvY2stQW5jaWxsYXJ5LVByaXZpbGVnZS1Fc2NhbGF0aW9uLVZ1bG5lcmFiaWxpdHkud2VicA"
-    },
-    {
-      "id": "at_51052313045",
-      "title": "Over 1,000 GitLab servers vulnerable to ongoing RCE attacks",
-      "url": "https://www.bleepingcomputer.com/news/security/over-1-000-gitlab-servers-vulnerable-to-code-execution-attacks/",
-      "summary": "Over 1,000 Internet-exposed GitLab servers are still unpatched against a maximum-severity flaw actively exploited in remote code execution attacks. [...]",
-      "source": "Sergiu Gatlan via Bleeping Computer",
-      "image": "https://www.inoreader.com/camo/sAJTOaE8ooRbCc6Br1D_0aD0suqzUa33JV6PlPrA-QBk,q80,480x400,pf,b64/aHR0cHM6Ly93d3cuYmxlZXBzdGF0aWMuY29tL2NvbnRlbnQvaGwtaW1hZ2VzLzIwMjYvMTEvMDIvR2l0TGFiLWhlYWRwaWMuanBn"
-    },
-    {
-      "id": "at_51052221007",
-      "title": "New wave of fridge cyberattacks hits European supermarkets, this time in Belgium, Luxembourg, Sweden and Estonia",
-      "url": "https://securityaffairs.com/202260/security/another-fridge-cyberattack-hits-european-supermarkets-this-time-in-belgium-luxembourg-sweden-and-estonia.html",
-      "summary": "A new wave of fridge cyberattacks hit supermarket refrigeration systems across five European countries, raising temperatures and causing food losses. A new wave of fridge cyberattacks has affected supermarket refrigeration systems in several European countries. Fridges and freezers suddenly rose in temperature overnight, with some incidents...",
-      "source": "Pierluigi Paganini via Security Affairs",
-      "image": "https://www.inoreader.com/camo/sNX_JLEUQFHcZTt8y98whD2MmdR4J0O_Vbea7jxasT9s,q80,480x400,pf,b64/aHR0cHM6Ly9zZWN1cml0eWFmZmFpcnMuY29tL3dwLWNvbnRlbnQvdXBsb2Fkcy8yMDI2LzExL05ldy13YXZlLW9mLWZyaWRnZS1jeWJlcmF0dGFja3MtRVUuanBn"
-    },
-    {
-      "id": "at_51051797538",
-      "title": "Attackers Pose as IT Support on Microsoft Teams, Abuse AD CS to Steal Company Data",
-      "url": "https://thehackernews.com/2026/11/attackers-pose-as-it-support-on.html",
-      "summary": "Attackers posing as IT support on Microsoft Teams talked employees into giving them remote control of their PCs. They then used insecure Active Directory Certificate Services (AD CS) settings to obtain login certificates for privileged accounts, including one for a domain controller. Microsoft said in a report that it investigated two such intrusions,...",
-      "source": "[email protected] (The Hacker News) via The Hacker News",
-      "image": "https://www.inoreader.com/camo/sGMSpnUfhr1h4EcUkPnZGsikPinxVv-RCSQLsw9s4GaA,q80,480x400,pf,b64/aHR0cHM6Ly9ibG9nZ2VyLmdvb2dsZXVzZXJjb250ZW50LmNvbS9pbWcvYi9SMjl2WjJ4bC9BVnZYc0VpTHY4OEVNMVpTamFlSTdiSDlEVnBnMm1HZGt3WFdVdWlyMFNfcDlJZmlXRzQ5X1RnUmFsRmRLNG9RNmU3VUVfSllPbk5INzBaNndjZnRuamhjWUhSWS1YYzBvOEdZcDlyMXVOenhkQ18xYm5YWmd2b243NGNYa1dnS3BIWnR3SmczSUtMc3FHQzJIUzJ0Y01mUVM4Qlp1N2tmclcxdkFhYUlBMzE2TFJ6Z0NPbjh6ZUdaMVd2QUxnSm15TTQvczE2MDAvbXMtYWQuanBn"
-    },
-    {
-      "id": "at_51051797539",
-      "title": "Government Linux Servers Targeted With SysGoRAT and Suspected AI-Generated Scripts",
-      "url": "https://thehackernews.com/2026/11/government-linux-servers-targeted-with.html",
-      "summary": "Cybersecurity researchers have disclosed details of a cyber espionage campaign specifically targeting Linux infrastructure associated with government entities and state-affiliated infrastructure. The activity, observed by Palo Alto Networks Unit 42 between October 2025 and April 2026, has been tracked under the moniker CL-UNK-1211, where \"CL\" refers...",
-      "source": "[email protected] (The Hacker News) via The Hacker News",
-      "image": "https://www.inoreader.com/camo/sC0GE5HdWWX6GRMR2TLxMG15kAPpSuj4pND1XtiMhDjs,q80,480x400,pf,b64/aHR0cHM6Ly9ibG9nZ2VyLmdvb2dsZXVzZXJjb250ZW50LmNvbS9pbWcvYi9SMjl2WjJ4bC9BVnZYc0VpWUhLYlBfN3lPc3Zwd0FsZEJNQ0wzUWtDSjlTYlVWckp6MVRyX1JCNm0zTzk5R2o3M0gwZlgyMGhJYnpLdWpSV0ItMXFrQkNXdjFVRUpFYnJUZTFORllwUGtUbTBPb05xSmU3T2RKb1phMUhjWkRUMk9uM21VVDBpZ1FlQ09zTW5Xd19aZlQtSHNMeDZCOFI4NFhZSEhnNG1VSTJoUHpNMTVnZ2RkUUNGQUFtekNoekM1T2Y5MExJblc4UkI4L3MxNjAwL2FydGV4LmpwZw"
     }
   ]
 }
