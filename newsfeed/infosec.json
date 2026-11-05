@@ -1,6 +1,118 @@
 {
-  "updatedAt": "2026-11-05T16:29:29.564724+00:00",
+  "updatedAt": "2026-11-05T22:40:42.436820+00:00",
   "articles": [
+    {
+      "id": "at_51093966434",
+      "title": "OpenSSH Issues Emergency Fix for Flaw Letting Long Passwords Bypass SSH Auth on Alpine Linux",
+      "url": "https://thehackernews.com/2026/11/openssh-issues-emergency-fix-for-flaw.html",
+      "summary": "Attackers can log in to accounts that have no password, such as SSH key-only accounts, on some Alpine Linux servers running the standard openssh-server package. They need network access to the server, an account name, and a password between 257 and 1,024 bytes long. OpenSSH, which rates the flaw critical, released version 10.6p2 today to block it....",
+      "source": "[email protected] (The Hacker News) via The Hacker News",
+      "image": "https://www.inoreader.com/camo/smCfH6sMXID8Q-Z1SGTzWn8bUIQYIpP4HcEXZRTuEavA,q80,480x400,pf,b64/aHR0cHM6Ly9ibG9nZ2VyLmdvb2dsZXVzZXJjb250ZW50LmNvbS9pbWcvYi9SMjl2WjJ4bC9BVnZYc0VpZWFIdlM1YmFXX1hHMWVBc0Jzb1NwOXFSelYxNzlmMFd3WG9qOWs2clVlWDRRYTRzeHBpM2h2cEdrZ2tZTk1QelpRSDBtdnZWQW9Ub29FQWdsMUczU3lGa3NtaHFORWJERUlFV004M1JINDd1OHF2TnlJWWNsQTd6N0dVZFBKR3g4V2ZKZDU1NmlDdnZ0dnNpdEFZcDlNLVQ0Nk92dXdrYVNXd255aGx5bkVwWWF4MnF5VENBQ3NQYnRRTHcvczE2MDAvc3NoLWxpbnV4LmpwZw"
+    },
+    {
+      "id": "at_51093966435",
+      "title": "Researchers Bypass ChatGPT Lockdown Mode to Exfiltrate Chats Without User Interaction",
+      "url": "https://thehackernews.com/2026/11/researchers-bypass-chatgpt-lockdown.html",
+      "summary": "Cybersecurity researchers have disclosed details of a now-patched vulnerability that could be exploited to bypass Lockdown Mode protections in OpenAI ChatGPT. Lockdown Mode was introduced by the artificial intelligence (AI) company in June 2026 as an optional setting to minimize data exfiltration risks arising from prompt injections. \"The flaw...",
+      "source": "[email protected] (The Hacker News) via The Hacker News",
+      "image": "https://www.inoreader.com/camo/s8WquKSKLrpR-NrnV6hKH0s4T4ltMWpPK6vge7HDvC4w,q80,480x400,pf,b64/aHR0cHM6Ly9ibG9nZ2VyLmdvb2dsZXVzZXJjb250ZW50LmNvbS9pbWcvYi9SMjl2WjJ4bC9BVnZYc0VqclprR0RuYXZwWXUxVm1RWkNvcllTdzlQbkZOaDN0R1hRN1lXV3JaM2c2c1VSWWo0UmlTN3phOTlha1YzcG9YaFc3R0xvSnczai1iYVl2d3lvcjBmXzhpSTN0NXprM05lWGoxVjFlVkRNRlVrbHFsWXo2MjloODhvWXp4azNhSVFQUHdRRjN4YXcxMERaVEUtbEVLeWFvanF6bExIQ19ER3RGOTFBVmhYa2FGTmZZNk1oLXFWcW44NkxDZlF6L3MxNjAwL2NoYXQuZ2lm"
+    },
+    {
+      "id": "at_51093551749",
+      "title": "Fake OpenAI, SpaceX events used to steal Microsoft, Google accounts",
+      "url": "https://www.bleepingcomputer.com/news/security/fake-openai-spacex-events-used-to-steal-microsoft-google-accounts/",
+      "summary": "Hackers are using fake OpenAI, SpaceX, and Anthropic event invitations to lure employees into phishing attacks, using two different phishing-as-a-service platforms to steal Microsoft and Google account credentials and authentication sessions. [...]",
+      "source": "Lawrence Abrams via Bleeping Computer",
+      "image": "https://www.inoreader.com/camo/s1TXw3oxumddWKk-am4fquAg0J7PEkF9X9zLkrNlypUM,q80,480x400,pf,b64/aHR0cHM6Ly93d3cuYmxlZXBzdGF0aWMuY29tL2NvbnRlbnQvaGwtaW1hZ2VzLzIwMjIvMDgvMjMvcGhpc2hpbmctaG9vay5qcGc"
+    },
+    {
+      "id": "at_51093403989",
+      "title": "How to Scale AI Agent Identity Security with Zero Trust",
+      "url": "https://www.scworld.com/native/how-to-scale-ai-agent-identity-security-with-zero-trust",
+      "summary": "As AI agents multiply, organizations need scalable identity security and Zero Trust access controls.",
+      "source": "Justin Dolly via Latest articles from SC Magazine",
+      "image": "https://www.inoreader.com/camo/snwJaTC6eLj4ve6tXy2YBYlhnOGxUUtZXNHe3bOrCFxo,q80,480x400,pf,b64/aHR0cHM6Ly9maWxlcy5jeWJlcnJpc2thbGxpYW5jZS5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjYvMTEvMTEwNTI2X2FpX2FnZW50X3dvcmtmbG93LmpwZw"
+    },
+    {
+      "id": "at_51092958491",
+      "title": "Truffle Security launches program to revoke 1.4 million live secrets",
+      "url": "https://www.bleepingcomputer.com/news/security/truffle-security-launches-program-to-revoke-14-million-live-secrets/",
+      "summary": "Truffle Security has launched the Secrets Revocation Program, a free initiative that helps API key issuers revoke 1.4 million publicly exposed secrets that remain valid. [...]",
+      "source": "Bill Toulas via Bleeping Computer",
+      "image": "https://www.inoreader.com/camo/siPjzTInFIWzl_JojlG3ppHiS6x0-gASQ4RGrTetrlGM,q80,480x400,pf,b64/aHR0cHM6Ly93d3cuYmxlZXBzdGF0aWMuY29tL2NvbnRlbnQvaGwtaW1hZ2VzLzIwMjYvMTEvMDUva2V1cy5qcGc"
+    },
+    {
+      "id": "at_51092926418",
+      "title": "Genius toddler with your production credentials",
+      "url": "https://www.scworld.com/perspective/genius-toddler-with-your-production-credentials",
+      "summary": "AI agents have knowledge of everything, but can they be trusted?",
+      "source": "Levan Velijanashvili via Latest articles from SC Magazine",
+      "image": "https://www.inoreader.com/camo/sTlKy5Bied8mBQ4eiYMfEpsTH8ptHwZ7M-eEPDl3nLwY,q80,480x400,pf,b64/aHR0cHM6Ly9maWxlcy5jeWJlcnJpc2thbGxpYW5jZS5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjYvMTEvMTEwNTI2X2FpX2FnZW50X2NvZGluZy5qcGc"
+    },
+    {
+      "id": "at_51092926421",
+      "title": "Bug affecting multiple Apple products added to CISA exploited list",
+      "url": "https://www.scworld.com/news/bug-affecting-multiple-apple-products-added-to-cisa-exploited-list",
+      "summary": "CISA flags an actively exploited Apple flaw linked to Russian cyberespionage campaigns.",
+      "source": "Steve Zurier via Latest articles from SC Magazine",
+      "image": "https://www.inoreader.com/camo/sRl20pQBGMdYjSBZOu6gNkJIRlN4IbTCVgwrJs5CPyfY,q80,480x400,pf,b64/aHR0cHM6Ly9maWxlcy5jeWJlcnJpc2thbGxpYW5jZS5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjUvMDEvMDEyODI1X2lwaG9uZS5qcGc"
+    },
+    {
+      "id": "at_51092530420",
+      "title": "OpenAI’s GPT-6 Astra silently obstructed safety research tasks",
+      "url": "https://www.bleepingcomputer.com/news/security/openais-gpt-6-astra-silently-obstructed-safety-research-tasks/",
+      "summary": "OpenAI has disclosed another AI alignment incident where GPT-6 Astra was found to sometimes quietly withhold help on safety research. [...]",
+      "source": "Bill Toulas via Bleeping Computer",
+      "image": "https://www.inoreader.com/camo/sXeDqCcEs0DY-2BdRxd-AMriZs5m4iLwDu6kA-rrX0Q8,q80,480x400,pf,b64/aHR0cHM6Ly93d3cuYmxlZXBzdGF0aWMuY29tL2NvbnRlbnQvaGwtaW1hZ2VzLzIwMjYvMDkvMTcvT3BlbkFJLmpwZw"
+    },
+    {
+      "id": "at_51092433471",
+      "title": "PHP2Shell: The storm before the calm?",
+      "url": "https://www.scworld.com/perspective/php2shell-the-storm-before-the-calm",
+      "summary": "AI promises much more secure software development – but expect many more disruptions like last week’s PHP2Shell before we get there.",
+      "source": "Klaas Meinke via Latest articles from SC Magazine",
+      "image": "https://www.inoreader.com/camo/sIJLlLMh-kWl0QZ9jf32yt-IK2zLRn3lIqxwhjI4F_Dc,q80,480x400,pf,b64/aHR0cHM6Ly9maWxlcy5jeWJlcnJpc2thbGxpYW5jZS5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjYvMTAvMTAyMjI2X3BocF9sYXB0b3AuanBn"
+    },
+    {
+      "id": "at_51091607940",
+      "title": "OpenSSH flaw lets attackers log into password-disabled Linux accounts",
+      "url": "https://www.bleepingcomputer.com/news/security/openssh-flaw-lets-attackers-log-into-password-disabled-linux-accounts/",
+      "summary": "A newly disclosed OpenSSH vulnerability dubbed \"*sshole\" allows attackers to log in to certain Alpine Linux and other musl-based Linux accounts that are configured to block password authentication, simply by entering an oversized password. [...]",
+      "source": "Lawrence Abrams via Bleeping Computer",
+      "image": "https://www.inoreader.com/camo/so35yd0oKyQKHKgokJx_lxPSMjTKVCo46LMcs0hQFsIE,q80,480x400,pf,b64/aHR0cHM6Ly93d3cuYmxlZXBzdGF0aWMuY29tL2NvbnRlbnQvaGwtaW1hZ2VzLzIwMjYvMTEvMDUvc3NoLWhlYWRlci1pbWFnZS5qcGc"
+    },
+    {
+      "id": "at_51091561947",
+      "title": "AI Agents Got Root on Linux via 948 Kernel Flaws in OpenAI Research",
+      "url": "https://www.securityweek.com/ai-agents-got-root-on-linux-via-948-kernel-flaws-in-openai-research/",
+      "summary": "An unreleased OpenAI cyber model found and exploited 948 distinct Linux kernel privilege escalation bugs for about $1.2 million. The post AI Agents Got Root on Linux via 948 Kernel Flaws in OpenAI Research appeared first on SecurityWeek.",
+      "source": "Eduard Kovacs via SecurityWeek",
+      "image": "https://www.inoreader.com/camo/spc35D7Tm1B6S6H7WpiBWHyjGuHbltEoRpWwDFRpT50k,q80,480x400,pf,b64/aHR0cHM6Ly93d3cuc2VjdXJpdHl3ZWVrLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNi8wNS9MaW51eC12dWxuZXJhYmlsaXR5LW1hbHdhcmUuanBlZw"
+    },
+    {
+      "id": "at_51091242580",
+      "title": "OpenMatter Network Positions Decentralized Computing as an Alternative to Data Centers for AI",
+      "url": "https://cybersecuritynews.com/openmatter-network-positions-decentralized-computing-as-an-alternative-to-data-centers-for-ai/",
+      "summary": "Melbourne, Florida, November 5th, 2026, CyberNewswire OpenMatter Network, a pioneer in decentralized infrastructure for agentic artificial intelligence, is positioning its decentralized computing platform as an alternative to massive, centralized data center development amid growing public opposition to new facilities. The company says...",
+      "source": "Cybernewswire via Cyber Security News",
+      "image": "https://www.inoreader.com/camo/smyd6mqoxxavzrum13H8a2dYbrAjaVoKF1MzgnFvs9uU,q80,480x400,pf,b64/aHR0cHM6Ly9ibG9nZ2VyLmdvb2dsZXVzZXJjb250ZW50LmNvbS9pbWcvYi9SMjl2WjJ4bC9BVnZYc0Vpak1lUEVIRllkdDc4WXBVVlBlRjk0QUNYdzZlR3ItcHBoVXYtaUNQOEFSUHpVTUlGeEhQOFgzc1VMWEFQWkswMXZMOFdEamlxU0dhVmRJMjg5b0d2UFZ4ZTdGZ2lqLXpjOC1hQTRCR1dXNWlEdGlMVXZCcVZCUzQ3TjlOcmdBckVMd00wQzFLQ19mbTliUFB1ZWt0anQ3bXZtS3V4Z0Z6YWVTNGtXOW5SaE5RTUUxZzQ1Z205YURJZ0doUlEvczE2MDAvSW5zaWduYXJ5JTIwTGF1bmNoZXMlMjBDbGFyaXR5JTIwT24tRGVtYW5kXyUyMFNCT01zLCUyME5vJTIwQW5udWFsJTIwQ29tbWl0bWVudCUyMFJlcXVpcmVkJTIwVG9yb250bywlMjBDYW5hZGEsJTIwSnVseSUyMDE1dGgsJTIwMjAyNiwlMjBDeWJlck5ld3N3aXJlJTIwRW50ZXJwcmlzZS1ncmFkZSUyMGJpbmFyeSUyMHNvZnR3YXJlJTIwdmVyaWZpY2F0aW9uJTIwZm9yJTIwb25lJTIwcHJvamVjdCwlMjBvbmUlMjB0ZWFtLCUyMG9yJTIwJTIwKDYyLndlYnA"
+    },
+    {
+      "id": "at_51091215586",
+      "title": "SIEM or XDR? Yes",
+      "url": "https://www.sophos.com/en-us/blog/siem-or-xdr-yes",
+      "summary": "Same logs, two places, overlapping outcomes. It's time to rethink the SIEM vs. XDR question.",
+      "source": "via Naked Security",
+      "image": ""
+    },
+    {
+      "id": "at_51091101781",
+      "title": "The Exceptions That Break MFA Start in the Boardroom",
+      "url": "https://www.itsecurityguru.org/2026/11/05/the-exceptions-that-break-mfa-start-in-the-boardroom/?utm_source=rss&utm_medium=rss&utm_campaign=the-exceptions-that-break-mfa-start-in-the-boardroom",
+      "summary": "The uncomfortable truth about MFA is that its implementation can start running into trouble before the technical rollout is even finished. IT switches it on, and then a senior calls to ask whether they can be excluded. Perhaps they fear that the extra authentication step will slow them down. The request sounds minor. Grant it, though, and the organization...",
+      "source": "Guru Writer via IT Security Guru",
+      "image": "https://www.inoreader.com/camo/sxjBlUKWdAqcxv17fxP8brO28t_fvAGBbIRcWt2CXU2Q,q80,480x400,pf,b64/aHR0cHM6Ly93d3cuaXRzZWN1cml0eWd1cnUub3JnL3dwLWNvbnRlbnQvdXBsb2Fkcy8yMDI2LzA4L1F1b2QtT3JiaXMtYXJ0aWNsZS1zY2FsZWQuanBlZw"
+    },
     {
       "id": "at_51090746287",
       "title": "Hackers backdoor Linux servers using trojanized CWP web server",
@@ -1488,118 +1600,6 @@
       "summary": "Fixed kernels for a use-after-free vulnerability in the Linux kernel's IPv4 TCP code are now available for Red Hat Enterprise Linux 8, 9, and 10, while Ubuntu's fixes for its three newest long-term-support releases remain in its opt-in testing channel with no date for a regular update. The flaw, tracked as CVE-2026-98432, can be reached by a remote,...",
       "source": "[email protected] (The Hacker News) via The Hacker News",
       "image": "https://www.inoreader.com/camo/smIgsncLQbgBFXDkL5XF9-f1_uOTuy7dctFmV8FfVvWQ,q80,480x400,pf,b64/aHR0cHM6Ly9ibG9nZ2VyLmdvb2dsZXVzZXJjb250ZW50LmNvbS9pbWcvYi9SMjl2WjJ4bC9BVnZYc0VqZGY4VWZESHNqSDlWYUpHdFlUNVdnanRKMUc1WVJNa2pQV05lS24taHcwNXNNOW55MGtXOUwyZUljM1VDaUlRN3FtY19UbWZyZW5TMVdIOEtpUkJqbG4yaFFTMFg3RFVseWt4ZEhyekRnZzR1b2lIcGlPZjNmVlRPblV1T3Q0NjE4ejNQTjdodzFBZlVjaF95MFRvdDN1YlRnYTVMRWZ5V25BVGt6ZWdmUUJTV3hNYnpOekphR1kxOFFxQzgvczE2MDAvbGludXgtcmNlLmpwZw"
-    },
-    {
-      "id": "at_51064374069",
-      "title": "The 4 Elements of Exposure Prioritization and How to Operationalize Them",
-      "url": "https://thehackernews.com/2026/11/the-4-elements-of-exposure.html",
-      "summary": "Your team is remediating more vulnerabilities than ever, yet your breach risk has barely changed. You’re spending too much time and effort on exposures attackers may never exploit, while higher-risk exposures sit, waiting in the queue. Gartner®’s report on exposure prioritization states that fewer than 10% of vulnerabilities are exploited, yet most...",
-      "source": "[email protected] (The Hacker News) via The Hacker News",
-      "image": "https://www.inoreader.com/camo/swJkVPutPo5wnYpi2Ehrunw_75M-JUCr_1YgHtVS-QHo,q80,480x400,pf,b64/aHR0cHM6Ly9ibG9nZ2VyLmdvb2dsZXVzZXJjb250ZW50LmNvbS9pbWcvYi9SMjl2WjJ4bC9BVnZYc0VpSzVKX3FrbVN0SlZkV0pZdk50ZDRsYjJjUmZQTWFTdnUxZEVLcDh0WE9qdzcxa3RfZlJHR2ZkUHI2MEhMNWFnSjhOTUJZTzVzSDdqVnZ6TVdYbExXMWZxMHhpbGFGMEd5TFFIQ3puU2pIZW9zN3NkUF9Yd21kNk9XeXpLdjhZcThtLVowSG4zeDE1R0JVOEF5U3UyQTI3T2xJV2l1QVc5Y2gwaVp1WHhUcEVMUlNRNnVSZFc5bkxLNHVYUWcvczE2MDAvcGljdXMtbWFpbi5wbmc"
-    },
-    {
-      "id": "at_51064374071",
-      "title": "Russia-Aligned Gorbag Hackers Exploit WinRAR Flaw to Deploy Data-Stealing Malware",
-      "url": "https://thehackernews.com/2026/11/russia-aligned-gorbag-hackers-exploit.html",
-      "summary": "A Russia-aligned threat actor known as Gorbag has been observed using simple information stealer malware in attacks targeting Ukrainian organizations. \"Active since at least February 2025, the group has focused exclusively on Ukrainian targets, with a clear preference for law enforcement and justice entities, local administrations near the front...",
-      "source": "[email protected] (The Hacker News) via The Hacker News",
-      "image": "https://www.inoreader.com/camo/s-CYBHY8JHWkecw45JLtycrPPxZukjCPFJxTk3mgVTkA,q80,480x400,pf,b64/aHR0cHM6Ly9ibG9nZ2VyLmdvb2dsZXVzZXJjb250ZW50LmNvbS9pbWcvYi9SMjl2WjJ4bC9BVnZYc0VpcXlQZnJCQjdHWVRuWXN2VmoyVHhDdjBwUHdGaF9Qa1ZwZFFjeHVzcEtnUWZic1gxcDJrRFNkb2tJeVBxTHN4U2ZCQ2tGUGlUQVRmWnhaUmJvdXFrb3FmRUVTTDdDZ0EtTXlYRDYxZVFGbHVpUXRkRlpEeVhRY18zRVVBZzcxSldJSHhxOU1QVkxyd3dlZ3ZVVnVpVmlFOEF4c0tINmlCVnlwV2F6TzB3bUNvYUMzLUQxSWg5WXczdndOMUZKL3MxNjAwL3J1c3NpYS1oYWNrZXJzLmpwZw"
-    },
-    {
-      "id": "at_51063850880",
-      "title": "Android’s November 2026 Updates Patch Over 200 Vulnerabilities",
-      "url": "https://www.securityweek.com/androids-november-2026-updates-patch-over-200-vulnerabilities/",
-      "summary": "The most severe is a critical flaw in Framework leading to remote code execution without user interaction. The post Android’s November 2026 Updates Patch Over 200 Vulnerabilities appeared first on SecurityWeek.",
-      "source": "Ionut Arghire via SecurityWeek",
-      "image": "https://www.inoreader.com/camo/sIdYkP0Z0u2CSAQbUfs0YRlx-q-fBSuq6t-I4tszVMuI,q80,480x400,pf,b64/aHR0cHM6Ly93d3cuc2VjdXJpdHl3ZWVrLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNS8wMi9BbmRyb2lkLXVwZGF0ZS5qcGVn"
-    },
-    {
-      "id": "at_51063750032",
-      "title": "Critical Node-RED Flaw Exploited in Attacks",
-      "url": "https://www.securityweek.com/critical-node-red-flaw-exploited-in-attacks/",
-      "summary": "Multiple attacks from the same IP address attempted to deploy various payloads, including a Linux bot and webshells. The post Critical Node-RED Flaw Exploited in Attacks appeared first on SecurityWeek.",
-      "source": "Ionut Arghire via SecurityWeek",
-      "image": "https://www.inoreader.com/camo/sNxKLcDPvPL8bOdpawLUUlxqeEex4MTaLOku_KZCFZdM,q80,480x400,pf,b64/aHR0cHM6Ly93d3cuc2VjdXJpdHl3ZWVrLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNS8xMi9pbmR1c3RyaWFsLUFJLU9ULXNlY3VyaXR5LmpwZWc"
-    },
-    {
-      "id": "at_51063657912",
-      "title": "Google adds new $250,000 Cloud VRP reward for Root-in-Cloud bugs",
-      "url": "https://www.bleepingcomputer.com/news/google/google-adds-new-250-000-cloud-vrp-reward-for-root-in-cloud-bugs/",
-      "summary": "Google has expanded its Cloud Vulnerability Reward Program (VRP) with a new top-tier reward for high-impact architectural security flaws. [...]",
-      "source": "Sergiu Gatlan via Bleeping Computer",
-      "image": "https://www.inoreader.com/camo/sepKQwibf0KrpARYhPNHFoYJlS2rAC_joAlH6DC-U5qc,q80,480x400,pf,b64/aHR0cHM6Ly93d3cuYmxlZXBzdGF0aWMuY29tL2NvbnRlbnQvaGwtaW1hZ2VzLzIwMjYvMTEvMDMvR29vZ2xlLWhlYWRwaWMuanBn"
-    },
-    {
-      "id": "at_51063079047",
-      "title": "More Vulns and More Guesswork from Less Data - Jeremiah Grossman - ASW #407",
-      "url": "https://www.scworld.com/podcast-segment/15134-more-vulns-and-more-guesswork-from-less-data-jeremiah-grossman-asw-407",
-      "summary": "",
-      "source": "Mike Shema via Latest articles from SC Magazine",
-      "image": "https://www.inoreader.com/camo/sFeYCV7DRvU08euTigQ0__YjAYAaMdlkvfNsZw7-IkUs,q80,480x400,pf,b64/aHR0cHM6Ly9maWxlcy5jeWJlcnJpc2thbGxpYW5jZS5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjYvMTEvQVNXXzQwN19UaHVtYm5haWxfQVNXXzE5MjB4MTA4MF8zZjE0MDk3Zi02ZjkxLTQ2MzItOWNkMi04ZmE2NTZiN2JmYjQuanBn"
-    },
-    {
-      "id": "at_51063046895",
-      "title": "Hackers Abuse Signed ChatGPT and Claude Applications to Deploy Yoba Malware and Evade Detection",
-      "url": "https://cybersecuritynews.com/hackers-abuse-signed-chatgpt/",
-      "summary": "Hackers are distributing Yoba malware through fake ChatGPT and Claude downloads, pairing legitimate, digitally signed applications with malicious libraries. The campaign uses trusted software and GitHub hosting to make dangerous installers appear credible, ultimately deploying a cryptocurrency miner on compromised Windows computers. The...",
-      "source": "Tushar Subhra Dutta via Cyber Security News",
-      "image": "https://www.inoreader.com/camo/s7W2yVGXrEzL0j2E3W_dmgEurcjFd7JfC_7Z8XSSkV4w,q80,480x400,pf,b64/aHR0cHM6Ly9jeWJlcnNlY3VyaXR5bmV3cy5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjYvMTEvSGFja2Vycy1BYnVzZS1TaWduZWQtQ2hhdEdQVC1hbmQtQ2xhdWRlLUFwcGxpY2F0aW9ucy10by1EZXBsb3ktWW9iYS1NYWx3YXJlLWFuZC1FdmFkZS1EZXRlY3Rpb24ud2VicA"
-    },
-    {
-      "id": "at_51062960940",
-      "title": "NCSC Warns AI Could Accelerate Ransomware Attacks on Critical Infrastructure",
-      "url": "https://cybersecuritynews.com/ai-could-accelerate-ransomware/",
-      "summary": "The UK’s National Cyber Security Center handled 80 nationally significant cyber incidents during its latest reporting year, warning that artificial intelligence is making attacks faster, cheaper and easier to carry out. Its 2026 Annual Review records 1,831 attack reports, with 337 incidents requiring support from its Incident Management Team. ...",
-      "source": "Guru Baran via Cyber Security News",
-      "image": "https://www.inoreader.com/camo/sntfKa_OtH8qsfX9NTKxaUaxUYfdIuJ_K_J6FkUjd2HQ,q80,480x400,pf,b64/aHR0cHM6Ly9jeWJlcnNlY3VyaXR5bmV3cy5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjYvMTEvQUktQ291bGQtQWNjZWxlcmF0ZS1SYW5zb213YXJlLndlYnA"
-    },
-    {
-      "id": "at_51062891597",
-      "title": "Harvard University data breach exposed info of 851,000 accounts",
-      "url": "https://www.bleepingcomputer.com/news/security/harvard-university-data-breach-exposed-info-of-851-000-accounts/",
-      "summary": "Hackers who breached Harvard University's Alumni Affairs and Development systems in November 2025 stole data linked to more than 850,000 unique email addresses, according to breach notification service Have I Been Pwned. [...]",
-      "source": "Sergiu Gatlan via Bleeping Computer",
-      "image": "https://www.inoreader.com/camo/s_kAprgiVQ61R6aZ3gFX1-SC4d3n-ONOKWrYCkZwj4oo,q80,480x400,pf,b64/aHR0cHM6Ly93d3cuYmxlZXBzdGF0aWMuY29tL2NvbnRlbnQvaGwtaW1hZ2VzLzIwMjYvMTEvMDMvSGFydmFyZC1Vbml2ZXJzaXR5LmpwZw"
-    },
-    {
-      "id": "at_51062843914",
-      "title": "ARES AI Red Team Platform Automates 66 Attack Modules for Active Directory and Cloud Security Testing",
-      "url": "https://cybersecuritynews.com/ares-ai-red-team-platform/",
-      "summary": "A new open-core project called ARES is giving red teams a way to run planned, controlled attack tests against Active Directory and cloud systems. A developer who goes by Mafifrizi released the tool on GitHub. It ships with 66 active modules, with 70 cataloged in total, covering more than 60 techniques mapped to MITRE ATT&CK. It is aimed at...",
-      "source": "Guru Baran via Cyber Security News",
-      "image": "https://www.inoreader.com/camo/sv5EMKg7JgcUAYOhRvg6rsu4HGDgTnYFnMJm-5qUVVFA,q80,480x400,pf,b64/aHR0cHM6Ly9ibG9nZ2VyLmdvb2dsZXVzZXJjb250ZW50LmNvbS9pbWcvYi9SMjl2WjJ4bC9BVnZYc0VoWFBMb0lPVTRZUGNxanZXeFFwZlZhR3JhajZnQ2V0eTlCNDctZEpFYmFVVjRzeW5ILWlSVTI0V2w1NXFtV3lRenc1a055bi1QQlJCZklFZlp3QTJlUUMzaHRzOE93U3p0d3FFemFiaUl0X1Z1TS1DWnpFNnEtMGtVVWVmT3RfRmtVTU5tVGpIcmIwUEVTZkNGbFRvSWcyT0FuMjZHcFNKb05zWFVGRGY3Wmx0UFE4Wm5YVzcxYjl3Qm9OX0V1L3c2NDAtaDM3NC9BY3RpdmUlMjBEaXJlY3RvcnklMjBBdHRhY2slMjBNb2R1bGVzLndlYnA"
-    },
-    {
-      "id": "at_51062730815",
-      "title": "Inside XCPE, the botnet that turned 1.3M set-top boxes into proxy servers",
-      "url": "https://securityaffairs.com/202323/malware/inside-xcpe-the-botnet-that-turned-1-3m-set-top-boxes-into-proxy-servers.html",
-      "summary": "Google dismantled a 1.3 million-device botnet allegedly built by Android TV box maker Videostrong to enable ad fraud and proxy abuse. Google and its partners dismantled a backdoor called XCPE that had enrolled more than 1.3 million set-top boxes in a botnet. The result of the investigation into the malware operation is the striking part: Videostrong...",
-      "source": "Pierluigi Paganini via Security Affairs",
-      "image": "https://www.inoreader.com/camo/sR-xbVsRfsIS0VeRDpohmzQgTt2vr5PqXJT3irCW4vkg,q80,480x400,pf,b64/aHR0cHM6Ly9pMC53cC5jb20vc2VjdXJpdHlhZmZhaXJzLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNi8xMS9pbWFnZS01LnBuZz93PTE2MDAmc3NsPTE"
-    },
-    {
-      "id": "at_51062447223",
-      "title": "Hackers Exploit Adobe Commerce Zero-Day to Deploy PSK Agent RAT and Remotely Control Servers",
-      "url": "https://cybersecuritynews.com/adobe-commerce-zero-day/",
-      "summary": "Attackers are abusing a serious flaw in Adobe Commerce and Magento to install a hidden remote access tool called PSK Agent on online store servers. Once it is running, they can run commands, route traffic through the server, and keep access even after a restart. The flaw, named StyleSmuggler and tracked as CVE-2026-75650, was first revealed...",
-      "source": "Tushar Subhra Dutta via Cyber Security News",
-      "image": "https://www.inoreader.com/camo/sxgFE_pGO7Z9ReCyRt_qiq2IUAGmkJbfN8-F8GPZs17Y,q80,480x400,pf,b64/aHR0cHM6Ly9jeWJlcnNlY3VyaXR5bmV3cy5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjYvMTEvSGFja2Vycy1FeHBsb2l0LUFkb2JlLUNvbW1lcmNlLVplcm8tRGF5LXRvLURlcGxveS1QU0stQWdlbnQtUkFULWFuZC1SZW1vdGVseS1Db250cm9sLVNlcnZlcnMud2VicA"
-    },
-    {
-      "id": "at_51062447231",
-      "title": "Cogent Security Makes the Fortune Cyber 60 for a Second Year, With a Plan to Run Cyber Defense Like a Factory",
-      "url": "https://cybersecuritynews.com/cogent-security-makes-the-fortune-cyber-60-for-a-second-year-with-a-plan-to-run-cyber-defense-like-a-factory/",
-      "summary": "San Francisco, CA, November 3rd, 2026, CyberNewswire Cogent Security, an applied AI cybersecurity company, reported that the PHP2Shell vulnerability exposed significant gaps in enterprise vulnerability response. Disclosed on October 21, PHP2Shell involved two critical flaws that had remained in PHP for more than a decade. AI-assisted...",
-      "source": "Cybernewswire via Cyber Security News",
-      "image": "https://www.inoreader.com/camo/sOidlsbdkkF0oaEiGzykR6oIPD0WHq2VVNSlHrtvIpdc,q80,480x400,pf,b64/aHR0cHM6Ly9ibG9nZ2VyLmdvb2dsZXVzZXJjb250ZW50LmNvbS9pbWcvYi9SMjl2WjJ4bC9BVnZYc0VoWVFZcEpXMjBkbkRod1RiaW1IQ3Rfa3I3dzRLS1NnaFEyY3pJZDBHTzRqNnBFeWxxcUNQcGFTaFRRQ2hOMWFfNEtZd0o3NHQ2N1h2SmdLVDNlUE43dWtVcldxQ1UyYmZVWGYzSnJTei1Sa3NROVRiamhtQVN1ZnF1V2RhWE1Ga2dESF9WelVlSDg0Y045R1FNZ1E4cTBjWnRfNGZhNzU3VkFsYk9iYXZmVFpKTFNPQWYzN3hHSGpJVGFINU0vczE2MDAvSW5zaWduYXJ5JTIwTGF1bmNoZXMlMjBDbGFyaXR5JTIwT24tRGVtYW5kXyUyMFNCT01zLCUyME5vJTIwQW5udWFsJTIwQ29tbWl0bWVudCUyMFJlcXVpcmVkJTIwVG9yb250bywlMjBDYW5hZGEsJTIwSnVseSUyMDE1dGgsJTIwMjAyNiwlMjBDeWJlck5ld3N3aXJlJTIwRW50ZXJwcmlzZS1ncmFkZSUyMGJpbmFyeSUyMHNvZnR3YXJlJTIwdmVyaWZpY2F0aW9uJTIwZm9yJTIwb25lJTIwcHJvamVjdCwlMjBvbmUlMjB0ZWFtLCUyMG9yJTIwJTIwKDM5LndlYnA"
-    },
-    {
-      "id": "at_51062447237",
-      "title": "Hackers Hijacked Linux Hosting Server Security Tool cPGuard and Used It as a Backdoor",
-      "url": "https://cybersecuritynews.com/cpguard-supply-chain-attack/",
-      "summary": "An unidentified attacker compromised the update channel for cPGuard, a security tool used on Linux hosting servers, to distribute a malicious script that installed a backdoor and collected sensitive files. OPSSHIELD confirmed that the attacker retrieved some stolen data and urged administrators to install version 5.88.25 or later immediately. ...",
-      "source": "Guru Baran via Cyber Security News",
-      "image": "https://www.inoreader.com/camo/sxf9buh3S9dhxyfb4r7rxeTeQM-kDRJHsh3nMcWRFyeU,q80,480x400,pf,b64/aHR0cHM6Ly9jeWJlcnNlY3VyaXR5bmV3cy5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjYvMTEvY1BHdWFyZC1TdXBwbHktQ2hhaW4tQXR0YWNrLndlYnA"
     }
   ]
 }
