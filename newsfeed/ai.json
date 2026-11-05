@@ -1,6 +1,102 @@
 {
-  "updatedAt": "2026-11-05T07:55:34.342769+00:00",
+  "updatedAt": "2026-11-05T16:29:29.686081+00:00",
   "articles": [
+    {
+      "id": "at_51090756330",
+      "title": "Axiom Math wants to keep AI slop out of mathematics",
+      "url": "https://techcrunch.com/2026/11/05/axiom-math-wants-to-keep-ai-slop-out-of-mathematics/",
+      "summary": "As AI floods math with unchecked proofs, Axiom Math is betting on verification. The startup’s AI agents just formally verified the Stacks Project, one of the field’s biggest libraries.",
+      "source": "Aditya Mehta via AI | TechCrunch",
+      "image": "https://www.inoreader.com/camo/sTuE29XflThqyracGN5JYPQ9y4-h2yxrLhdxGciArGjY,q80,480x400,pf,b64/aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNi8xMS9BeGlvbS1UZWFtLTIuanBnP3Jlc2l6ZT0xNjAwLDEwNjc"
+    },
+    {
+      "id": "at_51090174097",
+      "title": "Why AI model choice is now an infrastructure decision",
+      "url": "https://venturebeat.com/infrastructure/why-ai-model-choice-is-now-an-infrastructure-decision",
+      "summary": "Presented by MicrosoftRead more",
+      "source": "via VentureBeat",
+      "image": "https://www.inoreader.com/camo/sVM_MnyWBubqATiqQHeGweStVPZMai-Yu2WWY9Udxc1w,q80,480x400,pf,b64/aHR0cHM6Ly9pbWFnZXMuY3RmYXNzZXRzLm5ldC9qZHR3cWh6dmMybjEvM096REhQYVlVYWxyVlRkaXZ4SWs1cC8wNGQxMGRkZjE2MmEzNTM3YmJlM2Y0OGMwYTVmYmY2MS9BZG9iZVN0b2NrXzI2ODk3NDUyNi5qcGVnP3c9MTYwMCZxPTgw"
+    },
+    {
+      "id": "at_51090043332",
+      "title": "Dropbox acquires Tigris Data for $350M to bolster its AI infrastructure",
+      "url": "https://techcrunch.com/2026/11/05/dropbox-acquires-tigris-data-for-350m-to-bolster-its-ai-iinfrastructure/",
+      "summary": "The deal is expected to support the development of DBX Agent Cloud, a new storage platform aimed at developers building AI models and agents.",
+      "source": "Lauren Forristal via AI | TechCrunch",
+      "image": "https://www.inoreader.com/camo/stNxlj1Yd2O62hLJlvVIb4TH-i3JxSBrsJrj1LcTVVz0,q80,480x400,pf,b64/aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMS8wMy9HZXR0eUltYWdlcy0xMjExMTgwNzUxLmpwZz93PTEwMjQ"
+    },
+    {
+      "id": "at_51089869484",
+      "title": "You can post AI music straight to SoundCloud from ElevenLabs",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1027427/ai-music-soundcloud-elevenlabs",
+      "summary": "BERLIN, GERMANY - JANUARY 16: In this photo illustration the logo of the music streaming service SoundCloud is displayed on a smartphone on January 16, 2019 in Berlin, Germany. (Photo by Thomas Trutschel/Photothek via Getty Images) | Photothek via Getty Images After partnering with Moises earlier this year, SoundCloud is now adding integration...",
+      "source": "Terrence O’Brien via The Verge - Artificial Intelligences",
+      "image": "https://www.inoreader.com/camo/sx-2AcEjnU0QndDIRBDbvPG3QQuaJ5ZfPYVCL_tqt6hs,q80,480x400,pf,b64/aHR0cHM6Ly9wbGF0Zm9ybS50aGV2ZXJnZS5jb20vd3AtY29udGVudC91cGxvYWRzL3NpdGVzLzIvMjAyNi8wOC9nZXR0eWltYWdlcy0xMDgzMjI4NzcyLmpwZz9xdWFsaXR5PTkwJnN0cmlwPWFsbCZjcm9wPTAsMCwxMDAsMTAw"
+    },
+    {
+      "id": "at_51089869494",
+      "title": "The hidden supply chain costs of the AI boom",
+      "url": "https://www.theverge.com/podcast/1024438/willy-shih-supply-chain-ai-chips-ram-where-does-my-stuff-come-from-book",
+      "summary": "Today, I’m talking with Willy Shih, an economist, a professor of management practice at Harvard Business School, and the author of the upcoming book, Where Does My Stuff Come From? The Powerful Economics Behind Global Supply Chains. Willy is one of my all-time favorite Decoder guests — his way of looking at the world through our supply chains is...",
+      "source": "Nilay Patel via The Verge - Artificial Intelligences",
+      "image": "https://www.inoreader.com/camo/syJ9iYP8V_G9vEbnpygk8p1aFX3WIXp0azRX6U1fc3jw,q80,480x400,pf,b64/aHR0cHM6Ly9wbGF0Zm9ybS50aGV2ZXJnZS5jb20vd3AtY29udGVudC91cGxvYWRzL3NpdGVzLzIvY2hvcnVzL3VwbG9hZHMvY2hvcnVzX2Fzc2V0L2ZpbGUvMjQ3OTI2MDQvVGhlX1ZlcmdlX0RlY29kZXJfVGlsZWFydC5qcGc_cXVhbGl0eT05MCZzdHJpcD1hbGwmY3JvcD0wLDAsMTAwLDEwMA"
+    },
+    {
+      "id": "at_51089616034",
+      "title": "Aina’s smart ring has a screen, a joystick and a mic so you can talk to AI agents",
+      "url": "https://techcrunch.com/2026/11/05/ainas-smart-ring-has-a-screen-a-joystick-and-a-mic-so-you-can-talk-to-ai-agents/",
+      "summary": "Aina's ring can also take calls and help you dictate notes on your Mac.",
+      "source": "Ivan Mehta via AI | TechCrunch",
+      "image": "https://www.inoreader.com/camo/sTzJsVzH2ZfTse6IWYQad9pkEA4o01ADJrF-YN9GHH-0,q80,480x400,pf,b64/aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNi8xMS9BaW5hLVJpbmctSGFuZHMuanBlZz9yZXNpemU9MTYwMCwxMDcz"
+    },
+    {
+      "id": "at_51089283296",
+      "title": "Box taps Nvidia’s Nemotron for new agent-first content retrieval system",
+      "url": "https://techcrunch.com/2026/11/05/box-taps-nvidias-nemotron-for-new-agent-first-content-retrieval-system/",
+      "summary": "The system can supposedly answer queries four times faster, with 20% fewer errors and 90% fewer tokens used.",
+      "source": "Russell Brandom via AI | TechCrunch",
+      "image": "https://www.inoreader.com/camo/sv03JE0wzXdJP-o7zprHRIL5TuwfwJYXmqgxONl7W8sw,q80,480x400,pf,b64/aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNC8wOC9HZXR0eUltYWdlcy0xMTc4NjAzODA5LmpwZz93PTEwMjQ"
+    },
+    {
+      "id": "at_51088698456",
+      "title": "Read more: https://t.co/yJfKsIuNH8",
+      "url": "https://x.com/TheRundownAI/status/2118304994872955101",
+      "summary": "Read more: therundownai.beehiiv.com/p/ai-agents-ca…💬0🔄0❤️4👀1235📊1⚡ Powered by xgo.ing",
+      "source": "The Rundown AI (@TheRundownAI) via The Rundown AI(@TheRundownAI)",
+      "image": ""
+    },
+    {
+      "id": "at_51088698474",
+      "title": "Top stories in AI today: -SpaceXSI’s Grok Bot starts making phone calls -Nate’s Notebook: Make AI s...",
+      "url": "https://x.com/TheRundownAI/status/2118304989961453754",
+      "summary": "Top stories in AI today:-SpaceXSI’s Grok Bot starts making phone calls-Nate’s Notebook: Make AI sketch before it builds- Which free AI tool should you actually use? - Midterm voters turn on data centers, AI💬6🔄1❤️9👀3467📊6⚡ Powered by xgo.ing",
+      "source": "The Rundown AI (@TheRundownAI) via The Rundown AI(@TheRundownAI)",
+      "image": "https://www.inoreader.com/camo/sLlo8oURZVu3AF0Us7oYV8RgrmDKjpXT29fRiM_fZBoA,q80,480x400,pf,b64/aHR0cHM6Ly9wYnMudHdpbWcuY29tL21lZGlhL0hXVzdLUnNYd0FBcGRfdi5qcGc"
+    },
+    {
+      "id": "at_51088545265",
+      "title": "A YC startup is putting $1M behind five unsolved materials science problems for AI",
+      "url": "https://techcrunch.com/2026/11/05/a-yc-startup-is-putting-1m-behind-five-unsolved-materials-science-problems-for-ai/",
+      "summary": "Discovered Materials, a months-old YC startup that uses AI to find chip materials, is offering $200,000 for each solution to five open materials science problems.",
+      "source": "Tim Fernholz via AI | TechCrunch",
+      "image": "https://www.inoreader.com/camo/shKOVAxUB0_6D1-XeSxt9SSyNSZJedc40ZsMOsmmtnhs,q80,480x400,pf,b64/aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNi8wOC9kaXNjb3ZlcmQtbWF0ZXJpYWxzLmpwZz9yZXNpemU9MTYwMCwxMDY3"
+    },
+    {
+      "id": "at_51087918475",
+      "title": "Agility is the first pure humanoid robot company on the stock market. Are you buying?",
+      "url": "https://techcrunch.com/2026/11/05/agility-is-the-first-pure-humanoid-robot-company-on-the-stock-market-are-you-buying/",
+      "summary": "Agility arrives on the Nasdaq today as the first publicly-traded pure-play humanoid robotics company.",
+      "source": "Tim Fernholz via AI | TechCrunch",
+      "image": ""
+    },
+    {
+      "id": "at_51087186098",
+      "title": "Big Tech’s big AI buildout will not end until someone stops it",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1027344/amazon-microsoft-alphabet-google-meta-data-centers-earnings-q3",
+      "summary": "After four of the biggest competitors in the AI race held quarterly earnings calls late last month, two things are clear: Big Tech is not done spending record amounts on the AI data center buildout, and the AI data center buildout is not any closer to yielding its promised returns. A third thing is also starting to become clear - Big...",
+      "source": "Ellen Thomas via The Verge - Artificial Intelligences",
+      "image": "https://www.inoreader.com/camo/sHMLriPB7eHKh79k380wg9FftdOusxnJRK-h4MUrDPas,q80,480x400,pf,b64/aHR0cHM6Ly9wbGF0Zm9ybS50aGV2ZXJnZS5jb20vd3AtY29udGVudC91cGxvYWRzL3NpdGVzLzIvMjAyNi8wNi9TVEtTNTI4X0RBVEFfQ0VOVEVSUzJfQi5qcGc_cXVhbGl0eT05MCZzdHJpcD1hbGwmY3JvcD0wLDAsMTAwLDEwMA"
+    },
     {
       "id": "at_51083180655",
       "title": "After the midterms, a bigger clash over data centers could be coming",
@@ -1504,102 +1600,6 @@
       "summary": "Pika H3 Flex is a video generation model that works with up to 12 references, exports five separate audio stems, and finishes at up to 4K.",
       "source": "via TLDR AI Feed",
       "image": "https://www.inoreader.com/camo/shHFoT6y8qr2J9u2WgV5kxMuYS0sOTMDlMR0sMGj1TmM,q80,480x400,pf,b64/aHR0cHM6Ly9waWthLmFydC9ibG9nL3Bpa2EtaDMtZmxleC1vZy5qcGc"
-    },
-    {
-      "id": "at_51027937369",
-      "title": "Is Your Healthcare AI Ready for Deployment? Verify with Protege's Independent Evaluations (Sponsor)",
-      "url": "https://withprotege.ai/model-builders/healthcare-evaluation?utm_source=tldr-ai&amp;utm_medium=newsletter&amp;utm_campaign=healthcare-evals&amp;utm_content=ad-insert_header_healthcare_ai_ready&amp;utm_term=2026-10-30",
-      "summary": "81% of doctors now use AI in daily practice. But three quarters have encountered a hallucination that could have affected patient safety. Just like we test drugs and medical devices before release, healthcare AI needs an independent referee that rigorously measures AI in clinical settings. Protege's Independent Evaluations...",
-      "source": "via TLDR AI Feed",
-      "image": ""
-    },
-    {
-      "id": "at_51027937370",
-      "title": "OpenAI Updates Its Model Spec Around Five Core Values (7 minute read)",
-      "url": "https://openai.com/index/updated-model-spec/?utm_source=tldrai",
-      "summary": "OpenAI updated its Model Spec to organize model behavior around five values: faithfulness to human intent, harm minimization, honesty and transparency, human agency, and care.",
-      "source": "via TLDR AI Feed",
-      "image": ""
-    },
-    {
-      "id": "at_51027596113",
-      "title": "Zest’s new AI agent finds restaurants and books reservations over text",
-      "url": "https://techcrunch.com/2026/10/30/zests-new-ai-agent-finds-restaurants-and-books-reservations-over-text/",
-      "summary": "Can't agree on where to eat? Zest's AI concierge can combine everyone's tastes, put restaurant options to a vote, and make the reservation.",
-      "source": "Sarah Perez via AI | TechCrunch",
-      "image": "https://www.inoreader.com/camo/sYk-K8OJiYWbZFmDa0s-Y3VS6vZkv80wDB7-XT3BgeUA,q80,480x400,pf,b64/aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNi8xMC96ZXN0LmpwZz9yZXNpemU9MTYwMCwxMDE5"
-    },
-    {
-      "id": "at_51027494591",
-      "title": "Starbucks wants to use AI to show you a ‘personalized digital menu’ at the drive-thru",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/1023440/starbucks-ai-personalized-menu-drive-thru",
-      "summary": "Starbucks could eventually show you a personalized digital menu when you pull up to the drive-thru. During an earnings call on Thursday, Starbucks CEO Brian Niccol said the company is going to explore \"experiences that recognize participating customers as they arrive, present personalized digital menus, and make payment more effortless,\"...",
-      "source": "Emma Roth via The Verge - Artificial Intelligences",
-      "image": "https://www.inoreader.com/camo/sVzMKxeAy6g3YHMh94hQUbwvefVW_yoDYVpHgIKN2bfY,q80,480x400,pf,b64/aHR0cHM6Ly9wbGF0Zm9ybS50aGV2ZXJnZS5jb20vd3AtY29udGVudC91cGxvYWRzL3NpdGVzLzIvMjAyNi8xMC9nZXR0eWltYWdlcy0yMjY4NjgxNTU5LmpwZz9xdWFsaXR5PTkwJnN0cmlwPWFsbCZjcm9wPTAsMCwxMDAsMTAw"
-    },
-    {
-      "id": "at_51027302005",
-      "title": "Google’s first data center satellite is online and writing poetry",
-      "url": "https://techcrunch.com/2026/10/30/googles-first-data-center-satellite-is-online-and-writing-poetry/",
-      "summary": "The first TPU in space is running a Google DeepMind Gemma 4 model and writing cheesy poetry.",
-      "source": "Tim Fernholz via AI | TechCrunch",
-      "image": "https://www.inoreader.com/camo/s9L21zWkdO2vy4lQZx4bbWddh_NgWj2ZcFVanGf1VcaM,q80,480x400,pf,b64/aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNi8xMC9EU0NfMDI5OC5qcGc_cmVzaXplPTE2MDAsMTA2Nw"
-    },
-    {
-      "id": "at_51026531527",
-      "title": "Theranos whistleblower Tyler Shultz warns that the AI boom is ‘a great opportunity to go deceive people’",
-      "url": "https://techcrunch.com/2026/10/30/theranos-whistleblower-tyler-shultz-warns-that-the-ai-boom-is-a-great-opportunity-to-go-deceive-people/",
-      "summary": "The cautionary Theranos tale takes on a new significance in the AI era, when companies that have never turned a profit are raising capital at trillion-dollar valuations.",
-      "source": "Amanda Silberling via AI | TechCrunch",
-      "image": "https://www.inoreader.com/camo/sgbw_UpHlBAp-Kwuy0r7w2D4dwDJQjrmRmpAmBYzaYF8,q80,480x400,pf,b64/aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNi8xMC9HZXR0eUltYWdlcy0xNDY1MzMyMTczLmpwZz9yZXNpemU9MTYwMCwxMDY3"
-    },
-    {
-      "id": "at_51025831358",
-      "title": "Pope Leo calls for the disarmament of AI: ‘Machines are tools, not persons’",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/1023188/pope-leo-disarm-ai",
-      "summary": "Pope Leo XIV says AI systems should be \"disarmed,\" adding that humans \"have the responsibility to guide, change and, when necessary, reject its applications.\" In Friday's Papal Address, Pope Leo encourages United Nations member states to \"take concrete steps toward banning lethal autonomous weapons\" during their meeting in Geneva next...",
-      "source": "Emma Roth via The Verge - Artificial Intelligences",
-      "image": "https://www.inoreader.com/camo/sZNppw5_DABQdendGepdAUt4TCUQvrq8wlCsz-4z5GoM,q80,480x400,pf,b64/aHR0cHM6Ly9wbGF0Zm9ybS50aGV2ZXJnZS5jb20vd3AtY29udGVudC91cGxvYWRzL3NpdGVzLzIvMjAyNi8xMC9nZXR0eWltYWdlcy0yMjI2MTI0OTA4LmpwZz9xdWFsaXR5PTkwJnN0cmlwPWFsbCZjcm9wPTAsMCwxMDAsMTAw"
-    },
-    {
-      "id": "at_51025188819",
-      "title": "Skip the small talk: Make game-changing connections at TechCrunch Founder Summit with Braindate",
-      "url": "https://techcrunch.com/2026/10/30/skip-the-small-talk-make-game-changing-connections-at-techcrunch-founder-summit-with-braindate/",
-      "summary": "At TechCrunch Founder Summit 2026, happening November 4 at SoWa Power Station in Boston, networking powered by Braindate is designed to make those conversations easier to find, whether they are in 1:1 or small-group on-site meetings. Register before the event starts to save up to $100 on your pass, plus get a second for free.",
-      "source": "TechCrunch Events via AI | TechCrunch",
-      "image": "https://www.inoreader.com/camo/sNQLJovYg8wnItTRyI-kICs2hJOw30y-lpXQ1dMq96YI,q80,480x400,pf,b64/aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNS8wMy9FYXJseS1TdGFnZS0yMDI0LW5ldHdvcmtpbmctMS5qcGc_cmVzaXplPTE2MDAsMTA2Nw"
-    },
-    {
-      "id": "at_51025079547",
-      "title": "DoorDash said it’s only received ‘several hundred’ orders from AI agents",
-      "url": "https://techcrunch.com/2026/10/30/doordash-said-its-only-received-several-hundred-orders-from-ai-agents/",
-      "summary": "DoorDash said that it is open to working with third-party agent makers.",
-      "source": "Ivan Mehta via AI | TechCrunch",
-      "image": "https://www.inoreader.com/camo/s1DKdqg_xXoJVfxqka_6ajiSEx7WPoKhAHhtmariJ4xg,q80,480x400,pf,b64/aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMi8wOC9HZXR0eUltYWdlcy0xMjMyMDE1MDkzLmpwZz9yZXNpemU9MTYwMCwxMDY3"
-    },
-    {
-      "id": "at_51024684427",
-      "title": "Silicon Valley wants you to invest in miracles",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/1023070/anthropic-ipo-risk-factors-filing-miracles",
-      "summary": "Investing in any stock is kind of like gambling in the sense that you're betting your money on a company's future performance. But how do you bet on a technology that could, in the worst-case scenario, \"pose catastrophic or existential risks to humanity,\" or best case, \"bring forth an age of miracles\"? To some extent, Anthropic suggests...",
-      "source": "Ellen Thomas via The Verge - Artificial Intelligences",
-      "image": "https://www.inoreader.com/camo/sxq2oi3YfYpwKndHc01aViY_eQ-tveeVZl4_ltQ9PgLQ,q80,480x400,pf,b64/aHR0cHM6Ly9wbGF0Zm9ybS50aGV2ZXJnZS5jb20vd3AtY29udGVudC91cGxvYWRzL3NpdGVzLzIvMjAyNi8xMC9BbnRocm9waWNfbWlyYWNsZXNfS19SYWR0a2VfYjVjYTUwLmpwZz9xdWFsaXR5PTkwJnN0cmlwPWFsbCZjcm9wPTAsMCwxMDAsMTAw"
-    },
-    {
-      "id": "at_51024672940",
-      "title": "5 days left: Your last chance to connect, scale, and save at TechCrunch Founder Summit 2026",
-      "url": "https://techcrunch.com/2026/10/30/5-days-left-your-last-chance-to-connect-scale-and-save-at-techcrunch-founder-summit-2026/",
-      "summary": "5 days to save up to $100, plus a second pass for free to TechCrunch Founder Summit 2026 in Boston on November 4. Register now.",
-      "source": "TechCrunch Events via AI | TechCrunch",
-      "image": "https://www.inoreader.com/camo/sB_vVsnADytPctXtsId7i5ILnPfSNUuTc9z_J7I2cVGo,q80,480x400,pf,b64/aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNS8wMy9FYXJseS1TdGFnZS0yMDI0LUJyZWFrb3V0LVNlc3Npb24uanBnP3Jlc2l6ZT0xNjAwLDEwNjc"
-    },
-    {
-      "id": "at_51024584455",
-      "title": "Sam Altman sympathizes with mathematicians, but says OpenAI’s math onslaught won’t stop",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/1023054/altman-cheeky-pint-ai-math-interview",
-      "summary": "After months of bombarding mathematicians with a relentless stream of AI-generated results, OpenAI CEO Sam Altman says he sympathizes with researchers struggling to make sense of it all. But he has no intention of stopping - and hints there could be much more to come from the company's stockpile of discoveries. \"I think, on net, the...",
-      "source": "Robert Hart via The Verge - Artificial Intelligences",
-      "image": "https://www.inoreader.com/camo/sAIH_1PwKFjLlAsIQFx2ZxYAJAi-GZuc9q6KvBGrMnAs,q80,480x400,pf,b64/aHR0cHM6Ly9wbGF0Zm9ybS50aGV2ZXJnZS5jb20vd3AtY29udGVudC91cGxvYWRzL3NpdGVzLzIvMjAyNi8xMC9WcmdfaWxsb19TYW1fQWx0bWFuX3N0b2NrX3RyaWFsLmpwZz9xdWFsaXR5PTkwJnN0cmlwPWFsbCZjcm9wPTAsMCwxMDAsMTAw"
     }
   ]
 }
