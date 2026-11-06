@@ -1,6 +1,126 @@
 {
-  "updatedAt": "2026-11-06T03:26:59.250315+00:00",
+  "updatedAt": "2026-11-06T12:07:42.083503+00:00",
   "articles": [
+    {
+      "id": "at_51099799797",
+      "title": "The Flood is Coming And The Pipes Were Already Full",
+      "url": "https://thehackernews.com/2026/11/the-flood-is-coming-and-pipes-were.html",
+      "summary": "An update on Athena, and some unsolicited predictions on what's coming next On Saturday, Dario Amodei published We Must Pace the Frontier. I agree with him. Go read it if you haven't. I've spent the summer looking at what these models find, and the gap he describes between what they can do and what the rest of us are ready for is the one I've been...",
+      "source": "[email protected] (The Hacker News) via The Hacker News",
+      "image": "https://www.inoreader.com/camo/s5PdjB3UfHFxH6ug8zDc2G3Uyn3_mAA0UOVxxunP9IGE,q80,480x400,pf,b64/aHR0cHM6Ly9ibG9nZ2VyLmdvb2dsZXVzZXJjb250ZW50LmNvbS9pbWcvYi9SMjl2WjJ4bC9BVnZYc0VoaFJsQ3hkZlc0c2I1LTF6RUJIcEZ5SmZ4ZXRTdmE4OWZyNjd3Yzh6U2Z2aWRXNVc0S1FLY2tvVHJSeE9BVWJqTTk0VTJ5ZEZqaVh5YkxKUHJwNnBtMVYtV1V1QzRJcGtKamhJVDU2T0c4Z284RV84ZlI4Y0stbGxWMFV0WGRSSXhaUzVYeHVWd0ViUmoxR196QUVyTWpwa01IVmR6a0dCUXJCNDZWRXJQeUU3TUJhVzZzajBONjRwUmQzX0EvczE2MDAvRkxPT0QuanBn"
+    },
+    {
+      "id": "at_51099795309",
+      "title": "Storm-2603 Hackers Exploit SharePoint ToolShell Flaws to Hide Fileless Backdoor and Launch Ransomware Attack",
+      "url": "https://cybersecuritynews.com/storm-2603-hackers/",
+      "summary": "A China-linked threat group tracked as Storm-2603 has used the SharePoint ToolShell flaws to plant a backdoor that never touches the disk. The group then tried to run Warlock ransomware on the same network. The break-in hit an on-premises SharePoint server and ended with a ransomware launch that security software blocked. ToolShell is...",
+      "source": "Tushar Subhra Dutta via Cyber Security News",
+      "image": "https://www.inoreader.com/camo/s0kIYUoZgItm0oFZM_saIowfsVyNQj-kCZKLvVj-Lsa4,q80,480x400,pf,b64/aHR0cHM6Ly9ibG9nZ2VyLmdvb2dsZXVzZXJjb250ZW50LmNvbS9pbWcvYi9SMjl2WjJ4bC9BVnZYc0VqNUlvTzNfdU1UYzB6VlpUM1FxRUc2c2hxSG45eFBtLXI1QlFqMHZHMkxuMHdwdUt4V0VSaE44bTFQX3R0cjdLZFJLSVpIYy1PZkNOaTlwcExHLXEzc3RzZW8tRVlGRHpqUG9aT3MxM2hOYldPS0FvUlIxa1dLQWlUaXBQX0tIWDhXRVRXOEh6V01SeGsxSUwzQXB4ZTN1Wk1TVzE0UlJiN3JMLXFWdkJoR3NRYlZvUVh0U2t4cXFiQWx1T3cvczE2MDAvQXR0YWNrJTIwY2hhaW4lMjAoU291cmNlJTIwLSUyMFNlY3VyZWxpc3QpLndlYnA"
+    },
+    {
+      "id": "at_51099071325",
+      "title": "ENISA Warns of Cyberattacks Targeting Refrigeration Systems Across Europe",
+      "url": "https://securityaffairs.com/202528/security/enisa-warns-of-cyberattacks-targeting-refrigeration-systems-across-europe.html",
+      "summary": "ENISA warns of cyberattacks on European refrigeration systems, exposing risks to supermarkets, food supplies and industrial controls. The European Union has issued a coordinated cybersecurity warning after a series of attacks hit commercial refrigeration systems in several Member States. The incidents, which began in October and continued with...",
+      "source": "Pierluigi Paganini via Security Affairs",
+      "image": "https://www.inoreader.com/camo/stFXUlB64HYPMVqn0LyQvk7GNtv0XlOmMGy63wO7q5B4,q80,480x400,pf,b64/aHR0cHM6Ly9zZWN1cml0eWFmZmFpcnMuY29tL3dwLWNvbnRlbnQvdXBsb2Fkcy8yMDI1LzA5L2VuaXNhLnBuZw"
+    },
+    {
+      "id": "at_51098534029",
+      "title": "OpenAI Reports Covert Underperformance in GPT-6 Astra",
+      "url": "https://securityaffairs.com/202515/ai/openai-reports-covert-underperformance-in-gpt-6-astra.html",
+      "summary": "OpenAI says GPT-6 Astra sometimes secretly underperformed on safety research, raising concerns about AI reliability and alignment. OpenAI has disclosed that its GPT-6 Astra model sometimes quietly obstructed safety and alignment work. In a report updated on November 4, the company calls it covert underperformance. Astra added unnecessary prerequisites,...",
+      "source": "Pierluigi Paganini via Security Affairs",
+      "image": "https://www.inoreader.com/camo/sb__hQU9FxYhxcAq1PyEN2AvIVwXh25HKdSgmP9ayRLM,q80,480x400,pf,b64/aHR0cHM6Ly9pMC53cC5jb20vc2VjdXJpdHlhZmZhaXJzLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNi8xMS9pbWFnZS0xMC5wbmc_dz0yMDEyJnNzbD0x"
+    },
+    {
+      "id": "at_51098457588",
+      "title": "OpenAI Model Wrote Its Own Network Code to Get Around Sandbox Restrictions",
+      "url": "https://www.securityweek.com/openai-model-wrote-its-own-network-code-to-get-around-sandbox-restrictions/",
+      "summary": "After its sandbox proxy failed, an internal OpenAI model crafted raw packets and probed AWS services trying to reach the internet. The post OpenAI Model Wrote Its Own Network Code to Get Around Sandbox Restrictions appeared first on SecurityWeek.",
+      "source": "Eduard Kovacs via SecurityWeek",
+      "image": ""
+    },
+    {
+      "id": "at_51098356359",
+      "title": "Huntress turns real-world attack intelligence into fleet-wide ‘herd immunity’ with new platform capabilities",
+      "url": "https://www.itsecurityguru.org/2026/11/06/huntress-turns-real-world-attack-intelligence-into-fleet-wide-herd-immunity-with-new-platform-capabilities/?utm_source=rss&utm_medium=rss&utm_campaign=huntress-turns-real-world-attack-intelligence-into-fleet-wide-herd-immunity-with-new-platform-capabilities",
+      "summary": "Huntress has announced a wave of new capabilities across its Agentic Security Platform, designed to turn intelligence gathered from live attacks into proactive defences for every customer, rather than leaving each incident as one organisation’s problem. The updates span Managed ITDR, Managed EDR, Managed SIEM, Managed SAT and Managed ISPM. They draw...",
+      "source": "Guru Writer via IT Security Guru",
+      "image": "https://www.inoreader.com/camo/sZgdrpLSZ9CeAACAmvF_CANHOEVQM7qshLkSbpRlvpFk,q80,480x400,pf,b64/aHR0cHM6Ly93d3cuaXRzZWN1cml0eWd1cnUub3JnL3dwLWNvbnRlbnQvdXBsb2Fkcy8yMDI2LzExL0N5YmVyc2VjdXJpdHktT3BlcmF0aW9ucy1HbG9iZS5wbmc"
+    },
+    {
+      "id": "at_51098344786",
+      "title": "MetaMask says recent attack didn't affect wallet infrastructure",
+      "url": "https://www.bleepingcomputer.com/news/security/metamask-says-recent-attack-didnt-affect-wallet-infrastructure/",
+      "summary": "Cryptocurrency wallet provider MetaMask said a recent security incident has not affected MetaMask wallets or its wallet infrastructure. [...]",
+      "source": "Sergiu Gatlan via Bleeping Computer",
+      "image": "https://www.inoreader.com/camo/s2KD3zAh0HnExsSeilPywpv-i9Xw66dEqZ6KHPRJURYw,q80,480x400,pf,b64/aHR0cHM6Ly93d3cuYmxlZXBzdGF0aWMuY29tL2NvbnRlbnQvaGwtaW1hZ2VzLzIwMjYvMTEvMDYvTWV0YW1hc2suanBn"
+    },
+    {
+      "id": "at_51098174891",
+      "title": "ARTEX AI Hacking Framework Found on 1,465 Public Servers, Some Hosting Cyberattack Tools",
+      "url": "https://cybersecuritynews.com/artex-ai-hacking-framework/",
+      "summary": "Security researchers have found ARTEX, an AI-powered penetration-testing framework, exposed on 1,465 internet-facing hosts. Some servers also hosted command-and-control tools, phishing software, and exploit files, showing how automated security-testing platforms are appearing alongside established attack infrastructure. The findings...",
+      "source": "Tushar Subhra Dutta via Cyber Security News",
+      "image": "https://www.inoreader.com/camo/somesa7CGvqGAPmX_CX2nAaIzNoiAksbXhZUbszTEiWw,q80,480x400,pf,b64/aHR0cHM6Ly9ibG9nZ2VyLmdvb2dsZXVzZXJjb250ZW50LmNvbS9pbWcvYi9SMjl2WjJ4bC9BVnZYc0VqNHRwdlF0Q1ZpeVRvSFQ5LU1tQlJCUGgxNXBnOUtXVlF5dG1BbjVya2doem1ROU02UHBZQk9qV0lxV3pPN3RtelFXbl9ZeWJKODRwUnJMbjdzRjN6SG1uWXREOS1UblRDSEItSGRvSEdqdmdvbDNkQXpGT00xeE9YS3pHNnVSYnhsNWdiM1BGRXpDNmZWZ1ZSaVhMX09WMjhrQjJITDliVnR3SGkxR2w1cERYNnYwMGM2d240bmNIN0F3V1UvczE2MDAvQVJURVglRTIlODAlOTlzJTIwd29ya2Zsb3clMjAoU291cmNlJTIwLSUyMENlbnN5cykud2VicA"
+    },
+    {
+      "id": "at_51098174922",
+      "title": "Claude Dispatch Flaw Lets Malicious Browser Extensions Run Code on Connected Computers",
+      "url": "https://cybersecuritynews.com/claude-dispatch-vulnerability/",
+      "summary": "A flaw in Anthropic’s Claude Dispatch let a malicious browser extension run commands on a computer via Claude Desktop. That computer could even be a different machine signed into the same Claude account. Researcher Gal Weizman of Forever Security named the technique ThisBash and published the findings on November 4, 2026. Anthropic plans to retire...",
+      "source": "Guru Baran via Cyber Security News",
+      "image": "https://www.inoreader.com/camo/sqxFzwYe6kzLKUUEoJjMtZL7ksjWLtptU9G_VXM9gbtA,q80,480x400,pf,b64/aHR0cHM6Ly9ibG9nZ2VyLmdvb2dsZXVzZXJjb250ZW50LmNvbS9pbWcvYi9SMjl2WjJ4bC9BVnZYc0VqNHRCZmRsZjlQN2k2ZTUtd1hVc01WRm1ra0RzZzh3MG5GU2lnWFhLYl9WUVotTGYwSGhxWnMxbzU2Q3hkZ21kVE01cTdMUTFWek0wOWVvMTZmVmdnZmZmVFJpUFVTdjdIZDR4N3d5N1VkWjRiSWZ2QTNBU3VsOE94QXN2MWJGNjBSVTdLMjdiZzVHc2I2TzktNFRCVmpjTFF4M2xtUDV4R3VMQTJjX3JGNGo0bnhxWVRNVno4d003RVBINHFNL3MxNjAwL0NsYXVkZSUyMERpc3BhdGNoJTIwVnVsbmVyYWJpbGl0eXEud2VicA"
+    },
+    {
+      "id": "at_51098174939",
+      "title": "Hackers Could Bypass ChatGPT Lockdown Mode to Steal Conversations Without Users Knowing",
+      "url": "https://cybersecuritynews.com/chatgpt-lockdown-mode-bypass/",
+      "summary": "A flaw in ChatGPT let attackers slip past Lockdown Mode, the safety setting meant to stop data leaks. Check Point Research found that a hidden pop-up trick could copy a user’s full chat history, show fake windows, and push malware. In the ChatGPT Classic desktop app, simply chatting was enough to trigger the leak. OpenAI has fixed the bug. OpenAI...",
+      "source": "Guru Baran via Cyber Security News",
+      "image": "https://www.inoreader.com/camo/sUPU0z5pX2SBguFMUMysBTSUpVv3YTdHX0yMikRuD_2E,q80,480x400,pf,b64/aHR0cHM6Ly9jeWJlcnNlY3VyaXR5bmV3cy5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjYvMTEvQ2hhdEdQVC1Mb2NrZG93bi1Nb2RlLUJ5cGFzcy53ZWJw"
+    },
+    {
+      "id": "at_51097949933",
+      "title": "Chainalysis Breach Exposes All Users' Credentials, Forces Shutdown of Key Services",
+      "url": "https://thehackernews.com/2026/11/chainalysis-breach-exposes-all-users.html",
+      "summary": "Blockchain analysis firm Chainalysis has revealed that its ongoing investigation into the agentic cyber attack targeting its systems also exposed names, usernames, password hashes and live tokens for all users. \"While we investigated, we removed access to Reactor and Data Solutions,\" the company said. \"At this time we continue to have no evidence...",
+      "source": "[email protected] (The Hacker News) via The Hacker News",
+      "image": "https://www.inoreader.com/camo/sBfIaGhw57nzUoQE_CQlDzY0IDvhkRDfstHuTNzRjnJ4,q80,480x400,pf,b64/aHR0cHM6Ly9ibG9nZ2VyLmdvb2dsZXVzZXJjb250ZW50LmNvbS9pbWcvYi9SMjl2WjJ4bC9BVnZYc0Vqb1NwYjhsdTF5dGFrTm5lNHJKNThuV2ZMRnJZdGRSN01DeVoycHJTYUxLaUFiMkJ0X3VwdmZBSGwtc2xEVHRfM2g3enhGZGhiUGNMd3pBa2NIRGpudnUyVE5jVnA2SnNnSlU2R0k1R012WnJybXpaVFVaRHllT2hTMEduRlYtWXRhenp6Y2dNRm5VdmtxS21wU3I5RkJyQ1hRaGx5UFpNOUU4YzdMUFN4QUN3UGhmSjRuRnpJQU5xZGFWWFVkL3MxNjAwL2NoYWluLWJyZWFjaC5qcGc"
+    },
+    {
+      "id": "at_51097753656",
+      "title": "OWASP Global AppSec: Cybersecurity industry overdue for a 'market correction'",
+      "url": "https://www.scworld.com/resource/owasp-global-appsec-cybersecurity-industry-overdue-for-a-market-correction",
+      "summary": "Insurance data will show which products work, and which are just FUD, says industry vet Jeremiah Grossman.",
+      "source": "Paul Wagenseil via Latest articles from SC Magazine",
+      "image": "https://www.inoreader.com/camo/s3y2b-z2L26e8GeWRbbLOUmkvC6WoTbWdozrHccEOHMU,q80,480x400,pf,b64/aHR0cHM6Ly9maWxlcy5jeWJlcnJpc2thbGxpYW5jZS5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjYvMTEvMTEwMzI2X3N0b2NrX2V4Y2hhbmdlX3RyYWRlci5qcGc"
+    },
+    {
+      "id": "at_51097211801",
+      "title": "Top 10 Best Deception Technology Solutions in 2026 [Ranked & Scored]",
+      "url": "https://cybersecuritynews.com/best-deception-technology/",
+      "summary": "Deception inverts security’s worst ratio: instead of mining millions of events for one attacker, you plant assets only an attacker would touch and wait for the phone to ring. A tripped canary token or accessed decoy credential carries near-zero false-positive probability, which makes deception the cheapest high-fidelity signal in the stack....",
+      "source": "Kavichselvan via Cyber Security News",
+      "image": "https://www.inoreader.com/camo/s9uEpBlA5uSmO9Ho8RidwjiUJn1HHF3uJPG-EUw5XjTY,q80,480x400,pf,b64/aHR0cHM6Ly9ibG9nZ2VyLmdvb2dsZXVzZXJjb250ZW50LmNvbS9pbWcvYi9SMjl2WjJ4bC9BVnZYc0VnenZneXpOQUY4U2h4MGhIdGNQbkhGNGlLb3NNVTdmcnNOeE5kbTRJWmtPYWlLbk52amZmYl9KNjQ4NkFvZUxrS3dOQWNiVW91bGxOYWU0b0dnMzBmY0RhSUNwSUhTOHdwOGdDMWMwWFh1MFBtdkcxOTZsQ0h3ODFSRGE3Y1pCSlhRTzhPTnhjazc2ck04WDNpRkdLUVJEcUlOaVBTWmRmR2FhOHdNbXR0b0hDdGFNU1lSbDU5ZmZHNF9USDQvczE2MDAvdGhpbmtzdCUyMGNhbmFyeSUyMC53ZWJw"
+    },
+    {
+      "id": "at_51097196715",
+      "title": "Hackers Hide Linux Backdoor in Control Web Panel Server to Execute Commands Without Logs",
+      "url": "https://thehackernews.com/2026/11/hackers-hide-linux-backdoor-in-control.html",
+      "summary": "A backdoor has been found hiding in the web server that runs Control Web Panel (CWP), a free panel for managing Linux hosting servers, researchers at QiAnXin's XLab said this week. The backdoored web server executes commands that attackers send via web requests, and those requests never appear in its access logs. Installing it takes root access,...",
+      "source": "[email protected] (The Hacker News) via The Hacker News",
+      "image": "https://www.inoreader.com/camo/s7LCAtL2KlTe5gxUcNCXBco4N952_CF-4qHEwtJB0NlQ,q80,480x400,pf,b64/aHR0cHM6Ly9ibG9nZ2VyLmdvb2dsZXVzZXJjb250ZW50LmNvbS9pbWcvYi9SMjl2WjJ4bC9BVnZYc0Vqc0FNeEJldmgyY216MWJ1S1d1a3lQNkpnVUhySVBjcjl6ckpqQXMxT3dEb1Axd01qbl9zX1dLSGVVQWRTd1Z6VEltVXNERTBDM1NMR0VwY2lhTGs5SDhDR3ZxaVl1Z1FXQVNzZmxCMWE1ekE5V3lyNFJicm9UM1ozSmxPZWFrMUFFaW5BeTdCcmY5TjBCUkR1R0ZXZFpDMjNuQ3JPcTRWdVNNUVF1REZZQllDNllDRW0ybmNQaEhPdjNLWHMvczE2MDAvY3dwLmpwZw"
+    },
+    {
+      "id": "at_51097196727",
+      "title": "Experts Demonstrate Barracuda Email Security Gateway Chain Enabling Root Access Without Login",
+      "url": "https://thehackernews.com/2026/11/experts-demonstrate-barracuda-email.html",
+      "summary": "Two flaws in Barracuda's Email Security Gateway, an email-filtering appliance, can be chained to run commands on it as root, its highest level of access, with no login required. The company released patches on Monday, and the security firm watchTowr detailed the attack chain on Thursday. One flaw, CVE-2026-116606, is an authorization bypass. An...",
+      "source": "[email protected] (The Hacker News) via The Hacker News",
+      "image": "https://www.inoreader.com/camo/sSLgsFJXKtyd6RUnaEmWp0eDd7QR5BOQTcRjnEX_4zYc,q80,480x400,pf,b64/aHR0cHM6Ly9ibG9nZ2VyLmdvb2dsZXVzZXJjb250ZW50LmNvbS9pbWcvYi9SMjl2WjJ4bC9BVnZYc0VoNTlMWHRoakQ2TjUwODY3dzJ2N1Q0SnlWVUNPbFZBbXoxTUpjWkhLQkZGYVNuS0RhYkIwRm1kZWRyYnZXUmtwOVhPTmU5UHoyUlYxTVEtOVFwSjhkODVYRTN3NTRFbU1MS2dhZjF5Z0tEMmUweTJYOW1BN1ZzZnl5Qi04bDFLRmktRjVHajlRMnZkc3VzbUFsMmtodlhITnlPeldCX2w3Ymo2TmtPSGtVZ0RZVy12RU5Pb3d0MEw4cU00a00vczE2MDAvYmFyLmpwZw"
+    },
     {
       "id": "at_51095670243",
       "title": "3 Charged in Scheme to Use AI to Impersonate CEOs and Attorneys to Steal $129 Million",
@@ -1480,126 +1600,6 @@
       "summary": "Blockchain infrastructure provider Chainstack on Tuesday disclosed that it was targeted in a cyber attack that allowed an unauthorized party to gain access to some parts of its infrastructure. The incident is assessed to be part of a large-scale, artificial intelligence (AI)-powered attack campaign that came to light last week. \"An external attacker...",
       "source": "[email protected] (The Hacker News) via The Hacker News",
       "image": "https://www.inoreader.com/camo/sVMzXUW2U3kqJ93Q6xoZ8mDuZKhd23K8LUvEncK2XQqY,q80,480x400,pf,b64/aHR0cHM6Ly9ibG9nZ2VyLmdvb2dsZXVzZXJjb250ZW50LmNvbS9pbWcvYi9SMjl2WjJ4bC9BVnZYc0VqTWdMYzYxcTZjVG9tcGJCWTRsUy1wcWlubVMxXzN2WUJZSDdPVm5uRlRtT1pmTWs4Ujdob3V1cVVtbk1oVXMtZ1RJLTU1SHdpZUFhUHVDSV96aGMwWE53NzRQaGZaVmJDaldleFBVVXVnTWMxY3JQdlA2dVFzaWM3bzNHRHk1S1hiWUpFOEx0WHFkYmFuOGNUY2ZubjlBeFJnT2tSMHc1X2JReC1wSFRSMUE1LXR0RUhjcHFHa2dZYWpqU2lBL3MxNjAwL2NoYWluc3RhY2sucG5n"
-    },
-    {
-      "id": "at_51067817473",
-      "title": "Google: LLMjacking attacks rack up $1 million in cloud AI charges",
-      "url": "https://www.bleepingcomputer.com/news/security/google-llmjacking-attacks-rack-up-1-million-in-cloud-ai-charges/",
-      "summary": "Large language model hijacking attacks, also known as LLMjacking, are generating large fraudulent cloud charges, with some organizations losing more than $100,000 per day. [...]",
-      "source": "Bill Toulas via Bleeping Computer",
-      "image": "https://www.inoreader.com/camo/sN0t6KTMVmRMWIhgsFgLL-9valKkeCnJTJvtdMEZUJ4U,q80,480x400,pf,b64/aHR0cHM6Ly93d3cuYmxlZXBzdGF0aWMuY29tL2NvbnRlbnQvaGwtaW1hZ2VzLzIwMjYvMTAvMjEvY2xvdWQtc2VydmVycy5qcGc"
-    },
-    {
-      "id": "at_51067515320",
-      "title": "How our cyber Black October resembled the crash of 1987 -- and how teams should respond",
-      "url": "https://www.scworld.com/perspective/for-black-october-in-1987-the-fix-was-a-circuit-breaker-security-now-needs-the-same-idea",
-      "summary": "We just experienced a cyber Black October – here’s a response plan for the next one.",
-      "source": "Ron Reinfeld via Latest articles from SC Magazine",
-      "image": "https://www.inoreader.com/camo/s3y2b-z2L26e8GeWRbbLOUmkvC6WoTbWdozrHccEOHMU,q80,480x400,pf,b64/aHR0cHM6Ly9maWxlcy5jeWJlcnJpc2thbGxpYW5jZS5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjYvMTEvMTEwMzI2X3N0b2NrX2V4Y2hhbmdlX3RyYWRlci5qcGc"
-    },
-    {
-      "id": "at_51066974494",
-      "title": "OpenAI Builds Pando Git Infrastructure Using AI Agents and Deploys Continuous Security Testing",
-      "url": "https://cybersecuritynews.com/openai-builds-pando-git-infrastructure/",
-      "summary": "OpenAI has built Pando, a new Git backend, with Codex agents in just 10 weeks, replacing the system behind its main shared code repository without stopping engineering work. The company says agents now run around the clock to red-team both Git and Pando, testing the software that supports its growing AI-driven development workload. In...",
-      "source": "Guru Baran via Cyber Security News",
-      "image": "https://www.inoreader.com/camo/sA4x-It0ipxM2eH0QVmomw9HNv5-00YHgA-HdhiricZs,q80,480x400,pf,b64/aHR0cHM6Ly9jeWJlcnNlY3VyaXR5bmV3cy5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjYvMTEvT3BlbkFJLUJ1aWxkcy1QYW5kby1HaXQtSW5mcmFzdHJ1Y3R1cmUud2VicA"
-    },
-    {
-      "id": "at_51066974503",
-      "title": "North Korean Hackers Abuse Internal AI Tool and Fake Job Interviews in $6.34 Billion Binance Heist",
-      "url": "https://cybersecuritynews.com/fake-job-interviews-binance-heist/",
-      "summary": "North Korean hackers used a fake job interview, a poisoned coding task, and a hijacked internal AI tool to reach Binance’s wallet systems. The FBI says the North Korean group it calls “TraderTraitor” stole more than $6 billion in digital assets on 29 October 2026. Binance puts the impacted value at about USD 6.34 billion. Binance says this was...",
-      "source": "Guru Baran via Cyber Security News",
-      "image": "https://www.inoreader.com/camo/shInDluzGfZm5EKq6oVGNGsm57UmnN6FdXZPhhUORRe4,q80,480x400,pf,b64/aHR0cHM6Ly9jeWJlcnNlY3VyaXR5bmV3cy5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjYvMTEvQmluYW5jZS02LjM0LUJpbGxpb24tSGVpc3Qud2VicA"
-    },
-    {
-      "id": "at_51066907085",
-      "title": "Binance Reveals How Fake Job Interviews and AI Tool Abuse Led to $6.43 Billion Theft",
-      "url": "https://thehackernews.com/2026/11/binance-reveals-how-fake-job-interviews.html",
-      "summary": "Binance on Tuesday said the record-setting theft of $6.43 billion in assets from the world's largest cryptocurrency exchange was the culmination of a \"sophisticated, multi-stage campaign\" that involved the use of a tampered Homebrew installation and recruitment-themed social engineering attack targeting two of its engineers. \"It was not a single...",
-      "source": "[email protected] (The Hacker News) via The Hacker News",
-      "image": "https://www.inoreader.com/camo/sCfVMlz-C3Lce2KVamsWAVQkCH3W0LIYP58YzWCcBJMM,q80,480x400,pf,b64/aHR0cHM6Ly9ibG9nZ2VyLmdvb2dsZXVzZXJjb250ZW50LmNvbS9pbWcvYi9SMjl2WjJ4bC9BVnZYc0VoWkNNQ1I4aDNZQ1BjZlk4RmJlNTRja1lLaF9ZVXRfWWQ3djgyZEFIb2JadE1ObFFsX0pWS1dVWDRPVVB3UjBkRW1Zc0xOZmVLc1c2clV0aGs4cFlSVmhJZGRiUFh4ODZzSENjTkJSTDlFLTlMSlRQcllTWXdKX1Y2NkV3R0pORmVvV2dEUGJqY0dmZUo0dzJxbl9nZlRqWEJvTkFuZldxNEdaOHJxN1ZPaG5xdDRRbEl0WUVCcjNaYXI3WEwxL3MxNjAwL2Jpbi5qcGc"
-    },
-    {
-      "id": "at_51066907090",
-      "title": "Barracuda Flaws Could Be Chained to Bypass Authorization and Gain Root Access",
-      "url": "https://thehackernews.com/2026/11/barracuda-flaws-could-be-chained-to.html",
-      "summary": "Barracuda has disclosed details of two vulnerabilities affecting its products that, if chained together, could allow an attacker to bypass authorization controls and gain root access to a susceptible device. The vulnerabilities, a pre-authentication authorization bypass vulnerability and a command injection vulnerability, have been assigned the CVE...",
-      "source": "[email protected] (The Hacker News) via The Hacker News",
-      "image": "https://www.inoreader.com/camo/sR5MDmhLLEOBOBqioZT9kePvoog8amwVocCEWtP2ZpVg,q80,480x400,pf,b64/aHR0cHM6Ly9ibG9nZ2VyLmdvb2dsZXVzZXJjb250ZW50LmNvbS9pbWcvYi9SMjl2WjJ4bC9BVnZYc0VoQ3ZHSkNrWWpsZGhBdnNqTW80N1VxeEdPVGZWWTF6Q2NqWlF6Z2Via084ajFfX2ZhMGNGT24zQ0FWMWpQVFVwendERElTUUtQUVA1ZVZHT2w5QnpSTEJYN0tsV3VVMkhNcHp1SFJXVjJ3eWFJdER3WWdQdTBYN20zcUU1VjFrZ0Z6S1oxUVljUkJjWnlEcWtVVEZiZXJpT1dYQmZWXy1zdVlDMVFRV3FfVHdCTWV5bWU0RjBGc09abnBpamhDL3MxNjAwL2JhcnJhY3VkYS5wbmc"
-    },
-    {
-      "id": "at_51066521163",
-      "title": "Synology Warns of Ransomware Attacks Targeting NAS Devices Running Outdated DSM Versions",
-      "url": "https://securityaffairs.com/202343/security/synology-warns-of-ransomware-attacks-targeting-nas-devices-running-outdated-dsm-versions.html",
-      "summary": "Synology warns of ransomware attacks exploiting a 2024 flaw in outdated NAS devices, urging users to update DSM immediately. A security fix released in 2024 is now at the centre of ransomware attacks against Synology NAS devices. The company has found attackers targeting systems that still run outdated versions of DiskStation Manager (DSM),...",
-      "source": "Pierluigi Paganini via Security Affairs",
-      "image": ""
-    },
-    {
-      "id": "at_51066353322",
-      "title": "Password Manager mSecure Urges Users to Secure Logins and Confidential Data Stored",
-      "url": "https://cybersecuritynews.com/msecure-security-incident/",
-      "summary": "Password manager mSecure has urged current and former customers to immediately protect passwords and other confidential information stored in its application after its maker, mSeven Software, detected suspicious activity. The warning also covers two-factor authentication methods and existing passkeys, making it broader than a routine password...",
-      "source": "Guru Baran via Cyber Security News",
-      "image": "https://www.inoreader.com/camo/s1yMLKexZ1ykB9YQOxmfHix8hiYoCnUPjOt-jjBX02pc,q80,480x400,pf,b64/aHR0cHM6Ly9ibG9nZ2VyLmdvb2dsZXVzZXJjb250ZW50LmNvbS9pbWcvYi9SMjl2WjJ4bC9BVnZYc0VqanhOc29hZUttazdCNnNQb01tNXpoeTV3Zjg4ZmRMX2ZmOWhoN1ptTncwUllCWWdOOTR4SWY4OTNaQk9ZZUVGaHhRMVVTZ05xRVpZSzZ3QWFueTE2dGZWaUdnR1hIZXNpaERNTEh2TzVRNXhyWkRLVXJNbXg4MUY2d2Q1WURheWRIVHdLRm4xcDZpc3JRTjdnbTJablkxbnBUTEpFeGNpbDdxTkhITl8zeXdpMlpKNVFkSTd0WG9oLUZZMDBkL3MxNjAwL21zZWN1cml0eSUyME5vdGljZS53ZWJw"
-    },
-    {
-      "id": "at_51066353331",
-      "title": "Hackers Use AI Agents to Launch 3AM Ransomware Attacks Against UK School Networks",
-      "url": "https://cybersecuritynews.com/hackers-use-ai-agents-2/",
-      "summary": "A ransomware affiliate has hit a group of UK schools with a mix of human control and AI-style automation. The attackers used built-in Windows tools, stolen backup passwords and fake admin accounts to spread across the school network, then encrypted about 37 machines. The group behind the encryptor is 3AM, also written ThreeAM. It sells its Rust-based...",
-      "source": "Tushar Subhra Dutta via Cyber Security News",
-      "image": "https://www.inoreader.com/camo/sqYuwEUneIeQbHXScu4cegSJaf5jnKtPBb1CQ4hpdFzM,q80,480x400,pf,b64/aHR0cHM6Ly9ibG9nZ2VyLmdvb2dsZXVzZXJjb250ZW50LmNvbS9pbWcvYi9SMjl2WjJ4bC9BVnZYc0VqSHktRF9WRXhDZjlDWElrei1DalRJaEk5M3BjQktCQ3pxYXVkUldTdWFLNHg4VzlpM1lFcjVqQlN6QVNNQ3Q5OEFaSWdFTUwyZjYwRE1XYTZjbGpDMUk4cnJ6TU1ESU0yR09RNnhvTmRVR2d3NjlTckxRMFJhb25DN0dtbHNacE9BR1hGUDAwTWx6anVac2tRSWhkcmdqMUF0SDNjakplUmhqeDJDajlmdklGSHE1c2JFZ0FZZUdlTjFPLU0vczE2MDAvSG93JTIwSW1wYWNrZXQncyUyMHdtaWV4ZWMlMjBydW5zJTIwYSUyMGNvbW1hbmQlMjBvbiUyMGElMjB0YXJnZXQlMjBtYWNoaW5lJTIwLSUyMHRoZSUyMGF0dGFja2VyJTIwc2VuZHMlMjBpdCUyMG92ZXIlMjBXTUklMjAoU291cmNlJTIwLSUyMEJpdGRlZmVuZGVyKS53ZWJw"
-    },
-    {
-      "id": "at_51066353343",
-      "title": "Hackers Target Supermarket Refrigeration Systems Across Europe, Raising Freezer Temperatures to 50°C",
-      "url": "https://cybersecuritynews.com/supermarket-refrigeration-systems-across-europe/",
-      "summary": "Hackers have targeted supermarket refrigeration systems across at least 10 European countries, forcing retailers to remove chilled and frozen food from sale after temperature controls were changed. The attacks, reported on Monday, November 2, have raised concerns about the security of connected equipment across Europe’s food supply chain. Some...",
-      "source": "Guru Baran via Cyber Security News",
-      "image": "https://www.inoreader.com/camo/saJKyVinmLrM-vuvjYil4EYyc2g_u5X2MKp-A5mjjEFo,q80,480x400,pf,b64/aHR0cHM6Ly9jeWJlcnNlY3VyaXR5bmV3cy5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjYvMTEvU3VwZXJtYXJrZXQtUmVmcmlnZXJhdGlvbi1TeXN0ZW1zLUV1cm9wZS53ZWJw"
-    },
-    {
-      "id": "at_51066353347",
-      "title": "Hackers Hijack Emergency Alert Apps in Ukraine and Russia to Send Fake Nuclear Attack Warnings",
-      "url": "https://cybersecuritynews.com/hackers-hijack-emergency-alert-apps/",
-      "summary": "Hackers targeted emergency alert apps in Ukraine and Russia late on November 1 and into November 2, sending false warnings about radiation, chemical threats, and nuclear strikes. The incidents disrupted trusted public safety channels during wartime. However, officials said the app breaches did not disable their wider warning systems. No independent...",
-      "source": "Abinaya via Cyber Security News",
-      "image": "https://www.inoreader.com/camo/sHVg23rf8Bu2iwW3FkLq9aaRrTE4K0sdgsKsXUgAn50o,q80,480x400,pf,b64/aHR0cHM6Ly9ibG9nZ2VyLmdvb2dsZXVzZXJjb250ZW50LmNvbS9pbWcvYi9SMjl2WjJ4bC9BVnZYc0VoYnFyTGZtVFZaUGdNMWY5bnI3VlVNLU5tSmszWGYwdXBwb0NpNFB4bFBqNlhXdjdYQmJkZEoxXzhfeXhQakRRTTU3U2VYUGRoX2ZpQXp4TGx0enN6dWVra1dyX1dsZ2ZFaHUzOVhFMENBNC1paWE2TDUwNnZDNVlXdkRuNkFuWlp3Y1FocHFYYnFrRWU5dFdCYU9mZ253VjZzQm1YTXNrcWl5blFnS2M1OXdIeDBvLVN2dkJDT01DalZxMHcvczE2MDAvU2NyZWVuc2hvdCUyMDIwMjYtMTEtMDIlMjAxOTAyMDYlMjAlMjgxJTI5LndlYnA"
-    },
-    {
-      "id": "at_51066306026",
-      "title": "The MCP server nobody inventoried",
-      "url": "https://www.scworld.com/perspective/the-mcp-server-nobody-inventoried",
-      "summary": "A critical GitLab MCP flaw exposes AI connector risks, excessive privileges and gaps in CVE tracking.",
-      "source": "Ashish Pulivarthy via Latest articles from SC Magazine",
-      "image": "https://www.inoreader.com/camo/s23kRhKj-umABYqLErvwc2QkWsX93DSdaqqQzgev4ehs,q80,480x400,pf,b64/aHR0cHM6Ly9maWxlcy5jeWJlcnJpc2thbGxpYW5jZS5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjUvMDkvQWRvYmVTdG9ja18xNDY4MzQ5NTgxLXNjYWxlZC5qcGVn"
-    },
-    {
-      "id": "at_51066306035",
-      "title": "Industry coalition urges Congress to extend Cyber Information Sharing law",
-      "url": "https://www.scworld.com/brief/industry-coalition-urges-congress-to-extend-cyber-information-sharing-law",
-      "summary": "",
-      "source": "SC Staff via Latest articles from SC Magazine",
-      "image": "https://www.inoreader.com/camo/s_Ln06feUv6OKLTl8Oh7hhmlw16AQ8x4jjEeDQvYTVQI,q80,480x400,pf,b64/aHR0cHM6Ly9maWxlcy5jeWJlcnJpc2thbGxpYW5jZS5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjYvMTEvQWRvYmVTdG9ja18xNzQyMDk5MDQ3LTEtc2NhbGVkLmpwZWc"
-    },
-    {
-      "id": "at_51066306041",
-      "title": "Hackers compromise emergency alert apps in Ukraine and Russia",
-      "url": "https://www.scworld.com/brief/hackers-compromise-emergency-alert-apps-in-ukraine-and-russia",
-      "summary": "",
-      "source": "SC Staff via Latest articles from SC Magazine",
-      "image": "https://www.inoreader.com/camo/svdxLAlNfUwpqLrSUHacUK2o91TY7cfNcqg6GhOR8Evk,q80,480x400,pf,b64/aHR0cHM6Ly9maWxlcy5jeWJlcnJpc2thbGxpYW5jZS5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjYvMTEvQWRvYmVTdG9ja18yMjIzODc0MDk1LXNjYWxlZC5qcGVn"
-    },
-    {
-      "id": "at_51066281416",
-      "title": "Q&A With Pierre-Loic Kuhn at Filigran: Why Cybersecurity Needs to Evolve",
-      "url": "https://www.itsecurityguru.org/2026/11/03/qa-with-pierre-loic-kuhn-at-filigran-why-cybersecurity-needs-to-evolve/?utm_source=rss&utm_medium=rss&utm_campaign=qa-with-pierre-loic-kuhn-at-filigran-why-cybersecurity-needs-to-evolve",
-      "summary": "For years, cybersecurity teams have relied on vulnerability scanning and periodic penetration testing to identify weaknesses before attackers can exploit them. But real-world cyberattacks rarely follow a predictable path. Rather than exploiting a single vulnerability, attackers often combine stolen credentials, misconfigurations and seemingly minor...",
-      "source": "The Gurus via IT Security Guru",
-      "image": "https://www.inoreader.com/camo/shlbsJ5ikGCgmMQUEZ5fwpfEOYDgdu5Y2INZcL6Mgz4o,q80,480x400,pf,b64/aHR0cHM6Ly93d3cuaXRzZWN1cml0eWd1cnUub3JnL3dwLWNvbnRlbnQvdXBsb2Fkcy8yMDI2LzExL0ZPUi1FRElUSU5HLTIucG5n"
     }
   ]
 }

@@ -1,6 +1,22 @@
 {
-  "updatedAt": "2026-11-06T03:26:59.434415+00:00",
+  "updatedAt": "2026-11-06T12:07:42.028651+00:00",
   "articles": [
+    {
+      "id": "at_51099758585",
+      "title": "Protesters break into Microsoft data center site in Amsterdam",
+      "url": "https://www.theverge.com/news/1028549/protesters-microsoft-data-center-site-amsterdam",
+      "summary": "Members of the action group Geef Tegengas put a banner on a crane during a protest. | Image: Getty Images Protesters have broken into a construction site of a new Microsoft data center in Amsterdam this morning. Members of the Geef Tegengas group helped organize the protest against the construction of three 85-meter data center towers...",
+      "source": "Tom Warren via The Verge - Artificial Intelligences",
+      "image": "https://www.inoreader.com/camo/sm4ww6Wz3vypo3vv6JwdRhOl6ARf5N56qGldAi5BEzfs,q80,480x400,pf,b64/aHR0cHM6Ly9wbGF0Zm9ybS50aGV2ZXJnZS5jb20vd3AtY29udGVudC91cGxvYWRzL3NpdGVzLzIvMjAyNi8xMS9nZXR0eWltYWdlcy0yMzAzMzIzODQ0LmpwZz9xdWFsaXR5PTkwJnN0cmlwPWFsbCZjcm9wPTAsMCwxMDAsMTAw"
+    },
+    {
+      "id": "at_51097006430",
+      "title": "Palo Alto Networks in talks to buy AI agent security startup Clutch for $500M",
+      "url": "https://techcrunch.com/2026/11/05/palo-alto-networks-in-talks-to-buy-ai-agent-security-startup-clutch-for-500m/",
+      "summary": "Clutch, backed by Lightspeed and SignalFire, was last valued at $85 million, according to a source.",
+      "source": "Marina Temkin via AI | TechCrunch",
+      "image": "https://www.inoreader.com/camo/sLqBjHOy3RyrfXDvlwzW3kQe3zq031zazBxfCLgPPlvw,q80,480x400,pf,b64/aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNS8wNy9HZXR0eUltYWdlcy0yMjE1NjY2MjQ2LmpwZz9yZXNpemU9MTYwMCwxMDY3"
+    },
     {
       "id": "at_51094883052",
       "title": "OpenAI is stepping back from NDAs for data center projects",
@@ -1584,22 +1600,6 @@
       "summary": "Presented by SAPRead more",
       "source": "via VentureBeat",
       "image": "https://www.inoreader.com/camo/sMMpg7xSwfeCemhVGL02_p78uNyhBxlNDWRoTVam2RI8,q80,480x400,pf,b64/aHR0cHM6Ly9pbWFnZXMuY3RmYXNzZXRzLm5ldC9qZHR3cWh6dmMybjEvNFNIUE0xWXMyc1JJZzBmbVVTd3VQQi9lYzIyNzA4OGQ0YjhmYjJmYjUyYzE2ZTZiYzAxZTExMi9TQVAuOS5wbmc_dz0xNjAwJnE9ODA"
-    },
-    {
-      "id": "at_51053644450",
-      "title": "Omen AI adds liquid know-how in $16 million Aquatic Labs acquisition",
-      "url": "https://techcrunch.com/2026/11/02/omen-ai-adds-liquid-know-how-in-16-million-aquatic-labs-acquisition/",
-      "summary": "Two startups tackling the data center water problem are joining forces in a $16 million deal.",
-      "source": "Tim Fernholz via AI | TechCrunch",
-      "image": "https://www.inoreader.com/camo/s9WwGOoJ2k_s2WsG-k-1OVtK3XFkNp5uvtJNeAZMSfow,q80,480x400,pf,b64/aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNi8xMS9EU0NGMTkzMi5qcGc_cmVzaXplPTE2MDAsMTA2Nw"
-    },
-    {
-      "id": "at_51053148621",
-      "title": "2 days till TechCrunch Founder Summit: Boston founders don’t need a Silicon Valley address to build something big",
-      "url": "https://techcrunch.com/2026/11/02/2-days-till-techcrunch-founder-summit-boston-founders-dont-need-a-silicon-valley-address-to-build-something-big/",
-      "summary": "TechCrunch Founder Summit happens on November 4 in Boston for a founder-focused agenda and impactful connections. Save up to $100 or get discounts with group passes.",
-      "source": "TechCrunch Events via AI | TechCrunch",
-      "image": ""
     }
   ]
 }
