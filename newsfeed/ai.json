@@ -1,6 +1,38 @@
 {
-  "updatedAt": "2026-11-05T22:40:42.532213+00:00",
+  "updatedAt": "2026-11-06T03:26:59.434415+00:00",
   "articles": [
+    {
+      "id": "at_51094883052",
+      "title": "OpenAI is stepping back from NDAs for data center projects",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1028454/openai-data-center-nda",
+      "summary": "Following this week's midterms where voters resoundingly voiced their opposition to data center expansion, OpenAI today announced new commitments to communities where it is working on data center projects, including that it won't use non-disclosure agreements (NDAs) with public officials. Many data center projects have come under scrutiny...",
+      "source": "Jay Peters via The Verge - Artificial Intelligences",
+      "image": "https://www.inoreader.com/camo/sHMLriPB7eHKh79k380wg9FftdOusxnJRK-h4MUrDPas,q80,480x400,pf,b64/aHR0cHM6Ly9wbGF0Zm9ybS50aGV2ZXJnZS5jb20vd3AtY29udGVudC91cGxvYWRzL3NpdGVzLzIvMjAyNi8wNi9TVEtTNTI4X0RBVEFfQ0VOVEVSUzJfQi5qcGc_cXVhbGl0eT05MCZzdHJpcD1hbGwmY3JvcD0wLDAsMTAwLDEwMA"
+    },
+    {
+      "id": "at_51094822435",
+      "title": "OpenAI launches GPT-6 Cyber with stronger exploit research and higher API price than Anthropic and Google",
+      "url": "https://venturebeat.com/technology/openai-launches-gpt-6-cyber-with-stronger-exploit-research-and-higher-api-price-than-anthropic-and-google",
+      "summary": "OpenAI released GPT-6 Cyber today, a specialized security model that the company says can uncover and exploit more software vulnerabilities while more reliably respecting the limits researchers impose.Read more",
+      "source": "[email protected] (Carl Franzen) via VentureBeat",
+      "image": "https://www.inoreader.com/camo/sso6NVlp3a1iTcscanFc-uwXFxEl3Tn6CP5jRtWkp0e0,q80,480x400,pf,b64/aHR0cHM6Ly9pbWFnZXMuY3RmYXNzZXRzLm5ldC9qZHR3cWh6dmMybjEvMU5yakdVcmp0TzJqazBGa25IekhUUC8xOTQ5NDZkOTIzNDUzMmY2N2U3YTZlMDg3MzdlODg3Ny9UZXh0dXJlZF9wYXBlcl9oYW5kc19lbmNpcmNsZV9hbl9vcmFuZ2Vfc2l4LWxvY2sucG5nP3c9MTYwMCZxPTgw"
+    },
+    {
+      "id": "at_51094623332",
+      "title": "Airbnb is working on an AI travel agent",
+      "url": "https://www.theverge.com/tech/1028412/airbnb-ai-travel-agent-q3-2026-earnings",
+      "summary": "Airbnb plans to roll out an AI agent in the first half of 2027 that will help users plan and book travel, the company said in its Q3 2026 earnings shareholder letter released today. \"Today's AI agents are good at simple, routine tasks, like making a restaurant reservation or scheduling an appointment,\" Airbnb said. \"But planning a trip...",
+      "source": "Jay Peters via The Verge - Artificial Intelligences",
+      "image": "https://www.inoreader.com/camo/sfA3_EupWsJVcNH0K7RR8602YzvM6rkLeCWpioMPKHbE,q80,480x400,pf,b64/aHR0cHM6Ly9wbGF0Zm9ybS50aGV2ZXJnZS5jb20vd3AtY29udGVudC91cGxvYWRzL3NpdGVzLzIvMjAyNS8wNC9hY2FzdHJvX1NUSzA5MF8wNi5qcGc_cXVhbGl0eT05MCZzdHJpcD1hbGwmY3JvcD0wLDAsMTAwLDEwMA"
+    },
+    {
+      "id": "at_51094093486",
+      "title": "Airbnb says it’s launching an AI travel agent in the first half of 2027",
+      "url": "https://techcrunch.com/2026/11/05/airbnb-says-its-launching-an-ai-travel-agent-in-the-first-half-of-2027/",
+      "summary": "Airbnb says its upcoming AI agent will help travelers plan trips, compare options, manage bookings, and get assistance throughout their stay.",
+      "source": "Sarah Perez via AI | TechCrunch",
+      "image": "https://www.inoreader.com/camo/s4NUyjoGHBdb5CjflFRxLqoLa24XE2l8yFVe7jRhCSmQ,q80,480x400,pf,b64/aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNS8wNS9BaXJibmItU3VtbWVyLWZlYXQuanBnP3Jlc2l6ZT0xNjAwLDkwMA"
+    },
     {
       "id": "at_51094021287",
       "title": "Perplexity launches its own take on AI agents for work",
@@ -1568,38 +1600,6 @@
       "summary": "TechCrunch Founder Summit happens on November 4 in Boston for a founder-focused agenda and impactful connections. Save up to $100 or get discounts with group passes.",
       "source": "TechCrunch Events via AI | TechCrunch",
       "image": ""
-    },
-    {
-      "id": "at_51053042212",
-      "title": "OpenAI is finally merging ChatGPT’s chat and Work tabs",
-      "url": "https://techcrunch.com/2026/11/02/openai-is-finally-merging-chatgpts-chat-and-work-tabs/",
-      "summary": "OpenAI said that ChatGPT and Codex will draw usage from the same allocation pool after this change.",
-      "source": "Ivan Mehta via AI | TechCrunch",
-      "image": "https://www.inoreader.com/camo/sQa8QbjNtuQgB53uzXeyc6gYBOJag6Z9CZwsDv_HyEAM,q80,480x400,pf,b64/aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNi8wOS9vcGVuYWktZ2V0dHkuanBnP3Jlc2l6ZT0xNjAwLDEwNjc"
-    },
-    {
-      "id": "at_51046047078",
-      "title": "OpenAI might rebrand its data centers as ‘AI compute campuses’",
-      "url": "https://techcrunch.com/2026/11/01/openai-might-rebrand-its-data-centers-as-ai-compute-campuses/",
-      "summary": "Data centers are deeply unpopular. But what if we called them something else?",
-      "source": "Anthony Ha via AI | TechCrunch",
-      "image": "https://www.inoreader.com/camo/s5ZDA4epfp9TphuNKWPm69H9QY2cmWTkc-_Yvv6BosDY,q80,480x400,pf,b64/aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNi8wOC9HZXR0eUltYWdlcy0yMjgzMTEzOTM2LW1hbGxlci5qcGc_dz0xMDI0"
-    },
-    {
-      "id": "at_51045730523",
-      "title": "AI can make tech CEOs’ lives easier. What about everyone else?",
-      "url": "https://techcrunch.com/2026/11/01/ai-can-make-tech-ceos-lives-easier-what-about-everyone-else/",
-      "summary": "On Equity, we discuss why tech CEO statements can seem so tone deaf.",
-      "source": "Anthony Ha via AI | TechCrunch",
-      "image": "https://www.inoreader.com/camo/stwPLD3sb-9kIiNXkh0aXFIn30C2FmbWruOFKiT0r7AU,q80,480x400,pf,b64/aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNi8xMS9HZXR0eUltYWdlcy0xNDgxNjE3NTY0LmpwZz9yZXNpemU9MTYwMCw5MDc"
-    },
-    {
-      "id": "at_51045437606",
-      "title": "AI agents don't have to break security controls to go rogue. Here's how to keep them in check",
-      "url": "https://venturebeat.com/security/ai-agents-dont-have-to-break-security-controls-to-go-rogue-heres-how-to-keep-them-in-check",
-      "summary": "During recent cybersecurity evaluations, the UK AI Security Institute (AISI) ran a cybersecurity challenge 122 times across several models. In 10 of those runs, AI agents executed 19 unsanctioned real-world actions on the live internet — ranging from attempting a malicious code contribution on a public open-source repository, to launching a social engineering...",
-      "source": "via VentureBeat",
-      "image": "https://www.inoreader.com/camo/scRLl4ZPi75CZiDslZcx30aLKR9w0yhEnZFaKRRktYPM,q80,480x400,pf,b64/aHR0cHM6Ly9pbWFnZXMuY3RmYXNzZXRzLm5ldC9qZHR3cWh6dmMybjEvNGhpV3ZBY0tqWTEyTW9aOFRMcHJWYi82YzRkMGVmODUxZGZiNzhmMTY0ZDE4M2E5MmU4MTZkNC91NzI3NzI4OTQ0Ml9UaGVfTmV3X01DUF9TcGVjX01vdmVzX1NlY3VyaXR5X3RvX1lvdXJfRW5kcG9pbnRzXzRjNzg2Yzk2LWE4YjAtNDA4Zi1iOTA2LTk2MzU5NjRiMDBlOV8wLnBuZz93PTE2MDAmcT04MA"
     }
   ]
 }
