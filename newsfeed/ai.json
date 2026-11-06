@@ -1,6 +1,134 @@
 {
-  "updatedAt": "2026-11-06T12:07:42.028651+00:00",
+  "updatedAt": "2026-11-06T19:25:46.621678+00:00",
   "articles": [
+    {
+      "id": "at_51103833985",
+      "title": "Hundreds of Artex AI hacking tools found publicly exposed to the web",
+      "url": "https://techcrunch.com/2026/11/06/hundreds-of-artex-ai-hacking-tools-found-publicly-exposed-to-the-web/",
+      "summary": "Security researchers found hundreds of servers hosting the penetration testing tool Artex exposed to the internet, allowing anyone access to the hacking tool.",
+      "source": "Zack Whittaker via AI | TechCrunch",
+      "image": "https://www.inoreader.com/camo/sJCis9akgTIDfXFmN9FHORa6EuWsX_8samKEGA9Z5GKg,q80,480x400,pf,b64/aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNC8wMi9HZXR0eUltYWdlcy0xNDI0NDk4Njk0LmpwZz9yZXNpemU9MTYwMCwxMDY3"
+    },
+    {
+      "id": "at_51103833991",
+      "title": "Meta introduces Spaces, a new way to collaborate with your Muse agent",
+      "url": "https://techcrunch.com/2026/11/06/meta-introduces-spaces-a-new-way-to-collaborate-with-your-muse-agent/",
+      "summary": "Meta's Muse agents continue to get new features and integrations. Spaces promises to be a new way to interact with the AI helpers.",
+      "source": "Lucas Ropek via AI | TechCrunch",
+      "image": "https://www.inoreader.com/camo/sbo2YrlyQ6T0TcO1ElBO11plu8aUhlmdxtckPPRsx-TM,q80,480x400,pf,b64/aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNi8wOS9tdXNlLWFpLW1ldGEuanBnP3c9MTIwMA"
+    },
+    {
+      "id": "at_51103512392",
+      "title": "Meta’s Muse AI can create custom ‘spaces’ for the version of the app you need right now",
+      "url": "https://www.theverge.com/tech/1028871/meta-muse-ai-spaces",
+      "summary": "Meta will now allow you to build customized, app-like experiences within its Muse AI assistant. The new feature, called \"spaces,\" allows Muse to build things like a shopping hub, school dashboard, music tracker, trivia game, and more, which you can interact with directly in the app. If you connect your space to a relevant app, Muse will...",
+      "source": "Emma Roth via The Verge - Artificial Intelligences",
+      "image": "https://www.inoreader.com/camo/sGhAt2zNhUoST_y00bKPYnvcxSqrnmpMJ285y_F3gHM8,q80,480x400,pf,b64/aHR0cHM6Ly9wbGF0Zm9ybS50aGV2ZXJnZS5jb20vd3AtY29udGVudC91cGxvYWRzL3NpdGVzLzIvMjAyNi8xMS9tZXRhLW11c2Utc3BhY2VzLnBuZz9xdWFsaXR5PTkwJnN0cmlwPWFsbCZjcm9wPTguMDc1Mjg0MzA2MzUyOCwwLDkxLjkyNDcxNTY5MzY0Nyw3NC40NzE2NTk4ODcxODY"
+    },
+    {
+      "id": "at_51103468026",
+      "title": "How a Blue Wave midterm might reshape the AI industry",
+      "url": "https://techcrunch.com/podcast/how-a-blue-wave-midterm-might-reshape-the-ai-industry/",
+      "summary": "Democrats’ historic victories in this week’s U.S. midterm elections could also transform the tech industry. The public voted on 41 data center-related ballot measures on Tuesday — in all but one, the majority voted to impose more restrictions on data center development. And even when data centers weren’t on the ballot directly, they were a […]",
+      "source": "Theresa Loconsolo, Anthony Ha, Sean O'Kane, Kirsten Korosec via AI | TechCrunch",
+      "image": "https://www.inoreader.com/camo/s3HinPUJdPrpiFB64HBF0vQaZ8uyF1WjZA0snw_-tq_o,q80,480x400,pf,b64/aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMi8xMS9HZXR0eUltYWdlcy0xMzY4NDU4MDUyLmpwZz9yZXNpemU9MTYwMCwxMDAw"
+    },
+    {
+      "id": "at_51103296223",
+      "title": "AI economics: How to decide which AI investments are worth scaling",
+      "url": "https://venturebeat.com/infrastructure/ai-economics-how-to-decide-which-ai-investments-are-worth-scaling",
+      "summary": "Presented by ApptioRead more",
+      "source": "via VentureBeat",
+      "image": "https://www.inoreader.com/camo/sIPhCX_ASovtCcP3FqDA_izW5W_kqtMwyiNnXrkhxU88,q80,480x400,pf,b64/aHR0cHM6Ly9pbWFnZXMuY3RmYXNzZXRzLm5ldC9qZHR3cWh6dmMybjEvMUJPM3FrWEphcXhGSEtaU1phNEZEWi8zZDc2MTMwNmI3YTBmZWIzMGIyZjZkNTIwNDY1ODRmOS9BZG9iZVN0b2NrXzE5NDUxOTkyNzkuanBlZz93PTE2MDAmcT04MA"
+    },
+    {
+      "id": "at_51103092774",
+      "title": "After the midterms, is the AI industry in for a rough two years?",
+      "url": "https://techcrunch.com/video/after-the-midterms-is-the-ai-industry-in-for-a-rough-two-years/",
+      "summary": "Democrats’ historic victories in this week’s U.S. midterm elections could also transform the tech industry. The public voted on 41 data center-related ballot measures on Tuesday — in all but one, the majority voted to impose more restrictions on data center development. And even when data centers weren’t on the ballot directly, they were a […]",
+      "source": "Theresa Loconsolo, Anthony Ha via AI | TechCrunch",
+      "image": "https://www.inoreader.com/camo/sFVpg0Ab-6gPh5qCaLAFSeH5VBRs-aKEPdtAPbyroO_Y,q80,480x400,pf,b64/aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNi8xMS9HZXR0eUltYWdlcy0yMjM2NTQzODg4LmpwZz9yZXNpemU9MTYwMCwxMDY3"
+    },
+    {
+      "id": "at_51102790459",
+      "title": "AI is the new dating dealbreaker",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1028609/ai-dating-feelings-doomers-singularity",
+      "summary": "When Irene moved to San Francisco last year, she started using dating apps as a way to meet new people, get to know her new city, and connect with others who care about the things she does. After the 25-year-old analyst downloaded Hinge and started swiping, she noticed a trend. \"Hinge has a prompt where you can say, 'We'll get along...",
+      "source": "Helen Li via The Verge - Artificial Intelligences",
+      "image": "https://www.inoreader.com/camo/sh5ffMxAUnMgoB6fwA0cov36T7GOhLDJkDrlHUFHb17E,q80,480x400,pf,b64/aHR0cHM6Ly9wbGF0Zm9ybS50aGV2ZXJnZS5jb20vd3AtY29udGVudC91cGxvYWRzL3NpdGVzLzIvMjAyNi8xMS8yNjg4NDFfV2hlbl9pdF9jb21lc190b19kYXRpbmdfaXNfQUlfdGhlX25ld19wb2xpdGljc19fQ1ZpcmdpbmlhLmpwZz9xdWFsaXR5PTkwJnN0cmlwPWFsbCZjcm9wPTAsMCwxMDAsMTAw"
+    },
+    {
+      "id": "at_51102681633",
+      "title": "Read more: https://t.co/YZmczNMkgb",
+      "url": "https://x.com/TheRundownAI/status/2118728792440979688",
+      "summary": "Read more: tech.therundown.ai/p/big-tech-sue…💬0🔄0❤️0👀1043⚡ Powered by xgo.ing",
+      "source": "The Rundown AI (@TheRundownAI) via The Rundown AI(@TheRundownAI)",
+      "image": ""
+    },
+    {
+      "id": "at_51102681644",
+      "title": "Top stories in tech today: - Meta, Google, TikTok sue California - Musk clears Cybertruck off Giga ...",
+      "url": "https://x.com/TheRundownAI/status/2118728787659522165",
+      "summary": "Top stories in tech today:- Meta, Google, TikTok sue California- Musk clears Cybertruck off Giga Texas - Google drops $17B on Wyoming data center- Sony revives its Walkman headphones💬9🔄0❤️10👀3273📊8⚡ Powered by xgo.ing",
+      "source": "The Rundown AI (@TheRundownAI) via The Rundown AI(@TheRundownAI)",
+      "image": "https://www.inoreader.com/camo/sQNrE_eyq3x0xo2Mo5pKBFhRWq_8uapQvCyhxaXXvoG8,q80,480x400,pf,b64/aHR0cHM6Ly9wYnMudHdpbWcuY29tL21lZGlhL0hXYzhtZ0dXSUFBOEY1eC5qcGc"
+    },
+    {
+      "id": "at_51102586136",
+      "title": "Big Tech lost big in the 2026 election",
+      "url": "https://www.theverge.com/podcast/1028731/2026-midterms-tech-ai-vergecast",
+      "summary": "On Tuesday, millions of American voters went to the polls and voted overwhelmingly for Democrats and against AI. The fight against Big Tech is about to come roaring back, and the fight over data centers is looking even harder for the folks trying to build them. On this episode of The Vergecast, Nilay and David discuss what the 2026...",
+      "source": "David Pierce via The Verge - Artificial Intelligences",
+      "image": "https://www.inoreader.com/camo/sg6Xn9YoNLdZBsF5-dD74Zoj-3XWFe1GBXNQdUNtxkBc,q80,480x400,pf,b64/aHR0cHM6Ly9wbGF0Zm9ybS50aGV2ZXJnZS5jb20vd3AtY29udGVudC91cGxvYWRzL3NpdGVzLzIvMjAyNi8xMS9WUkdfVlNUXzExMDYyNl9TaXRlLmpwZz9xdWFsaXR5PTkwJnN0cmlwPWFsbCZjcm9wPTAsMCwxMDAsMTAw"
+    },
+    {
+      "id": "at_51102586138",
+      "title": "How Akai and Moog are embracing vibe-coded mods",
+      "url": "https://www.theverge.com/tech/1028720/vibe-coding-open-source-inmusic-akai",
+      "summary": "inMusic, the parent company of Akai, Moog, Native Instruments, and more, has decided to embrace the modding community. In an interview with The Verge, inMusic CEO Jack O'Donnell said, \"We're going to provide a toolbox to the community, we're going to provide the inner workings of, say, an MPC or Sample so that people can do what they...",
+      "source": "Terrence O’Brien via The Verge - Artificial Intelligences",
+      "image": "https://www.inoreader.com/camo/sW-gWUJo0mK3uPkycGZ9mpx3e5VDgZh2rIXud8lYo7XM,q80,480x400,pf,b64/aHR0cHM6Ly9wbGF0Zm9ybS50aGV2ZXJnZS5jb20vd3AtY29udGVudC91cGxvYWRzL3NpdGVzLzIvMjAyNi8xMS9hc3NldHNfNDdjNWQwMjNlN2IzNDUxYTg2YWMwMzYwMmM2NWRjZThfNDNmMjU2NDdjZjhhNGNiYjg3ODY4MjliYzI5ZWUyZmIud2VicD9xdWFsaXR5PTkwJnN0cmlwPWFsbCZjcm9wPTAsMCwxMDAsMTAw"
+    },
+    {
+      "id": "at_51102127544",
+      "title": "Ramp data shows AI spending stalling just as Anthropic nears its IPO",
+      "url": "https://techcrunch.com/2026/11/06/ramp-data-shows-ai-spending-stalling-just-as-anthropic-nears-its-ipo/",
+      "summary": "AI usage keeps climbing, but spending has stalled. Price cuts and smarter cost controls among the biggest spenders could challenge investor assumptions about AI hypergrowth.",
+      "source": "Rebecca Bellan via AI | TechCrunch",
+      "image": "https://www.inoreader.com/camo/sfifyy14-MppJpWMMq3-c6sIgTCoBJ4u0D8jzXnVr-C8,q80,480x400,pf,b64/aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNi8xMS9hcmEtc3RyaXBlLTUucG5nP3Jlc2l6ZT0xNjAwLDEwMzk"
+    },
+    {
+      "id": "at_51101421541",
+      "title": "After blocking Muse, Amazon now lets users text Alexa to help them shop",
+      "url": "https://techcrunch.com/2026/11/06/after-blocking-muse-amazon-now-lets-users-text-alexa-to-help-them-shop/",
+      "summary": "Amazon said that the feature will roll out to millions of users in coming weeks.",
+      "source": "Ivan Mehta via AI | TechCrunch",
+      "image": "https://www.inoreader.com/camo/seBKPMI0SH2Y1AYSNoHHpp6LifQQwS16YXdrU4yy1nB0,q80,480x400,pf,b64/aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNi8xMS9BbGV4YS1TaG9wcGluZy1UZXh0LUhlcm8uanBlZz9yZXNpemU9MTYwMCw5Njc"
+    },
+    {
+      "id": "at_51101027004",
+      "title": "Amazon will let you text Alexa your shopping list",
+      "url": "https://www.theverge.com/tech/1028587/amazon-alexa-shopping-ai-text-orders",
+      "summary": "Amazon is adding a new feature to Alexa for Shopping that allows customers to purchase items by texting the AI shopping assistant. Users can describe the products they're looking to buy and/or provide a photograph of the item, and Alexa for Shopping will search for matching results in Amazon listings, text back with recommendations, and...",
+      "source": "Jess Weatherbed via The Verge - Artificial Intelligences",
+      "image": "https://www.inoreader.com/camo/sgDljaFiunqNICtS3dI_JiIdtR5KVn9Fczp_YPB4G04I,q80,480x400,pf,b64/aHR0cHM6Ly9wbGF0Zm9ybS50aGV2ZXJnZS5jb20vd3AtY29udGVudC91cGxvYWRzL3NpdGVzLzIvMjAyNi8xMS9BbWF6b24tQWxleGEtZm9yLVNob3BwaW5nLXRleHQtb3JkZXIuanBnP3F1YWxpdHk9OTAmc3RyaXA9YWxsJmNyb3A9MCwwLDEwMCwxMDA"
+    },
+    {
+      "id": "at_51100478187",
+      "title": "Underdog shows off a 32MB speech model in new demo",
+      "url": "https://techcrunch.com/2026/11/06/underdog-shows-off-a-32mb-speech-model-in-new-demo/",
+      "summary": "Despite its small size, Underdog's new model can generate both speech and music.",
+      "source": "Ivan Mehta via AI | TechCrunch",
+      "image": "https://www.inoreader.com/camo/sjsOgY9RA27_yKhUm8KSd9NlsrzNKsmKH0tDYN6r8vvs,q80,480x400,pf,b64/aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNi8xMS9TY3JlZW5zaG90LTIwMjYtMTEtMDUtYXQtNy4wMi4zNC1QTS5qcGc_cmVzaXplPTE2MDAsNzIz"
+    },
+    {
+      "id": "at_51100478192",
+      "title": "Physicl raises $10M to make the digital world real enough for robots",
+      "url": "https://techcrunch.com/2026/11/06/physicl-raises-10m-to-make-the-digital-world-real-enough-for-robots/",
+      "summary": "Physicl is trying to solve the sim-to-real gap with a pipeline originally built to market goods online.",
+      "source": "Tim Fernholz via AI | TechCrunch",
+      "image": "https://www.inoreader.com/camo/sdAlCY-FYssCCUc8vKSBxUcsEinTWBJHksvgDu4y0bp8,q80,480x400,pf,b64/aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNi8xMS9waHlzaWNsLXN0dWRpby1oZXJvLWtpdGNoZW4tMTZ4OS0xLmpwZz9yZXNpemU9MTYwMCw5MDA"
+    },
     {
       "id": "at_51099758585",
       "title": "Protesters break into Microsoft data center site in Amsterdam",
@@ -1472,134 +1600,6 @@
       "summary": "Take your project from working code to online. GoDaddy's APIs let your AI agent deploy an app, register and connect a domain with your approval, and set up professional email. One platform for hosting, domains, and email.→ Explore the GoDaddy developer guides",
       "source": "via TLDR AI Feed",
       "image": "https://www.inoreader.com/camo/s4Mw8Cku4-6SC6GTSpSkFdwNTOgv0PBeVFv6NJdcVyP4,q80,480x400,pf,b64/aHR0cHM6Ly9kZXZlbG9wZXIuZ29kYWRkeS5jb20vb2cvZG9jcy9hcGktdXNlcnMvaW1hZ2UucG5n"
-    },
-    {
-      "id": "at_51057033303",
-      "title": "Find Hidden Misalignment in Training Data (39 minute read)",
-      "url": "https://alignment.anthropic.com/2026/automated-em-search/?utm_source=tldrai",
-      "summary": "Anthropic used Claude to automatically generate fine-tuning datasets that induced misaligned behavior while evading training-data safety monitors. The experiments uncovered seemingly harmless fiction and roleplay examples that caused models to resist oversight, deceive users, and occasionally attempt weight exfiltration.",
-      "source": "via TLDR AI Feed",
-      "image": "https://www.inoreader.com/camo/s9R3bWVNWCEsiuQrCMrW8T2mDKjXgfKfZUvorC4R0tJA,q80,480x400,pf,b64/aHR0cHM6Ly9hbGlnbm1lbnQuYW50aHJvcGljLmNvbS8yMDI2L2F1dG9tYXRlZC1lbS1zZWFyY2gvZmlnMS5wbmc"
-    },
-    {
-      "id": "at_51057033307",
-      "title": "Google's Project Suncatcher Generates First AI Response in Orbit (1 minute read)",
-      "url": "https://blog.google/innovation-and-ai/models-and-research/google-research/project-suncatcher-satellite-response/?utm_source=tldrai",
-      "summary": "Google reports its Project Suncatcher prototype ran Gemma 4 on a data-center-class TPU in orbit, returning a haiku transmitted through Svalbard. Upcoming tests will assess thermal and radiation resilience ahead of a planned pair of interconnected satellites in 2027, advancing research into space-based AI compute.",
-      "source": "via TLDR AI Feed",
-      "image": "https://www.inoreader.com/camo/sLPGZlkf_8nSX3gVAbJlRH9ZGKQj5pY3gdX8t0Z-0OmY,q80,480x400,pf,b64/aHR0cHM6Ly9pLnl0aW1nLmNvbS92aV93ZWJwL2VwcXpmQWkxNnVzL21heHJlc2RlZmF1bHQud2VicA"
-    },
-    {
-      "id": "at_51057033311",
-      "title": "GPT-Rosalind-6 System Card Addendum (6 minute read)",
-      "url": "https://deploymentsafety.openai.com/gpt-rosalind-6?utm_source=tldrai",
-      "summary": "GPT-Rosalind-6 is a frontier reasoning model for biology, drug discovery, and translational medicine. It is available as GPT-Rosalind-6 Research to qualified scientists, research institutes, companies, and government partners. The model uses the same weights as GPT-6 Astra. It is designed to support legitimate biological research while refusing requests...",
-      "source": "via TLDR AI Feed",
-      "image": ""
-    },
-    {
-      "id": "at_51057033315",
-      "title": "Inside the Frontier Labs: The First AGI Organizations (12 minute read)",
-      "url": "https://x.com/hannahhaina/status/2116182129403166876?utm_source=tldrai",
-      "summary": "Frontier labs are reorganizing around agents that execute research while humans choose directions and verify results.",
-      "source": "via TLDR AI Feed",
-      "image": "https://www.inoreader.com/camo/s7BCrZ-nK7mAqOVjcKMt5CG46lWBxtjTvCyCllhef39g,q80,480x400,pf,b64/aHR0cHM6Ly9wYnMudHdpbWcuY29tL21lZGlhL0hWM1hsdGZhMEFBMEFvTz9mb3JtYXQ9d2VicCZuYW1lPWxhcmdl"
-    },
-    {
-      "id": "at_51057033319",
-      "title": "Supporting a shared AI training control for websites (2 minute read)",
-      "url": "https://developers.google.com/search/blog/2026/10/ai-training-control?utm_source=tldrai",
-      "summary": "Google announced plans to support a shared AI training control via robots.txt, allowing websites to set AI training preferences with a single policy token.",
-      "source": "via TLDR AI Feed",
-      "image": "https://www.inoreader.com/camo/suFmlBxxikdmufOj9DVkul9Ij7JS8LcNPShmJCkhMV9Y,q80,480x400,pf,b64/aHR0cHM6Ly9kZXZlbG9wZXJzLmdvb2dsZS5jb20vc3RhdGljL3NlYXJjaC9ibG9nL2ltYWdlcy9zb2NpYWwtc2hhcmUtYmxvZy5wbmc"
-    },
-    {
-      "id": "at_51057033322",
-      "title": "Get 25% more from your training GPUs (Sponsor)",
-      "url": "https://lambda.ai/llama-3-1-blackwell-mfu-benchmarks?utm_source=tldr&amp;utm_medium=newsletter&amp;utm_campaign=2026-03-mfu-whitepaper&amp;utm_content=ai-main-ad-nov-2",
-      "summary": "Most large-scale AI training runs use less than half the computing power they're paying for. Lambda's team benchmarked Llama 3.1 models from 8B to 405B on NVIDIA Blackwell GPUs and found the root causes of low Model FLOPS Utilization (MFU). The result: a reproducible framework that boosted efficiency by over 25%, without changing the model itself. Learn...",
-      "source": "via TLDR AI Feed",
-      "image": ""
-    },
-    {
-      "id": "at_51057033326",
-      "title": "Anthropic prepares to release Claude Mythos 5.5 model (3 minute read)",
-      "url": "https://www.testingcatalog.com/anthropic-prepares-to-release-claude-mythos-5-5-model/?utm_source=tldrai",
-      "summary": "A reference to Claude Mythos 5.5 was spotted on Anthropic's official Mythos webpage, indicating that the company may be preparing for an upcoming release. The change only covers the version number, and there are no new specifications and no announcement. Multiple reports suggest that the model is being A/B tested with selected users. If the company...",
-      "source": "via TLDR AI Feed",
-      "image": "https://www.inoreader.com/camo/sDmgtbC2zk6majkUCTE2DiQdnFsOR5jTtAnzLAcW1dYc,q80,480x400,pf,b64/aHR0cHM6Ly9zdG9yYWdlLmdob3N0LmlvL2MvMmEvMWIvMmExYjE3ODItODUwNi00ZDdkLWJmNTMtYWQzZmI1MmUyYTBmL2NvbnRlbnQvaW1hZ2VzL3NpemUvdzEyMDAvMjAyNi8xMS9GSkdzNVN0eUVua3dwcTU3ZTNETTdIQ0kxVlBrWlV0cE0xNG5kOFhKLndlYnA"
-    },
-    {
-      "id": "at_51056182774",
-      "title": "OpenAI says it wants ChatGPT handling your life admin, so it built LifeVal, a test of real chores pi...",
-      "url": "https://x.com/TheRundownAI/status/2117316324166651979",
-      "summary": "OpenAI says it wants ChatGPT handling your life admin, so it built LifeVal, a test of real chores picked using studies of how people spend their time and a 3,995-person poll.GPT-6 Astra hit 100% on 10 of the 16 tasks in its results table. A few, with its \"best recorded\" score on each:- Finding a match for a lost engagement ring: 100%- Quitting email...",
-      "source": "The Rundown AI (@TheRundownAI) via The Rundown AI(@TheRundownAI)",
-      "image": ""
-    },
-    {
-      "id": "at_51056127477",
-      "title": "New York Times and other outlets sue web browser Brave over alleged content scraping",
-      "url": "https://techcrunch.com/2026/11/02/new-york-times-and-other-outlets-sue-web-browser-brave-over-alleged-content-scraping/",
-      "summary": "The New York Times is suing privacy-focused web browser company Brave for allegedly scraping the outlet’s copyrighted content and unlawfully distributing it to its own customers, like Anthropic and Perplexity.",
-      "source": "Rebecca Bellan via AI | TechCrunch",
-      "image": "https://www.inoreader.com/camo/s_Fkoao_QZvJtkgq3rOfRb7H1ZAxjxrSAJmFq7jcScRU,q80,480x400,pf,b64/aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNC8wOC9icmF2ZS1icm93c2VyLmpwZz9yZXNpemU9MTYwMCwxMDY3"
-    },
-    {
-      "id": "at_51056127480",
-      "title": "Data centers are now a midterm issue, even in Brooklyn",
-      "url": "https://techcrunch.com/2026/10/31/data-centers-are-now-a-midterm-issue-even-in-brooklyn/",
-      "summary": "At a Brooklyn midterm party five days before Election Day, every conversation, from a council member’s fireside chat to a debate about the Democratic Party, kept circling back to AI and data centers.",
-      "source": "Dominic-Madori Davis via AI | TechCrunch",
-      "image": "https://www.inoreader.com/camo/s-VLb060kq1nM8zHou-7G1CiUoXL984dMxF8VeYmP8f0,q80,480x400,pf,b64/aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNi8xMC9OZXdzcmVlbC1NaWR0ZXJtLU1hZG5lc3MtMjIuanBnP3Jlc2l6ZT0xNjAwLDEwNjc"
-    },
-    {
-      "id": "at_51055942169",
-      "title": "Anthropic clamps down on Claude’s AI video game clones",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/1024632/anthropic-claude-ai-video-game-clones",
-      "summary": "Anthropic has updated Claude Code's system prompt to prevent the AI tool from being used to recreate existing video games, as reported by Tom's Hardware. Retro gaming is currently being overrun with AI-made decompilations, recompilations, and ports, but while Anthropic will still let people use Claude Code to make games, it doesn't want...",
-      "source": "Jay Peters via The Verge - Artificial Intelligences",
-      "image": "https://www.inoreader.com/camo/sMYyEAhrQR7Vt4SnJjDSCG5H_sOUnmrn7LeYUd1m_sJI,q80,480x400,pf,b64/aHR0cHM6Ly9wbGF0Zm9ybS50aGV2ZXJnZS5jb20vd3AtY29udGVudC91cGxvYWRzL3NpdGVzLzIvMjAyNi8wMS9TVEsyNjlfQU5USFJPUElDXzJfQi5qcGc_cXVhbGl0eT05MCZzdHJpcD1hbGwmY3JvcD0wLDAsMTAwLDEwMA"
-    },
-    {
-      "id": "at_51055552134",
-      "title": "OpenAI pitches data center power plants as a way to protect nearby areas",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/1024604/openai-data-center-grid-protection-program",
-      "summary": "In an announcement on Monday, OpenAI says it will pilot its \"Grid Protectors Program\" at an upcoming data center in Effingham County, Georgia, where the company promises to free up to 1,000 megawatts of power during extreme weather or emergencies, enough to power air conditioners in around 700,000 homes. The announcement comes as opposition...",
-      "source": "Emma Roth via The Verge - Artificial Intelligences",
-      "image": "https://www.inoreader.com/camo/sjSAOHUCka0cvfAiE_BUIkl1l2nY0JI4ANrUpODNtPfM,q80,480x400,pf,b64/aHR0cHM6Ly9wbGF0Zm9ybS50aGV2ZXJnZS5jb20vd3AtY29udGVudC91cGxvYWRzL3NpdGVzLzIvMjAyNS8wOC9TVEsxNTVfT1BFTl9BSV80X0NWaXJnaW5pYV9BLnBuZz9xdWFsaXR5PTkwJnN0cmlwPWFsbCZjcm9wPTAsMCwxMDAsMTAw"
-    },
-    {
-      "id": "at_51055468670",
-      "title": "The New York Times sues Brave web browser for AI scraping and bypassing paywalls",
-      "url": "https://www.theverge.com/tech/1024588/brave-lawsuit-ai-scraping-new-york-times",
-      "summary": "The New York Times and a group of other publications have filed lawsuits against the company that makes the Brave web browser over alleged unlawful scraping to train AI and also letting users bypass their paywalls, as reported by Reuters. According to a complaint filed by the New York Daily News, the Chicago Tribune, and the Orlando...",
-      "source": "Jay Peters via The Verge - Artificial Intelligences",
-      "image": "https://www.inoreader.com/camo/s_6hXJ4Mqrrvg4pHbe2bpyrXsFLaQ3JMvSVjEXBH9YoY,q80,480x400,pf,b64/aHR0cHM6Ly9wbGF0Zm9ybS50aGV2ZXJnZS5jb20vd3AtY29udGVudC91cGxvYWRzL3NpdGVzLzIvMjAyNi8xMS9nZXR0eWltYWdlcy0yMjg5OTExNjM3LmpwZz9xdWFsaXR5PTkwJnN0cmlwPWFsbCZjcm9wPTAsMCwxMDAsMTAw"
-    },
-    {
-      "id": "at_51054572978",
-      "title": "42AI comes out of stealth with $62.5M and a world model that can ‘predict human behavior’",
-      "url": "https://techcrunch.com/2026/11/02/42ai-comes-out-of-stealth-with-62-5m-and-a-world-model-that-can-predict-human-behavior/",
-      "summary": "Here's a question straight out of sci-fi: What if AI could predict what you were going to do before you decided to, even in a completely new situation?",
-      "source": "Ram Iyer via AI | TechCrunch",
-      "image": "https://www.inoreader.com/camo/sCV9E3IaQ5OaP7C-2J3ujHXcy_mQoJvFczbNt9y4mfrA,q80,480x400,pf,b64/aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNi8xMS9JTUdfMzU3Mi5qcGVnP3Jlc2l6ZT0xNjAwLDExOTM"
-    },
-    {
-      "id": "at_51054572987",
-      "title": "Elon Musk throttles Grok Bot limits due to ‘unsustainably high’ costs",
-      "url": "https://techcrunch.com/2026/11/02/elon-musk-throttles-grok-bot-limits-due-to-unsustainably-high-costs/",
-      "summary": "Musk recently referred to Grok Bot as having \"the fastest growth of a product that I've ever seen in my life.\"",
-      "source": "Amanda Silberling via AI | TechCrunch",
-      "image": "https://www.inoreader.com/camo/sqqN3eQD1Se8tY8cnJyW_EqqnjNsr4L4v5M77JRljans,q80,480x400,pf,b64/aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNi8wMy9ncm9rLWdldHR5LmpwZz9yZXNpemU9MTYwMCwxMDY3"
-    },
-    {
-      "id": "at_51053925860",
-      "title": "When AI agents agree on the data but not what it means",
-      "url": "https://venturebeat.com/data/when-ai-agents-agree-on-the-data-but-not-what-it-means",
-      "summary": "Presented by SAPRead more",
-      "source": "via VentureBeat",
-      "image": "https://www.inoreader.com/camo/sMMpg7xSwfeCemhVGL02_p78uNyhBxlNDWRoTVam2RI8,q80,480x400,pf,b64/aHR0cHM6Ly9pbWFnZXMuY3RmYXNzZXRzLm5ldC9qZHR3cWh6dmMybjEvNFNIUE0xWXMyc1JJZzBmbVVTd3VQQi9lYzIyNzA4OGQ0YjhmYjJmYjUyYzE2ZTZiYzAxZTExMi9TQVAuOS5wbmc_dz0xNjAwJnE9ODA"
     }
   ]
 }
