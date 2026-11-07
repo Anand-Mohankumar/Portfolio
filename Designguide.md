@@ -151,7 +151,7 @@ Use these as defaults:
 
 ### Main Window Card
 
-Use warm charcoal for primary app panels. A restrained peach/copper glow below and a muted cool tint above connect the surfaces to the animated wallpaper. Keep the fills nearly opaque for reading and overlapping windows; do not add live backdrop blur to window cards.
+Use warm charcoal for primary app panels. A restrained peach/copper glow below and a muted cool tint above connect the surfaces to the animated wallpaper. Use the same translucent neutral charcoal tint and 28px backdrop blur for every window, whether isolated or overlapping. Keep the fill light (24% opacity) with a subtle white sheen so the wallpaper and lower windows remain visible through the glass. Retain a solid fallback for browsers without backdrop blur and for reduced-transparency or increased-contrast preferences.
 
 ```css
 .window-card {

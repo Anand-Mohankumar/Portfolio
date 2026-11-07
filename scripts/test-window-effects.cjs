@@ -30,7 +30,7 @@ vm.runInContext(controller, context);
 const update = () => vm.runInContext('updateWindowEffects()', context);
 const is = (name, state) => cards[name].classList.contains(state);
 update();
-assert.equal(is('home', 'overlaps-window'), false, 'a single window has no live blur');
+assert.equal(is('home', 'overlaps-window'), false, 'a single window has no overlap state');
 context.openWindows.push('skills'); update();
 assert.ok(is('skills', 'overlaps-window'), 'foreground glass samples the lower window');
 assert.ok(is('home', 'background-window'), 'covered Home pauses interactions');

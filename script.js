@@ -582,8 +582,8 @@ function repositionStack() {
   scheduleWindowEffects();
 }
 
-// Sample actual bounds in paint order: a lower window stays still behind glass,
-// while a window with nothing underneath keeps its inexpensive opaque surface.
+// Sample actual bounds in paint order so covered windows pause interactions.
+// The glass surface itself stays consistent at every stack depth.
 let windowEffectsFrame = null;
 const windowTransitions = new Set();
 function scheduleWindowEffects() {

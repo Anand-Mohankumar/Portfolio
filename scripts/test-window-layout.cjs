@@ -55,7 +55,7 @@ const { chromium } = require('playwright');
             const below = !mobile && visible.some(other => Number(getComputedStyle(other).zIndex) < z && overlaps(other));
             return card.classList.contains('background-window') === above &&
               card.classList.contains('overlaps-window') === below &&
-              (getComputedStyle(card).backdropFilter !== 'none') === below;
+              getComputedStyle(card).backdropFilter === 'blur(28px) saturate(1.15)';
           }),
           transientState: visible.some(card => card.inert || card.style.clipPath || card.style.opacity),
           activeCount: visible.filter(card => card.classList.contains('active-window')).length
@@ -67,7 +67,7 @@ const { chromium } = require('playwright');
       assert.ok(result.systemFits, 'system icons fit alongside overflowing tabs');
       assert.ok(result.windowsFit, 'desktop windows fit between topbar and dock');
       assert.ok(result.surfacesClipped, 'window descendants stay within rounded surfaces');
-      assert.ok(result.overlapStatesCorrect, 'overlapping foreground windows use glass and covered windows pause interactions');
+      assert.ok(result.overlapStatesCorrect, 'every window uses the same glass and covered windows pause interactions');
       assert.equal(result.transientState, false, 'completed animations leave no clipping, opacity or inert state');
       assert.equal(result.activeCount, 1, 'one foreground window');
     };

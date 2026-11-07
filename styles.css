@@ -777,7 +777,7 @@
       z-index: 2; /* Above the desktop clock (1), below the topbar/dock. */
     }
 
-    /* Single windows keep their solid reading surface; overlap adds live glass. */
+    /* Consistent glass at every stack depth; solid fallback for older browsers. */
     .window-card {
       background: var(--surface-window);
 
@@ -856,14 +856,14 @@
     }
 
     @supports ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {
-      .window-card.overlaps-window {
+      .window-card {
         background:
-          linear-gradient(145deg, rgba(255, 244, 230, 0.10), rgba(255, 244, 230, 0.015) 55%),
-          rgba(30, 27, 24, 0.48);
-        backdrop-filter: blur(28px) saturate(125%);
-        -webkit-backdrop-filter: blur(28px) saturate(125%);
-        border-color: rgba(255, 244, 230, 0.26);
-        box-shadow: var(--shadow-window), inset 0 1px 0 rgba(255, 244, 230, 0.16);
+          linear-gradient(145deg, rgba(255, 255, 255, 0.075), rgba(255, 255, 255, 0.015) 55%),
+          rgba(24, 24, 24, 0.24);
+        backdrop-filter: blur(28px) saturate(115%);
+        -webkit-backdrop-filter: blur(28px) saturate(115%);
+        border-color: rgba(255, 255, 255, 0.22);
+        box-shadow: var(--shadow-window), inset 0 1px 0 rgba(255, 255, 255, 0.14);
       }
     }
 
