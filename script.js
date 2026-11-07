@@ -220,6 +220,7 @@ function workspaceBounds() {
 }
 
 function positionWindow(card, depth = 0) {
+  scheduleWindowEffects();
   if (mobileLayout.matches) {
     card.style.left = card.style.top = card.style.transform = '';
     return;
@@ -578,6 +579,56 @@ function repositionStack() {
     if (!card || card.style.display === 'none' || windowMotion.has(card)) return;
     positionWindow(card, visible.length - 1 - index);
   });
+  scheduleWindowEffects();
+}
+
+// Sample actual bounds in paint order: a lower window stays still behind glass,
+// while a window with nothing underneath keeps its inexpensive opaque surface.
+let windowEffectsFrame = null;
+const windowTransitions = new Set();
+function scheduleWindowEffects() {
+  if (windowEffectsFrame !== null) return;
+  windowEffectsFrame = requestAnimationFrame(updateWindowEffects);
+}
+
+function updateWindowEffects() {
+  windowEffectsFrame = null;
+  const visible = openWindows.filter(name => !minimizedWindows.has(name) && !closingWindows.has(name) && cards[name]?.style.display !== 'none');
+  const bounds = mobileLayout.matches ? [] : visible.map(name => ({ card: cards[name], rect: cards[name].getBoundingClientRect() }));
+  const glass = new Set();
+  const background = new Set();
+  bounds.forEach((upper, index) => {
+    for (const lower of bounds.slice(0, index)) {
+      if (Math.min(upper.rect.right, lower.rect.right) > Math.max(upper.rect.left, lower.rect.left) &&
+          Math.min(upper.rect.bottom, lower.rect.bottom) > Math.max(upper.rect.top, lower.rect.top)) {
+        glass.add(upper.card);
+        background.add(lower.card);
+      }
+    }
+  });
+  Object.values(cards).forEach(card => {
+    if (!card) return;
+    const wasBackground = card.classList.contains('background-window');
+    card.classList.toggle('overlaps-window', glass.has(card));
+    card.classList.toggle('background-window', background.has(card));
+    if (wasBackground !== background.has(card)) card.dispatchEvent(new Event('windoweffectschange'));
+  });
+  if (isDragging || windowTransitions.size || visible.some(name => windowMotion.has(cards[name]))) scheduleWindowEffects();
+}
+
+Object.values(cards).forEach(card => {
+  if (!card) return;
+  ['transitionrun', 'transitionend', 'transitioncancel'].forEach(type => card.addEventListener(type, event => {
+    if (event.target !== card || !['transform', 'left', 'top', 'width', 'height'].includes(event.propertyName)) return;
+    const key = `${card.id}:${event.propertyName}`;
+    if (type === 'transitionrun') windowTransitions.add(key);
+    else windowTransitions.delete(key);
+    scheduleWindowEffects();
+  }));
+});
+if ('ResizeObserver' in window) {
+  const windowSizes = new ResizeObserver(scheduleWindowEffects);
+  Object.values(cards).forEach(card => { if (card) windowSizes.observe(card); });
 }
 
 let dragOrigin = null;
@@ -739,6 +790,7 @@ function hideWindow(viewName, minimize) {
   cancelWindowMotion(card);
   if (minimize) minimizedWindows.add(viewName);
   else closingWindows.add(viewName);
+  scheduleWindowEffects();
   if (mobileLayout.matches || windowReducedMotion.matches || card.style.display === 'none') {
     finishHidingWindow(viewName, minimize);
     return;
@@ -902,6 +954,7 @@ const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matc
 const hoverBtns = document.querySelectorAll('.hover-btn');
 hoverBtns.forEach(btn => {
   btn.addEventListener('mousemove', (e) => {
+    if (btn.closest('.background-window')) return;
     const rect = btn.getBoundingClientRect();
     const x = e.clientX - rect.left;
     const y = e.clientY - rect.top;
@@ -1497,6 +1550,7 @@ document.addEventListener('DOMContentLoaded', observeMutations);
   };
 
   const frame = character.closest('.profile-avatar-frame');
+  const home = character.closest('.window-card');
   const pupils = character.querySelectorAll('.av-pupil');
   const lids = character.querySelectorAll('.av-lid');
   const lashes = character.querySelectorAll('.av-lash');
@@ -1529,6 +1583,7 @@ document.addEventListener('DOMContentLoaded', observeMutations);
 
   // ---- input ---------------------------------------------------------------
   function point(cx, cy) {
+    if (!visible || home.classList.contains('background-window')) return;
     pointer = { x: cx, y: cy };
     lastMove = performance.now() / 1000;
     glance = null;
@@ -1547,7 +1602,9 @@ document.addEventListener('DOMContentLoaded', observeMutations);
   document.addEventListener('pointermove', e => point(e.clientX, e.clientY), { passive: true });
   document.addEventListener('touchstart', e => { const t = e.touches[0]; if (t) point(t.clientX, t.clientY); }, { passive: true });
   document.documentElement.addEventListener('mouseleave', () => { pointer = null; target.x = 0; target.y = 0; });
-  character.addEventListener('pointerdown', () => { nod = 1; scheduleBlink(0, true); });
+  character.addEventListener('pointerdown', () => {
+    if (!home.classList.contains('background-window')) { nod = 1; scheduleBlink(0, true); }
+  });
 
   // ---- blinking ------------------------------------------------------------
   function scheduleBlink(delay, twice) {
@@ -1674,7 +1731,17 @@ document.addEventListener('DOMContentLoaded', observeMutations);
 
   // ---- run only while on screen ---------------------------------------------
   function setVisible(v) {
-    visible = v && !document.hidden;
+    visible = v && !document.hidden && !home.classList.contains('background-window');
+    if (!visible) {
+      cancelAnimationFrame(raf);
+      raf = 0;
+      pointer = null;
+      target.x = target.y = 0;
+      glance = null;
+      nod = 0;
+      zoom = 1;
+      frame?.style.setProperty('--avatar-zoom', '1');
+    }
     if (visible && !raf) { last = performance.now(); measure(); raf = requestAnimationFrame(tick); }
   }
   let onScreen = true;
@@ -1690,6 +1757,7 @@ document.addEventListener('DOMContentLoaded', observeMutations);
   if ('ResizeObserver' in window) new ResizeObserver(measure).observe(stage);
   else window.addEventListener('resize', measure);
   document.addEventListener('visibilitychange', () => setVisible(onScreen));
+  home.addEventListener('windoweffectschange', () => setVisible(onScreen));
   setVisible(onScreen);
 })();
 // --- Glass Dialog (themed replacement for alert/confirm/prompt) ---
@@ -1827,3 +1895,4 @@ document.querySelectorAll('.prompt-image-container').forEach(container => {
     if (container.contains(document.activeElement)) document.activeElement.blur();
   });
 });
+

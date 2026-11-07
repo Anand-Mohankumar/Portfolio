@@ -44,7 +44,19 @@ const { chromium } = require('playwright');
             return r.top >= 69 && r.left >= 19 && r.right <= innerWidth - 19 && r.bottom <= innerHeight - 111;
           }),
           surfacesClipped: visible.every(card => getComputedStyle(card).overflow === 'hidden'),
-          liveWindowBlur: visible.some(card => getComputedStyle(card).backdropFilter !== 'none'),
+          overlapStatesCorrect: visible.every(card => {
+            const r = card.getBoundingClientRect();
+            const overlaps = other => {
+              const o = other.getBoundingClientRect();
+              return Math.min(r.right, o.right) > Math.max(r.left, o.left) && Math.min(r.bottom, o.bottom) > Math.max(r.top, o.top);
+            };
+            const z = Number(getComputedStyle(card).zIndex);
+            const above = !mobile && visible.some(other => Number(getComputedStyle(other).zIndex) > z && overlaps(other));
+            const below = !mobile && visible.some(other => Number(getComputedStyle(other).zIndex) < z && overlaps(other));
+            return card.classList.contains('background-window') === above &&
+              card.classList.contains('overlaps-window') === below &&
+              (getComputedStyle(card).backdropFilter !== 'none') === below;
+          }),
           transientState: visible.some(card => card.inert || card.style.clipPath || card.style.opacity),
           activeCount: visible.filter(card => card.classList.contains('active-window')).length
         };
@@ -55,7 +67,7 @@ const { chromium } = require('playwright');
       assert.ok(result.systemFits, 'system icons fit alongside overflowing tabs');
       assert.ok(result.windowsFit, 'desktop windows fit between topbar and dock');
       assert.ok(result.surfacesClipped, 'window descendants stay within rounded surfaces');
-      assert.equal(result.liveWindowBlur, false, 'overlapping windows do not sample live backdrops');
+      assert.ok(result.overlapStatesCorrect, 'overlapping foreground windows use glass and covered windows pause interactions');
       assert.equal(result.transientState, false, 'completed animations leave no clipping, opacity or inert state');
       assert.equal(result.activeCount, 1, 'one foreground window');
     };
@@ -140,3 +152,4 @@ const { chromium } = require('playwright');
     await browser.close();
   }
 })().catch(error => { console.error(error); process.exitCode = 1; });
+

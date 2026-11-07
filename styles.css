@@ -777,11 +777,8 @@
       z-index: 2; /* Above the desktop clock (1), below the topbar/dock. */
     }
 
-    /* Glass-style windows without overlapping live backdrop-filter layers. */
+    /* Single windows keep their solid reading surface; overlap adds live glass. */
     .window-card {
-      /* Tinted glass and sheen retain the palette without sampling other windows.
-         Avoid the live-blur/3D-transform/animated-clip combination implicated
-         by the reported Mac rendering artifacts. */
       background: var(--surface-window);
 
       border-radius: var(--radius-window);
@@ -856,6 +853,18 @@
     .window-card.active-window {
       box-shadow: var(--shadow-window), var(--shadow-ambient);
       border-color: rgba(255, 224, 194, 0.30);
+    }
+
+    @supports ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {
+      .window-card.overlaps-window {
+        background:
+          linear-gradient(145deg, rgba(255, 244, 230, 0.10), rgba(255, 244, 230, 0.015) 55%),
+          rgba(30, 27, 24, 0.48);
+        backdrop-filter: blur(28px) saturate(125%);
+        -webkit-backdrop-filter: blur(28px) saturate(125%);
+        border-color: rgba(255, 244, 230, 0.26);
+        box-shadow: var(--shadow-window), inset 0 1px 0 rgba(255, 244, 230, 0.16);
+      }
     }
 
     /* ---- REAL WINDOW STACKING ----
@@ -942,7 +951,7 @@
       color: rgba(255, 255, 255, 0.85);
     }
 
-    .control-btn:hover {
+    .control-btn:where(:not(.background-window *)):hover {
       background: linear-gradient(145deg, rgba(255, 224, 194, 0.3), rgba(255, 224, 194, 0.1));
       border-color: rgba(255, 255, 255, 0.5);
       color: #fff;
@@ -955,13 +964,13 @@
       box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.1);
     }
 
-    .btn-close:hover {
+    .btn-close:where(:not(.background-window *)):hover {
       background: linear-gradient(145deg, rgba(255, 95, 87, 0.4), rgba(255, 95, 87, 0.2));
       border-color: rgba(255, 95, 87, 0.5);
       color: #fff;
     }
 
-    .btn-maximize:hover {
+    .btn-maximize:where(:not(.background-window *)):hover {
       background: linear-gradient(145deg, rgba(0, 150, 136, 0.4), rgba(0, 150, 136, 0.2));
       border-color: rgba(0, 150, 136, 0.5);
       color: #fff;
@@ -994,7 +1003,7 @@
       border-radius: 3px;
     }
 
-    .card-content::-webkit-scrollbar-thumb:hover {
+    .card-content:where(:not(.background-window *))::-webkit-scrollbar-thumb:hover {
       background: rgba(196, 90, 42, 0.75);
     }
 
@@ -1020,7 +1029,7 @@
       transition: box-shadow 0.3s;
     }
 
-    .profile-avatar:hover .profile-avatar-frame {
+    .profile-avatar:where(:not(.background-window *)):hover .profile-avatar-frame {
       box-shadow: 0 10px 36px rgba(0, 0, 0, 0.45), 0 0 40px rgba(196, 90, 42, 0.4);
     }
 
@@ -1192,7 +1201,7 @@
       transition: background-color 160ms ease, border-color 160ms ease, color 160ms ease, box-shadow 160ms ease, opacity 160ms ease, transform 0.3s;
     }
 
-    .social-btn:hover {
+    .social-btn:where(:not(.background-window *)):hover {
       background: rgba(255, 255, 255, 0.15);
       border-color: rgba(255, 255, 255, 0.3);
       transform: translateY(-2px);
@@ -1290,7 +1299,7 @@
       border-radius: 10px;
     }
 
-    .glowing-btn:hover .inner {
+    .glowing-btn:where(:not(.background-window *)):hover .inner {
       opacity: 1;
     }
 
@@ -1324,7 +1333,7 @@
     }
 
     .sidebar-item:hover::after,
-    .skill-tag:hover::after {
+    .skill-tag:where(:not(.background-window *)):hover::after {
       opacity: 1;
     }
 
@@ -1378,14 +1387,14 @@
       /* KEY FIX: Don't capture clicks */
     }
 
-    .project-item:hover {
+    .project-item:where(:not(.background-window *)):hover {
       background: var(--color-surface-hover);
       border-color: rgba(255, 255, 255, 0.2);
       transform: translateY(-4px);
       box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
     }
 
-    .project-item:hover::before {
+    .project-item:where(:not(.background-window *)):hover::before {
       opacity: 1;
     }
 
@@ -1438,7 +1447,7 @@
       box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.08);
     }
 
-    .skill-tag:hover {
+    .skill-tag:where(:not(.background-window *)):hover {
       background: rgba(196, 90, 42, 0.15);
       border-color: rgba(196, 90, 42, 0.5);
       box-shadow: 0 4px 14px rgba(196, 90, 42, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.08);
@@ -1538,7 +1547,7 @@
       overflow: hidden;
     }
 
-    .resource-hero-card:hover {
+    .resource-hero-card:where(:not(.background-window *)):hover {
       background: linear-gradient(145deg, rgba(255, 224, 194, 0.12), rgba(255, 224, 194, 0.04));
       transform: translateY(-6px);
       box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
@@ -1584,7 +1593,7 @@
       flex-direction: column;
     }
 
-    .infographic-item:hover {
+    .infographic-item:where(:not(.background-window *)):hover {
       transform: translateY(-5px);
       box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
       border-color: rgba(255, 255, 255, 0.3);
@@ -1643,7 +1652,7 @@
       cursor: pointer;
     }
 
-    .article-item:hover {
+    .article-item:where(:not(.background-window *)):hover {
       background: rgba(255, 255, 255, 0.08);
       border-color: rgba(255, 255, 255, 0.15);
       transform: translateX(4px);
@@ -1685,7 +1694,7 @@
       color: rgba(255, 255, 255, 0.5);
     }
 
-    .article-item:hover .art-arrow {
+    .article-item:where(:not(.background-window *)):hover .art-arrow {
       opacity: 1;
       transform: translateX(0);
     }
@@ -1932,7 +1941,7 @@
       justify-content: center;
       transition: background-color 160ms ease, border-color 160ms ease, color 160ms ease, box-shadow 160ms ease, opacity 160ms ease, transform 0.2s;
     }
-    .doc-control-btn:hover {
+    .doc-control-btn:where(:not(.background-window *)):hover {
       background: rgba(255, 255, 255, 0.1);
       color: #fff;
     }
@@ -1989,7 +1998,7 @@
       font-size: 13px;
       transition: background-color 160ms ease, border-color 160ms ease, color 160ms ease, box-shadow 160ms ease, opacity 160ms ease, transform 0.2s;
     }
-    .toolbar-btn:hover {
+    .toolbar-btn:where(:not(.background-window *)):hover {
       background: rgba(255, 255, 255, 0.1);
       border-color: rgba(255, 255, 255, 0.2);
     }
@@ -2023,7 +2032,7 @@
       border: 5px solid transparent;
       border-right-color: rgba(255, 255, 255, 0.18);
     }
-    .toolbar-btn:hover .toolbar-tooltip {
+    .toolbar-btn:where(:not(.background-window *)):hover .toolbar-tooltip {
       opacity: 1;
       transform: translateY(-50%) translateX(0);
     }
@@ -2099,7 +2108,7 @@
       cursor: pointer;
       transition: background-color 160ms ease, border-color 160ms ease, color 160ms ease, box-shadow 160ms ease, opacity 160ms ease, transform 0.2s;
     }
-    .floating-btn:hover {
+    .floating-btn:where(:not(.background-window *)):hover {
       background: rgba(255, 255, 255, 0.15);
       color: #fff;
     }
@@ -2170,7 +2179,7 @@
       color: #7EC8C8;
       text-decoration: none;
     }
-    .markdownify-editor a:hover {
+    .markdownify-editor a:where(:not(.background-window *)):hover {
       text-decoration: underline;
     }
     .markdownify-editor ul, .markdownify-editor ol {
@@ -2205,8 +2214,8 @@
       background: linear-gradient(180deg, rgba(196, 90, 42, 0.55), rgba(196, 90, 42, 0.3));
       border-radius: 3px;
     }
-    .markdownify-editor::-webkit-scrollbar-thumb:hover,
-    .markdownify-source::-webkit-scrollbar-thumb:hover {
+    .markdownify-editor:where(:not(.background-window *))::-webkit-scrollbar-thumb:hover,
+    .markdownify-source:where(:not(.background-window *))::-webkit-scrollbar-thumb:hover {
       background: rgba(196, 90, 42, 0.75);
     }
 
@@ -2288,7 +2297,7 @@
     }
 
     @media (hover: hover) and (pointer: fine) {
-    .prompt-image-container:not(.prompt-dismissed):hover .prompt-overlay {
+    .prompt-image-container:not(.prompt-dismissed):where(:not(.background-window *)):hover .prompt-overlay {
       opacity: 1;
       visibility: visible;
       pointer-events: auto;
@@ -2323,7 +2332,7 @@
       border-radius: 3px;
     }
 
-    .prompt-text::-webkit-scrollbar-thumb:hover {
+    .prompt-text:where(:not(.background-window *))::-webkit-scrollbar-thumb:hover {
       background: rgba(196, 90, 42, 0.75);
     }
 
@@ -2342,7 +2351,7 @@
       transition: background 0.2s, transform 0.2s;
     }
 
-    .copy-prompt-btn:hover {
+    .copy-prompt-btn:where(:not(.background-window *)):hover {
       background: rgba(196, 90, 42, 1);
       transform: scale(1.05);
     }
@@ -2570,7 +2579,7 @@
   flex-shrink: 0;
   white-space: nowrap;
 }
-.global-close-all-btn:hover {
+.global-close-all-btn:where(:not(.background-window *)):hover {
   background: linear-gradient(145deg, rgba(255, 95, 87, 0.4), rgba(255, 95, 87, 0.2));
   border-color: rgba(255, 95, 87, 0.5);
   color: #fff;
@@ -2678,14 +2687,14 @@
 .newsfeed-article img { width: 112px; height: 92px; object-fit: cover; border-radius: 8px; flex-shrink: 0; }
 .newsfeed-article h3 { font-size: 16px; font-weight: 600; line-height: 1.45; margin-bottom: 8px; overflow-wrap: anywhere; }
 .newsfeed-article h3 a, .newsfeed-article h3 a:visited { color: var(--color-text); text-decoration: none; }
-.newsfeed-article h3 a:hover { color: var(--color-link); text-decoration: underline; }
+.newsfeed-article h3 a:where(:not(.background-window *)):hover { color: var(--color-link); text-decoration: underline; }
 .newsfeed-source { color: var(--color-text-secondary); font-size: 12px; line-height: 1.6; margin-bottom: 8px; }
 .newsfeed-summary { color: var(--color-text-secondary); font-size: 14px; line-height: 1.65; overflow-wrap: anywhere; }
 .newsfeed-pagination { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; padding: 12px 0 4px; }
 .newsfeed-pagination[hidden], #newsfeed-retry[hidden] { display: none; }
 .newsfeed-pagination span { font-size: 12px; color: var(--color-text-secondary); }
 .newsfeed-pagination button, #newsfeed-retry { font: inherit; font-size: 14px; min-height: 40px; padding: 8px 12px; color: var(--color-text); background: var(--color-surface-soft); border: 1px solid var(--color-border-strong); border-radius: var(--radius-control); cursor: pointer; }
-.newsfeed-pagination button:hover:enabled, #newsfeed-retry:hover { background: var(--color-surface-hover); border-color: var(--color-accent-orange); }
+.newsfeed-pagination button:where(:not(.background-window *)):hover:enabled, #newsfeed-retry:where(:not(.background-window *)):hover { background: var(--color-surface-hover); border-color: var(--color-accent-orange); }
 .newsfeed-pagination button:disabled { opacity: .45; cursor: default; }
 .newsfeed-content a:focus-visible, .newsfeed-content button:focus-visible { outline: 2px solid var(--color-link); outline-offset: 3px; }
 .newsfeed-heading h2:focus { outline: none; }
@@ -2695,3 +2704,4 @@
   .newsfeed-article img { width: 100%; height: 160px; }
   .newsfeed-pagination { justify-content: center; }
 }
+
