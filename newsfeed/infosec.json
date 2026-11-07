@@ -1,6 +1,54 @@
 {
-  "updatedAt": "2026-11-06T19:25:46.657619+00:00",
+  "updatedAt": "2026-11-07T00:07:17.996919+00:00",
   "articles": [
+    {
+      "id": "at_51105573518",
+      "title": "White House Network Appears in Global Residential Proxy Traffic",
+      "url": "https://securityaffairs.com/202563/security/white-house-network-appears-in-global-residential-proxy-traffic.html",
+      "summary": "Layer3 found residential proxy traffic using the White House network, raising concerns about potential exposure of internal systems. Layer3 Intel says it found residential proxy traffic leaving through the White House network. The researchers spotted it while browsing their new Residential Proxy Observatory, a tool that gives a global view...",
+      "source": "Pierluigi Paganini via Security Affairs",
+      "image": "https://www.inoreader.com/camo/sSKUTHAlKt8BBevpSN7bWnykoLaGyOOhlk8r6Ij13yRI,q80,480x400,pf,b64/aHR0cHM6Ly9pMC53cC5jb20vc2VjdXJpdHlhZmZhaXJzLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNi8xMS9pbWFnZS0xMi5wbmc_dz0xMDgwJnNzbD0x"
+    },
+    {
+      "id": "at_51105440516",
+      "title": "AI hates us all, Binance, OpenSSH, Apple, WordPress, DNS, Scams, Josh Marpet and more - SWN #631",
+      "url": "https://www.scworld.com/podcast-segment/15330-ai-hates-us-all-binance-openssh-apple-wordpress-dns-scams-josh-marpet-and-more-swn-631",
+      "summary": "",
+      "source": "Doug White via Latest articles from SC Magazine",
+      "image": "https://www.inoreader.com/camo/s0fbPVnMLcqbDBdlqW7yEuGFzvKCk7n6oDxRBWNibvKo,q80,480x400,pf,b64/aHR0cHM6Ly9maWxlcy5jeWJlcnJpc2thbGxpYW5jZS5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjYvMTEvU1dOXzYzMV9GUklfVGh1bWJuYWlsX1NXTl8xOTIweDEwODBfY2ExZjFlZDAtNzEwMC00MWI5LWIwZDctNjVmZjUxYjBjYzI2LmpwZw"
+    },
+    {
+      "id": "at_51105440517",
+      "title": "FBI, CISA warn of cyberattacks targeting refrigeration systems",
+      "url": "https://www.scworld.com/news/fbi-cisa-warn-of-cyberattacks-targeting-refrigeration-systems",
+      "summary": "FBI and CISA urge refrigeration operators to secure systems amid suspected cyberattacks.",
+      "source": "Steve Zurier via Latest articles from SC Magazine",
+      "image": "https://www.inoreader.com/camo/sU61AYsFXAg7-edIRhbSZi27Y9LZjwsyC9wnGNDDs58s,q80,480x400,pf,b64/aHR0cHM6Ly9maWxlcy5jeWJlcnJpc2thbGxpYW5jZS5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjQvMDEvMDEzMDI0X2ZiaV9zaXRlLmpwZw"
+    },
+    {
+      "id": "at_51105430234",
+      "title": "Runaway AI hacking agent behind WorkOS breach after escaping sandbox",
+      "url": "https://www.bleepingcomputer.com/news/security/runaway-ai-hacking-agent-behind-workos-breach-after-escaping-sandbox/",
+      "summary": "WorkOS says an AI-powered hacking agent that breached its internal sales application and accessed customer information was operated by a security researcher who claims the tool escaped its testing environment and unintentionally attacked the company. [...]",
+      "source": "Lawrence Abrams via Bleeping Computer",
+      "image": "https://www.inoreader.com/camo/sAdoldU1ausfZGm3DWS546uW5NkYxApg4KHdm6kPc-5w,q80,480x400,pf,b64/aHR0cHM6Ly93d3cuYmxlZXBzdGF0aWMuY29tL2NvbnRlbnQvaGwtaW1hZ2VzLzIwMjYvMTEvMDMvd29ya29zLmpwZw"
+    },
+    {
+      "id": "at_51104603508",
+      "title": "OpenAI's new GPT-6 Cyber AI finds 81 Firefox flaws, 948 Linux bugs",
+      "url": "https://www.bleepingcomputer.com/news/security/openais-new-gpt-6-cyber-ai-finds-81-firefox-flaws-948-linux-bugs/",
+      "summary": "OpenAI has revealed GPT-6 Cyber, a new artificial intelligence model that has discovered 81 previously unknown high-severity Firefox vulnerabilities and developed working exploits for 948 distinct Linux kernel flaws. [...]",
+      "source": "Lawrence Abrams via Bleeping Computer",
+      "image": "https://www.inoreader.com/camo/sah6jb5t9AgAJ8jPrBG-OCqJMOLbFJjq-_j3mWRPIfbs,q80,480x400,pf,b64/aHR0cHM6Ly93d3cuYmxlZXBzdGF0aWMuY29tL2NvbnRlbnQvaGwtaW1hZ2VzLzIwMjYvMDcvMjkvb3BlbmFpLWVzY2FwZS1zYW5kYm94LmpwZw"
+    },
+    {
+      "id": "at_51104565173",
+      "title": "The 'Frankensteinization of the Internet.' Thanks, Meta",
+      "url": "https://www.scworld.com/perspective/the-frankensteinization-of-the-internet-thanks-meta",
+      "summary": "AI agents blur the line between humans and machines, challenging digital identity and online trust.",
+      "source": "Mikhaylo Pavlyuk via Latest articles from SC Magazine",
+      "image": "https://www.inoreader.com/camo/stRsEGQbj_hxTg5mTcceoGTyhz4_3Ept0iIAMwDY6OwY,q80,480x400,pf,b64/aHR0cHM6Ly9maWxlcy5jeWJlcnJpc2thbGxpYW5jZS5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjYvMTEvMTEwNjI2X2FpX2FnZW50X3JvYm90X2h1bWFuX3NlcnZlci5qcGc"
+    },
     {
       "id": "at_51103848430",
       "title": "Fake security tools on GitHub push backdoors and infostealers",
@@ -1552,54 +1600,6 @@
       "summary": "Google has released Chrome 157 for Windows, macOS, and Linux, fixing 213 security bugs, including seven rated critical. Announced on November 3, 2026, the update addresses flaws across graphics, memory handling, browser features, and access controls. Google says the stable release will reach users over the coming days and weeks. The patched versions...",
       "source": "Guru Baran via Cyber Security News",
       "image": "https://www.inoreader.com/camo/sp0kb8gZoIGialsUqO3ZtI1IJ239OqYknvYxF7pcRNMg,q80,480x400,pf,b64/aHR0cHM6Ly9jeWJlcnNlY3VyaXR5bmV3cy5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjYvMTEvTWFqb3ItQ2hyb21lLVNlY3VyaXR5LVVwZGF0ZS53ZWJw"
-    },
-    {
-      "id": "at_51075707817",
-      "title": "Russian APT29 Hackers Turn Trusted Websites Into Traps to Compromise iPhone and Android Users",
-      "url": "https://cybersecuritynews.com/russian-apt29-hackers/",
-      "summary": "A Russian state-linked hacking group is using trusted websites to quietly break into phones. Researchers say APT29, also known as Midnight Blizzard or Cozy Bear, planted hidden code on real and cloned sites in the US, Ukraine, the Czech Republic and Bulgaria. Visitors with out-of-date iPhones or Android phones can lose cookies, Wi-Fi passwords...",
-      "source": "Tushar Subhra Dutta via Cyber Security News",
-      "image": "https://www.inoreader.com/camo/szjN7WfQvY0S2jGtDnXWmmEdKXb1CG9t6FwS9rtG7MBg,q80,480x400,pf,b64/aHR0cHM6Ly9ibG9nZ2VyLmdvb2dsZXVzZXJjb250ZW50LmNvbS9pbWcvYi9SMjl2WjJ4bC9BVnZYc0VnMDk4Yi0wNGhzX0E4NlB2d0hlZWpKS1BDb1g3LVdVT2htbzNPd3RxNTk1bG5vWHlNRVQzUTgwNWsxNmdsUGwzMUJJT3dOakRHVzlSeDdGaVdsNlZvRmhpVGdNbExKbzM4NnlaYUIybVRYUmFBMGlvbkp1b0RuWFZ4UVNCQmprTVFNbHFSaklTb1hvRVlqUmhvVWExTWpOX0szMGRUTlZjM3FGNlNUOHlieW1rY1luMjl2UmZQMnVrNTVYdGcvczE2MDAvRXhwbG9pdCUyMGNoYWluJTIwKFNvdXJjZSUyMC0lMjBTZWtvaWEpLndlYnA"
-    },
-    {
-      "id": "at_51075707828",
-      "title": "Cloudflare Launches Zero Wire to Track Critical CVEs, Active Exploits, and Security Fixes",
-      "url": "https://cybersecuritynews.com/cloudflare-launches-zero-wire/",
-      "summary": "Cloudflare has launched Zero Wire, a public vulnerability intelligence feed designed to help security teams track critical CVEs, understand exploitation activity, and find security fixes. Announced on November 3, 2026, the service sits within Cloudflare Radar’s security section and brings technical evidence, vendor guidance, and recommended...",
-      "source": "Tushar Subhra Dutta via Cyber Security News",
-      "image": "https://www.inoreader.com/camo/sG-p48-hEffUK9FLcmOlvlzjy4hjtKZM78p3Azow_hkM,q80,480x400,pf,b64/aHR0cHM6Ly9ibG9nZ2VyLmdvb2dsZXVzZXJjb250ZW50LmNvbS9pbWcvYi9SMjl2WjJ4bC9BVnZYc0VnbW1aQkZEeGZjakdTanNIcHBpdHdkdVdaTkVVYVhUMlp0YWVhd1lPeF9IdlZwTHdmckZhR3o1OVFTbXJVX3Z1dE9HV3daNmU4akVFcXMyY09FTnBfcjcxUFphWEU5bjdvcVNtWGlxSVNBLThFOVR6Z0xONE1CcUVMNFNPZzY0ODg1TG9WUTg5NnM2dWhCc29Rbzk2Z2trYlhLMmI3cmcwTWRmd2NsZm9sRHNNS25fSjJLRGU1UHFrdVM0YjAvczE2MDAvWmVybyUyMFdpcmUlMjAoU291cmNlJTIwLSUyMENsb3VmbGFyZSkud2VicA"
-    },
-    {
-      "id": "at_51075446960",
-      "title": "It's The Trickery While Empowering Employees and Redesigning Work for AI - Frank Riccardi - BSW #472",
-      "url": "https://www.scworld.com/podcast-segment/15174-its-the-trickery-while-empowering-employees-and-redesigning-work-for-ai-frank-riccardi-bsw-472",
-      "summary": "",
-      "source": "Matt Alderman via Latest articles from SC Magazine",
-      "image": "https://www.inoreader.com/camo/sOZjGDNlUMb151iqECs2gwIjjUi8fSoG1SfOM5gJe94g,q80,480x400,pf,b64/aHR0cHM6Ly9maWxlcy5jeWJlcnJpc2thbGxpYW5jZS5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjYvMTEvQlNXXzQ3Ml9UaHVtYm5haWxfQlNXXzE5MjB4MTA4MF84Njk4N2I2ZC04ZGQ5LTQzZmItOTY5Zi1lYjA0NWMxOWIxNDAuanBn"
-    },
-    {
-      "id": "at_51075363145",
-      "title": "Malicious cPGuard Updates Served in OpsShield Supply Chain Attack",
-      "url": "https://www.securityweek.com/malicious-cpguard-updates-served-in-opsshield-supply-chain-attack/",
-      "summary": "Using compromised credentials, the attackers accessed OpsShield’s update servers and poisoned multiple cPGuard versions. The post Malicious cPGuard Updates Served in OpsShield Supply Chain Attack appeared first on SecurityWeek.",
-      "source": "Ionut Arghire via SecurityWeek",
-      "image": "https://www.inoreader.com/camo/s_jXcu8YsqvF0a3J60_39eMaec8ZXB_POkzDP7ls3XYg,q80,480x400,pf,b64/aHR0cHM6Ly93d3cuc2VjdXJpdHl3ZWVrLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNi8wNi9zdXBwbHktY2hhaW4tdGhyZWF0LndlYnA"
-    },
-    {
-      "id": "at_51075259546",
-      "title": "Chrome 157 Rolls Out With 213 Security Fixes, Seven Rated Critical",
-      "url": "https://www.securityweek.com/chrome-157-rolls-out-with-213-security-fixes-seven-rated-critical/",
-      "summary": "The browser update resolves dozens of memory safety bugs and incorrect/missing authorization issues. The post Chrome 157 Rolls Out With 213 Security Fixes, Seven Rated Critical appeared first on SecurityWeek.",
-      "source": "Ionut Arghire via SecurityWeek",
-      "image": ""
-    },
-    {
-      "id": "at_51075259548",
-      "title": "Rigged Coding Assignment, Abused AI Tool Opened Path to $6 Billion Binance Heist",
-      "url": "https://www.securityweek.com/rigged-coding-assignment-abused-ai-tool-opened-path-to-6-billion-binance-heist/",
-      "summary": "Binance’s first incident report traces the record theft to a months-long campaign that compromised three engineers’ computers. The post Rigged Coding Assignment, Abused AI Tool Opened Path to $6 Billion Binance Heist appeared first on SecurityWeek.",
-      "source": "Eduard Kovacs via SecurityWeek",
-      "image": ""
     }
   ]
 }

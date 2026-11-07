@@ -1,6 +1,182 @@
 {
-  "updatedAt": "2026-11-06T19:25:46.621678+00:00",
+  "updatedAt": "2026-11-07T00:07:17.770847+00:00",
   "articles": [
+    {
+      "id": "at_51105972545",
+      "title": "Thinking Machines launches Inkling 2 Small with near-frontier performance on enterprise benchmarks",
+      "url": "https://venturebeat.com/technology/thinking-machines-launches-inkling-2-small-with-near-frontier-performance-on-enterprise-benchmarks",
+      "summary": "Thinking Machines Lab, the AI startup led by former OpenAI chief technology officer Mira Murati, introduced Inkling 2 Small on November 5, giving developers a new option for agents that write software, interpret images, analyze financial documents and learn company-specific workflows.Read more",
+      "source": "[email protected] (Carl Franzen) via VentureBeat",
+      "image": "https://www.inoreader.com/camo/s-1r9LP2YJEyJogLP2v4zg_B_gZekMuRnAaZryN1W9KI,q80,480x400,pf,b64/aHR0cHM6Ly9pbWFnZXMuY3RmYXNzZXRzLm5ldC9qZHR3cWh6dmMybjEvNFVYMEVWdGJNWXQyNzVyaHVpWlowby9kYmQzOGJlMjIxYzJlYWEzZjg1ZGU0NTkxNWM0Zjg3Ny9Kb3lmdWxfTWFuZ2FfRHVvX0Fib3ZlX2FfRm9nZ3lfQ2l0eS5wbmc_dz0xNjAwJnE9ODA"
+    },
+    {
+      "id": "at_51105963932",
+      "title": "OpenAI valued at $1.25 trillion, as rival Anthropic nears its IPO",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1029380/openai-1-25-trillion-investment-valuation",
+      "summary": "OpenAI is now valued at $1.25 trillion in a new round of funding that has raised another $11 billion, according to Bloomberg. That would make it one of the world's most valuable companies, not long after raising $122 billion from investors in March at a valuation of $852 billion. Echoing FT and Wall Street Journal reports from last...",
+      "source": "Stevie Bonifield via The Verge - Artificial Intelligences",
+      "image": "https://www.inoreader.com/camo/sexN2p9PD2SbtyCMC1Am-2_S_O22qLwjEiqZn32egmn8,q80,480x400,pf,b64/aHR0cHM6Ly9wbGF0Zm9ybS50aGV2ZXJnZS5jb20vd3AtY29udGVudC91cGxvYWRzL3NpdGVzLzIvMjAyNi8wOS9TVEsxNTVfT1BFTl9BSV9DVmlyZ2luaWFfMl9BLmpwZz9xdWFsaXR5PTkwJnN0cmlwPWFsbCZjcm9wPTAsMCwxMDAsMTAw"
+    },
+    {
+      "id": "at_51105664413",
+      "title": "China reportedly recruited AI exec to spy on Jensen Huang",
+      "url": "https://www.theverge.com/tech/1029338/nvidia-ceo-jensen-huang-china-spy",
+      "summary": "China's intelligence agency recruited Megaspeed executive Alice Huang to spy on Nvidia CEO Jensen Huang, according to The New York Times. The Ministry of State Security (MSS) enlisted her to glean information about American AI chips and \"potentially influence the company to push for its most advanced chips to be made available to China.\"...",
+      "source": "Jay Peters via The Verge - Artificial Intelligences",
+      "image": "https://www.inoreader.com/camo/s-WqIdyVtHMJBhBARMZVaF0W3u65VUSsQs1oYM-b5l9Y,q80,480x400,pf,b64/aHR0cHM6Ly9wbGF0Zm9ybS50aGV2ZXJnZS5jb20vd3AtY29udGVudC91cGxvYWRzL3NpdGVzLzIvMjAyNi8wNy9TVEtQMjEwX0pFTlNFTl9IVUFOR19BLmpwZz9xdWFsaXR5PTkwJnN0cmlwPWFsbCZjcm9wPTAsMCwxMDAsMTAw"
+    },
+    {
+      "id": "at_51105600716",
+      "title": "OpenAI reportedly raises an additional $11 billion at a $1.25 trillion valuation",
+      "url": "https://techcrunch.com/2026/11/06/openai-reportedly-raises-an-additional-11-billion-at-a-1-25-trillion-valuation/",
+      "summary": "OpenAI has reportedly raised an additional $11 billion as part of a funding round that hasn't closed yet but is expected to in the coming weeks.",
+      "source": "Lucas Ropek via AI | TechCrunch",
+      "image": ""
+    },
+    {
+      "id": "at_51104408989",
+      "title": "All the latest updates on AI data centers",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/902546/data-centers-ai-energy-power-grids-controversy",
+      "summary": "Massive new data centers are the physical foundation for tech companies’ hopes and dreams for AI. But the rush to expand warehouses full of energy-hungry servers has also kicked up fights across the world over their impact on power grids, utility bills, nearby communities, and the environment. Data centers were a major bipartisan issue...",
+      "source": "Verge Staff via The Verge - Artificial Intelligences",
+      "image": "https://www.inoreader.com/camo/svhXpwjFty9GcSs-RhHGw90mcrohhVdP3MTLFqvLn02c,q80,480x400,pf,b64/aHR0cHM6Ly9wbGF0Zm9ybS50aGV2ZXJnZS5jb20vd3AtY29udGVudC91cGxvYWRzL3NpdGVzLzIvMjAyNi8wNC9TVEtTNTI4X0RBVEFfQ0VOVEVSU19DLmpwZz9xdWFsaXR5PTkwJnN0cmlwPWFsbCZjcm9wPTAsMCwxMDAsMTAw"
+    },
+    {
+      "id": "at_51104123390",
+      "title": "Muse Voice (3 minute read)",
+      "url": "https://about.fb.com/news/2026/11/introducing-muse-ai-voice-expressive-avatars/?utm_source=tldrai",
+      "summary": "Meta announced voice conversations and expressive avatars for its Muse app, allowing users to brainstorm, plan trips, and complete tasks through spoken interactions.",
+      "source": "via TLDR AI Feed",
+      "image": ""
+    },
+    {
+      "id": "at_51104123391",
+      "title": "You can now build live apps in Cursor and share them with a link (1 minute read)",
+      "url": "https://x.com/cursor_ai/status/2118458629091426304?utm_source=tldrai",
+      "summary": "Users just have to describe the tool they want, and Cursor will build it, set up a database, run deterministic and agentic security checks, and deploy.",
+      "source": "via TLDR AI Feed",
+      "image": "https://www.inoreader.com/camo/siGGtV-K-LLikMT-D1tmXIUde5yZSbmdcXJQZRPlNnHs,q80,480x400,pf,b64/aHR0cHM6Ly9wYnMudHdpbWcuY29tL2FtcGxpZnlfdmlkZW9fdGh1bWIvMjExODQ1ODYxMTMyMDEzMTU4NC9pbWcvdVVKU0lCbDhRYURCbm9BQT9mb3JtYXQ9d2VicCZuYW1lPWxhcmdl"
+    },
+    {
+      "id": "at_51104123393",
+      "title": "Personal Finance in Claude (3 minute read)",
+      "url": "https://claude.com/resources/articles/introducing-personal-finance-in-claude?utm_source=tldrai",
+      "summary": "Anthropic Personal Finance in Claude allows users to securely connect bank and credit card accounts to ask questions about balances, transactions, and spending.",
+      "source": "via TLDR AI Feed",
+      "image": "https://www.inoreader.com/camo/sWcmi8j2JE-XVx3i9KBM1A02nPdNwvpK2ciyvwjNCHnA,q80,480x400,pf,b64/aHR0cHM6Ly9jbGF1ZGUuY29tL3Jlc291cmNlcy9hcnRpY2xlcy9pbnRyb2R1Y2luZy1wZXJzb25hbC1maW5hbmNlLWluLWNsYXVkZS9vcGVuZ3JhcGgtaW1hZ2Uvb2c"
+    },
+    {
+      "id": "at_51104123395",
+      "title": "Good Vibes Only Go So Far – Here's Why Your AI-Generated Apps Breaks in Production (Sponsor)",
+      "url": "https://www.algolia.com/resources/asset/white-paper-beyond-vibe-coding-stabilizing-ai-applications-with-search-infrastructure?utm_campaign=tldr_global_b2x_ecomm_ecomm_tof_reach&amp;utm_medium=display&amp;utm_source=tldr&amp;utm_content=tldr_global_b2x_ecomm&amp;utm_term=wp_beyond_vibe_coding&amp;utm_camp_parent=b2x_ecomm&amp;utm_2nd_camp=ecomm_tof&amp;utm_region=global&amp;utm_goal=reach&amp;utm_creative_format=prmrynwsl&amp;utm_marketing_tactic=reach&amp;utm_model=cpm&amp;utm_ag=nx",
+      "summary": "AI-generated apps demo beautifully, but break on live data. Learn to reach production readiness with indexed data, permitted evidence, repeatable behavior, and reviewable agent context. Read the whitepaper.",
+      "source": "via TLDR AI Feed",
+      "image": ""
+    },
+    {
+      "id": "at_51104123397",
+      "title": "New NVIDIA Cosmos 3 Open Models for Interactive World Simulation (7 minute read)",
+      "url": "https://huggingface.co/blog/nvidia/cosmos-interactive-world-simulation?utm_source=tldrai",
+      "summary": "NVIDIA's Cosmos 3 platform now offers four open-weight models for interactive world simulation and driving scenes, each with 16 billion trainable parameters. These models enable multi-sensor data generation, synchronized observations, and photorealistic video from simulator controls, supporting advanced research in robotics and autonomous driving.",
+      "source": "via TLDR AI Feed",
+      "image": "https://www.inoreader.com/camo/sN6rD3DOWZGJO9x0hLhlPu2kmwtRj52Uet7H-haqmnzY,q80,480x400,pf,b64/aHR0cHM6Ly9jZG4tdXBsb2Fkcy5odWdnaW5nZmFjZS5jby9wcm9kdWN0aW9uL3VwbG9hZHMvNjc3YzQ3MWY4YjRjNGUyNzFlNTdlYWE1L3J0bUdWdkZkRDZKcWtqQmMyNnZzcC5wbmc"
+    },
+    {
+      "id": "at_51104123398",
+      "title": "How Primary Compute Markets Work (7 minute read)",
+      "url": "https://x.com/OrnnExchange/status/2118372699093295482?utm_source=tldrai",
+      "summary": "GPU providers sell capacity through reservations, on-demand rentals, and interruptible spot contracts. Reservations help secure financing through predictable revenue, on-demand offers flexibility at higher rates, and spot monetizes idle capacity. Ornn's compute price indices track executed on-demand transactions, excluding reservations and spot rentals.",
+      "source": "via TLDR AI Feed",
+      "image": "https://www.inoreader.com/camo/sLL2-HH3s_80f3k1kNuUtZHr-eJFRFWTRns8KuzP91fg,q80,480x400,pf,b64/aHR0cHM6Ly9wYnMudHdpbWcuY29tL21lZGlhL0hXWDBtLUdYa0FBaVRFST9mb3JtYXQ9d2VicCZuYW1lPWxhcmdl"
+    },
+    {
+      "id": "at_51104123400",
+      "title": "💸 Do your AI agents have expensive habits? (Sponsor)",
+      "url": "https://www.switchagents.ai/trust?utm_source=tldrai&amp;utm_medium=newsletter&amp;utm_campaign=secondary110626",
+      "summary": "Agents burn tokens, loop on retries, and drift in production. You couldn't see which, or prove they earn it. Until now:→ Switch Trust finds every agent (Claude Code, LangChain, Codex, and more) and tests it for reliability and security.→ Switch ROI shows what each agent spends, delivers, and where to cut waste.Try both free",
+      "source": "via TLDR AI Feed",
+      "image": "https://www.inoreader.com/camo/sp5XFuRsBr7FED6jd6JDhTXX0xRd7Bz_fUf9q5tCbzkM,q80,480x400,pf,b64/aHR0cHM6Ly9jZG4ucHJvZC53ZWJzaXRlLWZpbGVzLmNvbS82YTI2ZjlkZDExMzkxOGZmNjg1ZjY5MTMvNmFkMmE5OGYzM2JkYzAxZjZiOWUxMjcwX3N3aXRjaC1vZy10cnVzdC5wbmc"
+    },
+    {
+      "id": "at_51104123401",
+      "title": "NVIDIA Introduced VFlash (5 minute read)",
+      "url": "https://research.nvidia.com/labs/lpr/vflash/?utm_source=tldrai",
+      "summary": "NVIDIA VFlash is a vision model that generates geometric predictions like robot trajectories and 3D motion in parallel rather than token by token.",
+      "source": "via TLDR AI Feed",
+      "image": ""
+    },
+    {
+      "id": "at_51104123404",
+      "title": "Cloudflare's Trust Framework for AI Agents (4 minute read)",
+      "url": "https://blog.cloudflare.com/trusted-agent-delegation?utm_source=tldrai",
+      "summary": "Cloudflare has outlined the challenges websites face as AI agents increasingly act on behalf of users, making it harder to verify identities, assess trustworthiness, and assign accountability.",
+      "source": "via TLDR AI Feed",
+      "image": "https://www.inoreader.com/camo/sCPK9zcQz6RmlFRSHNvYKRQ1LAS67UP2Hc5MPL-ACV44,q80,480x400,pf,b64/aHR0cHM6Ly9ibG9nLmNsb3VkZmxhcmUuY29tL19lbWRhc2gvYXBpL21lZGlhL2ZpbGUvMDFNNlBBM01YOVc0NkFGTTBSUVdIRUI1WFkuMDFNNlBBM1AzOVdKUjExV1pYQ0dHWEtLM1kucG5n"
+    },
+    {
+      "id": "at_51104123406",
+      "title": "The benchmark where AIs have to lie to win (23 minute read)",
+      "url": "https://www.dwarkesh.com/p/clocktower?utm_source=tldrai",
+      "summary": "Blood on the Clocktower is a social deception game. Watching AI play the game unveils a lot about how AI is progressing on a set of AI capabilities that no other benchmark gives clear visibility into. The game requires AI to execute schemes with creativity, on-the-spot bluffing, and collective reasoning. This post looks at what happens when you pit...",
+      "source": "via TLDR AI Feed",
+      "image": "https://www.inoreader.com/camo/s8Sz37QpZ2RVJQqAGp4RbqEfnLibT19fnnCWdK9wJUrM,q80,480x400,pf,b64/aHR0cHM6Ly9zdWJzdGFja2Nkbi5jb20vaW1hZ2UvZmV0Y2gvJHNfITdoMUohLHdfMTIwMCxoXzY3NSxjX2ZpbGwsZl9qcGcscV9hdXRvOmdvb2QsZmxfcHJvZ3Jlc3NpdmU6c3RlZXAsZ19hdXRvL2h0dHBzJTNBJTJGJTJGc3Vic3RhY2stcG9zdC1tZWRpYS5zMy5hbWF6b25hd3MuY29tJTJGcHVibGljJTJGaW1hZ2VzJTJGOTVlMGRkYzItYTdlZS00NjU0LTgyMWItZGQzNWM0N2JjZmM1XzE2NzJ4OTQxLnBuZw"
+    },
+    {
+      "id": "at_51104123409",
+      "title": "Independent Assessment of AI R&D Acceleration at Anthropic in October 2026 (63 minute read)",
+      "url": "https://metr.org/blog/2026-11-05-anthropic-ai-rd-acceleration-assessment/?utm_source=tldrai",
+      "summary": "Anthropic's AI R&D capabilities accelerated significantly, improving model performance on well-defined tasks at roughly twice the rate compared to 2024-2025. This acceleration primarily results from AI's increasing role in R&D, though multiple factors contributed in late 2025.",
+      "source": "via TLDR AI Feed",
+      "image": "https://www.inoreader.com/camo/sNeo7a4zBx08pIHfonPktswH0dUH-ILdCcQHe3cLQR9Y,q80,480x400,pf,b64/aHR0cHM6Ly9tZXRyLm9yZy9hc3NldHMvaW1hZ2VzL2FpLXJkLWFjY2VsZXJhdGlvbi1hc3Nlc3NtZW50L2hvbWUtY2FyZC5wbmc"
+    },
+    {
+      "id": "at_51104123410",
+      "title": "Gemini Omni 1.2 Flash (1 minute read)",
+      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash/?utm_source=tldrai",
+      "summary": "Google introduces Gemini Omni 1.2 Flash, enhancing speed, cost-efficiency, and extended clip lengths for AI models. This update aims to improve developer tools and effectiveness in AI applications.",
+      "source": "via TLDR AI Feed",
+      "image": "https://www.inoreader.com/camo/soVF4JFgp0gJYSBQXbDU4brI_M9GUMS3y-ekekuakDxI,q80,480x400,pf,b64/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2d3ZWItdW5pYmxvZy1wdWJsaXNoLXByb2QvaW1hZ2VzL2dlbWluaS1vbW5pLTEuMl9GWkxxbDQxLndpZHRoLTEzMDAucG5n"
+    },
+    {
+      "id": "at_51104123411",
+      "title": "Introducing Inkling 2 Small (37 minute read)",
+      "url": "https://thinkingmachines.ai/news/inkling-2-small/?utm_source=tldrai",
+      "summary": "Inkling 2 Small is a Mixture-of-Experts model with 594B total parameters, 17B active, that supports image inputs and variable effort. The model's vision and agentic capabilities enable it to incorporate visual feedback to iteratively build and refine websites, games, and 3D designs with interactive elements. It will be initially available through Tinker...",
+      "source": "via TLDR AI Feed",
+      "image": "https://www.inoreader.com/camo/sGDOV83_ArWNgcHd3mAUClbIpbg0HHxKvqwmowwIfICg,q80,480x400,pf,b64/aHR0cHM6Ly90aGlua2luZ21hY2hpbmVzLmFpL25ld3MvaW5rbGluZy0yLXNtYWxsL2ltYWdlcy9jb3Zlci1zb2NpYWwucG5n"
+    },
+    {
+      "id": "at_51104123412",
+      "title": "The Ultimate MoE Training Handbook (1 minute read)",
+      "url": "https://huggingface.co/spaces/huggingface/moe-blogpost?utm_source=tldrai",
+      "summary": "Hugging Face released \"The Ultimate MoE Training Handbook,\" a comprehensive guide on training mixture-of-experts models.",
+      "source": "via TLDR AI Feed",
+      "image": "https://www.inoreader.com/camo/sMO54v34aGA6vrmziT7XU1lL63ATzhP7lpcW-Yd2AbZA,q80,480x400,pf,b64/aHR0cHM6Ly9odWdnaW5nZmFjZS1tb2UtYmxvZ3Bvc3QuaGYuc3BhY2UvdGh1bWIuYXV0by5qcGc"
+    },
+    {
+      "id": "at_51104123414",
+      "title": "Devin Review 2.0 (5 minute read)",
+      "url": "https://devin.ai/blog/devin-review-2?utm_source=tldrai",
+      "summary": "The cost of a Devin Review per PR has dropped by 82% since August.",
+      "source": "via TLDR AI Feed",
+      "image": "https://www.inoreader.com/camo/sbAmVOC_84JDZ4GJf0yDeRIeOg5J4zia7cIOO7zzbUgk,q80,480x400,pf,b64/aHR0cHM6Ly9kZXZpbi5haS9pbWFnZXMvYmxvZy9kZXZpbi1yZXZpZXctMi9jb3Zlci5wbmc"
+    },
+    {
+      "id": "at_51104123415",
+      "title": "AI Agent Security Summit Sessions - Now On Demand (Sponsor)",
+      "url": "https://zenity.io/resources/events/ai-agent-security-summit-london?utm_source=tldr&amp;utm_medium=sponsored&amp;utm_campaign=tldr-ai-newsletter&amp;utm_content=primary-1106_header_ai_agent_security&amp;utm_term=2026-11-06",
+      "summary": "🔨 Building custom AI agents? The Homegrown Agent Maturity Model for Execution and Risk (HAMMER) is a self-assessment framework for scoring your homegrown agents. One rule stands out: your overall maturity can't outrun your visibility into what agents actually execute. Download the HAMMER guide",
+      "source": "via TLDR AI Feed",
+      "image": "https://www.inoreader.com/camo/sQOT819DyYnb20zL3kLSQZ0z-TgU48FBpKNip6kHEixw,q80,480x400,pf,b64/aHR0cHM6Ly9jZG4uc2FuaXR5LmlvL2ltYWdlcy9icXZrZGp6Mi9wcm9kdWN0aW9uLzgyN2EyODdmMzk4NTJkNmY1ZDEwNjI2MWEyMmRhYzE0NjI4ZmYxZTctMTIwMHg2MzAucG5n"
+    },
+    {
+      "id": "at_51104123416",
+      "title": "GPT-6 Cyber (13 minute read)",
+      "url": "https://openai.com/index/introducing-gpt-6-cyber/?utm_source=tldrai",
+      "summary": "OpenAI introduced GPT-6 Cyber, a cybersecurity model designed to identify and validate exploitable vulnerabilities while staying within researcher-defined boundaries.",
+      "source": "via TLDR AI Feed",
+      "image": "https://www.inoreader.com/camo/s-NpLLbS3P-bXtohrLPIPttzHGY4raSV_HiDubQlASps,q80,480x400,pf,b64/aHR0cHM6Ly9pbWFnZXMuY3RmYXNzZXRzLm5ldC9rZnR6d2R5YXV3dDkvNzNjdlptTHNqN1dJWFFBZ01EWDhrei80OTk2YzdhMDg0YjgxZTIxYThmMTM1N2ZlMzk1YzMwYi9ncHQtNi1jeWJlci1zb2NpYWwucG5nP3c9MTYwMCZoPTkwMCZmaXQ9ZmlsbA"
+    },
     {
       "id": "at_51103833985",
       "title": "Hundreds of Artex AI hacking tools found publicly exposed to the web",
@@ -21,7 +197,7 @@
       "id": "at_51103512392",
       "title": "Meta’s Muse AI can create custom ‘spaces’ for the version of the app you need right now",
       "url": "https://www.theverge.com/tech/1028871/meta-muse-ai-spaces",
-      "summary": "Meta will now allow you to build customized, app-like experiences within its Muse AI assistant. The new feature, called \"spaces,\" allows Muse to build things like a shopping hub, school dashboard, music tracker, trivia game, and more, which you can interact with directly in the app. If you connect your space to a relevant app, Muse will...",
+      "summary": "Meta will now allow you to build customized, app-like experiences within Muse. The new feature, called \"spaces,\" allows its AI assistant to build things like a shopping hub, school dashboard, music tracker, trivia game, and more, which you can interact with directly in the Muse app. Meta says you can create a new space by describing...",
       "source": "Emma Roth via The Verge - Artificial Intelligences",
       "image": "https://www.inoreader.com/camo/sGhAt2zNhUoST_y00bKPYnvcxSqrnmpMJ285y_F3gHM8,q80,480x400,pf,b64/aHR0cHM6Ly9wbGF0Zm9ybS50aGV2ZXJnZS5jb20vd3AtY29udGVudC91cGxvYWRzL3NpdGVzLzIvMjAyNi8xMS9tZXRhLW11c2Utc3BhY2VzLnBuZz9xdWFsaXR5PTkwJnN0cmlwPWFsbCZjcm9wPTguMDc1Mjg0MzA2MzUyOCwwLDkxLjkyNDcxNTY5MzY0Nyw3NC40NzE2NTk4ODcxODY"
     },
@@ -1424,182 +1600,6 @@
       "summary": "Stripe co-founder John Collison asked OpenAI CEO Sam Altman on his Cheeky Pint podcast whether OpenAI had more than its 700 published proofs.\"We do. Of course,” Altman said. Moments later: “Humanity deserves fundamental knowledge. And we should not be sitting on a major fundamental science discovery.\"He weighed that against what mathematicians stand...",
       "source": "The Rundown AI (@TheRundownAI) via The Rundown AI(@TheRundownAI)",
       "image": ""
-    },
-    {
-      "id": "at_51060422138",
-      "title": "A president’s conversations with AI are now something Congress wants on the record. Two top House D...",
-      "url": "https://x.com/TheRundownAI/status/2115861004211077557",
-      "summary": "A president’s conversations with AI are now something Congress wants on the record.Two top House Democrats are calling for President Trump to save the conversations he’s sent Grok, ChatGPT and Claude on official business, and to brief them by Nov. 11, per a letter obtained by Politico.The letter cites reporting that Trump asked Grok how Venezuelans...",
-      "source": "The Rundown AI (@TheRundownAI) via The Rundown AI(@TheRundownAI)",
-      "image": "https://www.inoreader.com/camo/sJ5PbTPHKqfdVJIFrQ-5WCxMcJQTXizsgwKBOupxKTDc,q80,480x400,pf,b64/aHR0cHM6Ly9wYnMudHdpbWcuY29tL21lZGlhL0hWMExZY0VXQUFJTWp3ZC5qcGc"
-    },
-    {
-      "id": "at_51060422141",
-      "title": "An AI agent picked a gene therapy for a mouse with epilepsy, chose where in its brain to inject it, ...",
-      "url": "https://x.com/TheRundownAI/status/2115847958562258968",
-      "summary": "An AI agent picked a gene therapy for a mouse with epilepsy, chose where in its brain to inject it, and delivered it with a robotic arm.Claude Opus 5.5 refused as soon as it saw the task involved biology.Claude Opus 5 rehearsed the whole surgery, then backed out before the live one: “Starting something I can’t finish on an anesthetized animal is worse...",
-      "source": "The Rundown AI (@TheRundownAI) via The Rundown AI(@TheRundownAI)",
-      "image": "https://www.inoreader.com/camo/s66ZeEVDLFm9bAuU5hRIHB9Toio3_ONQ_jsJxs6MCTbQ,q80,480x400,pf,b64/aHR0cHM6Ly9wYnMudHdpbWcuY29tL21lZGlhL0hWdE9LaDdhSUFBRkdlQS5qcGc"
-    },
-    {
-      "id": "at_51060422143",
-      "title": "Read more: https://t.co/bkbpmkqKba",
-      "url": "https://x.com/TheRundownAI/status/2115813499427307561",
-      "summary": "Read more: robotnews.therundown.ai/p/the-self-dri…💬0🔄0❤️1👀1414⚡ Powered by xgo.ing",
-      "source": "The Rundown AI (@TheRundownAI) via The Rundown AI(@TheRundownAI)",
-      "image": ""
-    },
-    {
-      "id": "at_51060422148",
-      "title": "Top stories in robotics today: - Bedrock Robotics digs up $600M - Boston Dynamics workers fight IC...",
-      "url": "https://x.com/TheRundownAI/status/2115813491537780944",
-      "summary": "Top stories in robotics today: - Bedrock Robotics digs up $600M- Boston Dynamics workers fight ICE deal- MIT built a robot that slithers through your gut- Trump puts factory robots on security notice💬7🔄0❤️11👀5256📊7⚡ Powered by xgo.ing",
-      "source": "The Rundown AI (@TheRundownAI) via The Rundown AI(@TheRundownAI)",
-      "image": "https://www.inoreader.com/camo/smyc3xsTLqtvHD2y8OCc1dgUlSfkjB2U-w5s6QC5TKnM,q80,480x400,pf,b64/aHR0cHM6Ly9wYnMudHdpbWcuY29tL21lZGlhL0hWemhKWTlXd0FBTTZqcy5qcGc"
-    },
-    {
-      "id": "at_51060422154",
-      "title": "Read more: https://t.co/lYevv3y5JI",
-      "url": "https://x.com/TheRundownAI/status/2115753117228712356",
-      "summary": "Read more: therundownai.beehiiv.com/p/google-gemin…💬0🔄1❤️3👀2082📊1⚡ Powered by xgo.ing",
-      "source": "The Rundown AI (@TheRundownAI) via The Rundown AI(@TheRundownAI)",
-      "image": ""
-    },
-    {
-      "id": "at_51060422158",
-      "title": "Top stories in AI today: - Google’s Carbon takes the benchmark crown (for now) - Nate’s Notebook: H...",
-      "url": "https://x.com/TheRundownAI/status/2115753112459751550",
-      "summary": "Top stories in AI today:- Google’s Carbon takes the benchmark crown (for now)- Nate’s Notebook: Hire a dispatcher first- Turn a prompt into a poster with Canva Craft- An Anthropic manager bets on junior engineers💬15🔄3❤️26👀6465📊15⚡ Powered by xgo.ing",
-      "source": "The Rundown AI (@TheRundownAI) via The Rundown AI(@TheRundownAI)",
-      "image": "https://www.inoreader.com/camo/sdL9HL5poKw_scYgiyfHfigV14uWvLTL9PaeX3RY77bs,q80,480x400,pf,b64/aHR0cHM6Ly9wYnMudHdpbWcuY29tL21lZGlhL0hWeXFQVmpXNEFBZzE5WC5qcGc"
-    },
-    {
-      "id": "at_51059404593",
-      "title": "Google takes Dreambeans to India in bid to bring AI-generated personal stories to the masses",
-      "url": "https://techcrunch.com/2026/11/02/google-takes-dreambeans-to-india-in-bid-to-bring-ai-generated-personal-stories-to-the-masses/",
-      "summary": "Google's Dreambeans, its latest AI experiment, now supports 13 Indian languages.",
-      "source": "Jagmeet Singh via AI | TechCrunch",
-      "image": "https://www.inoreader.com/camo/sbnNJI13SYpNfOnIxzFs_CgoCQhxPsB_fr4JRGrNWNR8,q80,480x400,pf,b64/aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNi8xMS9nb29nbGUtZHJlYW1iZWFucy5qcGc_cmVzaXplPTE2MDAsMTA2Nw"
-    },
-    {
-      "id": "at_51058838761",
-      "title": "Apple may try to increase revenue by doing…something with third-party AI apps",
-      "url": "https://techcrunch.com/2026/11/02/apple-may-try-to-increase-revenue-by-doing-something-with-third-party-ai-apps/",
-      "summary": "Apple hinted at ways that it could spur revenue through third-party \"opportunities\" during its Monday night earnings call.",
-      "source": "Lucas Ropek via AI | TechCrunch",
-      "image": "https://www.inoreader.com/camo/s31fKN1VHhcssJOwwBzLsSNUx12zkQn1QnQe1waoK_hE,q80,480x400,pf,b64/aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNi8xMC9HZXR0eUltYWdlcy0yMzAyNDE4MzIwLmpwZz93PTEwMjQ"
-    },
-    {
-      "id": "at_51058620094",
-      "title": "Y Combinator’s Garry Tan uses AI agents so much, he spends up to $200K a year on tokens",
-      "url": "https://techcrunch.com/2026/11/02/y-combinators-garry-tan-uses-ai-agents-so-much-he-spends-up-to-200k-a-year-on-tokens/",
-      "summary": "Y Combinator Garry Tan has jokingly admitted that he's suffered from \"cyber psychosis” and barely sleeps sometimes because he’s so excited to be working with his AI agents. On a new episode of Walter Isaacson’s podcast, The Builders, Tan put a price tag on his passion.",
-      "source": "Julie Bort via AI | TechCrunch",
-      "image": "https://www.inoreader.com/camo/sPS2y4ofL5GvnCX5OIqYvOGcsPugeGEpSZ844mmmKQl0,q80,480x400,pf,b64/aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNi8wMy9nYXJyeS10YW4tc3hzdy1nZXR0eS5qcGc_cmVzaXplPTE2MDAsMTA2OA"
-    },
-    {
-      "id": "at_51057941355",
-      "title": "Trajectory raises $45M to make AI model training accessible to nontechnical experts",
-      "url": "https://techcrunch.com/2026/11/02/trajectory-raises-45m-to-make-ai-model-training-accessible-to-nontechnical-experts/",
-      "summary": "The one-year-old startup is now valued at $300 million.",
-      "source": "Marina Temkin via AI | TechCrunch",
-      "image": "https://www.inoreader.com/camo/sSbCsiviuB7JLXv-cIVGddVFJA8OfwtsYz1xZCL5SY7E,q80,480x400,pf,b64/aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNi8xMS9UcmFqZWN0b3J5XzMuanBnP3Jlc2l6ZT0xNjAwLDEyMDA"
-    },
-    {
-      "id": "at_51057523873",
-      "title": "Anthropic warns that it’s very close to RSI capability, aka self-building AI",
-      "url": "https://techcrunch.com/2026/11/02/anthropic-warns-that-its-very-close-to-rsi-capability-aka-self-building-ai/",
-      "summary": "RSI is the point at which AI grows so good at training itself that it spawns a dramatic acceleration of AI capabilities. To the AI doomers, RSI represents the cataclysm from which there is no return.",
-      "source": "Julie Bort via AI | TechCrunch",
-      "image": "https://www.inoreader.com/camo/sookcxcbKxkkoGDRa92EdxYc_VncPgGRU0D-oXD20UvM,q80,480x400,pf,b64/aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNi8xMS9SZWN1cnNpdmUtTmV1cmFsLVNwaXJhbC1pbi1DaXJjdWl0cnkucG5nP3Jlc2l6ZT0xNjAwLDgwMA"
-    },
-    {
-      "id": "at_51057499970",
-      "title": "'Like gene editing for neural networks': MIT researchers used GPT-6 Astra to edit Qwen's open weights directly, boosting math performance",
-      "url": "https://venturebeat.com/technology/like-gene-editing-for-neural-networks-mit-researchers-used-gpt-6-astra-to-edit-qwens-open-weights-directly-boosting-math-performance",
-      "summary": "Researchers from the Massachusetts Institute of Technology (MIT) Computer Science & Artificial Intelligence Laboratory (CSAIL) reported today that they used OpenAI’s GPT-6 Astra language model to raise a small, open source Qwen model’s math score roughly sixfold by directly editing its weights—the numerical parameters that govern its behavior.Read...",
-      "source": "[email protected] (Carl Franzen) via VentureBeat",
-      "image": "https://www.inoreader.com/camo/sbUjBR-CuT2lr_BuH9OWbNmassZ6xawFznw4oPxaYWzQ,q80,480x400,pf,b64/aHR0cHM6Ly9pbWFnZXMuY3RmYXNzZXRzLm5ldC9qZHR3cWh6dmMybjEvNzdFRUIzMDd6ZGNKeVZQRzlYdDZIUC9iNDk3MmRkY2I5ZmZjZmE1MjQwNmE1NzFlMWVjYjRhMC9SZXRyby1GdXR1cmlzdF9Sb2JvdF9TdXJnZXJ5LnBuZz93PTE2MDAmcT04MA"
-    },
-    {
-      "id": "at_51057173993",
-      "title": "Web host Squarespace lays off 19% of its employees",
-      "url": "https://techcrunch.com/2026/11/02/web-host-squarespace-lays-off-19-of-its-employees/",
-      "summary": "The website builder said that the job losses are part of a broader restructuring of its organization.",
-      "source": "Lucas Ropek via AI | TechCrunch",
-      "image": "https://www.inoreader.com/camo/ssXwub47D54tkrEgrvS6ZIekGFjprg0OV1GPccAMDt3s,q80,480x400,pf,b64/aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNC8xMC9GMDY0X1EzMjRfUmVmcmVzaF9Qcm9kdWN0X0JsdWVwcmludFBlcnNvbmFsaXR5U3RlcF9QcmVzc18xOTIweDEwODAtTG9nby5qcGc_cmVzaXplPTE2MDAsOTAw"
-    },
-    {
-      "id": "at_51057033269",
-      "title": "There is no single AI adoption rate (4 minute read)",
-      "url": "https://www.stateof.ai/ai-adoption?utm_source=tldrai",
-      "summary": "McKinsey's nearly 90% usage, Ramp's 55.9% paid adoption, and Census's 19.8% measure different businesses, behaviors, and time windows.",
-      "source": "via TLDR AI Feed",
-      "image": ""
-    },
-    {
-      "id": "at_51057033276",
-      "title": "Introducing &Tutor (13 minute read)",
-      "url": "https://tutor.humansand.ai/blog/?utm_source=tldrai",
-      "summary": "&Tutor, a new teaching model available via API, was trained against Persimmon, a robust learner model.",
-      "source": "via TLDR AI Feed",
-      "image": "https://www.inoreader.com/camo/spX5lP3Ey5UwGPkpUBZyP3XkJIqzV6y85ty7tfoAbgnk,q80,480x400,pf,b64/aHR0cHM6Ly90dXRvci5odW1hbnNhbmQuYWkvYmxvZy9hbXBlcnNhbmQtdHV0b3Itc2hhcmUucG5n"
-    },
-    {
-      "id": "at_51057033278",
-      "title": "Reading Anthropic's S-1 (9 minute read)",
-      "url": "https://www.tilomitra.com/blog/anthropic-s1-in-charts?utm_source=tldrai",
-      "summary": "Anthropic is growing absurdly fast. It just had its first profitable quarter. The real risk is years of locked-in compute bills paid for by customers who can cut back any month. The company is also dealing with regulatory issues and copyright suits, and it has a heavy reliance on the big cloud companies.",
-      "source": "via TLDR AI Feed",
-      "image": ""
-    },
-    {
-      "id": "at_51057033282",
-      "title": "DoorDash said it's only received 'several hundred' orders from AI agents (2 minute read)",
-      "url": "https://techcrunch.com/2026/10/30/doordash-said-its-only-received-several-hundred-orders-from-ai-agents/?utm_source=tldrai",
-      "summary": "DoorDash revealed it has received \"several hundred\" orders from AI agents, despite processing 3 million deliveries daily. CEO Tony Xu highlighted that most orders still come directly from the DoorDash app, but the company is interested in exploring agentic use cases. DoorDash is also developing its own agents and considering future advertising opportunities...",
-      "source": "via TLDR AI Feed",
-      "image": ""
-    },
-    {
-      "id": "at_51057033285",
-      "title": "dsh-superagent (GitHub Repo)",
-      "url": "https://github.com/deepseek-ai/dsh-superagent-prototype?utm_source=tldrai",
-      "summary": "dsh-superagent is a coding agent packaged as a bundle for DeepSeek Harness. It can watch GitHub, open work items, work in its own agent session and directory, and answer in the original conversation. It only acts when asked or when a rule the team wrote allows it, and it only speaks when someone must act or can use a result.",
-      "source": "via TLDR AI Feed",
-      "image": ""
-    },
-    {
-      "id": "at_51057033291",
-      "title": "Poisoning 0.1% of pretraining data planted a remote-code backdoor in a coding agent (78 minute read)",
-      "url": "https://arxiv.org/abs/2610.37741?utm_source=tldrai",
-      "summary": "Researchers from Anthropic, UC Berkeley, and UIUC pretrained Qwen3 models on web data seeded with documents that simply state a trigger-to-'curl | bash' rule, then post-trained them into CLI agents on clean data. The 4B agent ran the attacker's command on about 92% of prompts containing an ordinary path like .../anthropic/..., with no drop in normal...",
-      "source": "via TLDR AI Feed",
-      "image": ""
-    },
-    {
-      "id": "at_51057033294",
-      "title": "Unlocking hidden skills inside Google's model (8 minute read)",
-      "url": "https://dejan.ai/blog/latent-skills/?utm_source=tldrai",
-      "summary": "AI models can hold skills that no prompt can unlock. It is possible to enable these skills through precise tuning of only a small number of weights. This study shows how researchers unlocked hidden skills inside Google's model through this method.",
-      "source": "via TLDR AI Feed",
-      "image": "https://www.inoreader.com/camo/skZ8853PbWEwOWmS5vst83j3Svg2Omv_U1tv3UTK71Vk,q80,480x400,pf,b64/aHR0cHM6Ly9kZWphbi5haS9vZy9wb3N0L2xhdGVudC1za2lsbHMuanBn"
-    },
-    {
-      "id": "at_51057033297",
-      "title": "Red-teamers found 11 ways for a misaligned agent to slip past Codex's Auto-review (22 minute read)",
-      "url": "https://www.lesswrong.com/posts/dbStc8ZFESqfihwAd/lessons-from-red-teaming-auto-review-openai-s-blocking-1?utm_source=tldrai",
-      "summary": "An ERA fellow mentored at Apollo Research audited the open-source Codex harness and found 11 attacks that let a misaligned agent run arbitrary code despite the sandbox and the Auto-review blocking monitor. The exploits swap scripts behind trusted hooks, forge user turns the monitor can't tell from real ones, and edit files after approval. OpenAI has...",
-      "source": "via TLDR AI Feed",
-      "image": "https://www.inoreader.com/camo/s0otS4GJxgRw4XH5rRxkVgAB9nDwIxdg3RFNKF5vBJ1g,q80,480x400,pf,b64/aHR0cHM6Ly9yZXMuY2xvdWRpbmFyeS5jb20vbGVzc3dyb25nLTItMC9pbWFnZS91cGxvYWQvZl9hdXRvLHFfYXV0by92MS9taXJyb3JlZEltYWdlcy9qcUJ3eWV1aGJFekZiRmVIZC95NGlicDJpbmN5eW1vNDJiaHdhdg"
-    },
-    {
-      "id": "at_51057033301",
-      "title": "Your agent built the app. Now help it launch. (Sponsor)",
-      "url": "https://developer.godaddy.com/en/docs/api-users?utm_source=tldrai&amp;utm_medium=newsletter&amp;utm_campaign=explore&amp;utm_id=secondary",
-      "summary": "Take your project from working code to online. GoDaddy's APIs let your AI agent deploy an app, register and connect a domain with your approval, and set up professional email. One platform for hosting, domains, and email.→ Explore the GoDaddy developer guides",
-      "source": "via TLDR AI Feed",
-      "image": "https://www.inoreader.com/camo/s4Mw8Cku4-6SC6GTSpSkFdwNTOgv0PBeVFv6NJdcVyP4,q80,480x400,pf,b64/aHR0cHM6Ly9kZXZlbG9wZXIuZ29kYWRkeS5jb20vb2cvZG9jcy9hcGktdXNlcnMvaW1hZ2UucG5n"
     }
   ]
 }
