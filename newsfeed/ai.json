@@ -1,6 +1,14 @@
 {
-  "updatedAt": "2026-11-07T18:03:28.694772+00:00",
+  "updatedAt": "2026-11-07T21:51:56.594916+00:00",
   "articles": [
+    {
+      "id": "at_51113149395",
+      "title": "Megaspeed exec was recruited to spy on Nvidia CEO, according to US intelligence memo",
+      "url": "https://techcrunch.com/2026/11/07/chinese-exec-was-recruited-to-spy-on-nvidia-ceo-according-to-us-intelligence-memo/",
+      "summary": "A memo circulated earlier this year reportedly claimed that China’s Ministry of State Security recruited a female technology executive to spy on Nvidia's CEO.",
+      "source": "Anthony Ha via AI | TechCrunch",
+      "image": "https://www.inoreader.com/camo/saNAInUuJVqbtFifT5BZYOUuI0rZ78Dr7iYqmKEsjJjE,q80,480x400,pf,b64/aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNi8wOS9HZXR0eUltYWdlcy0yMjk0OTM2ODY3LmpwZz9yZXNpemU9MTYwMCwxMDY3"
+    },
     {
       "id": "at_51111184486",
       "title": "NYT Cooking’s AI assistant saved my weeknight chicken, but almost ruined my cake",
@@ -1592,14 +1600,6 @@
       "summary": "Read more: tech.therundown.ai/p/binance-hit-…💬0🔄1❤️2👀2264📊1⚡ Powered by xgo.ing",
       "source": "The Rundown AI (@TheRundownAI) via The Rundown AI(@TheRundownAI)",
       "image": ""
-    },
-    {
-      "id": "at_51060422127",
-      "title": "Top stories in tech today: - Binance loses $6.3B in record hack - Reddit locks out logged-out reade...",
-      "url": "https://x.com/TheRundownAI/status/2116176078192492768",
-      "summary": "Top stories in tech today:- Binance loses $6.3B in record hack- Reddit locks out logged-out readers- Meta brings self-harm alerts to Facebook- Amazon rolls out five Alexa+ devices💬14🔄3❤️20👀6533📊14⚡ Powered by xgo.ing",
-      "source": "The Rundown AI (@TheRundownAI) via The Rundown AI(@TheRundownAI)",
-      "image": "https://www.inoreader.com/camo/sfx6514NrHG3ZOogeiIm6ZUj547RZwwVc5JdpfOsHWMY,q80,480x400,pf,b64/aHR0cHM6Ly9wYnMudHdpbWcuY29tL21lZGlhL0hWNHE3R1lXQUFBNmdueC5qcGc"
     }
   ]
 }

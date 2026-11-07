@@ -1,6 +1,22 @@
 {
-  "updatedAt": "2026-11-07T18:03:28.368523+00:00",
+  "updatedAt": "2026-11-07T21:51:56.407129+00:00",
   "articles": [
+    {
+      "id": "at_51113017846",
+      "title": "Inside ARTEX: AI Hacking Tools, Exposed Servers and South Korean Bank Breaches",
+      "url": "https://securityaffairs.com/202607/ai/inside-artex-ai-hacking-tools-exposed-servers-and-south-korean-bank-breaches.html",
+      "summary": "Hunt.io traced ARTEX servers and AI-powered hacking tools used in breaches affecting seven South Korean financial institutions. Between late September and early October 2026, seven South Korean financial institutions had data breached through internet-facing systems. About 66,000 to 67,000 people and around 2,200 corporations were affected,...",
+      "source": "Pierluigi Paganini via Security Affairs",
+      "image": "https://www.inoreader.com/camo/stFI31RHUlg91UDYFwebzC_qYi9ZpheR0vKaeyoyQ_pg,q80,480x400,pf,b64/aHR0cHM6Ly9pMC53cC5jb20vc2VjdXJpdHlhZmZhaXJzLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNi8xMS9pbWFnZS0xNC5wbmc_dz04ODYmc3NsPTE"
+    },
+    {
+      "id": "at_51112689048",
+      "title": "One Product Isn’t the Problem: Monetizing an AI Portfolio Without Confusing Your Customers",
+      "url": "https://securityaffairs.com/202603/ai/one-product-isnt-the-problem-monetizing-an-ai-portfolio-without-confusing-your-customers.html",
+      "summary": "Software vendors can boost revenue by tracking customer usage across products, while AI accelerates pricing and consumption decisions. It is hard to find any software vendor that sells just one product. Portfolios have expanded from modules to editions, cloud services, add-ons, and now AI capabilities. A lot can be achieved through...",
+      "source": "Pierluigi Paganini via Security Affairs",
+      "image": "https://www.inoreader.com/camo/sBRUd1EDBPN9qHmElgCNHEYG4NfKtOP_cj6TeK3z_uZg,q80,480x400,pf,b64/aHR0cHM6Ly9zZWN1cml0eWFmZmFpcnMuY29tL3dwLWNvbnRlbnQvdXBsb2Fkcy8yMDE3LzExL0FydGlmaWNpYWwtSW50ZWxsaWdlbmNlLmpwZw"
+    },
     {
       "id": "at_51111101358",
       "title": "Hackers pull off $133 million French bank heist via service provider",
@@ -1584,22 +1600,6 @@
       "summary": "By Khush Kashyap, Senior Director of Governance, Risk and Compliance at Vanta Transparency goes hand in hand with AI. Or at least it’s meant to. Until now, transparency has mostly depended on how forthcoming people are about using AI. Detection tools can’t carry that weight on their own. That is now changing. The EU AI Act’s transparency requirements,...",
       "source": "Lara Joseph via IT Security Guru",
       "image": "https://www.inoreader.com/camo/sQLkGPIYe4derZ579aRryjxvPSHHxECFdh9361Yzg6AE,q80,480x400,pf,b64/aHR0cHM6Ly93d3cuaXRzZWN1cml0eWd1cnUub3JnL3dwLWNvbnRlbnQvdXBsb2Fkcy8yMDI2LzExL0ZPUi1FRElUSU5HLTEwLnBuZw"
-    },
-    {
-      "id": "at_51076895029",
-      "title": "Critical SolarWinds Dameware Flaw Could Allow Attackers to Compromise Remote Systems",
-      "url": "https://cybersecuritynews.com/critical-solarwinds-dameware-flaw/",
-      "summary": "SolarWinds has warned about a critical command injection flaw in its Dameware remote support software. It is tracked as CVE-2026-28336 and carries a severity score of 9.9 out of 10. The bug could let an attacker take over a computer that an IT team is controlling remotely. Dameware is widely used by help desks and administrators to connect to...",
-      "source": "Tushar Subhra Dutta via Cyber Security News",
-      "image": "https://www.inoreader.com/camo/sin9LSE6HyFNFb2HSKjmaV_pTRRuWDxYP2xushALoOR8,q80,480x400,pf,b64/aHR0cHM6Ly9jeWJlcnNlY3VyaXR5bmV3cy5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjYvMTEvQ3JpdGljYWwtU29sYXJXaW5kcy1EYW1ld2FyZS1GbGF3LUNvdWxkLUFsbG93LUF0dGFja2Vycy10by1Db21wcm9taXNlLVJlbW90ZS1TeXN0ZW1zLndlYnA"
-    },
-    {
-      "id": "at_51076895037",
-      "title": "French Bank Crédit Mutuel Arkéa Confirms Cyberattack Amid Reports of $133 Million Theft",
-      "url": "https://cybersecuritynews.com/credit-mutuel-arkea-confirms-cyberattack/",
-      "summary": "French banking group Crédit Mutuel Arkéa has confirmed a cyberattack that enabled fraudulent transactions, following reports linking the institution to cryptocurrency theft exceeding $133 million. The bank says the incident is contained, operations are gradually resuming, and customer assets remain unaffected. It has not confirmed the reported...",
-      "source": "Guru Baran via Cyber Security News",
-      "image": "https://www.inoreader.com/camo/saGtRKWc2bNCSVTOJzrCXUNfj9KdiF6JHXV3itRh3-CY,q80,480x400,pf,b64/aHR0cHM6Ly9jeWJlcnNlY3VyaXR5bmV3cy5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjYvMTEvQ3JlZGl0LU11dHVlbC1BcmtlYS1Db25maXJtcy1DeWJlcmF0dGFjay53ZWJw"
     }
   ]
 }
