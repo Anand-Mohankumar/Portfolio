@@ -1,6 +1,30 @@
 {
-  "updatedAt": "2026-11-07T13:02:50.458822+00:00",
+  "updatedAt": "2026-11-07T18:03:28.368523+00:00",
   "articles": [
+    {
+      "id": "at_51111101358",
+      "title": "Hackers pull off $133 million French bank heist via service provider",
+      "url": "https://www.bleepingcomputer.com/news/security/hackers-pull-off-133-million-french-bank-heist-via-service-provider/",
+      "summary": "French cooperative bank Crédit Mutuel Arkéa was targeted in a cyberattack that enabled fraudulent transactions of up to $133 million, forcing it to respond by suspending certain systems.v [...]",
+      "source": "Bill Toulas via Bleeping Computer",
+      "image": "https://www.inoreader.com/camo/sxLPmCdwMx4S8g1aoJcuQ7wMmlzUJ7PPmnORlnfZptFE,q80,480x400,pf,b64/aHR0cHM6Ly93d3cuYmxlZXBzdGF0aWMuY29tL2NvbnRlbnQvaGwtaW1hZ2VzLzIwMjYvMTEvMDYvZmluYW5jaWFsLXRoZWZ0LmpwZw"
+    },
+    {
+      "id": "at_51110574115",
+      "title": "CTM360 Exposes Fake Gift Card Scams Exploiting Trusted Brands",
+      "url": "https://www.bleepingcomputer.com/news/security/ctm360-exposes-fake-gift-card-scams-exploiting-trusted-brands/",
+      "summary": "Scammers are impersonating major brands and celebrities to lure consumers into fake gift card giveaways that collect personal information and trigger unwanted subscriptions. CTM360 reveals how these campaigns use deceptive verification steps and affiliate networks to generate revenue without delivering the promised rewards. [...]",
+      "source": "Sponsored by CTM360 via Bleeping Computer",
+      "image": "https://www.inoreader.com/camo/soI1za3aUkghq8U8TMKiTd8NRDLf5rDd_esnCkuhNd5E,q80,480x400,pf,b64/aHR0cHM6Ly93d3cuYmxlZXBzdGF0aWMuY29tL2NvbnRlbnQvcG9zdHMvMjAyNi8xMS8wNi9jdG0zNjAtZ2lmdC1jYXJkLXNjYW0uanBn"
+    },
+    {
+      "id": "at_51110323922",
+      "title": "SonicWall Warns of Potential In-the-Wild Exploitation of SSLVPN Flaw That Bypasses MFA",
+      "url": "https://cybersecuritynews.com/sonicos-sslvpn-vulnerability-exploited/",
+      "summary": "SonicWall has warned customers to patch a SonicOS SSLVPN vulnerability that could let attackers bypass SAML authentication and its multi-factor authentication checks. Tracked as CVE-2026-19868, the flaw carries a CVSS score of 7.1. The company has investigated a report indicating potential exploitation and strongly urges customers to upgrade...",
+      "source": "Guru Baran via Cyber Security News",
+      "image": "https://www.inoreader.com/camo/s9Eh9hyhXntklZOwQEtHg6THIKhQTgi7WvbXCBzUYeFw,q80,480x400,pf,b64/aHR0cHM6Ly9jeWJlcnNlY3VyaXR5bmV3cy5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjYvMTEvU29uaWNPUy1TU0xWUE4tVnVsbmVyYWJpbGl0eS1FeHBsb2l0ZWQud2VicA"
+    },
     {
       "id": "at_51109192394",
       "title": "SonicWall Patches Exploited SonicOS Vulnerability That Weakens VPN Logins",
@@ -1576,30 +1600,6 @@
       "summary": "French banking group Crédit Mutuel Arkéa has confirmed a cyberattack that enabled fraudulent transactions, following reports linking the institution to cryptocurrency theft exceeding $133 million. The bank says the incident is contained, operations are gradually resuming, and customer assets remain unaffected. It has not confirmed the reported...",
       "source": "Guru Baran via Cyber Security News",
       "image": "https://www.inoreader.com/camo/saGtRKWc2bNCSVTOJzrCXUNfj9KdiF6JHXV3itRh3-CY,q80,480x400,pf,b64/aHR0cHM6Ly9jeWJlcnNlY3VyaXR5bmV3cy5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjYvMTEvQ3JlZGl0LU11dHVlbC1BcmtlYS1Db25maXJtcy1DeWJlcmF0dGFjay53ZWJw"
-    },
-    {
-      "id": "at_51076765149",
-      "title": "Critical Barracuda Security Flaws Could Let Hackers Bypass Authentication and Gain Root Access",
-      "url": "https://cybersecuritynews.com/critical-barracuda-security-flaws/",
-      "summary": "Barracuda has disclosed two security vulnerabilities that could allow attackers to bypass authorization controls and gain root access to affected appliances when exploited together. The flaws affect several Barracuda security products, but exploitation requires access to a device’s administrative interface, making exposed management systems...",
-      "source": "Tushar Subhra Dutta via Cyber Security News",
-      "image": "https://www.inoreader.com/camo/sAA4JnJf34N4sEf1VYcC2KuITSk9IOeNx0d21PnuDSCc,q80,480x400,pf,b64/aHR0cHM6Ly9jeWJlcnNlY3VyaXR5bmV3cy5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjYvMTEvQ3JpdGljYWwtQmFycmFjdWRhLVNlY3VyaXR5LUZsYXdzLUNvdWxkLUxldC1IYWNrZXJzLUJ5cGFzcy1BdXRoZW50aWNhdGlvbi1hbmQtR2Fpbi1Sb290LUFjY2Vzcy53ZWJw"
-    },
-    {
-      "id": "at_51076765152",
-      "title": "Node.js Schedules High-Severity Security Fixes for 22.x, 24.x, and 26.x Release Lines",
-      "url": "https://cybersecuritynews.com/node-js-schedules-patch/",
-      "summary": "The Node.js project has scheduled security updates for its 22.x, 24.x, and 26.x release lines on or shortly after Wednesday, November 11, 2026. The announcement gives developers and system administrators time to prepare for patches addressing HIGH-rated vulnerabilities across all three branches. Each release line will receive a fix for at least...",
-      "source": "Guru Baran via Cyber Security News",
-      "image": "https://www.inoreader.com/camo/s7zysTeHhKGe7siJ04kgiQUYgrb_kdqAExZOPjmbVnm8,q80,480x400,pf,b64/aHR0cHM6Ly9jeWJlcnNlY3VyaXR5bmV3cy5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjYvMTEvTm9kZS5qcy1TY2hlZHVsZXMtUGF0Y2gud2VicA"
-    },
-    {
-      "id": "at_51076739542",
-      "title": "The EU AI Act has entered the real world: What organizations need to do now",
-      "url": "https://www.scworld.com/perspective/the-eu-ai-act-has-entered-the-real-world-what-organizations-need-to-do-now",
-      "summary": "EU AI Act enforcement makes AI inventories, risk assessments and accountability essential for compliance.",
-      "source": "Umesh Kalanke via Latest articles from SC Magazine",
-      "image": "https://www.inoreader.com/camo/s2PDi4UqTvU98pARbeihtfI3XnxAD1S0YLTyVlf7Gqg4,q80,480x400,pf,b64/aHR0cHM6Ly9maWxlcy5jeWJlcnJpc2thbGxpYW5jZS5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjYvMTEvMTEwMzI2X2V1cm9wZV9haV9hY3QuanBn"
     }
   ]
 }

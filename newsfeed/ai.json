@@ -1,6 +1,30 @@
 {
-  "updatedAt": "2026-11-07T13:02:50.546622+00:00",
+  "updatedAt": "2026-11-07T18:03:28.694772+00:00",
   "articles": [
+    {
+      "id": "at_51111184486",
+      "title": "NYT Cooking’s AI assistant saved my weeknight chicken, but almost ruined my cake",
+      "url": "https://www.theverge.com/tech/1029489/nyt-cooking-ai-assistant-review",
+      "summary": "The NYT Cooking app now has a built in AI assistant. | Photo: Jennifer Pattison Tuohy / The Verge Around 7PM each weeknight, I find myself standing in front of the fridge, trying to decide on something for dinner that won't make my husband complain, \"Chicken again?\" Yes, I should meal plan more, but I don't, so this is where I'm at. A...",
+      "source": "Jennifer Pattison Tuohy via The Verge - Artificial Intelligences",
+      "image": "https://www.inoreader.com/camo/soQrFTHRpIRvnkoJngJPpzg-wLAl7YMlVCdE2eh2XH_k,q80,480x400,pf,b64/aHR0cHM6Ly9wbGF0Zm9ybS50aGV2ZXJnZS5jb20vd3AtY29udGVudC91cGxvYWRzL3NpdGVzLzIvMjAyNi8xMS8yNjg4NDRfTllfVGltZXNfQ29va2luZ19BcHBfSlR1b2h5XzAwMDYuanBnP3F1YWxpdHk9OTAmc3RyaXA9YWxsJmNyb3A9MCwwLDEwMCwxMDA"
+    },
+    {
+      "id": "at_51111184488",
+      "title": "The US let Nvidia sell chips to an empty office in China",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1029483/nvidia-ai-chips-china-blacklist-government",
+      "summary": "Concerns are being raised that neither the Commerce Department nor Nvidia are doing their due diligence when it comes to vetting Chinese firms cleared to handle the company's H200 AI chips. According to The New York Times, New Matrix is on the list of approved firms, yet its offices are empty, \"a hollow gray shell with wires dangling...",
+      "source": "Terrence O’Brien via The Verge - Artificial Intelligences",
+      "image": "https://www.inoreader.com/camo/sGme-BL1YRXGpPioCAmhxhaPJZBl5_GuQZT1-Ie7X5rE,q80,480x400,pf,b64/aHR0cHM6Ly9wbGF0Zm9ybS50aGV2ZXJnZS5jb20vd3AtY29udGVudC91cGxvYWRzL3NpdGVzLzIvMjAyNS8wNi9TVEswODNfTlZJRElBXzIuanBnP3F1YWxpdHk9OTAmc3RyaXA9YWxsJmNyb3A9MCwwLDEwMCwxMDA"
+    },
+    {
+      "id": "at_51110839431",
+      "title": "AI broke the cybersecurity world. What’s next?",
+      "url": "https://www.theverge.com/podcast/1029038/ai-cybersecurity-hackers-data-breach-dark-age-alex-stamos",
+      "summary": "Today, I’m talking with Alex Stamos, chief security officer at Cognition and longtime cybersecurity expert, about what a mess cybersecurity is right now. This episode is part one of a special series looking at AI in real life. I’ve always enjoyed talking to Alex because he’s so direct, and you’re going to hear him say that the multibillion-dollar...",
+      "source": "Nilay Patel via The Verge - Artificial Intelligences",
+      "image": "https://www.inoreader.com/camo/sIAJ-CWqzkXMcclt3RaSIaUVuM2ZyxS1nq7j6ucT2EaQ,q80,480x400,pf,b64/aHR0cHM6Ly9wbGF0Zm9ybS50aGV2ZXJnZS5jb20vd3AtY29udGVudC91cGxvYWRzL3NpdGVzLzIvMjAyNi8xMS9WUkdfRENEXzExMDcyNi5qcGc_cXVhbGl0eT05MCZzdHJpcD1hbGwmY3JvcD0wLDAsMTAwLDEwMA"
+    },
     {
       "id": "at_51109910435",
       "title": "Why a new report on Anthropic automating AI development is alarming researchers",
@@ -1576,30 +1600,6 @@
       "summary": "Top stories in tech today:- Binance loses $6.3B in record hack- Reddit locks out logged-out readers- Meta brings self-harm alerts to Facebook- Amazon rolls out five Alexa+ devices💬14🔄3❤️20👀6533📊14⚡ Powered by xgo.ing",
       "source": "The Rundown AI (@TheRundownAI) via The Rundown AI(@TheRundownAI)",
       "image": "https://www.inoreader.com/camo/sfx6514NrHG3ZOogeiIm6ZUj547RZwwVc5JdpfOsHWMY,q80,480x400,pf,b64/aHR0cHM6Ly9wYnMudHdpbWcuY29tL21lZGlhL0hWNHE3R1lXQUFBNmdueC5qcGc"
-    },
-    {
-      "id": "at_51060422130",
-      "title": "Read more: https://t.co/1YgWjzi6LS",
-      "url": "https://x.com/TheRundownAI/status/2116115476463993042",
-      "summary": "Read more: therundownai.beehiiv.com/p/inside-the-s…💬1🔄0❤️2👀2404📊1⚡ Powered by xgo.ing",
-      "source": "The Rundown AI (@TheRundownAI) via The Rundown AI(@TheRundownAI)",
-      "image": ""
-    },
-    {
-      "id": "at_51060422131",
-      "title": "Top stories in AI today: - Report: Nvidia CEO targeted by alleged Chinese spy - Rowan’s Corner: ‘Se...",
-      "url": "https://x.com/TheRundownAI/status/2116115471137198534",
-      "summary": "Top stories in AI today:- Report: Nvidia CEO targeted by alleged Chinese spy- Rowan’s Corner: ‘Sent from my agent’- Make ElevenLabs voiceovers sound more natural- Anthropic’s AI now monitors its own conversations💬24🔄1❤️32👀7460📊24⚡ Powered by xgo.ing",
-      "source": "The Rundown AI (@TheRundownAI) via The Rundown AI(@TheRundownAI)",
-      "image": "https://www.inoreader.com/camo/shaZkN9wz0MAgtwe9078fjR2zc1BJOcUhcS4sOb6Zg9U,q80,480x400,pf,b64/aHR0cHM6Ly9wYnMudHdpbWcuY29tL21lZGlhL0hWM3p6VU5Xd0FBR1JBNC5qcGc"
-    },
-    {
-      "id": "at_51060422133",
-      "title": "The remake we never knew we needed",
-      "url": "https://x.com/TheRundownAI/status/2115946616238612937",
-      "summary": "The remake we never knew we neededPolymarket@PolymarketJUST IN: Boston Celtics head coach Joe Mazzulla reveals he's been using Anthropic's Claude to help coach the team.🔗 View Quoted Tweet💬12🔄4❤️34👀4550📊11⚡ Powered by xgo.ing",
-      "source": "The Rundown AI (@TheRundownAI) via The Rundown AI(@TheRundownAI)",
-      "image": "https://www.inoreader.com/camo/sU8jut9lHsjqUZsJfy0XpL_4wJJfCRnBM2dquCrxQAWU,q80,480x400,pf,b64/aHR0cHM6Ly9wYnMudHdpbWcuY29tL21lZGlhL0hWMWFJMFlXb0FBS05JUS5qcGc"
     }
   ]
 }
