@@ -27,7 +27,7 @@
       --color-accent-orange: #C45A2A;
       --color-accent-teal: #1F4F55;
       --color-link: #7EC8C8;
-      --radius-window: 16px;
+      --radius-window: 28px;
       --radius-card: 12px;
       --radius-control: 10px;
       --radius-pill: 20px;
@@ -825,7 +825,7 @@
       100% {
         opacity: 1;
         transform: translate(-50%, -50%) scale(1);
-        border-radius: 16px;
+        border-radius: var(--radius-window);
         /* End as window */
       }
     }
@@ -845,7 +845,7 @@
       100% {
         opacity: 1;
         transform: scale(1);
-        border-radius: 16px;
+        border-radius: var(--radius-window);
       }
     }
 
@@ -862,9 +862,41 @@
           rgba(24, 24, 24, 0.24);
         backdrop-filter: blur(28px) saturate(115%);
         -webkit-backdrop-filter: blur(28px) saturate(115%);
-        border-color: rgba(255, 255, 255, 0.22);
+        border-color: rgba(255, 255, 255, 0.12);
         box-shadow: var(--shadow-window), inset 0 1px 0 rgba(255, 255, 255, 0.14);
       }
+    }
+
+    /* A fine reflective rim and soft inner bevel give the glass a smooth edge.
+       These decorative layers never intercept window controls or dragging. */
+    .window-card::before,
+    .window-card::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      border-radius: inherit;
+      pointer-events: none;
+      z-index: 10;
+    }
+
+    .window-card::before {
+      padding: 1px;
+      background: linear-gradient(135deg,
+        rgba(255, 255, 255, 0.40),
+        rgba(255, 255, 255, 0.08) 35%,
+        rgba(255, 255, 255, 0.025) 65%,
+        rgba(255, 255, 255, 0.20));
+      -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+      -webkit-mask-composite: xor;
+      mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+      mask-composite: exclude;
+    }
+
+    .window-card::after {
+      box-shadow:
+        inset 1px 1px 2px rgba(255, 255, 255, 0.14),
+        inset -1px -1px 2px rgba(0, 0, 0, 0.20),
+        inset 0 0 10px rgba(255, 255, 255, 0.045);
     }
 
     /* ---- REAL WINDOW STACKING ----
@@ -892,7 +924,7 @@
       left: 50%;
       top: 50%;
       transform: translate(-50%, -50%);
-      border-radius: 16px;
+      border-radius: var(--radius-window);
     }
 
     .card-header {
@@ -904,7 +936,7 @@
       gap: 12px;
       flex-shrink: 0;
       background: var(--surface-header);
-      border-radius: 16px 16px 0 0;
+      border-radius: var(--radius-window) var(--radius-window) 0 0;
       cursor: move;
       touch-action: none;
       user-select: none;

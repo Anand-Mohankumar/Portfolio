@@ -151,7 +151,7 @@ Use these as defaults:
 
 ### Main Window Card
 
-Use warm charcoal for primary app panels. A restrained peach/copper glow below and a muted cool tint above connect the surfaces to the animated wallpaper. Use the same translucent neutral charcoal tint and 28px backdrop blur for every window, whether isolated or overlapping. Keep the fill light (24% opacity) with a subtle white sheen so the wallpaper and lower windows remain visible through the glass. Retain a solid fallback for browsers without backdrop blur and for reduced-transparency or increased-contrast preferences.
+Use warm charcoal for primary app panels. A restrained peach/copper glow below and a muted cool tint above connect the surfaces to the animated wallpaper. Use the same translucent neutral charcoal tint and 28px backdrop blur for every window, whether isolated or overlapping. Keep the fill light (24% opacity) with a subtle white sheen so the wallpaper and lower windows remain visible through the glass. Use 28px rounded corners, a fine gradient rim, and a soft inner bevel for smooth glass edges; decorative edge layers must use `pointer-events: none`. Retain a solid fallback for browsers without backdrop blur and for reduced-transparency or increased-contrast preferences.
 
 ```css
 .window-card {
@@ -504,7 +504,7 @@ Use these CSS custom properties for new projects:
   --color-accent-orange: #C45A2A;
   --color-accent-teal: #1F4F55;
   --color-link: #7EC8C8;
-  --radius-window: 16px;
+  --radius-window: 28px;
   --radius-card: 12px;
   --radius-control: 10px;
   --radius-pill: 20px;
