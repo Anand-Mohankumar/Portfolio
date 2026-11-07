@@ -1,6 +1,14 @@
 {
-  "updatedAt": "2026-11-07T00:07:17.770847+00:00",
+  "updatedAt": "2026-11-07T05:59:24.254251+00:00",
   "articles": [
+    {
+      "id": "at_51106480783",
+      "title": "Crusoe sells troubled Wyoming data center project to Google",
+      "url": "https://techcrunch.com/2026/11/06/crusoe-sells-troubled-wyoming-data-center-project-to-google/",
+      "summary": "The deal highlights the challenges of developing massive AI data centers.",
+      "source": "Marina Temkin via AI | TechCrunch",
+      "image": "https://www.inoreader.com/camo/s8KdKvzFgoCG71SOtzj28MGbz2Snrce3sXmyEcGCt1GU,q80,480x400,pf,b64/aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNi8wOS9jcnVzb2UtY2VvLWdldHR5LmpwZz9yZXNpemU9MTYwMCwxMDY3"
+    },
     {
       "id": "at_51105972545",
       "title": "Thinking Machines launches Inkling 2 Small with near-frontier performance on enterprise benchmarks",
@@ -1590,14 +1598,6 @@
       "title": "A fascinating look inside a company at the very far end of the AI adoption spectrum. Spawn lets peo...",
       "url": "https://x.com/TheRundownAI/status/2115920808761864472",
       "summary": "A fascinating look inside a company at the very far end of the AI adoption spectrum.Spawn lets people build multiplayer games with AI, and it runs the business on AI, too.Spawn's 10 (human) employees spent $3.1M on AI tokens last month, with its agents shipping 77,000 changes in 30 days.The founder even built AI judges from two years of recorded calls...",
-      "source": "The Rundown AI (@TheRundownAI) via The Rundown AI(@TheRundownAI)",
-      "image": ""
-    },
-    {
-      "id": "at_51060422136",
-      "title": "Stripe co-founder John Collison asked OpenAI CEO Sam Altman on his Cheeky Pint podcast whether OpenA...",
-      "url": "https://x.com/TheRundownAI/status/2115873803486032121",
-      "summary": "Stripe co-founder John Collison asked OpenAI CEO Sam Altman on his Cheeky Pint podcast whether OpenAI had more than its 700 published proofs.\"We do. Of course,” Altman said. Moments later: “Humanity deserves fundamental knowledge. And we should not be sitting on a major fundamental science discovery.\"He weighed that against what mathematicians stand...",
       "source": "The Rundown AI (@TheRundownAI) via The Rundown AI(@TheRundownAI)",
       "image": ""
     }

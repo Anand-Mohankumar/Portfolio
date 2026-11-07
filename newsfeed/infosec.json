@@ -1,6 +1,70 @@
 {
-  "updatedAt": "2026-11-07T00:07:17.996919+00:00",
+  "updatedAt": "2026-11-07T05:59:24.131735+00:00",
   "articles": [
+    {
+      "id": "at_51107197084",
+      "title": "OWASP Global AppSec: How to hide prompt injection in plain sight",
+      "url": "https://www.scworld.com/resource/owasp-global-appsec-how-to-hide-prompt-injection-in-plain-sight",
+      "summary": "Words embedded in images can often bypass LLM filters that screen out harmful text instructions.",
+      "source": "Paul Wagenseil via Latest articles from SC Magazine",
+      "image": "https://www.inoreader.com/camo/sbfQ_F9IxKtp6XyYAP6uQltdYTLEgUwnzBeBPM-XAhJg,q80,480x400,pf,b64/aHR0cHM6Ly9maWxlcy5jeWJlcnJpc2thbGxpYW5jZS5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjYvMTEvcm9ib3Qtcm9hZC1zaWduLXByb21wdC1pbmplY3Rpb24tc29jaWFsc2lnaHQuanBn"
+    },
+    {
+      "id": "at_51106731732",
+      "title": "ARTEX AI Agent Escapes Research Sandbox and Accesses WorkOS Customer Records",
+      "url": "https://cybersecuritynews.com/workos-customer-records-exposed/",
+      "summary": "WorkOS says an ARTEX AI security agent escaped a researcher’s test environment and accessed customer information through an exposed internal tool. In its November 6, 2026 update, the company attributed the incident to unintended activity during cybersecurity benchmark testing, rather than a person acting with malicious intent. The researcher...",
+      "source": "Guru Baran via Cyber Security News",
+      "image": "https://www.inoreader.com/camo/sdUIRAHCzoADNUdSPCOl2HkTvSL5sI8iZO6nh0wGDCW4,q80,480x400,pf,b64/aHR0cHM6Ly9jeWJlcnNlY3VyaXR5bmV3cy5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjYvMTEvV29ya09TLUN1c3RvbWVyLVJlY29yZHMtRXhwb3NlZC53ZWJw"
+    },
+    {
+      "id": "at_51106731734",
+      "title": "Insignary Releases Free Insignary-Chk Tool to Detect PHP2Shell and Node2Shell Exposure",
+      "url": "https://cybersecuritynews.com/insignary-releases-free-insignary-chk-tool-to-detect-php2shell-and-node2shell-exposure/",
+      "summary": "Toronto, Canada, November 6th, 2026, CyberNewswire Free, read-only scanner helps organizations find Linux servers and container images exposed to two actively exploited vulnerabilities in PHP and Node.js Insignary, a global open-source security company, today released insignary-chk, a free tool that checks for PHP2Shell and Node2Shell,...",
+      "source": "Cybernewswire via Cyber Security News",
+      "image": "https://www.inoreader.com/camo/srgNR9nAP9inkVtq2A1L1gIMlDgvcWUDpJJQ0pYq9ABQ,q80,480x400,pf,b64/aHR0cHM6Ly9ibG9nZ2VyLmdvb2dsZXVzZXJjb250ZW50LmNvbS9pbWcvYi9SMjl2WjJ4bC9BVnZYc0Vqa0xjLXFMam5rei16c3djaHNXWFhuUlBzOS1xOVZhSFk1bVZScUpfZGthSld4QlF5Ql9jV25WQ0o1U2RwOGFjeFM2MU5IRGZlelVsSDVBWWFiR2gyajFVMzVEU1cxWml1bDZHYmVOVU5zMXdmMzBtam5SekdRVS03R2ZSWGVybFhYX0dRM0Y4Tl9zNTQxSjBVSmNfSDlwLUxXS1dOQ1ktX2c4NVYyM3g3b25oQWMxZUNMOUZjTjBINzVXaEUvczE2MDAvaW1hZ2UtNi03Njh4NDAzLndlYnA"
+    },
+    {
+      "id": "at_51106413975",
+      "title": "MetaMask addresses infrastructure security incident",
+      "url": "https://www.scworld.com/brief/metamask-addresses-infrastructure-security-incident",
+      "summary": "MetaMask recently confirmed a security incident involving its infrastructure that resulted in the diversion of staking rewards, as first reported by Bleeping Computer.",
+      "source": "SC Staff via Latest articles from SC Magazine",
+      "image": "https://www.inoreader.com/camo/sztMACslwoYxWe17Muv8dsByI_BPGrkepvHJ8dzkMmOQ,q80,480x400,pf,b64/aHR0cHM6Ly9maWxlcy5jeWJlcnJpc2thbGxpYW5jZS5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjUvMDkvMDkwMzA1X2NyeXB0b2N1cnJlbmN5LmpwZw"
+    },
+    {
+      "id": "at_51106413976",
+      "title": "Microsoft addresses high-severity vulnerability in Paint application",
+      "url": "https://www.scworld.com/brief/microsoft-addresses-high-severity-vulnerability-in-paint-application",
+      "summary": "Microsoft has released a security update to resolve a high-severity vulnerability in the Paint application that could allow remote code execution, based on information published by Tech Radar.",
+      "source": "SC Staff via Latest articles from SC Magazine",
+      "image": "https://www.inoreader.com/camo/sBq8m8I6rZ6Qo_rNPzqjqY-J-htAohtqOKrmhGaoiR90,q80,480x400,pf,b64/aHR0cHM6Ly9maWxlcy5jeWJlcnJpc2thbGxpYW5jZS5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjYvMDkvMDkwODI2X3JjZV9yZW1vdGVfY29kZV9leGVjdXRpb24uanBn"
+    },
+    {
+      "id": "at_51106413977",
+      "title": "Veeam addresses boot failures on AMD EPYC processors",
+      "url": "https://www.scworld.com/brief/veeam-addresses-boot-failures-on-amd-epyc-processors",
+      "summary": "Veeam has issued a warning regarding boot failures affecting its Software Appliance virtual machines when running on hosts equipped with AMD EPYC processors, based on information published by Bleeping Computer.",
+      "source": "SC Staff via Latest articles from SC Magazine",
+      "image": "https://www.inoreader.com/camo/s9qX_KkXqLJ7tQ41Igop8ypH8M-UwKdbpUjwN2cjtvB0,q80,480x400,pf,b64/aHR0cHM6Ly9maWxlcy5jeWJlcnJpc2thbGxpYW5jZS5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjYvMDgvQWRvYmVTdG9ja181MTA0NzY3NjkuanBn"
+    },
+    {
+      "id": "at_51106413978",
+      "title": "D-Link issues mitigation guidance for unpatched DGS-3130 switch vulnerabilities",
+      "url": "https://www.scworld.com/brief/d-link-issues-mitigation-guidance-for-unpatched-dgs-3130-switch-vulnerabilities",
+      "summary": "Reported by Bleeping Computer. D-Link has issued mitigation measures for multiple unpatched security flaws affecting its DGS-3130 series managed Gigabit stackable switches.",
+      "source": "SC Staff via Latest articles from SC Magazine",
+      "image": "https://www.inoreader.com/camo/s3fyUPAvO_6pAWLvIkqzylMrBqwVqSrQ3ZnQpAeIlEe0,q80,480x400,pf,b64/aHR0cHM6Ly9maWxlcy5jeWJlcnJpc2thbGxpYW5jZS5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjYvMTAvQWRvYmVTdG9ja18yMDU1Mjk2MDcxLXNjYWxlZC5qcGVn"
+    },
+    {
+      "id": "at_51106023186",
+      "title": "SonicWall warns of new SSL-VPN MFA bypass flaw exploited in attacks",
+      "url": "https://www.bleepingcomputer.com/news/security/sonicwall-warns-of-new-ssl-vpn-mfa-bypass-flaw-exploited-in-attacks/",
+      "summary": "SonicWall has released security updates to fix seven vulnerabilities in SonicOS firewalls, including an SSL-VPN authentication bypass flaw exploited in attacks. [...]",
+      "source": "Lawrence Abrams via Bleeping Computer",
+      "image": "https://www.inoreader.com/camo/sVlgtU-Joa3L_95mKyU8hssURayMSdJy7G51jnAPfRxo,q80,480x400,pf,b64/aHR0cHM6Ly93d3cuYmxlZXBzdGF0aWMuY29tL2NvbnRlbnQvaGwtaW1hZ2VzLzIwMjUvMDUvMDgvU29uaWNXYWxsLmpwZw"
+    },
     {
       "id": "at_51105573518",
       "title": "White House Network Appears in Global Residential Proxy Traffic",
@@ -1536,70 +1600,6 @@
       "summary": "Two flaws in the Xen hypervisor allow a malicious guest virtual machine (VM) to read and write the memory of other VMs on the same host, including dom0. Dom0 is the VM that, by default, has full permissions and manages the others. Patches are out, and there is no known mitigation, the Xen Project said in an advisory on November 3. All Xen versions...",
       "source": "[email protected] (The Hacker News) via The Hacker News",
       "image": "https://www.inoreader.com/camo/sRqZH91KtkWluodw5v79bLsQIUiTNAgKh7S8foWag5YU,q80,480x400,pf,b64/aHR0cHM6Ly9ibG9nZ2VyLmdvb2dsZXVzZXJjb250ZW50LmNvbS9pbWcvYi9SMjl2WjJ4bC9BVnZYc0VpQVZQWGl1VEJmaEJucHdhWkhNZlNEV3ltS0pyWGJTODhrT0VPMVh1aDV0MTFxQW53U0tlRlRIR1F5NlpHOVNyMk4td1JZckpnNTh4M2xLRmJ5YnZVOXAxYTg1bHhhQ0hmQmE2MXZPMURmakVoVWk1WXpmNmJRUzFlTjdNdS1zX3NVd2tFLUpHYy1Vem5KMXAwcWZtd01EdXNYRnpXYXdYS1hNdDZqai12RU54eVFHMTJ1QVVEVWUwcDBndGcvczE2MDAveGVuLmpwZw"
-    },
-    {
-      "id": "at_51076469634",
-      "title": "Radio With No Radar: Why Agent Runtime Security Fails Without the Layers Beneath It",
-      "url": "https://thehackernews.com/2026/11/radio-with-no-radar-why-agent-runtime.html",
-      "summary": "Nearly every agent security pitch now ends on the same promise: the product stops the bad action in real time. The promise holds for one kind of agent, the kind whose traffic passes through a gateway the enterprise owns. Most agents never touch one. One recent case shows what that gap looks like in practice. An employee asked an AI assistant to trigger...",
-      "source": "[email protected] (The Hacker News) via The Hacker News",
-      "image": "https://www.inoreader.com/camo/scTq5hfZYMpfxk1m9D8j1zTpupOZCwG016eLtA3ozzTU,q80,480x400,pf,b64/aHR0cHM6Ly9ibG9nZ2VyLmdvb2dsZXVzZXJjb250ZW50LmNvbS9pbWcvYi9SMjl2WjJ4bC9BVnZYc0VoUXFGSW0zVjNEc0w2ckh0amhrTjhxVlQyc1UtY2FIVUV1UGdlZXBkWjZsTHNJSi0wOUdGZ19IVlZCZ2VIUDM2VzBhYnFVZUN1YU51QU9JaGVTR1lCOWh4bUhiUUdjZ1JFQkJ4U3RFRkxpamd4LUNkOEM4Wjh3THV4Z0ZGdTc1TzhoQUFPY2RqQXhnQ1otaVlvQnZZUzA5QWNJVGRxTW5tTFpPbjJKZEdhRXAwNFNQcmdZa2dRMTRkbDFTMEpTL3MxNjAwL3JlY28uZ2lm"
-    },
-    {
-      "id": "at_51076469636",
-      "title": "China-Aligned Hackers Hijack Sogou Input Method DNS Requests to Deploy DarkVigil Backdoor",
-      "url": "https://thehackernews.com/2026/11/china-aligned-hackers-hijack-sogou.html",
-      "summary": "A China-aligned threat actor known as SlippyNunchucks has been attributed to a Domain Name System (DNS) hijacking operation abusing insecure HTTP communications in Windows versions of Sogou Input Method as part of a surveillance campaign designed to deploy an implant called DarkVigil (aka FDMTP). The campaign, observed starting July 1, 2026, is assessed...",
-      "source": "[email protected] (The Hacker News) via The Hacker News",
-      "image": "https://www.inoreader.com/camo/sN0CywyKRwDZrl9ut_TUh5kR-79FB8a3Nf4MDVrbT8lc,q80,480x400,pf,b64/aHR0cHM6Ly9ibG9nZ2VyLmdvb2dsZXVzZXJjb250ZW50LmNvbS9pbWcvYi9SMjl2WjJ4bC9BVnZYc0VoTWF3dk5OT3ZSWVJtLWs3aWk5eURkdzIxNHY0a3dRN2g1ZkFmT2FVVmt2TWV0TndBcnJhbDhxdW1sT2J0YWZ0ak9jQnNpYkw5dmtxTTFVVDAtOWw5allQamozTTNDOU5jUGZnNXBkSXVFTlVmZEtsSzdseXNlQ1MzMEFWaGdMTHM2YS0yZmRYbFNEeW1TVmV5SXppTzdJQzEzSEZDYU9mMXY0c2piZ21rZUtmZXdXTnNiVEpDSjBXUjJ6TEJaL3MxNjAwL2tleS5qcGc"
-    },
-    {
-      "id": "at_51076303310",
-      "title": "Hackers Exploit Zyxel GS1900 Zero-Day in the Wild to Hijack Network Switches",
-      "url": "https://cybersecuritynews.com/zyxel-gs1900-zero-day-exploited/",
-      "summary": "A flaw in Zyxel GS1900 switches was already being used by hackers, and the patch meant to fix it did not work. Researchers at Binarly found that a public exploit hit a different bug than the one Zyxel had patched. Zyxel has now confirmed it as a new flaw, tracked as CVE-2026-107441. Zyxel published its fix for CVE-2026-7273 on June 16, 2026....",
-      "source": "Guru Baran via Cyber Security News",
-      "image": "https://www.inoreader.com/camo/sCiZdvv309feI4yAjXfnLaePdPdhcxjpYfGc-WjDfWQU,q80,480x400,pf,b64/aHR0cHM6Ly9jeWJlcnNlY3VyaXR5bmV3cy5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjYvMTEvWnl4ZWwtR1MxOTAwLVplcm8tRGF5LUV4cGxvaXRlZC53ZWJw"
-    },
-    {
-      "id": "at_51076303314",
-      "title": "Microsoft Edge Now Automatically Blocks Malicious Websites Sending Fake Virus Alert Notifications",
-      "url": "https://cybersecuritynews.com/microsoft-edge/",
-      "summary": "Microsoft Edge now automatically disables notifications from websites that send users to detected scam pages, cutting off a route used to deliver fake virus warnings. The protection connects Microsoft Defender SmartScreen and Scareware blocker detections with notification permissions, helping prevent malicious sites from repeatedly drawing people...",
-      "source": "Tushar Subhra Dutta via Cyber Security News",
-      "image": "https://www.inoreader.com/camo/sRDFZ-6I2j91EJFr6COUdJiDO9TX4kIwmvAF3JPDsnrI,q80,480x400,pf,b64/aHR0cHM6Ly9ibG9nZ2VyLmdvb2dsZXVzZXJjb250ZW50LmNvbS9pbWcvYi9SMjl2WjJ4bC9BVnZYc0VqYUFKWno5VDJMZmxhR0JGaFktUTVHbW1jemxBYkFzcnBXbFRweGFreGF5UGhuaGI3ZEVFRlh4aWpibG5FWTlvRjZuWVQ0OFV5WGQ2LUdJdWNDN2F4QkJJMDZTS2ZzZnZENEVUZ2RYZmRHX0UydHBGcGQwOTZxVTQzNlNRdHdBWDVoWDlReG9tdjI5ZzB2dDZQRm9KV0haR2p1WFRHYk0teU4waVlVT3R4VlQ2dlVwUXhxTVo5Y3pGNVdRVmMvczE2MDAvU2F5JTIweWVzJTIwb25jZSUyMGFuZCUyMGZha2UlMjBhbGVydHMlMjBjYW4lMjBzdGFydCUyMHBpbGluZyUyMHVwJTIwKFNvdXJjZSUyMC0lMjBXaW5kb3dzKS53ZWJw"
-    },
-    {
-      "id": "at_51076292628",
-      "title": "Canadian Extradited to US Over Cryptomining Hacks on University Supercomputers",
-      "url": "https://www.securityweek.com/canadian-extradited-to-us-over-cryptomining-hacks-on-university-supercomputers/",
-      "summary": "A federal grand jury indicted two Canadian men for hijacking university supercomputers to secretly mine Electroneum cryptocurrency. The post Canadian Extradited to US Over Cryptomining Hacks on University Supercomputers appeared first on SecurityWeek.",
-      "source": "Eduard Kovacs via SecurityWeek",
-      "image": ""
-    },
-    {
-      "id": "at_51076156027",
-      "title": "Sophos Firewall v23 is now available",
-      "url": "https://www.sophos.com/en-us/blog/sophos-firewall-v23-now-available",
-      "summary": "Delivering 30 of your top-requested features",
-      "source": "via Naked Security",
-      "image": ""
-    },
-    {
-      "id": "at_51076095820",
-      "title": "CISA flags WordPress RCE flaw as actively exploited in attacks",
-      "url": "https://www.bleepingcomputer.com/news/security/cisa-flags-wordpress-rce-flaw-as-actively-exploited-in-attacks/",
-      "summary": "The US Cybersecurity and Infrastructure Security Agency (CISA) warned federal agencies that attackers have started exploiting a recently patched high-severity WordPress vulnerability in the wild. [...]",
-      "source": "Sergiu Gatlan via Bleeping Computer",
-      "image": "https://www.inoreader.com/camo/slFjILsA8TyaYyBspGWInsrO8AOXr8idgV4DLwHOtV4k,q80,480x400,pf,b64/aHR0cHM6Ly93d3cuYmxlZXBzdGF0aWMuY29tL2NvbnRlbnQvaGwtaW1hZ2VzLzIwMjYvMTEvMDQvV29yZFByZXNzLmpwZw"
-    },
-    {
-      "id": "at_51075707813",
-      "title": "Google Releases Major Chrome Security Update Fixing 213 Bugs, Including 7 Critical Vulnerabilities",
-      "url": "https://cybersecuritynews.com/google-releases-major-chrome-security-update/",
-      "summary": "Google has released Chrome 157 for Windows, macOS, and Linux, fixing 213 security bugs, including seven rated critical. Announced on November 3, 2026, the update addresses flaws across graphics, memory handling, browser features, and access controls. Google says the stable release will reach users over the coming days and weeks. The patched versions...",
-      "source": "Guru Baran via Cyber Security News",
-      "image": "https://www.inoreader.com/camo/sp0kb8gZoIGialsUqO3ZtI1IJ239OqYknvYxF7pcRNMg,q80,480x400,pf,b64/aHR0cHM6Ly9jeWJlcnNlY3VyaXR5bmV3cy5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjYvMTEvTWFqb3ItQ2hyb21lLVNlY3VyaXR5LVVwZGF0ZS53ZWJw"
     }
   ]
 }
