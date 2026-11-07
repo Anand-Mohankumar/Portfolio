@@ -1,6 +1,38 @@
 {
-  "updatedAt": "2026-11-07T05:59:24.131735+00:00",
+  "updatedAt": "2026-11-07T13:02:50.458822+00:00",
   "articles": [
+    {
+      "id": "at_51109192394",
+      "title": "SonicWall Patches Exploited SonicOS Vulnerability That Weakens VPN Logins",
+      "url": "https://www.securityweek.com/sonicwall-patches-exploited-sonicos-bug-that-weakens-vpn-logins/",
+      "summary": "CVE-2026-19868 can let attackers holding credentials for a different login method get past SAML checks, including SAML-enforced MFA. The post SonicWall Patches Exploited SonicOS Vulnerability That Weakens VPN Logins appeared first on SecurityWeek.",
+      "source": "Eduard Kovacs via SecurityWeek",
+      "image": "https://www.inoreader.com/camo/slNMjia-_aJIYzDJftAdWR00WQmjdApqYFagE04GRzME,q80,480x400,pf,b64/aHR0cHM6Ly93d3cuc2VjdXJpdHl3ZWVrLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNS8wOC9Tb25pY1dhbGwuanBn"
+    },
+    {
+      "id": "at_51108930018",
+      "title": "U.S. CISA adds SonicWall SonicOS SSLVPN flaw to its Known Exploited Vulnerabilities catalog",
+      "url": "https://securityaffairs.com/202581/security/u-s-cisa-adds-sonicwall-sonicos-sslvpn-flaw-to-its-known-exploited-vulnerabilities-catalog.html",
+      "summary": "U.S. CISA adds SonicWall SonicOS SSLVPN vulnerability CVE-2026-19868 to its Known Exploited Vulnerabilities catalog. The U.S. Cybersecurity and Infrastructure Security Agency (CISA) added a SonicWall SonicOS SSLVPN flaw, tracked as CVE-2026-19868 (CVSS score of 7.5), to its Known Exploited Vulnerabilities (KEV) catalog. CVE-2026-19868...",
+      "source": "Pierluigi Paganini via Security Affairs",
+      "image": ""
+    },
+    {
+      "id": "at_51108560957",
+      "title": "Claude Code’s “Yes, and Don’t Ask Again” Option Can Leak Passwords and API Keys to GitHub",
+      "url": "https://cybersecuritynews.com/claude-codes-yes-and-dont-ask-again/",
+      "summary": "Claude Code’s “Yes, and don’t ask again” option can save passwords and API keys inside project settings that later reach public GitHub repositories. Apiiro researchers found 2,539 distinct secrets across 1,994 public repositories, showing how a routine approval can turn private credentials into public data. The research identified 63 affected...",
+      "source": "Guru Baran via Cyber Security News",
+      "image": "https://www.inoreader.com/camo/sHutfRyoMh6dzURtokphFqzoboB0ms65ZOlGcAq7M_wo,q80,480x400,pf,b64/aHR0cHM6Ly9jeWJlcnNlY3VyaXR5bmV3cy5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjYvMTEvQ2xhdWRlLUNvZGVzLVllcy1hbmQtRG9udC1Bc2stQWdhaW4ud2VicA"
+    },
+    {
+      "id": "at_51108301125",
+      "title": "Claude Code's “Don't Ask Again” File Exposes Passwords and Keys in 1,122 Public Copies on GitHub",
+      "url": "https://thehackernews.com/2026/11/claude-codes-dont-ask-again-file.html",
+      "summary": "Passwords and API keys that developers typed into commands they approved in Claude Code are sitting in public GitHub repositories, where anyone can read them. When a user selects \"Yes, and don't ask again,\" Anthropic's AI coding assistant can save the command, word-for-word, including the secret, in a project settings file. Software security company...",
+      "source": "[email protected] (The Hacker News) via The Hacker News",
+      "image": "https://www.inoreader.com/camo/suCxwImRbvZYjNOssMPqUb3CCcNtYZ12j0sWA0VBx-Z4,q80,480x400,pf,b64/aHR0cHM6Ly9ibG9nZ2VyLmdvb2dsZXVzZXJjb250ZW50LmNvbS9pbWcvYi9SMjl2WjJ4bC9BVnZYc0VoWkgzdllMWmI5bFA3bURMcXkyaC11cHpkQ29tZVdJZmpEWDVzaUZVTzNGTTJIbFVzMDNPVHdpckExUjJ1ek9acV9jbHB0SVZCc29hSk5YSXVmOExsVGJYSEZ2ekJKTFJsMWwzbXFHVmVzSGpnZG1EODZTX2MtazJKWV90NTZ4WnFJMGJuTjZqWFJEcjkyS2xNdzZYNUJIem01aHFvZ3BXZmxzRVJpOXpyc01IU1NfYWJBY3ZaTWNVR292ZDgvczE2MDAvY2xhdWRlLWNvZGUuanBn"
+    },
     {
       "id": "at_51107197084",
       "title": "OWASP Global AppSec: How to hide prompt injection in plain sight",
@@ -259,7 +291,7 @@
     },
     {
       "id": "at_51101505832",
-      "title": "Hackers Launch 240,000 Exploit Attempts WordPress Core Flaw Enabling Remote Code Execution",
+      "title": "Hackers Launch 240,000 Attempts to Exploit a WordPress Core Flaw That Allows Remote Code Execution",
       "url": "https://cybersecuritynews.com/240000-wordpress-exploit-attempts/",
       "summary": "Hackers have launched more than 240,000 exploit attempts against a WordPress Core vulnerability that can allow attackers to run malicious code without logging in. According to the supplied Wordfence report, attacks began on October 28, 2026, the same day WordPress released a security update addressing the flaw. Tracked as CVE-2026-119977, the...",
       "source": "Guru Baran via Cyber Security News",
@@ -1568,38 +1600,6 @@
       "summary": "EU AI Act enforcement makes AI inventories, risk assessments and accountability essential for compliance.",
       "source": "Umesh Kalanke via Latest articles from SC Magazine",
       "image": "https://www.inoreader.com/camo/s2PDi4UqTvU98pARbeihtfI3XnxAD1S0YLTyVlf7Gqg4,q80,480x400,pf,b64/aHR0cHM6Ly9maWxlcy5jeWJlcnJpc2thbGxpYW5jZS5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjYvMTEvMTEwMzI2X2V1cm9wZV9haV9hY3QuanBn"
-    },
-    {
-      "id": "at_51076706804",
-      "title": "US charges two Canadians accused of hacking US universities",
-      "url": "https://www.bleepingcomputer.com/news/security/us-charges-two-canadians-accused-of-hacking-us-universities/",
-      "summary": "A federal grand jury indicted two Canadians suspected of hacking multiple US universities and using the compromised systems to mine for cryptocurrency. [...]",
-      "source": "Sergiu Gatlan via Bleeping Computer",
-      "image": "https://www.inoreader.com/camo/sz5jYwcrkWMP5bnUHqFmc-cXKTaFKAQqMVVaqOf03Q24,q80,480x400,pf,b64/aHR0cHM6Ly93d3cuYmxlZXBzdGF0aWMuY29tL2NvbnRlbnQvaGwtaW1hZ2VzLzIwMjYvMTEvMDQvSGFja2Vycy1yb29tLmpwZw"
-    },
-    {
-      "id": "at_51076477696",
-      "title": "AI-Linked Breaches Mount as WorkOS, Northflank, Trigger.dev Disclose Hacks",
-      "url": "https://www.securityweek.com/ai-linked-breaches-mount-as-workos-northflank-trigger-dev-disclose-hacks/",
-      "summary": "Hackers have been harvesting AI access tokens and have been using AI-assisted offensive tools to automate attacks. The post AI-Linked Breaches Mount as WorkOS, Northflank, Trigger.dev Disclose Hacks appeared first on SecurityWeek.",
-      "source": "Ionut Arghire via SecurityWeek",
-      "image": "https://www.inoreader.com/camo/sU5FqONvLis8I968SN63KCq2nOTJ55BCHp5hVnClaUBI,q80,480x400,pf,b64/aHR0cHM6Ly93d3cuc2VjdXJpdHl3ZWVrLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNi8wOS9BSS1hcnRpZmljaWFsLWludGVsbGlnZW5jZS53ZWJw"
-    },
-    {
-      "id": "at_51076469629",
-      "title": "Critical Rails Flaw Lets Attackers Write Server Files via Crafted ImageMagick Uploads",
-      "url": "https://thehackernews.com/2026/11/critical-rails-flaw-lets-attackers.html",
-      "summary": "A critical flaw in Ruby on Rails could allow an unauthenticated attacker to write arbitrary files on an app's server by uploading a crafted file if the app processes uploads using ImageMagick. The Rails project disclosed the flaw in an advisory and fixed it in versions 8.1.4.1 and 8.0.5.2. The flaw is in Active Storage, the part of Rails that handles...",
-      "source": "[email protected] (The Hacker News) via The Hacker News",
-      "image": "https://www.inoreader.com/camo/s0lSOdhUwJoeCx4s1lazgmeZBUM2tHJ265f8TPrjQARo,q80,480x400,pf,b64/aHR0cHM6Ly9ibG9nZ2VyLmdvb2dsZXVzZXJjb250ZW50LmNvbS9pbWcvYi9SMjl2WjJ4bC9BVnZYc0VpYUpXblNjZGtNeDBSNV9adDAwTnRZVk5qTmF2QlI3SU1yTHpKTV90WkdNVHBadEF2Vjd1Tld0NkJRYkJybFV6SC1hQm9qX1ptTUVPR19fYVRBOFZtZlRlaUhVUjlnZnFOZTJlWWY5ZlNNLXNZUWttQ09nMTBxWjNaYUt5TV9SUzFRVVFobThzNU5Ndy14bllhV01EZ0Rha21GeXA5dGJKZ1E0aE9aVGYwY3hlOUU2eDd1V3QzSmVONmJTM2svczE2MDAvcnVieS1yYWlscy5qcGc"
-    },
-    {
-      "id": "at_51076469632",
-      "title": "Xen Hypervisor Flaws Let One Malicious VM Read and Write Any Other VM's Memory",
-      "url": "https://thehackernews.com/2026/11/xen-hypervisor-flaws-let-one-malicious.html",
-      "summary": "Two flaws in the Xen hypervisor allow a malicious guest virtual machine (VM) to read and write the memory of other VMs on the same host, including dom0. Dom0 is the VM that, by default, has full permissions and manages the others. Patches are out, and there is no known mitigation, the Xen Project said in an advisory on November 3. All Xen versions...",
-      "source": "[email protected] (The Hacker News) via The Hacker News",
-      "image": "https://www.inoreader.com/camo/sRqZH91KtkWluodw5v79bLsQIUiTNAgKh7S8foWag5YU,q80,480x400,pf,b64/aHR0cHM6Ly9ibG9nZ2VyLmdvb2dsZXVzZXJjb250ZW50LmNvbS9pbWcvYi9SMjl2WjJ4bC9BVnZYc0VpQVZQWGl1VEJmaEJucHdhWkhNZlNEV3ltS0pyWGJTODhrT0VPMVh1aDV0MTFxQW53U0tlRlRIR1F5NlpHOVNyMk4td1JZckpnNTh4M2xLRmJ5YnZVOXAxYTg1bHhhQ0hmQmE2MXZPMURmakVoVWk1WXpmNmJRUzFlTjdNdS1zX3NVd2tFLUpHYy1Vem5KMXAwcWZtd01EdXNYRnpXYXdYS1hNdDZqai12RU54eVFHMTJ1QVVEVWUwcDBndGcvczE2MDAveGVuLmpwZw"
     }
   ]
 }
