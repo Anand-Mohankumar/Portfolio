@@ -1,6 +1,54 @@
 {
-  "updatedAt": "2026-11-08T09:00:16.298115+00:00",
+  "updatedAt": "2026-11-08T15:58:56.543486+00:00",
   "articles": [
+    {
+      "id": "at_51118580139",
+      "title": "SECURITY AFFAIRS AI-CYBERSECURITY NEWSLETTER ROUND 7",
+      "url": "https://securityaffairs.com/202682/ai/security-affairs-ai-cybersecurity-newsletter-round-7.html",
+      "summary": "Security Affairs AI-CYBERSECURITY newsletter includes a collection of the best articles and research on AI in the international landscape Artificial intelligence is rapidly changing cybersecurity, reshaping both the techniques used by attackers and the tools available to defenders. AI agents can automate tasks, analyze large amounts of data,...",
+      "source": "Pierluigi Paganini via Security Affairs",
+      "image": "https://www.inoreader.com/camo/s42GZOiAxz8ZmoIpg3wtjxiAD2Hr5eczP5aXTEmEJRsQ,q80,480x400,pf,b64/aHR0cHM6Ly9zZWN1cml0eWFmZmFpcnMuY29tL3dwLWNvbnRlbnQvdXBsb2Fkcy8yMDI2LzA5L1NlY3VyaXR5LUFmZmFpcnMtTmV3c0xldHRlci1BSS1DeWJlci5qcGc"
+    },
+    {
+      "id": "at_51118516484",
+      "title": "Iris Ohyama data cloud breach exposes info of 7.7 million customers",
+      "url": "https://www.bleepingcomputer.com/news/security/iris-ohyama-data-cloud-breach-exposes-info-of-77-million-customers/",
+      "summary": "Japanese manufacturer Iris Ohyama, the operator of the Iris Plaza shopping platform, disclosed that personal information belonging to about 7.7 million people may have been exposed after unauthorized access to a third-party cloud service the company used. [...]",
+      "source": "Bill Toulas via Bleeping Computer",
+      "image": "https://www.inoreader.com/camo/sb3XzHtFJRGJBo7ymQYhv5IVzuYOCpPek6r7mb6NPJC8,q80,480x400,pf,b64/aHR0cHM6Ly93d3cuYmxlZXBzdGF0aWMuY29tL2NvbnRlbnQvaGwtaW1hZ2VzLzIwMjYvMTEvMDYvaXJpcy5qcGc"
+    },
+    {
+      "id": "at_51118189280",
+      "title": "SECURITY AFFAIRS MALWARE NEWSLETTER ROUND 122",
+      "url": "https://securityaffairs.com/202657/malware/security-affairs-malware-newsletter-round-122.html",
+      "summary": "Security Affairs Malware newsletter includes a collection of the best articles and research on malware in the international landscape Malware Newsletter Unknown APT uses NetamLoader to attack a Win10 OS customized for governments in Asia Shutting the Door on the XCPE Botnet DarkBlinders: Inside an Active Espionage Campaign ...",
+      "source": "Pierluigi Paganini via Security Affairs",
+      "image": ""
+    },
+    {
+      "id": "at_51117829418",
+      "title": "Security Affairs newsletter Round 603 by Pierluigi Paganini – INTERNATIONAL EDITION",
+      "url": "https://securityaffairs.com/202649/security/security-affairs-newsletter-round-603-by-pierluigi-paganini-international-edition.html",
+      "summary": "A new round of the weekly Security Affairs newsletter has arrived! Every week, the best security articles from Security Affairs are free in your email box. Enjoy a new round of the weekly SecurityAffairs newsletter, including international press. Inside ARTEX: AI Hacking Tools, Exposed Servers and South Korean Bank BreachesOne Product...",
+      "source": "Pierluigi Paganini via Security Affairs",
+      "image": "https://www.inoreader.com/camo/sipvOyBoxz2AXi2WIy_ZqJtpjI--D-5iZYnS_Khjf8nk,q80,480x400,pf,b64/aHR0cHM6Ly9zZWN1cml0eWFmZmFpcnMuY29tL3dwLWNvbnRlbnQvdXBsb2Fkcy8yMDI2LzA5L3NlY3VyaXR5YWZmYWlycy1uZXdzbGV0dGVyLmpwZw"
+    },
+    {
+      "id": "at_51117293299",
+      "title": "Brava Security Emerges From Stealth With $15 Million in Funding",
+      "url": "https://www.securityweek.com/brava-security-emerges-from-stealth-with-15-million-in-funding/",
+      "summary": "Its multi-agent AI platform generates the telemetry an attack would produce to fix gaps in enterprise defenses. The post Brava Security Emerges From Stealth With $15 Million in Funding appeared first on SecurityWeek.",
+      "source": "Ionut Arghire via SecurityWeek",
+      "image": ""
+    },
+    {
+      "id": "at_51116799550",
+      "title": "Attackers Exploit Third-Party Provider to Raid French Bank Crédit Mutuel Arkéa",
+      "url": "https://securityaffairs.com/202628/cyber-crime/attackers-exploit-third-party-provider-to-raid-french-bank-credit-mutuel-arkea.html",
+      "summary": "French Bank Crédit Mutuel Arkéa says hackers exploited a service provider to steal up to $133 million using the bank’s own account. French cooperative bank Crédit Mutuel Arkéa was hit by a cyberattack that let attackers make fraudulent transactions of up to $133 million, forcing it to suspend certain systems. Crédit Mutuel Arkéa is a major...",
+      "source": "Pierluigi Paganini via Security Affairs",
+      "image": "https://www.inoreader.com/camo/s7tZHPs2sifv7iL5C7tARJdB_aQiDCpv1IumKtT1v8oU,q80,480x400,pf,b64/aHR0cHM6Ly9pMC53cC5jb20vc2VjdXJpdHlhZmZhaXJzLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNi8xMS9pbWFnZS0xNS5wbmc_dz0xMjAwJnNzbD0x"
+    },
     {
       "id": "at_51113017846",
       "title": "Inside ARTEX: AI Hacking Tools, Exposed Servers and South Korean Bank Breaches",
@@ -1552,54 +1600,6 @@
       "summary": "Russia-aligned hackers tracked as Gorbag are exploiting a WinRAR vulnerability to steal browser credentials, VPN configurations, and sensitive documents from Ukrainian organizations. Active since at least February 2025, the group targets government agencies, law enforcement bodies, justice institutions, local administrations near the front line,...",
       "source": "Tushar Subhra Dutta via Cyber Security News",
       "image": "https://www.inoreader.com/camo/sFKyxwSLNnIYEl3vCxqV4Li-AS1f4P2jywoJDElVUq9k,q80,480x400,pf,b64/aHR0cHM6Ly9ibG9nZ2VyLmdvb2dsZXVzZXJjb250ZW50LmNvbS9pbWcvYi9SMjl2WjJ4bC9BVnZYc0VnV0lVdjk5STJOS2hGR2ZPNXk1akNzNVU0bHR1UUEzRWxzenBQZWhidFNvX3BHZThnQWpPOUtwNl9pa3RrWnNNTF9ma0ZCMjlBejR1cVU2bHhaamVpYzdhYUlGcnJBX2NDOFpyTUN3SmJnZk9QeVNmYlF5Y2dBNEdYV2lmSnhwT1FVeGxjSHFRV0Zmb2Vjazgxckg4RjdqWHRDVVpSYXhMczdNaHlWMnFJRTdGRENzeFpvU3lpa3htX2I3ajQvczE2MDAvU3BlYXJwaGlzaGluZyUyMGVtYWlsJTIwbWVzc2FnZSUyMGZyb20lMjBhJTIwY29tcHJvbWlzZWQlMjBlbWFpbCUyMHNlbmRlciUyMChTb3VyY2UlMjAtJTIwV2VsaXZlc2VjdXJpdHkpLndlYnA"
-    },
-    {
-      "id": "at_51077509871",
-      "title": "The Sandbox Fights Back: Joe Security Launches Adaptive Detonation",
-      "url": "https://cybersecuritynews.com/the-sandbox-fights-back-joe-security-launches-adaptive-detonation/",
-      "summary": "Reinach, Switzerland, November 4th, 2026, CyberNewswire AI agents help Joe Sandbox uncover malicious behavior concealed by evasion techniques and unmet execution conditions. Joe Security‘s Adaptive Detonation brings active intervention to malware analysis, helping security teams investigate threats that may conceal their behavior during...",
-      "source": "Cybernewswire via Cyber Security News",
-      "image": "https://www.inoreader.com/camo/sVGDs249qSxW9MQCa6kNb5D45YKGtSvfQ7DazHk8Ua04,q80,480x400,pf,b64/aHR0cHM6Ly9ibG9nZ2VyLmdvb2dsZXVzZXJjb250ZW50LmNvbS9pbWcvYi9SMjl2WjJ4bC9BVnZYc0VqaE5sWTJ1OU9vNFJMU3dXY0xZMjRBOGdPWDdrOHRreUhxN0tDd3YwclRJZWVYc014Rmh6dVBFck15c1NxUnNRc2NUZnlXY3lWN25wTjZFbGtSRFRtTUNlUlNxbFBHS19aSy1YallLTm9xZFJ2eDAwS0JtZHU0NW1vWFcyY3N6SWc1TFFySC1uWU1Pclp4aWlMemlPOUlBR3hrWDlFajhtWWZrTHNxWXJ0QWpIRGxKQ245dmVZSElzQmNfVG8vczE2MDAvSW5zaWduYXJ5JTIwTGF1bmNoZXMlMjBDbGFyaXR5JTIwT24tRGVtYW5kXyUyMFNCT01zLCUyME5vJTIwQW5udWFsJTIwQ29tbWl0bWVudCUyMFJlcXVpcmVkJTIwVG9yb250bywlMjBDYW5hZGEsJTIwSnVseSUyMDE1dGgsJTIwMjAyNiwlMjBDeWJlck5ld3N3aXJlJTIwRW50ZXJwcmlzZS1ncmFkZSUyMGJpbmFyeSUyMHNvZnR3YXJlJTIwdmVyaWZpY2F0aW9uJTIwZm9yJTIwb25lJTIwcHJvamVjdCwlMjBvbmUlMjB0ZWFtLCUyMG9yJTIwJTIwKDUwLndlYnA"
-    },
-    {
-      "id": "at_51077509894",
-      "title": "Scammers Use Microsoft Azure to Host Fake Windows Security Alerts Seen at 80 Organizations",
-      "url": "https://cybersecuritynews.com/scammers-use-microsoft-azure/",
-      "summary": "Scammers are abusing Microsoft Azure to host fake Windows security alerts that pressure users into calling fraudulent support numbers. Between March and October 2026, the same fake Microsoft support kit reached users at 80 organizations. New landing pages were still appearing daily as of November 2, showing that the operation remained active....",
-      "source": "Tushar Subhra Dutta via Cyber Security News",
-      "image": "https://www.inoreader.com/camo/sBzeVnEB3RdL0g5HkvDGMYApuonQxqxwff230iZMnLH0,q80,480x400,pf,b64/aHR0cHM6Ly9ibG9nZ2VyLmdvb2dsZXVzZXJjb250ZW50LmNvbS9pbWcvYi9SMjl2WjJ4bC9BVnZYc0VoX09yWnlaNzZzcGE4dGlvbzdQWEI0STdNU3RQWERJbmRRNmFzNWtwbVpCbzRCR2J3cUhwWkFhTndjSjZRQUVteTNkeGl1LUlDRHRkS2RQVFd1dVktc1FhTWw1anJRZjlWU2ZQdzB6cnEzZ0UxejU0aURFUGI0dnp3UkxMdl9wTTcxY21EeGZoQUY2Z2RpbzZCZ0J4bHdZeGtycnd3WFJEUWZjdE4tVTJQaFgwaWkxWlJPZ1lIcUV5STZIVFEvczE2MDAvQSUyMHBhZ2UlMjBjYXB0dXJlZCUyMG9uJTIwQXByaWwlMjAzLCUyMDIwMjYuJTIwVGhlJTIwYmFyJTIwYXQlMjB0b3AlMjBjZW50ZXIlMjByZWFkcyUyMCVFMiU4MCU5QyVFMiU4MCVBNndlYi5jb3JlLndpbmRvd3MlNUIuJTVEbmV0JTIwJUUyJTgwJTkzJTIwJUU4JThCJUE1JUU4JUE2JTgxJUU5JTgwJTgwJUU1JTg3JUJBJUU1JTg1JUE4JUU1JUIxJThGJUU2JUE4JUExJUU1JUJDJThGJUVGJUJDJThDJUU4JUFGJUI3JUU2JThDJTg5JTIwZXNjJUUyJTgwJTlELCUyMENocm9tZSVFMiU4MCU5OXMlMjAlRTIlODAlOUNUbyUyMGV4aXQlMjBmdWxsJTIwc2NyZWVuLCUyMHByZXNzJTIwRXNjJUUyJTgwJTlEJTIwaW4lMjBDaGluZXNlJTIwKFNvdXJjZSUyMC0lMjBQSVhNKS53ZWJw"
-    },
-    {
-      "id": "at_51077470715",
-      "title": "Barracuda ESG Authentication Bypass Flaw Opens Path to Root",
-      "url": "https://www.securityweek.com/barracuda-email-security-gateway-authentication-bypass-opens-path-to-root/",
-      "summary": "An authentication bypass and a command injection flaw can be chained for root access on Barracuda’s Email Security Gateway appliances. The post Barracuda ESG Authentication Bypass Flaw Opens Path to Root appeared first on SecurityWeek.",
-      "source": "Eduard Kovacs via SecurityWeek",
-      "image": ""
-    },
-    {
-      "id": "at_51077376871",
-      "title": "Agentic Data Security Firm Sentra Raises $150 Million",
-      "url": "https://www.securityweek.com/agentic-data-security-firm-sentra-raises-150-million/",
-      "summary": "The company will invest in agentic data security capabilities and expand its go-to-market organization. The post Agentic Data Security Firm Sentra Raises $150 Million appeared first on SecurityWeek.",
-      "source": "Ionut Arghire via SecurityWeek",
-      "image": "https://www.inoreader.com/camo/sry54YZFRO5l5pKJPv74Me6QyfrCoEMU7LUkTlaAIxfs,q80,480x400,pf,b64/aHR0cHM6Ly93d3cuc2VjdXJpdHl3ZWVrLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNS8xMi9jeWJlci1zZWN1cml0eS1pbnZlc3RtZW50LmpwZWc"
-    },
-    {
-      "id": "at_51077328580",
-      "title": "OpsShield cPGuard update infrastructure compromised to distribute malware",
-      "url": "https://www.scworld.com/brief/opsshield-cpguard-update-infrastructure-compromised-to-distribute-malware",
-      "summary": "",
-      "source": "SC Staff via Latest articles from SC Magazine",
-      "image": "https://www.inoreader.com/camo/svelLRXMFgpNQ1WpYjZxjCHRSU26fbFgcxK_vpmqGDlM,q80,480x400,pf,b64/aHR0cHM6Ly9maWxlcy5jeWJlcnJpc2thbGxpYW5jZS5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjYvMTEvQWRvYmVTdG9ja18xMzU5NTQ0MTc2LTEtc2NhbGVkLmpwZWc"
-    },
-    {
-      "id": "at_51076926546",
-      "title": "EU AI Act transparency rules show why businesses can’t afford to wait",
-      "url": "https://www.itsecurityguru.org/2026/11/04/eu-ai-act-transparency-rules-show-why-businesses-cant-afford-to-wait/?utm_source=rss&utm_medium=rss&utm_campaign=eu-ai-act-transparency-rules-show-why-businesses-cant-afford-to-wait",
-      "summary": "By Khush Kashyap, Senior Director of Governance, Risk and Compliance at Vanta Transparency goes hand in hand with AI. Or at least it’s meant to. Until now, transparency has mostly depended on how forthcoming people are about using AI. Detection tools can’t carry that weight on their own. That is now changing. The EU AI Act’s transparency requirements,...",
-      "source": "Lara Joseph via IT Security Guru",
-      "image": "https://www.inoreader.com/camo/sQLkGPIYe4derZ579aRryjxvPSHHxECFdh9361Yzg6AE,q80,480x400,pf,b64/aHR0cHM6Ly93d3cuaXRzZWN1cml0eWd1cnUub3JnL3dwLWNvbnRlbnQvdXBsb2Fkcy8yMDI2LzExL0ZPUi1FRElUSU5HLTEwLnBuZw"
     }
   ]
 }
