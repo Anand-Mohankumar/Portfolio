@@ -21,6 +21,9 @@
         var(--color-surface);
       --surface-card: linear-gradient(145deg, rgba(255, 224, 194, 0.06), rgba(255, 224, 194, 0.02));
       --surface-header: linear-gradient(to bottom, rgba(255, 224, 194, 0.065), transparent);
+      --surface-glass:
+        linear-gradient(145deg, rgba(255, 255, 255, 0.075), rgba(255, 255, 255, 0.015) 55%),
+        rgba(24, 24, 24, 0.24);
       --color-text-ui: rgba(255, 255, 255, 0.95);
       --color-text-secondary: rgba(255, 255, 255, 0.7);
       --color-text-muted: rgba(255, 255, 255, 0.5);
@@ -857,9 +860,7 @@
 
     @supports ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {
       .window-card {
-        background:
-          linear-gradient(145deg, rgba(255, 255, 255, 0.075), rgba(255, 255, 255, 0.015) 55%),
-          rgba(24, 24, 24, 0.24);
+        background: var(--surface-glass);
         backdrop-filter: blur(28px) saturate(115%);
         -webkit-backdrop-filter: blur(28px) saturate(115%);
         border-color: rgba(255, 255, 255, 0.12);
@@ -870,7 +871,9 @@
     /* A fine reflective rim and soft inner bevel give the glass a smooth edge.
        These decorative layers never intercept window controls or dragging. */
     .window-card::before,
-    .window-card::after {
+    .window-card::after,
+    .glass-item::before,
+    .glass-item::after {
       content: '';
       position: absolute;
       inset: 0;
@@ -879,7 +882,8 @@
       z-index: 10;
     }
 
-    .window-card::before {
+    .window-card::before,
+    .glass-item::before {
       padding: 1px;
       background: linear-gradient(135deg,
         rgba(255, 255, 255, 0.40),
@@ -892,7 +896,8 @@
       mask-composite: exclude;
     }
 
-    .window-card::after {
+    .window-card::after,
+    .glass-item::after {
       box-shadow:
         inset 1px 1px 2px rgba(255, 255, 255, 0.14),
         inset -1px -1px 2px rgba(0, 0, 0, 0.20),
@@ -1403,31 +1408,11 @@
       /* Ensure context for children */
     }
 
-    .project-item::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), transparent);
-      opacity: 0;
-      transition: opacity 0.3s;
-      z-index: -1;
-      /* Place behind content */
-      pointer-events: none;
-      /* KEY FIX: Don't capture clicks */
-    }
-
     .project-item:where(:not(.background-window *)):hover {
       background: var(--color-surface-hover);
       border-color: rgba(255, 255, 255, 0.2);
       transform: translateY(-4px);
       box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-    }
-
-    .project-item:where(:not(.background-window *)):hover::before {
-      opacity: 1;
     }
 
     .project-icon {
@@ -2682,7 +2667,7 @@
 .card-title { font-size: 0.875rem; line-height: 1.35; }
 .resource-hero-card { padding: 1rem; }
 @media (prefers-reduced-transparency: reduce) {
-  :where(.topbar, .sidebar, .window-card, .glass-dialog) {
+  :where(.topbar, .sidebar, .window-card, .glass-dialog, .glass-item) {
     background: #1e1b18 !important;
     backdrop-filter: none !important;
     -webkit-backdrop-filter: none !important;
@@ -2690,7 +2675,7 @@
 }
 @media (prefers-contrast: more) {
   :root { --color-text-secondary: #f3ebe3; --color-text-muted: #e0d6cc; --color-border: #b9aaa0; --color-border-strong: #e0d6cc; }
-  :where(.topbar, .sidebar, .window-card, .glass-dialog) {
+  :where(.topbar, .sidebar, .window-card, .glass-dialog, .glass-item) {
     background: #151311 !important;
     border: 1px solid #e0d6cc;
     backdrop-filter: none !important;
@@ -2735,5 +2720,37 @@
   .newsfeed-article { padding: 16px; flex-direction: column; }
   .newsfeed-article img { width: 100%; height: 160px; }
   .newsfeed-pagination { justify-content: center; }
+}
+
+/* Nested content shares the window tint and reflective edges. The parent window
+   supplies backdrop blur, so cards do not add another live blur layer. */
+.glass-item {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  background: var(--surface-glass);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 20px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.16);
+  transition: background-color 160ms ease, border-color 160ms ease, color 160ms ease,
+    box-shadow 160ms ease, opacity 160ms ease, transform 0.3s ease;
+}
+
+.glass-item::before {
+  opacity: 1;
+}
+
+.glass-item:where(:not(.background-window *)):hover {
+  background:
+    linear-gradient(145deg, rgba(255, 255, 255, 0.12), rgba(255, 255, 255, 0.025) 55%),
+    rgba(24, 24, 24, 0.24);
+  border-color: rgba(255, 255, 255, 0.24);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.22);
+}
+
+.glass-item:focus-visible,
+.glass-item:has(:focus-visible) {
+  outline: 2px solid var(--color-link);
+  outline-offset: 3px;
 }
 

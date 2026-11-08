@@ -1005,7 +1005,7 @@ function renderNewsfeed(focusHeading = false) {
   const start = page * newsfeedPageSize;
   for (const item of data.articles.slice(start, start + newsfeedPageSize)) {
     const article = document.createElement('article');
-    article.className = 'newsfeed-article';
+    article.className = 'newsfeed-article glass-item';
     if (newsfeedURL(item.image)) {
       const image = document.createElement('img');
       image.src = newsfeedURL(item.image);

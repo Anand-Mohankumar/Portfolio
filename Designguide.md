@@ -298,7 +298,7 @@ Tabs should feel like small active windows.
 
 ### Resource Cards
 
-Use for project tiles, article entries, galleries, and tools.
+Use for project tiles, article entries, galleries, and tools. Apply the `glass-item` class to certification and resource tiles, nested resource and article cards, infographic and prompt-image cards, and newsfeed entries. Use the shared transparent neutral charcoal surface, 20px corners, reflective rim, and inner bevel. The parent window supplies backdrop blur; do not add a second live blur layer to nested cards. Keep Skills tags and their layout unchanged.
 
 ```css
 .resource-card {
