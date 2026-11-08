@@ -1,6 +1,14 @@
 {
-  "updatedAt": "2026-11-08T15:58:56.543486+00:00",
+  "updatedAt": "2026-11-08T20:29:23.835106+00:00",
   "articles": [
+    {
+      "id": "at_51119338838",
+      "title": "Don’t Hand Propaganda a Gift: Reading the Brenner Base Tunnel SE Breach Calmly",
+      "url": "https://securityaffairs.com/202691/cyber-crime/dont-hand-propaganda-a-gift-reading-the-brenner-base-tunnel-se-breach-calmly.html",
+      "summary": "Brenner Base Tunnel SE confirms a breach and Everest claims 812 GB. What we know, what we don’t, and why overblown alarm helps propaganda more than the attackers. Brenner Base Tunnel (BBT) SE, the company building the Brenner Base Tunnel between Italy and Austria, has confirmed that unauthorized people accessed some of its data. The extortion...",
+      "source": "Pierluigi Paganini via Security Affairs",
+      "image": "https://www.inoreader.com/camo/sIbj3mv8rblkCZIrS2fVkz-O5i9aa7za0ocykwQmqXac,q80,480x400,pf,b64/aHR0cHM6Ly9zZWN1cml0eWFmZmFpcnMuY29tL3dwLWNvbnRlbnQvdXBsb2Fkcy8yMDI2LzExL0JyZW5uZXItQmFzZS1UdW5uZWwtZXZlcmVzdC1icmVhY2guanBlZw"
+    },
     {
       "id": "at_51118580139",
       "title": "SECURITY AFFAIRS AI-CYBERSECURITY NEWSLETTER ROUND 7",
@@ -1592,14 +1600,6 @@
       "summary": "Sysdig’s platform uses runtime visibility to track AI agent actions and block risky behavior before it reaches production systems. The post Sysdig Adds Runtime Security and Governance for AI Agents appeared first on SecurityWeek.",
       "source": "Kevin Townsend via SecurityWeek",
       "image": ""
-    },
-    {
-      "id": "at_51077509860",
-      "title": "Gorbag Hackers Exploit WinRAR Vulnerability to Steal Credentials From Ukrainian Government Agencies",
-      "url": "https://cybersecuritynews.com/gorbag-hackers-exploit-winrar-vulnerability/",
-      "summary": "Russia-aligned hackers tracked as Gorbag are exploiting a WinRAR vulnerability to steal browser credentials, VPN configurations, and sensitive documents from Ukrainian organizations. Active since at least February 2025, the group targets government agencies, law enforcement bodies, justice institutions, local administrations near the front line,...",
-      "source": "Tushar Subhra Dutta via Cyber Security News",
-      "image": "https://www.inoreader.com/camo/sFKyxwSLNnIYEl3vCxqV4Li-AS1f4P2jywoJDElVUq9k,q80,480x400,pf,b64/aHR0cHM6Ly9ibG9nZ2VyLmdvb2dsZXVzZXJjb250ZW50LmNvbS9pbWcvYi9SMjl2WjJ4bC9BVnZYc0VnV0lVdjk5STJOS2hGR2ZPNXk1akNzNVU0bHR1UUEzRWxzenBQZWhidFNvX3BHZThnQWpPOUtwNl9pa3RrWnNNTF9ma0ZCMjlBejR1cVU2bHhaamVpYzdhYUlGcnJBX2NDOFpyTUN3SmJnZk9QeVNmYlF5Y2dBNEdYV2lmSnhwT1FVeGxjSHFRV0Zmb2Vjazgxckg4RjdqWHRDVVpSYXhMczdNaHlWMnFJRTdGRENzeFpvU3lpa3htX2I3ajQvczE2MDAvU3BlYXJwaGlzaGluZyUyMGVtYWlsJTIwbWVzc2FnZSUyMGZyb20lMjBhJTIwY29tcHJvbWlzZWQlMjBlbWFpbCUyMHNlbmRlciUyMChTb3VyY2UlMjAtJTIwV2VsaXZlc2VjdXJpdHkpLndlYnA"
     }
   ]
 }

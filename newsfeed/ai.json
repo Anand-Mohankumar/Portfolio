@@ -1,6 +1,30 @@
 {
-  "updatedAt": "2026-11-08T15:58:56.688236+00:00",
+  "updatedAt": "2026-11-08T20:29:23.957858+00:00",
   "articles": [
+    {
+      "id": "at_51120134283",
+      "title": "Nvidia is investigating Jensen Huang’s relationship with a Chinese spy",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1029562/nvidia-investigating-jensen-huang-relationship-chinese-spy",
+      "summary": "Nvidia has announced that it is opening an investigation into CEO Jensen Huang and his relationship with Megaspeed executive Alice Huang, who was reportedly recruited by China's Ministry of State Security to spy on the company. A statement posted by the board of directors reads: The NVIDIA Board is initiating an independent investigation...",
+      "source": "Terrence O’Brien via The Verge - Artificial Intelligences",
+      "image": "https://www.inoreader.com/camo/s-WqIdyVtHMJBhBARMZVaF0W3u65VUSsQs1oYM-b5l9Y,q80,480x400,pf,b64/aHR0cHM6Ly9wbGF0Zm9ybS50aGV2ZXJnZS5jb20vd3AtY29udGVudC91cGxvYWRzL3NpdGVzLzIvMjAyNi8wNy9TVEtQMjEwX0pFTlNFTl9IVUFOR19BLmpwZz9xdWFsaXR5PTkwJnN0cmlwPWFsbCZjcm9wPTAsMCwxMDAsMTAw"
+    },
+    {
+      "id": "at_51119834702",
+      "title": "Apple is racing to make Siri more agentic",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1029552/apple-siri-ai-agentic",
+      "summary": "Bloomberg's Mark Gurman says CEO John Ternus is pressuring AI czar Craig Federighi to accelerate the Siri roadmap and deliver a powerful AI agent that can compete with OpenAI's Dots or Meta's Muse. While Federighi has delivered a functional version of Siri AI on an incredibly short timeline, the company has no illusions that it's keeping...",
+      "source": "Terrence O’Brien via The Verge - Artificial Intelligences",
+      "image": "https://www.inoreader.com/camo/sp56qHdemvQZ9vXCByihWyVc2uNFLQKgkvz2VYqPA2qo,q80,480x400,pf,b64/aHR0cHM6Ly9wbGF0Zm9ybS50aGV2ZXJnZS5jb20vd3AtY29udGVudC91cGxvYWRzL3NpdGVzLzIvMjAyNi8wNy9TaXJpLUFJLUJlaW5nLWludm9rZWQtMy5qcGc_cXVhbGl0eT05MCZzdHJpcD1hbGwmY3JvcD0wLDAsMTAwLDEwMA"
+    },
+    {
+      "id": "at_51119238444",
+      "title": "Elvis and Eminem rights holders are suing Suno",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1029533/elvis-eminem-suno-ai-music-clone-lawsuit",
+      "summary": "Suno is facing yet another pair of lawsuits. A group of rights holders of Elvis Presley's music and the publisher of some of Eminem's biggest records are suing the AI music company, claiming it illegally generates music and lyrics that mimic those artists. The lawyers in the Presley suit claim that Suno has violated Tennessee's Ensuring...",
+      "source": "Terrence O’Brien via The Verge - Artificial Intelligences",
+      "image": "https://www.inoreader.com/camo/sKldvjM4rls6KpvZrGdgeJqEvuZrNFK-wX33dln8k2dg,q80,480x400,pf,b64/aHR0cHM6Ly9wbGF0Zm9ybS50aGV2ZXJnZS5jb20vd3AtY29udGVudC91cGxvYWRzL3NpdGVzLzIvY2hvcnVzL3VwbG9hZHMvY2hvcnVzX2Fzc2V0L2ZpbGUvMjIyMDIzNjcvNTE3MjE2MDA0LmpwZz9xdWFsaXR5PTkwJnN0cmlwPWFsbCZjcm9wPTAsMCwxMDAsMTAw"
+    },
     {
       "id": "at_51113632556",
       "title": "Decision models like Jev don’t explain their answers. That makes context your problem",
@@ -1576,30 +1600,6 @@
       "summary": "NEW: An MIT CSAIL team found GPT-6 Astra can improve some AI models by rewriting their weights itself, with one edit taking the math score of a small Qwen model to 48.1% from 7.9%.Rikiya Takehi@rikiyatakehiWe asked GPT-6 Astra to edit Qwen3.5-0.8B weights to improve math.It directly changed only 0.016% of weights, fixing 0.8B's reasoning loops &...",
       "source": "The Rundown AI (@TheRundownAI) via The Rundown AI(@TheRundownAI)",
       "image": "https://www.inoreader.com/camo/sKv_o8XyvlrL0lnMwjEKOmhHrYzVFonXyuimAthK_bsw,q80,480x400,pf,b64/aHR0cHM6Ly9wYnMudHdpbWcuY29tL21lZGlhL0hXSTFvS1VXVUFBV29acC5qcGc"
-    },
-    {
-      "id": "at_51060422115",
-      "title": "Read more: https://t.co/FVXn4vaLZ2",
-      "url": "https://x.com/TheRundownAI/status/2117278198853489093",
-      "summary": "Read more: robotnews.therundown.ai/p/meta-builds-…💬0🔄0❤️1👀1530⚡ Powered by xgo.ing",
-      "source": "The Rundown AI (@TheRundownAI) via The Rundown AI(@TheRundownAI)",
-      "image": ""
-    },
-    {
-      "id": "at_51060422116",
-      "title": "Top stories in robotics today: - Meta built a humanoid to do your chores - Walmart commits $6B to w...",
-      "url": "https://x.com/TheRundownAI/status/2117278192171942275",
-      "summary": "Top stories in robotics today:- Meta built a humanoid to do your chores- Walmart commits $6B to warehouse robots- Toyota is building Waymo’s next robotaxi- OKA launches screenless mushroom robot💬14🔄2❤️17👀5007📊14⚡ Powered by xgo.ing",
-      "source": "The Rundown AI (@TheRundownAI) via The Rundown AI(@TheRundownAI)",
-      "image": "https://www.inoreader.com/camo/sr413MisKGV87cTofgSiHU858A3u3KrKvE97Rk-SHp88,q80,480x400,pf,b64/aHR0cHM6Ly9wYnMudHdpbWcuY29tL21lZGlhL0hXSVZTcHpXRUFBc0hXby5qcGc"
-    },
-    {
-      "id": "at_51060422119",
-      "title": "Read more: https://t.co/DxybL6HGm8",
-      "url": "https://x.com/TheRundownAI/status/2117217864562114973",
-      "summary": "Read more: therundownai.beehiiv.com/p/ai-backlash-…💬1🔄0❤️0👀1939📊1⚡ Powered by xgo.ing",
-      "source": "The Rundown AI (@TheRundownAI) via The Rundown AI(@TheRundownAI)",
-      "image": ""
     }
   ]
 }
