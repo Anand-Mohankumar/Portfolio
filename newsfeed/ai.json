@@ -1,6 +1,22 @@
 {
-  "updatedAt": "2026-11-07T21:51:56.594916+00:00",
+  "updatedAt": "2026-11-08T01:26:59.094844+00:00",
   "articles": [
+    {
+      "id": "at_51113632556",
+      "title": "Decision models like Jev don’t explain their answers. That makes context your problem",
+      "url": "https://venturebeat.com/orchestration/decision-models-like-jev-dont-explain-their-answers-that-makes-context-your-problem",
+      "summary": "Decision models are hot right now: The internet is buzzing about Jev (from TypeSafe AI), Clef from Cloudflare, and the Decisions API from OpenAI. These models provide low latency by skipping verbose text generation and returning structured outputs in JSON format, along with confidence probabilities.Read more",
+      "source": "[email protected] (Dattaraj Rao, Persistent Systems) via VentureBeat",
+      "image": "https://www.inoreader.com/camo/sSL8WTTS4iHajsIxdKS8dqG3bpgx38VWmDI_NEQcOXfo,q80,480x400,pf,b64/aHR0cHM6Ly9pbWFnZXMuY3RmYXNzZXRzLm5ldC9qZHR3cWh6dmMybjEvNUJINWhvY2FZbFdNNlhwRGZwWVQwbC82NWQ4ZTBjYzI2YmI5NDdlN2M2MTM4YmYwNzg2Y2U3OS91NzI3NzI4OTQ0Ml9Bbl9BSV9hZ2VudF9pc19zaXR0aW5nX2NvbmZ1c2VkX2F0X2FfbGFwdG9wX3N0YXRpX2Q2MmFiNTk2LTFhZmYtNDQ0Ny04YWFkLTcxMDk3N2Y5NWU1Yl8wLnBuZz93PTE2MDAmcT04MA"
+    },
+    {
+      "id": "at_51113405151",
+      "title": "After the midterms, things are looking rocky for Elon Musk and data centers",
+      "url": "https://techcrunch.com/2026/11/07/after-the-midterms-things-are-looking-rocky-for-elon-musk-and-data-centers/",
+      "summary": "On Equity, we unpacked what the midterms mean for the tech industry.",
+      "source": "Anthony Ha via AI | TechCrunch",
+      "image": "https://www.inoreader.com/camo/s92poGZWoeLJjNaMOah1oqpG-QomBmnA089eNMu1BQmA,q80,480x400,pf,b64/aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNS8wNS9HZXR0eUltYWdlcy0yMjA3MjQ1MTA3LTEuanBnP3Jlc2l6ZT0xNjAwLDEwMjA"
+    },
     {
       "id": "at_51113149395",
       "title": "Megaspeed exec was recruited to spy on Nvidia CEO, according to US intelligence memo",
@@ -1582,22 +1598,6 @@
       "title": "Read more: https://t.co/DxybL6HGm8",
       "url": "https://x.com/TheRundownAI/status/2117217864562114973",
       "summary": "Read more: therundownai.beehiiv.com/p/ai-backlash-…💬1🔄0❤️0👀1939📊1⚡ Powered by xgo.ing",
-      "source": "The Rundown AI (@TheRundownAI) via The Rundown AI(@TheRundownAI)",
-      "image": ""
-    },
-    {
-      "id": "at_51060422120",
-      "title": "Top stories in AI today: - Data centers hit the ballot as OpenAI plots a rebrand - The Rundown Roun...",
-      "url": "https://x.com/TheRundownAI/status/2117217859508007009",
-      "summary": "Top stories in AI today:- Data centers hit the ballot as OpenAI plots a rebrand- The Rundown Roundtable: Our AI use cases- Make AI artwork you can actually edit- Google’s space data center sends home a haiku💬20🔄2❤️20👀5787📊19⚡ Powered by xgo.ing",
-      "source": "The Rundown AI (@TheRundownAI) via The Rundown AI(@TheRundownAI)",
-      "image": "https://www.inoreader.com/camo/susBxJbCyJ4mrOPRUfDnlkqnmUl42WJ2GZVv2excMQeU,q80,480x400,pf,b64/aHR0cHM6Ly9wYnMudHdpbWcuY29tL21lZGlhL0hXSGVhczRXQUFBTVEyMC5qcGc"
-    },
-    {
-      "id": "at_51060422122",
-      "title": "Read more: https://t.co/32JIkDsmyc",
-      "url": "https://x.com/TheRundownAI/status/2116176082864906570",
-      "summary": "Read more: tech.therundown.ai/p/binance-hit-…💬0🔄1❤️2👀2264📊1⚡ Powered by xgo.ing",
       "source": "The Rundown AI (@TheRundownAI) via The Rundown AI(@TheRundownAI)",
       "image": ""
     }
