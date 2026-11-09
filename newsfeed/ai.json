@@ -1,6 +1,150 @@
 {
-  "updatedAt": "2026-11-09T07:59:10.409407+00:00",
+  "updatedAt": "2026-11-09T18:49:50.048414+00:00",
   "articles": [
+    {
+      "id": "at_51129497780",
+      "title": "LAUNCHED: ByteDance is rolling out Seedream 5.5, a new image model it says can edit the same picture...",
+      "url": "https://x.com/TheRundownAI/status/2119841916376281432",
+      "summary": "LAUNCHED: ByteDance is rolling out Seedream 5.5, a new image model it says can edit the same picture 100 times in a row without losing tiny details.In ByteDance’s own testing, experts picked it over GPT Image 2.5 Sunburst and Nano Banana 2.1 on getting text right and on realism from a prompt.It can also make images with see-through backgrounds.Your...",
+      "source": "The Rundown AI (@TheRundownAI) via The Rundown AI(@TheRundownAI)",
+      "image": ""
+    },
+    {
+      "id": "at_51129348912",
+      "title": "Jensen Huang’s affair with alleged Chinese spy puts Nvidia’s China ambitions under scrutiny",
+      "url": "https://techcrunch.com/2026/11/09/jensen-huangs-affair-with-alleged-chinese-spy-puts-nvidias-china-ambitions-under-scrutiny/",
+      "summary": "Jensen Huang’s alleged affair with a suspected Chinese spy threatens to complicate Nvidia’s lobbying efforts to loosen U.S. chip export restrictions and maintain access to China’s lucrative AI market.",
+      "source": "Rebecca Bellan via AI | TechCrunch",
+      "image": "https://www.inoreader.com/camo/sOPGFVRT2X5vKf0KU7SBRP3k7Tz-E91lE6krhEXU1ln4,q80,480x400,pf,b64/aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNS8wMS9HZXR0eUltYWdlcy0yMTkyMjIzOTI4LmpwZz9yZXNpemU9MTYwMCwxMDY4"
+    },
+    {
+      "id": "at_51129280179",
+      "title": "Instagram’s Effect Builder makes new filters from AI prompts",
+      "url": "https://www.theverge.com/tech/1030061/instagram-ai-effect-builder-filters",
+      "summary": "After expanding its Edits app to macOS last week, Instagram's next move is launching this Effect Builder that generates custom filters for your Stories posts with AI. Available now for US residents who are over 18, it has a prompt box for describing your filter idea to the chatbot, with an option to attach style reference images. Then...",
+      "source": "Stevie Bonifield via The Verge - Artificial Intelligences",
+      "image": "https://www.inoreader.com/camo/sUBBvD5q2e8zRXB0nErJi5xFG0_tP7ROrxtuxZ0_b6yY,q80,480x400,pf,b64/aHR0cHM6Ly9wbGF0Zm9ybS50aGV2ZXJnZS5jb20vd3AtY29udGVudC91cGxvYWRzL3NpdGVzLzIvMjAyNi8xMS9pbnN0YWdyYW0tZWZmZWN0LWJ1aWxkZXItbGF1bmNoLTIuanBlZz9xdWFsaXR5PTkwJnN0cmlwPWFsbCZjcm9wPTAsMCwxMDAsMTAw"
+    },
+    {
+      "id": "at_51129262325",
+      "title": "Meta releases Muse Ember, a new lightweight model for agent execution",
+      "url": "https://techcrunch.com/2026/11/09/meta-releases-muse-ember-a-new-lightweight-model-for-agent-execution/",
+      "summary": "At 10 cents per million input tokens, Ember is significantly cheaper than frontier competitors like Haiku and Luna.",
+      "source": "Russell Brandom via AI | TechCrunch",
+      "image": "https://www.inoreader.com/camo/swwlMy4qdacNw2m9vkTq_eWOzfwLkOBnDcOYRELma070,q80,480x400,pf,b64/aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNi8xMS9CbG9nLUhlYWRlci1WaXN1YWwucG5nP3Jlc2l6ZT0xNjAwLDkwMA"
+    },
+    {
+      "id": "at_51129018546",
+      "title": "The future of AI hinges on… Jensen Huang’s sex life?",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1029990/jensen-huang-the-spy-who-loved-me",
+      "summary": "Step 1. Cut a hole in the box. | Image: The Verge I would prefer that these people's sex lives were none of my business but I guess we have to talk about Jensen Huang and the National Security Incident. Who could have guessed that the guy who was out here signing titties might not have great judgment about how to behave around women? Alice...",
+      "source": "Elizabeth Lopatto via The Verge - Artificial Intelligences",
+      "image": "https://www.inoreader.com/camo/saVmsJMrblOIwM3iOAh8nfo6GTnmWTfvuj4Jpn6pr_-A,q80,480x400,pf,b64/aHR0cHM6Ly9wbGF0Zm9ybS50aGV2ZXJnZS5jb20vd3AtY29udGVudC91cGxvYWRzL3NpdGVzLzIvMjAyNi8wOC9TVEtQMjEwX0pFTlNFTl9IVUFOR19ELmpwZz9xdWFsaXR5PTkwJnN0cmlwPWFsbCZjcm9wPTAsMCwxMDAsMTAw"
+    },
+    {
+      "id": "at_51128895441",
+      "title": "From the front row to the hot seat — what the midterms mean for Big Tech",
+      "url": "https://techcrunch.com/2026/11/06/from-the-front-row-to-the-hot-seat-what-the-midterms-mean-for-big-tech/",
+      "summary": "After spending two years getting cozy with the White House, Big Tech is suddenly trying to make friends with Democrats, and the open question is whether that image makeover can hold up against what states, local communities, and the markets are about to do.",
+      "source": "Dominic-Madori Davis via AI | TechCrunch",
+      "image": "https://www.inoreader.com/camo/sDALc-yS3TCmniShplBaVNTJsYWx9Qv2FLdnP_QYX1vo,q80,480x400,pf,b64/aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNi8xMS9TSEFXTi1USEVXLUNvbnRyaWJ1dG9yLUdldHR5LmpwZz93PTEwMjQ"
+    },
+    {
+      "id": "at_51128590583",
+      "title": "Anthropic joins AI’s natural gas frenzy, buys $3.4B worth of turbines",
+      "url": "https://techcrunch.com/2026/11/09/anthropic-joins-ais-natural-gas-frenzy-buys-3-4b-worth-of-turbines/",
+      "summary": "Anthropic bought billions of dollars worth of natural gas turbines in a deal that could give it buyer's remorse.",
+      "source": "Tim De Chant via AI | TechCrunch",
+      "image": "https://www.inoreader.com/camo/s_H4NKDSnV7FPr74ptfIjjZlberil6--mxdL7ZHWB8no,q80,480x400,pf,b64/aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNC8xMi9HZXR0eUltYWdlcy0xNTUzNzY0NzQuanBlZz9yZXNpemU9MTYwMCwxMDY3"
+    },
+    {
+      "id": "at_51128391956",
+      "title": "Read more: https://t.co/wI4m9DjToB",
+      "url": "https://x.com/TheRundownAI/status/2119816082626126021",
+      "summary": "Read more: robotnews.therundown.ai/p/amazon-build…💬0🔄0❤️0👀1036⚡ Powered by xgo.ing",
+      "source": "The Rundown AI (@TheRundownAI) via The Rundown AI(@TheRundownAI)",
+      "image": ""
+    },
+    {
+      "id": "at_51128391960",
+      "title": "Top stories in robotics today: - Amazon takes another shot at the home robot - Zipline hits $21.5B ...",
+      "url": "https://x.com/TheRundownAI/status/2119816076355567903",
+      "summary": "Top stories in robotics today:- Amazon takes another shot at the home robot- Zipline hits $21.5B on Walmart deal- Humble Robotics lands $51M for cabless trucks- Spider robot welds ships upside down💬8🔄0❤️15👀3220📊8⚡ Powered by xgo.ing",
+      "source": "The Rundown AI (@TheRundownAI) via The Rundown AI(@TheRundownAI)",
+      "image": "https://www.inoreader.com/camo/saUVUdn8DvxfpA1Qkr2dGjP-E6saYmmnxdYWzmoju-h0,q80,480x400,pf,b64/aHR0cHM6Ly9wYnMudHdpbWcuY29tL21lZGlhL0hXc1pmRS1Xa0FBazFRMC5qcGc"
+    },
+    {
+      "id": "at_51128165520",
+      "title": "Medium’s new TK app brings AI assistance directly into the writing process",
+      "url": "https://techcrunch.com/2026/11/09/mediums-new-tk-app-brings-ai-assistance-directly-into-the-writing-process/",
+      "summary": "Medium's new writing app embraces AI-assisted writing, despite growing controversy over the technology's role in publishing.",
+      "source": "Sarah Perez via AI | TechCrunch",
+      "image": "https://www.inoreader.com/camo/sMZ3SrHT0ArKO6-7hEUjsEVj2IDYFHFdq0hauJ7OYi3U,q80,480x400,pf,b64/aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNi8xMS90ay1sb2dvLndlYnA_cmVzaXplPTE2MDAsOTAw"
+    },
+    {
+      "id": "at_51127930671",
+      "title": "Trump’s 60 Minutes interview touched on AI safety, threat to arrest an AI exec",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1029802/trump-60-minutes-ai",
+      "summary": "Asked about AI executives' warnings about their models' safety on 60 Minutes, Trump said, \"I think that the risk is not nearly as real as it- as they talk, and I think the risk can be managed, and it's managed.\" He claimed the DOJ is managing that risk, saying, \"We had a situation where somebody was reported to us to be doing something...",
+      "source": "Stevie Bonifield via The Verge - Artificial Intelligences",
+      "image": "https://www.inoreader.com/camo/stacDmwPuUEPqMI3YhNtuXNf201VTnjjEFGsHPnsZ6Qg,q80,480x400,pf,b64/aHR0cHM6Ly9wbGF0Zm9ybS50aGV2ZXJnZS5jb20vd3AtY29udGVudC91cGxvYWRzL3NpdGVzLzIvMjAyNi8wOS9nZXR0eWltYWdlcy0yMjk2NDY0Nzg1LmpwZz9xdWFsaXR5PTkwJnN0cmlwPWFsbCZjcm9wPTAsMCwxMDAsMTAw"
+    },
+    {
+      "id": "at_51127837027",
+      "title": "Disney and Adobe are building generative AI tools together",
+      "url": "https://www.theverge.com/tech/1029773/disney-adobe-generative-ai-partnership",
+      "summary": "Who wants a hand-designed and creatively curated monorail anyway. | Image: Disney / Adobe The Walt Disney Company has teamed up with Adobe to develop proprietary \"artist-led\" generative AI models to support Disney's production pipeline. The multiyear partnership was announced today at Adobe's MAX conference, and it will see Adobe providing...",
+      "source": "Jess Weatherbed via The Verge - Artificial Intelligences",
+      "image": "https://www.inoreader.com/camo/stLaIZwJOsjKyjc3QAGTq5duFP8TpqhY1xOAS0WIkbYY,q80,480x400,pf,b64/aHR0cHM6Ly9wbGF0Zm9ybS50aGV2ZXJnZS5jb20vd3AtY29udGVudC91cGxvYWRzL3NpdGVzLzIvMjAyNi8xMS9EaXNuZXktQWRvYmUtQUktcGFydG5lcnNoaXAuanBnP3F1YWxpdHk9OTAmc3RyaXA9YWxsJmNyb3A9MCwwLDEwMCwxMDA"
+    },
+    {
+      "id": "at_51127731804",
+      "title": "Hold up — I had a great time talking to the RIAA guy",
+      "url": "https://www.theverge.com/podcast/1029684/riaa-mitch-glazier-napster-ai-labels-music",
+      "summary": "Today, I’m talking with Mitch Glazier, who is CEO and chairman of the RIAA. This conversation was a real full-circle moment for me: I was in college when Napster hit, and the RIAA became everyone’s villain for suing kids for downloading music. That was when I decided to go be a copyright lawyer, which set the rest of my career in motion...",
+      "source": "Nilay Patel via The Verge - Artificial Intelligences",
+      "image": "https://www.inoreader.com/camo/sEmMH0V-iDOQT0wgnKQw6hbstKDijrkdk7kiT4MdNT_g,q80,480x400,pf,b64/aHR0cHM6Ly9wbGF0Zm9ybS50aGV2ZXJnZS5jb20vd3AtY29udGVudC91cGxvYWRzL3NpdGVzLzIvMjAyNi8xMS9EQ0RfMjAyNjExMDlfR2xhemllci5qcGc_cXVhbGl0eT05MCZzdHJpcD1hbGwmY3JvcD0wLDAsMTAwLDEwMA"
+    },
+    {
+      "id": "at_51127709700",
+      "title": "How to run open models in production without owning the serving stack",
+      "url": "https://venturebeat.com/orchestration/how-to-run-open-models-in-production-without-owning-the-serving-stack",
+      "summary": "Presented by MicrosoftRead more",
+      "source": "via VentureBeat",
+      "image": "https://www.inoreader.com/camo/sPbANphXjrRyb4UprGhA1hh65r3ih4wVwXwgmCOPRCIA,q80,480x400,pf,b64/aHR0cHM6Ly9pbWFnZXMuY3RmYXNzZXRzLm5ldC9qZHR3cWh6dmMybjEvRDlzYmtHdGN0TkRpMkwyTGE1NWxiLzYxZDRlYzY2NjMxYWM5OTlhNjFlMTJmZjQ3NzkxMzVkL0Fkb2JlU3RvY2tfNTQwNjI0NjA4LmpwZWc_dz0xNjAwJnE9ODA"
+    },
+    {
+      "id": "at_51127163794",
+      "title": "Jonathan Kanter is using AI to take on Big Tech",
+      "url": "https://www.theverge.com/policy/1029652/kanter-doj-biden-legal-tech",
+      "summary": "When Jonathan Kanter stepped down as head of the Justice Department's Antitrust Division in 2024, he set out to keep fighting to dismantle illegal monopolies. But this time, he's continuing the fight in the private sector, and with a perhaps unexpected tool: AI. Alongside former acting Antitrust Division chief Doha Mekki, Kanter recently...",
+      "source": "Lauren Feiner via The Verge - Artificial Intelligences",
+      "image": "https://www.inoreader.com/camo/sVvnyvF-hWl4O-5KmAIXfzAhFHFTu0OHPZ_HU3Y_KCxs,q80,480x400,pf,b64/aHR0cHM6Ly9wbGF0Zm9ybS50aGV2ZXJnZS5jb20vd3AtY29udGVudC91cGxvYWRzL3NpdGVzLzIvMjAyNS8wMy9TVEtTNDg3X0FOVElUUlVTVF9BLmpwZz9xdWFsaXR5PTkwJnN0cmlwPWFsbCZjcm9wPTAsMCwxMDAsMTAw"
+    },
+    {
+      "id": "at_51126908788",
+      "title": "Automattic debuts a platform to deploy vibe-coding apps amid a changing internet",
+      "url": "https://techcrunch.com/2026/11/09/automattic-debuts-a-platform-to-deploy-vibe-coding-apps-amid-a-changing-internet/",
+      "summary": "Automattic aims to compete with the likes of Lovable with Spacefast.",
+      "source": "Ivan Mehta via AI | TechCrunch",
+      "image": "https://www.inoreader.com/camo/sripsY-iqjYougB5cqO4q4q_rfuqx9oSx73EfO_-DKCk,q80,480x400,pf,b64/aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNi8xMS9TcGFjZWZhc3QtZmVhdC5qcGc_cmVzaXplPTE2MDAsOTAw"
+    },
+    {
+      "id": "at_51126073299",
+      "title": "Read more: https://t.co/vZURjAxJom",
+      "url": "https://x.com/TheRundownAI/status/2119754466370949277",
+      "summary": "Read more: therundownai.beehiiv.com/p/jensen-huang…💬0🔄0❤️1👀1361⚡ Powered by xgo.ing",
+      "source": "The Rundown AI (@TheRundownAI) via The Rundown AI(@TheRundownAI)",
+      "image": ""
+    },
+    {
+      "id": "at_51126073304",
+      "title": "Top stories in AI today: - Jensen Huang admits affair as Nvidia probes spy claims - The Rundown Rou...",
+      "url": "https://x.com/TheRundownAI/status/2119754460012384458",
+      "summary": "Top stories in AI today:- Jensen Huang admits affair as Nvidia probes spy claims- The Rundown Roundtable: Our AI use cases- Turn your X bookmarks into a personal research desk- Anthropic’s Claude ‘dreams’ to fix its own memory💬11🔄0❤️10👀3745📊10⚡ Powered by xgo.ing",
+      "source": "The Rundown AI (@TheRundownAI) via The Rundown AI(@TheRundownAI)",
+      "image": "https://www.inoreader.com/camo/sRVfRPfGm21U9-fuL_nseK0p7vw1OXbOUaJhSpdsTC2M,q80,480x400,pf,b64/aHR0cHM6Ly9wYnMudHdpbWcuY29tL21lZGlhL0hXcmhjUXpYTUFBdHhMby5qcGc"
+    },
     {
       "id": "at_51122829240",
       "title": "Is Jensen Huang’s job on the line? Yale’s Jeffrey Sonnenfeld estimates it’s “about a 50-50”",
@@ -13,7 +157,7 @@
       "id": "at_51120869683",
       "title": "Here’s the full text of Jensen Huang’s memo to Nvidia",
       "url": "https://www.theverge.com/ai-artificial-intelligence/1029595/full-text-jensen-huang-affair-memo-nvidia",
-      "summary": "Jensen Huang, chief executive officer of Nvidia Corp., attends a media briefing following the company's \"Japan AI Ecosystem\" reception in Tokyo, Japan, on Thursday, July 16, 2026. Japan is planning to buy 27,500 next-generation Rubin chips from Nvidia Corp. to build a homegrown foundational AI model for robots. Photographer: Kiyoshi Ota/Bloomberg...",
+      "summary": "Jensen Huang, Nvidia’s CEO, at media briefing in July 2026. | Photo: Bloomberg via Getty Images On Sunday, Nvidia announced it was launching an investigation into CEO Jensen Huang's relationship with Alice Huang, an AI executive and agent of the Chinese government. In addition to the Board of Directors announcing the investigation, Huang...",
       "source": "Terrence O’Brien via The Verge - Artificial Intelligences",
       "image": "https://www.inoreader.com/camo/suNDKnOhXks88QL2g06jSo0-ye2iFftF0SES2mW1m6tY,q80,480x400,pf,b64/aHR0cHM6Ly9wbGF0Zm9ybS50aGV2ZXJnZS5jb20vd3AtY29udGVudC91cGxvYWRzL3NpdGVzLzIvMjAyNi8wOS9nZXR0eWltYWdlcy0yMjg1Nzg0MDM5LmpwZz9xdWFsaXR5PTkwJnN0cmlwPWFsbCZjcm9wPTAsMCwxMDAsMTAw"
     },
@@ -27,7 +171,7 @@
     },
     {
       "id": "at_51120134283",
-      "title": "Nvidia is investigating Jensen Huang’s relationship with a Chinese spy",
+      "title": "Nvidia is investigating Jensen Huang’s relationship with an alleged Chinese spy",
       "url": "https://www.theverge.com/ai-artificial-intelligence/1029562/nvidia-investigating-jensen-huang-relationship-chinese-spy",
       "summary": "Nvidia has announced that it is opening an investigation into CEO Jensen Huang and his relationship with Megaspeed executive Alice Huang, who was reportedly recruited by China's Ministry of State Security to spy on the company. A statement posted by the board of directors reads: The NVIDIA Board is initiating an independent investigation...",
       "source": "Terrence O’Brien via The Verge - Artificial Intelligences",
@@ -1456,150 +1600,6 @@
       "summary": "GPT-6.2-Astra has started appearing in Codex usage breakdowns. The requests are likely being quietly routed to the new model as part of an A/B test or a staged rollout. A public launch could be days away. OpenAI reportedly decided to skip GPT-6.1 Astra due to concerns about deception and scope.",
       "source": "via TLDR AI Feed",
       "image": "https://www.inoreader.com/camo/sAGDQ_0FFF1_nik5araf8C_306Buo1ZqVl-djXkVEGwo,q80,480x400,pf,b64/aHR0cHM6Ly9zdG9yYWdlLmdob3N0LmlvL2MvMmEvMWIvMmExYjE3ODItODUwNi00ZDdkLWJmNTMtYWQzZmI1MmUyYTBmL2NvbnRlbnQvaW1hZ2VzL3NpemUvdzEyMDAvMjAyNi8xMS9IZXJvXzE2eDkucG5n"
-    },
-    {
-      "id": "at_51067814669",
-      "title": "Netflix’s new AI Discover tab helps you find something to watch based on your mood",
-      "url": "https://techcrunch.com/2026/11/03/netflixs-new-ai-discover-tab-helps-you-find-something-to-watch-based-on-your-mood/",
-      "summary": "The first experimental feature under the tab will allow users to get recommendations based on what they're currently in the mood for.",
-      "source": "Aisha Malik via AI | TechCrunch",
-      "image": "https://www.inoreader.com/camo/sMnBYKb6tz_XdHRMoNBtRMx5ksK5a5-1FzJojodxF3v0,q80,480x400,pf,b64/aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNi8wNC9HZXR0eUltYWdlcy0yMjM1MzgzODI4LmpwZz9yZXNpemU9MTYwMCwxMDY3"
-    },
-    {
-      "id": "at_51067678388",
-      "title": "Apple’s latest watchOS beta includes its new always-on Audio Intelligence features",
-      "url": "https://www.theverge.com/tech/1025002/apple-watch-audio-intelligence-watchos-beta",
-      "summary": "Starting today, Siri can tune into the Apple Watch's mic with Audio Intelligence features that are available in the new watchOS 27.3 developer beta rolling out now. The two new additions are Siri Recap, which uses \"ambient listening\" to generate summaries of your conversation, and Live Rewind, which generates text transcripts of the last...",
-      "source": "Stevie Bonifield via The Verge - Artificial Intelligences",
-      "image": "https://www.inoreader.com/camo/sXvSmDFsieyrH83Pd9L7_ePemgouc7yNtftyTsMgzFHg,q80,480x400,pf,b64/aHR0cHM6Ly9wbGF0Zm9ybS50aGV2ZXJnZS5jb20vd3AtY29udGVudC91cGxvYWRzL3NpdGVzLzIvMjAyNi8xMS9TaXJpLVJlY2FwLWV4YW1wbGUuanBnP3F1YWxpdHk9OTAmc3RyaXA9YWxsJmNyb3A9MCwwLDEwMCwxMDA"
-    },
-    {
-      "id": "at_51067678391",
-      "title": "OpenAI says ChatGPT is catching up to Google in search",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/1025482/openai-says-chatgpt-is-catching-up-to-google-in-search",
-      "summary": "In many circles, \"Ask Chat\" has replaced \"Google it,\" and that's reflected in a new announcement from OpenAI: the volume of search queries run through ChatGPT now equals 20 percent of the volume run through Google. Adam Fry, OpenAI's consumer product lead for ChatGPT, made the announcement at a press event on Monday. He said the company...",
-      "source": "Hayden Field via The Verge - Artificial Intelligences",
-      "image": "https://www.inoreader.com/camo/s5LKA_K3kNzP9C4SUAdCVVka5ZN3xDengsBCnXqz5FYk,q80,480x400,pf,b64/aHR0cHM6Ly9wbGF0Zm9ybS50aGV2ZXJnZS5jb20vd3AtY29udGVudC91cGxvYWRzL3NpdGVzLzIvMjAyNi8wOC9TVEsxNTVfT1BFTl9BSV9DVmlyZ2luaWFfQy0xLmpwZz9xdWFsaXR5PTkwJnN0cmlwPWFsbCZjcm9wPTAsMCwxMDAsMTAw"
-    },
-    {
-      "id": "at_51067584150",
-      "title": "Indie games are missing launch dates because Steam is backed up",
-      "url": "https://www.theverge.com/games/1025596/valve-steam-indie-games-missing-launch-dates",
-      "summary": "A screenshot from Food Devils, which is missing its planned launch today. Many indie game developers have recently posted on social media about unexpectedly long approval wait times for their game submissions on Steam, with some of the approvals causing developers to miss their planned launch dates. For example, Studio Daimon, the team...",
-      "source": "Jay Peters via The Verge - Artificial Intelligences",
-      "image": "https://www.inoreader.com/camo/sG4IRb-FXnlfU1gwvpj-XVFMLR_rDpTHjWuviYg5Etx8,q80,480x400,pf,b64/aHR0cHM6Ly9wbGF0Zm9ybS50aGV2ZXJnZS5jb20vd3AtY29udGVudC91cGxvYWRzL3NpdGVzLzIvMjAyNi8xMS9zc181MWZkZjMxMTYyZmVjYjM1NzBmZjk3YjAyNDhiMjcwNjI0OGUzMjgxLjE5MjB4MTA4MC5qcGc_cXVhbGl0eT05MCZzdHJpcD1hbGwmY3JvcD0wLDAsMTAwLDEwMA"
-    },
-    {
-      "id": "at_51067387019",
-      "title": "Netflix will show you themed recommendations through a new ‘AI Discover’ tab",
-      "url": "https://www.theverge.com/streaming/1025029/netflix-ai-discover-recommendations",
-      "summary": "Netflix's TV app is getting a new \"AI Discover\" tab where the company will show experimental, AI-powered features to help you find new shows and movies to watch. The first of these experiments surfaces content based around themes, like \"Something Light,\" \"Family Movie Night,\" or \"Quick Watches.\" When you pick a theme, Netflix will show...",
-      "source": "Jay Peters via The Verge - Artificial Intelligences",
-      "image": "https://www.inoreader.com/camo/s4CfERxwktyMYO72wEXFljtfPUYzKRj69dcQmbGRe_wo,q80,480x400,pf,b64/aHR0cHM6Ly9wbGF0Zm9ybS50aGV2ZXJnZS5jb20vd3AtY29udGVudC91cGxvYWRzL3NpdGVzLzIvMjAyNi8xMS9BSURpc2NvdmVyLVByb2R1Y3QtMDIuanBnP3F1YWxpdHk9OTAmc3RyaXA9YWxsJmNyb3A9MCwwLDEwMCwxMDA"
-    },
-    {
-      "id": "at_51067007512",
-      "title": "REPORT: Starting in early 2027, K-12 students will lose Google Search on their school logins if thei...",
-      "url": "https://x.com/TheRundownAI/status/2117658214481228117",
-      "summary": "REPORT: Starting in early 2027, K-12 students will lose Google Search on their school logins if their district blocks Google’s AI completely.Those students will get \"a message from their school that indicates it’s not available.\" Chris Phillips, Google’s education VP, told The New York Times that’s because \"Search and A.I. are deeply integrated.\"Google’s...",
-      "source": "The Rundown AI (@TheRundownAI) via The Rundown AI(@TheRundownAI)",
-      "image": "https://www.inoreader.com/camo/sLlf9I4CyNv4N_MH-uUTBrfRRiI8JTMBGzRSe4rLmODw,q80,480x400,pf,b64/aHR0cHM6Ly9wYnMudHdpbWcuY29tL21lZGlhL0hXTnV5dzVYb0FBaG0xVS5wbmc"
-    },
-    {
-      "id": "at_51066830935",
-      "title": "Anthropic is still grappling with the economics of compute",
-      "url": "https://techcrunch.com/2026/11/03/anthropic-is-still-grappling-with-the-economics-of-compute/",
-      "summary": "At a moment when Anthropic's compute margins should be getting better, they’re getting worse.",
-      "source": "Russell Brandom via AI | TechCrunch",
-      "image": "https://www.inoreader.com/camo/sGutwYNXuFWZCzlggGHITxXzffEBkEvfL28vjoNQcZfA,q80,480x400,pf,b64/aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNi8wOS9HZXR0eUltYWdlcy0yMjk0OTM1NDk0LmpwZz9yZXNpemU9MTYwMCwxMDY3"
-    },
-    {
-      "id": "at_51066769537",
-      "title": "Google is entirely disabling Search in schools that don’t want AI",
-      "url": "https://www.theverge.com/tech/1025411/google-turn-off-search-ai-features",
-      "summary": "Google is completely turning off Search in schools that reject its AI features, the company told The New York Times. The decision was also shared in a broader education-related update from Google on Tuesday, saying that access to Gemini, Gemini Notebook, Gemini in Classroom, and Google Search \"will be entirely off\" for K-12 student accounts...",
-      "source": "Emma Roth via The Verge - Artificial Intelligences",
-      "image": "https://www.inoreader.com/camo/sQ4kv9XiAswitNYl3Yz4-5V8FnHV7mLngmo2IDnplVgE,q80,480x400,pf,b64/aHR0cHM6Ly9wbGF0Zm9ybS50aGV2ZXJnZS5jb20vd3AtY29udGVudC91cGxvYWRzL3NpdGVzLzIvMjAyNS8wMy9TVEswOTNfR09PR0xFX0EtMS5qcGc_cXVhbGl0eT05MCZzdHJpcD1hbGwmY3JvcD0wLDAsMTAwLDEwMA"
-    },
-    {
-      "id": "at_51066516721",
-      "title": "Google will let schools disable its AI tools, but not without sacrificing Search",
-      "url": "https://techcrunch.com/2026/11/03/google-will-let-schools-disable-its-ai-tools-but-not-without-sacrificing-search/",
-      "summary": "Schools choosing to restrict AI altogether will no longer be able to access Google Search, as AI features are now integrated into the search engine.",
-      "source": "Aisha Malik via AI | TechCrunch",
-      "image": "https://www.inoreader.com/camo/slAH0e2gwD-pDBztNrY-l4EY8D0HLcXW5M2cOksMv6pY,q80,480x400,pf,b64/aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNi8wNi9nb29nbGUtbG9nby5qcGc_cmVzaXplPTE2MDAsMTA2Nw"
-    },
-    {
-      "id": "at_51066375736",
-      "title": "Read more: https://t.co/QFWZwZtzqh",
-      "url": "https://x.com/TheRundownAI/status/2117640781137649686",
-      "summary": "Read more: tech.therundown.ai/p/apple-cant-b…💬1🔄0❤️0👀971📊1⚡ Powered by xgo.ing",
-      "source": "The Rundown AI (@TheRundownAI) via The Rundown AI(@TheRundownAI)",
-      "image": ""
-    },
-    {
-      "id": "at_51066375743",
-      "title": "Top stories in tech today: - Apple says it can’t predict Duo supply fix - TikTok builds a super app...",
-      "url": "https://x.com/TheRundownAI/status/2117640776205181181",
-      "summary": "Top stories in tech today:- Apple says it can’t predict Duo supply fix- TikTok builds a super app, piece by piece- BrainCo aims to build an ‘electronic GLP-1’- Rivian, Ford scale up 3D-printed car parts💬3🔄0❤️5👀3038📊3⚡ Powered by xgo.ing",
-      "source": "The Rundown AI (@TheRundownAI) via The Rundown AI(@TheRundownAI)",
-      "image": "https://www.inoreader.com/camo/s4zPG5qND3jDuEMY-CNVhQxE4K5Mu0dBGfDcc3Qa-ViY,q80,480x400,pf,b64/aHR0cHM6Ly9wYnMudHdpbWcuY29tL21lZGlhL0hXTmZENTNYRUFBcXVwWS5qcGc"
-    },
-    {
-      "id": "at_51066154614",
-      "title": "Midterm elections 2026: all the news",
-      "url": "https://www.theverge.com/policy/1020640/midterm-elections-2026-all-the-news",
-      "summary": "The 2026 midterm elections will determine the scope of President Donald Trump’s power in his final two years in office, and signal what voters care about going into the 2028 presidential election. While this year’s races are expected to be most broadly defined by affordability issues, there are several topics impacting the tech industry...",
-      "source": "Lauren Feiner via The Verge - Artificial Intelligences",
-      "image": "https://www.inoreader.com/camo/spbKi-SxdmV-LywWqlGI2XaH3iI_wH-MTaqCE-s0B9SU,q80,480x400,pf,b64/aHR0cHM6Ly9wbGF0Zm9ybS50aGV2ZXJnZS5jb20vd3AtY29udGVudC91cGxvYWRzL3NpdGVzLzIvMjAyNi8xMC9TVEs0MjNfRUxFQ1RJT05TMi5qcGc_cXVhbGl0eT05MCZzdHJpcD1hbGwmY3JvcD0wLDAsMTAwLDEwMA"
-    },
-    {
-      "id": "at_51065957951",
-      "title": "Apple restricts dating apps and AI companions to users 18 and up",
-      "url": "https://techcrunch.com/2026/11/03/apple-restricts-dating-apps-and-ai-companions-to-users-18-and-up/",
-      "summary": "Apple's new App Store rules will require 18+ ratings for dating apps and AI companions that offer sexual or romantic content.",
-      "source": "Sarah Perez via AI | TechCrunch",
-      "image": "https://www.inoreader.com/camo/s7Z3t5V63a79-XnS52HlRpUVPhyEODFIqUDdcDD6gRnw,q80,480x400,pf,b64/aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNS8wNC9TY3JlZW5zaG90LTIwMjUtMDQtMjItYXQtMS4yNC4yM1BNLnBuZz9yZXNpemU9MTYwMCw4OTY"
-    },
-    {
-      "id": "at_51065821790",
-      "title": "Apple is all in on AI — its own and everyone else’s",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/1025245/apple-earnings-q4-ai",
-      "summary": "Apple CEO John Ternus. | Photo: Bloomberg via Getty Images Apple's latest earnings show how it's continuing to capitalize on the AI boom without busting its budget on the infrastructure spending consuming its competitors. Overall, Apple posted its best-ever fiscal year for revenue and earnings per share. iPhone and Mac sales continued...",
-      "source": "Rani Molla via The Verge - Artificial Intelligences",
-      "image": "https://www.inoreader.com/camo/shup3V5URzUCkDGNSbSky2xRUy5D66hJdYT6nRcYJJfU,q80,480x400,pf,b64/aHR0cHM6Ly9wbGF0Zm9ybS50aGV2ZXJnZS5jb20vd3AtY29udGVudC91cGxvYWRzL3NpdGVzLzIvMjAyNi8xMS9nZXR0eWltYWdlcy0yMzAxOTA2MjY2LmpwZz9xdWFsaXR5PTkwJnN0cmlwPWFsbCZjcm9wPTAsMCwxMDAsMTAw"
-    },
-    {
-      "id": "at_51065475133",
-      "title": "OpenAI is quietly renaming data centers ‘compute campuses’",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/1025242/openai-quietly-renames-data-centers-as-compute-campuses",
-      "summary": "The Stargate AI data center ’compute campus’ in Abilene, Texas. | Bloomberg via Getty Images People hate data centers. They're loud, resource-hungry eyesores that are so profoundly unpopular they have managed to achieve the near-impossible in today's polarized political landscape: genuine bipartisan opposition. But what about \"compute...",
-      "source": "Robert Hart via The Verge - Artificial Intelligences",
-      "image": "https://www.inoreader.com/camo/sSdfutXBTCMdB6ghPisr_VPYjDl_hn3rFmWcT2AnpPmo,q80,480x400,pf,b64/aHR0cHM6Ly9wbGF0Zm9ybS50aGV2ZXJnZS5jb20vd3AtY29udGVudC91cGxvYWRzL3NpdGVzLzIvMjAyNi8xMS9nZXR0eWltYWdlcy0yMjM2NzMzNTc1LmpwZz9xdWFsaXR5PTkwJnN0cmlwPWFsbCZjcm9wPTAsMCwxMDAsMTAw"
-    },
-    {
-      "id": "at_51065189745",
-      "title": "The TechCrunch Founder Summit agenda is only half the reason to be in Boston on November 4",
-      "url": "https://techcrunch.com/2026/11/03/the-techcrunch-founder-summit-agenda-is-only-half-the-reason-to-be-in-boston-on-nov-4/",
-      "summary": "On November 4, TechCrunch Founder Summit 2026 brings founders and VCs to Boston's SoWa Power Station for practical insights and connections. Register before prices increase at the door.",
-      "source": "TechCrunch Events via AI | TechCrunch",
-      "image": "https://www.inoreader.com/camo/shel-r38KqNqz3ZSNgfnN7_RV_PNaCiA1ljsIpE_h4MI,q80,480x400,pf,b64/aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNS8wMy9FYXJseS1TdGFnZS0yMDI0LW5ldHdvcmtpbmdfMi5qcGc_cmVzaXplPTE2MDAsMTA2Nw"
-    },
-    {
-      "id": "at_51064862534",
-      "title": "Tomorrow: TechCrunch Founder Summit takes over Boston and when pass rates increase",
-      "url": "https://techcrunch.com/2026/11/03/tomorrow-techcrunch-founder-summit-takes-over-boston-and-when-pass-rates-increase/",
-      "summary": "Secure your TechCrunch Founder Summit pass savings before prices increase tomorrow at 9 a.m. ET. Save up to $100 on your pass, and get a second for free.",
-      "source": "TechCrunch Events via AI | TechCrunch",
-      "image": ""
-    },
-    {
-      "id": "at_51063855282",
-      "title": "Read more: https://t.co/xoolnH0ULd",
-      "url": "https://x.com/TheRundownAI/status/2117580187260895526",
-      "summary": "Read more: therundownai.beehiiv.com/p/mit-shows-ai…💬1🔄0❤️0👀1178📊1⚡ Powered by xgo.ing",
-      "source": "The Rundown AI (@TheRundownAI) via The Rundown AI(@TheRundownAI)",
-      "image": ""
     }
   ]
 }
