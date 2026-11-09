@@ -1,6 +1,102 @@
 {
-  "updatedAt": "2026-11-08T20:29:23.835106+00:00",
+  "updatedAt": "2026-11-09T00:55:49.792530+00:00",
   "articles": [
+    {
+      "id": "at_51120698184",
+      "title": "Three charged in $129 million deepfake fraud scheme",
+      "url": "https://www.scworld.com/brief/three-charged-in-129-million-deepfake-fraud-scheme",
+      "summary": "Three individuals have been charged in the United States for orchestrating a $129 million fraud scheme that utilized artificial intelligence to impersonate corporate executives and attorneys, based on information published by IT Pro.",
+      "source": "SC Staff via Latest articles from SC Magazine",
+      "image": "https://www.inoreader.com/camo/sszlQ60BR32Y5TMoGIwMNQnBoNLYj_ZzrZvB-RxeD6Xw,q80,480x400,pf,b64/aHR0cHM6Ly9maWxlcy5jeWJlcnJpc2thbGxpYW5jZS5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjUvMTEvMTExOTI1X2RlZXBmYWtlLmpwZw"
+    },
+    {
+      "id": "at_51120698188",
+      "title": "Royal Cornwall Hospitals NHS Trust review highlights impact of data breach",
+      "url": "https://www.scworld.com/brief/royal-cornwall-hospitals-nhs-trust-review-highlights-impact-of-data-breach",
+      "summary": "National Health Service staff faced significant emotional distress while managing a helpline established after a major data breach exposed the health records of 8,003 individuals, based on information published by The Register.",
+      "source": "SC Staff via Latest articles from SC Magazine",
+      "image": "https://www.inoreader.com/camo/s_q_8_PwTiz5cXFSkpOG8vmDqtmuCvFUO-xR1BtgCq2A,q80,480x400,pf,b64/aHR0cHM6Ly9maWxlcy5jeWJlcnJpc2thbGxpYW5jZS5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjQvMDgvQWRvYmVTdG9ja183MzA0MDAxMzUuanBn"
+    },
+    {
+      "id": "at_51120698191",
+      "title": "Software vendors leverage usage data and ai to drive revenue growth",
+      "url": "https://www.scworld.com/brief/software-vendors-leverage-usage-data-and-ai-to-drive-revenue-growth",
+      "summary": "Software vendors are increasingly focusing on tracking customer usage across their product portfolios to boost revenue and streamline consumption decisions, with further coverage provided by Security Affairs.",
+      "source": "SC Staff via Latest articles from SC Magazine",
+      "image": "https://www.inoreader.com/camo/sc2wxZQ3F9Y4wuU2LgRlHktKsUjPXLcnvLdVDuxTzd3M,q80,480x400,pf,b64/aHR0cHM6Ly9maWxlcy5jeWJlcnJpc2thbGxpYW5jZS5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjYvMTAvMTAyMDI2X2FpX2RhdGFfY2VudGVyX2Nsb3VkX3NlY3VyaXR5LmpwZw"
+    },
+    {
+      "id": "at_51120698193",
+      "title": "Brenner Base Tunnel SE confirms data breach as Everest group claims theft",
+      "url": "https://www.scworld.com/brief/brenner-base-tunnel-se-confirms-data-breach-as-everest-group-claims-theft",
+      "summary": "Brenner Base Tunnel SE has confirmed that unauthorized parties accessed company data, following claims by the Everest extortion group that it stole 812 gigabytes of files.",
+      "source": "SC Staff via Latest articles from SC Magazine",
+      "image": "https://www.inoreader.com/camo/si_fiBMfzzCL5Td-VApcqMvjl1NKbZKRN4_Mh_s0vmjc,q80,480x400,pf,b64/aHR0cHM6Ly9maWxlcy5jeWJlcnJpc2thbGxpYW5jZS5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjUvMTAvMTAyMTI1X2xhcHRvcF9icmVhY2guanBn"
+    },
+    {
+      "id": "at_51120698194",
+      "title": "Ukraine biometrics sector faces growth despite wartime challenges",
+      "url": "https://www.scworld.com/brief/ukraine-biometrics-sector-faces-growth-despite-wartime-challenges",
+      "summary": "Ukraine's biometrics sector continues to evolve despite ongoing conflict and economic pressures, with uneven adoption across government, financial and commercial applications, according to a recent report by Biometric Update.",
+      "source": "SC Staff via Latest articles from SC Magazine",
+      "image": "https://www.inoreader.com/camo/sRPaE3vScSWkH8k-vilpJXLWoXoLqOsGbbgUvKVJx-A4,q80,480x400,pf,b64/aHR0cHM6Ly9maWxlcy5jeWJlcnJpc2thbGxpYW5jZS5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjQvMDIvMDIyNTI0X2Jpb21ldHJpY3MuanBn"
+    },
+    {
+      "id": "at_51120698195",
+      "title": "Iris Ohyama discloses data breach affecting 7.7 million customers",
+      "url": "https://www.scworld.com/brief/iris-ohyama-discloses-data-breach-affecting-7-7-million-customers",
+      "summary": "As detailed in Bleeping Computer, Japanese manufacturer Iris Ohyama recently disclosed a significant data breach involving its Iris Plaza online shopping platform.",
+      "source": "SC Staff via Latest articles from SC Magazine",
+      "image": "https://www.inoreader.com/camo/sTBI1RLAPPEhMns3YjExJiJZf9HUUMIut8MQeLshKAvs,q80,480x400,pf,b64/aHR0cHM6Ly9maWxlcy5jeWJlcnJpc2thbGxpYW5jZS5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjMvMDgvc2hvcHBpbmctY2FydC0zLmpwZw"
+    },
+    {
+      "id": "at_51120698197",
+      "title": "British soldier court-martialed after phone security breach in Estonia",
+      "url": "https://www.scworld.com/brief/british-soldier-court-martialed-after-phone-security-breach-in-estonia",
+      "summary": "A British soldier faced a court-martial after failing to follow operational security protocols regarding his mobile phone while deployed in Estonia, as first reported by Ars Technica.",
+      "source": "SC Staff via Latest articles from SC Magazine",
+      "image": "https://www.inoreader.com/camo/sYyHPPRrQ4xGFBT1JNc9dWuoelmRNs-6ALHjK4GUJaEY,q80,480x400,pf,b64/aHR0cHM6Ly9maWxlcy5jeWJlcnJpc2thbGxpYW5jZS5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjUvMDMvQWRvYmVTdG9ja18xMjU4MDkyMTg4LmpwZw"
+    },
+    {
+      "id": "at_51120698199",
+      "title": "Google develops digital identity credentials for secure account recovery",
+      "url": "https://www.scworld.com/brief/google-develops-digital-identity-credentials-for-secure-account-recovery",
+      "summary": "Google is developing a new account recovery method utilizing digital identity credentials to mitigate security vulnerabilities associated with traditional recovery processes when users lose their devices, as first reported by Biometric Update.",
+      "source": "SC Staff via Latest articles from SC Magazine",
+      "image": "https://www.inoreader.com/camo/sbadGoDkqIp0guYlNcKmNQyUOwLvyWVaZ8pBRFVSFiDA,q80,480x400,pf,b64/aHR0cHM6Ly9maWxlcy5jeWJlcnJpc2thbGxpYW5jZS5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjUvMDYvMDYxNzI1X2dvb2dsZS5qcGc"
+    },
+    {
+      "id": "at_51120698201",
+      "title": "Russian influence operation targets Latin American schools with AI-generated disinformation",
+      "url": "https://www.scworld.com/brief/russian-influence-operation-targets-latin-american-schools-with-ai-generated-disinformation",
+      "summary": "Dark Reading reports that a Russian-based influence operation has been utilizing artificial intelligence to impersonate educational authorities in Peru and Ecuador, tricking schools into hosting events designed to sow political discord.",
+      "source": "SC Staff via Latest articles from SC Magazine",
+      "image": "https://www.inoreader.com/camo/sIgzSmSQxqZpjEHdtrpsYxnoSEezC1oLTRVrJbl9ehf0,q80,480x400,pf,b64/aHR0cHM6Ly9maWxlcy5jeWJlcnJpc2thbGxpYW5jZS5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjUvMDUvMDUwOTI1X3J1c3NpYW5fbWFsd2FyZS5qcGc"
+    },
+    {
+      "id": "at_51120698205",
+      "title": "Russian state statistics agency suffers major data breach",
+      "url": "https://www.scworld.com/brief/russian-state-statistics-agency-suffers-major-data-breach",
+      "summary": "Based on information from Tech Radar, the Russian state statistics agency, Rosstat, recently experienced a significant cybersecurity breach that resulted in the exposure of sensitive military information.",
+      "source": "SC Staff via Latest articles from SC Magazine",
+      "image": "https://www.inoreader.com/camo/s053Y6UGkNdNIxutExt_3hjOKpZG25s62gqhCkqDKHv8,q80,480x400,pf,b64/aHR0cHM6Ly9maWxlcy5jeWJlcnJpc2thbGxpYW5jZS5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjUvMTIvMTIwNDI1X2N5YmVyYXR0YWNrLmpwZw"
+    },
+    {
+      "id": "at_51120157776",
+      "title": "NVIDIA and Ory Bring Defense-in-Depth Security to AI Agents",
+      "url": "https://www.scworld.com/native/nvidia-and-ory-bring-defense-in-depth-security-to-ai-agents",
+      "summary": "NVIDIA and Ory combine layered security controls to enforce least-privilege access for AI agents.",
+      "source": "Justin Dolly via Latest articles from SC Magazine",
+      "image": "https://www.inoreader.com/camo/spWjyttUYfTowtfwp8FnkZQ9vu8Z1OpbuYEu8RHeQPsY,q80,480x400,pf,b64/aHR0cHM6Ly9maWxlcy5jeWJlcnJpc2thbGxpYW5jZS5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjYvMTEvMTEwODI2X2FpX2FnZW50X3NlY3VyZV9sYXllci5qcGc"
+    },
+    {
+      "id": "at_51120157777",
+      "title": "How to Scale AI Agent Identity and Authentication Infrastructure",
+      "url": "https://www.scworld.com/native/how-to-scale-ai-agent-identity-and-authentication-infrastructure",
+      "summary": "Scaling AI agents requires distributed, stateless identity systems built for high-volume authentication.",
+      "source": "Justin Dolly via Latest articles from SC Magazine",
+      "image": "https://www.inoreader.com/camo/s21lz803tfuFj6rFrkLjBlF-ZDFRLyxd_5XKeYowUFsk,q80,480x400,pf,b64/aHR0cHM6Ly9maWxlcy5jeWJlcnJpc2thbGxpYW5jZS5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjYvMTEvMTEwODI2X2lkZW50aXR5X2FnZW50aWNfYXJjaGl0ZWNodHVyZS5qcGc"
+    },
     {
       "id": "at_51119338838",
       "title": "Don’t Hand Propaganda a Gift: Reading the Brenner Base Tunnel SE Breach Calmly",
@@ -1504,102 +1600,6 @@
       "summary": "A newly disclosed bug in APT, the package manager behind Debian and Ubuntu, can let a network spy swap a trusted software package for a bad one. The flaw is tracked as CVE-2026-109518 and can end in code running with root rights, the highest level of control on a Linux system. Debian announced the issue on November 4, 2026, and credited researcher...",
       "source": "Guru Baran via Cyber Security News",
       "image": "https://www.inoreader.com/camo/sCt5w1lWOmnXYt_OKh1dYyx2UidpIP053NW4S3dG0XGg,q80,480x400,pf,b64/aHR0cHM6Ly9jeWJlcnNlY3VyaXR5bmV3cy5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjYvMTEvRGViaWFuLUFQVC1GbGF3LUxldHMtSGFja2Vycy1IaWphY2stVXBkYXRlcy53ZWJw"
-    },
-    {
-      "id": "at_51079082116",
-      "title": "NIKKE PC game launcher hacked to spread remote access, data-stealing malware",
-      "url": "https://www.bleepingcomputer.com/news/security/nikke-pc-game-launcher-hacked-to-spread-remote-access-data-stealing-malware/",
-      "summary": "The developers of Goddess of Victory: NIKKE have confirmed that hackers tampered with the game's PC launcher scripts in a supply-chain attack, distributing malware capable of stealing credentials and cryptocurrency wallet data. [...]",
-      "source": "Bill Toulas via Bleeping Computer",
-      "image": "https://www.inoreader.com/camo/sjnlwTXqi45GhlKLYbsYwnxTPZj9rBC1fl5BS1vub0Ik,q80,480x400,pf,b64/aHR0cHM6Ly93d3cuYmxlZXBzdGF0aWMuY29tL2NvbnRlbnQvaGwtaW1hZ2VzLzIwMjYvMTEvMDQvbmlra2UuanBn"
-    },
-    {
-      "id": "at_51078497471",
-      "title": "mSecure password manager hack prompts password reset warnings",
-      "url": "https://www.bleepingcomputer.com/news/security/msecure-password-manager-hack-prompts-password-reset-warnings/",
-      "summary": "mSeven Software is warning current and former mSecure password manager customers to change passwords, reset two-factor authentication, and remove passkeys following a cyberattack that reportedly exposed an encrypted customer database. [...]",
-      "source": "Lawrence Abrams via Bleeping Computer",
-      "image": "https://www.inoreader.com/camo/svNVJ5XqQ3UVA6-BsAYGi7YO1r0fedT3NcOjKLhxBKSU,q80,480x400,pf,b64/aHR0cHM6Ly93d3cuYmxlZXBzdGF0aWMuY29tL2NvbnRlbnQvaGwtaW1hZ2VzLzIwMjYvMTEvMDQvaGFja2VyLXBhc3N3b3JkLW1hbmFnZXItcmVkbG9jay5qcGc"
-    },
-    {
-      "id": "at_51077921208",
-      "title": "Westchester County ballot scanner issues spark online misinformation",
-      "url": "https://www.scworld.com/brief/westchester-county-ballot-scanner-issues-spark-online-misinformation",
-      "summary": "",
-      "source": "SC Staff via Latest articles from SC Magazine",
-      "image": "https://www.inoreader.com/camo/sAP4YtibOyf2W7m77bSgYD1G0Y07508wEpthEhkP4TOg,q80,480x400,pf,b64/aHR0cHM6Ly9maWxlcy5jeWJlcnJpc2thbGxpYW5jZS5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjYvMTEvQWRvYmVTdG9ja18yMjE3OTMyNTczLTEtc2NhbGVkLmpwZWc"
-    },
-    {
-      "id": "at_51077921214",
-      "title": "New York City officials push to restrict biometric surveillance at entertainment venues",
-      "url": "https://www.scworld.com/brief/new-york-city-officials-push-to-restrict-biometric-surveillance-at-entertainment-venues",
-      "summary": "",
-      "source": "SC Staff via Latest articles from SC Magazine",
-      "image": "https://www.inoreader.com/camo/sdsQnpVH9WyJtf_4GwsImKn4Z7BZENXKlXhdjeXq3NWw,q80,480x400,pf,b64/aHR0cHM6Ly9maWxlcy5jeWJlcnJpc2thbGxpYW5jZS5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjYvMTEvQWRvYmVTdG9ja18xNjY3NTg2NjYxLTEtc2NhbGVkLmpwZWc"
-    },
-    {
-      "id": "at_51077921218",
-      "title": "Ballistic Ventures seeks 490 million dollars for new cybersecurity funds",
-      "url": "https://www.scworld.com/brief/ballistic-ventures-seeks-490-million-dollars-for-new-cybersecurity-funds",
-      "summary": "",
-      "source": "SC Staff via Latest articles from SC Magazine",
-      "image": "https://www.inoreader.com/camo/sbpbkMypElWtlP37FW94vmGwsbfU9S1XYpHSTgWYSviM,q80,480x400,pf,b64/aHR0cHM6Ly9maWxlcy5jeWJlcnJpc2thbGxpYW5jZS5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjYvMTEvQWRvYmVTdG9ja185ODQ4NzU5MTItMS1zY2FsZWQuanBlZw"
-    },
-    {
-      "id": "at_51077921220",
-      "title": "Philippine government agency suffers massive data breach",
-      "url": "https://www.scworld.com/brief/philippine-government-agency-suffers-massive-data-breach",
-      "summary": "",
-      "source": "SC Staff via Latest articles from SC Magazine",
-      "image": "https://www.inoreader.com/camo/sW4pCLwJ4ouB8vmy9FOCVA-DsAI5taHMkFusCwbgSOn4,q80,480x400,pf,b64/aHR0cHM6Ly9maWxlcy5jeWJlcnJpc2thbGxpYW5jZS5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjMvMDgvY3liZXJzZWN1cml0eS1jeWJlcmF0dGFja3MtR2V0dHlJbWFnZXMtNDc5ODAxMDcyLmpwZw"
-    },
-    {
-      "id": "at_51077921224",
-      "title": "Russia imposes new data retention mandates on Apple and Microsoft",
-      "url": "https://www.scworld.com/brief/russia-imposes-new-data-retention-mandates-on-apple-and-microsoft",
-      "summary": "",
-      "source": "SC Staff via Latest articles from SC Magazine",
-      "image": "https://www.inoreader.com/camo/sjJpkzLJLazZGiO3ip-RUxiKMM62OpqCaH3CSqerAVeQ,q80,480x400,pf,b64/aHR0cHM6Ly9maWxlcy5jeWJlcnJpc2thbGxpYW5jZS5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjYvMTEvQWRvYmVTdG9ja18yMDUxNDg2MDUyLTEtc2NhbGVkLmpwZWc"
-    },
-    {
-      "id": "at_51077897106",
-      "title": "APT29-Linked Hackers Hijack Web Analytics Script to Deliver iOS and Android Exploits",
-      "url": "https://thehackernews.com/2026/11/apt29-linked-hackers-hijack-web.html",
-      "summary": "The Russia-linked threat actor known as APT29 is presumed to be behind a large-scale watering hole campaign targeting iOS and Android users through compromised websites, fake domains, and a supply chain attack involving a Ukrainian web analytics service called Plerdy SEO Tracker. \"The injected JavaScript code collects browser and device attributes,\"...",
-      "source": "[email protected] (The Hacker News) via The Hacker News",
-      "image": "https://www.inoreader.com/camo/sDX_RAvSLq8BVtVM1rUh9eL0U7UclM4fQZdoHT4GdaJI,q80,480x400,pf,b64/aHR0cHM6Ly9ibG9nZ2VyLmdvb2dsZXVzZXJjb250ZW50LmNvbS9pbWcvYi9SMjl2WjJ4bC9BVnZYc0VoeDFjdXMybzhma1lHTGhRdTlCZlBnR3RBVXdubVRBTXVjTGFnZkFvZEJ1Um9Zbnl4R0lKS2dwcXRLRnlDU1YtV1NHM3BEcW1QdWpoai1pd29PWkItekY4SmpiUU1yTHpESFl0ZFRQQTNoRDNLYzNycVlRTTRDUXdrSUN3WmtoOEs2TzhaU3QtV0FBX1BCb1VBNmxId2hfNTVkYkRsS2l6c2p6Y1ROODQ3YzlCU0hzV0htckFQNDJKSFJISVlTL3MxNjAwL2lvcy1leHBsb2l0LmpwZw"
-    },
-    {
-      "id": "at_51077892079",
-      "title": "Google Calendar phishing campaign hijacks sessions, bypasses MFA",
-      "url": "https://www.bleepingcomputer.com/news/security/google-calendar-phishing-campaign-hijacks-sessions-bypasses-mfa/",
-      "summary": "A phishing campaign used Google Calendar invites, trusted redirects, and fake login pages to hijack corporate Google sessions and bypass MFA protections. Material Security examines how Operation CloudFire tracked the attacks, blocked malicious messages, and helped take down nearly 900 domains used by the attackers. [...]",
-      "source": "Sponsored by Material Security via Bleeping Computer",
-      "image": "https://www.inoreader.com/camo/skO-06eZLUotp1nJ467VGBGJEly4Xl9boMVJMMW9apRc,q80,480x400,pf,b64/aHR0cHM6Ly93d3cuYmxlZXBzdGF0aWMuY29tL2NvbnRlbnQvaGwtaW1hZ2VzLzIwMjYvMDkvMjIvZ29vZ2xlLXdvcmtzcGFjZS1icmVhY2guanBn"
-    },
-    {
-      "id": "at_51077685742",
-      "title": "SonicWall warns of unpatched flaws in end-of-life GMS software",
-      "url": "https://www.bleepingcomputer.com/news/security/sonicwall-warns-of-unpatched-flaws-in-end-of-life-gms-software/",
-      "summary": "SonicWall warned customers of two security flaws affecting end-of-life Global Management System (GMS) systems that will not be patched. [...]",
-      "source": "Sergiu Gatlan via Bleeping Computer",
-      "image": "https://www.inoreader.com/camo/sszTi9nG2mR718LaQYIKhdR5rhme6aZ8bvvWe7TCPt8I,q80,480x400,pf,b64/aHR0cHM6Ly93d3cuYmxlZXBzdGF0aWMuY29tL2NvbnRlbnQvaGwtaW1hZ2VzLzIwMjYvMTEvMDQvU29uaWNXYWxsLmpwZw"
-    },
-    {
-      "id": "at_51077653021",
-      "title": "Securing the AI-era network: Why performance and defense now belong together",
-      "url": "https://www.sophos.com/en-us/blog/securing-the-ai-era-network-why-performance-and-defense-now-belong-together",
-      "summary": "Secure the AI-era network by combining high-performance protection, deeper visibility across every environment, and coordinated response that stops fast-moving threats sooner.",
-      "source": "via Naked Security",
-      "image": ""
-    },
-    {
-      "id": "at_51077587545",
-      "title": "Sysdig Adds Runtime Security and Governance for AI Agents",
-      "url": "https://www.securityweek.com/sysdig-adds-runtime-security-and-governance-for-ai-agents/",
-      "summary": "Sysdig’s platform uses runtime visibility to track AI agent actions and block risky behavior before it reaches production systems. The post Sysdig Adds Runtime Security and Governance for AI Agents appeared first on SecurityWeek.",
-      "source": "Kevin Townsend via SecurityWeek",
-      "image": ""
     }
   ]
 }

@@ -1,6 +1,22 @@
 {
-  "updatedAt": "2026-11-08T20:29:23.957858+00:00",
+  "updatedAt": "2026-11-09T00:55:49.780821+00:00",
   "articles": [
+    {
+      "id": "at_51120869683",
+      "title": "Here’s the full text of Jensen Huang’s memo to Nvidia",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1029595/full-text-jensen-huang-affair-memo-nvidia",
+      "summary": "Jensen Huang, chief executive officer of Nvidia Corp., attends a media briefing following the company's \"Japan AI Ecosystem\" reception in Tokyo, Japan, on Thursday, July 16, 2026. Japan is planning to buy 27,500 next-generation Rubin chips from Nvidia Corp. to build a homegrown foundational AI model for robots. Photographer: Kiyoshi Ota/Bloomberg...",
+      "source": "Terrence O’Brien via The Verge - Artificial Intelligences",
+      "image": "https://www.inoreader.com/camo/suNDKnOhXks88QL2g06jSo0-ye2iFftF0SES2mW1m6tY,q80,480x400,pf,b64/aHR0cHM6Ly9wbGF0Zm9ybS50aGV2ZXJnZS5jb20vd3AtY29udGVudC91cGxvYWRzL3NpdGVzLzIvMjAyNi8wOS9nZXR0eWltYWdlcy0yMjg1Nzg0MDM5LmpwZz9xdWFsaXR5PTkwJnN0cmlwPWFsbCZjcm9wPTAsMCwxMDAsMTAw"
+    },
+    {
+      "id": "at_51120337965",
+      "title": "Nvidia says it’s investigating CEO Jensen Huang’s relationship with possible Chinese spy",
+      "url": "https://techcrunch.com/2026/11/08/nvidia-says-its-investigating-ceo-jensen-huangs-relationship-with-possible-chinese-spy/",
+      "summary": "In a memo to the company, Huang admitted that he had an affair.",
+      "source": "Anthony Ha via AI | TechCrunch",
+      "image": "https://www.inoreader.com/camo/saNAInUuJVqbtFifT5BZYOUuI0rZ78Dr7iYqmKEsjJjE,q80,480x400,pf,b64/aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNi8wOS9HZXR0eUltYWdlcy0yMjk0OTM2ODY3LmpwZz9yZXNpemU9MTYwMCwxMDY3"
+    },
     {
       "id": "at_51120134283",
       "title": "Nvidia is investigating Jensen Huang’s relationship with a Chinese spy",
@@ -1584,22 +1600,6 @@
       "summary": "Top stories in AI today:- OpenAI’s Astra rewrites other AI from the inside- OpenAI grades its AI on everyday tasks - Turn one interview into two clips with Riverside- OpenAI joins Abu Dhabi’s AI-native government push💬10🔄1❤️7👀3312📊9⚡ Powered by xgo.ing",
       "source": "The Rundown AI (@TheRundownAI) via The Rundown AI(@TheRundownAI)",
       "image": "https://www.inoreader.com/camo/sj-AHJTubQH0W1ANE3qEy3xnd-0bpgdDL_0_OfZFXPC4,q80,480x400,pf,b64/aHR0cHM6Ly9wYnMudHdpbWcuY29tL21lZGlhL0hXTW44MXdXOEFBbVpZTS5qcGc"
-    },
-    {
-      "id": "at_51060968801",
-      "title": "Apple Watch’s AI features for rewinding and recapping conversations begin beta testing",
-      "url": "https://techcrunch.com/2026/11/02/apple-watchs-ai-features-for-rewinding-and-recapping-conversations-begin-beta-testing/",
-      "summary": "Now in beta: Apple's new Audio Intelligence features can help you remember what someone said or take notes on conversations.",
-      "source": "Sarah Perez via AI | TechCrunch",
-      "image": "https://www.inoreader.com/camo/sZS7wSokgZwzFIQDberL0WPxiVfUQ8nZWp0KvmWjDmVI,q80,480x400,pf,b64/aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNi8xMS9saXZlLXJld2luZC1yZXN0YXVyYW50LmpwZz9yZXNpemU9MTYwMCw4OTI"
-    },
-    {
-      "id": "at_51060422111",
-      "title": "NEW: An MIT CSAIL team found GPT-6 Astra can improve some AI models by rewriting their weights itsel...",
-      "url": "https://x.com/TheRundownAI/status/2117350447275282677",
-      "summary": "NEW: An MIT CSAIL team found GPT-6 Astra can improve some AI models by rewriting their weights itself, with one edit taking the math score of a small Qwen model to 48.1% from 7.9%.Rikiya Takehi@rikiyatakehiWe asked GPT-6 Astra to edit Qwen3.5-0.8B weights to improve math.It directly changed only 0.016% of weights, fixing 0.8B's reasoning loops &...",
-      "source": "The Rundown AI (@TheRundownAI) via The Rundown AI(@TheRundownAI)",
-      "image": "https://www.inoreader.com/camo/sKv_o8XyvlrL0lnMwjEKOmhHrYzVFonXyuimAthK_bsw,q80,480x400,pf,b64/aHR0cHM6Ly9wYnMudHdpbWcuY29tL21lZGlhL0hXSTFvS1VXVUFBV29acC5qcGc"
     }
   ]
 }
