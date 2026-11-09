@@ -1,6 +1,14 @@
 {
-  "updatedAt": "2026-11-09T00:55:49.780821+00:00",
+  "updatedAt": "2026-11-09T07:59:10.409407+00:00",
   "articles": [
+    {
+      "id": "at_51122829240",
+      "title": "Is Jensen Huang’s job on the line? Yale’s Jeffrey Sonnenfeld estimates it’s “about a 50-50”",
+      "url": "https://techcrunch.com/2026/11/08/is-jensen-huangs-job-on-the-line-yales-jeffrey-sonnenfeld-estimates-its-about-a-50-50/",
+      "summary": "Nvidia’s board is investigating Jensen Huang over his relationship with a suspected Chinese spy, and Yale’s Jeffrey Sonnenfeld thinks it’s roughly a coin flip whether Huang stays on as CEO.",
+      "source": "Connie Loizos via AI | TechCrunch",
+      "image": "https://www.inoreader.com/camo/sMkMoqdYlHmkFMPh-8fyX7zwqow68c9EBJu5Ce001h4U,q80,480x400,pf,b64/aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNi8wOS9KZW5zZW4tSHVhbmcuanBnP3Jlc2l6ZT0xNjAwLDEwNjc"
+    },
     {
       "id": "at_51120869683",
       "title": "Here’s the full text of Jensen Huang’s memo to Nvidia",
@@ -1592,14 +1600,6 @@
       "summary": "Read more: therundownai.beehiiv.com/p/mit-shows-ai…💬1🔄0❤️0👀1178📊1⚡ Powered by xgo.ing",
       "source": "The Rundown AI (@TheRundownAI) via The Rundown AI(@TheRundownAI)",
       "image": ""
-    },
-    {
-      "id": "at_51063855285",
-      "title": "Top stories in AI today: - OpenAI’s Astra rewrites other AI from the inside - OpenAI grades its AI ...",
-      "url": "https://x.com/TheRundownAI/status/2117580181766373562",
-      "summary": "Top stories in AI today:- OpenAI’s Astra rewrites other AI from the inside- OpenAI grades its AI on everyday tasks - Turn one interview into two clips with Riverside- OpenAI joins Abu Dhabi’s AI-native government push💬10🔄1❤️7👀3312📊9⚡ Powered by xgo.ing",
-      "source": "The Rundown AI (@TheRundownAI) via The Rundown AI(@TheRundownAI)",
-      "image": "https://www.inoreader.com/camo/sj-AHJTubQH0W1ANE3qEy3xnd-0bpgdDL_0_OfZFXPC4,q80,480x400,pf,b64/aHR0cHM6Ly9wYnMudHdpbWcuY29tL21lZGlhL0hXTW44MXdXOEFBbVpZTS5qcGc"
     }
   ]
 }
