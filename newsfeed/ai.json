@@ -1,6 +1,110 @@
 {
-  "updatedAt": "2026-11-10T17:51:49.228804+00:00",
+  "updatedAt": "2026-11-10T23:23:30.449741+00:00",
   "articles": [
+    {
+      "id": "at_51142216680",
+      "title": "OpenAI lets you claim your business in ChatGPT and set up a custom agentic AI customer sales rep",
+      "url": "https://venturebeat.com/technology/openai-lets-you-claim-your-business-in-chatgpt-and-set-up-a-custom-agentic-ai-customer-sales-rep",
+      "summary": "OpenAI on Tuesday launched a beta program online that lets businesses claim their profiles in ChatGPT, update the information customers see and track how often the chatbot sends people to their websites.Read more",
+      "source": "[email protected] (Carl Franzen) via VentureBeat",
+      "image": "https://www.inoreader.com/camo/ssV03cY2t94DkT2qpBer7aE8WWYauvKsQWi4FOtQ24r0,q80,480x400,pf,b64/aHR0cHM6Ly9pbWFnZXMuY3RmYXNzZXRzLm5ldC9qZHR3cWh6dmMybjEvNUFLS1hpZlptMTdiQ25LOXZVU2tPdS85YmZlNDU0YjNkMzhlMjAzODM1N2VjNjNiNzhhMDkwYS9SZXRyb19Sb2JvdF9DbG90aGluZ19TdG9yZS5wbmc_dz0xNjAwJnE9ODA"
+    },
+    {
+      "id": "at_51141902820",
+      "title": "OpenAI acquires Odessia, travel startup created by Sonder founder",
+      "url": "https://techcrunch.com/2026/11/10/openai-acquires-odessia-travel-startup-created-by-sonder-founder/",
+      "summary": "OpenAI has not yet said what its plans are for the future of travel. But Sonder founder Francis Davidson is a well-known figure in the travel industry.",
+      "source": "Julie Bort via AI | TechCrunch",
+      "image": "https://www.inoreader.com/camo/suDayRIEc4Pz8dvQYzJNDaSpaPs2D_pG9YhEdf89iPCg,q80,480x400,pf,b64/aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNS8wNC9HZXR0eUltYWdlcy0yMjA3ODAxOTkyLmpwZz9yZXNpemU9MTYwMCwxMDY4"
+    },
+    {
+      "id": "at_51141824474",
+      "title": "OpenAI, Anthropic face new oversight as New York’s AI safety law takes effect",
+      "url": "https://techcrunch.com/2026/11/10/openai-anthropic-face-new-oversight-as-new-yorks-ai-safety-law-takes-effect/",
+      "summary": "New York is preparing to enforce its sweeping AI safety law, requiring major developers like OpenAI and Anthropic to register, disclose safety practices, and report critical incidents or face fines.",
+      "source": "Rebecca Bellan via AI | TechCrunch",
+      "image": "https://www.inoreader.com/camo/sfvIZXF36D7Hs7Z0ms-A3obWfoqqFMxuluGiTKS2dA3g,q80,480x400,pf,b64/aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNi8xMS9HZXR0eUltYWdlcy0yMzAyOTk2NjUzLmpwZz93PTEwMjQ"
+    },
+    {
+      "id": "at_51141773856",
+      "title": "PayPal says its AI assistant went from 43% to 95% accuracy without changing the model",
+      "url": "https://venturebeat.com/orchestration/paypal-says-its-ai-assistant-went-from-43-to-95-accuracy-without-changing-the-model",
+      "summary": "PayPal is reporting an internal question-answer accuracy increase from 43% to 95%, but it didn’t change its underlying large language model (LLM). It added proprietary business context and kept it separate from the model that uses it.Read more",
+      "source": "[email protected] (Taryn Plumb) via VentureBeat",
+      "image": "https://www.inoreader.com/camo/sUi4-DqOal9k1Pgin760y0NJ4tTM8tMb6LZeMcrtzNbg,q80,480x400,pf,b64/aHR0cHM6Ly9pbWFnZXMuY3RmYXNzZXRzLm5ldC9qZHR3cWh6dmMybjEvNlZ4NGUxajd2Vlk2NHQ4NzVEdmo5NS85YWU0ZDBkNzgyMGY0NjJiNzkxYjZiZjdlMDA4ZDkwYy91NzI3NzI4OTQ0Ml9BX2h1bWFuX3NjaWVudGlzdF9pc19zd2FwcGluZ19vdXRfQUlfYWdlbnRzX29uX2FfXzExNDM4NmJmLTY3ZTctNDk4Mi05NDBkLTQxZjg2NjVmNmQ5Ml8yLnBuZz93PTE2MDAmcT04MA"
+    },
+    {
+      "id": "at_51141468776",
+      "title": "NEW: Anthropic is rolling out a wave of work tools inside Claude, including Whiteboards, Sheets, Mee...",
+      "url": "https://x.com/TheRundownAI/status/2120224576663896305",
+      "summary": "NEW: Anthropic is rolling out a wave of work tools inside Claude, including Whiteboards, Sheets, Meetings, and more.- Meetings (Team and Enterprise): Claude joins Google Meet calls and starts the follow-up work mid-call- Sheets: describe a budget or tracker and Claude builds the spreadsheet + built-in formulas- Whiteboards: Claude sorts a team brainstorm...",
+      "source": "The Rundown AI (@TheRundownAI) via The Rundown AI(@TheRundownAI)",
+      "image": ""
+    },
+    {
+      "id": "at_51141361245",
+      "title": "All 7 Anthropic founders will each cash out about $250M in IPO",
+      "url": "https://techcrunch.com/2026/11/10/all-7-anthropic-founders-will-each-cash-out-about-250m-in-ipo/",
+      "summary": "Each of the seven co-founders plans to sell exactly the same number of shares in the IPO, which would bring each of them about $250 million in cash at the midpoint of the price range while leaving the group in control of the company.",
+      "source": "Julie Bort via AI | TechCrunch",
+      "image": "https://www.inoreader.com/camo/ssd56Ej91spRfUjm9W8W3TgOmhVjXu8C7flqwHeSXL6M,q80,480x400,pf,b64/aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNS8wNC9KYXJlZC1LYXBsYW5faGVhZHNob3QyLmpwZz9yZXNpemU9MTYwMCwyMTMz"
+    },
+    {
+      "id": "at_51141122308",
+      "title": "Oura to acquire AI-native primary care startup Counsel Health for $625M",
+      "url": "https://techcrunch.com/2026/11/10/oura-to-acquire-ai-native-primary-care-startup-counsel-health-for-625m/",
+      "summary": "The deal comes a few weeks after Oura postponed its up to $2.2 billion IPO indefinitely, citing “uncertainty in the IPO market.”",
+      "source": "Aisha Malik via AI | TechCrunch",
+      "image": "https://www.inoreader.com/camo/slpGrupdjekEz4El9D_YMjrfrHbTsiVYlJMcjvqyTKEY,q80,480x400,pf,b64/aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNi8xMS9HZXR0eUltYWdlcy0yMjk2NjA5NzAwLmpwZz9yZXNpemU9MTYwMCwxMDY1"
+    },
+    {
+      "id": "at_51140961375",
+      "title": "PSI is trying to make a business out of AI-driven scientific discovery",
+      "url": "https://techcrunch.com/2026/11/10/psi-is-trying-to-make-a-business-out-of-ai-driven-scientific-discovery/",
+      "summary": "PSI used an unreleased Anthropic model to answer a fundamental question about quantum computing that scientists have pursued for nearly two decades.",
+      "source": "Tim Fernholz via AI | TechCrunch",
+      "image": "https://www.inoreader.com/camo/sGdWv7VLmI4SbDdWw1T_5_Osa2FHNgqbQUTebEekDOZY,q80,480x400,pf,b64/aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNi8xMS9TY3JlZW5zaG90LTIwMjYtMTEtMTAtYXQtMTAuMDAuMzMtQU0ucG5nP3c9Njgz"
+    },
+    {
+      "id": "at_51140949675",
+      "title": "The US is winning the AI race. Jensen Huang could have blown it",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1031063/jensen-huang-ai-race-us-china-spy",
+      "summary": "As espionage targets go, Jensen Huang is perhaps one of the least surprising on Earth. The Nvidia CEO runs one of the world's most valuable companies, controls the in-demand technology fueling the AI boom, and is cozy with presidents, CEOs, and all manner of important people. He also wears a cool leather jacket. Which makes Huang's admission...",
+      "source": "Robert Hart via The Verge - Artificial Intelligences",
+      "image": "https://www.inoreader.com/camo/suNDKnOhXks88QL2g06jSo0-ye2iFftF0SES2mW1m6tY,q80,480x400,pf,b64/aHR0cHM6Ly9wbGF0Zm9ybS50aGV2ZXJnZS5jb20vd3AtY29udGVudC91cGxvYWRzL3NpdGVzLzIvMjAyNi8wOS9nZXR0eWltYWdlcy0yMjg1Nzg0MDM5LmpwZz9xdWFsaXR5PTkwJnN0cmlwPWFsbCZjcm9wPTAsMCwxMDAsMTAw"
+    },
+    {
+      "id": "at_51140875436",
+      "title": "OpenAI rolls out new business profiles, making ChatGPT just a little bit more like Google",
+      "url": "https://techcrunch.com/2026/11/10/openai-rolls-out-new-business-profiles-making-chatgpt-just-a-little-bit-more-like-google/",
+      "summary": "OpenAI is looking to make ChatGPT a more robust consumer discovery engine, and a host of new features seek to empower businesses to help it do that.",
+      "source": "Lucas Ropek via AI | TechCrunch",
+      "image": "https://www.inoreader.com/camo/swhDZxAR5N28orJHEkSz5LV1BvVBGOAWkUjP5H6I_Lok,q80,480x400,pf,b64/aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNi8xMS9TY3JlZW5zaG90LTIwMjYtMTEtMTAtYXQtOC40Ni4xOS1BTS5wbmc_cmVzaXplPTE2MDAsOTAz"
+    },
+    {
+      "id": "at_51140447855",
+      "title": "RELEASED: Gemini 4 Carbon, Google’s top model, is now live for Google AI Ultra subscribers and for p...",
+      "url": "https://x.com/TheRundownAI/status/2120190153495027741",
+      "summary": "RELEASED: Gemini 4 Carbon, Google’s top model, is now live for Google AI Ultra subscribers and for paying developers via the Gemini API.Your browser does not support the video tag.🔗 View on Twitter💬6🔄2❤️17👀3355📊7⚡ Powered by xgo.ing",
+      "source": "The Rundown AI (@TheRundownAI) via The Rundown AI(@TheRundownAI)",
+      "image": ""
+    },
+    {
+      "id": "at_51140441603",
+      "title": "ChatGPT is getting verified AI ‘Business Agents’",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1030552/openai-chatgpt-business-agents-hub",
+      "summary": "ChatGPT is going to let you chat with verified \"Business Agents\" that represent a brand to help you with things like comparison shopping. The feature, available first to \"eligible\" e-commerce and online service businesses in the US, is launching as part of a suite of business-focused features in ChatGPT being announced today in beta....",
+      "source": "Jay Peters via The Verge - Artificial Intelligences",
+      "image": "https://www.inoreader.com/camo/syhEsuMPVMNTE3irmwBsGmnMWuwN-iOkjcmdN5AfUqJ8,q80,480x400,pf,b64/aHR0cHM6Ly9wbGF0Zm9ybS50aGV2ZXJnZS5jb20vd3AtY29udGVudC91cGxvYWRzL3NpdGVzLzIvMjAyNi8xMS9CdXNpbmVzcy1BZ2VudC1DdXN0b21lci1Db252ZXJzYXRpb24ucG5nP3F1YWxpdHk9OTAmc3RyaXA9YWxsJmNyb3A9MCwwLDEwMCwxMDA"
+    },
+    {
+      "id": "at_51140436199",
+      "title": "Ring, known for its doorbell cameras, launches a home security drone and an enterprise security robot",
+      "url": "https://techcrunch.com/2026/11/10/ring-known-for-its-doorbell-cameras-launches-a-home-security-drone-and-an-enterprise-security-robot/",
+      "summary": "Amazon-owned Ring is pushing into robotics with the launch of a home security drone and a rolling robot designed to patrol and protect businesses.",
+      "source": "Lucas Ropek via AI | TechCrunch",
+      "image": "https://www.inoreader.com/camo/s7lCRo-C2uFEOtRb9V2ZyVLU_A352hM8AttYHGgbql4U,q80,480x400,pf,b64/aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNi8xMS9SaW5nLWRyb25lLmpwZz9yZXNpemU9MTYwMCwxNjAw"
+    },
     {
       "id": "at_51140154170",
       "title": "The indie game community is in disarray over AI and Big Walk",
@@ -29,7 +133,7 @@
       "id": "at_51139853216",
       "title": "Read more: https://t.co/q40c4V7T6G",
       "url": "https://x.com/TheRundownAI/status/2120177863181717802",
-      "summary": "Read more: tech.therundown.ai/p/huang-s-bad-…💬0🔄0❤️1👀590⚡ Powered by xgo.ing",
+      "summary": "Read more: tech.therundown.ai/p/huang-s-bad-…💬0🔄0❤️1👀958⚡ Powered by xgo.ing",
       "source": "The Rundown AI (@TheRundownAI) via The Rundown AI(@TheRundownAI)",
       "image": ""
     },
@@ -37,7 +141,7 @@
       "id": "at_51139853220",
       "title": "Top stories in tech today: - Huang spy scandal gets a $7.5B problem - Uber starts selling parking ...",
       "url": "https://x.com/TheRundownAI/status/2120177857942978655",
-      "summary": "Top stories in tech today:- Huang spy scandal gets a $7.5B problem - Uber starts selling parking spots- The FAA finally ejects the floppy disk - SpaceX alums build $749 seawater-to-drinking-water kit💬4🔄1❤️3👀2152📊4⚡ Powered by xgo.ing",
+      "summary": "Top stories in tech today:- Huang spy scandal gets a $7.5B problem - Uber starts selling parking spots- The FAA finally ejects the floppy disk - SpaceX alums build $749 seawater-to-drinking-water kit💬5🔄1❤️7👀3145📊5⚡ Powered by xgo.ing",
       "source": "The Rundown AI (@TheRundownAI) via The Rundown AI(@TheRundownAI)",
       "image": "https://www.inoreader.com/camo/snfVUp7xzfhmGpDGaLA434XSAwf3blK6LcIvTnFSYUtA,q80,480x400,pf,b64/aHR0cHM6Ly9wYnMudHdpbWcuY29tL21lZGlhL0hXeGloYkRXZ0FBV3VNbS5qcGc"
     },
@@ -1496,110 +1600,6 @@
       "summary": "The tokenmaxxing frenzy has been short-lived as bills for said tokens came due, and companies decided that token rationing might be a more fiscally sensible approach.",
       "source": "Lucas Ropek via AI | TechCrunch",
       "image": "https://www.inoreader.com/camo/szNfdIkvIG1ZHZv4v9hP0kyK2_e1B_3-aiTmDv_xZYag,q80,480x400,pf,b64/aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNi8wNi9pcGhvbmUtdXNiLWNhYmxlLmpwZz9yZXNpemU9MTYwMCwxMDY3"
-    },
-    {
-      "id": "at_51082939385",
-      "title": "Ex-Googlers' new Apache 2.0 model Ripple-65B Preview claims the U.S. open coding lead on two major benchmarks",
-      "url": "https://venturebeat.com/technology/ex-googlers-new-apache-2-0-model-ripple-65b-preview-claims-the-u-s-open-coding-lead-on-two-major-benchmarks",
-      "summary": "There's another American victory worth paying attention to today: a new, open weights AI model that its creators claim scores the higher on coding performance on two third-party benchmarks compared to any other open model from the U.S.Read more",
-      "source": "[email protected] (Carl Franzen) via VentureBeat",
-      "image": "https://www.inoreader.com/camo/sGkmm53xZnIoXtjc1cK0HjJPWRoiFpPVGFBXNFC_i-zI,q80,480x400,pf,b64/aHR0cHM6Ly9pbWFnZXMuY3RmYXNzZXRzLm5ldC9qZHR3cWh6dmMybjEvNWtZdXZmcHprQUd2ZlZ1cHc3NW1INi84ZmI0M2JlZDE5NmJhMDE5MDhkZDk0MDA2NDY4NjFhMi9HUFVfUGx1bmdlX0ludG9fVHVycXVvaXNlX1JpcHBsZXMucG5nP3c9MTYwMCZxPTgw"
-    },
-    {
-      "id": "at_51082169092",
-      "title": "The AI race is raising companies' bills, from GPUs to memory to Microsoft 365",
-      "url": "https://venturebeat.com/infrastructure/the-ai-race-is-raising-companies-bills-from-gpus-to-memory-to-microsoft-365",
-      "summary": "OpenAI, Anthropic and the largest cloud providers are racing to build ever more powerful AI, and some of the leaders are raising outside money to help pay for it. Companies outside that race, including those adopting AI as fast as they can, are also facing higher prices for memory chips, reserved cloud GPUs and software.Read more",
-      "source": "[email protected] (Louis Columbus) via VentureBeat",
-      "image": "https://www.inoreader.com/camo/sQMEyDWzoyMZ8YYigR2pf7ntlszuP-bL2DiOV3xk0qe4,q80,480x400,pf,b64/aHR0cHM6Ly9pbWFnZXMuY3RmYXNzZXRzLm5ldC9qZHR3cWh6dmMybjEvNGJGV3lOYnIxZjFoNTJVdlRoU0s1bC9lNmNhNGNmZTJiMGVhNzY0ZTU3YTFiNjBhYjJmYWViZi9oZXJvX2Zvcl9pbmZyYXN0cnVjdHVyZS5wbmc_dz0xNjAwJnE9ODA"
-    },
-    {
-      "id": "at_51082111996",
-      "title": "AI PACs spent millions trying to shape Congress. Here’s how they fared.",
-      "url": "https://techcrunch.com/2026/11/04/ai-pacs-spent-millions-trying-to-shape-congress-heres-how-they-fared/",
-      "summary": "AI industry PACs spent millions influencing the 2026 midterms, with mixed results. Political groups are already looking toward the next election cycle.",
-      "source": "Rebecca Bellan via AI | TechCrunch",
-      "image": "https://www.inoreader.com/camo/sywmiIox_n1A-SDsyd2P_ZQLNLhQ1UeOkHfkduxsJODI,q80,480x400,pf,b64/aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNi8xMS9HZXR0eUltYWdlcy0yMjY0NjQ0NTMyLmpwZz9yZXNpemU9MTYwMCwxMDY3"
-    },
-    {
-      "id": "at_51082057235",
-      "title": "Qualcomm is betting big on data centers as smartphone sales sink",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/1026867/qualcomm-earnings-data-centers",
-      "summary": "With smartphone sales tanking by around 20 percent compared to 2025, Qualcomm is looking to data centers to help boost its bottom line. During its Q4 2026 earnings call, the company laid out its plans to make a splash in the AI data center business, through partnerships with companies like Amazon and Meta announced earlier this year....",
-      "source": "Terrence O’Brien via The Verge - Artificial Intelligences",
-      "image": "https://www.inoreader.com/camo/sb_9wsk9Wz4tfZ2b1oKnOKMR9iGxo4yk9jcyAEcEzLtA,q80,480x400,pf,b64/aHR0cHM6Ly9wbGF0Zm9ybS50aGV2ZXJnZS5jb20vd3AtY29udGVudC91cGxvYWRzL3NpdGVzLzIvY2hvcnVzL3VwbG9hZHMvY2hvcnVzX2Fzc2V0L2ZpbGUvMjQwMDc5OTIvYWNhc3Ryb19TVEswODJfcXVhbGNvbW1fMDIuanBnP3F1YWxpdHk9OTAmc3RyaXA9YWxsJmNyb3A9MCwwLDEwMCwxMDA"
-    },
-    {
-      "id": "at_51081802349",
-      "title": "Nothing CEO says company’s mysterious AI-first device is dropping next month",
-      "url": "https://techcrunch.com/2026/11/04/nothing-ceo-says-companys-mysterious-ai-first-device-is-dropping-next-month/",
-      "summary": "While it's not yet clear what kind of product the smartphone startup is cooking up, Nothing's CEO said the product is designed to leverage AI for productivity gains.",
-      "source": "Lucas Ropek via AI | TechCrunch",
-      "image": "https://www.inoreader.com/camo/sl08GG4xySIjDHNUo8kE81vAt6VH9XjUfJLb88WDLS2o,q80,480x400,pf,b64/aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNC8wMi8yNTYweDIwNDBfNWZlNzc4YjYtODkxOS00MTQzLWJmMTEtOGQ4NmFmNzU0ZjUyXzIxOTJ4LndlYnA_cmVzaXplPTE2MDAsMTI3NQ"
-    },
-    {
-      "id": "at_51081716453",
-      "title": "Almost no one uses AI agents to book their Uber, company says",
-      "url": "https://techcrunch.com/2026/11/04/almost-no-one-uses-ai-agents-to-book-their-uber-company-says/",
-      "summary": "During its busiest week last quarter, Uber said only four people booked a ride using an AI agent.",
-      "source": "Sarah Perez via AI | TechCrunch",
-      "image": "https://www.inoreader.com/camo/siEMExBdvGiEN0aeaSf0PlgNe4YzR14NmuurUtyJTgZo,q80,480x400,pf,b64/aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNi8wNy91YmVyLWdldHR5LmpwZz9yZXNpemU9MTYwMCwxMDY3"
-    },
-    {
-      "id": "at_51081616797",
-      "title": "17 better ways Elon Musk could have wasted $446 million",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/1026878/not-even-good-at-being-rich",
-      "summary": "Dream bigger, babe. | Image: Cath Virginia / The Verge, Getty Images One of the basic problems of spending too much time on social media is that you are cooking your brain by reading posts from a pack of attention-seeking lunatics. If your social media of choice is the site formerly known as Twitter, and it is your main source of contact...",
-      "source": "Elizabeth Lopatto via The Verge - Artificial Intelligences",
-      "image": "https://www.inoreader.com/camo/s86fan8cUGtQOr6_mltfiritNiivv2SGlwTr3N-xlg7U,q80,480x400,pf,b64/aHR0cHM6Ly9wbGF0Zm9ybS50aGV2ZXJnZS5jb20vd3AtY29udGVudC91cGxvYWRzL3NpdGVzLzIvMjAyNi8xMS8yNjg4NTlfSG93X3RoZV90ZWNoX3JpZ2h0X2NvdWxkX2hhdmVfc3BlbnRfYWxsX3RoZV9tb25leV90aGV5X2J1cm5lZF9vbl90aGVfbWlkdGVybXNfQ1ZpcmdpbmlhLmpwZz9xdWFsaXR5PTkwJnN0cmlwPWFsbCZjcm9wPTAsMCwxMDAsMTAw"
-    },
-    {
-      "id": "at_51081503819",
-      "title": "OpenAI is already trying to shape the 2028 election",
-      "url": "https://techcrunch.com/2026/11/04/openai-is-already-trying-to-shape-the-2028-election/",
-      "summary": "OpenAI’s Chris Lehane wants AI to define the 2028 election, proposing a new social contract that could benefit Americans while also advancing the AI giant’s own business interests.",
-      "source": "Rebecca Bellan via AI | TechCrunch",
-      "image": "https://www.inoreader.com/camo/sLi6o-OvllxveBLb6vUaPlD-WfKICS5GGosp4WTbiWUs,q80,480x400,pf,b64/aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNi8wOC9HZXR0eUltYWdlcy0yMjYzODkwNDI0LmpwZz93PTEwMjQ"
-    },
-    {
-      "id": "at_51081350990",
-      "title": "Meta acquires AI coding startup Conductor",
-      "url": "https://techcrunch.com/2026/11/04/meta-acquires-ai-coding-startup-conductor/",
-      "summary": "The startup allows software engineers to deploy teams of agents to work on various aspects of a project simultaneously.",
-      "source": "Lucas Ropek via AI | TechCrunch",
-      "image": "https://www.inoreader.com/camo/sWVxYqAd8qNOClsJHxAXf7XhdGCZuZVNycg8-uSgobbM,q80,480x400,pf,b64/aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNi8wOS9tYXJrLXp1Y2tlcmJlcmctcmF5LWJhbnMucG5nP3Jlc2l6ZT0xNjAwLDg3MQ"
-    },
-    {
-      "id": "at_51080987828",
-      "title": "Gemini for Home now plugs into AT&T’s smart security system",
-      "url": "https://www.theverge.com/tech/1026787/att-gemini-for-home-connected-life-security-system",
-      "summary": "AT&T's smart home security system now integrates with Gemini for Home. The company says its Connected Life system is the \"first\" home security product to integrate with Google Home Premium, enabling a bunch of Gemini-powered features that can summarize home events, search your video history, and more. With the update, Gemini for...",
-      "source": "Emma Roth via The Verge - Artificial Intelligences",
-      "image": "https://www.inoreader.com/camo/sfTm4ykEw3L_mNC17fIa9-DvIKKSr8sGD_qeTbpRsoro,q80,480x400,pf,b64/aHR0cHM6Ly9wbGF0Zm9ybS50aGV2ZXJnZS5jb20vd3AtY29udGVudC91cGxvYWRzL3NpdGVzLzIvMjAyNi8xMS9hdHQtY29ubmVjdGVkLWxpZmUud2VicD9xdWFsaXR5PTkwJnN0cmlwPWFsbCZjcm9wPTAsMCwxMDAsMTAw"
-    },
-    {
-      "id": "at_51080637395",
-      "title": "NEW: Grok Bot now has the ability to place phone calls for users. Calls are limited to the U.S. fo...",
-      "url": "https://x.com/TheRundownAI/status/2118057565607367147",
-      "summary": "NEW: Grok Bot now has the ability to place phone calls for users.Calls are limited to the U.S. for now, with Washington and Illinois blocked. Once a user approves a call, Grok Bot can wait on hold, press through automated menus, and talk to whoever picks up. The user can follow along on a live transcript and gets a summary after.Your browser does not...",
-      "source": "The Rundown AI (@TheRundownAI) via The Rundown AI(@TheRundownAI)",
-      "image": ""
-    },
-    {
-      "id": "at_51080549559",
-      "title": "ChatGPT is about to start making GIFs (1 minute read)",
-      "url": "https://x.com/tokengremlin/status/2117526651932205552?utm_source=tldrai",
-      "summary": "OpenAI just merged animated GIF output into its image generation, with the animations being generated by OpenAI's Images API, which means it is coming to ChatGPT.",
-      "source": "via TLDR AI Feed",
-      "image": "https://www.inoreader.com/camo/sy9ewLXSH8JO8HwbwqnPbJKL1R0Jz1XRrUynswTq6wOw,q80,480x400,pf,b64/aHR0cHM6Ly9wYnMudHdpbWcuY29tL21lZGlhL0hXTDNSRlNXb0FBTUxfVj9mb3JtYXQ9d2VicCZuYW1lPWxhcmdl"
-    },
-    {
-      "id": "at_51080549562",
-      "title": "The 'Astra can read and write weights to improve Qwen' post is misleading (4 minute read)",
-      "url": "https://honnibal.dev/blog/astra-read-write-misleading?utm_source=tldrai",
-      "summary": "The 'Astra can read and write weights' claims are misleading.",
-      "source": "via TLDR AI Feed",
-      "image": "https://www.inoreader.com/camo/slioenTIBxDOuKVWLlkO0PfpLPMGTAlk--hdANI8OMQY,q80,480x400,pf,b64/aHR0cHM6Ly9ob25uaWJhbC5kZXYvc29jaWFsLnBuZw"
     }
   ]
 }
