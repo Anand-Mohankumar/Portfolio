@@ -1,6 +1,214 @@
 {
-  "updatedAt": "2026-11-10T09:51:41.880034+00:00",
+  "updatedAt": "2026-11-10T17:51:49.228804+00:00",
   "articles": [
+    {
+      "id": "at_51140154170",
+      "title": "The indie game community is in disarray over AI and Big Walk",
+      "url": "https://www.theverge.com/games/1030994/big-walk-independent-games-festival-igf-ai",
+      "summary": "Some Independent Games Festival (IGF) jurors published a statement yesterday saying they would not vote for games that use generative AI in \"any capacity.\" Soon after, the developer of indie hit Big Walk has published a statement saying it \"sparingly\" used AI in the \"final stretch\" of the game's development to \"help work through difficult...",
+      "source": "Jay Peters via The Verge - Artificial Intelligences",
+      "image": "https://www.inoreader.com/camo/stZEJZgXMmvTm29CE9C8yCjF6hGS-WtFEnqkzUwWjsOo,q80,480x400,pf,b64/aHR0cHM6Ly9wbGF0Zm9ybS50aGV2ZXJnZS5jb20vd3AtY29udGVudC91cGxvYWRzL3NpdGVzLzIvMjAyNi8wNy9CaWdXYWxrX1NjcmVlbnNob3RfSnVuMjZfMDEucG5nP3F1YWxpdHk9OTAmc3RyaXA9YWxsJmNyb3A9MCwwLDEwMCwxMDA"
+    },
+    {
+      "id": "at_51140154175",
+      "title": "Anthropic has its own AI-powered office suite now",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1030709/anthropic-has-its-own-ai-powered-office-suite-now",
+      "summary": "For years, Anthropic has been known for its focus on enterprise and coding tools that attract high-flying corporate clients, inspiring competing frontier labs - like OpenAI, SpaceXSI, and Meta - to copy its strategies. Earlier this year, Claude Code went through its own particular hype cycle. And now, Anthropic is trying to expand its...",
+      "source": "Hayden Field via The Verge - Artificial Intelligences",
+      "image": "https://www.inoreader.com/camo/sBMlSq_RACcdNcZ_uR8BP26a4QY3tE_ePVvW_pEKyAEQ,q80,480x400,pf,b64/aHR0cHM6Ly9wbGF0Zm9ybS50aGV2ZXJnZS5jb20vd3AtY29udGVudC91cGxvYWRzL3NpdGVzLzIvMjAyNi8wNS9TVEtCMzY0X0NMQVVERV8yX0NfOTZkMTVjLmpwZz9xdWFsaXR5PTkwJnN0cmlwPWFsbCZjcm9wPTAsMCwxMDAsMTAw"
+    },
+    {
+      "id": "at_51140147060",
+      "title": "Anthropic launches Claude Meetings to turn workplace discussions into plans and tasks",
+      "url": "https://techcrunch.com/2026/11/10/anthropic-launches-claude-meetings-to-turn-workplace-discussions-into-plans-and-tasks/",
+      "summary": "As participants talk, Claude can draft the plan being discussed, map out a timeline on a whiteboard, answer questions in the meeting chat, and access connected work apps to retrieve information, such as last year's figures.",
+      "source": "Aisha Malik via AI | TechCrunch",
+      "image": "https://www.inoreader.com/camo/sLUBrug18PggB3i7UYAkrgKF7Sj2maexSA9uv2qOtqCk,q80,480x400,pf,b64/aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNi8xMS9DbGF1ZGUtTWVldGluZ3MucG5nP3Jlc2l6ZT0xNjAwLDkwMA"
+    },
+    {
+      "id": "at_51139853216",
+      "title": "Read more: https://t.co/q40c4V7T6G",
+      "url": "https://x.com/TheRundownAI/status/2120177863181717802",
+      "summary": "Read more: tech.therundown.ai/p/huang-s-bad-…💬0🔄0❤️1👀590⚡ Powered by xgo.ing",
+      "source": "The Rundown AI (@TheRundownAI) via The Rundown AI(@TheRundownAI)",
+      "image": ""
+    },
+    {
+      "id": "at_51139853220",
+      "title": "Top stories in tech today: - Huang spy scandal gets a $7.5B problem - Uber starts selling parking ...",
+      "url": "https://x.com/TheRundownAI/status/2120177857942978655",
+      "summary": "Top stories in tech today:- Huang spy scandal gets a $7.5B problem - Uber starts selling parking spots- The FAA finally ejects the floppy disk - SpaceX alums build $749 seawater-to-drinking-water kit💬4🔄1❤️3👀2152📊4⚡ Powered by xgo.ing",
+      "source": "The Rundown AI (@TheRundownAI) via The Rundown AI(@TheRundownAI)",
+      "image": "https://www.inoreader.com/camo/snfVUp7xzfhmGpDGaLA434XSAwf3blK6LcIvTnFSYUtA,q80,480x400,pf,b64/aHR0cHM6Ly9wYnMudHdpbWcuY29tL21lZGlhL0hXeGloYkRXZ0FBV3VNbS5qcGc"
+    },
+    {
+      "id": "at_51139845271",
+      "title": "Nvidia CEO Jensen Huang’s affair with alleged Chinese spy: a timeline",
+      "url": "https://techcrunch.com/2026/11/10/nvidia-ceo-jensen-huangs-affair-with-alleged-chinese-spy-a-timeline/",
+      "summary": "The affair could have ramifications for national security as the U.S. and China race to develop the most advanced AI infrastructure.",
+      "source": "Amanda Silberling via AI | TechCrunch",
+      "image": ""
+    },
+    {
+      "id": "at_51139550557",
+      "title": "eBay appears to have shut the door on third-party AI agents",
+      "url": "https://www.theverge.com/tech/1030838/ebay-ai-agents-meta-muse-agentic-shopping",
+      "summary": "eBay appears to have blocked AI agents, including Meta's Muse, from browsing on the platform - the latest speed bump in the AI agent race. A reader tells The Verge that for several weeks he's had his Muse agent browse and curate a daily digest of watches for sale on platforms like eBay, including a link to listings, price, shipping details,...",
+      "source": "Mia Sato via The Verge - Artificial Intelligences",
+      "image": "https://www.inoreader.com/camo/sWX4j0SrWrB0C4-3PTjzNA9gEgYAoQ5jnxCxXG_DREeQ,q80,480x400,pf,b64/aHR0cHM6Ly9wbGF0Zm9ybS50aGV2ZXJnZS5jb20vd3AtY29udGVudC91cGxvYWRzL3NpdGVzLzIvMjAyNi8xMC9TVEtTNTM5X0FJX0FHRU5UU19TSE9QUElOR19ELmpwZz9xdWFsaXR5PTkwJnN0cmlwPWFsbCZjcm9wPTAsMCwxMDAsMTAw"
+    },
+    {
+      "id": "at_51139354376",
+      "title": "Google Gemini 4 Carbon is now publicly available — and it undercuts Claude Fable 5.2 and Opus 5.5 on API price",
+      "url": "https://venturebeat.com/technology/google-gemini-4-carbon-is-now-publicly-available-and-it-undercuts-claude-fable-5-2-and-opus-5-5-on-api-price",
+      "summary": "It's the bedrock of all organic life as well as the name of Google's latest and greatest frontier model: Gemini 4 Carbon.Read more",
+      "source": "[email protected] (Carl Franzen) via VentureBeat",
+      "image": "https://www.inoreader.com/camo/sTMV1aErJgPZUBFJd8HtcxHhNMc3RVgkCDldkVYsA_54,q80,480x400,pf,b64/aHR0cHM6Ly9pbWFnZXMuY3RmYXNzZXRzLm5ldC9qZHR3cWh6dmMybjEvMWdvR2l3TGJvRjVKSVRURFhRa1hjcC9hMjAyODI1NmY2NjM5ZmQ4NWE2Njc2ODgzN2JlZTYwYS9SZXRyb19DYXJib25fQ29kZV9FeHBsb3Npb24ucG5nP3c9MTYwMCZxPTgw"
+    },
+    {
+      "id": "at_51139349259",
+      "title": "Google releases Gemini 4 Carbon with agent ‘swarm’ feature",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1030787/google-gemini-4-carbon-public-rollout",
+      "summary": "Google is rolling out its latest AI model, Gemini 4 Carbon, to the general public after releasing it to a select group of \"cybersecurity defenders\" two weeks ago. Google claims Carbon is its \"strongest model\" yet, and capable of competing with the very best systems from Anthropic and OpenAI. Google says Gemini 4 Carbon \"pushes the frontier...",
+      "source": "Robert Hart via The Verge - Artificial Intelligences",
+      "image": "https://www.inoreader.com/camo/sT6oh7nIlSoSLXkJyKm7IedxvojbxVuwecw8wj0gaa4c,q80,480x400,pf,b64/aHR0cHM6Ly9wbGF0Zm9ybS50aGV2ZXJnZS5jb20vd3AtY29udGVudC91cGxvYWRzL3NpdGVzLzIvMjAyNi8xMS9HZW1pbmktNC1DYXJib24tS2V5LUFydC5qcGc_cXVhbGl0eT05MCZzdHJpcD1hbGwmY3JvcD0wLDAsMTAwLDEwMA"
+    },
+    {
+      "id": "at_51139226438",
+      "title": "Google broadens its AI hardware portfolio with two new specialized chips",
+      "url": "https://techcrunch.com/2026/11/10/google-broadens-its-ai-hardware-portfolio-with-two-new-specialized-chips/",
+      "summary": "Google's new tensor processing units (TPUs) broaden its chip portfolio to more use cases: confidential model training and more memory capacity.",
+      "source": "Ram Iyer via AI | TechCrunch",
+      "image": "https://www.inoreader.com/camo/sy4UsqvE1c4hXAi0dhzos2MHYsq9TtzbnFf4gSo7g1Fs,q80,480x400,pf,b64/aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNC8wOS9HZXR0eUltYWdlcy0xNDg0NjIyODc4LmpwZWc_cmVzaXplPTE2MDAsMTA2Nw"
+    },
+    {
+      "id": "at_51138946148",
+      "title": "Why more GPUs and tokens don’t guarantee better AI agent outcomes",
+      "url": "https://venturebeat.com/infrastructure/why-more-gpus-and-tokens-dont-guarantee-better-ai-agent-outcomes",
+      "summary": "Presented by WEKARead more",
+      "source": "via VentureBeat",
+      "image": "https://www.inoreader.com/camo/sFfRgIpBY-tUKQjOgG7aHN9UzwBF28kSmlhMR3EDJI4U,q80,480x400,pf,b64/aHR0cHM6Ly9pbWFnZXMuY3RmYXNzZXRzLm5ldC9qZHR3cWh6dmMybjEvNW92b1hwQlZ2QUphdDhUeUtUNXg4Sy9mYTg5OTM5ZmExZTY3YTI0OGE2ODEwYzQ5ZTZiNjk5ZC9WZW50dXJlQmVhdDEwMjgyNi0yMjkxLmpwZz93PTE2MDAmcT04MA"
+    },
+    {
+      "id": "at_51138899655",
+      "title": "Meta’s AI agent Muse lands on Apple Watch and Android Wear OS",
+      "url": "https://techcrunch.com/2026/11/10/metas-ai-agent-muse-lands-on-apple-watch-and-wear-os/",
+      "summary": "Users can now interact with Meta’s AI assistant through voice calls, text messages, or dictation on their Apple Watch.",
+      "source": "Aisha Malik via AI | TechCrunch",
+      "image": "https://www.inoreader.com/camo/sYFIbMBNLmR3OvvXF8NfpLQYEAEl91N3ZQsc86_9fEUM,q80,480x400,pf,b64/aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNS8xMS9NdXNlQ2hhcm0ucG5nP3c9MTIwMA"
+    },
+    {
+      "id": "at_51138204750",
+      "title": "The global pledge to use AI for climate good is a cruel joke",
+      "url": "https://www.theverge.com/science/1030252/ai-data-center-climate-pledge-united-nations-cop31",
+      "summary": "Murat Kurum (left), Turkey’s minister of Environment, Urbanisation and Climate Change; and Chris Bowen, Australia's minister for Climate Change and Energy, raise their hands together at the COP31 UN Climate Change Conference in Antalya, Turkey, on November 9th, 2026. | Photo: AFP via Getty Images At this point, reading through the latest...",
+      "source": "Justine Calma via The Verge - Artificial Intelligences",
+      "image": "https://www.inoreader.com/camo/s2TAz9ejl1oe54p4TrovOmzQc9AMLj4OeB9aFT_Gos-U,q80,480x400,pf,b64/aHR0cHM6Ly9wbGF0Zm9ybS50aGV2ZXJnZS5jb20vd3AtY29udGVudC91cGxvYWRzL3NpdGVzLzIvMjAyNi8xMS9nZXR0eWltYWdlcy0yMzAzODQwNjQzLmpwZz9xdWFsaXR5PTkwJnN0cmlwPWFsbCZjcm9wPTAsMCwxMDAsMTAw"
+    },
+    {
+      "id": "at_51138082179",
+      "title": "Anthropic targets $1.4 trillion IPO",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1030703/anthropic-ipo-1-4-trillion",
+      "summary": "Anthropic confirmed on Tuesday that its IPO could be one of the biggest ever, even while falling short of previous expectations. Its IPO price is expected to be between $70.00 and $78.00 per share, which would put its valuation as high as $1.4 trillion, according to the New York Times. The Wall Street Journal reports that according to...",
+      "source": "Stevie Bonifield via The Verge - Artificial Intelligences",
+      "image": "https://www.inoreader.com/camo/sSJ1orKm28EA_NsRgQFoaDp6XUEHR_tf5nwq0d_FS2CE,q80,480x400,pf,b64/aHR0cHM6Ly9wbGF0Zm9ybS50aGV2ZXJnZS5jb20vd3AtY29udGVudC91cGxvYWRzL3NpdGVzLzIvMjAyNi8wMS9TVEsyNjlfQU5USFJPUElDXzJfRC5qcGc_cXVhbGl0eT05MCZzdHJpcD1hbGwmY3JvcD0wLDAsMTAwLDEwMA"
+    },
+    {
+      "id": "at_51138082184",
+      "title": "Adobe is going all in on agentic AI",
+      "url": "https://www.theverge.com/tech/1030593/adobe-max-ai-agents-mcp-firefly-assistant-updates",
+      "summary": "Adobe is committing itself to the notion that chatbots and AI agents could be your next design assistant, or even automate creative workflows and repetitive tasks on your behalf. Some of the tools and features announced today at Adobe's Max conference in Miami, Florida, include allowing your preferred third-party AI agents to access and...",
+      "source": "Jess Weatherbed via The Verge - Artificial Intelligences",
+      "image": "https://www.inoreader.com/camo/s-dMHI99GmsFgMcqg1Ww4DwmLvQfmHPdBQxHq3hn2Sf0,q80,480x400,pf,b64/aHR0cHM6Ly9wbGF0Zm9ybS50aGV2ZXJnZS5jb20vd3AtY29udGVudC91cGxvYWRzL3NpdGVzLzIvMjAyNi8xMS9GRi1BSUEtTm8tTG9nby00LmpwZz9xdWFsaXR5PTkwJnN0cmlwPWFsbCZjcm9wPTAsMCwxMDAsMTAw"
+    },
+    {
+      "id": "at_51138080090",
+      "title": "Adobe adds more AI to its products and launches an MCP",
+      "url": "https://techcrunch.com/2026/11/10/adobe-adds-more-ai-to-its-products-and-launches-an-mcp/",
+      "summary": "Adobe is taking on Figma with a new prototype builder tool in Firefly.",
+      "source": "Ivan Mehta via AI | TechCrunch",
+      "image": "https://www.inoreader.com/camo/snjLYXVnbyrkN-jS-3y5hW9sZxQOKqAuOoeGHemHgMqw,q80,480x400,pf,b64/aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNi8xMS9GRi1BSUEtUGxhbk1vZGUtTm8tTG9nby00LmpwZz9yZXNpemU9MTYwMCw5MDA"
+    },
+    {
+      "id": "at_51138080092",
+      "title": "Anthropic sets IPO price range of $70 to $78 per share to reach an implied valuation of $1.404 trillion",
+      "url": "https://techcrunch.com/2026/11/10/anthropic-sets-ipo-price-range-of-70-to-78-per-share-to-reach-an-implied-valuation-of-1-404-trillion/",
+      "summary": "The company could end up being worth a hefty $1.404 trillion if its shares list at the top of the price range, on a fully diluted basis.",
+      "source": "Rebecca Bellan, Ram Iyer via AI | TechCrunch",
+      "image": ""
+    },
+    {
+      "id": "at_51138080094",
+      "title": "Spotify’s AI DJ gets new voices, personalities, and an option for less chatter",
+      "url": "https://techcrunch.com/2026/11/10/spotifys-ai-dj-gets-new-voices-personalities-and-an-option-for-less-chatter/",
+      "summary": "Spotify Premium users can now customize their AI DJ with new voices with different personalities, or turn off the commentary between songs.",
+      "source": "Sarah Perez via AI | TechCrunch",
+      "image": "https://www.inoreader.com/camo/sY2KOlUfsvNW6NiETUPianzH4jm3qWxHGAgoGfrEzLP8,q80,480x400,pf,b64/aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNi8wNS9TcG90aWZ5LUFJLURKLUhlYWRlci5qcGc_dz05Nzg"
+    },
+    {
+      "id": "at_51138043416",
+      "title": "AI’s biggest bottleneck is cost: Companies blame stalled projects on overruns three times as often as on compute shortages",
+      "url": "https://venturebeat.com/infrastructure/ais-biggest-bottleneck-is-cost-companies-blame-stalled-projects-on-overruns-three-times-as-often-as-on-compute-shortages",
+      "summary": "Cost overruns stalled AI projects more than three times as often as computing-capacity shortages among respondents to VentureBeat’s October survey.Read more",
+      "source": "[email protected] (Rob Strechay) via VentureBeat",
+      "image": "https://www.inoreader.com/camo/sumIU5ExppQcW7bRnuk2o4FZWpEUjSk6djvGjkbNIV8c,q80,480x400,pf,b64/aHR0cHM6Ly9pbWFnZXMuY3RmYXNzZXRzLm5ldC9qZHR3cWh6dmMybjEvNXJVRjRvTEh2Tzk2SGdJYkczcUdpei80MWMxZjk2ZDhhZDljODMwY2M1ZTAyY2I5MzViMDk1Yy9HZW1pbmlfR2VuZXJhdGVkX0ltYWdlX2t4bDVsMGt4bDVsMGt4bDUuanBlZz93PTE2MDAmcT04MA"
+    },
+    {
+      "id": "at_51137985801",
+      "title": "After challenging Google’s Android with Cyanogen, its co-founder takes aim at Windows for AI era",
+      "url": "https://techcrunch.com/2026/11/10/after-challenging-googles-android-with-cyanogen-its-co-founder-takes-aim-at-windows-for-ai-era/",
+      "summary": "Kora is set to launch as a free-to-use alternative to Windows, targeting users who rely heavily on AI models and agents.",
+      "source": "Jagmeet Singh via AI | TechCrunch",
+      "image": "https://www.inoreader.com/camo/sfiqV9p0RBDv6R4cYcrNMq0m6e3813wczPG_UXAy7d-A,q80,480x400,pf,b64/aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNi8xMS9rb3JhLW9zLmpwZz9yZXNpemU9MTYwMCwxMDY3"
+    },
+    {
+      "id": "at_51137973858",
+      "title": "Photoshop, Lightroom, and Premiere are making it easier to remove things",
+      "url": "https://www.theverge.com/tech/1030653/adobe-max-2026-photoshop-premiere-removal-updates",
+      "summary": "Photoshop’s Quick Compare feature lets you quickly review a before-and-after comparison of edits. | Image: Adobe Adobe is expanding its Creative Cloud apps and Firefly AI platform with new capabilities that aim to make design and editing projects faster and less complicated. Some of the announcements from Adobe's Max event today include...",
+      "source": "Jess Weatherbed via The Verge - Artificial Intelligences",
+      "image": "https://www.inoreader.com/camo/sveBenDyuH9lDai0AYWtM2QoYK8whq09clIruQGjO-WI,q80,480x400,pf,b64/aHR0cHM6Ly9wbGF0Zm9ybS50aGV2ZXJnZS5jb20vd3AtY29udGVudC91cGxvYWRzL3NpdGVzLzIvMjAyNi8xMS9QUy1SZW1vdmUtTm8tTG9nby0yLmpwZz9xdWFsaXR5PTkwJnN0cmlwPWFsbCZjcm9wPTAsMCwxMDAsMTAw"
+    },
+    {
+      "id": "at_51137789091",
+      "title": "Hands-on with Ring’s new AI drone camera for your home",
+      "url": "https://www.theverge.com/tech/1030601/ring-drone-cam-hands-on-price-release-date-ai-pilot",
+      "summary": "Ring’s new Drone Cam is a flying indoor security camera. Ring is finally shipping a flying indoor drone camera. For real this time. The Ring Drone Cam will arrive on January 27th, 2027, for $249.99, Ring founder Jamie Siminoff said at a launch event in New York City this week. If it does actually ship, it will arrive almost six years after...",
+      "source": "Jennifer Pattison Tuohy via The Verge - Artificial Intelligences",
+      "image": "https://www.inoreader.com/camo/sJzorw8obqphPXT49E5GuU_HbxnbRcFdNLL7xciVRe3U,q80,480x400,pf,b64/aHR0cHM6Ly9wbGF0Zm9ybS50aGV2ZXJnZS5jb20vd3AtY29udGVudC91cGxvYWRzL3NpdGVzLzIvMjAyNi8xMS9EU0MwMTI2OC5qcGc_cXVhbGl0eT05MCZzdHJpcD1hbGwmY3JvcD0wLDAsMTAwLDEwMA"
+    },
+    {
+      "id": "at_51137416989",
+      "title": "Cyberattacks threaten to make open source AI a little less open, Hugging Face exec warns",
+      "url": "https://techcrunch.com/2026/11/10/cyberattacks-threaten-to-make-open-source-ai-a-little-less-open-hugging-face-exec-warns/",
+      "summary": "Hugging Face executive Irene Solaiman warns that growing cyberattacks on open AI platforms could force tighter security restrictions, threatening the accessibility that makes open source communities valuable to developers worldwide.",
+      "source": "Rebecca Bellan via AI | TechCrunch",
+      "image": "https://www.inoreader.com/camo/sMLozJAy9BMvMW_O5klKHDZlDC-PSx2sI5Qi4TxPwdPk,q80,480x400,pf,b64/aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNi8xMS81NTU5MzMwOTU5MV83Y2MyZDNhYmE2X2suanBnP3Jlc2l6ZT0xNjAwLDEwNjc"
+    },
+    {
+      "id": "at_51137416992",
+      "title": "Otter AI can now follow conversations across 30+ languages",
+      "url": "https://techcrunch.com/2026/11/09/otter-ai-can-now-follow-conversations-across-30-languages/",
+      "summary": "Otter AI just added support for 27 languages and revealed an upcoming feature that can follow along if speakers switch between languages.",
+      "source": "Lauren Forristal via AI | TechCrunch",
+      "image": "https://www.inoreader.com/camo/s1XYLMTwJAcN3dAxSXCcXgfVwWiGUBnG8MNNEMe2fl3Q,q80,480x400,pf,b64/aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMS8wMS9HZXR0eUltYWdlcy01MjEzMzM2MjAuanBnP3Jlc2l6ZT0xNjAwLDEwNjc"
+    },
+    {
+      "id": "at_51137001201",
+      "title": "Read more: https://t.co/WVh3dZ9WwK",
+      "url": "https://x.com/TheRundownAI/status/2120116834951102916",
+      "summary": "Read more: therundownai.beehiiv.com/p/anthropic-sa…💬0🔄0❤️2👀1204⚡ Powered by xgo.ing",
+      "source": "The Rundown AI (@TheRundownAI) via The Rundown AI(@TheRundownAI)",
+      "image": ""
+    },
+    {
+      "id": "at_51137001205",
+      "title": "Top stories in AI today: - Anthropic’s Fable 5.2 leads the frontier with a price cut - Meta undercu...",
+      "url": "https://x.com/TheRundownAI/status/2120116829750219023",
+      "summary": "Top stories in AI today:- Anthropic’s Fable 5.2 leads the frontier with a price cut- Meta undercuts Anthropic, OpenAI on the cost of agents- Clean up a messy Excel report with Claude- Google adds two more AI chips to its Nvidia fight💬22🔄0❤️10👀3482📊19⚡ Powered by xgo.ing",
+      "source": "The Rundown AI (@TheRundownAI) via The Rundown AI(@TheRundownAI)",
+      "image": "https://www.inoreader.com/camo/sppRu5BBNImKLYbi-761Y6b-lPjvNWGZrMlQ3TsVYy5g,q80,480x400,pf,b64/aHR0cHM6Ly9wYnMudHdpbWcuY29tL21lZGlhL0hXd3JCTDdYMEFBd2tvaS5qcGc"
+    },
     {
       "id": "at_51132289201",
       "title": "Anthropic reportedly plans to move forward with IPO plans",
@@ -79,7 +287,7 @@
       "url": "https://techcrunch.com/2026/11/09/a-short-seller-flagged-nvidia-ceos-ties-to-a-suspected-chinese-spy-six-months-before-the-scandal/",
       "summary": "Six months before Nvidia's spy scandal erupted, Culper Research was already questioning Jensen Huang's unusually close relationship with a Chinese executive.",
       "source": "Sarah Perez via AI | TechCrunch",
-      "image": "https://www.inoreader.com/camo/sACmm8gHaUuOkodC-hs5x11FtV5ZEf_R6Ocuo3j_gY2Q,q80,480x400,pf,b64/aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNS8wNC9HZXR0eUltYWdlcy0yMjA1NzU0Mzg5LmpwZz93PTEwMjQ"
+      "image": ""
     },
     {
       "id": "at_51131287109",
@@ -1392,214 +1600,6 @@
       "summary": "The 'Astra can read and write weights' claims are misleading.",
       "source": "via TLDR AI Feed",
       "image": "https://www.inoreader.com/camo/slioenTIBxDOuKVWLlkO0PfpLPMGTAlk--hdANI8OMQY,q80,480x400,pf,b64/aHR0cHM6Ly9ob25uaWJhbC5kZXYvc29jaWFsLnBuZw"
-    },
-    {
-      "id": "at_51080549564",
-      "title": "OpenAI: ChatGPT Search Is About 20% of Google's, 250 Million People Speak With ChatGPT, and Chat Is Merging With Work (16 minute read)",
-      "url": "https://www.bigtechnology.com/p/openai-chatgpt-search-is-about-20?utm_source=tldrai",
-      "summary": "ChatGPT's search volume has reached 20% of Google's, with ChatGPT rapidly gaining 200 million users in the past two months, leading to 1.2 billion weekly active users. The voice mode of ChatGPT now engages 250 million weekly active users, emphasizing new interaction methods through GPT Live updates that enable natural bidirectional conversations. Plans...",
-      "source": "via TLDR AI Feed",
-      "image": "https://www.inoreader.com/camo/sLm-06uaa7hZ0d2LzHby5RFvIY9T-5gHzBzPNmiXdlEw,q80,480x400,pf,b64/aHR0cHM6Ly9zdWJzdGFja2Nkbi5jb20vaW1hZ2UvZmV0Y2gvJHNfIWNUOGEhLHdfMTIwMCxoXzY3NSxjX2ZpbGwsZl9qcGcscV9hdXRvOmdvb2QsZmxfcHJvZ3Jlc3NpdmU6c3RlZXAsZ19hdXRvL2h0dHBzJTNBJTJGJTJGc3Vic3RhY2stcG9zdC1tZWRpYS5zMy5hbWF6b25hd3MuY29tJTJGcHVibGljJTJGaW1hZ2VzJTJGMTRiNjdiMjgtZWE2Yi00ZmFkLTg3ODctNjc3NTYzNzljNjc0XzE2NzJ4OTQxLnBuZw"
-    },
-    {
-      "id": "at_51080549566",
-      "title": "DeepSeek Plans to Train Its Next-Generation Model on Huawei Ascend Chips (3 minute read)",
-      "url": "https://www.geopolitechs.org/p/deepseek-plans-to-train-its-next?utm_source=tldrai",
-      "summary": "DeepSeek plans to use Huawei's Ascend AI chips to pretrain DeepSeek V5. Ascend chips have previously been used primarily for inference rather than pretraining. This will be an important test of whether Chinese AI accelerators can support the full pre-training of a frontier large language model. A successful run could reduce Chinese AI developers' dependence...",
-      "source": "via TLDR AI Feed",
-      "image": "https://www.inoreader.com/camo/s5a5SsNuLjNsKKN54ENV7s4lIu_s1LU2qDEdyKlEifck,q80,480x400,pf,b64/aHR0cHM6Ly9zdWJzdGFja2Nkbi5jb20vaW1hZ2UvZmV0Y2gvJHNfIUk4TXAhLHdfMTIwMCxoXzY3NSxjX2ZpbGwsZl9qcGcscV9hdXRvOmdvb2QsZmxfcHJvZ3Jlc3NpdmU6c3RlZXAsZ19hdXRvL2h0dHBzJTNBJTJGJTJGc3Vic3RhY2stcG9zdC1tZWRpYS5zMy5hbWF6b25hd3MuY29tJTJGcHVibGljJTJGaW1hZ2VzJTJGYjFkZWIyYjgtMWY0My00NWYxLWI2ZjktZjc2OGM0ZjVkZWQxXzEyMDB4ODAwLmF2aWY"
-    },
-    {
-      "id": "at_51080549568",
-      "title": "Progress on provable inference for large language models (30 minute read)",
-      "url": "https://www.anthropic.com/research/provable-inference?utm_source=tldrai",
-      "summary": "It is almost impossible to verify which model produced a specific output. Cryptographic proofs of inference allow model providers to prove that preach suppose was produced which a specific model. These proofs could enable new applications and contribute to a toolkit for verifying compliance with AI pacing requirements. This post details the progress...",
-      "source": "via TLDR AI Feed",
-      "image": "https://www.inoreader.com/camo/spxPku1sox0awx_nixRvpyLbBkujirHPb-1YJ9O475a0,q80,480x400,pf,b64/aHR0cHM6Ly93d3ctY2RuLmFudGhyb3BpYy5jb20vaW1hZ2VzLzR6cnpvdmJiL3dlYnNpdGUvMmViYTMzNWEyODY2MWE4MjUzMTg3MDUzZmEzNmFkZDIzMGFmNzI4Yi0yMDAweDExMjUuanBn"
-    },
-    {
-      "id": "at_51080549569",
-      "title": "Accelerating engineering for the physical world (6 minute read)",
-      "url": "https://openai.com/index/accelerating-engineering-for-the-physical-world/?utm_source=tldrai",
-      "summary": "OpenAI is leveraging its AI models to enhance mechanical and electrical engineering processes, from design to simulation and production, speeding up internal workflows and improving industry practices. Engineers utilize models like GPT‑6 Astra for tasks such as device design, CAD model creation, and performance simulations, while collaborating with...",
-      "source": "via TLDR AI Feed",
-      "image": "https://www.inoreader.com/camo/sNuoLVyU6xqowd4eJDgNehUs35TIapzBrNhThGYxCWmw,q80,480x400,pf,b64/aHR0cHM6Ly9pbWFnZXMuY3RmYXNzZXRzLm5ldC9rZnR6d2R5YXV3dDkvM05BZUZOT3N0a0VFMGFTeGF5dDhOVC9jZWRiNDcwZDhjMGJjZDdlNmEyY2E4MjhjMWRiMTM2Yy9hY2NlbGVyYXRpbmctZW5naW5lZXJpbmctcGh5c2ljYWwtd29ybGQtc29jaWFsLnBuZz93PTE2MDAmaD05MDAmZml0PWZpbGw"
-    },
-    {
-      "id": "at_51080549572",
-      "title": "How to Balance AI Value and Risk: Takeaways from the Gartner IT Symposium/Xpo™ 2026 (Sponsor)",
-      "url": "https://www.gartner.com/en/chief-information-officer/insights/2026-itsym-keynote-ec?utm_source=tldr&amp;utm_medium=display&amp;utm_campaign=GTR_GB_2026_GTR_PD_DS15_AITLDRNL&amp;utm_term=hubpage",
-      "summary": "AI value is growing, but risk is compounding at a much higher rate. Explore six takeaways from the Gartner IT Symposium/Xpo™ 2026 conference that can help CIOs capture AI value and manage risks through momentum, drag, governance and people. Download the insights.",
-      "source": "via TLDR AI Feed",
-      "image": ""
-    },
-    {
-      "id": "at_51080549574",
-      "title": "Gemini Notebook API (1 minute read)",
-      "url": "https://developers.google.com/notebook/docs?utm_source=tldrai",
-      "summary": "The Gemini Notebook API is a REST interface for programmatically creating and managing notebooks and sources in Gemini Notebook. It can turn web pages, YouTube videos, plain text, and Markdown into persistent notebooks. The API and MCP server are in an early access Public Preview. Only personal Google Accounts are supported during the preview - Google...",
-      "source": "via TLDR AI Feed",
-      "image": "https://www.inoreader.com/camo/sHrZL6_NvcEH1euvRek_81-TykTgQh63kz84YtFOCi-4,q80,480x400,pf,b64/aHR0cHM6Ly93d3cuZ3N0YXRpYy5jb20vZGV2cmVsLWRldnNpdGUvcHJvZC92ZWVkODViYTBlMzY1MTA2MmM3OTNhNDA3OTZlODRmYjM0YWZiZjg0ODkzMDhkNDVmOTJkNTQ0OGU1ODdlM2YwMy9kZXZlbG9wZXJzL2ltYWdlcy9vcGVuZ3JhcGgvZ29vZ2xlLWJsdWUucG5n"
-    },
-    {
-      "id": "at_51080549575",
-      "title": "How Much Does Reasoning Effort Affect Score and Cost? (8 minute read)",
-      "url": "https://www.vals.ai/blogs/reasoning-effort?utm_source=tldrai",
-      "summary": "Lower reasoning effort reduces cost much more than it lowers the quality of results. Tests show that models on low reasoning can match models on high reasoning at lower cost. The impact of reasoning effort depends on the task.",
-      "source": "via TLDR AI Feed",
-      "image": ""
-    },
-    {
-      "id": "at_51080549576",
-      "title": "Learnings from Auditing Public Evaluations (8 minute read)",
-      "url": "https://www.primeintellect.ai/blog/auditing-public-evaluations?utm_source=tldrai",
-      "summary": "The article outlines issues faced during public evaluations of LLMs and details improvements made to benchmarks such as AUTOMATIONBENCH and OFFICEQA PRO V2. They replaced ambiguous prose descriptions with JSON schemas for better performance evaluations and introduced new grading systems to improve accuracy. A multi-layered monitoring system is suggested...",
-      "source": "via TLDR AI Feed",
-      "image": "https://www.inoreader.com/camo/spC6X0ZG9a-sQleKiO_h0bJbhaproj-0tJmzd01sXU-s,q80,480x400,pf,b64/aHR0cHM6Ly93d3cucHJpbWVpbnRlbGxlY3QuYWkvYmxvZy9hdWRpdGluZy1wdWJsaWMtZXZhbHVhdGlvbnMvY292ZXIucG5nP3Y9YmY2NmE1MWEzMjMx"
-    },
-    {
-      "id": "at_51080549577",
-      "title": "Training a Text-to-Image Model for $21K (13 minute read)",
-      "url": "https://www.linum.ai/field-notes/pjit-21k?utm_source=tldrai",
-      "summary": "Linium is a two-person research lab that is trying to train its own generative video models entirely from scratch, aiming to create tools to democratize access to animation. Pyramid-JiT (P-JiT) is a pixel-space architecture that achieves aggressive token reduction through a noise schedule that helps pixel-space models better learn fine-grained detail....",
-      "source": "via TLDR AI Feed",
-      "image": "https://www.inoreader.com/camo/sXQk7I21yUMNhx2QeOd2JqvCfxkP0ePzLlJOQkngGEEg,q80,480x400,pf,b64/aHR0cHM6Ly9saW51bS5haS9maWVsZC1ub3Rlcy9waml0LTIxay9vcGVuZ3JhcGgtaW1hZ2UvY2FyZD8yNmQ2NTQ3OGY4NWIxZTE2"
-    },
-    {
-      "id": "at_51080549578",
-      "title": "Fireworks Launches Faster AI Inference and Enterprise Tools (5 minute read)",
-      "url": "https://fireworks.ai/blog/fireworks-unveils-new-products-at-forge-to-help-companies-build-specialized-intelligence?utm_source=tldrai",
-      "summary": "Fireworks AI unveiled new products at Forge, including Ultra-fast inference reaching up to 1,500 tokens per second, lower-cost background processing, and Nexus for accessing multiple AI models within existing tools. It also introduced capabilities for model evaluation, fine-tuning deployment, and enterprise-controlled infrastructure.",
-      "source": "via TLDR AI Feed",
-      "image": "https://www.inoreader.com/camo/sYk96iSG6NEMtDNs09nrrj60BGokDWkhHvy6PFc9cJZc,q80,480x400,pf,b64/aHR0cHM6Ly9jZG4uc2FuaXR5LmlvL2ltYWdlcy9wdjM3aTB5bi9ob3Jpem9uLzJmNzY0M2I1MzRmZDZjYjZjNTMxNjU0MTZhOWUzYjJlZmM3OGZlMjYtMTYwMHg5MDAucG5nP3Y9MjAyNi0xMS0wM1QxOSUzQTEzJTNBMzda"
-    },
-    {
-      "id": "at_51080549580",
-      "title": "Siri AI is now open to all developers (4 minute read)",
-      "url": "https://developer.apple.com/news/?id=gdk2umrf&amp;utm_source=tldrai",
-      "summary": "Developers can now integrate Siri AI into their apps with the iOS 27.3 beta. This update allows apps to leverage Siri's advanced features, like natural language processing and personal context understanding, enhancing user interaction. Siri AI is currently unavailable in the EU and for users under 13. It supports multiple languages, with more to come.",
-      "source": "via TLDR AI Feed",
-      "image": "https://www.inoreader.com/camo/s4vhuSeCnrdSpyxafmuyxzxDst1XBI6Ym61qWmx0uHDw,q80,480x400,pf,b64/aHR0cHM6Ly9kZXZlbG9wZXIuYXBwbGUuY29tL25ld3MvaW1hZ2VzL29nL3NpcmktYWktZGFyay1vZy5qcGc"
-    },
-    {
-      "id": "at_51080549581",
-      "title": "Agent State Machines: Building Deterministic Scaffolding for Agents (9 minute read)",
-      "url": "https://x.com/josharosen/status/2117687393213932003?utm_source=tldrai",
-      "summary": "This post explains how state machines enforce agent permissions, approvals, retries, and completion criteria outside model prompts.",
-      "source": "via TLDR AI Feed",
-      "image": "https://www.inoreader.com/camo/su9UIhBQhNBjT9rF51rKZdhppgT2jV_S8kdpXqE-TqR0,q80,480x400,pf,b64/aHR0cHM6Ly9wYnMudHdpbWcuY29tL21lZGlhL0hXT0kyQTlYQUFFLW1Hdj9mb3JtYXQ9d2VicCZuYW1lPWxhcmdl"
-    },
-    {
-      "id": "at_51080549582",
-      "title": "How much do tokens really cost? (6 minute read)",
-      "url": "https://substack.hadley.nz/p/how-much-do-tokens-really-cost?utm_source=tldrai",
-      "summary": "AI tokens' pricing appears sustainable, as competition among providers is driving down costs.",
-      "source": "via TLDR AI Feed",
-      "image": "https://www.inoreader.com/camo/sxHrAfP3rcSiM7n6-Vrrtw1H07Gk4dH6MNLmXQZLscnI,q80,480x400,pf,b64/aHR0cHM6Ly9zdWJzdGFja2Nkbi5jb20vaW1hZ2UvZmV0Y2gvJHNfIVZwUl8hLHdfMTIwMCxoXzY3NSxjX2ZpbGwsZl9qcGcscV9hdXRvOmdvb2QsZmxfcHJvZ3Jlc3NpdmU6c3RlZXAsZ19hdXRvL2h0dHBzJTNBJTJGJTJGc3Vic3RhY2stcG9zdC1tZWRpYS5zMy5hbWF6b25hd3MuY29tJTJGcHVibGljJTJGaW1hZ2VzJTJGMWQ2MjdkZWQtNmI5Ny00ZTFhLWE4MjgtZjUwMzVkNGRhZjU3XzEyMDB4NjAwLnBuZw"
-    },
-    {
-      "id": "at_51080549583",
-      "title": "Nexus by Fireworks: #1 on the Vals AI Router Index (Sponsor)",
-      "url": "https://nexus.fireworks.ai/?utm_source=tldr&amp;utm_medium=newsletter&amp;utm_campaign=nexus",
-      "summary": "Nexus picks the best open or closed model for each turn and learns what your team prefers. It works inside Claude Code, Codex, Cursor and the other tools you already use.At max effort, Nexus Auto scored 89.3% vs. 86.8% for Claude Opus 5.5 across 1,222 tasks, at 17% lower cost. It's also #1 on the independent Vals AI Router Index, the first router to...",
-      "source": "via TLDR AI Feed",
-      "image": "https://www.inoreader.com/camo/sZ8C4zjkpmGdAddXEfIfzsLcVlDm-pC42-sTyyXduK0Y,q80,480x400,pf,b64/aHR0cHM6Ly9hcHAuZmlyZXdvcmtzLmFpL2ltYWdlcy9maXJld29ya3MtbG9nb3MvdHdpdHRlci1jYXJkLnBuZw"
-    },
-    {
-      "id": "at_51080549584",
-      "title": "Baseten Introduces Grid, Sandboxes, and Serverless Loops (5 minute read)",
-      "url": "https://www.baseten.co/blog/the-building-blocks-of-the-open-frontier?utm_source=tldrai",
-      "summary": "Baseten announced Grid for model routing and governance, resumable VM-isolated Sandboxes for agent execution, and general availability of Loops for serverless supervised fine-tuning and reinforcement learning. The products connect training, inference, and execution, with customers retaining ownership of trained weights.",
-      "source": "via TLDR AI Feed",
-      "image": "https://www.inoreader.com/camo/sGlZiAcV2WHC4gexJEmDZYOVCx8wZwmZMc_9QgLkoizM,q80,480x400,pf,b64/aHR0cHM6Ly93d3cuZGF0b2Ntcy1hc3NldHMuY29tLzEwNDgwMi8xNzkzNjgwNTc1LW9nLWltYWdlLnBuZw"
-    },
-    {
-      "id": "at_51080524265",
-      "title": "Open source AI is booming. Hugging Face explains who profits.",
-      "url": "https://techcrunch.com/video/open-source-ai-is-booming-hugging-face-explains-who-profits/",
-      "summary": "Open source models are becoming more mainstream as enterprises, governments and startups alike rely on the promise of lower costs, more control, and more flexibility. But as increasingly capable models become more freely available, how do companies capture value? And with Chinese open models gaining ground, can American players keep up? On this episode...",
-      "source": "Theresa Loconsolo via AI | TechCrunch",
-      "image": "https://www.inoreader.com/camo/sMvEGhRbeoaQRoISxp94oqHvqaQoXgVKYvJdl3qzBrd0,q80,480x400,pf,b64/aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNi8wNy9HZXR0eUltYWdlcy0xODQ5Mjk0ODYyLmpwZz93PTEwMjQ"
-    },
-    {
-      "id": "at_51080524269",
-      "title": "DuckDuckGo pitches itself to schools amid backlash over Google’s AI policy",
-      "url": "https://techcrunch.com/2026/11/04/duckduckgo-pitches-itself-to-schools-amid-backlash-over-googles-ai-policy/",
-      "summary": "DuckDuckGo is courting schools frustrated by Google's AI restrictions, pointing educators to its search engine and options to disable AI features.",
-      "source": "Sarah Perez via AI | TechCrunch",
-      "image": "https://www.inoreader.com/camo/s3aHJgPYpIN1mJaKUCYv7sN002aL9Hl-mI6gAMkqPeWc,q80,480x400,pf,b64/aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNi8wNS9EdWNrRHVja0dvX05vQUkucG5nP3Jlc2l6ZT0xNjAwLDEwNDU"
-    },
-    {
-      "id": "at_51080156096",
-      "title": "Building on open source AI? Hugging Face’s policy chief on the costs, risks, and trade-offs",
-      "url": "https://techcrunch.com/podcast/building-on-open-source-ai-hugging-faces-policy-chief-on-the-costs-risks-and-trade-offs/",
-      "summary": "Open source models are becoming more mainstream as enterprises, governments and startups alike rely on the promise of lower costs, more control, and more flexibility. But as increasingly capable models become more freely available, how do companies capture value? And with Chinese open models gaining ground, can American players keep up? On this episode...",
-      "source": "Theresa Loconsolo, Rebecca Bellan via AI | TechCrunch",
-      "image": "https://www.inoreader.com/camo/s1YPl6Kf2Zjt5pXPSzqg0g0YGMMPYoYIj6Poomz4tIVo,q80,480x400,pf,b64/aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNi8xMS81NTU5MzMwOTc3Nl81NWU0YTA4YjAzX28uanBnP3Jlc2l6ZT0xNjAwLDEwNjc"
-    },
-    {
-      "id": "at_51080010556",
-      "title": "Nothing teases a screen-free AI device ahead of launch next month",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/1026586/nothing-screen-free-ai-device-carl-pei",
-      "summary": "Nothing CEO Carl Pei said in a post on X that the company's launching its first AI device in December. That's just a little over a year after Pei announced plans for \"AI-native\" devices and an AI operating system. He didn't give away much about what exactly the new device is, only that one feature it won't have is a screen: \"Our first...",
-      "source": "Stevie Bonifield via The Verge - Artificial Intelligences",
-      "image": "https://www.inoreader.com/camo/sc9aSQ80veMyrT1fCkDRQHUmtBDZsJJHFw_X1q39RK7k,q80,480x400,pf,b64/aHR0cHM6Ly9wbGF0Zm9ybS50aGV2ZXJnZS5jb20vd3AtY29udGVudC91cGxvYWRzL3NpdGVzLzIvMjAyNi8wMy9ub3RoaW5nLXBob25lLTRhLTIuanBnP3F1YWxpdHk9OTAmc3RyaXA9YWxsJmNyb3A9MCwwLDEwMCwxMDA"
-    },
-    {
-      "id": "at_51079829825",
-      "title": "ChatGPT will now make you animated GIFs",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/1026474/openai-chatgpt-animated-gifs-images-2-6",
-      "summary": "ChatGPT can now create GIFs using a prompt or a photo uploaded to the AI chatbot. The update, which is rolling out alongside OpenAI's new Images 2.6 model, allows you to adjust the GIF's animation speed, edit individual frames, and share it with others. Before this change, ChatGPT couldn't natively generate GIFs in a single step. An...",
-      "source": "Emma Roth via The Verge - Artificial Intelligences",
-      "image": "https://www.inoreader.com/camo/s3hZKGx7GYf6Pw0LqVqmX1a7dmasaBMWF-0mjg3Rkafs,q80,480x400,pf,b64/aHR0cHM6Ly9wbGF0Zm9ybS50aGV2ZXJnZS5jb20vd3AtY29udGVudC91cGxvYWRzL3NpdGVzLzIvMjAyNi8wMy9TVEsxNTVfT1BFTl9BSV9DVmlyZ2luaWFfX0MuanBnP3F1YWxpdHk9OTAmc3RyaXA9YWxsJmNyb3A9MCwwLDEwMCwxMDA"
-    },
-    {
-      "id": "at_51079829827",
-      "title": "My therapist thinks I should chuck the Amazon Bee Frontier out a window",
-      "url": "https://www.theverge.com/column/1026464/optimizer-amazon-bee-frontier-ambient-listening-wearables",
-      "summary": "Also, can I just say this LED indicator light is way too small and unnoticeable? This is Optimizer, a weekly newsletter sent from Verge senior reviewer Victoria Song that dissects and discusses the latest gizmos and potions that swear they're going to change your life. Opt in for Optimizer here. \"How does that make you feel?\" I get asked...",
-      "source": "Victoria Song via The Verge - Artificial Intelligences",
-      "image": "https://www.inoreader.com/camo/sGXdXGH05_cC0SVZ6RJbZmgLYeL21GBzMTek6NbJTDxg,q80,480x400,pf,b64/aHR0cHM6Ly9wbGF0Zm9ybS50aGV2ZXJnZS5jb20vd3AtY29udGVudC91cGxvYWRzL3NpdGVzLzIvMjAyNi8xMC8yNjg4MTdfQmVlX0Zyb250aWVyX0FLcmFsZXNfMDA5OC5qcGc_cXVhbGl0eT05MCZzdHJpcD1hbGwmY3JvcD0wLDAsMTAwLDEwMA"
-    },
-    {
-      "id": "at_51079160477",
-      "title": "AI teams agreed on the wrong answer in 75% of debates — and lower token bills hid the failure",
-      "url": "https://venturebeat.com/orchestration/ai-teams-agreed-on-the-wrong-answer-in-75-of-debates-and-lower-token-bills-hid-the-failure",
-      "summary": "Presented by OutshiftRead more",
-      "source": "via VentureBeat",
-      "image": "https://www.inoreader.com/camo/sCiQzbKdhJDMqyVCttnVBmsYD3LJWkydb2zHlS2LP3Ik,q80,480x400,pf,b64/aHR0cHM6Ly9pbWFnZXMuY3RmYXNzZXRzLm5ldC9qZHR3cWh6dmMybjEvNGF5ZThIeVRja0NXY2lSc25WeERBeC82MmFkMzZmZDc5Njk1ZjgxMzAzYTVkMWVmZDEwNWJmMS9WaWlqb3lfUGFuZGV5LmpwZz93PTE2MDAmcT04MA"
-    },
-    {
-      "id": "at_51079056690",
-      "title": "I tried Apple’s Siri Recaps. They’re surprisingly useful — and a little unsettling",
-      "url": "https://techcrunch.com/2026/11/04/i-tried-apples-siri-recaps-theyre-surprisingly-useful-and-a-little-unsettling/",
-      "summary": "Apple's AI-powered Siri Recaps won me over in just one day, despite my privacy reservations. But there's still room for improvement.",
-      "source": "Sarah Perez via AI | TechCrunch",
-      "image": ""
-    },
-    {
-      "id": "at_51078803192",
-      "title": "RESULTS: Data center opponents have won 38 of the 39 local ballot measures fully counted from Tuesda...",
-      "url": "https://x.com/TheRundownAI/status/2118011880392548674",
-      "summary": "RESULTS: Data center opponents have won 38 of the 39 local ballot measures fully counted from Tuesday, in unofficial results. The one exception: Harwood, North Dakota.They’re also ahead in all 6 with partial counts, with one Maine town still yet to report.💬3🔄1❤️8👀2860📊4⚡ Powered by xgo.ing",
-      "source": "The Rundown AI (@TheRundownAI) via The Rundown AI(@TheRundownAI)",
-      "image": "https://www.inoreader.com/camo/s9os3lI1vJE0cfo5QXheQe2bWIwJJ2Q1vLeLR0J_fD2Y,q80,480x400,pf,b64/aHR0cHM6Ly9wYnMudHdpbWcuY29tL21lZGlhL0hXU3VvYjRXWUFBWFJjMC5qcGc"
-    },
-    {
-      "id": "at_51078624721",
-      "title": "Google faces backlash for plan that would turn off Search for schools that restrict AI",
-      "url": "https://techcrunch.com/2026/11/04/google-faces-backlash-for-plan-that-would-turn-off-search-for-schools-that-restrict-ai/",
-      "summary": "Politicians on the left, like NYC mayor Zohran Mamdani and former FTC chair Lina Khan, accused Google of acting as an unregulated monopoly.",
-      "source": "Amanda Silberling via AI | TechCrunch",
-      "image": "https://www.inoreader.com/camo/sPh9ICqMiYfiCgAY4uX97MjzUUFEBX-ImiOw6IKDZgFc,q80,480x400,pf,b64/aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNC8wMy9zdHVkZW50cy10eXBpbmctb24tbGFwdG9wcy1HZXR0eUltYWdlc18xNTEzNzQ0Nzc3LmpwZWc_dz0xMjAw"
-    },
-    {
-      "id": "at_51078540560",
-      "title": "Data centers lost the midterms",
-      "url": "https://www.theverge.com/policy/1026365/data-centers-midterms-results",
-      "summary": "Data center developers are poised to face a more restrictive building environment after voters across the country voted in candidates who favor moratoriums and ballot measures that put more obstacles on their expansion, delivering a stinging blow to a central pillar of the AI industry. Of voters polled by NBC News on Election Day, 76...",
-      "source": "Lauren Feiner via The Verge - Artificial Intelligences",
-      "image": "https://www.inoreader.com/camo/sqNKSXjoGRoAeJjlZjBWUiOBRHyMUlD01eLtbRz39syo,q80,480x400,pf,b64/aHR0cHM6Ly9wbGF0Zm9ybS50aGV2ZXJnZS5jb20vd3AtY29udGVudC91cGxvYWRzL3NpdGVzLzIvMjAyNi8wNi9TVEtTNTI4X0RBVEFfQ0VOVEVSUzJfRC5qcGc_cXVhbGl0eT05MCZzdHJpcD1hbGwmY3JvcD0wLDAsMTAwLDEwMA"
     }
   ]
 }
