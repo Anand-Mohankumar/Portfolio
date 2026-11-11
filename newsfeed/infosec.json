@@ -1,6 +1,86 @@
 {
-  "updatedAt": "2026-11-10T23:23:30.258502+00:00",
+  "updatedAt": "2026-11-11T06:23:16.454530+00:00",
   "articles": [
+    {
+      "id": "at_51145188268",
+      "title": "Cisco BroadWorks and Openwave Flaws Actively Exploited Despite Available Patches",
+      "url": "https://thehackernews.com/2026/11/cisco-broadworks-and-openwave-flaws.html",
+      "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) Tuesday added two security flaws impacting Cisco BroadWorks and Openwave Messaging Webtop Media Transcoder to its Known Exploited Vulnerabilities (KEV) catalog, citing evidence of active exploitation. Details of the vulnerabilities are below - CVE-2026-20320 (CVSS score: 7.5)...",
+      "source": "[email protected] (The Hacker News) via The Hacker News",
+      "image": "https://www.inoreader.com/camo/sUfOyv93wx1O0NMGSyo-QBUkFTacolP9h3z7de7LjdyI,q80,480x400,pf,b64/aHR0cHM6Ly9ibG9nZ2VyLmdvb2dsZXVzZXJjb250ZW50LmNvbS9pbWcvYi9SMjl2WjJ4bC9BVnZYc0VpNGFYeWthT3JvYXpHT183SXVYdWdzZTl5bkdwdDFQa0tKRE04bEtMNGJ5OTNpeFgyOGNzMjNLQVpaUkYyZENOMmNvZ3UxdGk4cTVrbXFmcVNCTG1PWFdrVmk3WkdXbXdZTWtlQ09VWHNPWHdMb0YwN0Ziem1WbmxyOURvZXF0Q2JvSV85TEtXZ29oZ1dpMmpJQjFUekdPNnVFa3A1bHNNbnE1ZlNWcXJOLU5aR0pqQVFFMmtJVXlIc2RrdzZKL3MxNjAwL2Npc2EtY2lzY28uanBn"
+    },
+    {
+      "id": "at_51144672693",
+      "title": "New GhostFrame Malware Lets Hackers Hijack VMware ESXi VMs and Steal Windows Credentials",
+      "url": "https://cybersecuritynews.com/ghostframe-malware-hijack-vmware-esxi/",
+      "summary": "A new hacking toolkit called GhostFrame gives criminals a single control panel for taking over VMware ESXi servers and the virtual machines that run on them. Researchers at Recorded Future’s Insikt Group found the framework while tracking a group named TAG-218, whose activity overlaps with Settra ransomware. The tool can also pull Windows passwords...",
+      "source": "Guru Baran via Cyber Security News",
+      "image": "https://www.inoreader.com/camo/sKvpO0hpXwQ6bjHeMiEVy4__rgMNXD8iN8WsQjuXE_hw,q80,480x400,pf,b64/aHR0cHM6Ly9ibG9nZ2VyLmdvb2dsZXVzZXJjb250ZW50LmNvbS9pbWcvYi9SMjl2WjJ4bC9BVnZYc0VnWTR5S1JaYUQtQWFCUUdRU3RsRFV0SVZqMnZDdnNVa2NjR19qX2V0YUVhRGZJaldKaEpJOFZ4bHc5N2FYLUhLLVZZUFBoTE1NaFdlQnZHc1gwNi1GWkc1LUNjZWlQcDFZY080Z3JlWERKM1M4RkpXc0diQV9KMnZiellHUVlyTFFFamkxYnpPbWFsNWlHSHF3MHZjV2dQb2lEeGNiX0RUQUtJelJ1Sk54bG5wMDNNT081VHE4SklKVjZJS051L3MxNjAwL0dob3N0RnJhbWUlMjBNYWx3YXJlJTIwSGlqYWNrJTIwVk13YXJlJTIwRVNYaSUyMFZNczEud2VicA"
+    },
+    {
+      "id": "at_51144352856",
+      "title": "Critical Fortinet Flaws Expose FortiManager and FortiAnalyzer to Remote Code Execution Without Login",
+      "url": "https://cybersecuritynews.com/critical-fortinet-flaws-patched/",
+      "summary": "Fortinet has disclosed critical security flaws affecting FortiManager, FortiAnalyzer, and FortiOS, including weaknesses that could let attackers execute code without logging in. Published on November 10, 2026, the disclosures cover management APIs, device communication services, routing, and specific high availability setups. Attack requirements...",
+      "source": "Guru Baran via Cyber Security News",
+      "image": "https://www.inoreader.com/camo/sQCc1uduVCe4am5pp8QRNcEgtocpsx4biwr2gkyoZxqA,q80,480x400,pf,b64/aHR0cHM6Ly9jeWJlcnNlY3VyaXR5bmV3cy5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjYvMTEvQ3JpdGljYWwtRm9ydGluZXQtRmxhd3MtUGF0Y2hlZC53ZWJw"
+    },
+    {
+      "id": "at_51144039627",
+      "title": "Microsoft Confirms Hackers Are Exploiting Outlook 0-Day to Steal Windows Authentication Hashes",
+      "url": "https://cybersecuritynews.com/outlook-0-day-vulnerability/",
+      "summary": "Microsoft has confirmed that hackers are exploiting an Outlook zero-day that can expose Windows authentication information when a user opens a malicious file. Tracked as CVE-2026-124194, the spoofing vulnerability was patched on November 10, 2026. Microsoft marks it “Exploitation Detected” and says it was not publicly disclosed before the update....",
+      "source": "Guru Baran via Cyber Security News",
+      "image": "https://www.inoreader.com/camo/scDHw3a8T36JZ-67wMsSExyv-cPg9_QkbwuwmK-4ytgQ,q80,480x400,pf,b64/aHR0cHM6Ly9jeWJlcnNlY3VyaXR5bmV3cy5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjYvMTEvT3V0bG9vay0wLURheS1WdWxuZXJhYmlsaXR5LndlYnA"
+    },
+    {
+      "id": "at_51143049698",
+      "title": "Managed service providers face client trust challenges during ransomware recovery",
+      "url": "https://www.scworld.com/brief/managed-service-providers-face-client-trust-challenges-during-ransomware-recovery",
+      "summary": "Managed service providers often struggle to maintain client trust following ransomware attacks due to communication gaps and billing inconsistencies, based on information published by Bleeping Computer.",
+      "source": "SC Staff via Latest articles from SC Magazine",
+      "image": "https://www.inoreader.com/camo/sQ2VZMVcBQELgHbGsl9Sjs5nlyXaDfVWSQdZTnhMrnSc,q80,480x400,pf,b64/aHR0cHM6Ly9maWxlcy5jeWJlcnJpc2thbGxpYW5jZS5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjYvMDcvMDcyMjI2X2N5YmVyc2VjdXJpdHlfc2hpZWxkLmpwZw"
+    },
+    {
+      "id": "at_51143049700",
+      "title": "Amplifon Americas discloses data breach affecting sensitive customer information",
+      "url": "https://www.scworld.com/brief/amplifon-americas-discloses-data-breach-affecting-sensitive-customer-information",
+      "summary": "Tech Radar reports that Amplifon Americas has disclosed a significant cyberattack resulting in the unauthorized exposure of sensitive personal, insurance and healthcare-related information.",
+      "source": "SC Staff via Latest articles from SC Magazine",
+      "image": "https://www.inoreader.com/camo/s_q_8_PwTiz5cXFSkpOG8vmDqtmuCvFUO-xR1BtgCq2A,q80,480x400,pf,b64/aHR0cHM6Ly9maWxlcy5jeWJlcnJpc2thbGxpYW5jZS5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjQvMDgvQWRvYmVTdG9ja183MzA0MDAxMzUuanBn"
+    },
+    {
+      "id": "at_51143049701",
+      "title": "Flashpoint launches agentic AI to automate cybersecurity threat investigations",
+      "url": "https://www.scworld.com/brief/flashpoint-launches-agentic-ai-to-automate-cybersecurity-threat-investigations",
+      "summary": "Flashpoint Agentic AI has been introduced to help organizations accelerate threat investigations, automate cybersecurity intelligence tasks and scale operations, with further coverage provided by Silicon Angle.",
+      "source": "SC Staff via Latest articles from SC Magazine",
+      "image": "https://www.inoreader.com/camo/sBo1BKgSDxJ6V78LR6Y3iXDEGh-eIpjvSyv_7G97BOzE,q80,480x400,pf,b64/aHR0cHM6Ly9maWxlcy5jeWJlcnJpc2thbGxpYW5jZS5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjYvMDcvMDcyNDI2X2FpX2FnZW50X2FnZW50aWMuanBn"
+    },
+    {
+      "id": "at_51143049702",
+      "title": "Critical authentication bypass vulnerability in Xen Orchestra under active exploitation",
+      "url": "https://www.scworld.com/brief/critical-authentication-bypass-vulnerability-in-xen-orchestra-under-active-exploitation",
+      "summary": "A critical authentication bypass vulnerability in Xen Orchestra is currently being exploited in the wild, potentially granting unauthorized actors administrator privileges and full control over XCP-ng virtualization hosts, based on information published by Bleeping Computer.",
+      "source": "SC Staff via Latest articles from SC Magazine",
+      "image": "https://www.inoreader.com/camo/s053Y6UGkNdNIxutExt_3hjOKpZG25s62gqhCkqDKHv8,q80,480x400,pf,b64/aHR0cHM6Ly9maWxlcy5jeWJlcnJpc2thbGxpYW5jZS5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjUvMTIvMTIwNDI1X2N5YmVyYXR0YWNrLmpwZw"
+    },
+    {
+      "id": "at_51143049704",
+      "title": "Cowbell Cyber introduces AI liability insurance for small and midsized businesses",
+      "url": "https://www.scworld.com/brief/cowbell-cyber-introduces-ai-liability-insurance-for-small-and-midsized-businesses",
+      "summary": "Silicon Angle disclosed that Cowbell Cyber Inc. has launched a standalone insurance policy designed to protect small and midsized businesses against financial losses stemming from the deployment of artificial intelligence agents.",
+      "source": "SC Staff via Latest articles from SC Magazine",
+      "image": "https://www.inoreader.com/camo/sOXHnxK7EpqEdWKa0P-W4MzX5CT-8VavfJAsy2ijvtFg,q80,480x400,pf,b64/aHR0cHM6Ly9maWxlcy5jeWJlcnJpc2thbGxpYW5jZS5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjUvMTAvQWRvYmVTdG9ja18xNjE5NTk2NTI0LXNjYWxlZC5qcGVn"
+    },
+    {
+      "id": "at_51143049705",
+      "title": "Blind Eagle threat group launches new phishing campaign in Latin America",
+      "url": "https://www.scworld.com/brief/blind-eagle-threat-group-launches-new-phishing-campaign-in-latin-america",
+      "summary": "Blind Eagle, a threat actor also known as APT-C-36, has initiated a new cyberattack campaign targeting organizations across Latin America using judicial and administrative-themed phishing lures to distribute a remote access trojan, as first reported by The Hacker News.",
+      "source": "SC Staff via Latest articles from SC Magazine",
+      "image": "https://www.inoreader.com/camo/s_Ln06feUv6OKLTl8Oh7hhmlw16AQ8x4jjEeDQvYTVQI,q80,480x400,pf,b64/aHR0cHM6Ly9maWxlcy5jeWJlcnJpc2thbGxpYW5jZS5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjYvMTEvQWRvYmVTdG9ja18xNzQyMDk5MDQ3LTEtc2NhbGVkLmpwZWc"
+    },
     {
       "id": "at_51142711954",
       "title": "Teleport releases beams to secure artificial intelligence agents in production",
@@ -861,7 +941,7 @@
       "id": "at_51134307212",
       "title": "Google Issues Chrome Security Update for Eighth Actively Exploited Zero-Day of 2026",
       "url": "https://thehackernews.com/2026/11/google-issues-chrome-security-update.html",
-      "summary": "Google on Monday released updates to patch nine security vulnerabilities, including one that has come under active exploitation in the wild. The high-severity vulnerability, assigned the CVE identifier CVE-2026-125350 (CVSS score: N/A), has been described as a use-after-free bug in the XML component. Use-after-free bugs typically occur when a...",
+      "summary": "Google on Monday released updates to patch nine security vulnerabilities, including one that has come under active exploitation in the wild. The high-severity vulnerability, assigned the CVE identifier CVE-2026-125350 (CVSS score: 8.8), has been described as a use-after-free bug in the XML component. \"Use-after-free in XML in Google Chrome prior...",
       "source": "[email protected] (The Hacker News) via The Hacker News",
       "image": "https://www.inoreader.com/camo/sINqsZgn1DL1MhfBd-d2qUOM1QXmoYoOXoQpqtTaT7-Q,q80,480x400,pf,b64/aHR0cHM6Ly9ibG9nZ2VyLmdvb2dsZXVzZXJjb250ZW50LmNvbS9pbWcvYi9SMjl2WjJ4bC9BVnZYc0Voams1UzlKODkxYlFTOFc2VGd5b2lFUFE3Z2VHaWE4RnFxV2pja0ZsbzlxTUgyd1hJWHYtN2d5b2QxWEtVcEk5QmZnY2xpTjJSZThBODVySjEyMWp4cWdmbncxTHNqWUJ2QVl0WDc2OTRHVmdNRjdCOTRHMG41TXpxTWFLcUxBYnItTm8xbnFyTjBneUY4TUZSX2JZUUlZbHFpVGhfRnpvYm1XcnE0Tk9DTGJjV183OHVFTU1XNUZFNGVxSm9vL3MxNjAwL2Nocm9tZS0wZGF5LmpwZw"
     },
@@ -1520,86 +1600,6 @@
       "summary": "U.S. government agencies have warned that threat actors are actively targeting industrial refrigeration and cold-chain monitoring systems globally with an aim to cause service disruptions, fire hazards, and loss of inventory. \"The actors may exploit vulnerabilities or weaknesses in unpatched or internet-accessible controllers to remotely alter settings...",
       "source": "[email protected] (The Hacker News) via The Hacker News",
       "image": "https://www.inoreader.com/camo/sUCUFy6pKfuPe4sKrEgRIuZk3ksuVr5DE01bNMppnWXE,q80,480x400,pf,b64/aHR0cHM6Ly9ibG9nZ2VyLmdvb2dsZXVzZXJjb250ZW50LmNvbS9pbWcvYi9SMjl2WjJ4bC9BVnZYc0VqS3J5VGtUWlBTbV9QdmYtUEV2WVJGbGUzQnAwalFhWFNjRTIxb09zTWZ3aXI2M3NyMzU1YnFISW52UFJtNXp5bnEyc1lmTHN3Uk5FZXl3REhvN3Ayc253NXNRbWxJcldJT05CcTRBb1lGRUdYdmRneTVnTkxNRVNnakw1enduaGJxWUl3ZEtMUmFvbGIxOHBLejFzcUZ5bm1TalduMklUX0J4bEViLTBhdjl2RGZwLW9FenAyM19jd09Jb2lrL3MxNjAwL3JlZi5qcGc"
-    },
-    {
-      "id": "at_51123083742",
-      "title": "Hackers Begin Exploiting OpenSSH SSHole Authentication Bypass Vulnerability",
-      "url": "https://cybersecuritynews.com/openssh-sshole-flaw-exploited/",
-      "summary": "Attackers have started targeting the SSHole authentication bypass affecting certain OpenSSH servers, according to new SANS Internet Storm Center findings. The flaw allows remote attackers to access some password-disabled Linux accounts by submitting an unusually long password, without knowing valid credentials or holding an SSH key. SANS...",
-      "source": "Guru Baran via Cyber Security News",
-      "image": "https://www.inoreader.com/camo/s3WxrSeTRgWiQkR3jHpm52xDqGaT9GYce18L5wlbIdxw,q80,480x400,pf,b64/aHR0cHM6Ly9jeWJlcnNlY3VyaXR5bmV3cy5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjYvMTEvT3BlblNTSC1TU0hvbGUtRmxhdy1FeHBsb2l0ZWQud2VicA"
-    },
-    {
-      "id": "at_51123065602",
-      "title": "CISA Flags SonicWall SonicOS MFA Bypass Flaw Amid Reports of Possible Exploitation",
-      "url": "https://thehackernews.com/2026/11/cisa-flags-sonicwall-sonicos-mfa-bypass.html",
-      "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) has added a high-severity vulnerability impacting SonicWall SonicOS to its Known Exploited Vulnerabilities (KEV) catalog, following reports that it said may have been exploited in real-world attacks. The vulnerability, tracked as CVE-2026-19868 (CVSS score: 7.1 / 7.5), has been described...",
-      "source": "[email protected] (The Hacker News) via The Hacker News",
-      "image": "https://www.inoreader.com/camo/sgGR3_x_e9BxOXsGUUWl5WiwUh0njepozdfCQH0bhlMQ,q80,480x400,pf,b64/aHR0cHM6Ly9ibG9nZ2VyLmdvb2dsZXVzZXJjb250ZW50LmNvbS9pbWcvYi9SMjl2WjJ4bC9BVnZYc0VqSUxZdmxCV2QtY1BkbllKaVg1Z3BGVUJ2RGVxMG5aWUhXYXJkNVY0QjhvRXg3cl8tNGxVeGNJYW4wXzVsNEVIeHVuLUtiRUhPSlRqMXA4cVR1T1J6QWFLYWx3cW1sejFhalZ1Qm1TLUtUQkpCMC1yQlNyaEhHZ0hVa1kwSTNHVE1TRWJJeTVma1A0dkR5SVR0a1p2YmtxcmVNVEFDUWpEUzNPQlJtblpFNFU3cFZaTGpnSWQ1M0wyNTliNVFqL3MxNjAwL3Nvbmljc3MuanBn"
-    },
-    {
-      "id": "at_51122115860",
-      "title": "Claude AI Accidentally Deletes Law Professor’s Entire Syllabus and One Year of Lecture Notes",
-      "url": "https://cybersecuritynews.com/claude-ai-deletes-law-professors-entire-syllabus/",
-      "summary": "University of Chicago law professor William Baude says Anthropic’s Claude AI deleted his current syllabus and a year of constitutional law lecture notes while handling a simple editing task. He recovered every file through Dropbox, preventing the mistake from becoming a permanent loss of teaching material. Baude shared the incident on November...",
-      "source": "Guru Baran via Cyber Security News",
-      "image": "https://www.inoreader.com/camo/sx5D-ClTic1Z92XPx7x2_Q-wmvgOI1xAaWNW_cLHEG90,q80,480x400,pf,b64/aHR0cHM6Ly9jeWJlcnNlY3VyaXR5bmV3cy5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjYvMTEvQ2xhdWRlLUFJLURlbGV0ZXMtTGF3LVByb2Zlc3NvcnMtRW50aXJlLVN5bGxhYnVzLndlYnA"
-    },
-    {
-      "id": "at_51122115862",
-      "title": "NVIDIA Investigates Suspected Chinese Spy Operation Targeting CEO Jensen Huang",
-      "url": "https://cybersecuritynews.com/nvidia-investigates-chinese-spy-operation/",
-      "summary": "NVIDIA has opened an independent investigation into reports that a foreign intelligence operation targeted founder and CEO Jensen Huang. Announced on November 8, 2026, the review will examine the reported activity and any possible security impact. The board said it has no reason to believe company secrets or U.S. national security were compromised....",
-      "source": "Guru Baran via Cyber Security News",
-      "image": "https://www.inoreader.com/camo/svy7UHCwf6nDaSOIHRiRHmSWrJKg5eaKLwzm2HdQOe60,q80,480x400,pf,b64/aHR0cHM6Ly9ibG9nZ2VyLmdvb2dsZXVzZXJjb250ZW50LmNvbS9pbWcvYi9SMjl2WjJ4bC9BVnZYc0VoVXh4RGlQTDJnVHdWWGxVOHIzQm9ncnQxanRTaFVab2hfcm82akR5SUgtMFlxUGlTS2tNVkxEWU1PYlZjenl3V0ItdE9JSHU5eDdwdXNIQkRIMjBZNERITmhMUUlXV3Rfa0lhaEllSXpfQVZHSGoyMFpMMmVEZlhPZmEtYkFQV2VkWkJVeTZZWjFRc01VbXlDbEV2dUlyNFFlT2cybUY4M2VEaDNRSktCenc5NXdMRUFFMWV6T2dmZlFNNTBCL3MxNjAwL05WSURJQSUyMEludmVzdGlnYXRlcyUyMENoaW5lc2UlMjBTcHklMjBPcGVyYXRpb24xLndlYnA"
-    },
-    {
-      "id": "at_51121811497",
-      "title": "Critical React Server Components Flaw Lets Hackers Execute Code Remotely Without Authentication",
-      "url": "https://cybersecuritynews.com/react-server-components-vulnerability-patch/",
-      "summary": "A critical security flaw in React Server Components can let attackers run code remotely without logging in. React published the advisory, tracked as GHSA-xqc2-xf4c-x3h3, on October 14, 2026. The issue carries a CVSS v4 score of 9.5, and the React team recommends immediate updates for affected applications. The flaw affects react-server-dom-webpack,...",
-      "source": "Guru Baran via Cyber Security News",
-      "image": "https://www.inoreader.com/camo/sL7cSIW49M8i21EWxVZwLIWmx2jUqBSu1dJTa7KqZdbk,q80,480x400,pf,b64/aHR0cHM6Ly9jeWJlcnNlY3VyaXR5bmV3cy5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjYvMTEvUmVhY3QtU2VydmVyLUNvbXBvbmVudHMtVnVsbmVyYWJpbGl0eS53ZWJw"
-    },
-    {
-      "id": "at_51120698184",
-      "title": "Three charged in $129 million deepfake fraud scheme",
-      "url": "https://www.scworld.com/brief/three-charged-in-129-million-deepfake-fraud-scheme",
-      "summary": "Three individuals have been charged in the United States for orchestrating a $129 million fraud scheme that utilized artificial intelligence to impersonate corporate executives and attorneys, based on information published by IT Pro.",
-      "source": "SC Staff via Latest articles from SC Magazine",
-      "image": "https://www.inoreader.com/camo/sszlQ60BR32Y5TMoGIwMNQnBoNLYj_ZzrZvB-RxeD6Xw,q80,480x400,pf,b64/aHR0cHM6Ly9maWxlcy5jeWJlcnJpc2thbGxpYW5jZS5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjUvMTEvMTExOTI1X2RlZXBmYWtlLmpwZw"
-    },
-    {
-      "id": "at_51120698188",
-      "title": "Royal Cornwall Hospitals NHS Trust review highlights impact of data breach",
-      "url": "https://www.scworld.com/brief/royal-cornwall-hospitals-nhs-trust-review-highlights-impact-of-data-breach",
-      "summary": "National Health Service staff faced significant emotional distress while managing a helpline established after a major data breach exposed the health records of 8,003 individuals, based on information published by The Register.",
-      "source": "SC Staff via Latest articles from SC Magazine",
-      "image": "https://www.inoreader.com/camo/s_q_8_PwTiz5cXFSkpOG8vmDqtmuCvFUO-xR1BtgCq2A,q80,480x400,pf,b64/aHR0cHM6Ly9maWxlcy5jeWJlcnJpc2thbGxpYW5jZS5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjQvMDgvQWRvYmVTdG9ja183MzA0MDAxMzUuanBn"
-    },
-    {
-      "id": "at_51120698191",
-      "title": "Software vendors leverage usage data and ai to drive revenue growth",
-      "url": "https://www.scworld.com/brief/software-vendors-leverage-usage-data-and-ai-to-drive-revenue-growth",
-      "summary": "Software vendors are increasingly focusing on tracking customer usage across their product portfolios to boost revenue and streamline consumption decisions, with further coverage provided by Security Affairs.",
-      "source": "SC Staff via Latest articles from SC Magazine",
-      "image": "https://www.inoreader.com/camo/sc2wxZQ3F9Y4wuU2LgRlHktKsUjPXLcnvLdVDuxTzd3M,q80,480x400,pf,b64/aHR0cHM6Ly9maWxlcy5jeWJlcnJpc2thbGxpYW5jZS5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjYvMTAvMTAyMDI2X2FpX2RhdGFfY2VudGVyX2Nsb3VkX3NlY3VyaXR5LmpwZw"
-    },
-    {
-      "id": "at_51120698193",
-      "title": "Brenner Base Tunnel SE confirms data breach as Everest group claims theft",
-      "url": "https://www.scworld.com/brief/brenner-base-tunnel-se-confirms-data-breach-as-everest-group-claims-theft",
-      "summary": "Brenner Base Tunnel SE has confirmed that unauthorized parties accessed company data, following claims by the Everest extortion group that it stole 812 gigabytes of files.",
-      "source": "SC Staff via Latest articles from SC Magazine",
-      "image": "https://www.inoreader.com/camo/si_fiBMfzzCL5Td-VApcqMvjl1NKbZKRN4_Mh_s0vmjc,q80,480x400,pf,b64/aHR0cHM6Ly9maWxlcy5jeWJlcnJpc2thbGxpYW5jZS5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjUvMTAvMTAyMTI1X2xhcHRvcF9icmVhY2guanBn"
-    },
-    {
-      "id": "at_51120698194",
-      "title": "Ukraine biometrics sector faces growth despite wartime challenges",
-      "url": "https://www.scworld.com/brief/ukraine-biometrics-sector-faces-growth-despite-wartime-challenges",
-      "summary": "Ukraine's biometrics sector continues to evolve despite ongoing conflict and economic pressures, with uneven adoption across government, financial and commercial applications, according to a recent report by Biometric Update.",
-      "source": "SC Staff via Latest articles from SC Magazine",
-      "image": "https://www.inoreader.com/camo/sRPaE3vScSWkH8k-vilpJXLWoXoLqOsGbbgUvKVJx-A4,q80,480x400,pf,b64/aHR0cHM6Ly9maWxlcy5jeWJlcnJpc2thbGxpYW5jZS5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjQvMDIvMDIyNTI0X2Jpb21ldHJpY3MuanBn"
     }
   ]
 }
