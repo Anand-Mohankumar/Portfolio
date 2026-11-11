@@ -1,6 +1,46 @@
 {
-  "updatedAt": "2026-11-11T06:23:17.146534+00:00",
+  "updatedAt": "2026-11-11T15:14:01.473417+00:00",
   "articles": [
+    {
+      "id": "at_51149562472",
+      "title": "Google’s AlphaGenome 2 zooms in on the cellular roots of disease",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1031524/google-deepmind-alphagenome-2-genetic-ai-model",
+      "summary": "A graphic representing Google’s AlphaGenome Atlas. | Image: Google Researchers at Google DeepMind have unveiled a new AI model designed to unravel how changes in our DNA affect different cells, giving scientists a more detailed view of a notoriously difficult problem that could hold important clues to the causes of disease - and point...",
+      "source": "Robert Hart via The Verge - Artificial Intelligences",
+      "image": "https://www.inoreader.com/camo/s_w3xGEqf0oe86J0uYVG1lgWt-PWwienUa7DcvSpOles,q80,480x400,pf,b64/aHR0cHM6Ly9wbGF0Zm9ybS50aGV2ZXJnZS5jb20vd3AtY29udGVudC91cGxvYWRzL3NpdGVzLzIvMjAyNi8wOS9hbHBoYWdlbm9tZS1hdGxhcy1jb3Zlcl9fYmFja2dyb3VuZC5qcGc_cXVhbGl0eT05MCZzdHJpcD1hbGwmY3JvcD0wLDAsMTAwLDEwMA"
+    },
+    {
+      "id": "at_51149556252",
+      "title": "Plurai wants to help AI agents work better using the same approach that helped get self-driving cars to roads",
+      "url": "https://techcrunch.com/2026/11/11/plurai-wants-to-help-ai-agents-work-better-using-the-same-approach-that-helped-get-self-driving-cars-to-roads/",
+      "summary": "Like the end-to-end models trained to drive cars, AI agents are probabilistic systems operating in unpredictable environments.",
+      "source": "Tim Fernholz via AI | TechCrunch",
+      "image": "https://www.inoreader.com/camo/sSx3eD-W6U6gw5_AiEk1NWe0kTxRx_ejs22a-iz3MDnQ,q80,480x400,pf,b64/aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNi8xMS9QbHVyYWktdGVhbS1waG90by4tQ3JlZGl0LUd1eS1IYW1veS5qcGc_cmVzaXplPTE2MDAsMTA2Nw"
+    },
+    {
+      "id": "at_51149405982",
+      "title": "TrustedRouter launches three new encrypted 'fusion' models that combine multiple LLMs, including one exclusively with U.S. model providers",
+      "url": "https://venturebeat.com/technology/trustedrouter-launches-three-new-encrypted-fusion-models-that-combine-multiple-llms-including-one-exclusively-with-u-s-model-providers",
+      "summary": "Choosing an AI model for your company is hard enough. Choosing which one to use for every job is harder. Should you send a tricky code review to Anthropic’s Claude Fable 5.2, try an open-weight model such as Meituan’s LongCat-2.5, or use something else? The answer can change from one task to the next, even inside the same application.Read more",
+      "source": "[email protected] (Carl Franzen) via VentureBeat",
+      "image": "https://www.inoreader.com/camo/sRS0Fr5XJsMdzdYl-3OHXEkMjHfMGRMv4jOFRFvnmJaA,q80,480x400,pf,b64/aHR0cHM6Ly9pbWFnZXMuY3RmYXNzZXRzLm5ldC9qZHR3cWh6dmMybjEvMTBlcndteHJ6OFd3RXpDOU11ZHE4Yy8zZjAzNjRkNWEwYmZmNGI0YmM0NDZjODRlODllYzRmNy9Db2xsaWRlcl9DZWxlYnJhdGlvbl9fQV9OZXdfUGh5c2ljc19EaXNjb3ZlcnkucG5nP3c9MTYwMCZxPTgw"
+    },
+    {
+      "id": "at_51149016490",
+      "title": "Adobe’s AI experiments let you walk around in photos and interview your characters",
+      "url": "https://www.theverge.com/tech/1031505/adobe-max-2026-sneaks-experiments-ai",
+      "summary": "Project Screen Test lets you talk with AI-generated characters to shape their personality. | Image: Adobe Some of the most impressive tech that Adobe showcases at its annual Max conference each year is the experimental features it's developing, and the latest of those tools are being announced today: they can transform images into explorable...",
+      "source": "Jess Weatherbed via The Verge - Artificial Intelligences",
+      "image": "https://www.inoreader.com/camo/s_iBH62Una84q5LTHrHXLOq4wgO3dx3iTER-6u5cF66I,q80,480x400,pf,b64/aHR0cHM6Ly9wbGF0Zm9ybS50aGV2ZXJnZS5jb20vd3AtY29udGVudC91cGxvYWRzL3NpdGVzLzIvMjAyNi8xMS9BZG9iZS1Qcm9qZWN0LVNjcmVlbi1UZXN0LmpwZz9xdWFsaXR5PTkwJnN0cmlwPWFsbCZjcm9wPTAsMCwxMDAsMTAw"
+    },
+    {
+      "id": "at_51145758028",
+      "title": "Nvidia’s crisis has corporate governance experts reaching for the popcorn",
+      "url": "https://techcrunch.com/2026/11/10/nvidias-crisis-has-corporate-governance-experts-reaching-for-the-popcorn/",
+      "summary": "The governance experts we talked to say nobody has seen anything like what's unfolding right now.",
+      "source": "Connie Loizos via AI | TechCrunch",
+      "image": "https://www.inoreader.com/camo/sSpHCVqvD7xjfALE5f6OoS3dxGMHOCcPkmGKPS4CvySo,q80,480x400,pf,b64/aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAxOS8wNS9HZXR0eUltYWdlcy01MDMxMTYxOTMuanBlZz9yZXNpemU9MTYwMCwxMDY3"
+    },
     {
       "id": "at_51142216680",
       "title": "OpenAI lets you claim your business in ChatGPT and set up a custom agentic AI customer sales rep",
@@ -1560,46 +1600,6 @@
       "summary": "Top stories in AI today:-SpaceXSI’s Grok Bot starts making phone calls-Nate’s Notebook: Make AI sketch before it builds- Which free AI tool should you actually use? - Midterm voters turn on data centers, AI💬6🔄1❤️9👀3467📊6⚡ Powered by xgo.ing",
       "source": "The Rundown AI (@TheRundownAI) via The Rundown AI(@TheRundownAI)",
       "image": "https://www.inoreader.com/camo/sLlo8oURZVu3AF0Us7oYV8RgrmDKjpXT29fRiM_fZBoA,q80,480x400,pf,b64/aHR0cHM6Ly9wYnMudHdpbWcuY29tL21lZGlhL0hXVzdLUnNYd0FBcGRfdi5qcGc"
-    },
-    {
-      "id": "at_51088545265",
-      "title": "A YC startup is putting $1M behind 5 unsolved materials science problems for AI",
-      "url": "https://techcrunch.com/2026/11/05/a-yc-startup-is-putting-1m-behind-five-unsolved-materials-science-problems-for-ai/",
-      "summary": "While frontier AI models have solved a remarkable series of outstanding mathematics problems and made progress in the life sciences, they have yet to truly plumb the complex physics in advanced materials.",
-      "source": "Tim Fernholz via AI | TechCrunch",
-      "image": "https://www.inoreader.com/camo/shKOVAxUB0_6D1-XeSxt9SSyNSZJedc40ZsMOsmmtnhs,q80,480x400,pf,b64/aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNi8wOC9kaXNjb3ZlcmQtbWF0ZXJpYWxzLmpwZz9yZXNpemU9MTYwMCwxMDY3"
-    },
-    {
-      "id": "at_51087918475",
-      "title": "Agility is the first pure humanoid robot company on the stock market. Are you buying?",
-      "url": "https://techcrunch.com/2026/11/05/agility-is-the-first-pure-humanoid-robot-company-on-the-stock-market-are-you-buying/",
-      "summary": "Agility arrives on the Nasdaq today as the first publicly traded pure-play humanoid robotics company.",
-      "source": "Tim Fernholz via AI | TechCrunch",
-      "image": "https://www.inoreader.com/camo/sLr_6WZB2IKzy7QJ31P9BMLKzRrsduj_KHaQswrXhxp8,q80,480x400,pf,b64/aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNi8xMS9BZ2lsaXR5X0RpZ2l0NV8wMS5wbmc_cmVzaXplPTE2MDAsMjEzMw"
-    },
-    {
-      "id": "at_51087186098",
-      "title": "Big Tech’s big AI buildout will not end until someone stops it",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/1027344/amazon-microsoft-alphabet-google-meta-data-centers-earnings-q3",
-      "summary": "After four of the biggest competitors in the AI race held quarterly earnings calls late last month, two things are clear: Big Tech is not done spending record amounts on the AI data center buildout, and the AI data center buildout is not any closer to yielding its promised returns. A third thing is also starting to become clear - Big...",
-      "source": "Ellen Thomas via The Verge - Artificial Intelligences",
-      "image": "https://www.inoreader.com/camo/sHMLriPB7eHKh79k380wg9FftdOusxnJRK-h4MUrDPas,q80,480x400,pf,b64/aHR0cHM6Ly9wbGF0Zm9ybS50aGV2ZXJnZS5jb20vd3AtY29udGVudC91cGxvYWRzL3NpdGVzLzIvMjAyNi8wNi9TVEtTNTI4X0RBVEFfQ0VOVEVSUzJfQi5qcGc_cXVhbGl0eT05MCZzdHJpcD1hbGwmY3JvcD0wLDAsMTAwLDEwMA"
-    },
-    {
-      "id": "at_51083180655",
-      "title": "After the midterms, a bigger clash over data centers could be coming",
-      "url": "https://techcrunch.com/2026/11/04/after-the-midterms-a-bigger-clash-over-data-centers-could-be-coming/",
-      "summary": "Data center opposition crossed party lines in Tuesday’s midterms.",
-      "source": "Dominic-Madori Davis via AI | TechCrunch",
-      "image": "https://www.inoreader.com/camo/sRl6eydRrjBletE3KHLKTWFEuoRm5TWWZq2Z-3MjJVAM,q80,480x400,pf,b64/aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNS8xMS91cy1jb25ncmVzcy1hdC1uaWdodC5qcGc_cmVzaXplPTE2MDAsOTAz"
-    },
-    {
-      "id": "at_51083128788",
-      "title": "Apple is reportedly cutting budgets for its internal AI usage",
-      "url": "https://techcrunch.com/2026/11/04/apple-is-reportedly-cutting-budgets-for-its-internal-ai-usage/",
-      "summary": "The tokenmaxxing frenzy has been short-lived as bills for said tokens came due, and companies decided that token rationing might be a more fiscally sensible approach.",
-      "source": "Lucas Ropek via AI | TechCrunch",
-      "image": "https://www.inoreader.com/camo/szNfdIkvIG1ZHZv4v9hP0kyK2_e1B_3-aiTmDv_xZYag,q80,480x400,pf,b64/aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNi8wNi9pcGhvbmUtdXNiLWNhYmxlLmpwZz9yZXNpemU9MTYwMCwxMDY3"
     }
   ]
 }
