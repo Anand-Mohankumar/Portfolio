@@ -1,6 +1,14 @@
 {
-  "updatedAt": "2026-11-12T03:00:04.632490+00:00",
+  "updatedAt": "2026-11-12T11:13:01.455578+00:00",
   "articles": [
+    {
+      "id": "at_51154853678",
+      "title": "Who could replace Jensen Huang? A highly unscientific list of possible successors",
+      "url": "https://techcrunch.com/2026/11/11/who-could-replace-jensen-huang-a-highly-unscientific-list-of-possible-successors/",
+      "summary": "Nvidia has no succession plan and a CEO in hot water, so we’ve drafted a shortlist.",
+      "source": "Connie Loizos via AI | TechCrunch",
+      "image": "https://www.inoreader.com/camo/sdoHP3VEQjoyCNiGKYTJe3Q4id8bAzdGZzQtq9Rc-FyM,q80,480x400,pf,b64/aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNi8xMS9Db25ncmF0dWxhdGlvbnMtTnZpZGlhcy1OZXctQ0VPLnBuZz9yZXNpemU9MTYwMCw5MDA"
+    },
     {
       "id": "at_51153779729",
       "title": "REPORT: Jensen Huang could soon be out as Nvidia CEO, with the board getting ready to remove him, ac...",
@@ -1592,14 +1600,6 @@
       "summary": "Read more: tech.therundown.ai/p/big-tech-sue…💬0🔄0❤️0👀1043⚡ Powered by xgo.ing",
       "source": "The Rundown AI (@TheRundownAI) via The Rundown AI(@TheRundownAI)",
       "image": ""
-    },
-    {
-      "id": "at_51102681644",
-      "title": "Top stories in tech today: - Meta, Google, TikTok sue California - Musk clears Cybertruck off Giga ...",
-      "url": "https://x.com/TheRundownAI/status/2118728787659522165",
-      "summary": "Top stories in tech today:- Meta, Google, TikTok sue California- Musk clears Cybertruck off Giga Texas - Google drops $17B on Wyoming data center- Sony revives its Walkman headphones💬9🔄0❤️10👀3273📊8⚡ Powered by xgo.ing",
-      "source": "The Rundown AI (@TheRundownAI) via The Rundown AI(@TheRundownAI)",
-      "image": "https://www.inoreader.com/camo/sQNrE_eyq3x0xo2Mo5pKBFhRWq_8uapQvCyhxaXXvoG8,q80,480x400,pf,b64/aHR0cHM6Ly9wYnMudHdpbWcuY29tL21lZGlhL0hXYzhtZ0dXSUFBOEY1eC5qcGc"
     }
   ]
 }
