@@ -1,6 +1,110 @@
 {
-  "updatedAt": "2026-11-11T21:59:24.328632+00:00",
+  "updatedAt": "2026-11-12T03:00:04.621520+00:00",
   "articles": [
+    {
+      "id": "at_51154005961",
+      "title": "Google releases open-source agent substrate for secure AI sandboxing",
+      "url": "https://www.scworld.com/brief/google-releases-open-source-agent-substrate-for-secure-ai-sandboxing",
+      "summary": "As reported by Silicon Angle, Google LLC has introduced Agent Substrate, an open-source project designed to provide secure, efficient sandboxing for autonomous AI agents.",
+      "source": "SC Staff via Latest articles from SC Magazine",
+      "image": "https://www.inoreader.com/camo/s3QUpXUGQUbpegCt1ErBe92rCawxnq7rShCr205vgjQ4,q80,480x400,pf,b64/aHR0cHM6Ly9maWxlcy5jeWJlcnJpc2thbGxpYW5jZS5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjQvMDkvMDkyNl9nb29nbGVfbG9nby5qcGc"
+    },
+    {
+      "id": "at_51154005962",
+      "title": "Researchers link Qilin ransomware administrator to St. Petersburg man",
+      "url": "https://www.scworld.com/brief/researchers-link-qilin-ransomware-administrator-to-st-petersburg-man",
+      "summary": "Per Krebs on Security, the cybercrime group Qilin has become the most active ransomware-as-a-service operation, with researchers identifying the group's administrator as a 36-year-old man residing in St. Petersburg, Russia.",
+      "source": "SC Staff via Latest articles from SC Magazine",
+      "image": "https://www.inoreader.com/camo/sSgSi85v0AhVC6zgbvNnRS-5D-WFIdB_JHjFXcok-UF4,q80,480x400,pf,b64/aHR0cHM6Ly9maWxlcy5jeWJlcnJpc2thbGxpYW5jZS5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjUvMDcvQWRvYmVTdG9ja181NTk2NTg5ODAuanBn"
+    },
+    {
+      "id": "at_51154005963",
+      "title": "Google DeepMind uses AI to verify Signal protocol security",
+      "url": "https://www.scworld.com/brief/google-deepmind-uses-ai-to-verify-signal-protocol-security",
+      "summary": "Google DeepMind researchers have successfully utilized agentic AI to mathematically prove the cryptographic guarantees of the Signal protocol, based on information published by Ars Technica.",
+      "source": "SC Staff via Latest articles from SC Magazine",
+      "image": "https://www.inoreader.com/camo/sLVffJF_YFIQsxLQLYJbrnl5isjCHCbf9ra8YGb0bUhg,q80,480x400,pf,b64/aHR0cHM6Ly9maWxlcy5jeWJlcnJpc2thbGxpYW5jZS5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjUvMDUvMDUxMzI1X3NpZ25hbF9hcHAuanBn"
+    },
+    {
+      "id": "at_51154005964",
+      "title": "Cloud recovery startup Dreeze secures $33 million in seed funding",
+      "url": "https://www.scworld.com/brief/cloud-recovery-startup-dreeze-secures-33-million-in-seed-funding",
+      "summary": "As noted by Security Week, the cloud application recovery startup Dreeze has emerged from stealth mode after securing $33 million in a seed funding round.",
+      "source": "SC Staff via Latest articles from SC Magazine",
+      "image": "https://www.inoreader.com/camo/s5SuzX48u5O4FKfHBU9Fyiht5TNvhIHCwc8iqJcuIR0U,q80,480x400,pf,b64/aHR0cHM6Ly9maWxlcy5jeWJlcnJpc2thbGxpYW5jZS5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjMvMDgvbW9uZXktcGl4YWJheS0xMDI0eDI5NC0zLmpwZw"
+    },
+    {
+      "id": "at_51154005965",
+      "title": "CISA adds IBM, SignalWire, OpenSSH and GPUStack flaws to known exploited vulnerabilities catalog",
+      "url": "https://www.scworld.com/brief/cisa-adds-ibm-signalwire-openssh-and-gpustack-flaws-to-known-exploited-vulnerabilities-catalog",
+      "summary": "Coverage from Security Affairs indicates that the Cybersecurity and Infrastructure Security Agency has added four critical vulnerabilities to its Known Exploited Vulnerabilities catalog.",
+      "source": "SC Staff via Latest articles from SC Magazine",
+      "image": "https://www.inoreader.com/camo/sL6iyvVSSHBurGS0oTd7iypn4nymJeL_rOMZ7ZCsWud8,q80,480x400,pf,b64/aHR0cHM6Ly9maWxlcy5jeWJlcnJpc2thbGxpYW5jZS5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjQvMTIvMTIxODI0X2Npc2FfbW9iaWxlLmpwZw"
+    },
+    {
+      "id": "at_51154005966",
+      "title": "Intel and AMD release security updates for over 200 vulnerabilities",
+      "url": "https://www.scworld.com/brief/intel-and-amd-release-security-updates-for-over-200-vulnerabilities",
+      "summary": "Based on information from Security Week, Intel and Advanced Micro Devices have published more than 50 new security advisories addressing over 200 vulnerabilities across their product lineups.",
+      "source": "SC Staff via Latest articles from SC Magazine",
+      "image": "https://www.inoreader.com/camo/sbo4D5wpQVbuteLmHD3ZLFzIcoZfUxMAIHR_IY4Sd06A,q80,480x400,pf,b64/aHR0cHM6Ly9maWxlcy5jeWJlcnJpc2thbGxpYW5jZS5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjYvMDQvQWRvYmVTdG9ja18zMTc5MTU1MTMuanBn"
+    },
+    {
+      "id": "at_51154005968",
+      "title": "Japan faces rising cybersecurity threats to its national ID infrastructure",
+      "url": "https://www.scworld.com/brief/japan-faces-rising-cybersecurity-threats-to-its-national-id-infrastructure",
+      "summary": "Japan is grappling with a significant increase in data breaches targeting the ecosystem surrounding its My Number national identification system, according to a recent report by Biometric Update.",
+      "source": "SC Staff via Latest articles from SC Magazine",
+      "image": "https://www.inoreader.com/camo/sBDKM9-S55dDL2JDLQOt6zl2Tuoo_GVMMZbhwKQhum4w,q80,480x400,pf,b64/aHR0cHM6Ly9maWxlcy5jeWJlcnJpc2thbGxpYW5jZS5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjYvMTAvMTAxMjI2X2phcGFuX2ZsYWdfY3liZXIuanBn"
+    },
+    {
+      "id": "at_51154005969",
+      "title": "Attackers leverage AntiFox platform on Alibaba cloud to target aws environments",
+      "url": "https://www.scworld.com/brief/attackers-leverage-antifox-platform-on-alibaba-cloud-to-target-aws-environments",
+      "summary": "Following insights from Bleeping Computer, security researchers have identified a growing trend of attackers utilizing Alibaba Cloud to host self-managed instances of AntiFox, an open-source agentic penetration testing platform, to compromise web services and Amazon Web Services environments.",
+      "source": "SC Staff via Latest articles from SC Magazine",
+      "image": "https://www.inoreader.com/camo/suBvaSxQlNlGjWNyw9svf7DBGBx2ZUdQaeqH6p4Qq7kA,q80,480x400,pf,b64/aHR0cHM6Ly9maWxlcy5jeWJlcnJpc2thbGxpYW5jZS5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjYvMDQvMDQyMzI2X2FpX2Nsb3VkX3NlY3VyaXR5LmpwZw"
+    },
+    {
+      "id": "at_51153916609",
+      "title": "Malicious ScreenConnect deployments observed",
+      "url": "https://www.sophos.com/en-us/blog/malicious-screenconnect-deployments-observed",
+      "summary": "",
+      "source": "via Naked Security",
+      "image": ""
+    },
+    {
+      "id": "at_51153636787",
+      "title": "Attackers leverage AntiFox platform on alibaba cloud to target aws environments",
+      "url": "https://www.scworld.com/brief/attackers-leverage-antifox-platform-on-alibaba-cloud-to-target-aws-environments",
+      "summary": "Following insights from Bleeping Computer, security researchers have identified a growing trend of attackers utilizing Alibaba Cloud to host self-managed instances of AntiFox, an open-source agentic penetration testing platform, to compromise web services and Amazon Web Services environments.",
+      "source": "SC Staff via Latest articles from SC Magazine",
+      "image": "https://www.inoreader.com/camo/suBvaSxQlNlGjWNyw9svf7DBGBx2ZUdQaeqH6p4Qq7kA,q80,480x400,pf,b64/aHR0cHM6Ly9maWxlcy5jeWJlcnJpc2thbGxpYW5jZS5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjYvMDQvMDQyMzI2X2FpX2Nsb3VkX3NlY3VyaXR5LmpwZw"
+    },
+    {
+      "id": "at_51153457634",
+      "title": "Baker Tilly notifies clients of data breach at third-party provider",
+      "url": "https://www.bleepingcomputer.com/news/security/baker-tilly-notifies-clients-of-data-breach-at-third-party-provider/",
+      "summary": "The Baker Tilly Advisory Group is notifying clients that a data breach has compromised certain personal information about them and their dependents. [...]",
+      "source": "Bill Toulas via Bleeping Computer",
+      "image": "https://www.inoreader.com/camo/s6qTd5QS7Ntm8qPAXO6eEJZn7mwxSFMTCImyfDUtm63s,q80,480x400,pf,b64/aHR0cHM6Ly93d3cuYmxlZXBzdGF0aWMuY29tL2NvbnRlbnQvaGwtaW1hZ2VzLzIwMjYvMTEvMTEvYmFrZXJ0aWxseS5qcGc"
+    },
+    {
+      "id": "at_51153391923",
+      "title": "Active ScreenConnect attacks breach MSPs, impact dozens of organizations",
+      "url": "https://www.bleepingcomputer.com/news/security/active-screenconnect-attacks-breach-msps-impact-dozens-of-organizations/",
+      "summary": "ConnectWise is investigating an active malware campaign targeting managed service providers (MSPs) that uses compromised ScreenConnect environments to deploy rogue remote-access clients to customer devices. [...]",
+      "source": "Lawrence Abrams via Bleeping Computer",
+      "image": "https://www.inoreader.com/camo/sODUHZDnL0xRhAeFf42eoFvvw0mYRp8TtDffRkQmoxd8,q80,480x400,pf,b64/aHR0cHM6Ly93d3cuYmxlZXBzdGF0aWMuY29tL2NvbnRlbnQvaGwtaW1hZ2VzLzIwMjYvMDkvMTYvU2NyZWVuQ29ubmVjdC5qcGc"
+    },
+    {
+      "id": "at_51153078654",
+      "title": "AI Pentest Tool AntiFox Abused To Steal AWS Credentials",
+      "url": "https://securityaffairs.com/202880/hacking/ai-pentest-tool-antifox-abused-to-steal-aws-credentials.html",
+      "summary": "Arctic Wolf saw attackers use the AntiFox pentest platform to hit IIS servers and AWS accounts. Arctic Wolf Labs has published research on attackers using AntiFox, an open-source, Chinese-language agentic penetration testing platform. These frameworks chain attack steps together with little human effort. In several intrusions, Alibaba Cloud...",
+      "source": "Pierluigi Paganini via Security Affairs",
+      "image": "https://www.inoreader.com/camo/sxLrCZc-wKsOtAyZThjj1ym2GH1hsEFAFa07G0ET6VI0,q80,480x400,pf,b64/aHR0cHM6Ly9zZWN1cml0eWFmZmFpcnMuY29tL3dwLWNvbnRlbnQvdXBsb2Fkcy8yMDI2LzExL2ltYWdlLTIzLnBuZw"
+    },
     {
       "id": "at_51152854790",
       "title": "eMudhra revokes 8 more CA certificates after private key mishap",
@@ -1496,110 +1600,6 @@
       "summary": "Detection engineering is the discipline that treats rules like software: versioned, tested, peer-reviewed, deployed through pipelines, and measured against ATT&CK coverage instead of vibes. The 2026 tooling spans as-code platforms, coverage mathematicians, marketplace content layers, and the open Sigma standard underneath it all. Panther...",
       "source": "Kavichselvan via Cyber Security News",
       "image": "https://www.inoreader.com/camo/snBTRb3OJOFOyuOCGmJUylbjEoLJkpetgOBRR8KUVJRc,q80,480x400,pf,b64/aHR0cHM6Ly9ibG9nZ2VyLmdvb2dsZXVzZXJjb250ZW50LmNvbS9pbWcvYi9SMjl2WjJ4bC9BVnZYc0VpSUxmRGV3b1V1b2UtNlJpMmhBMll5SVFlblUyNUVQdHp0OVVVOXVMZ0NwMWtZelpZUEVNVFVHQjBybk11anVfdk5YdGFpYk5oTG1rbVJmdnhLVjhYdFZOWk1RZGZsekVNbVMyQlZUMGdYei1IZDAxa0w1cEEwTGYtVjhIV0M1cWgtMV8tVXlnb1RHU2Q3Mk9KelJZWVRyOUJqLVlCblhCVlVmd2dGQzNYQy1MSzNqX25GaHE1N3hzV2tqSVkvczE2MDAvcGFudGhlciUyMGRldGVjdGlvbi53ZWJw"
-    },
-    {
-      "id": "at_51134883637",
-      "title": "RevStealer Uses 100+ Domains and Hijacked YouTube Channels to Spread Credential-Stealing Malware",
-      "url": "https://cybersecuritynews.com/revstealer-uses-100-domains/",
-      "summary": "A credential-stealing malware called RevStealer is now spread through more than 100 linked domains, hijacked YouTube channels, and fake AI tools. It targets gamers, content creators, and people who want free software. The goal is simple: steal saved passwords, cookies, game accounts, and crypto wallets, then disappear. The campaign is...",
-      "source": "Tushar Subhra Dutta via Cyber Security News",
-      "image": "https://www.inoreader.com/camo/sS7GbQGW5GIO4_V-TFWfHl7-_ql50Xof9yqGPugAwWv8,q80,480x400,pf,b64/aHR0cHM6Ly9ibG9nZ2VyLmdvb2dsZXVzZXJjb250ZW50LmNvbS9pbWcvYi9SMjl2WjJ4bC9BVnZYc0VnZTFxVlMtMUFiV2czVTdVOElPTUZFeHNDWVVrUkdwZUhBQ21sOXJvcF9QbVEtT053dzhNa3ZRRzJqbTFfVkRlNXdzS3JrU1oybDhiZGVhZTdYczJna2wwMzJ0ejBnZ3NGN0JCX3JzX3p6Q0hOVEhtUVN4OUs3bnF1aUdlcWJLc1JxX1BXY0RmSThnblhTTzY1elcweGo0NDcxSUNMQWt1TlVyOGxGQXJROFVEeGRGcG8yMy1nQU9zRVNHZUEvczE2MDAvTXVsdGktU3RhZ2UlMjBFeGVjdXRpb24lMjBGbG93JTIwKFNvdXJjZSUyMC0lMjBBa2F0c3VraSUyMExlZ2lvbikud2VicA"
-    },
-    {
-      "id": "at_51134607338",
-      "title": "Fireworks AI discloses new breach after cloud provider hack",
-      "url": "https://www.bleepingcomputer.com/news/security/fireworks-ai-discloses-new-breach-after-cloud-provider-hack/",
-      "summary": "AI infrastructure startup Fireworks has disclosed a new security breach in which attackers accessed its development machines after breaching a third-party cloud provider. [...]",
-      "source": "Sergiu Gatlan via Bleeping Computer",
-      "image": "https://www.inoreader.com/camo/sQTKxEVwaU3_KH1GQ_X6GDeg7whHVoi6GIvSK7IYwwbc,q80,480x400,pf,b64/aHR0cHM6Ly93d3cuYmxlZXBzdGF0aWMuY29tL2NvbnRlbnQvaGwtaW1hZ2VzLzIwMjYvMTEvMTAvRmlyZXdvcmtzLWhlYWRwaWMuanBn"
-    },
-    {
-      "id": "at_51134509904",
-      "title": "France Blames Iran for a Cyberattack That Heated Supermarket Refrigerators",
-      "url": "https://www.securityweek.com/france-blames-iran-for-a-cyberattack-that-heated-supermarket-refrigerators/",
-      "summary": "France summoned the Iranian ambassador and said it would seek European sanctions against those responsible for the attack The post France Blames Iran for a Cyberattack That Heated Supermarket Refrigerators appeared first on SecurityWeek.",
-      "source": "Associated Press via SecurityWeek",
-      "image": "https://www.inoreader.com/camo/snqTe4xfQv8GraT4ZV9jUboUcy5CYIoM9RHOnDpdu8zk,q80,480x400,pf,b64/aHR0cHM6Ly93d3cuc2VjdXJpdHl3ZWVrLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNi8wMy9Jcmlhbmlhbi1jeWJlcmF0dGFja3MtaGFja3MuanBn"
-    },
-    {
-      "id": "at_51134307212",
-      "title": "Google Issues Chrome Security Update for Eighth Actively Exploited Zero-Day of 2026",
-      "url": "https://thehackernews.com/2026/11/google-issues-chrome-security-update.html",
-      "summary": "Google on Monday released updates to patch nine security vulnerabilities, including one that has come under active exploitation in the wild. The high-severity vulnerability, assigned the CVE identifier CVE-2026-125350 (CVSS score: 8.8), has been described as a use-after-free bug in the XML component. \"Use-after-free in XML in Google Chrome prior...",
-      "source": "[email protected] (The Hacker News) via The Hacker News",
-      "image": "https://www.inoreader.com/camo/sINqsZgn1DL1MhfBd-d2qUOM1QXmoYoOXoQpqtTaT7-Q,q80,480x400,pf,b64/aHR0cHM6Ly9ibG9nZ2VyLmdvb2dsZXVzZXJjb250ZW50LmNvbS9pbWcvYi9SMjl2WjJ4bC9BVnZYc0Voams1UzlKODkxYlFTOFc2VGd5b2lFUFE3Z2VHaWE4RnFxV2pja0ZsbzlxTUgyd1hJWHYtN2d5b2QxWEtVcEk5QmZnY2xpTjJSZThBODVySjEyMWp4cWdmbncxTHNqWUJ2QVl0WDc2OTRHVmdNRjdCOTRHMG41TXpxTWFLcUxBYnItTm8xbnFyTjBneUY4TUZSX2JZUUlZbHFpVGhfRnpvYm1XcnE0Tk9DTGJjV183OHVFTU1XNUZFNGVxSm9vL3MxNjAwL2Nocm9tZS0wZGF5LmpwZw"
-    },
-    {
-      "id": "at_51134307214",
-      "title": "N-able Takes N-central Cloud Offline After Researcher Discloses 33 Zero-Days with PoC Exploits",
-      "url": "https://thehackernews.com/2026/11/n-able-takes-hosted-n-central-offline.html",
-      "summary": "N-able said it has taken N-central Hosted Environments offline and is urging on-premises customers to shut down their servers until further notice following the public disclosure of over 30 vulnerabilities collectively tracked as Able2Shell. \"As a precautionary measure, we are temporarily taking our Hosted N-central environment offline while we take...",
-      "source": "[email protected] (The Hacker News) via The Hacker News",
-      "image": "https://www.inoreader.com/camo/s4SXGrbzKi1Q8KShZYw5T91g_Th2C5pr4F5-pA8wHNrE,q80,480x400,pf,b64/aHR0cHM6Ly9ibG9nZ2VyLmdvb2dsZXVzZXJjb250ZW50LmNvbS9pbWcvYi9SMjl2WjJ4bC9BVnZYc0VnLURrekhjWnBKVlZFVTNlM3dtR0IyRGl5UnNuV1hrZl8yYmZUMWZpREpHNFduOTJjYXJ0Ymh5cGhlbmh5cGhlbnFaSE9qWEdhc2lnSHFKQXlYTTBrak9sWWlwZ0VrYWhyQ2k5S0dhMXM4Z3BJTlZULW9GbGRnT2MxYlpNVVEtbm1GcXNTTU53SWU2NDYzZlhPeFNxWDFkTnJvWGd3bjlNd3NtQ3g0MWp2UGR0ZHlnSVR4Zkt5VFJEVVdLUzE5WVZURlRaWThzci9zMTYwMC9uLWFibGUuanBn"
-    },
-    {
-      "id": "at_51134234553",
-      "title": "Iris Ohyama data breach may expose personal information of 7.7 million people",
-      "url": "https://securityaffairs.com/202740/data-breach/iris-ohyama-data-breach-may-expose-personal-information-of-7-7-million-people.html",
-      "summary": "Iris Ohyama warns that a cloud data breach may have exposed personal information of 7.7 million customers, including names and passwords. Japanese household goods manufacturer Iris Ohyama has disclosed that attackers may have accessed personal information belonging to approximately 7.7 million people through an external cloud service used by...",
-      "source": "Pierluigi Paganini via Security Affairs",
-      "image": "https://www.inoreader.com/camo/sikAIZ6qRxHvkwNVjlBgfN4MTunKaLQ7muvj7cmBsnUw,q80,480x400,pf,b64/aHR0cHM6Ly9zZWN1cml0eWFmZmFpcnMuY29tL3dwLWNvbnRlbnQvdXBsb2Fkcy8yMDI2LzExL2ltYWdlLTE3LnBuZw"
-    },
-    {
-      "id": "at_51134086858",
-      "title": "CISA Warns of Active Exploitation of OpenSSH, GPUStack, FreeSWITCH, and IBM Flaws",
-      "url": "https://thehackernews.com/2026/11/cisa-warns-of-active-exploitation-of.html",
-      "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Monday added four security flaws impacting GPUStack, SignalWire FreeSwitch, OpenBSD OpenSSH, and IBM Aspera Faspex to its Known Exploited Vulnerabilities (KEV) catalog, citing evidence of active exploitation. The vulnerabilities are listed below - CVE-2026-123218 (CVSS score:...",
-      "source": "[email protected] (The Hacker News) via The Hacker News",
-      "image": "https://www.inoreader.com/camo/s96dhTIEeYv6w9vIn2SiLCh9weiINKf_pDtHz1Pq4PyQ,q80,480x400,pf,b64/aHR0cHM6Ly9ibG9nZ2VyLmdvb2dsZXVzZXJjb250ZW50LmNvbS9pbWcvYi9SMjl2WjJ4bC9BVnZYc0VqVkFzcmNZeFZzOHNKZTdJaVNENldrVEM0eVB2MGVMZnVwN2R3Y3NTME5MY0FBZ29ZX193eUMzVUZDUjkwUEwyemlLQ0VXLXZNTklFUVhFUy04dUFHLU14dVhseUlEZFFHZU5SRW04eUZ2M3RidnNDVlhYUnlSR1Q0T1JpcnZjVktQX3VENjJYSFl5OXczeF9QMG83WHprZ3VKUHdxXzF2VjJqUHh4blpXYmhBSEhVSjNZSjZIYlRsWGIwc2h5cGhlbmh5cGhlbi9zMTYwMC9vcGVuc3NoLnBuZw"
-    },
-    {
-      "id": "at_51133935517",
-      "title": "Chrome Update Patches Exploited XML Zero-Day, Eighth This Year",
-      "url": "https://www.securityweek.com/chrome-update-patches-exploited-xml-zero-day-eighth-this-year/",
-      "summary": "The high-severity use-after-free in Chrome’s XML component was reported anonymously on November 6 and is already exploited in attacks. The post Chrome Update Patches Exploited XML Zero-Day, Eighth This Year appeared first on SecurityWeek.",
-      "source": "Eduard Kovacs via SecurityWeek",
-      "image": "https://www.inoreader.com/camo/sKB26QZtZsmXA03_nqdisCR56JBuyPbFDcXmtM70yI0Y,q80,480x400,pf,b64/aHR0cHM6Ly93d3cuc2VjdXJpdHl3ZWVrLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNC8wNi9DaHJvbWUuanBlZw"
-    },
-    {
-      "id": "at_51133693081",
-      "title": "Hackers Breach Fireworks AI Through Third-Party Cloud Provider to Steal Customer Data",
-      "url": "https://cybersecuritynews.com/fireworks-ai-data-breach/",
-      "summary": "Fireworks AI has disclosed a wider security breach involving customer account details, billing records, datasets, and incomplete model weights. In a November 9, 2026 update, the company said attackers reached its development machines through a third-party cloud provider, expanding the impact beyond the exposed credentials reported in October. ...",
-      "source": "Guru Baran via Cyber Security News",
-      "image": "https://www.inoreader.com/camo/sYA34wH9rXJUqSgH1PjndlNXK0oX5ziwWq9BUa1q34RI,q80,480x400,pf,b64/aHR0cHM6Ly9jeWJlcnNlY3VyaXR5bmV3cy5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjYvMTEvRmlyZXdvcmtzLUFJLURhdGEtQnJlYWNoMS53ZWJw"
-    },
-    {
-      "id": "at_51133339657",
-      "title": "Google Chrome 0-Day Vulnerability in the Wild to Execute Malicious Code Remotely",
-      "url": "https://cybersecuritynews.com/google-chrome-0-day-exploited/",
-      "summary": "Google has fixed a Chrome zero-day that attackers are already using. The flaw is tracked as CVE-2026-125350, and it lets a remote attacker run malicious code in the browser. Google’s Stable channel update moves Chrome to version 157.0.8103.50/.51 for Windows and Mac and 157.0.8103.50 for Linux. The rollout will reach users over the coming days...",
-      "source": "Guru Baran via Cyber Security News",
-      "image": "https://www.inoreader.com/camo/sI_6xwu6OuBvJm0ABW1XqRxV1zetqjWM90dJ_NBkLcqw,q80,480x400,pf,b64/aHR0cHM6Ly9jeWJlcnNlY3VyaXR5bmV3cy5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjYvMTEvR29vZ2xlLUNocm9tZS0wLURheS1FeHBsb2l0ZWQud2VicA"
-    },
-    {
-      "id": "at_51132983934",
-      "title": "Terminal2Shell: 55-Year-Old ‘Zero-Day’ Dating Back to 1971 Claims to Affect Billions of Devices",
-      "url": "https://cybersecuritynews.com/terminal2shell-55-year-old-zero-day/",
-      "summary": "Terminal2Shell claims a critical flaw dating back to 1971 affects more than two billion devices, allowing anyone who opens a terminal to gain an interactive shell. However, the website is satire, not a confirmed vulnerability disclosure. Its “exploit” describes normal terminal use, making it a joke about security marketing rather than a newly...",
-      "source": "Guru Baran via Cyber Security News",
-      "image": "https://www.inoreader.com/camo/seC-rNb1lthM6lkxdfDnSdeKCm5Yv_dyK71hip7bnZy8,q80,480x400,pf,b64/aHR0cHM6Ly9jeWJlcnNlY3VyaXR5bmV3cy5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjYvMTEvVGVybWluYWwyU2hlbGwtNTUtWWVhci1PbGQtWmVyby1EYXkud2VicA"
-    },
-    {
-      "id": "at_51132645996",
-      "title": "N-able Takes N-central Servers Offline Worldwide After 33 0-Day Vulnerabilities and Able2Shell Exploits",
-      "url": "https://cybersecuritynews.com/n-able-takes-n-central-servers-offline/",
-      "summary": "N-able took its hosted N-central environments offline on November 9, 2026, after an independent researcher published details of 33 alleged zero-day vulnerabilities and exploit code. The company also told customers running N-central on their own servers to take them offline until further notice, creating an outage for users of its remote monitoring...",
-      "source": "Guru Baran via Cyber Security News",
-      "image": "https://www.inoreader.com/camo/sg2itio3Aw2GSiYawtvPwX7qEigHvk0NTkA7EFn-hMmM,q80,480x400,pf,b64/aHR0cHM6Ly9jeWJlcnNlY3VyaXR5bmV3cy5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjYvMTEvTi1hYmxlLVRha2VzLU4tY2VudHJhbC1TZXJ2ZXJzLU9mZmxpbmUud2VicA"
-    },
-    {
-      "id": "at_51132287535",
-      "title": "Brazil government technology provider Serpro faces record distributed denial-of-service attacks",
-      "url": "https://www.scworld.com/brief/brazil-government-technology-provider-serpro-faces-record-distributed-denial-of-service-attacks",
-      "summary": "The Brazilian government technology provider Serpro reports that its infrastructure has faced record distributed denial-of-service, or DDoS, attacks over the past six months, though officials insist the Gov.br identity platform remained operational, based on information published by Biometric Update.",
-      "source": "SC Staff via Latest articles from SC Magazine",
-      "image": "https://www.inoreader.com/camo/ssLxEul_bcUlk6gBV80ekPdI8kl_78xMkplALoluwyoM,q80,480x400,pf,b64/aHR0cHM6Ly9maWxlcy5jeWJlcnJpc2thbGxpYW5jZS5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjMvMDcvMDcxMV9kZG9zLmpwZw"
     }
   ]
 }

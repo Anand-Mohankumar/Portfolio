@@ -1,6 +1,62 @@
 {
-  "updatedAt": "2026-11-11T21:59:24.142996+00:00",
+  "updatedAt": "2026-11-12T03:00:04.632490+00:00",
   "articles": [
+    {
+      "id": "at_51153779729",
+      "title": "REPORT: Jensen Huang could soon be out as Nvidia CEO, with the board getting ready to remove him, ac...",
+      "url": "https://x.com/TheRundownAI/status/2120652316801917274",
+      "summary": "REPORT: Jensen Huang could soon be out as Nvidia CEO, with the board getting ready to remove him, according to the Wall Street Journal.The report comes hours after The New York Times linked Huang to another affair with a Nvidia vice president who answers to him.💬3🔄1❤️9👀3316📊5⚡ Powered by xgo.ing",
+      "source": "The Rundown AI (@TheRundownAI) via The Rundown AI(@TheRundownAI)",
+      "image": "https://www.inoreader.com/camo/soGWmZQdzEuW66CgVUqZUTwnRmn3euGFWZdHMtSqCx08,q80,480x400,pf,b64/aHR0cHM6Ly9wYnMudHdpbWcuY29tL21lZGlhL0hXNFJ1bWRYVUFBcG90QS5qcGc"
+    },
+    {
+      "id": "at_51153606446",
+      "title": "Nvidia’s stock drops as board reportedly preps to oust CEO Jensen Huang",
+      "url": "https://techcrunch.com/2026/11/11/nvidias-stock-drops-as-board-reportedly-preps-to-oust-ceo-jensen-huang/",
+      "summary": "As soon as Wednesday evening, Nvidia's board could decide to remove its founder and CEO of 33 years.",
+      "source": "Amanda Silberling via AI | TechCrunch",
+      "image": "https://www.inoreader.com/camo/sMkMoqdYlHmkFMPh-8fyX7zwqow68c9EBJu5Ce001h4U,q80,480x400,pf,b64/aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNi8wOS9KZW5zZW4tSHVhbmcuanBnP3Jlc2l6ZT0xNjAwLDEwNjc"
+    },
+    {
+      "id": "at_51153542631",
+      "title": "Jensen Huang accused of having another affair — with a Nvidia exec",
+      "url": "https://techcrunch.com/2026/11/11/jensen-huang-accused-of-having-another-affair-with-a-nvidia-exec/",
+      "summary": "Jensen Huang, who has come under fire for admitting to an affair with a woman accused of being a Chinese intelligence agent, has been accused of having a separate affair with an Nvidia subordinate.",
+      "source": "Lucas Ropek via AI | TechCrunch",
+      "image": ""
+    },
+    {
+      "id": "at_51153488289",
+      "title": "Attackers breached the Fireworks AI storage where Notion AI chats sat outside zero data retention",
+      "url": "https://venturebeat.com/security/attackers-breached-the-fireworks-ai-storage-where-notion-ai-chats-sat-outside-zero-data-retention",
+      "summary": "Attackers breached Fireworks AI storage that held Notion AI chat transcripts. The inference vendor’s documentation says, “Fireworks has Zero Data Retention by default.”Read more",
+      "source": "[email protected] (Louis Columbus) via VentureBeat",
+      "image": "https://www.inoreader.com/camo/sfJ5vyS9PHfcgz8dr2h9DWsnMrW5_6doI5evIWSMb38o,q80,480x400,pf,b64/aHR0cHM6Ly9pbWFnZXMuY3RmYXNzZXRzLm5ldC9qZHR3cWh6dmMybjEvNFRxTFJZR2hyTEIxeXk0RkpzdEFkcS9mYzNmNTI2M2MzMzM1MDgyMjJhNDE1MjIzZGFhYjJiMi9oZXJvX2Zvcl9maXJld29ya3NfYnJlYWNoLnBuZz93PTE2MDAmcT04MA"
+    },
+    {
+      "id": "at_51153429285",
+      "title": "Google’s Gemini Decision 1 model scores up to 1,000 questions in one API call",
+      "url": "https://venturebeat.com/technology/googles-gemini-decision-1-model-scores-up-to-1-000-questions-in-one-api-call",
+      "summary": "Google DeepMind released the Gemini Decisions API Wednesday for developers who need software to make a series of small judgments quickly. A claims intake system, for example, could send a scanned form, photos of the damage and notes from a customer call in one request. It could ask which queue should get the claim, whether evidence is missing and how...",
+      "source": "[email protected] (Carl Franzen) via VentureBeat",
+      "image": "https://www.inoreader.com/camo/sZ2NGWuKDA6BYsyhq7i43zhSD56vJqmohu-l9vWlUiWA,q80,480x400,pf,b64/aHR0cHM6Ly9pbWFnZXMuY3RmYXNzZXRzLm5ldC9qZHR3cWh6dmMybjEvMzlvb0hXUnRnVGk1eWpXTnF0a1hoay9jZTcyOTQ2ZTJjMzA5Yjk5Mjg3NGE3YzEwN2Q1MWE5OC9Sb2JvdF93YXRjaGVzX25lb25fcXVlc3Rpb25fbWFya3MucG5nP3c9MTYwMCZxPTgw"
+    },
+    {
+      "id": "at_51153319462",
+      "title": "Nvidia is reportedly preparing to fire Jensen Huang",
+      "url": "https://www.theverge.com/tech/1031652/jensen-huang-rumor",
+      "summary": "Nvidia's board is preparing to dismiss CEO Jensen Huang following a report from the New York Times about a second alleged extramarital affair, just days after he admitted to a separate affair with a woman alleged to be a Chinese spy, The Wall Street Journal reports. The second alleged affair was with an executive who reports to him, Nvidia's...",
+      "source": "Lauren Feiner via The Verge - Artificial Intelligences",
+      "image": "https://www.inoreader.com/camo/swVopi5zvkDei-E8JzvU9gndVFew_eSJUWqogMqpYcgU,q80,480x400,pf,b64/aHR0cHM6Ly9wbGF0Zm9ybS50aGV2ZXJnZS5jb20vd3AtY29udGVudC91cGxvYWRzL3NpdGVzLzIvY2hvcnVzL3VwbG9hZHMvY2hvcnVzX2Fzc2V0L2ZpbGUvMjU4MjQ5MzQvMjE5MjIyNDE5MS5qcGc_cXVhbGl0eT05MCZzdHJpcD1hbGwmY3JvcD0wLDAsMTAwLDEwMA"
+    },
+    {
+      "id": "at_51153053035",
+      "title": "United won’t let your AI agent book your flight",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1031623/united-unauthorized-ai-agents",
+      "summary": "United says it won't let personal AI assistants book tickets on the airline, citing both privacy and regulatory concerns. The company says it hasn't yet seen many people try to use AI agents to book their flights, The Wall Street Journal reports, in line with observations from other businesses like Doordash. But United is concerned that...",
+      "source": "Lauren Feiner via The Verge - Artificial Intelligences",
+      "image": "https://www.inoreader.com/camo/sATFfvuGEgljS-aws2TAxqjdgKz4nGho1JhBM6PqU1PM,q80,480x400,pf,b64/aHR0cHM6Ly9wbGF0Zm9ybS50aGV2ZXJnZS5jb20vd3AtY29udGVudC91cGxvYWRzL3NpdGVzLzIvY2hvcnVzL3VwbG9hZHMvY2hvcnVzX2Fzc2V0L2ZpbGUvMjMxNzY0MzAvMTIzNzYyMTcwMi5qcGc_cXVhbGl0eT05MCZzdHJpcD1hbGwmY3JvcD0wLDAsMTAwLDEwMA"
+    },
     {
       "id": "at_51152318394",
       "title": "Why the data center you dread might never even be built",
@@ -29,7 +85,7 @@
       "id": "at_51152181248",
       "title": "CoreWeave turns to customer prepayments, shorter contracts to fund AI growth",
       "url": "https://techcrunch.com/2026/11/11/coreweave-turns-to-customer-prepayments-shorter-contracts-to-fund-ai-growth/",
-      "summary": "CoreWeave is increasingly asking customers to pay upfront, borrowing against specific contracts, and even looking to short-term deals that could lead to higher prices, according to the company’s third-quarter earnings.",
+      "summary": "CoreWeave is increasingly asking customers to pay up front, borrowing against specific contracts, and even looking to short-term deals that could lead to higher prices, according to the company’s third-quarter earnings.",
       "source": "Rebecca Bellan via AI | TechCrunch",
       "image": "https://www.inoreader.com/camo/smquMOWgww9NYcjCuMc64IcKr9gwk4cNLYWL6zmPofPE,q80,480x400,pf,b64/aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNi8xMS9HZXR0eUltYWdlcy0yMzA0Mzc2NDA2LmpwZz93PTEwMjQ"
     },
@@ -1544,62 +1600,6 @@
       "summary": "Top stories in tech today:- Meta, Google, TikTok sue California- Musk clears Cybertruck off Giga Texas - Google drops $17B on Wyoming data center- Sony revives its Walkman headphones💬9🔄0❤️10👀3273📊8⚡ Powered by xgo.ing",
       "source": "The Rundown AI (@TheRundownAI) via The Rundown AI(@TheRundownAI)",
       "image": "https://www.inoreader.com/camo/sQNrE_eyq3x0xo2Mo5pKBFhRWq_8uapQvCyhxaXXvoG8,q80,480x400,pf,b64/aHR0cHM6Ly9wYnMudHdpbWcuY29tL21lZGlhL0hXYzhtZ0dXSUFBOEY1eC5qcGc"
-    },
-    {
-      "id": "at_51102586136",
-      "title": "Big Tech lost big in the 2026 election",
-      "url": "https://www.theverge.com/podcast/1028731/2026-midterms-tech-ai-vergecast",
-      "summary": "On Tuesday, millions of American voters went to the polls and voted overwhelmingly for Democrats and against AI. The fight against Big Tech is about to come roaring back, and the fight over data centers is looking even harder for the folks trying to build them. On this episode of The Vergecast, Nilay and David discuss what the 2026...",
-      "source": "David Pierce via The Verge - Artificial Intelligences",
-      "image": "https://www.inoreader.com/camo/sg6Xn9YoNLdZBsF5-dD74Zoj-3XWFe1GBXNQdUNtxkBc,q80,480x400,pf,b64/aHR0cHM6Ly9wbGF0Zm9ybS50aGV2ZXJnZS5jb20vd3AtY29udGVudC91cGxvYWRzL3NpdGVzLzIvMjAyNi8xMS9WUkdfVlNUXzExMDYyNl9TaXRlLmpwZz9xdWFsaXR5PTkwJnN0cmlwPWFsbCZjcm9wPTAsMCwxMDAsMTAw"
-    },
-    {
-      "id": "at_51102586138",
-      "title": "How Akai and Moog are embracing vibe-coded mods",
-      "url": "https://www.theverge.com/tech/1028720/vibe-coding-open-source-inmusic-akai",
-      "summary": "inMusic, the parent company of Akai, Moog, Native Instruments, and more, has decided to embrace the modding community. In an interview with The Verge, inMusic CEO Jack O'Donnell said, \"We're going to provide a toolbox to the community, we're going to provide the inner workings of, say, an MPC or Sample so that people can do what they...",
-      "source": "Terrence O’Brien via The Verge - Artificial Intelligences",
-      "image": "https://www.inoreader.com/camo/sW-gWUJo0mK3uPkycGZ9mpx3e5VDgZh2rIXud8lYo7XM,q80,480x400,pf,b64/aHR0cHM6Ly9wbGF0Zm9ybS50aGV2ZXJnZS5jb20vd3AtY29udGVudC91cGxvYWRzL3NpdGVzLzIvMjAyNi8xMS9hc3NldHNfNDdjNWQwMjNlN2IzNDUxYTg2YWMwMzYwMmM2NWRjZThfNDNmMjU2NDdjZjhhNGNiYjg3ODY4MjliYzI5ZWUyZmIud2VicD9xdWFsaXR5PTkwJnN0cmlwPWFsbCZjcm9wPTAsMCwxMDAsMTAw"
-    },
-    {
-      "id": "at_51102127544",
-      "title": "Ramp data shows AI spending stalling just as Anthropic nears its IPO",
-      "url": "https://techcrunch.com/2026/11/06/ramp-data-shows-ai-spending-stalling-just-as-anthropic-nears-its-ipo/",
-      "summary": "AI usage keeps climbing, but spending has stalled. Price cuts and smarter cost controls among the biggest spenders could challenge investor assumptions about AI hypergrowth.",
-      "source": "Rebecca Bellan via AI | TechCrunch",
-      "image": "https://www.inoreader.com/camo/sfifyy14-MppJpWMMq3-c6sIgTCoBJ4u0D8jzXnVr-C8,q80,480x400,pf,b64/aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNi8xMS9hcmEtc3RyaXBlLTUucG5nP3Jlc2l6ZT0xNjAwLDEwMzk"
-    },
-    {
-      "id": "at_51101421541",
-      "title": "After blocking Muse, Amazon now lets users text Alexa to help them shop",
-      "url": "https://techcrunch.com/2026/11/06/after-blocking-muse-amazon-now-lets-users-text-alexa-to-help-them-shop/",
-      "summary": "Amazon said that the feature will roll out to millions of users in coming weeks.",
-      "source": "Ivan Mehta via AI | TechCrunch",
-      "image": "https://www.inoreader.com/camo/seBKPMI0SH2Y1AYSNoHHpp6LifQQwS16YXdrU4yy1nB0,q80,480x400,pf,b64/aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNi8xMS9BbGV4YS1TaG9wcGluZy1UZXh0LUhlcm8uanBlZz9yZXNpemU9MTYwMCw5Njc"
-    },
-    {
-      "id": "at_51101027004",
-      "title": "Amazon will let you text Alexa your shopping list",
-      "url": "https://www.theverge.com/tech/1028587/amazon-alexa-shopping-ai-text-orders",
-      "summary": "Amazon is adding a new feature to Alexa for Shopping that allows customers to purchase items by texting the AI shopping assistant. Users can describe the products they're looking to buy and/or provide a photograph of the item, and Alexa for Shopping will search for matching results in Amazon listings, text back with recommendations, and...",
-      "source": "Jess Weatherbed via The Verge - Artificial Intelligences",
-      "image": "https://www.inoreader.com/camo/sgDljaFiunqNICtS3dI_JiIdtR5KVn9Fczp_YPB4G04I,q80,480x400,pf,b64/aHR0cHM6Ly9wbGF0Zm9ybS50aGV2ZXJnZS5jb20vd3AtY29udGVudC91cGxvYWRzL3NpdGVzLzIvMjAyNi8xMS9BbWF6b24tQWxleGEtZm9yLVNob3BwaW5nLXRleHQtb3JkZXIuanBnP3F1YWxpdHk9OTAmc3RyaXA9YWxsJmNyb3A9MCwwLDEwMCwxMDA"
-    },
-    {
-      "id": "at_51100478187",
-      "title": "Underdog shows off a 32MB speech model in new demo",
-      "url": "https://techcrunch.com/2026/11/06/underdog-shows-off-a-32mb-speech-model-in-new-demo/",
-      "summary": "Despite its small size, Underdog's new model can generate both speech and music.",
-      "source": "Ivan Mehta via AI | TechCrunch",
-      "image": "https://www.inoreader.com/camo/sjsOgY9RA27_yKhUm8KSd9NlsrzNKsmKH0tDYN6r8vvs,q80,480x400,pf,b64/aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNi8xMS9TY3JlZW5zaG90LTIwMjYtMTEtMDUtYXQtNy4wMi4zNC1QTS5qcGc_cmVzaXplPTE2MDAsNzIz"
-    },
-    {
-      "id": "at_51100478192",
-      "title": "Physicl raises $10M to make the digital world real enough for robots",
-      "url": "https://techcrunch.com/2026/11/06/physicl-raises-10m-to-make-the-digital-world-real-enough-for-robots/",
-      "summary": "Physicl is trying to solve the sim-to-real gap with a pipeline originally built to market goods online.",
-      "source": "Tim Fernholz via AI | TechCrunch",
-      "image": "https://www.inoreader.com/camo/sdAlCY-FYssCCUc8vKSBxUcsEinTWBJHksvgDu4y0bp8,q80,480x400,pf,b64/aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNi8xMS9waHlzaWNsLXN0dWRpby1oZXJvLWtpdGNoZW4tMTZ4OS0xLmpwZz9yZXNpemU9MTYwMCw5MDA"
     }
   ]
 }
