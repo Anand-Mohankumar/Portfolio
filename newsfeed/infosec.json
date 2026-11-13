@@ -1,6 +1,94 @@
 {
-  "updatedAt": "2026-11-13T16:26:15.379077+00:00",
+  "updatedAt": "2026-11-13T22:38:45.799034+00:00",
   "articles": [
+    {
+      "id": "at_51175187798",
+      "title": "North Korea ‘s Crypto Theft Operations: DOJ Seizes $1.2 Billion and Disrupts Hacker Infrastructure",
+      "url": "https://securityaffairs.com/203012/cyber-crime/north-korea-crypto-theft-operations-doj-seizes-1-2-billion-and-disrupts-hacker-infrastructure.html",
+      "summary": "The DOJ seized over $1.2 billion from North Korea ‘s Binance theft, and says the same hackers are targeting open-source developers The U.S. Department of Justice announced two separate but connected actions against North Korea ‘s cryptocurrency theft operations. The press release covers the seizure of infrastructure behind a social engineering...",
+      "source": "Pierluigi Paganini via Security Affairs",
+      "image": "https://www.inoreader.com/camo/sGdwTQJP9k1Q5_t08Y5wEkcZrMJ19oi8HNR3Pir0jurI,q80,480x400,pf,b64/aHR0cHM6Ly9pMC53cC5jb20vc2VjdXJpdHlhZmZhaXJzLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNi8xMS9pbWFnZS0zMS5wbmc_dz04Njcmc3NsPTE"
+    },
+    {
+      "id": "at_51174966176",
+      "title": "FAA Ground Stop Issued Due to ‘Extraordinary Circumstances’",
+      "url": "https://www.securityweek.com/faa-ground-stop-issued-due-to-extraordinary-circumstances/",
+      "summary": "Federal officials have yet to say what caused the communications disruption or whether they are investigating a possible cyberattack. The post FAA Ground Stop Issued Due to ‘Extraordinary Circumstances’ appeared first on SecurityWeek.",
+      "source": "SecurityWeek News via SecurityWeek",
+      "image": "https://www.inoreader.com/camo/s4Uezsvia2O05Gib2DOjAmFg00Pe_OGecAUrm_7Y_qoI,q80,480x400,pf,b64/aHR0cHM6Ly93d3cuc2VjdXJpdHl3ZWVrLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNi8xMS9GQUFfQ3liZXJhdHRhY2stR3JvdW5kLVN0b3AuanBn"
+    },
+    {
+      "id": "at_51174631069",
+      "title": "OWASP Global AppSec: How to nudge developers into implementing best security practices",
+      "url": "https://www.scworld.com/resource/owasp-global-appsec-how-to-nudge-developers-into-implementing-best-security-practices",
+      "summary": "Carrots work much better than sticks in fostering secure software development, a researcher said.",
+      "source": "Paul Wagenseil via Latest articles from SC Magazine",
+      "image": "https://www.inoreader.com/camo/saGWzi75GV6nxoF9ZmVRrIv5c7C-biCYoY2La3tm0YcM,q80,480x400,pf,b64/aHR0cHM6Ly9maWxlcy5jeWJlcnJpc2thbGxpYW5jZS5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjEvMTEvR2V0dHlJbWFnZXMtMTI5ODUzMzE1Ny5qcGc"
+    },
+    {
+      "id": "at_51174631070",
+      "title": "Credential exposure linked to European school bomb threats",
+      "url": "https://www.scworld.com/brief/credential-exposure-linked-to-european-school-bomb-threats",
+      "summary": "Bomb threats targeting thousands of schools across Europe have been linked to university email addresses found in stolen-credential databases, according to a recent report by Security Affairs.",
+      "source": "SC Staff via Latest articles from SC Magazine",
+      "image": "https://www.inoreader.com/camo/s2pW_JxDLTKFhx37cAblD36NETV3-pMs-u7dh2m5cgiI,q80,480x400,pf,b64/aHR0cHM6Ly9maWxlcy5jeWJlcnJpc2thbGxpYW5jZS5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjYvMDkvQWRvYmVTdG9ja18xNzIxNzk2ODk3LWNvcHktSkIuanBn"
+    },
+    {
+      "id": "at_51174165487",
+      "title": "Trezor confirms crypto-stealing implants in three wallets, releases fix",
+      "url": "https://www.bleepingcomputer.com/news/cryptocurrency/trezor-confirms-crypto-stealing-implants-in-three-wallets-releases-fix/",
+      "summary": "Cryptocurrency hardware wallet maker Trezor has confirmed that three Safe 5 devices sold by Southeast Asian reseller CryptoBilis contained malicious hardware implants designed to steal wallet recovery phrases and send them to attackers over cellular networks. [...]",
+      "source": "Lawrence Abrams via Bleeping Computer",
+      "image": "https://www.inoreader.com/camo/siaPR9SdroSyzsp0aDvNMrRAjolo_m5BPvX0PN5DfCbM,q80,480x400,pf,b64/aHR0cHM6Ly93d3cuYmxlZXBzdGF0aWMuY29tL2NvbnRlbnQvaGwtaW1hZ2VzLzIwMjYvMDkvMDcvVHJlem9yLmpwZw"
+    },
+    {
+      "id": "at_51174068653",
+      "title": "What the Microsoft outage reveals about cloud dependence",
+      "url": "https://www.scworld.com/perspective/what-the-microsoft-outage-reveals-about-cloud-dependence",
+      "summary": "Here are four practical steps teams can take in response to yesterday’s Microsoft outage.",
+      "source": "Waseem Ahmed via Latest articles from SC Magazine",
+      "image": "https://www.inoreader.com/camo/sZgiXhKnURAW3xl8gQPQ7Oe6ji_VPw_AtHDuLkvOu038,q80,480x400,pf,b64/aHR0cHM6Ly9maWxlcy5jeWJlcnJpc2thbGxpYW5jZS5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjUvMDkvMDkwNTI1X291dGxvb2suanBn"
+    },
+    {
+      "id": "at_51173756828",
+      "title": "OWASP Global AppSec: MCP security still a mind-boggling mess",
+      "url": "https://www.scworld.com/resource/owasp-global-appsec-mcp-security-still-a-mind-boggling-mess",
+      "summary": "The MCP ecosystem has maddeningly unresolved security gaps, a security researcher detailed.",
+      "source": "Paul Wagenseil via Latest articles from SC Magazine",
+      "image": "https://www.inoreader.com/camo/sCojVzokNpCNao1YMHIxf_1m0CTKlrNrjBMkeT4R39lk,q80,480x400,pf,b64/aHR0cHM6Ly9maWxlcy5jeWJlcnJpc2thbGxpYW5jZS5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjYvMTEvY29uZnVzZWQtcm9ib3QtZnVuaG91c2UtbWlycm9ycy1zb2NpYWxzaWdodC5qcGc"
+    },
+    {
+      "id": "at_51173207299",
+      "title": "Microsoft Office 365 outage hit 70-plus countries, exposed cloud risks",
+      "url": "https://www.scworld.com/news/microsoft-office-365-outage-hit-70-plus-countries-exposed-cloud-risks",
+      "summary": "Global Microsoft 365 outage exposes business continuity risks of relying on a single cloud provider.",
+      "source": "Steve Zurier via Latest articles from SC Magazine",
+      "image": "https://www.inoreader.com/camo/shH4QQCZ2DzwlGja3IildGbtMnRfVVKNrNxlnOGIgGAg,q80,480x400,pf,b64/aHR0cHM6Ly9maWxlcy5jeWJlcnJpc2thbGxpYW5jZS5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjUvMDQvMDQyMTI1X21pY3Jvc29mdF9sb2dvLmpwZw"
+    },
+    {
+      "id": "at_51173099990",
+      "title": "PostgreSQL Patches 52 Flaws, Including 22-Year-Old Bug Enabling Authenticated RCE",
+      "url": "https://thehackernews.com/2026/11/postgresql-patches-52-flaws-including.html",
+      "summary": "A type confusion flaw in PostgreSQL lets a database user who can create objects run code on the server. Updates released yesterday fix it, along with 51 other security flaws. Full protection from this flaw also requires rebuilding any C-language extensions installed on the server. The flaw, tracked as CVE-2026-6460, has a CVSS score of 8.8. Any code...",
+      "source": "[email protected] (The Hacker News) via The Hacker News",
+      "image": "https://www.inoreader.com/camo/sVBdgGyGnJm15YNb0yaFkH-MWsP8WAaXZckAmZPYnzCI,q80,480x400,pf,b64/aHR0cHM6Ly9ibG9nZ2VyLmdvb2dsZXVzZXJjb250ZW50LmNvbS9pbWcvYi9SMjl2WjJ4bC9BVnZYc0VoajhYT1M3SUtFdDJaaHJ3d2RsRFNwUTVoQXlJNDZ3SFpwUGtUUTNfaEE2eVV0TVFwemFNNTBmbTJ2OXgwTzdOQ3Q1ejl2ZHJUc1lNM2lQT211OWZtbU1UUURWaXUtclFqQ2ZTeGZDUWh3WlFhenI0WllheXZFbjVNUWZVZFRCVk9EdEFheTZSSWFUcUpHVWotSFZ6YnRNcU5QZE5GaVFIRXhoTzlzaXRKWDBHcnZUeF9FaFdtc2xBLTg3ZHMvczE2MDAvcG9zdGdyZXNxbC5qcGc"
+    },
+    {
+      "id": "at_51173088894",
+      "title": "German military drone operations disrupted by cyberattack",
+      "url": "https://www.bleepingcomputer.com/news/security/german-military-drone-operations-disrupted-by-cyberattack/",
+      "summary": "German defense technology company Quantum Systems confirmed that it detected an incident in late October that was part of an active cyberattack by \"hostile actors.\" [...]",
+      "source": "Bill Toulas via Bleeping Computer",
+      "image": "https://www.inoreader.com/camo/skaxfeR1vqhQKpW8QMzS0Z48PizC1OF4Y3t654tijaUM,q80,480x400,pf,b64/aHR0cHM6Ly93d3cuYmxlZXBzdGF0aWMuY29tL2NvbnRlbnQvaGwtaW1hZ2VzLzIwMjYvMTEvMTMvcXVhbnR1bXN5c3RlbXMuanBn"
+    },
+    {
+      "id": "at_51172715704",
+      "title": "Japan approves emergency cybersecurity package to combat rising threats",
+      "url": "https://www.scworld.com/brief/japan-approves-emergency-cybersecurity-package-to-combat-rising-threats",
+      "summary": "",
+      "source": "SC Staff via Latest articles from SC Magazine",
+      "image": "https://www.inoreader.com/camo/skbFtij1DmF0odJudhpqRTvNSkJJkvB_k37yZAo_QLhQ,q80,480x400,pf,b64/aHR0cHM6Ly9maWxlcy5jeWJlcnJpc2thbGxpYW5jZS5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjYvMTEvQWRvYmVTdG9ja18yMTE1OTY1MjU3LTEuanBlZw"
+    },
     {
       "id": "at_51172417413",
       "title": "Check Point gateways hacked via PHP2Shell to deploy VMware ESXi wiper",
@@ -1512,94 +1600,6 @@
       "summary": "Cybersecurity increasingly sits at the centre of how organisations operate, from protecting critical financial systems to managing identity across cloud environments. For Ben Hanson, the challenge has never been purely technical. Ben Hanson is Global Field CTO and Director of Field Engineering at Zenity, and a former Senior Security Strategist and...",
       "source": "Guru Writer via IT Security Guru",
       "image": "https://www.inoreader.com/camo/sqOE-kldquz1jf8nmaudTTCSDZ7QYmcZ0nP9ygGjIU6M,q80,480x400,pf,b64/aHR0cHM6Ly93d3cuaXRzZWN1cml0eWd1cnUub3JnL3dwLWNvbnRlbnQvdXBsb2Fkcy8yMDI2LzExL0ZPUi1FRElUSU5HLTg0LnBuZw"
-    },
-    {
-      "id": "at_51150417855",
-      "title": "Maersk confirms data breach as WhiteArmor ransomware demands $5 million",
-      "url": "https://www.bleepingcomputer.com/news/security/maersk-confirms-data-breach-as-whitearmor-ransomware-demands-5-million/",
-      "summary": "Maersk announced that a threat actor gained unauthorized access to a local legacy system inherited through an earlier acquisition and extracted data from it. [...]",
-      "source": "Bill Toulas via Bleeping Computer",
-      "image": "https://www.inoreader.com/camo/seUOVL0hNlnHzMs_2ZgNoXjIcald0uTZUNYLHjKX8LGw,q80,480x400,pf,b64/aHR0cHM6Ly93d3cuYmxlZXBzdGF0aWMuY29tL2NvbnRlbnQvaGwtaW1hZ2VzLzIwMjYvMTEvMTEvbWFlcnNrLmpwZw"
-    },
-    {
-      "id": "at_51150269053",
-      "title": "AntiFox AI Pentesting Platform Linked to Attacks That Accessed AWS Production Secrets",
-      "url": "https://thehackernews.com/2026/11/antifox-ai-pentesting-platform-linked.html",
-      "summary": "Cybersecurity researchers have disclosed details of a campaign in which an emerging agentic penetration testing platform called AntiFox has been used to steal Amazon Web Services (AWS) credentials and pivot laterally into compromised environments. \"In several recently observed intrusions, Alibaba Cloud systems hosting AntiFox interfaces were associated...",
-      "source": "[email protected] (The Hacker News) via The Hacker News",
-      "image": "https://www.inoreader.com/camo/sKC6n-F3rzYI2LsU3UgwZ13ZuTMrQyHlpNB-Y02Y87dQ,q80,480x400,pf,b64/aHR0cHM6Ly9ibG9nZ2VyLmdvb2dsZXVzZXJjb250ZW50LmNvbS9pbWcvYi9SMjl2WjJ4bC9BVnZYc0VpMDhwRWJKNy1ITndDMGtKZjUxN3duQjZ5OEh3Z0toTVUtdnhiaG5DRWg5S3BXazFrbUlqcF9iYjcxazdHWWZpVFpOZXAzYmNlanZON1JtcmlGOV8wUkpuR0dlOVQ1V0JfbmloQ2d4aURZT01sOG1nRG1JMFBtNlpGbVB6ZjhIdWxRVXhIalgzVG5jd212cUpJRFBMeVpCb0hacE9haGNNbDdmZWh0d3ZULW9DeEx6UGVjLUtSdGlTY0hUN3drL3MxNjAwL2F3cy1zZWNyZXRzLmpwZw"
-    },
-    {
-      "id": "at_51150104281",
-      "title": "Criminal IP Launches New TI Feed App on Splunkbase for Automated Threat Detection",
-      "url": "https://cybersecuritynews.com/criminal-ip-ti-feed-app-splunkbase/",
-      "summary": "Torrance, USA, November 11th, 2026, CyberNewswire Criminal IP, the AI-powered threat intelligence and attack surface management platform developed by AI SPERA, has launched the Criminal IP TI Feed app for Splunk. Available through Splunkbase, the app automatically correlates Criminal IP threat intelligence with firewall traffic logs collected...",
-      "source": "Cybernewswire via Cyber Security News",
-      "image": "https://www.inoreader.com/camo/sv76XB6CUnCIEjfwf1T9Jiu0SWkgEkaeet9JwSWDASq4,q80,480x400,pf,b64/aHR0cHM6Ly9ibG9nZ2VyLmdvb2dsZXVzZXJjb250ZW50LmNvbS9pbWcvYi9SMjl2WjJ4bC9BVnZYc0VqaTlSWE10ckV5MFBsLVBIb201WXZMUGtmX2QxR0JXSDZrck1vMHVjRTRPekxqMWZyV21JcXREd2FUcDQzRkx6RkxrLTdYSmtvaGE3a0lGVTc5dVE1TmppNWs1dEdidXBwZ21KTVpTTUwzZDh1MzZnSVdKWERUQzVTWDFCWk5Rekl6ZTFmQ05xRGh3ZVRSaEhIaUpFV0ZWV2EzMGdqYWx1LWVZNlAwc1FsZVhjWWVNeG42eFlfNkJMLVNsV1FBL3MxNjAwL2ltYWdlLTclMjAoMSkud2VicA"
-    },
-    {
-      "id": "at_51149999502",
-      "title": "Critical Xen Orchestra Flaws Exploited in Attacks",
-      "url": "https://www.securityweek.com/critical-xen-orchestra-flaws-exploited-in-attacks/",
-      "summary": "A critical authentication bypass allows attackers to execute arbitrary code as admin and take over XCP-ng nodes. The post Critical Xen Orchestra Flaws Exploited in Attacks appeared first on SecurityWeek.",
-      "source": "Ionut Arghire via SecurityWeek",
-      "image": "https://www.inoreader.com/camo/s_I4Je0P-ooxyJGuPvH2qEMZomE-iq-RRRYsVDZ1xFsY,q80,480x400,pf,b64/aHR0cHM6Ly93d3cuc2VjdXJpdHl3ZWVrLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNi8wMS9WZWVhbS1iYWNrdXAtY2xvdWQtc3RvcmFnZS5qcGVn"
-    },
-    {
-      "id": "at_51149751649",
-      "title": "One Identity releases Active Roles 8.6 with security and administration upgrades",
-      "url": "https://www.scworld.com/brief/one-identity-releases-active-roles-8-6-with-security-and-administration-upgrades",
-      "summary": "",
-      "source": "SC Staff via Latest articles from SC Magazine",
-      "image": "https://www.inoreader.com/camo/sA1sa_yef0HYaqDX5gl28NNbgQBt8j7O7-MYZ0X9PToA,q80,480x400,pf,b64/aHR0cHM6Ly9maWxlcy5jeWJlcnJpc2thbGxpYW5jZS5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjYvMTEvQWRvYmVTdG9ja185NzczOTEyMzVfRWRpdG9yaWFsX1VzZV9Pbmx5LTEtc2NhbGVkLmpwZWc"
-    },
-    {
-      "id": "at_51149751651",
-      "title": "AI tools lower the barrier for software reverse engineering",
-      "url": "https://www.scworld.com/brief/ai-tools-lower-the-barrier-for-software-reverse-engineering",
-      "summary": "Following insights from Dark Reading, artificial intelligence is significantly lowering the barrier to entry for reverse-engineering complex software, creating new risks for intellectual property and cybersecurity defenses.",
-      "source": "SC Staff via Latest articles from SC Magazine",
-      "image": "https://www.inoreader.com/camo/sMJIjzRTHCsOdRwdQmeWYpfwku6DmLGwbtJrPFEF8blg,q80,480x400,pf,b64/aHR0cHM6Ly9maWxlcy5jeWJlcnJpc2thbGxpYW5jZS5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjYvMDEvMDEwMjI2X2dlbmVyYXRpdmVfYWkuanBn"
-    },
-    {
-      "id": "at_51149751652",
-      "title": "Nitori reports data breach affecting 37.62 million customer records",
-      "url": "https://www.scworld.com/brief/nitori-reports-data-breach-affecting-37-62-million-customer-records",
-      "summary": "",
-      "source": "SC Staff via Latest articles from SC Magazine",
-      "image": "https://www.inoreader.com/camo/sI5NIpsRvsU6JjAttQb7An98udIfHNeV7JBLk2YHiZHI,q80,480x400,pf,b64/aHR0cHM6Ly9maWxlcy5jeWJlcnJpc2thbGxpYW5jZS5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjYvMTEvQWRvYmVTdG9ja18yMjE1MDI5MjExLTEtc2NhbGVkLmpwZWc"
-    },
-    {
-      "id": "at_51149708793",
-      "title": "Hackers use AntiFox AI agents in AWS credential-theft attacks",
-      "url": "https://www.bleepingcomputer.com/news/security/hackers-use-antifox-ai-agents-in-aws-credential-theft-attacks/",
-      "summary": "Attackers are using Alibaba Cloud to host self-managed instances of AntiFox, an open-source agentic penetration testing platform, to target web services and AWS environments. [...]",
-      "source": "Bill Toulas via Bleeping Computer",
-      "image": "https://www.inoreader.com/camo/sK5okSj4X7mixaEtLoo3oq0p3EbqXBL8LqIfPGy82-N0,q80,480x400,pf,b64/aHR0cHM6Ly93d3cuYmxlZXBzdGF0aWMuY29tL2NvbnRlbnQvaGwtaW1hZ2VzLzIwMjYvMTAvMDkvcm9ib3QtaGFja2VyLmpwZw"
-    },
-    {
-      "id": "at_51149576594",
-      "title": "eBPF Rootkits: Why Underground Actors Are Taking Notice",
-      "url": "https://www.bleepingcomputer.com/news/security/ebpf-rootkits-why-underground-actors-are-taking-notice/",
-      "summary": "Linux eBPF rootkits can hide malicious activity and evade traditional detection methods without loading kernel modules. Flare reveals how these techniques are spreading through underground forums, where threat actors are sharing rootkit source code, tutorials, and exploits targeting Linux systems. [...]",
-      "source": "Sponsored by Flare via Bleeping Computer",
-      "image": "https://www.inoreader.com/camo/sx40_kjKC2HOfNDyqJxNLX1nP-HQBe5PO391Q_Xf_BYs,q80,480x400,pf,b64/aHR0cHM6Ly93d3cuYmxlZXBzdGF0aWMuY29tL2NvbnRlbnQvcG9zdHMvMjAyNi8xMS8wOC9lYnBmLWhlYWRlci1pbWFnZS5qcGc"
-    },
-    {
-      "id": "at_51149523026",
-      "title": "Windows SignDrop 0-Day Exploit Lets Attackers Gain SYSTEM Privileges Through CLFS Protection",
-      "url": "https://cybersecuritynews.com/windows-signdrop-zero-day-exploit/",
-      "summary": "A public exploit called SignDrop targets a Windows security feature meant to stop attacks on the Common Log File System (CLFS). It claims to turn a normal user account into a SYSTEM account, the highest level of control on Windows. The flaw has no CVE number and no patch as of November 11, 2026. Microsoft has also not confirmed the claims. ...",
-      "source": "Guru Baran via Cyber Security News",
-      "image": "https://www.inoreader.com/camo/safMgug55y5ccIMavzkl0WnaGuFHun_TbqaNHpZ8o5NU,q80,480x400,pf,b64/aHR0cHM6Ly9ibG9nZ2VyLmdvb2dsZXVzZXJjb250ZW50LmNvbS9pbWcvYi9SMjl2WjJ4bC9BVnZYc0VnZFZsUkw0UkJsaVFOemM3T3VMUFVzTXRlZ2FtblpkNXNxSDVGY253VTB1YV9FMWs3dTZIeXI5Q2RZQlloSDc0ZFl1SkpFdjBFM09SOFVGVnlVM3R2OWJ1V2M4WGNOTmJ0NzZLSXo5Zzg1azAtd3ZuZ3A3eGItZnZhQjZzNEdXeDdCTWdHTzcwWG5lRmNoRmdUejRWSjVPYUF6WW9iMnAzQTk4YzFiQ2lhcXViSTd5X2JjOUtBalJ6eFE3aDQvczE2MDAvQWRtaW5pc3RyYW9yLndlYnA"
-    },
-    {
-      "id": "at_51149303379",
-      "title": "Hackers Target Qlik Sense Servers With Reverse Shells, Stage ActiveMQ and Veeam Exploits",
-      "url": "https://thehackernews.com/2026/11/hackers-target-qlik-sense-servers-with.html",
-      "summary": "Threat actors have been observed targeting Qlik Sense servers to unsuccessfully deliver PowerShell reverse shell commands against multiple environments in October 2026. Cynet's CyOps and Research teams said they identified the suspicious activity in October 2026 against several E.U.-based customers within a narrow window of just over three minutes....",
-      "source": "[email protected] (The Hacker News) via The Hacker News",
-      "image": "https://www.inoreader.com/camo/sgYvb0bMK_GEfDuvPWTl0wjPP9co4AJ4EYDu0t-WKf6c,q80,480x400,pf,b64/aHR0cHM6Ly9ibG9nZ2VyLmdvb2dsZXVzZXJjb250ZW50LmNvbS9pbWcvYi9SMjl2WjJ4bC9BVnZYc0VnNUwxbS1DcVBPcmdrOW90QnlDNGJsQld1cUR5bG92YVN5SFloaXJSSFF2empqU1VCMERCV2J4bkZfOGNOSXNPTkM2eW9MM2gteWRYNjF2bW5zY3RLcl9JYmNudm13UkxBTXFjaDE2UnU1b01WdURXeTFiaWxFdDZFQWdFZXJCN21VeElDUmdjazFOa29KZUE3WTJsdlYwb3FMa3cxMi1mMXhNaEM3RHc1RjFhSzM1TmhWZjNvWndqNFdiZk9UL3MxNjAwL3FsaWtzZW5zZS5qcGc"
     }
   ]
 }

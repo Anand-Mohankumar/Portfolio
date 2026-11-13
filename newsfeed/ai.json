@@ -1,6 +1,38 @@
 {
-  "updatedAt": "2026-11-13T16:26:15.323224+00:00",
+  "updatedAt": "2026-11-13T22:38:45.933322+00:00",
   "articles": [
+    {
+      "id": "at_51174653075",
+      "title": "ChatGPT Wallet lets OpenAI’s Dots agents make purchases for you",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1033425/openai-chatgpt-wallet",
+      "summary": "After launching its Dots AI agents platform earlier this year, OpenAI is launching a wallet for the agents. ChatGPT Wallet is rolling out starting today for ChatGPT Pro subscribers in the US aged 18 and older using a US billing address and \"eligible US-issued American Express, Chase, Mastercard and Visa cards.\" After adding a card to...",
+      "source": "Stevie Bonifield via The Verge - Artificial Intelligences",
+      "image": "https://www.inoreader.com/camo/sMqV78JQgNMzkDnVrg_rD754rP7UM6AKBKrJfp5OIemg,q80,480x400,pf,b64/aHR0cHM6Ly9wbGF0Zm9ybS50aGV2ZXJnZS5jb20vd3AtY29udGVudC91cGxvYWRzL3NpdGVzLzIvMjAyNi8xMC9TVEtTNTM5X0FJX0FHRU5UU19TSE9QUElOR19CLmpwZz9xdWFsaXR5PTkwJnN0cmlwPWFsbCZjcm9wPTAsMCwxMDAsMTAw"
+    },
+    {
+      "id": "at_51174356574",
+      "title": "AI agent startup LangChain hits $3B valuation",
+      "url": "https://techcrunch.com/2026/11/13/ai-agent-startup-langchain-hits-3b-valuation/",
+      "summary": "LangChain now claims 7,000 customers of its model and platform agnostic agent management tool LangSmith.",
+      "source": "Julie Bort via AI | TechCrunch",
+      "image": "https://www.inoreader.com/camo/suAzFVjNoEXRtHW5ynogLUhqB-0yJyKDiO_668yjZTlc,q80,480x400,pf,b64/aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNi8xMS9SYWlzaW5nLW1vbmV5LmpwZz9yZXNpemU9MTYwMCwxMTA1"
+    },
+    {
+      "id": "at_51173666592",
+      "title": "Export-banned Nvidia chips are behind China’s most powerful AI models—uh oh, Jensen!",
+      "url": "https://techcrunch.com/2026/11/13/export-banned-nvidia-chips-are-behind-chinas-most-powerful-ai-models-uh-oh-jensen/",
+      "summary": "New research shows the most advanced AI models from China were trained on banned Nvidia chips.",
+      "source": "Tim Fernholz via AI | TechCrunch",
+      "image": "https://www.inoreader.com/camo/sV5ifIn3ttQFOw-PGj3abKs8L6XKuQ6af_Z9qAciwHVY,q80,480x400,pf,b64/aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNi8xMS9HZXR0eUltYWdlcy0yMzAxMzI3ODgzLmpwZz9yZXNpemU9MTYwMCwxMDYw"
+    },
+    {
+      "id": "at_51172650038",
+      "title": "NEW: OpenAI launched ChatGPT Wallet, letting AI agents buy things for users without ever seeing an a...",
+      "url": "https://x.com/TheRundownAI/status/2121269456479597049",
+      "summary": "NEW: OpenAI launched ChatGPT Wallet, letting AI agents buy things for users without ever seeing an actual card number, built with American Express, Mastercard and Visa.Your browser does not support the video tag.🔗 View on Twitter💬39🔄7❤️92👀13114📊46⚡ Powered by xgo.ing",
+      "source": "The Rundown AI (@TheRundownAI) via The Rundown AI(@TheRundownAI)",
+      "image": ""
+    },
     {
       "id": "at_51172305996",
       "title": "ChatGPT’s new Wallet lets AI agents shop and check out for you",
@@ -13,7 +45,7 @@
       "id": "at_51172123243",
       "title": "Read more: https://t.co/H1AbRVfiXe",
       "url": "https://x.com/TheRundownAI/status/2121265009137160311",
-      "summary": "Read more: tech.therundown.ai/p/microsoft-s-…💬0🔄0❤️0👀241⚡ Powered by xgo.ing",
+      "summary": "Read more: tech.therundown.ai/p/microsoft-s-…💬0🔄0❤️1👀1055⚡ Powered by xgo.ing",
       "source": "The Rundown AI (@TheRundownAI) via The Rundown AI(@TheRundownAI)",
       "image": ""
     },
@@ -21,7 +53,7 @@
       "id": "at_51172123252",
       "title": "Top stories in tech today: - Microsoft’s Outlook outage drags into day two - Oura makes $625M push ...",
       "url": "https://x.com/TheRundownAI/status/2121265003869122748",
-      "summary": "Top stories in tech today:- Microsoft’s Outlook outage drags into day two- Oura makes $625M push into AI healthcare- Pfizer chases the once-a-month GLP-1- Sweden gives data centers a Nordic twist💬3🔄1❤️4👀1226📊3⚡ Powered by xgo.ing",
+      "summary": "Top stories in tech today:- Microsoft’s Outlook outage drags into day two- Oura makes $625M push into AI healthcare- Pfizer chases the once-a-month GLP-1- Sweden gives data centers a Nordic twist💬3🔄2❤️17👀3177📊5⚡ Powered by xgo.ing",
       "source": "The Rundown AI (@TheRundownAI) via The Rundown AI(@TheRundownAI)",
       "image": "https://www.inoreader.com/camo/suju3QKeI1_Ij-PxwgPDhuAJzKFw18nc0fTPvCgc7seY,q80,480x400,pf,b64/aHR0cHM6Ly9wYnMudHdpbWcuY29tL21lZGlhL0hYQV9SdUlXVUFBUXc5Wi5qcGc"
     },
@@ -1568,38 +1600,6 @@
       "summary": "Anthropic explored how AI agents can build effective long-term memory by capturing experiences during interactions and reorganizing them during idle periods through a process called “dreaming.” The post examines how different memory components contribute to organizing and retaining useful information.",
       "source": "via TLDR AI Feed",
       "image": "https://www.inoreader.com/camo/sID_UtrgLYZfH1BNOVIShGgz9g8Li3MfzdBSGyJs4k28,q80,480x400,pf,b64/aHR0cHM6Ly93d3ctY2RuLmFudGhyb3BpYy5jb20vaW1hZ2VzLzR6cnpvdmJiL3dlYnNpdGUvNmFiMjY2M2EyYzBiZDZhNDE0MDlkOTAxMzZhNTlhNWQ3Mjk5NWVhNS0xMjAweDYzMC5qcGc"
-    },
-    {
-      "id": "at_51131287139",
-      "title": "AI is dramatically accelerating AI research right now (17 minute read)",
-      "url": "https://www.planned-obsolescence.org/p/ai-is-dramatically-accelerating-ai?utm_source=tldrai",
-      "summary": "Anthropic claims it may imminently meet its own threshold of 'dramatically accelerated progress due to AI'. Some researchers believe the company has already crossed that threshold. This may be the biggest AI risk humanity has faced. The industry is not prepared to handle this safely.",
-      "source": "via TLDR AI Feed",
-      "image": "https://www.inoreader.com/camo/sjV68VlPzuQk1GZAesqmnzxrnptM-TOj-wehGxUL2lUk,q80,480x400,pf,b64/aHR0cHM6Ly9zdWJzdGFja2Nkbi5jb20vaW1hZ2UvZmV0Y2gvJHNfIXVfWF8hLHdfMTIwMCxoXzY3NSxjX2ZpbGwsZl9qcGcscV9hdXRvOmdvb2QsZmxfcHJvZ3Jlc3NpdmU6c3RlZXAsZ19hdXRvL2h0dHBzJTNBJTJGJTJGc3Vic3RhY2stcG9zdC1tZWRpYS5zMy5hbWF6b25hd3MuY29tJTJGcHVibGljJTJGaW1hZ2VzJTJGZGQ3NGZmNzAtZGYyNi00ZTFhLWJlMzEtNGZjMzU0M2JhZGE4XzIwNDh4MTA3Mi5wbmc"
-    },
-    {
-      "id": "at_51131287141",
-      "title": "Warp Sciences raises $215M for AI-powered labs (2 minute read)",
-      "url": "https://www.linkedin.com/feed/update/urn:li:activity:7519100037973401600/?utm_source=tldrai",
-      "summary": "Warp Sciences raised a $215M Series A led by Lightspeed to accelerate drug discovery with AI and robotics.",
-      "source": "via TLDR AI Feed",
-      "image": ""
-    },
-    {
-      "id": "at_51131287143",
-      "title": "A proof of the Aaronson-Ambainis conjecture (9 minute read)",
-      "url": "https://psi.inc/research/aaronson-ambainis/?utm_source=tldrai",
-      "summary": "The Aaronson-Ambainis conjecture, a key open problem in quantum complexity theory, has been proven by a research system developed at PSI using an Anthropic model. This proof shows quantum computers are not exponentially faster on random inputs compared to classical ones, resolving a significant question about quantum speedups.",
-      "source": "via TLDR AI Feed",
-      "image": "https://www.inoreader.com/camo/szko56YdrQVB5nkHfP4BXc926Jnpb4JSI0JmFGdO6iCM,q80,480x400,pf,b64/aHR0cHM6Ly9wc2kuaW5jL29nL3JpbmctYXJjaC0yLnBuZw"
-    },
-    {
-      "id": "at_51131287144",
-      "title": "Project EVE: Claude plays MMORPGs (20 minute read)",
-      "url": "https://www.anthropic.com/research/project-eve-claude-plays-mmorpgs?utm_source=tldrai",
-      "summary": "Anthropic explored AI participation in MMORPGs, using Claude to test complex decision-making in EVE Online and EVE Frontier.",
-      "source": "via TLDR AI Feed",
-      "image": "https://www.inoreader.com/camo/sEKgwvxPByl5JnWyq0inVkM0lyphNGySxcsCvjDRHTtU,q80,480x400,pf,b64/aHR0cHM6Ly93d3ctY2RuLmFudGhyb3BpYy5jb20vaW1hZ2VzLzR6cnpvdmJiL3dlYnNpdGUvMzQxMmJjM2NhOTZmNWJhMGIyNGIzZDIyODRjODFhNzBiMGU1NzRkZi0xNjY4eDEyMzgucG5n"
     }
   ]
 }
