@@ -1,6 +1,22 @@
 {
-  "updatedAt": "2026-11-14T18:03:36.602576+00:00",
+  "updatedAt": "2026-11-14T22:25:10.390333+00:00",
   "articles": [
+    {
+      "id": "at_51183014348",
+      "title": "Elon Musk, other tech execs sign petition calling on Nvidia to reinstate Jensen Huang",
+      "url": "https://techcrunch.com/2026/11/14/elon-musk-other-tech-execs-sign-petition-calling-on-nvidia-to-reinstate-jensen-huang/",
+      "summary": "The petition had attracted more than 115,000 signatures as of Saturday afternoon.",
+      "source": "Anthony Ha via AI | TechCrunch",
+      "image": "https://www.inoreader.com/camo/s41mzlQ87XqE8keLPGBOrK2pjmturDQAvDhOJsKUhTeI,q80,480x400,pf,b64/aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNS8wNS9HZXR0eUltYWdlcy0yMjE2MDI4NDQyLmpwZz93PTEwMjQ"
+    },
+    {
+      "id": "at_51182172771",
+      "title": "The fake app on an employee’s phone could be a gateway into your enterprise",
+      "url": "https://venturebeat.com/security/the-fake-app-on-an-employees-phone-could-be-a-gateway-into-your-enterprise",
+      "summary": "Across distributed workforces and hybrid models, employees rely on mobile devices to access cloud repositories, review confidential messages, and complete single sign-on (SSO) logins. Rather than trying to breach hardened network perimeters, threat actors are exploiting these habits using weaponized mobile application impersonation.Read more",
+      "source": "via VentureBeat",
+      "image": "https://www.inoreader.com/camo/sv_EJ8C2R2-Q9zAUh4hrOfea4mbdpiF1Wru2OD-amnV4,q80,480x400,pf,b64/aHR0cHM6Ly9pbWFnZXMuY3RmYXNzZXRzLm5ldC9qZHR3cWh6dmMybjEvNzhQeVA5WXExZXpsMXVSVWY5dUV3di83ODE1NjUxZmQyNGFjODVjZjFlYzk4YjMyNjAxYmZiMS91NzI3NzI4OTQ0Ml9BX21vbm9saXRoaWNfbWF6ZV93aXRoX2xvY2tzX2Jsb2NraW5nX29mZl9lbnRyeV9hXzIwZTk0ZGExLWIwMTMtNDQ3Mi1iYTdhLTg2OWY4YzdiNTgyMF8zLnBuZz93PTE2MDAmcT04MA"
+    },
     {
       "id": "at_51181693668",
       "title": "Orienting to 1 year AGI timelines (22 minute read)",
@@ -1584,22 +1600,6 @@
       "summary": "Photoshop’s Quick Compare feature lets you quickly review a before-and-after comparison of edits. | Image: Adobe Adobe is expanding its Creative Cloud apps and Firefly AI platform with new capabilities that aim to make design and editing projects faster and less complicated. Some of the announcements from Adobe's Max event today include...",
       "source": "Jess Weatherbed via The Verge - Artificial Intelligences",
       "image": "https://www.inoreader.com/camo/sveBenDyuH9lDai0AYWtM2QoYK8whq09clIruQGjO-WI,q80,480x400,pf,b64/aHR0cHM6Ly9wbGF0Zm9ybS50aGV2ZXJnZS5jb20vd3AtY29udGVudC91cGxvYWRzL3NpdGVzLzIvMjAyNi8xMS9QUy1SZW1vdmUtTm8tTG9nby0yLmpwZz9xdWFsaXR5PTkwJnN0cmlwPWFsbCZjcm9wPTAsMCwxMDAsMTAw"
-    },
-    {
-      "id": "at_51137789091",
-      "title": "Hands-on with Ring’s new AI drone camera for your home",
-      "url": "https://www.theverge.com/tech/1030601/ring-drone-cam-hands-on-price-release-date-ai-pilot",
-      "summary": "Ring’s new Drone Cam is a flying indoor security camera. Ring is finally shipping a flying indoor drone camera. For real this time. The Ring Drone Cam will arrive on January 27th, 2027, for $249.99, Ring founder Jamie Siminoff said at a launch event in New York City this week. If it does actually ship, it will arrive almost six years after...",
-      "source": "Jennifer Pattison Tuohy via The Verge - Artificial Intelligences",
-      "image": "https://www.inoreader.com/camo/sJzorw8obqphPXT49E5GuU_HbxnbRcFdNLL7xciVRe3U,q80,480x400,pf,b64/aHR0cHM6Ly9wbGF0Zm9ybS50aGV2ZXJnZS5jb20vd3AtY29udGVudC91cGxvYWRzL3NpdGVzLzIvMjAyNi8xMS9EU0MwMTI2OC5qcGc_cXVhbGl0eT05MCZzdHJpcD1hbGwmY3JvcD0wLDAsMTAwLDEwMA"
-    },
-    {
-      "id": "at_51137416989",
-      "title": "Cyberattacks threaten to make open source AI a little less open, Hugging Face exec warns",
-      "url": "https://techcrunch.com/2026/11/10/cyberattacks-threaten-to-make-open-source-ai-a-little-less-open-hugging-face-exec-warns/",
-      "summary": "Hugging Face executive Irene Solaiman warns that growing cyberattacks on open AI platforms could force tighter security restrictions, threatening the accessibility that makes open source communities valuable to developers worldwide.",
-      "source": "Rebecca Bellan via AI | TechCrunch",
-      "image": "https://www.inoreader.com/camo/sMLozJAy9BMvMW_O5klKHDZlDC-PSx2sI5Qi4TxPwdPk,q80,480x400,pf,b64/aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNi8xMS81NTU5MzMwOTU5MV83Y2MyZDNhYmE2X2suanBnP3Jlc2l6ZT0xNjAwLDEwNjc"
     }
   ]
 }
