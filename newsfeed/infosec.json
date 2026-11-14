@@ -1,6 +1,54 @@
 {
-  "updatedAt": "2026-11-14T03:17:34.283872+00:00",
+  "updatedAt": "2026-11-14T11:28:52.518956+00:00",
   "articles": [
+    {
+      "id": "at_51179296789",
+      "title": "Microsoft Warns of Active Password Stealing Attack Exploiting the Microsoft 365 Service Disruption",
+      "url": "https://cybersecuritynews.com/active-password-stealing-attack-microsoft-365/",
+      "summary": "Microsoft has warned of an active phishing campaign using the November 12 Microsoft 365 service disruption to lure users into opening fake email recovery links. The messages copy Microsoft service health notices and cite the real Exchange Online incident EX1550543, making the requests appear linked to an ongoing business problem. Microsoft...",
+      "source": "Guru Baran via Cyber Security News",
+      "image": "https://www.inoreader.com/camo/sYX5Zf9aZXryOqP5AEpcYin8kY3bTNHCxc_rPW6cd3ls,q80,480x400,pf,b64/aHR0cHM6Ly9jeWJlcnNlY3VyaXR5bmV3cy5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjYvMTEvQWN0aXZlLVBhc3N3b3JkLVN0ZWFsaW5nLUF0dGFjay1NaWNyb3NvZnQtMzY1LndlYnA"
+    },
+    {
+      "id": "at_51179285846",
+      "title": "Apple Reveals How Secure Exclaves Shield Camera and Microphone Data",
+      "url": "https://www.securityweek.com/apple-reveals-how-secure-exclaves-shield-camera-and-microphone-data/",
+      "summary": "The tech giant has detailed the architecture designed to isolate ambient sensor data from the main OS on HomeView and new iPhones. The post Apple Reveals How Secure Exclaves Shield Camera and Microphone Data appeared first on SecurityWeek.",
+      "source": "Eduard Kovacs via SecurityWeek",
+      "image": "https://www.inoreader.com/camo/s8qld_ZVBAoGWH4xnlWJSBcAcypQtAohrAlpEvdUtkhw,q80,480x400,pf,b64/aHR0cHM6Ly93d3cuc2VjdXJpdHl3ZWVrLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNC8xMi9BcHBsZS5qcGVn"
+    },
+    {
+      "id": "at_51178595188",
+      "title": "Cursor Reveals How a Leaked Fireworks AI Key Led to a Backdoored Claude Code Extension",
+      "url": "https://cybersecuritynews.com/cursor-data-breach/",
+      "summary": "Cursor has traced its October security breach to an access key exposed by Fireworks AI. The attacker used that key to steal historical coding agent records, find more credentials, and eventually place backdoored Claude Code extensions in Cursor’s marketplace cache. Its November 13 update connects the vendor exposure to the malicious packages discovered...",
+      "source": "Guru Baran via Cyber Security News",
+      "image": "https://www.inoreader.com/camo/swdp7uCzl87NDdHH7FZpxrKBJ55GxrEdcJHk57YtadIQ,q80,480x400,pf,b64/aHR0cHM6Ly9jeWJlcnNlY3VyaXR5bmV3cy5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjYvMTEvQ3Vyc29yLURhdGEtQnJlYWNoLndlYnA"
+    },
+    {
+      "id": "at_51178551760",
+      "title": "U.S. CISA adds Check Point and UnrealIRCd flaws to its Known Exploited Vulnerabilities catalog",
+      "url": "https://securityaffairs.com/203040/hacking/u-s-cisa-adds-check-point-and-unrealircd-flaws-to-its-known-exploited-vulnerabilities-catalog.html",
+      "summary": "U.S. Cybersecurity and Infrastructure Security Agency (CISA) adds Check Point and UnrealIRCd flaws to its Known Exploited Vulnerabilities catalog. The U.S. Cybersecurity and Infrastructure Security Agency (CISA) added Check Point and UnrealIRCd vulnerabilities to its Known Exploited Vulnerabilities (KEV) catalog: Below are the flaws...",
+      "source": "Pierluigi Paganini via Security Affairs",
+      "image": ""
+    },
+    {
+      "id": "at_51178407552",
+      "title": "No Signs of Hacking in FAA Ground Stop as FBI Reportedly Probes Software Update",
+      "url": "https://www.securityweek.com/no-signs-of-hacking-in-faa-ground-stop-as-fbi-reportedly-probes-software-update/",
+      "summary": "Officials say there is no evidence of a cyberattack behind the nationwide FAA outage, which may have been caused by a software update. The post No Signs of Hacking in FAA Ground Stop as FBI Reportedly Probes Software Update appeared first on SecurityWeek.",
+      "source": "Eduard Kovacs via SecurityWeek",
+      "image": "https://www.inoreader.com/camo/sudxhA2Ei4A9cbns5g-euSmWQRZ2_UhrCbLIqWi07C2g,q80,480x400,pf,b64/aHR0cHM6Ly93d3cuc2VjdXJpdHl3ZWVrLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNi8xMS9haXJwbGFuZXMuanBlZw"
+    },
+    {
+      "id": "at_51177059309",
+      "title": "CISA Warns of Check Point 0-Day Vulnerability Exploited to Gain Root Access",
+      "url": "https://cybersecuritynews.com/check-point-0-day-vulnerability/",
+      "summary": "CISA has warned that attackers are exploiting a Check Point security flaw that lets a local user gain root access on affected appliances. The agency added CVE-2026-123039 to its Known Exploited Vulnerabilities catalog on November 13, 2026, confirming that the vulnerability is being used in real attacks. Check Point said it observed exploitation...",
+      "source": "Guru Baran via Cyber Security News",
+      "image": "https://www.inoreader.com/camo/sWLoja2v14vk_IAnBDJ1zObW9wbwDt6O1mIuZWmHX5ec,q80,480x400,pf,b64/aHR0cHM6Ly9jeWJlcnNlY3VyaXR5bmV3cy5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjYvMTEvQ2hlY2twb2ludC0wLURheS1WdWxuZXJhYmlsaXR5LndlYnA"
+    },
     {
       "id": "at_51176456318",
       "title": "Uber drivers impacted by data breach at third-party provider",
@@ -1552,54 +1600,6 @@
       "summary": "Arctic Wolf saw attackers use the AntiFox pentest platform to hit IIS servers and AWS accounts. Arctic Wolf Labs has published research on attackers using AntiFox, an open-source, Chinese-language agentic penetration testing platform. These frameworks chain attack steps together with little human effort. In several intrusions, Alibaba Cloud...",
       "source": "Pierluigi Paganini via Security Affairs",
       "image": "https://www.inoreader.com/camo/sxLrCZc-wKsOtAyZThjj1ym2GH1hsEFAFa07G0ET6VI0,q80,480x400,pf,b64/aHR0cHM6Ly9zZWN1cml0eWFmZmFpcnMuY29tL3dwLWNvbnRlbnQvdXBsb2Fkcy8yMDI2LzExL2ltYWdlLTIzLnBuZw"
-    },
-    {
-      "id": "at_51152854790",
-      "title": "eMudhra revokes 8 more CA certificates after private key mishap",
-      "url": "https://www.bleepingcomputer.com/news/security/emudhra-revokes-8-more-ca-certificates-after-private-key-mishap/",
-      "summary": "Certificate authority eMudhra has revoked eight additional intermediate CA certificates after an investigation into its recent certificate security incident found improper handling of private keys during the certificate-generation process. [...]",
-      "source": "Lawrence Abrams via Bleeping Computer",
-      "image": "https://www.inoreader.com/camo/sC6qjWQPuB9N4lNhRUWq5kltZr3KbubZZBByr1U2Ahp0,q80,480x400,pf,b64/aHR0cHM6Ly93d3cuYmxlZXBzdGF0aWMuY29tL2NvbnRlbnQvaGwtaW1hZ2VzLzIwMjYvMTAvMjAvY2VydGlmaWNhdGUuanBn"
-    },
-    {
-      "id": "at_51152832717",
-      "title": "British banking customers express concerns over AI deepfake security",
-      "url": "https://www.scworld.com/brief/british-banking-customers-express-concerns-over-ai-deepfake-security",
-      "summary": "British banking customers are increasingly skeptical of their financial institutions' ability to detect AI-driven deepfake impersonation attempts, with 69% of individuals expressing doubt in current security measures, as first reported by Tech Radar.",
-      "source": "SC Staff via Latest articles from SC Magazine",
-      "image": "https://www.inoreader.com/camo/sjsMeRRjiW60M5zZStkiaA7p6U_xNxyOd3JjW7cz8hdY,q80,480x400,pf,b64/aHR0cHM6Ly9maWxlcy5jeWJlcnJpc2thbGxpYW5jZS5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjQvMDQvMDQxMjI0X2RlZXBmYWtlLmpwZw"
-    },
-    {
-      "id": "at_51152667001",
-      "title": "WhiteArmor Demands $5 Million from Maersk, Claims Theft of 100GB of Data",
-      "url": "https://securityaffairs.com/202869/data-breach/whitearmor-demands-5-million-from-maersk-claims-theft-of-100gb-of-data.html",
-      "summary": "Maersk confirms a data breach involving a legacy system, while WhiteArmor claims 100GB of stolen data and demands a $5 million ransom. A.P. Moller Maersk, the Danish shipping giant, says it identified an IT security incident involving unauthorized access and data extraction from one of its local legacy systems, one inherited from a previous...",
-      "source": "Pierluigi Paganini via Security Affairs",
-      "image": "https://www.inoreader.com/camo/sKUGvXnQS59UNy2WbIP0m9Pz8s-K4SWxv7sJs0JFMFCU,q80,480x400,pf,b64/aHR0cHM6Ly9pMC53cC5jb20vc2VjdXJpdHlhZmZhaXJzLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNi8xMS9pbWFnZS0yMi5wbmc_dz0xMzg3JnNzbD0x"
-    },
-    {
-      "id": "at_51152566448",
-      "title": "Notion says Fireworks breach exposed customer AI chat transcripts",
-      "url": "https://www.bleepingcomputer.com/news/security/notion-says-fireworks-breach-exposed-customer-ai-chat-transcripts/",
-      "summary": "Notion, the digital workspace platform, disclosed that a security breach at its AI infrastructure provider, Fireworks AI, exposed Notion AI chat transcripts in a small number of workspaces. [...]",
-      "source": "Bill Toulas via Bleeping Computer",
-      "image": "https://www.inoreader.com/camo/sZZNMydOhg5ZzraNTldQ-goGTzOZmcQ_ghwKeAoxnMNI,q80,480x400,pf,b64/aHR0cHM6Ly93d3cuYmxlZXBzdGF0aWMuY29tL2NvbnRlbnQvaGwtaW1hZ2VzLzIwMjYvMTEvMTEvTm90aW9uLmpwZw"
-    },
-    {
-      "id": "at_51152364114",
-      "title": "Cisco BroadWorks flaw added to CISA's exploited vulnerabilities list",
-      "url": "https://www.scworld.com/news/cisco-broadworks-flaw-added-to-cisas-exploited-vulnerabilities-list",
-      "summary": "CISA confirms active exploitation of a Cisco BroadWorks flaw exposing sensitive telecom files.",
-      "source": "Steve Zurier via Latest articles from SC Magazine",
-      "image": "https://www.inoreader.com/camo/s4x1Bbn9qUHwS4SHeGDrUlaXuUpDgYKcGynf3LfFCfQ4,q80,480x400,pf,b64/aHR0cHM6Ly9maWxlcy5jeWJlcnJpc2thbGxpYW5jZS5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjQvMTAvMTAyMTI0X2Npc2NvLmpwZw"
-    },
-    {
-      "id": "at_51151519442",
-      "title": "Microsoft releases Windows 10 extended security update for November 2026",
-      "url": "https://www.scworld.com/brief/microsoft-releases-windows-10-extended-security-update-for-november-2026",
-      "summary": "Microsoft has released the Windows 10 KB5131096 extended security update, which incorporates the November 2026 Patch Tuesday fixes alongside several bug resolutions and system adjustments, with further coverage provided by Bleeping Computer.",
-      "source": "SC Staff via Latest articles from SC Magazine",
-      "image": "https://www.inoreader.com/camo/sHmKQhJsHM6nYh2xtESq2ZCs0DD28s8hPJ223HuRaMos,q80,480x400,pf,b64/aHR0cHM6Ly9maWxlcy5jeWJlcnJpc2thbGxpYW5jZS5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjQvMDgvcGF0Y2hpbmdfQWRvYmVTdG9ja0ltYWdlcy1zY2FsZWQuanBn"
     }
   ]
 }
