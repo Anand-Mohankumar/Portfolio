@@ -1,6 +1,22 @@
 {
-  "updatedAt": "2026-11-13T22:38:45.933322+00:00",
+  "updatedAt": "2026-11-14T03:17:34.424448+00:00",
   "articles": [
+    {
+      "id": "at_51175805372",
+      "title": "Amazon has a plan to index the world’s online shopping data",
+      "url": "https://www.theverge.com/tech/1033697/amazon-world-product-graph-ai-search",
+      "summary": "Amazon has plans to build a vault of data on every product sold anywhere on the internet, even products Amazon doesn't sell, and make the information available through its own site, according to Reuters. The project, called the \"World Product Graph,\" is meant to make it less likely that shoppers leave Amazon to do their product research...",
+      "source": "Stevie Bonifield via The Verge - Artificial Intelligences",
+      "image": "https://www.inoreader.com/camo/szhmHFfBfLL9oNtsRG3fwunLLdBP3K55gL0TJBhD3xMQ,q80,480x400,pf,b64/aHR0cHM6Ly9wbGF0Zm9ybS50aGV2ZXJnZS5jb20vd3AtY29udGVudC91cGxvYWRzL3NpdGVzLzIvMjAyNS8wOS9hY2FzdHJvX1NUSzEwM19fMDMuanBnP3F1YWxpdHk9OTAmc3RyaXA9YWxsJmNyb3A9MCwwLDEwMCwxMDA"
+    },
+    {
+      "id": "at_51175638802",
+      "title": "Jensen Huang’s departure blasts big hole in AI startup funding, VCs and founders say",
+      "url": "https://techcrunch.com/2026/11/13/jensen-huangs-departure-blasts-big-hole-in-ai-startup-funding-vcs-and-founders-say/",
+      "summary": "Nvidia poured tens of billions into AI startups under Huang. Without him at the helm, founders and VCs are bracing for smaller checks and lower valuations.",
+      "source": "Marina Temkin, Dominic-Madori Davis via AI | TechCrunch",
+      "image": "https://www.inoreader.com/camo/ss2fdPaPqhZcXuYTBgiFGkLxqOANJf4dSY3yJEMbhAcc,q80,480x400,pf,b64/aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNi8xMS9KZW5zZW4tSHVhbmctbnZpZGlhLmpwZz93PTEwMjQ"
+    },
     {
       "id": "at_51174653075",
       "title": "ChatGPT Wallet lets OpenAI’s Dots agents make purchases for you",
@@ -1584,22 +1600,6 @@
       "summary": "Shipping agents is easy; keeping them reliable, governable, and improving is where enterprise AI stalls. LangChain's guide to the Agentic Operating Model (AOM) a step-by-step framework that shows how to align people, process, and technology, so enterprise agents improve as they scale. Get the guide.",
       "source": "via TLDR AI Feed",
       "image": "https://www.inoreader.com/camo/s_Y6bgvRtjuTFHSlXjsoBx1i8UL2YIb3EUZy49Gqtfx0,q80,480x400,pf,b64/aHR0cHM6Ly9pbmZvLmxhbmdjaGFpbi5jb20vb2ctaW1hZ2UucG5n"
-    },
-    {
-      "id": "at_51131287135",
-      "title": "A year as a Research Engineer working on RSI at Meta (8 minute read)",
-      "url": "https://x.com/tomasmann1878/status/2119346730458038678?s=12&utm_source=tldrai",
-      "summary": "This post details the experience of a research engineer working on RSI at Meta teaching agents to solve the world's hardest problems with tokens and compute. Their role is to teach AI agents how to train the next generation of models and self-evolve. The post details how to get into AI research, what skills matter in research engineering, and more.",
-      "source": "via TLDR AI Feed",
-      "image": ""
-    },
-    {
-      "id": "at_51131287137",
-      "title": "How Anthropic Builds Agent Memory (14 minute read)",
-      "url": "https://www.anthropic.com/research/components-of-agent-memory?utm_source=tldrai",
-      "summary": "Anthropic explored how AI agents can build effective long-term memory by capturing experiences during interactions and reorganizing them during idle periods through a process called “dreaming.” The post examines how different memory components contribute to organizing and retaining useful information.",
-      "source": "via TLDR AI Feed",
-      "image": "https://www.inoreader.com/camo/sID_UtrgLYZfH1BNOVIShGgz9g8Li3MfzdBSGyJs4k28,q80,480x400,pf,b64/aHR0cHM6Ly93d3ctY2RuLmFudGhyb3BpYy5jb20vaW1hZ2VzLzR6cnpvdmJiL3dlYnNpdGUvNmFiMjY2M2EyYzBiZDZhNDE0MDlkOTAxMzZhNTlhNWQ3Mjk5NWVhNS0xMjAweDYzMC5qcGc"
     }
   ]
 }

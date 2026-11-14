@@ -1,6 +1,86 @@
 {
-  "updatedAt": "2026-11-13T22:38:45.799034+00:00",
+  "updatedAt": "2026-11-14T03:17:34.283872+00:00",
   "articles": [
+    {
+      "id": "at_51176456318",
+      "title": "Uber drivers impacted by data breach at third-party provider",
+      "url": "https://www.scworld.com/brief/uber-drivers-impacted-by-data-breach-at-third-party-provider",
+      "summary": "According to TechCrunch, Uber is notifying thousands of drivers that their personal information and driver’s license details were compromised during a security breach at a third-party technology provider.",
+      "source": "SC Staff via Latest articles from SC Magazine",
+      "image": "https://www.inoreader.com/camo/sF9r3y9qdQdPxzj6hBnJRChL08eUK_FFSCk85XHMdRPI,q80,480x400,pf,b64/aHR0cHM6Ly9maWxlcy5jeWJlcnJpc2thbGxpYW5jZS5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjMvMDUvdWJlci1jb3JwLXNpZ25hZ2UuanBn"
+    },
+    {
+      "id": "at_51176456322",
+      "title": "Lithuanian publisher Appsalt linked to unauthorized proxy network activity",
+      "url": "https://www.scworld.com/brief/lithuanian-publisher-appsalt-linked-to-unauthorized-proxy-network-activity",
+      "summary": "Reported by Cyber Insider. Security researchers have uncovered that applications and browser extensions from the Lithuanian publisher Appsalt are routing internet traffic through user devices without clear consent.",
+      "source": "SC Staff via Latest articles from SC Magazine",
+      "image": "https://www.inoreader.com/camo/s3fyUPAvO_6pAWLvIkqzylMrBqwVqSrQ3ZnQpAeIlEe0,q80,480x400,pf,b64/aHR0cHM6Ly9maWxlcy5jeWJlcnJpc2thbGxpYW5jZS5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjYvMTAvQWRvYmVTdG9ja18yMDU1Mjk2MDcxLXNjYWxlZC5qcGVn"
+    },
+    {
+      "id": "at_51176456326",
+      "title": "Experts predict AI will revolutionize ransomware tactics by 2027",
+      "url": "https://www.scworld.com/brief/experts-predict-ai-will-revolutionize-ransomware-tactics-by-2027",
+      "summary": "In a report by Infosecurity Magazine, researchers suggest that artificial intelligence is poised to fundamentally transform the ransomware landscape by 2027.",
+      "source": "SC Staff via Latest articles from SC Magazine",
+      "image": "https://www.inoreader.com/camo/sPZpqJNj4RPmMF8DI8-F9B01ccqpBo1EKIcEykEbkiO0,q80,480x400,pf,b64/aHR0cHM6Ly9maWxlcy5jeWJlcnJpc2thbGxpYW5jZS5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjUvMDcvQWRvYmVTdG9ja184MjY2MjI3MzYuanBn"
+    },
+    {
+      "id": "at_51176456329",
+      "title": "Unocoin investigates potential exploitation of multisignature wallet backup mechanism",
+      "url": "https://www.scworld.com/brief/unocoin-investigates-potential-exploitation-of-multisignature-wallet-backup-mechanism",
+      "summary": "As noted by Coin Central, Indian cryptocurrency exchange Unocoin is investigating a potential exploitation of its multisignature wallet backup mechanism following a series of unauthorized blockchain transactions.",
+      "source": "SC Staff via Latest articles from SC Magazine",
+      "image": "https://www.inoreader.com/camo/sztMACslwoYxWe17Muv8dsByI_BPGrkepvHJ8dzkMmOQ,q80,480x400,pf,b64/aHR0cHM6Ly9maWxlcy5jeWJlcnJpc2thbGxpYW5jZS5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjUvMDkvMDkwMzA1X2NyeXB0b2N1cnJlbmN5LmpwZw"
+    },
+    {
+      "id": "at_51176456331",
+      "title": "Cybersecurity threats escalate across Europe",
+      "url": "https://www.scworld.com/brief/cybersecurity-threats-escalate-across-europe",
+      "summary": "Cybersecurity threats are accelerating across Europe at a rate faster than anywhere else in the world, driven by a surge in email-borne attacks and sophisticated exploitation of artificial intelligence, according to a recent report by Tech Radar.",
+      "source": "SC Staff via Latest articles from SC Magazine",
+      "image": "https://www.inoreader.com/camo/svUDmPiaDQKWbw6qS3NCzc0aT55HddBeH4D_bNkzxR9o,q80,480x400,pf,b64/aHR0cHM6Ly9maWxlcy5jeWJlcnJpc2thbGxpYW5jZS5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjMvMDgvZXVyb3BlLWRpZ2l0YWwtMS5qcGc"
+    },
+    {
+      "id": "at_51176456332",
+      "title": "National Cyber Security Centre launches adversary simulation scheme",
+      "url": "https://www.scworld.com/brief/national-cyber-security-centre-launches-adversary-simulation-scheme",
+      "summary": "The National Cyber Security Centre has introduced the Cyber Adversary Simulation initiative to connect critical infrastructure and public sector organizations with accredited partners for security wargaming exercises, with further coverage provided by IT Pro.",
+      "source": "SC Staff via Latest articles from SC Magazine",
+      "image": "https://www.inoreader.com/camo/s6aFYKpAo_Ql_DuHLlviqA_p7Z2RCAuWHsZreRRuDC_4,q80,480x400,pf,b64/aHR0cHM6Ly9maWxlcy5jeWJlcnJpc2thbGxpYW5jZS5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjUvMTAvMTAwOTI1X3VrX2ZsYWcuanBn"
+    },
+    {
+      "id": "at_51176456333",
+      "title": "German drone manufacturer Quantum Systems reports cyberattack",
+      "url": "https://www.scworld.com/brief/german-drone-manufacturer-quantum-systems-reports-cyberattack",
+      "summary": "As noted by Bleeping Computer, German defense technology firm Quantum Systems confirmed it was the target of a cyberattack in late October.",
+      "source": "SC Staff via Latest articles from SC Magazine",
+      "image": "https://www.inoreader.com/camo/sW4pCLwJ4ouB8vmy9FOCVA-DsAI5taHMkFusCwbgSOn4,q80,480x400,pf,b64/aHR0cHM6Ly9maWxlcy5jeWJlcnJpc2thbGxpYW5jZS5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjMvMDgvY3liZXJzZWN1cml0eS1jeWJlcmF0dGFja3MtR2V0dHlJbWFnZXMtNDc5ODAxMDcyLmpwZw"
+    },
+    {
+      "id": "at_51176255220",
+      "title": "Uber Confirms Data Breach – Hackers Stole Users’ Personal Information",
+      "url": "https://cybersecuritynews.com/uber-confirms-data-breach/",
+      "summary": "Uber has confirmed a data breach involving the personal information of thousands of U.S. drivers after hackers accessed records held by Fireworks AI, a third-party technology provider. The exposed information includes driver’s license details. Uber is notifying affected people, but it has not disclosed the total number impacted nationwide. ...",
+      "source": "Guru Baran via Cyber Security News",
+      "image": "https://www.inoreader.com/camo/s6OeL6tsXyLpYHkTLRYG4O1xwGu3eB-Cnaue9ajGRdHo,q80,480x400,pf,b64/aHR0cHM6Ly9jeWJlcnNlY3VyaXR5bmV3cy5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjYvMTEvVWJlci1Db25maXJtcy1EYXRhLUJyZWFjaC53ZWJw"
+    },
+    {
+      "id": "at_51175836678",
+      "title": "OWASP Global AppSec: Paradigm shifts and circular code-checking",
+      "url": "https://www.scworld.com/resource/owasp-global-appsec-paradigm-shifts-and-circular-code-checking",
+      "summary": "An overview of this year's leading application-security conference.",
+      "source": "Paul Wagenseil via Latest articles from SC Magazine",
+      "image": "https://www.inoreader.com/camo/sK3oyzwf92d8-xtpH_pA6fT1uS-cCApjouatNJ31NXYE,q80,480x400,pf,b64/aHR0cHM6Ly9maWxlcy5jeWJlcnJpc2thbGxpYW5jZS5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjUvMTEvT1dBU1BfYmxhY2tfbG9nby5qcGc"
+    },
+    {
+      "id": "at_51175475764",
+      "title": "Googleglass, Microsoft, SignDrop, ConnectWise, Trezor, Dr. Zikel, Apache, Josh Marpet - SWN #633",
+      "url": "https://www.scworld.com/podcast-segment/15334-googleglass-microsoft-signdrop-connectwise-trezor-dr-zikel-apache-josh-marpet-swn-633",
+      "summary": "",
+      "source": "Doug White via Latest articles from SC Magazine",
+      "image": "https://www.inoreader.com/camo/s3zatXlT4Us23fIynkRk2wwjlObDccSBK60ck3EFqO1A,q80,480x400,pf,b64/aHR0cHM6Ly9maWxlcy5jeWJlcnJpc2thbGxpYW5jZS5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjYvMTEvU1dOXzYzM19GUklfVGh1bWJuYWlsX1NXTl8xOTIweDEwODBfOTFjNmMzNzktNTIyNi00Y2MwLTk4ZTItMjA0YTQzYWRjNGE4LmpwZw"
+    },
     {
       "id": "at_51175187798",
       "title": "North Korea ‘s Crypto Theft Operations: DOJ Seizes $1.2 Billion and Disrupts Hacker Infrastructure",
@@ -1520,86 +1600,6 @@
       "summary": "Microsoft has released the Windows 10 KB5131096 extended security update, which incorporates the November 2026 Patch Tuesday fixes alongside several bug resolutions and system adjustments, with further coverage provided by Bleeping Computer.",
       "source": "SC Staff via Latest articles from SC Magazine",
       "image": "https://www.inoreader.com/camo/sHmKQhJsHM6nYh2xtESq2ZCs0DD28s8hPJ223HuRaMos,q80,480x400,pf,b64/aHR0cHM6Ly9maWxlcy5jeWJlcnJpc2thbGxpYW5jZS5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjQvMDgvcGF0Y2hpbmdfQWRvYmVTdG9ja0ltYWdlcy1zY2FsZWQuanBn"
-    },
-    {
-      "id": "at_51151519448",
-      "title": "Finite State secures $27 million in series c funding to expand product security platform",
-      "url": "https://www.scworld.com/brief/finite-state-secures-27-million-in-series-c-funding-to-expand-product-security-platform",
-      "summary": "Per CSO Online. Finite State, a leader in product security and software supply chain risk management, has secured $27 million in a Series C funding round to scale its autonomous platform and expand global operations.",
-      "source": "SC Staff via Latest articles from SC Magazine",
-      "image": "https://www.inoreader.com/camo/sWwi6CSf_gsChtEHZ2hrgON5h5Gwxq5wqUFWH4EYPzPY,q80,480x400,pf,b64/aHR0cHM6Ly9maWxlcy5jeWJlcnJpc2thbGxpYW5jZS5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjMvMTEvMTExNF9jYXNoX21vbmV5LmpwZw"
-    },
-    {
-      "id": "at_51151519451",
-      "title": "Defense and intelligence agencies face challenges in deploying super intelligence",
-      "url": "https://www.scworld.com/brief/defense-and-intelligence-agencies-face-challenges-in-deploying-super-intelligence",
-      "summary": "Super intelligence deployment across federal defense and intelligence sectors remains a complex challenge as agencies struggle to integrate advanced models into existing mission workflows, as first reported by Defensescoop.",
-      "source": "SC Staff via Latest articles from SC Magazine",
-      "image": "https://www.inoreader.com/camo/s9k5Pm08RHUXPDtveEsUIPYXPMDLZojGprXCqGcmmOes,q80,480x400,pf,b64/aHR0cHM6Ly9maWxlcy5jeWJlcnJpc2thbGxpYW5jZS5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjQvMDQvMDQxNjI0X3VzX2NhcGl0b2wuanBn"
-    },
-    {
-      "id": "at_51151335533",
-      "title": "Who Runs the Ransomware Group Qilin?",
-      "url": "https://krebsonsecurity.com/2026/11/who-runs-the-ransomware-group-qilin/",
-      "summary": "The cybercrime group Qilin has emerged as the world’s most active ransomware affiliate program, claiming at least 365 victim organizations in the past three months alone. But even top Russian hackers make operational security mistakes, and the administrator of Qilin has made a few key missteps over the last decade that all point to a 36-year-old man...",
-      "source": "BrianKrebs via Krebs on Security",
-      "image": "https://www.inoreader.com/camo/sET1XgVY1Fh0NNr9NXKBNr-ia0J-gFuhW9AAlU_vQf1Q,q80,480x400,pf,b64/aHR0cHM6Ly9rcmVic29uc2VjdXJpdHkuY29tL3dwLWNvbnRlbnQvdXBsb2Fkcy8yMDI2LzExL2hhaXNlLXJhbXAta2VsYS5wbmc"
-    },
-    {
-      "id": "at_51151286664",
-      "title": "Ubuntu 26.10 Adds New Security Protection to curl, Blocking Revoked SSL Certificates",
-      "url": "https://cybersecuritynews.com/ubuntu-26-10-adds-protection-to-curl/",
-      "summary": "Ubuntu 26.10 Stonking Stingray adds certificate revocation checks to curl, helping the command-line tool reject HTTPS connections that use revoked certificates. Announced on November 10, the change brings upki support into Ubuntu’s curl package. It marks an initial step toward browser-grade certificate checks across the operating system. ...",
-      "source": "Abinaya via Cyber Security News",
-      "image": "https://www.inoreader.com/camo/sLYYtKCpB0-OiZ595kRgQO5It-Ijs9lAZEIXjox1ANx0,q80,480x400,pf,b64/aHR0cHM6Ly91YnVudHVjb21tdW5pdHkuczMudXMtZWFzdC0yLmFtYXpvbmF3cy5jb20vb3JpZ2luYWwvM1gvMy9hLzNhM2ZhMzk1MzE5YWQyOTM3ZTUyMjJlNDVmMTEyYThlYjYzOWZmOWEuZ2lm"
-    },
-    {
-      "id": "at_51151286666",
-      "title": "Hackers Could Abuse Microsoft Entra AI Agents to Hijack Enterprise Accounts Without Stealing Passwords",
-      "url": "https://cybersecuritynews.com/hackers-could-abuse-microsoft-entra-ai-agents/",
-      "summary": "Researchers have shown that attackers can take over parts of a Microsoft 365 environment by tricking one person into approving a fake AI agent. No password is stolen and no login screen is faked. The technique is called BluePhishing. It targets Microsoft Entra Agent ID, the system that gives AI agents their own identities inside a company’s...",
-      "source": "Tushar Subhra Dutta via Cyber Security News",
-      "image": "https://www.inoreader.com/camo/s0hToeul6aocekxcqmjQn4WfIzTSk6F455GuaKCKv8R0,q80,480x400,pf,b64/aHR0cHM6Ly9ibG9nZ2VyLmdvb2dsZXVzZXJjb250ZW50LmNvbS9pbWcvYi9SMjl2WjJ4bC9BVnZYc0VnVEpPSTh4Z1ZYNWl6c1IwX2w3NzlPUGUzcUpfbWVNZHh0MmJTc21KX1lURXlaLUZEVkFTMHdMTEtUSkhEYWk0THVzZkh2Y01SVXdHbHg3T1JfbWM0WTdkMGJhWUthNVFNc3ZNOERRdXRNS19XSUJySWZSUThQcjBhakZONHo1akF6N1ZTYkdFNnEwNGt5TmwydzBwQnNDUTF4VHFSOUJ6cWNlQ1IzZWl5a2xfQ3EtNVNXaUVqZGxGeHRRQkkvczE2MDAvQmx1ZVBoaXNoaW5nJTIwYXR0YWNrJTIwKFNvdXJjZSUyMC0lMjBQcm9vZlBvaW50KS53ZWJw"
-    },
-    {
-      "id": "at_51151286667",
-      "title": "AI Hacking Frameworks Like ARTEX, PentAGI, and Agent Zero Found Running on Internet-Accessible Servers",
-      "url": "https://cybersecuritynews.com/ai-hacking-frameworks/",
-      "summary": "AI-powered hacking and penetration-testing frameworks are running on internet-accessible servers, with some management consoles left open without authentication. A November 7, 2026, Shodan snapshot recorded 1,428 services matching the ARTEX family, 419 matching PentAGI, and 173 matching Agent Zero, showing how widely these tools have spread....",
-      "source": "Tushar Subhra Dutta via Cyber Security News",
-      "image": "https://www.inoreader.com/camo/sved4YUICj7bg3euGWDfXu2mNuvY_iv_FQDaKgBto9Ys,q80,480x400,pf,b64/aHR0cHM6Ly9jeWJlcnNlY3VyaXR5bmV3cy5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjYvMTEvQUktSGFja2luZy1GcmFtZXdvcmtzLUxpa2UtQVJURVgtUGVudEFHSS1hbmQtQWdlbnQtWmVyby1Gb3VuZC1SdW5uaW5nLW9uLUludGVybmV0LUFjY2Vzc2libGUtU2VydmVycy53ZWJw"
-    },
-    {
-      "id": "at_51151003193",
-      "title": "The EchoLeak flaw taught us that all models are vulnerable to prompt injection",
-      "url": "https://www.scworld.com/perspective/the-echoleak-flaw-taught-us-that-all-models-are-vulnerable-to-prompt-injection",
-      "summary": "Here are five ways to secure AI agents.",
-      "source": "Itay Ravia via Latest articles from SC Magazine",
-      "image": "https://www.inoreader.com/camo/sl8UMnF51lcKjxGXqxJpA_dZukvP7yX6qmJW4MUlXeKA,q80,480x400,pf,b64/aHR0cHM6Ly9maWxlcy5jeWJlcnJpc2thbGxpYW5jZS5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjUvMDQvQWRvYmVTdG9ja185ODU3MDE3MzZfRWRpdG9yaWFsX1VzZV9Pbmx5LmpwZw"
-    },
-    {
-      "id": "at_51150807091",
-      "title": "Critical Zoom Workplace Flaw Could Allow Unauthenticated Remote Privilege Escalation",
-      "url": "https://thehackernews.com/2026/11/critical-zoom-workplace-flaw-could.html",
-      "summary": "Zoom has released software updates to address two security flaws impacting Zoom Workplace for Windows, including a critical bug that could result in privilege escalation on affected systems. The vulnerabilities are listed below - CVE-2026-108186 (CVSS score: 9.6) - An improper input validation vulnerability that could allow an unauthenticated...",
-      "source": "[email protected] (The Hacker News) via The Hacker News",
-      "image": "https://www.inoreader.com/camo/sSgnBXUad5TdkP7b0_SdV_WiX1iA5OwIDctvy3W8iA5U,q80,480x400,pf,b64/aHR0cHM6Ly9ibG9nZ2VyLmdvb2dsZXVzZXJjb250ZW50LmNvbS9pbWcvYi9SMjl2WjJ4bC9BVnZYc0Vob3gwR1VtczZJWHZldDJqUFZvUTVWbFVJWl9WN0MzaVQ0SEkzcVYtUGk3X0tSeWJEeUdLR2xiMlMwWjR1dmloNEVSampuR09uOVByYXYwSHB2cU5OUjNfSFZzN1c1bzB3TTAtWHNUZHA2cGxvTTJPcHRwNWxzOTdDMEpVNURJcXViWS1sTmNMdkxpYTI1WjJjX19JWnQ4V3MxT2pYMHRHYXZieXZiX2RYcmx0U0tqLUhKSGlqUUo5QWREeEVCL3MxNjAwL3pvb20tcHJ2LmpwZw"
-    },
-    {
-      "id": "at_51150749355",
-      "title": "Hackers Could Exploit MCP Server Supply Chain Weaknesses to Steal API Keys and Administrator Credentials",
-      "url": "https://cybersecuritynews.com/hackers-could-exploit-mcp-server/",
-      "summary": "Security teams that run AI coding assistants may be exposing their most powerful credentials without knowing it. A new study shows that Model Context Protocol (MCP) servers can quietly change their own code after they are set up. If an attacker poisons just one package in that chain, they could steal API keys and administrator logins. MCP servers...",
-      "source": "Tushar Subhra Dutta via Cyber Security News",
-      "image": "https://www.inoreader.com/camo/sTa-FMQoL2vqCOMq3CxPTWqlBI3o3nV2eyFuxoHS5KTk,q80,480x400,pf,b64/aHR0cHM6Ly9jeWJlcnNlY3VyaXR5bmV3cy5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjYvMTEvSGFja2Vycy1Db3VsZC1FeHBsb2l0LU1DUC1TZXJ2ZXItU3VwcGx5LUNoYWluLVdlYWtuZXNzZXMtdG8tU3RlYWwtQVBJLUtleXMtYW5kLUFkbWluaXN0cmF0b3ItQ3JlZGVudGlhbHMud2VicA"
-    },
-    {
-      "id": "at_51150530720",
-      "title": "Q&A: Why Cybersecurity Has to Move Beyond Technology",
-      "url": "https://www.itsecurityguru.org/2026/11/11/qa-why-cybersecurity-has-to-move-beyond-technology/?utm_source=rss&utm_medium=rss&utm_campaign=qa-why-cybersecurity-has-to-move-beyond-technology",
-      "summary": "Cybersecurity increasingly sits at the centre of how organisations operate, from protecting critical financial systems to managing identity across cloud environments. For Ben Hanson, the challenge has never been purely technical. Ben Hanson is Global Field CTO and Director of Field Engineering at Zenity, and a former Senior Security Strategist and...",
-      "source": "Guru Writer via IT Security Guru",
-      "image": "https://www.inoreader.com/camo/sqOE-kldquz1jf8nmaudTTCSDZ7QYmcZ0nP9ygGjIU6M,q80,480x400,pf,b64/aHR0cHM6Ly93d3cuaXRzZWN1cml0eWd1cnUub3JnL3dwLWNvbnRlbnQvdXBsb2Fkcy8yMDI2LzExL0ZPUi1FRElUSU5HLTg0LnBuZw"
     }
   ]
 }
