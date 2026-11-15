@@ -1,6 +1,46 @@
 {
-  "updatedAt": "2026-11-15T17:42:53.434232+00:00",
+  "updatedAt": "2026-11-15T22:49:01.247670+00:00",
   "articles": [
+    {
+      "id": "at_51190364014",
+      "title": "Is bad news for Jensen Huang also bad news for the AI industry?",
+      "url": "https://techcrunch.com/2026/11/15/is-bad-news-for-jensen-huang-also-bad-news-for-the-ai-industry/",
+      "summary": "\"Jensen is Nvidia, right? And so much of this economy is riding on Nvidia.\"",
+      "source": "Anthony Ha via AI | TechCrunch",
+      "image": ""
+    },
+    {
+      "id": "at_51190056871",
+      "title": "SNL gathers all the tech tycoons for a lesson in dating and spycraft",
+      "url": "https://techcrunch.com/2026/11/15/snl-gathers-all-the-tech-tycoons-for-a-lesson-in-dating-and-spycraft/",
+      "summary": "While awkward, creepy tech executives have become a recurring theme on Saturday Night Live, this week’s episode gave the cast a chance to show off all their impressions at once.",
+      "source": "Anthony Ha via AI | TechCrunch",
+      "image": "https://www.inoreader.com/camo/sjU7LZ2Z6g-SW8Wxxrp_bozR0KafM7o6BX1yyGnGB88k,q80,480x400,pf,b64/aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNi8xMS9zbmwuanBnP3Jlc2l6ZT0xNjAwLDcwMA"
+    },
+    {
+      "id": "at_51189946088",
+      "title": "Jensen Huang might be plotting a return and more of the latest Nvidia drama",
+      "url": "https://www.theverge.com/tech/1033999/jensen-huang-return-nvidia-megaspeed",
+      "summary": "The drama around Nvidia co-founder and former CEO Jensen Huang is evolving quickly. The latest edition of our Stepback newsletter should get you up to speed, but there have already been a number of new developments since this morning. That includes rumors that Jensen Huang might be trying to find a path back to CEO, and a statement from...",
+      "source": "Terrence O’Brien via The Verge - Artificial Intelligences",
+      "image": "https://www.inoreader.com/camo/s9fhejk0wqWBM2W6d-fBnEodHM-H_7ZCX7sRDMM_wdMI,q80,480x400,pf,b64/aHR0cHM6Ly9wbGF0Zm9ybS50aGV2ZXJnZS5jb20vd3AtY29udGVudC91cGxvYWRzL3NpdGVzLzIvMjAyNi8xMS9OdmlkaWFfSmVuc2VuX2h1YW5nXzAzLmpwZz9xdWFsaXR5PTkwJnN0cmlwPWFsbCZjcm9wPTAsMCwxMDAsMTAw"
+    },
+    {
+      "id": "at_51189673714",
+      "title": "One compromised MCP server can trick an AI agent into misusing tools you already trust",
+      "url": "https://venturebeat.com/orchestration/one-compromised-mcp-server-can-trick-an-ai-agent-into-misusing-tools-you-already-trust",
+      "summary": "Gartner predicts 40% of enterprise applications will include task-specific AI agents by the end of 2026, up from less than 5% in January. The firm named agentic AI oversight its top cybersecurity trend for 2026, flagging identity registration and policy-driven authorization for machine actors as a specific area enterprises are underprepared for.Read...",
+      "source": "via VentureBeat",
+      "image": "https://www.inoreader.com/camo/skBOP-N1xq4YXWvLyDFNEQ3rwN4XUHlgoLpnL4a68Jlc,q80,480x400,pf,b64/aHR0cHM6Ly9pbWFnZXMuY3RmYXNzZXRzLm5ldC9qZHR3cWh6dmMybjEvNDl1RjU1aTlubVVHUGJqTVJxc3NHcC9mMzJlZjhkMDNiNTFhYjZkYmRkMmUzMGJkZDJhNTRkZi91NzI3NzI4OTQ0Ml9BX21vZGVybl9kYXRhX2dyaWRfd2l0aF9nYXRlc19hdF9zZXZlcmFsX2Nvcm5lcnMuXzFkODNhZGUzLWJkMDYtNDA1Yy04YTEzLTMwNzJjZTJlZGU0NF8xLnBuZz93PTE2MDAmcT04MA"
+    },
+    {
+      "id": "at_51189478667",
+      "title": "Congress wants to tighten export rules on AI chips after Nvidia spy scandal",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1033984/congress-export-rules-ai-chips-china",
+      "summary": "Unsurprisingly, following the scandal involving now-former Nvidia CEO Jensen Huang and a suspected Chinese spy, Congress is looking to further restrict exports of AI chips. Both Democrats and Republicans have voiced support for various measures and bills that would tighten rules and have demanded that Huang and other Nvidia leaders testify...",
+      "source": "Terrence O’Brien via The Verge - Artificial Intelligences",
+      "image": "https://www.inoreader.com/camo/sRVS1XQ3h69kgOHf-gASIA-RtlpKOcV6JLl125uJuEDg,q80,480x400,pf,b64/aHR0cHM6Ly9wbGF0Zm9ybS50aGV2ZXJnZS5jb20vd3AtY29udGVudC91cGxvYWRzL3NpdGVzLzIvY2hvcnVzL3VwbG9hZHMvY2hvcnVzX2Fzc2V0L2ZpbGUvMjU1NDU3MTcvU1RLNDgxX1NUSzQzMl9DT05HUkVTU19HT1ZFUk5NRU5UX0NJVlJHSU5JQV9ELmpwZz9xdWFsaXR5PTkwJnN0cmlwPWFsbCZjcm9wPTAsMCwxMDAsMTAw"
+    },
     {
       "id": "at_51187205394",
       "title": "An overview of Jensen Huang’s messy days",
@@ -1560,46 +1600,6 @@
       "summary": "Anthropic confirmed on Tuesday that its IPO could be one of the biggest ever, even while falling short of previous expectations. Its IPO price is expected to be between $70.00 and $78.00 per share, which would put its valuation as high as $1.4 trillion, according to the New York Times. The Wall Street Journal reports that according to...",
       "source": "Stevie Bonifield via The Verge - Artificial Intelligences",
       "image": "https://www.inoreader.com/camo/sSJ1orKm28EA_NsRgQFoaDp6XUEHR_tf5nwq0d_FS2CE,q80,480x400,pf,b64/aHR0cHM6Ly9wbGF0Zm9ybS50aGV2ZXJnZS5jb20vd3AtY29udGVudC91cGxvYWRzL3NpdGVzLzIvMjAyNi8wMS9TVEsyNjlfQU5USFJPUElDXzJfRC5qcGc_cXVhbGl0eT05MCZzdHJpcD1hbGwmY3JvcD0wLDAsMTAwLDEwMA"
-    },
-    {
-      "id": "at_51138082184",
-      "title": "Adobe is going all in on agentic AI",
-      "url": "https://www.theverge.com/tech/1030593/adobe-max-ai-agents-mcp-firefly-assistant-updates",
-      "summary": "Adobe is committing itself to the notion that chatbots and AI agents could be your next design assistant, or even automate creative workflows and repetitive tasks on your behalf. Some of the tools and features announced today at Adobe's Max conference in Miami, Florida, include allowing your preferred third-party AI agents to access and...",
-      "source": "Jess Weatherbed via The Verge - Artificial Intelligences",
-      "image": "https://www.inoreader.com/camo/s-dMHI99GmsFgMcqg1Ww4DwmLvQfmHPdBQxHq3hn2Sf0,q80,480x400,pf,b64/aHR0cHM6Ly9wbGF0Zm9ybS50aGV2ZXJnZS5jb20vd3AtY29udGVudC91cGxvYWRzL3NpdGVzLzIvMjAyNi8xMS9GRi1BSUEtTm8tTG9nby00LmpwZz9xdWFsaXR5PTkwJnN0cmlwPWFsbCZjcm9wPTAsMCwxMDAsMTAw"
-    },
-    {
-      "id": "at_51138080090",
-      "title": "Adobe adds more AI to its products and launches an MCP",
-      "url": "https://techcrunch.com/2026/11/10/adobe-adds-more-ai-to-its-products-and-launches-an-mcp/",
-      "summary": "Adobe is taking on Figma with a new prototype builder tool in Firefly.",
-      "source": "Ivan Mehta via AI | TechCrunch",
-      "image": "https://www.inoreader.com/camo/snjLYXVnbyrkN-jS-3y5hW9sZxQOKqAuOoeGHemHgMqw,q80,480x400,pf,b64/aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNi8xMS9GRi1BSUEtUGxhbk1vZGUtTm8tTG9nby00LmpwZz9yZXNpemU9MTYwMCw5MDA"
-    },
-    {
-      "id": "at_51138080092",
-      "title": "Anthropic sets IPO price range of $70 to $78 per share to reach an implied valuation of $1.404 trillion",
-      "url": "https://techcrunch.com/2026/11/10/anthropic-sets-ipo-price-range-of-70-to-78-per-share-to-reach-an-implied-valuation-of-1-404-trillion/",
-      "summary": "The company could end up being worth a hefty $1.404 trillion if its shares list at the top of the price range, on a fully diluted basis.",
-      "source": "Rebecca Bellan, Ram Iyer via AI | TechCrunch",
-      "image": ""
-    },
-    {
-      "id": "at_51138080094",
-      "title": "Spotify’s AI DJ gets new voices, personalities, and an option for less chatter",
-      "url": "https://techcrunch.com/2026/11/10/spotifys-ai-dj-gets-new-voices-personalities-and-an-option-for-less-chatter/",
-      "summary": "Spotify Premium users can now customize their AI DJ with new voices with different personalities, or turn off the commentary between songs.",
-      "source": "Sarah Perez via AI | TechCrunch",
-      "image": "https://www.inoreader.com/camo/sY2KOlUfsvNW6NiETUPianzH4jm3qWxHGAgoGfrEzLP8,q80,480x400,pf,b64/aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNi8wNS9TcG90aWZ5LUFJLURKLUhlYWRlci5qcGc_dz05Nzg"
-    },
-    {
-      "id": "at_51138043416",
-      "title": "AI’s biggest bottleneck is cost: Companies blame stalled projects on overruns three times as often as on compute shortages",
-      "url": "https://venturebeat.com/infrastructure/ais-biggest-bottleneck-is-cost-companies-blame-stalled-projects-on-overruns-three-times-as-often-as-on-compute-shortages",
-      "summary": "Cost overruns stalled AI projects more than three times as often as computing-capacity shortages among respondents to VentureBeat’s October survey.Read more",
-      "source": "[email protected] (Rob Strechay) via VentureBeat",
-      "image": "https://www.inoreader.com/camo/sumIU5ExppQcW7bRnuk2o4FZWpEUjSk6djvGjkbNIV8c,q80,480x400,pf,b64/aHR0cHM6Ly9pbWFnZXMuY3RmYXNzZXRzLm5ldC9qZHR3cWh6dmMybjEvNXJVRjRvTEh2Tzk2SGdJYkczcUdpei80MWMxZjk2ZDhhZDljODMwY2M1ZTAyY2I5MzViMDk1Yy9HZW1pbmlfR2VuZXJhdGVkX0ltYWdlX2t4bDVsMGt4bDVsMGt4bDUuanBlZz93PTE2MDAmcT04MA"
     }
   ]
 }

@@ -1,6 +1,22 @@
 {
-  "updatedAt": "2026-11-15T17:42:53.443127+00:00",
+  "updatedAt": "2026-11-15T22:49:01.420453+00:00",
   "articles": [
+    {
+      "id": "at_51189205392",
+      "title": "FBI warns ARTEX AI hacking tool is powering global cyberattacks",
+      "url": "https://www.bleepingcomputer.com/news/security/fbi-warns-artex-ai-hacking-tool-is-powering-global-cyberattacks/",
+      "summary": "The FBI is warning that hackers are using an AI-powered penetration testing framework called ARTEX to automate cyberattacks against organizations worldwide, including a recent ConnectWise supply-chain breach that compromised Microsoft 365 customer environments. [...]",
+      "source": "Lawrence Abrams via Bleeping Computer",
+      "image": "https://www.inoreader.com/camo/sAHORYybkQEfZBMqS2xoNQP16Px1JEDNlEKgac_ml-ro,q80,480x400,pf,b64/aHR0cHM6Ly93d3cuYmxlZXBzdGF0aWMuY29tL2NvbnRlbnQvaGwtaW1hZ2VzLzIwMjUvMTAvMjMvQUktMi5qcGc"
+    },
+    {
+      "id": "at_51189130572",
+      "title": "Meta Fined €805 Million in Italy Over Facebook’s Default Photo Gallery Access",
+      "url": "https://securityaffairs.com/203174/laws-and-regulations/meta-fined-e805-million-in-italy-over-facebooks-default-photo-gallery-access.html",
+      "summary": "Italy fines Meta €805 million over Facebook’s access to Android users’ photo galleries without specific consent, affecting around 20 million people. Italy’s data protection authority, the Garante, has fined Meta Platforms Ireland Limited €805 million. The reason is that the Facebook app for Android reached into photos, videos, and their metadata...",
+      "source": "Pierluigi Paganini via Security Affairs",
+      "image": "https://www.inoreader.com/camo/s4mZ4Pyv-ZGSxFqu2bj6SOKvfx-S4DVqSMddgIXYZ_zs,q80,480x400,pf,b64/aHR0cHM6Ly9zZWN1cml0eWFmZmFpcnMuY29tL3dwLWNvbnRlbnQvdXBsb2Fkcy8yMDI2LzA4L21ldGEtbG9nby5qcGc"
+    },
     {
       "id": "at_51188401195",
       "title": "SECURITY AFFAIRS AI-CYBERSECURITY NEWSLETTER ROUND 8",
@@ -1584,22 +1600,6 @@
       "summary": "A new ransomware group called Citrus is using Windows Group Policy to push its malware across entire company networks and switch off Microsoft Defender first. Group Policy is a trusted Windows tool that admins use to manage many computers at once. Here, the attackers turn it into a delivery system. The group breaks in through stolen contractor...",
       "source": "Tushar Subhra Dutta via Cyber Security News",
       "image": "https://www.inoreader.com/camo/suopnZHU8GiIPxuw8ZKYSKlFbKJ0IUdD-SsOvM8eQlog,q80,480x400,pf,b64/aHR0cHM6Ly9ibG9nZ2VyLmdvb2dsZXVzZXJjb250ZW50LmNvbS9pbWcvYi9SMjl2WjJ4bC9BVnZYc0VpYzBhUnRjaWtWak16MXVNcTJQb0Q1cGpnVmtHYWVhZnRydHZGRWFlRlI3c0REekdlaGZEVHFuWXBFalM1cUpPdEo0ZUVoRWVldXUtWm9XMDNwQ1J1dFkwV1Rab2x2R1lId0lTX21QcldwYVdKS2FZTmpfdGJVVTkyazBpcVN1NEpJdXFGZkVaV2dNQ3F2T0VFdmF4UmtNcDljMUNrcjdQOGFleVNBMnZIMXNQaDJ0WnlmcnpQdVc1bEdxaEkvczE2MDAvQ2l0cnVzJTIwUmFuc29td2FyZSUyMExhdW5jaCUyMChTb3VyY2UlMjAtJTIwU2VjdXJlbGlzdCkud2VicA"
-    },
-    {
-      "id": "at_51155790487",
-      "title": "Apache Patches Critical HTTP/2 Flaw Allowing Remote Code Execution on Web Servers",
-      "url": "https://cybersecuritynews.com/apache-patches-critical-http-2-flaw/",
-      "summary": "Apache has fixed a critical bug in its HTTP/2 module that could let a remote attacker run code on a web server. The flaw is tracked as CVE-2026-119618 and affects mod_http2. The fix came on November 11, 2026, in Apache HTTP Server 2.4.71. The bug sits in a function called assign_headers(). Apache says it is a concurrency problem, where shared...",
-      "source": "Abinaya via Cyber Security News",
-      "image": "https://www.inoreader.com/camo/swcpMxnCTpE-pgMQyVR98cKPEhtxfKnjlZmuLa47vqms,q80,480x400,pf,b64/aHR0cHM6Ly9jeWJlcnNlY3VyaXR5bmV3cy5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjYvMTEvQXBhY2hlLVBhdGNoZXMtQ3JpdGljYWwtSFRUUF8yLUZsYXctQWxsb3dpbmctUmVtb3RlLUNvZGUtRXhlY3V0aW9uLW9uLVdlYi1TZXJ2ZXJzLndlYnA"
-    },
-    {
-      "id": "at_51155644158",
-      "title": "Critical Apache HTTP/2 Flaw Could Let Unauthenticated Attackers Execute Code Remotely",
-      "url": "https://thehackernews.com/2026/11/critical-apache-http2-flaw-could-let.html",
-      "summary": "A critical flaw in Apache HTTP Server's HTTP/2 module, mod_http2, can let a remote attacker run code on the server. Tracked as CVE-2026-119618, it affects versions 2.4.55 through 2.4.70 and is fixed in version 2.4.71, released yesterday. Only servers with HTTP/2 enabled are affected, according to Red Hat, which ships the server as part of Red Hat...",
-      "source": "[email protected] (The Hacker News) via The Hacker News",
-      "image": "https://www.inoreader.com/camo/sex9bq45gm-SNolTE-g2GhUOQ4wV40jtcXig7dj8lD_4,q80,480x400,pf,b64/aHR0cHM6Ly9ibG9nZ2VyLmdvb2dsZXVzZXJjb250ZW50LmNvbS9pbWcvYi9SMjl2WjJ4bC9BVnZYc0VqTHBpX3VONlBtRzJHbjFhZ05Nc09yc0NwMzI0ZUgtdXRLa0RsX1NQZTMyZ2dqY1dGUGp4WlN5ZUExS3ZBdHZJOVNRNFZBTl96c3N2ZEpMSjU5SVhFOF8tTWF0UE95RlhZLUZjd3RMN0h0Zkt5VzNNdHNLd2dsSWUyWDYyV0JPY1VrUE12LWtsTTFoOFQyRUJNV0ZPV3lQRzg5YmZiQUhTNWJ5eWZYQVRYTl9sVVVKV21VR1dDaGVreVd4VFEvczE2MDAvYXBhY2hlLWh0dHAuanBn"
     }
   ]
 }
