@@ -1,6 +1,78 @@
 {
-  "updatedAt": "2026-11-15T10:55:05.996828+00:00",
+  "updatedAt": "2026-11-15T17:42:53.443127+00:00",
   "articles": [
+    {
+      "id": "at_51188401195",
+      "title": "SECURITY AFFAIRS AI-CYBERSECURITY NEWSLETTER ROUND 8",
+      "url": "https://securityaffairs.com/203165/ai/security-affairs-ai-cybersecurity-newsletter-round-8.html",
+      "summary": "Security Affairs AI-CYBERSECURITY newsletter includes a collection of the best articles and research on AI in the international landscape Artificial intelligence is rapidly changing cybersecurity, reshaping both the techniques used by attackers and the tools available to defenders. AI agents can automate tasks, analyze large amounts of data,...",
+      "source": "Pierluigi Paganini via Security Affairs",
+      "image": "https://www.inoreader.com/camo/s42GZOiAxz8ZmoIpg3wtjxiAD2Hr5eczP5aXTEmEJRsQ,q80,480x400,pf,b64/aHR0cHM6Ly9zZWN1cml0eWFmZmFpcnMuY29tL3dwLWNvbnRlbnQvdXBsb2Fkcy8yMDI2LzA5L1NlY3VyaXR5LUFmZmFpcnMtTmV3c0xldHRlci1BSS1DeWJlci5qcGc"
+    },
+    {
+      "id": "at_51188401200",
+      "title": "SECURITY AFFAIRS MALWARE NEWSLETTER ROUND 123",
+      "url": "https://securityaffairs.com/203156/malware/security-affairs-malware-newsletter-round-123.html",
+      "summary": "Security Affairs Malware newsletter includes a collection of the best articles and research on malware in the international landscape Malware Newsletter Exchange for breakfast: Turla’s Cereal tricks are not for kids Inside an AhsayCBS Intrusion: Hidden Webshells, a CryptoMiner, and a C2 Implant Not All That Glitters Is...",
+      "source": "Pierluigi Paganini via Security Affairs",
+      "image": ""
+    },
+    {
+      "id": "at_51188107825",
+      "title": "Researchers Find Six 0-Days Allowing Unauthorized Takeover of Supermarket Refrigeration Systems",
+      "url": "https://cybersecuritynews.com/supermarket-refrigeration-systems-0-day/",
+      "summary": "Six pre-authentication remote code execution flaws were found in the Danfoss AK-SM800A supermarket fridge controller, allowing remote takeover in about an hour, according to Midnight Blue researcher Carlo Meijer. The flaws are stack-based buffer overflows. They affect every firmware version up to and including 5.3.2, and no CVE numbers have been...",
+      "source": "Abinaya via Cyber Security News",
+      "image": "https://www.inoreader.com/camo/sJORo-iCmf53Z2vXcRCL-qy4MHRsAjDdxxJGykVuF2Hs,q80,480x400,pf,b64/aHR0cHM6Ly9jeWJlcnNlY3VyaXR5bmV3cy5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjYvMTEvU3VwZXJtYXJrZXQtUmVmcmlnZXJhdGlvbi1TeXN0ZW1zLndlYnA"
+    },
+    {
+      "id": "at_51188083121",
+      "title": "TSMC employee data breach linked to cloud provider",
+      "url": "https://www.bleepingcomputer.com/news/security/tsmc-employee-data-breach-linked-to-cloud-provider/",
+      "summary": "Taiwan Semiconductor Manufacturing Company (TSMC) confirmed that personal employee data has been leaked online after a threat actor put 6.9GB of information allegedly stolen from the company up for auction. [...]",
+      "source": "Bill Toulas via Bleeping Computer",
+      "image": "https://www.inoreader.com/camo/sFhtpr3EMH-UQ6i2JjAqrC-AZ4yBRwm9N7q9hvvyTmb4,q80,480x400,pf,b64/aHR0cHM6Ly93d3cuYmxlZXBzdGF0aWMuY29tL2NvbnRlbnQvaGwtaW1hZ2VzLzIwMjYvMTEvMTMvVFNNQy5qcGc"
+    },
+    {
+      "id": "at_51188020351",
+      "title": "Security Affairs newsletter Round 604 by Pierluigi Paganini – INTERNATIONAL EDITION",
+      "url": "https://securityaffairs.com/203140/breaking-news/security-affairs-newsletter-round-604-by-pierluigi-paganini-international-edition.html",
+      "summary": "A new round of the weekly Security Affairs newsletter has arrived! Every week, the best security articles from Security Affairs are free in your email box. Enjoy a new round of the weekly SecurityAffairs newsletter, including international press. Extortion Group Claims Theft of Nearly One Billion Expedia Traveler RecordsU.S. CISA adds...",
+      "source": "Pierluigi Paganini via Security Affairs",
+      "image": "https://www.inoreader.com/camo/sipvOyBoxz2AXi2WIy_ZqJtpjI--D-5iZYnS_Khjf8nk,q80,480x400,pf,b64/aHR0cHM6Ly9zZWN1cml0eWFmZmFpcnMuY29tL3dwLWNvbnRlbnQvdXBsb2Fkcy8yMDI2LzA5L3NlY3VyaXR5YWZmYWlycy1uZXdzbGV0dGVyLmpwZw"
+    },
+    {
+      "id": "at_51187167026",
+      "title": "Pentagon Renames CDAO ‘Super Intelligence Office’",
+      "url": "https://www.securityweek.com/pentagon-renames-cdao-super-intelligence-office/",
+      "summary": "The move follows President Trump’s order to replace “artificial intelligence” with “super intelligence” in executive branch communications. The post Pentagon Renames CDAO ‘Super Intelligence Office’ appeared first on SecurityWeek.",
+      "source": "SecurityWeek News via SecurityWeek",
+      "image": "https://www.inoreader.com/camo/s9TX-UURw1x719-VBpmd5sG28wtbNS6orMbdZiNTDMSs,q80,480x400,pf,b64/aHR0cHM6Ly93d3cuc2VjdXJpdHl3ZWVrLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNi8xMS9TSV9EZXBhcnRtZW50LW9mLVdhci5wbmc"
+    },
+    {
+      "id": "at_51186861738",
+      "title": "Italy Fines Meta €805 Million Over Facebook's Android Gallery Access Without Explicit Consent",
+      "url": "https://thehackernews.com/2026/11/italy-fines-meta-805-million-over.html",
+      "summary": "Meta was fined €805 million in Italy yesterday over a Facebook for Android feature that suggests photos and videos from users' phone galleries for them to post. The Garante, Italy's data protection authority, found that the feature was enabled by default and that the app accessed Italian users' photos, videos, and related metadata without their explicit...",
+      "source": "[email protected] (The Hacker News) via The Hacker News",
+      "image": "https://www.inoreader.com/camo/syE3Bg3eA8LXpoRXd3-M1uh1gIF3q9Ns7bhder2kOTzI,q80,480x400,pf,b64/aHR0cHM6Ly9ibG9nZ2VyLmdvb2dsZXVzZXJjb250ZW50LmNvbS9pbWcvYi9SMjl2WjJ4bC9BVnZYc0VqZFRDanBic0czRHA2MkpNMUtacWZTdlpwdUJueHdhQ3hYc3BsVzNkQXQyYjRZbTBLQVdQZnhrSGY0RFQtMDJWSzNqSkVTTG1nYXNkRTZEMzZxR2VnV3U3ZGs5WVNMTjREWnhSVnNnck05bElFWFhIVXZRMFZ6YVoxX2dGcXBqdEE0Y1Azcmx0ODJnNVduSzJzWE5aSEpkNUZfckVrNFZTVEduTUtPdVh6aVNNMVI4NVZxaHdheTNsYWp3VEEvczE2MDAvZmFjZWJvb2stZmluZS5qcGc"
+    },
+    {
+      "id": "at_51186651939",
+      "title": "Data Breach at La Poste Subsidiary Maileva Affects 22 Million People in France",
+      "url": "https://securityaffairs.com/203126/data-breach/data-breach-at-la-poste-subsidiary-maileva-affects-22-million-people-in-france.html",
+      "summary": "A cyberattack on La Poste subsidiary Maileva exposed the names and postal addresses of 22 million people, including patients and tenants. Maileva, a subsidiary of the La Poste group, was hit in mid-September in one of the biggest cyberattacks France has seen. La Poste confirmed it to AFP.. The stolen data includes first names, last names...",
+      "source": "Pierluigi Paganini via Security Affairs",
+      "image": "https://www.inoreader.com/camo/s9YgaxoeGsG-3qxqUHlF2bMSXKtCWu8odTrTveGtNLRY,q80,480x400,pf,b64/aHR0cHM6Ly9zZWN1cml0eWFmZmFpcnMuY29tL3dwLWNvbnRlbnQvdXBsb2Fkcy8yMDI2LzExL2ltYWdlLTM1LnBuZw"
+    },
+    {
+      "id": "at_51186537439",
+      "title": "Meta Fined $887 Million in Italy Over Android Gallery Photos and Videos on Facebook",
+      "url": "https://www.securityweek.com/meta-fined-887-million-in-italy-over-android-gallery-photos-and-videos-on-facebook/",
+      "summary": "The directive protects smartphones as part of a person’s private sphere and requires “free and informed consent” for such access, the authority said. The post Meta Fined $887 Million in Italy Over Android Gallery Photos and Videos on Facebook appeared first on SecurityWeek.",
+      "source": "Associated Press via SecurityWeek",
+      "image": "https://www.inoreader.com/camo/s8F3oTaf0RCRr6nez7N-JewMpM8nSrzVDHAiVARnCl24,q80,480x400,pf,b64/aHR0cHM6Ly93d3cuc2VjdXJpdHl3ZWVrLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMy8wMy9NZXRhLUZhY2Vib29rLWUxNzM5NTM5MjEyMzkxLmpwZw"
+    },
     {
       "id": "at_51185944010",
       "title": "Stolen Fireworks AI Key Led to Cursor Data Breach and Trojanized Claude Code Extension",
@@ -1528,78 +1600,6 @@
       "summary": "A critical flaw in Apache HTTP Server's HTTP/2 module, mod_http2, can let a remote attacker run code on the server. Tracked as CVE-2026-119618, it affects versions 2.4.55 through 2.4.70 and is fixed in version 2.4.71, released yesterday. Only servers with HTTP/2 enabled are affected, according to Red Hat, which ships the server as part of Red Hat...",
       "source": "[email protected] (The Hacker News) via The Hacker News",
       "image": "https://www.inoreader.com/camo/sex9bq45gm-SNolTE-g2GhUOQ4wV40jtcXig7dj8lD_4,q80,480x400,pf,b64/aHR0cHM6Ly9ibG9nZ2VyLmdvb2dsZXVzZXJjb250ZW50LmNvbS9pbWcvYi9SMjl2WjJ4bC9BVnZYc0VqTHBpX3VONlBtRzJHbjFhZ05Nc09yc0NwMzI0ZUgtdXRLa0RsX1NQZTMyZ2dqY1dGUGp4WlN5ZUExS3ZBdHZJOVNRNFZBTl96c3N2ZEpMSjU5SVhFOF8tTWF0UE95RlhZLUZjd3RMN0h0Zkt5VzNNdHNLd2dsSWUyWDYyV0JPY1VrUE12LWtsTTFoOFQyRUJNV0ZPV3lQRzg5YmZiQUhTNWJ5eWZYQVRYTl9sVVVKV21VR1dDaGVreVd4VFEvczE2MDAvYXBhY2hlLWh0dHAuanBn"
-    },
-    {
-      "id": "at_51155454976",
-      "title": "ScreenConnect Attacks Target at Least 288 Endpoints Across 48 Organizations With Rogue Clients",
-      "url": "https://thehackernews.com/2026/11/screenconnect-attacks-target-at-least.html",
-      "summary": "ConnectWise has taken the precautionary step of disabling five third-party extensions in partner environments following reports of unauthorized access. In an advisory posted on its site, the company said there is no evidence that the incident involves a compromise of its infrastructure or a vulnerability in the ScreenConnect software. \"Our initial...",
-      "source": "[email protected] (The Hacker News) via The Hacker News",
-      "image": "https://www.inoreader.com/camo/sLlBe3_H0poKCpXlawPze2artGTAZg1HOHneEhCUGyAk,q80,480x400,pf,b64/aHR0cHM6Ly9ibG9nZ2VyLmdvb2dsZXVzZXJjb250ZW50LmNvbS9pbWcvYi9SMjl2WjJ4bC9BVnZYc0VnRWZ6N0luWW04VU8tcDM1SzZCNGowMDlCeEEtTU83RGRaMngxZC14aHlwaGVuaHlwaGVuUHhOblZzODQ4SWxnQUdlbG11Vy1zUGJFWmJFOC1MOV9LV0VZTkhfTTVIYVRNeTE0TUZkODdBN1lrcUhBekRLYWFtS09kcFpLUjlvd0wzbkszZ2JxQW5ndldhNkE0TkMxS0sxbDBpZTlGSzczMUxmS1BJMGxndWlHUTFiNzFzSElaajJrUjJIM0ktR0pqU1BZNGtKVS9zMTYwMC9zY3JlZW5jb25uZWN0LWhhY2suanBn"
-    },
-    {
-      "id": "at_51155376222",
-      "title": "Hackers Hijack ConnectWise ScreenConnect to Deploy SCKit Malware Across 288 Devices at 48 Organizations",
-      "url": "https://cybersecuritynews.com/connectwise-screenconnect-hijacked/",
-      "summary": "Attackers have taken over cloud-hosted ScreenConnect panels and used them to push a custom toolkit called SCKit to at least 288 managed devices across 48 organizations. Security firm Huntress first saw the activity on November 11, 2026, and says all 288 hosts were hit within about 90 minutes. Huntress reports that about one third of them were...",
-      "source": "Guru Baran via Cyber Security News",
-      "image": "https://www.inoreader.com/camo/sv56tLuhjoCmPGVRk1Sa6aY9g1jCL4pRtN3s9DWIE7Rc,q80,480x400,pf,b64/aHR0cHM6Ly9jeWJlcnNlY3VyaXR5bmV3cy5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjYvMTEvQ29ubmVjdFdpc2UtU2NyZWVuQ29ubmVjdC1IaWphY2tlZC53ZWJw"
-    },
-    {
-      "id": "at_51155062177",
-      "title": "Node.js Fixes 16 Security Flaws That Could Expose TLS Private Keys and Crash Servers Remotely",
-      "url": "https://cybersecuritynews.com/node-js-fixes-16-security-vulnerabilities/",
-      "summary": "The Node.js project has released fixes for 16 security flaws across its 22.x, 24.x and 26.x lines. Seven are rated high, six medium, and three low. The official advisory says the patched builds are v22.23.5, v24.22.3 and v26.13.1. The update also refreshes three bundled parts: llhttp, undici, and sqlite. Memory Leak Could Expose TLS Private Keys...",
-      "source": "Guru Baran via Cyber Security News",
-      "image": "https://www.inoreader.com/camo/sS1FTRiQWAkC703a6Rk056rfqyliFb79trcpI8sS8Bxc,q80,480x400,pf,b64/aHR0cHM6Ly9jeWJlcnNlY3VyaXR5bmV3cy5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjYvMTEvTm9kZS5qcy1GaXhlcy0xNi1TZWN1cml0eS1WdWxuZXJhYmlsaXRpZXMud2VicA"
-    },
-    {
-      "id": "at_51154005961",
-      "title": "Google releases open-source agent substrate for secure AI sandboxing",
-      "url": "https://www.scworld.com/brief/google-releases-open-source-agent-substrate-for-secure-ai-sandboxing",
-      "summary": "As reported by Silicon Angle, Google LLC has introduced Agent Substrate, an open-source project designed to provide secure, efficient sandboxing for autonomous AI agents.",
-      "source": "SC Staff via Latest articles from SC Magazine",
-      "image": "https://www.inoreader.com/camo/s3QUpXUGQUbpegCt1ErBe92rCawxnq7rShCr205vgjQ4,q80,480x400,pf,b64/aHR0cHM6Ly9maWxlcy5jeWJlcnJpc2thbGxpYW5jZS5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjQvMDkvMDkyNl9nb29nbGVfbG9nby5qcGc"
-    },
-    {
-      "id": "at_51154005962",
-      "title": "Researchers link Qilin ransomware administrator to St. Petersburg man",
-      "url": "https://www.scworld.com/brief/researchers-link-qilin-ransomware-administrator-to-st-petersburg-man",
-      "summary": "Per Krebs on Security, the cybercrime group Qilin has become the most active ransomware-as-a-service operation, with researchers identifying the group's administrator as a 36-year-old man residing in St. Petersburg, Russia.",
-      "source": "SC Staff via Latest articles from SC Magazine",
-      "image": "https://www.inoreader.com/camo/sSgSi85v0AhVC6zgbvNnRS-5D-WFIdB_JHjFXcok-UF4,q80,480x400,pf,b64/aHR0cHM6Ly9maWxlcy5jeWJlcnJpc2thbGxpYW5jZS5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjUvMDcvQWRvYmVTdG9ja181NTk2NTg5ODAuanBn"
-    },
-    {
-      "id": "at_51154005963",
-      "title": "Google DeepMind uses AI to verify Signal protocol security",
-      "url": "https://www.scworld.com/brief/google-deepmind-uses-ai-to-verify-signal-protocol-security",
-      "summary": "Google DeepMind researchers have successfully utilized agentic AI to mathematically prove the cryptographic guarantees of the Signal protocol, based on information published by Ars Technica.",
-      "source": "SC Staff via Latest articles from SC Magazine",
-      "image": "https://www.inoreader.com/camo/sLVffJF_YFIQsxLQLYJbrnl5isjCHCbf9ra8YGb0bUhg,q80,480x400,pf,b64/aHR0cHM6Ly9maWxlcy5jeWJlcnJpc2thbGxpYW5jZS5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjUvMDUvMDUxMzI1X3NpZ25hbF9hcHAuanBn"
-    },
-    {
-      "id": "at_51154005964",
-      "title": "Cloud recovery startup Dreeze secures $33 million in seed funding",
-      "url": "https://www.scworld.com/brief/cloud-recovery-startup-dreeze-secures-33-million-in-seed-funding",
-      "summary": "As noted by Security Week, the cloud application recovery startup Dreeze has emerged from stealth mode after securing $33 million in a seed funding round.",
-      "source": "SC Staff via Latest articles from SC Magazine",
-      "image": "https://www.inoreader.com/camo/s5SuzX48u5O4FKfHBU9Fyiht5TNvhIHCwc8iqJcuIR0U,q80,480x400,pf,b64/aHR0cHM6Ly9maWxlcy5jeWJlcnJpc2thbGxpYW5jZS5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjMvMDgvbW9uZXktcGl4YWJheS0xMDI0eDI5NC0zLmpwZw"
-    },
-    {
-      "id": "at_51154005965",
-      "title": "CISA adds IBM, SignalWire, OpenSSH and GPUStack flaws to known exploited vulnerabilities catalog",
-      "url": "https://www.scworld.com/brief/cisa-adds-ibm-signalwire-openssh-and-gpustack-flaws-to-known-exploited-vulnerabilities-catalog",
-      "summary": "Coverage from Security Affairs indicates that the Cybersecurity and Infrastructure Security Agency has added four critical vulnerabilities to its Known Exploited Vulnerabilities catalog.",
-      "source": "SC Staff via Latest articles from SC Magazine",
-      "image": "https://www.inoreader.com/camo/sL6iyvVSSHBurGS0oTd7iypn4nymJeL_rOMZ7ZCsWud8,q80,480x400,pf,b64/aHR0cHM6Ly9maWxlcy5jeWJlcnJpc2thbGxpYW5jZS5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjQvMTIvMTIxODI0X2Npc2FfbW9iaWxlLmpwZw"
-    },
-    {
-      "id": "at_51154005966",
-      "title": "Intel and AMD release security updates for over 200 vulnerabilities",
-      "url": "https://www.scworld.com/brief/intel-and-amd-release-security-updates-for-over-200-vulnerabilities",
-      "summary": "Based on information from Security Week, Intel and Advanced Micro Devices have published more than 50 new security advisories addressing over 200 vulnerabilities across their product lineups.",
-      "source": "SC Staff via Latest articles from SC Magazine",
-      "image": "https://www.inoreader.com/camo/sbo4D5wpQVbuteLmHD3ZLFzIcoZfUxMAIHR_IY4Sd06A,q80,480x400,pf,b64/aHR0cHM6Ly9maWxlcy5jeWJlcnJpc2thbGxpYW5jZS5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjYvMDQvQWRvYmVTdG9ja18zMTc5MTU1MTMuanBn"
     }
   ]
 }
