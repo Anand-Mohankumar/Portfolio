@@ -1,6 +1,14 @@
 {
-  "updatedAt": "2026-11-14T22:25:10.390333+00:00",
+  "updatedAt": "2026-11-15T02:40:29.581081+00:00",
   "articles": [
+    {
+      "id": "at_51183741513",
+      "title": "Where was Nvidia’s security team?",
+      "url": "https://techcrunch.com/2026/11/14/where-was-nvidias-security-team/",
+      "summary": "Nvidia’s security chief quietly left in August, and now that CEO Jensen Huang has stepped down over his relationships, including one with an executive at a company suspected of funneling chips to China, a former intelligence officer says it’s the kind of leak that runs everyday conversations, which most corporate security teams are poorly equipped to...",
+      "source": "Connie Loizos via AI | TechCrunch",
+      "image": "https://www.inoreader.com/camo/say4d3PXIjEta--827oD5D27BR1mcDD2GTYhUReiVq5Y,q80,480x400,pf,b64/aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNi8xMS9KZW5zZW4tSHVhbmctMS5qcGc_dz0xMDI0"
+    },
     {
       "id": "at_51183014348",
       "title": "Elon Musk, other tech execs sign petition calling on Nvidia to reinstate Jensen Huang",
@@ -1592,14 +1600,6 @@
       "summary": "Kora is set to launch as a free-to-use alternative to Windows, targeting users who rely heavily on AI models and agents.",
       "source": "Jagmeet Singh via AI | TechCrunch",
       "image": "https://www.inoreader.com/camo/sfiqV9p0RBDv6R4cYcrNMq0m6e3813wczPG_UXAy7d-A,q80,480x400,pf,b64/aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNi8xMS9rb3JhLW9zLmpwZz9yZXNpemU9MTYwMCwxMDY3"
-    },
-    {
-      "id": "at_51137973858",
-      "title": "Photoshop, Lightroom, and Premiere are making it easier to remove things",
-      "url": "https://www.theverge.com/tech/1030653/adobe-max-2026-photoshop-premiere-removal-updates",
-      "summary": "Photoshop’s Quick Compare feature lets you quickly review a before-and-after comparison of edits. | Image: Adobe Adobe is expanding its Creative Cloud apps and Firefly AI platform with new capabilities that aim to make design and editing projects faster and less complicated. Some of the announcements from Adobe's Max event today include...",
-      "source": "Jess Weatherbed via The Verge - Artificial Intelligences",
-      "image": "https://www.inoreader.com/camo/sveBenDyuH9lDai0AYWtM2QoYK8whq09clIruQGjO-WI,q80,480x400,pf,b64/aHR0cHM6Ly9wbGF0Zm9ybS50aGV2ZXJnZS5jb20vd3AtY29udGVudC91cGxvYWRzL3NpdGVzLzIvMjAyNi8xMS9QUy1SZW1vdmUtTm8tTG9nby0yLmpwZz9xdWFsaXR5PTkwJnN0cmlwPWFsbCZjcm9wPTAsMCwxMDAsMTAw"
     }
   ]
 }
