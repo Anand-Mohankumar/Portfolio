@@ -1,6 +1,14 @@
 {
-  "updatedAt": "2026-11-15T02:40:29.671585+00:00",
+  "updatedAt": "2026-11-15T10:55:05.996828+00:00",
   "articles": [
+    {
+      "id": "at_51185944010",
+      "title": "Stolen Fireworks AI Key Led to Cursor Data Breach and Trojanized Claude Code Extension",
+      "url": "https://thehackernews.com/2026/11/stolen-fireworks-ai-key-led-to-cursor.html",
+      "summary": "The compromise of Anthropic's official Claude Code extension on Cursor's extension marketplace was the result of the theft of an access key that was exposed in the wake of a breach targeting Fireworks AI. \"An attacker obtained an access key we had issued to Fireworks,\" Cursor said in a Friday update. \"The key was exposed by Fireworks, and the attacker...",
+      "source": "[email protected] (The Hacker News) via The Hacker News",
+      "image": "https://www.inoreader.com/camo/sH3IdHNpgC0JWUtMS-T9qP7O4re88huOiKQqrsyqSdnM,q80,480x400,pf,b64/aHR0cHM6Ly9ibG9nZ2VyLmdvb2dsZXVzZXJjb250ZW50LmNvbS9pbWcvYi9SMjl2WjJ4bC9BVnZYc0VnMTZBQ2F3Ykc3clBfa1QtOEJvbzR4ZFRqZTNCZVRXeUZTbk5Yd0hocjVjdnkyLTFYM0xqaHJjMUl1WmxzZVdkNTV0TjhFMXlqUTlsZGhUbmpXVFUtR0pCcFhfWmVuMzZZaUxRR3NSU1JBb3RlcUh5eHg3bW5fdzBRZ0xmTUtETEl0QTRwX2pwSGFqdWNiZ2xMbkNSX3pXQllfdDgyWXZGa0xhOWRRRkJmalAxQnJUbHJOZFl1ZnNHTVNaaUduL3MxNjAwL2N1cnNvci5qcGc"
+    },
     {
       "id": "at_51181628318",
       "title": "Cursor confirms security breach led to malicious Claude Code extension",
@@ -1592,14 +1600,6 @@
       "summary": "Based on information from Security Week, Intel and Advanced Micro Devices have published more than 50 new security advisories addressing over 200 vulnerabilities across their product lineups.",
       "source": "SC Staff via Latest articles from SC Magazine",
       "image": "https://www.inoreader.com/camo/sbo4D5wpQVbuteLmHD3ZLFzIcoZfUxMAIHR_IY4Sd06A,q80,480x400,pf,b64/aHR0cHM6Ly9maWxlcy5jeWJlcnJpc2thbGxpYW5jZS5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjYvMDQvQWRvYmVTdG9ja18zMTc5MTU1MTMuanBn"
-    },
-    {
-      "id": "at_51154005968",
-      "title": "Japan faces rising cybersecurity threats to its national ID infrastructure",
-      "url": "https://www.scworld.com/brief/japan-faces-rising-cybersecurity-threats-to-its-national-id-infrastructure",
-      "summary": "Japan is grappling with a significant increase in data breaches targeting the ecosystem surrounding its My Number national identification system, according to a recent report by Biometric Update.",
-      "source": "SC Staff via Latest articles from SC Magazine",
-      "image": "https://www.inoreader.com/camo/sBDKM9-S55dDL2JDLQOt6zl2Tuoo_GVMMZbhwKQhum4w,q80,480x400,pf,b64/aHR0cHM6Ly9maWxlcy5jeWJlcnJpc2thbGxpYW5jZS5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjYvMTAvMTAxMjI2X2phcGFuX2ZsYWdfY3liZXIuanBn"
     }
   ]
 }
