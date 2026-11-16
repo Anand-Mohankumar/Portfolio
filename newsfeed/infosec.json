@@ -1,6 +1,230 @@
 {
-  "updatedAt": "2026-11-16T02:44:13.325949+00:00",
+  "updatedAt": "2026-11-16T11:20:35.481204+00:00",
   "articles": [
+    {
+      "id": "at_51195282798",
+      "title": "Recent UnrealIRCd Vulnerability Exploited in Attacks",
+      "url": "https://www.securityweek.com/recent-unrealircd-vulnerability-exploited-in-attacks/",
+      "summary": "Tracked as CVE-2026-114713, the high-severity flaw allows attackers to execute commands with server/IRCOp privileges. The post Recent UnrealIRCd Vulnerability Exploited in Attacks appeared first on SecurityWeek.",
+      "source": "Ionut Arghire via SecurityWeek",
+      "image": ""
+    },
+    {
+      "id": "at_51195206907",
+      "title": "AI is not killing bug bounty, can an AI ever have an \"Identity\", and the news - Michiel Prins, Douglas Day - ESW #485",
+      "url": "https://www.scworld.com/podcast-segment/15218-ai-is-not-killing-bug-bounty-can-an-ai-ever-have-an-identity-and-the-news-michiel-prins-douglas-day-esw-485",
+      "summary": "",
+      "source": "Adrian Sanabria via Latest articles from SC Magazine",
+      "image": "https://www.inoreader.com/camo/sVzZr6QArsd_-zhx57Vkiagz9Uyd9XuSIaOROAJBhpY4,q80,480x400,pf,b64/aHR0cHM6Ly9maWxlcy5jeWJlcnJpc2thbGxpYW5jZS5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjYvMTEvRVNXXzQ4NV9UaHVtYm5haWxfRVNXXzE5MjB4MTA4MF83Zjg3ZWQwZC0yZDcxLTQxZWEtYjFlMy05YmMzZDBiNjE1NzIuanBn"
+    },
+    {
+      "id": "at_51195193748",
+      "title": "Hackers Probe Newly Disclosed Flaws in Copeland Refrigeration Controllers",
+      "url": "https://www.securityweek.com/hackers-probe-newly-disclosed-flaws-in-copeland-refrigeration-controllers/",
+      "summary": "Vulncheck disclosed 14 vulnerabilities affecting Copeland XWEB EVO controllers, including two that threat actors quickly targeted. The post Hackers Probe Newly Disclosed Flaws in Copeland Refrigeration Controllers appeared first on SecurityWeek.",
+      "source": "Eduard Kovacs via SecurityWeek",
+      "image": "https://www.inoreader.com/camo/s7Wtzbttf_AkkQ7xXZF9IVvbUjmsUnYSUN1CtC8CvvOs,q80,480x400,pf,b64/aHR0cHM6Ly93d3cuc2VjdXJpdHl3ZWVrLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNi8xMS9mcmVlemVyLXJlZnJpZ2VyYXRpb24uanBlZw"
+    },
+    {
+      "id": "at_51195193750",
+      "title": "Uber Data Breach Impacts 150,000 People",
+      "url": "https://www.securityweek.com/uber-data-breach-impacts-150000-people/",
+      "summary": "Hackers compromised a third-party services provider and stole names, addresses, and driver’s license numbers. The post Uber Data Breach Impacts 150,000 People appeared first on SecurityWeek.",
+      "source": "Ionut Arghire via SecurityWeek",
+      "image": "https://www.inoreader.com/camo/sDEw-Bj1p5ojjHwgd4wOwclGHszsgQWhDOaEPQp2c7L4,q80,480x400,pf,b64/aHR0cHM6Ly93d3cuc2VjdXJpdHl3ZWVrLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMy8wNS9VYmVyLUNTT19Db252aWN0ZWQtSm9lLVN1bGxpdmFuLmpwZw"
+    },
+    {
+      "id": "at_51195154038",
+      "title": "Anthropic’s Claude Fable 5.2 blocks fewer security tasks, while Mythos gets better at finding bugs",
+      "url": "https://www.bleepingcomputer.com/news/artificial-intelligence/anthropics-claude-fable-52-blocks-fewer-security-tasks-while-mythos-gets-better-at-finding-bugs/",
+      "summary": "Anthropic recently rolled out Claude Mythos 5.2 to selected partners and Fable 5.2 to regular users, with improvements to coding and reasoning. But we also noticed some interesting cybersecurity changes. [...]",
+      "source": "Mayank Parmar via Bleeping Computer",
+      "image": "https://www.inoreader.com/camo/sDYQLDr49tqncRFjHRSI-ey1jqjYBNgxoI6yP9cJu74k,q80,480x400,pf,b64/aHR0cHM6Ly93d3cuYmxlZXBzdGF0aWMuY29tL2NvbnRlbnQvaGwtaW1hZ2VzLzIwMjYvMDIvMTMvQ2xhdWRlX2NoYXRzLmpwZw"
+    },
+    {
+      "id": "at_51195095421",
+      "title": "SANSAR Linux Cryptomining Malware Uses Modified NVIDIA Library to Hide GPU Activity",
+      "url": "https://thehackernews.com/2026/11/sansar-linux-cryptomining-malware-uses.html",
+      "summary": "A financially motivated threat activity cluster tracked as REF3364 has been attributed to a Linux-focused cryptocurrency mining operation that tampers with the readings used to detect high GPU workloads. Central to the intrusion is a toolkit called SANSAR, a Rust-based orchestrator that receives commands over the TOR anonymity network to manage CPU...",
+      "source": "[email protected] (The Hacker News) via The Hacker News",
+      "image": "https://www.inoreader.com/camo/swrxAlxmfGg1vo0cEtNDU-zmO4VHYSZ3rLOHqeGcLjeE,q80,480x400,pf,b64/aHR0cHM6Ly9ibG9nZ2VyLmdvb2dsZXVzZXJjb250ZW50LmNvbS9pbWcvYi9SMjl2WjJ4bC9BVnZYc0VnbXBSMDR3YUxTRFpOQ2IyMDQ4a2Z5NWlTbElYYV9FazNQSTVxTFJhQmtzeHZ5STlrXzhaNmJ3bDZPZzRNYy1BR3FtSGNwTDdZbFlWZDQ4ODk1Rkp0S2xPb2FxZ2k2NTgtSDNGWlR4ZGpmX3czMnc1ZUpZem1fQlVkWGxIN003VmI0MHVQVUk3M0NEYlh0UUNkWkFFa0ZydVNCWHZjMF9CODRoQ1EtZW0wWlFrMnVUSUlIeFJkR0N4UTZieDFDL3MxNjAwL252LmpwZw"
+    },
+    {
+      "id": "at_51194931839",
+      "title": "FBI Reveals How Hackers Hid Malware in Video Games to Steal $220,000 From Cryptocurrency Wallets",
+      "url": "https://cybersecuritynews.com/fbi-cryptocurrency-theft-warning/",
+      "summary": "The FBI has detailed an alleged cryptocurrency theft scheme in which hackers hid malware inside video games, infected about 8,000 users’ devices, and stole at least $220,000 from roughly 80 wallets. A criminal complaint accuses Zyaire Dontaevious Zamarion Wilkins of helping fund and promote the operation, which ran from at least May 2024 through...",
+      "source": "Abinaya via Cyber Security News",
+      "image": "https://www.inoreader.com/camo/smYMR2JaSg-IhAZTdYZ28zy5AdEXf6vNsR0LANGfmByw,q80,480x400,pf,b64/aHR0cHM6Ly9jeWJlcnNlY3VyaXR5bmV3cy5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjYvMTEvRkJJLVJldmVhbHMtSG93LUhhY2tlcnMtSGlkLU1hbHdhcmUtaW4tVmlkZW8tR2FtZXMtdG8tU3RlYWwtMjIwMDAwLUZyb20tQ3J5cHRvY3VycmVuY3ktV2FsbGV0cy0ud2VicA"
+    },
+    {
+      "id": "at_51194931842",
+      "title": "Meta Hit With €805 Million Fine Over Facebook’s Unauthorized Access to Android Photo Galleries",
+      "url": "https://cybersecuritynews.com/meta-hit-with-e805-million-fine/",
+      "summary": "Italy’s Data Protection Authority has fined Meta Platforms Ireland Limited €805 million after finding that Facebook accessed Android users’ photos, videos, and related metadata without specific consent. Announced on November 14, 2026, the decision affects around 20 million Android users in Italy. It requires Meta to change how its gallery suggestion...",
+      "source": "Abinaya via Cyber Security News",
+      "image": "https://www.inoreader.com/camo/s28fHE4iNhi2jXJbdq5cjdslmXgZOWJLYK2Iwy9LFGC8,q80,480x400,pf,b64/aHR0cHM6Ly9jeWJlcnNlY3VyaXR5bmV3cy5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjYvMTEvTWV0YS1IaXQtV2l0aC1FODA1LU1pbGxpb24tRmluZS1PdmVyLUZhY2Vib29rcy1VbmF1dGhvcml6ZWQtQWNjZXNzLXRvLUFuZHJvaWQtUGhvdG8tR2FsbGVyaWVzLTEud2VicA"
+    },
+    {
+      "id": "at_51194782174",
+      "title": "ARTEX: How Cybercriminals Use AI Agents to Scale Their Attacks",
+      "url": "https://securityaffairs.com/203188/ai/artex-how-cybercriminals-use-ai-agents-to-scale-their-attacks.html",
+      "summary": "Amazon spotted AI agents running on ARTEX steal AI credentials and test deepfake ID bypasses. Amazon’s threat intelligence team published findings on criminals running offensive campaigns with ARTEX, an open-source agentic AI penetration testing framework. Between 3 October and 5 November, Amazon’s MadPot network of decoy sensors caught requests...",
+      "source": "Pierluigi Paganini via Security Affairs",
+      "image": "https://www.inoreader.com/camo/sgHiwWA762Qy6POA-JU6lH98srMOvLNLwFZ9Y1MKglfo,q80,480x400,pf,b64/aHR0cHM6Ly9zZWN1cml0eWFmZmFpcnMuY29tL3dwLWNvbnRlbnQvdXBsb2Fkcy8yMDI2LzExL2ltYWdlLTM2LnBuZw"
+    },
+    {
+      "id": "at_51194434897",
+      "title": "Japan Reports Record 233 Cyber Incidents as 185 Million Personal Records Are Put at Risk",
+      "url": "https://cybersecuritynews.com/233-cyber-incidents/",
+      "summary": "Japan recorded 233 publicly disclosed cybersecurity incidents in October 2026, roughly 2.4 times its previous monthly record, according to Trend Micro data reported by TV Asahi. The surge has affected businesses, service providers, and public institutions, raising concerns about how quickly attackers are finding weaknesses in systems holding...",
+      "source": "Tushar Subhra Dutta via Cyber Security News",
+      "image": "https://www.inoreader.com/camo/sTNA5eXtldhy8r24o3L8A3lnMTGYeU9p1IhaMXI2TIO0,q80,480x400,pf,b64/aHR0cHM6Ly9ibG9nZ2VyLmdvb2dsZXVzZXJjb250ZW50LmNvbS9pbWcvYi9SMjl2WjJ4bC9BVnZYc0Vpd1VlZ0g3OGlhb1hCaFdoSWE5VzFZTkR3MWlPZTFDTGdzem5NY3RacEsyb1MyXzUtYWRxdk5DSjRYakRUaDVPWnZacE5Wa0pwUmgzLVF2Z2lZaVV5blhZanA2V1pUcTBTcGJiekFBeXc3bUVFZFRCaTV4RXpYblFvaGIxWGFsaF9aQTNYeWdxZTFzUU5ESFlvVWxUM3JrWTlrSmFWX3JXUkoxNG9qWWpyZnBrTkVLTTFHYTZjV0FkTWJDajAvczE2MDAvQnJlYWNoZXMlMjBTdXJnZSUyMChTb3VyY2UlMjAtJTIwU29ja2V0LmRldikud2VicA"
+    },
+    {
+      "id": "at_51194348043",
+      "title": "New NoisyTCP vulnerability lets attackers crash Linux servers",
+      "url": "https://www.bleepingcomputer.com/news/linux/new-noisytcp-linux-kernel-flaw-lets-attackers-crash-servers/",
+      "summary": "An 11-year-old Linux kernel vulnerability, dubbed NoisyTCP, affects almost all Linux distributions and lets attackers crash systems running Nginx, Apache, and SSH servers with default configurations. [...]",
+      "source": "Sergiu Gatlan via Bleeping Computer",
+      "image": "https://www.inoreader.com/camo/s4Fgfu8fpYoFmsOcbCxhHnFHvyHYs5EmdTj9e1TAxnIk,q80,480x400,pf,b64/aHR0cHM6Ly93d3cuYmxlZXBzdGF0aWMuY29tL2NvbnRlbnQvaGwtaW1hZ2VzLzIwMjYvMTAvMjkvTGludXhfdHV4LmpwZw"
+    },
+    {
+      "id": "at_51194264726",
+      "title": "German Military Grounds Quantum Systems Drones Following Reported Cyberattack",
+      "url": "https://securityaffairs.com/203085/cyber-crime/german-military-grounds-quantum-systems-drones-following-reported-cyberattack.html",
+      "summary": "German drone maker Quantum Systems confirms a cyberattack that disrupted operations, with reports pointing to a malicious software update. Quantum Systems, a German defense company that builds reconnaissance and interceptor drones and the software that controls them, confirmed an incident in late October. The company says its security...",
+      "source": "Pierluigi Paganini via Security Affairs",
+      "image": "https://www.inoreader.com/camo/svGndJn0uqtesf4EaVQnn0S1mMqkRQIQ3WqqNvMtGsTw,q80,480x400,pf,b64/aHR0cHM6Ly9zZWN1cml0eWFmZmFpcnMuY29tL3dwLWNvbnRlbnQvdXBsb2Fkcy8yMDI2LzExL2ltYWdlLTMzLnBuZw"
+    },
+    {
+      "id": "at_51194086170",
+      "title": "Tor Updates DoS Defenses Again as Relay Attacks Continue",
+      "url": "https://www.securityweek.com/tor-updates-dos-defenses-again-as-relay-attacks-continue/",
+      "summary": "Tor 0.4.9.17 patches several security issues, including one related to how built-in DoS protections deal with IPv6. The post Tor Updates DoS Defenses Again as Relay Attacks Continue appeared first on SecurityWeek.",
+      "source": "Eduard Kovacs via SecurityWeek",
+      "image": "https://www.inoreader.com/camo/srCSqcOky1eGlNZ5N03ouSxaUZL6ZNQn96gDzXT738kM,q80,480x400,pf,b64/aHR0cHM6Ly93d3cuc2VjdXJpdHl3ZWVrLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNC8wMS9Ub3ItTmV0d29yay0xLmpwZWc"
+    },
+    {
+      "id": "at_51193966821",
+      "title": "Microsoft Reveals How a Hidden Windows Bug Took Down Microsoft 365 Services Worldwide",
+      "url": "https://cybersecuritynews.com/microsoft-outage-incident-report/",
+      "summary": "Microsoft has traced the worldwide Microsoft 365 outage on November 12–13, 2026, to a hidden Windows bug that overwhelmed servers handling cloud connections. Its preliminary incident report, dated November 15, describes how a software change shifted traffic and reduced server capacity, which combined to cause widespread failures. Exchange Online...",
+      "source": "Guru Baran via Cyber Security News",
+      "image": "https://www.inoreader.com/camo/sFjck_Yttf_eQXFi9D3l4aMOWH4oTZEx8ssFwLPlr27Y,q80,480x400,pf,b64/aHR0cHM6Ly9jeWJlcnNlY3VyaXR5bmV3cy5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjYvMTEvTWljcm9zb2Z0LU91dGFnZS1JbmNpZGVudC1SZXBvcnQud2VicA"
+    },
+    {
+      "id": "at_51193836421",
+      "title": "Microsoft pushes Windows emergency updates to fix activation failures",
+      "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-new-windows-emergency-updates-fix-activation-licensing-failures/",
+      "summary": "Microsoft has released emergency out-of-band updates to fix Windows activation and licensing failures caused by this month's security updates. [...]",
+      "source": "Sergiu Gatlan via Bleeping Computer",
+      "image": "https://www.inoreader.com/camo/scxsfHRdASQrSzj_wRwECpsAC8wY6oP-qecK9vAciiSc,q80,480x400,pf,b64/aHR0cHM6Ly93d3cuYmxlZXBzdGF0aWMuY29tL2NvbnRlbnQvaGwtaW1hZ2VzLzIwMjYvMTEvMTYvV2luZG93cy5qcGc"
+    },
+    {
+      "id": "at_51193749110",
+      "title": "Microsoft Rules Out Cyberattack in Outage, Warns of Phishing Campaign",
+      "url": "https://www.securityweek.com/microsoft-rules-out-cyberattack-in-outage-warns-of-phishing-campaign/",
+      "summary": "Phishing emails posing as Microsoft 365 service notices referenced the real outage incident and threatened to delete held messages. The post Microsoft Rules Out Cyberattack in Outage, Warns of Phishing Campaign appeared first on SecurityWeek.",
+      "source": "Eduard Kovacs via SecurityWeek",
+      "image": "https://www.inoreader.com/camo/seRNnMsyOE30TKeZoHj8D_26e03zdEmBOu7TQXh7dnhA,q80,480x400,pf,b64/aHR0cHM6Ly93d3cuc2VjdXJpdHl3ZWVrLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNS8xMS9BSS1waGlzaGluZy5qcGVn"
+    },
+    {
+      "id": "at_51193744775",
+      "title": "SilentAir and LIMINAL PANDA Target Telecom Networks to Spy on Subscribers",
+      "url": "https://securityaffairs.com/203099/apt/silentair-and-liminal-panda-target-telecom-networks-to-spy-on-subscribers.html",
+      "summary": "Researchers uncover two threat groups, SilentAir and LIMINAL PANDA, exploiting mobile networks to spy on users and intercept calls and text messages. Telecom security firm Enea published research on two threat actors, dubbed SilentAir and LIMINAL PANDA, working inside mobile networks. According to the experts, SilentAir has compromised operators...",
+      "source": "Pierluigi Paganini via Security Affairs",
+      "image": "https://www.inoreader.com/camo/sD4kqcxGIa4IGTDK5ZWvrJ-J7xlYykFxJSwZ9oCo9FuQ,q80,480x400,pf,b64/aHR0cHM6Ly9pMC53cC5jb20vc2VjdXJpdHlhZmZhaXJzLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNi8xMS9pbWFnZS0zNC5wbmc_dz0xNDAwJnNzbD0x"
+    },
+    {
+      "id": "at_51193478419",
+      "title": "Top 10 Best Cyber Asset Attack Surface Management (CAASM) Tools in 2026 [Ranked & Scored]",
+      "url": "https://cybersecuritynews.com/best-caasm-tools/",
+      "summary": "CAASM exists because every security tool keeps its own asset list and they all disagree: the same laptop under three names, the server EDR sees but the scanner doesn’t, the cloud workload nobody’s CMDB ever met. These platforms aggregate asset truth from the tools you already run, merge the duplicates, and let you query the gaps unencrypted...",
+      "source": "Swathi via Cyber Security News",
+      "image": "https://www.inoreader.com/camo/stumD0acc7s6lQvsyQsX3-QXVWMDiZAnfQu802E2uSfI,q80,480x400,pf,b64/aHR0cHM6Ly9ibG9nZ2VyLmdvb2dsZXVzZXJjb250ZW50LmNvbS9pbWcvYi9SMjl2WjJ4bC9BVnZYc0VoQl9BQl9XNU5KdVNfOU5zNFAzbjJmandhSnNBV1FsWlRXMXkxZ1cxaWlJa2lmVHo1eXBoVGJHMXNTOUdOWGt6VUx1dm16Tlh1bEhSWWJ1UGZPRThjeERycXk0SjRweGNCS0dOM1ZZbEhXS0xQdEJ1OERVc2J2TFRPX0lOS0xVdmdSZkFsR1hSYlBYdV94UFc3ajBLQjR1Y1FCU1dUbUVlY09rZ0dDcUlXb0l6OUQzR1MzYjRHWGNiQ2VQOGF2L3MxNjAwL2F4b25pdXMud2VicA"
+    },
+    {
+      "id": "at_51193478429",
+      "title": "Top 10 Best Attack Surface Management (ASM/EASM) Tools in 2026 [Ranked & Scored]",
+      "url": "https://cybersecuritynews.com/best-attack-surface-management/",
+      "summary": "External attack surface management answers the question attackers answer daily and most defenders never have: what of yours is actually reachable from the internet right now? The 2026 field divides into continuous-discovery engines, suite-integrated surface modules, and internet-scan authorities with attribution accuracy (whose asset is this, really?)...",
+      "source": "Kavichselvan via Cyber Security News",
+      "image": "https://www.inoreader.com/camo/sSm-qOEo-Z4dF8SOJSXZupAgOHdNT6xPXbKP6FwH3vJQ,q80,480x400,pf,b64/aHR0cHM6Ly9ibG9nZ2VyLmdvb2dsZXVzZXJjb250ZW50LmNvbS9pbWcvYi9SMjl2WjJ4bC9BVnZYc0VnamZzT2NnWEFDRkNMWFluaDlaSlFGRVVENjNfc2xpNTlZalR6YjI0WFR1WXRRQWF1ZVlDU3ZyNXJrZlB3a2JhcEMxZ24yVVkzZUFhREFfdXZGcm1pb2g3WnB4anJENGt0bHBocjMyN3FkMlcyc2xiNFpCUVpES2FvMjZPM0xhY1RXbnF3M0dqVzNrazZQRWR4MlFWMTJHZ2h6dEFtQVY5cXFXd3hKQnJqWkktU285VHRldS1Ga1pncVdPYlUvczE2MDAvcGFsbyUyMGFsdG8lMjBBU1BNJTIwLndlYnA"
+    },
+    {
+      "id": "at_51193478431",
+      "title": "Top 10 Best Continuous Threat Exposure Management (CTEM) Platforms in 2026 [Ranked & Scored]",
+      "url": "https://cybersecuritynews.com/best-ctem-platforms/",
+      "summary": "CTEM is a five-stage operating rhythm scope, discover, prioritize, validate, mobilize and no single product runs it all, whatever the datasheets imply. The honest buying question is which stages each platform genuinely covers, with validation (the stage most organizations skip) as the differentiator that separates exposure management from vulnerability...",
+      "source": "Swathi via Cyber Security News",
+      "image": "https://www.inoreader.com/camo/s2X1EQzlZerNNpS4IyK8dJXoF3Kq1C2QfrjSJY1E3QI0,q80,480x400,pf,b64/aHR0cHM6Ly9ibG9nZ2VyLmdvb2dsZXVzZXJjb250ZW50LmNvbS9pbWcvYi9SMjl2WjJ4bC9BVnZYc0VpN1FUb2hRT3dxdHIxY2htelhBQmtyOVNqd1B2Slo1WkxpZ3NPb0txc2Y3dlBZWGZQZ2VkV3JyWHhTSDNrT0ZTMVNyeDR0SUd1ZGo1bmF1cEVFd2dfeDVucm1iQlNQd0xnT3puQTVyYUJMdmtOdE5IN3NqWGh3Zjl3aGkzdjJTdUZBNkRmZ1BGWEpvN2xzSTVIZzdIRS1xWFZBdG81MzhqNTFsaVBOZUVhMG43SF9UR2NYSWtZZjJEYnF1WFdXL3MxNjAwL3htY3liZXIud2VicA"
+    },
+    {
+      "id": "at_51193478433",
+      "title": "Top 10 Best Risk-Based Vulnerability Management Tools in 2026 [Ranked & Scored]",
+      "url": "https://cybersecuritynews.com/best-rbvm-tools/",
+      "summary": "Risk-based vulnerability management exists because severity lies: most CVSS criticals are never exploited, and the handful that matter hide among thousands that don’t. RBVM re-ranks by exploitation evidence, asset criticality, and reachability and the honest market now includes native scoring inside scanner platforms, aggregation layers above...",
+      "source": "Kavichselvan via Cyber Security News",
+      "image": "https://www.inoreader.com/camo/sm9-ucD1dRG9NcrLw93C9YQEL0h88TVaNgcvMYPavH8c,q80,480x400,pf,b64/aHR0cHM6Ly9ibG9nZ2VyLmdvb2dsZXVzZXJjb250ZW50LmNvbS9pbWcvYi9SMjl2WjJ4bC9BVnZYc0VpMGdFQVZBQ2dra3JBVUozemJseFZrWllHOXBnZ3hKZFY0UTdjMVdNa3d5Y08tQU41WUhncG5uOW1IT3hhSlN3dnNBOUxSbE41MzRTOWFldGVwRFJSX0JVYXU5UnlLSHlWTWZmbURuUVQ4cmJnWHBVajB6Ri1yeHhCWEtDU1A0cW1tYlJHaGRyenVNUjBscXpGODdCYzAtSkxjUkQ2U3doNHRXc0ktbVJhY2QtaUZvSGpNZ3l2MWktTTByVHcvczE2MDAvdGVuYWJsZSUyMHJpc2slMjB2dWxuZXJhYmlsaXR5JTIwLndlYnA"
+    },
+    {
+      "id": "at_51193478445",
+      "title": "Top 10 Best Cloud Vulnerability Management Tools in 2026 [Ranked & Scored]",
+      "url": "https://cybersecuritynews.com/best-cloud-vulnerability-management/",
+      "summary": "Cloud vulnerability management rewrote the category’s physics: agentless snapshot scanning covers an estate in hours, and the question stopped being “what’s vulnerable” everything is and became “what’s reachable, exploitable, and attached to something that matters.” The 2026 leaders answer with context graphs: vulnerability joined to exposure,...",
+      "source": "Swathi via Cyber Security News",
+      "image": "https://www.inoreader.com/camo/szzNCbXgFNKD6RUKsukQOOCxrXPUysi4S7rHHPimk7-s,q80,480x400,pf,b64/aHR0cHM6Ly9ibG9nZ2VyLmdvb2dsZXVzZXJjb250ZW50LmNvbS9pbWcvYi9SMjl2WjJ4bC9BVnZYc0Vpel9iXzZuYmtjUnlYcThOQW9qcEJlZmpJNl95cmMweGZHaW9QZ2IzSWdoRVZ0Y1lTbk0zMFZsTmdhbDU3ZEh4VHNsWVJZMkxScXFiSEgtUnlUSTk1c3hiUGttX3ZMQ1dhTk16d1dUUk9uUmc2V1ZkbnNvamJqbktHWTZQam1NMGpyM1dzRHJKM2UxT3U4UldTV3FLSm9iMG03aVplTkhmZ3R2Smozem9DbGk3ZUlGNW11cXE2bnNQdFRuZDQ5L3MxNjAwL3dpei53ZWJw"
+    },
+    {
+      "id": "at_51193476740",
+      "title": "Amazon Uncovers AI Agent Campaign Targeting LiteLLM, Dify, and Other Apps for API Keys",
+      "url": "https://thehackernews.com/2026/11/amazon-uncovers-ai-agent-campaign.html",
+      "summary": "Attackers' AI agents have been hunting for weak spots in internet-exposed AI apps such as LiteLLM, One API, and Dify to steal the AI provider keys stored inside, according to the agents' own records. The records, which Amazon's threat intelligence team captured with decoy servers, describe stolen keys being used to run the AI models that powered...",
+      "source": "[email protected] (The Hacker News) via The Hacker News",
+      "image": "https://www.inoreader.com/camo/syiWxPdoyIQ5euQN49bnFkmqILMlnPF3KiaNpnejZY5g,q80,480x400,pf,b64/aHR0cHM6Ly9ibG9nZ2VyLmdvb2dsZXVzZXJjb250ZW50LmNvbS9pbWcvYi9SMjl2WjJ4bC9BVnZYc0VpZ295Q3RFS2NEN1RNXzV2RGtLaVpZRmRrX2w0LWpzN0hOdXZNWHpaYlZxVWJFZ3Exbm5EMnZFWmdaMGtMOUNkbU9rSVRDMFJiZC1lYlRrU1gtUjROUEt3V1pYelVENnpTMGc5bkVmbmxYdzNuam0zb1cyU2U5N3FiVDdsSWZaRUw1NlgzSUlhWkFpbGRUbmk5LXpRSnU1c2E0TGh2aV9tVmxiVGVaRnlGdGV6T01ISl9iRGhKV2ZHN0tROGVoL3MxNjAwL2FtYXpvbi5qcGc"
+    },
+    {
+      "id": "at_51193476769",
+      "title": "BO Team Exploits Log4Shell in VMware vCenter, Compromises Russian Firm's Code-Signing Server",
+      "url": "https://thehackernews.com/2026/11/bo-team-exploits-log4shell-in-vmware.html",
+      "summary": "An investigation into suspicious activity within a Russian software developer's network has uncovered a months-long compromise of its development infrastructure and a software code-signing server. The activity, documented by Kaspersky's ICS CERT team after it was contacted by the affected developer in June 2025, has been attributed to a threat actor...",
+      "source": "[email protected] (The Hacker News) via The Hacker News",
+      "image": "https://www.inoreader.com/camo/sT58dvjcvoIfZDYZAxe44ElXdJb0XZ7P9hd4O6oCJt48,q80,480x400,pf,b64/aHR0cHM6Ly9ibG9nZ2VyLmdvb2dsZXVzZXJjb250ZW50LmNvbS9pbWcvYi9SMjl2WjJ4bC9BVnZYc0VnQXZ6b0t5a2FNSXBhNnh4OTJZdWRpcGZVb0VRblNrckU2cDJDaVdFVnJhNWl6cjVHZnVOUUdPbmZSdUYwWFY5OXYxSVBSRmUyUTZCRjI3VUVxM0JuV0ZTNW9udzk3ZHQzaHZzemlsUURBTmR0UmRZaTBfaFRET3JLUXZ1d0duMW1ZX20tUVRhYlYzandXQ053WHNfT2l6SzJHTEYzRWtzNUhKajVJN2tibUEySXp0cnVTQlZqcTVXT2N4RU0tL3MxNjAwL2xvZzRzaGVsbC5qcGc"
+    },
+    {
+      "id": "at_51192652760",
+      "title": "NoisyTCP: 11-Year-Old Linux Kernel Flaw Lets Unauthenticated Attackers Crash Servers Remotely",
+      "url": "https://cybersecuritynews.com/noisytcp-linux-kernel-vulnerability/",
+      "summary": "NoisyTCP is an 11-year-old Linux kernel bug. It lets a remote attacker crash a server without logging in. The flaw is tracked as CVE-2026-99288. Hyunwoo Kim (@v4bel) reported and patched it, and he released the NoisyTCP advisory on GitHub after the Linux distribution embargo ended. The flaw sits in the kernel’s TCP code, which handles almost...",
+      "source": "Abinaya via Cyber Security News",
+      "image": "https://www.inoreader.com/camo/sYfcdabNi4W8WBQyfo1VaPoqSYdvLQ_KtLPXnnCQe0pU,q80,480x400,pf,b64/aHR0cHM6Ly9jeWJlcnNlY3VyaXR5bmV3cy5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjYvMTEvTm9pc3lUQ1AtMTEtWWVhci1PbGQtTGludXgtS2VybmVsLUZsYXctTGV0cy1VbmF1dGhlbnRpY2F0ZWQtQXR0YWNrZXJzLUNyYXNoLVNlcnZlcnMtUmVtb3RlbHkud2VicA"
+    },
+    {
+      "id": "at_51191995980",
+      "title": "AWS Restores Services in US-EAST-1 After Hours-Long Outage Disrupts Cloud Operations",
+      "url": "https://cybersecuritynews.com/aws-services-outage/",
+      "summary": "Amazon Web Services restored operations in its US-EAST-1 region on November 15 after an outage disrupted account signups, authentication, and network connections. Problems began at 3:05 a.m. PST, and the last network issue was resolved at 6:21 a.m. PST, leaving some customers affected for more than three hours. The disruption affected customers...",
+      "source": "Guru Baran via Cyber Security News",
+      "image": "https://www.inoreader.com/camo/s2UTyh5dXzEzGO9kwJEGORfNLJhaVYlyfOOgFsx-xa0Q,q80,480x400,pf,b64/aHR0cHM6Ly9jeWJlcnNlY3VyaXR5bmV3cy5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjYvMTEvQVdTLVNlcnZpY2VzLU91dGFnZS53ZWJw"
+    },
+    {
+      "id": "at_51191995987",
+      "title": "Tor Releases Emergency Security Update as Ongoing DDoS Attack Overwhelms Network Relays",
+      "url": "https://cybersecuritynews.com/tor-ddos-attack/",
+      "summary": "The Tor Project has released Tor 0.4.9.17 in an urgent response to an ongoing distributed denial-of-service attack that is overwhelming network relays. Announced on November 13, 2026, the stable release includes several security fixes, including one that addresses IPv6 handling in relay denial-of-service defenses. Tor says the attack has affected...",
+      "source": "Guru Baran via Cyber Security News",
+      "image": "https://www.inoreader.com/camo/svX8TxOPNwnzMXXrgmOH_CqyfujnJXYM5mmaeE7Q4wC4,q80,480x400,pf,b64/aHR0cHM6Ly9jeWJlcnNlY3VyaXR5bmV3cy5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjYvMTEvVG9yLUREb1MtQXR0YWNrLndlYnA"
+    },
+    {
+      "id": "at_51191699715",
+      "title": "Claude Cracks 32-Year-Old Jeep ECU Using a $3 Arduino and Reverse Engineers Its Engine Computer",
+      "url": "https://cybersecuritynews.com/claude-cracks-32-year-old-jeep-ecu/",
+      "summary": "A car owner says an AI coding agent helped him read, copy, and then run code inside the engine computer of a 1994 Jeep Cherokee. The work took about a week. He used a $3 Arduino Nano, and the Jeep passed California’s smog test at the end. Muhammad Zulali shared the full story in a YouTube video on November 10, 2026. The Jeep had no modern OBD2...",
+      "source": "Guru Baran via Cyber Security News",
+      "image": "https://www.inoreader.com/camo/ss2gcmir7S6jeewDODL22PVrwwfloOPxGofLZqv0sdVc,q80,480x400,pf,b64/aHR0cHM6Ly9jeWJlcnNlY3VyaXR5bmV3cy5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjYvMTEvQ2xhdWRlLUNyYWNrcy0zMi1ZZWFyLU9sZC1KZWVwLUVDVS53ZWJw"
+    },
     {
       "id": "at_51190674652",
       "title": "The Microsoft Outage Left 15 Hotel Guests Poisoned by Chlorine",
@@ -1376,230 +1600,6 @@
       "summary": "N-able on Thursday said it's investigating a new public disclosure containing claims of additional vulnerabilities in on-premise versions of N-central running version 2026.4.1 HF2. \"Based on our initial review, the server issue described depends on a non-default configuration in which the Legacy API is turned on and exposed to the public internet,\"...",
       "source": "[email protected] (The Hacker News) via The Hacker News",
       "image": "https://www.inoreader.com/camo/syUvnS6NP6_jnrwD-g1_TcVDljhxQVg4_Y2JoRKDrvXk,q80,480x400,pf,b64/aHR0cHM6Ly9ibG9nZ2VyLmdvb2dsZXVzZXJjb250ZW50LmNvbS9pbWcvYi9SMjl2WjJ4bC9BVnZYc0VoUjRLZFJTMHY3N3VRSWRoQzBpNWFvcGE4WElBWklSblR6VkNWcXRvN2RFZGZVSDJReVdnckF5MUVLdS1oQVJYUzRweE5HUVFFRnJvUkhPdHdTcV85UThiOTJ0bWd3Xzk3Sk1Kb0JmQzcyc2w4cE9jVVlNOW5VNllDSmh0NHlEN0FMV2ZFUndoVXdMc044d285dDhZbkt5SVd6SGhFQXV4NW94NVdWNHd2eGU2bDFjVW1mNThQMW1kMkVreml5L3MxNjAwL25hYmxlLmpwZw"
-    },
-    {
-      "id": "at_51159244860",
-      "title": "Calendar Invites and Live Proxies: Inside a Google Session Hijacking Campaign",
-      "url": "https://thehackernews.com/2026/11/calendar-invites-and-live-proxies.html",
-      "summary": "Since mid-August 2026, a phishing operation has been stealing live Google sessions from corporate users. Every check defenders normally lean on to judge a link came back clean, and the operator designed it that way on purpose. The Threat Research team at Material Security spotted the campaign and has since taken down hundreds of attacker domains...",
-      "source": "[email protected] (The Hacker News) via The Hacker News",
-      "image": "https://www.inoreader.com/camo/sdOMENVDfK0njLncTf-AVN8gY6A2ZFgA0D3EXy6AjyyM,q80,480x400,pf,b64/aHR0cHM6Ly9ibG9nZ2VyLmdvb2dsZXVzZXJjb250ZW50LmNvbS9pbWcvYi9SMjl2WjJ4bC9BVnZYc0VoZjhZVmd3OWhJV0VZTjBfcWdhRDZNVklaYWQwZk9DdV9KNVo0Q24yQ0R1TXpjVjdIT1E5WHQ0RTA4bDFuT283dU1qQXlZcVlQLWJVeTV6SGlzUlc4Y2ZlU1ZtSmNDS1lnQ1RJMnkxTXBSVXdzTTFJMmNzME1zdW9BeTdWU0dMeVRQem9uaEtJVHpXUFUxaFRBRFpuRnQ1VlRaaGx0NGVKb2hWYXMydHpobDQ3QU9WM0NwNTNMQ191aGxwVlkvczE2MDAvbXQuanBn"
-    },
-    {
-      "id": "at_51159244871",
-      "title": "PTC Patches Critical Windchill and FlexPLM Flaw That Could Enable Remote Code Execution",
-      "url": "https://thehackernews.com/2026/11/ptc-patches-critical-windchill-and.html",
-      "summary": "PTC has released patches for a new critical vulnerability impacting Windchill and FlexPLM software that, if successfully exploited, could result in remote code execution. The security flaw, tracked as CVE-2026-126325, carries a CVSS v4 score of 9.2 out of a maximum of 10.0. It has been described as a case of improper input validation and deserialization...",
-      "source": "[email protected] (The Hacker News) via The Hacker News",
-      "image": "https://www.inoreader.com/camo/sPwFeuD73zEi9eLfTMNmgnac8oYMMX5_BEn393XtHRNc,q80,480x400,pf,b64/aHR0cHM6Ly9ibG9nZ2VyLmdvb2dsZXVzZXJjb250ZW50LmNvbS9pbWcvYi9SMjl2WjJ4bC9BVnZYc0VpMDFwdmk3OHhZVXR5eGJ0V1E0TDVkZE1yMXlUMi1XQlNiQW5wM3dLWGEtYnBhZ1hxdHlRZHhQcUE0M0kxTnhKR05MazRIZTMwUFMtR1lVY2Qxc09hRXJ0TUF0TldMLXFRVUdmRDBZN3dTeEF6ZVlKWFJmMmxBNXlGdXpudThtMnpSZ2YybGxYTWlSM3cxSDZZT090ZTVxc19EdlJ4Y3YwYVBlT3hXZUlEeWJsMW41OFZscHVaUFVKMGljV0RML3MxNjAwL3B0Yy1mbGF3LmpwZw"
-    },
-    {
-      "id": "at_51159012770",
-      "title": "Microsoft: Recent Windows updates cause SQL Server performance issues",
-      "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-recent-windows-updates-cause-sql-server-performance-issues/",
-      "summary": "Microsoft has confirmed that Windows updates released since the October 2026 Patch Tuesday are causing SQL Server performance and stability issues. [...]",
-      "source": "Sergiu Gatlan via Bleeping Computer",
-      "image": "https://www.inoreader.com/camo/sDxA1Yfg-OpWNpgHbIhm1G6TKHDhappPkzA6zpHWVHYg,q80,480x400,pf,b64/aHR0cHM6Ly93d3cuYmxlZXBzdGF0aWMuY29tL2NvbnRlbnQvaGwtaW1hZ2VzLzIwMjYvMTAvMjEvV2luZG93c19oZWFkcGljLmpwZw"
-    },
-    {
-      "id": "at_51158972803",
-      "title": "Hackers Abuse AntiFox AI Pentesting Tool to Deploy Webshells and Access AWS Production Secrets",
-      "url": "https://cybersecuritynews.com/hackers-abuse-antifox-ai-pentesting-tool/",
-      "summary": "Attackers are abusing AntiFox, an open-source AI penetration-testing platform, to compromise web applications, deploy webshells, and access Amazon Web Services production secrets. Arctic Wolf linked the activity to Alibaba Cloud infrastructure hosting AntiFox interfaces, connecting those systems to malicious actions against internet-facing applications...",
-      "source": "Tushar Subhra Dutta via Cyber Security News",
-      "image": "https://www.inoreader.com/camo/sRY_yUVyjX91jKGmLl1n76HyDTeiDSjbO7yVexb24zZk,q80,480x400,pf,b64/aHR0cHM6Ly9ibG9nZ2VyLmdvb2dsZXVzZXJjb250ZW50LmNvbS9pbWcvYi9SMjl2WjJ4bC9BVnZYc0VqNFF6YkVYRXdkYnRMODBWZzBLODJXVWxqOUtRZWhXNzZ5TkFEdWZmdmx6Zm9hVzVUYzBFWGQ5OWJITHdiUlZQdVA3bmhSdjhKcmxURFp0Zjkwd2lBVUllWVVhLW0tQjZVa3BnUElOZzh2NmtTTzM3MVBkTW1ITHhqaFJjWVpMT05SZUozeHhSSU5lU0dRaks4TW90TnNfZWs0NEw1d0JEaGlsdWhCRWE0U2tpTFFfN1ZfbjR6Z053UWw4MU0vczE2MDAvVGhyZSUyMGNoZWNrcG9pbnRzJTIwaW4lMjB0aGUlMjBsb29wJTIwKFNvdXJjZSUyMC0lMjBHaXRHdWFyZGlhbikud2VicA"
-    },
-    {
-      "id": "at_51158972807",
-      "title": "Hackers Target AI Coding Tools to Steal Credentials as Researchers Uncover 103 AI-Linked Cyber Incidents",
-      "url": "https://cybersecuritynews.com/hackers-target-ai-coding-tools/",
-      "summary": "Hackers are targeting AI coding assistants, software packages, and developer integrations to steal credentials and gain access to connected systems. A new threat intelligence report examined 103 AI-linked cyber incidents, showing how tools trusted with source code and sensitive data are becoming entry points for attackers. The research...",
-      "source": "Tushar Subhra Dutta via Cyber Security News",
-      "image": "https://www.inoreader.com/camo/sPKp8CthcKZprYZwFqBoHilftMKeV1cL0Qov2Yk4bl1Y,q80,480x400,pf,b64/aHR0cHM6Ly9ibG9nZ2VyLmdvb2dsZXVzZXJjb250ZW50LmNvbS9pbWcvYi9SMjl2WjJ4bC9BVnZYc0VndzI0NFdxZW5aLUIzblJPRnBvYWZKRzRfY1ZMMVBfS0R6eVF0dHU3SWpTX0IwM0Z4aHpheFF2TVRZMjlQMlRLR2wxdURoVU50M3lWU3phNDBGUlY2UDFLaE5DaGUyWndBdTh2ZHhUUHdBaWNQb09YQ01WUTl1WU1Fd0Y2N1J4TDVpQVY5WURJdGRBWjlGYXc5VHZvY2RqRzUxM3ZlekwxcmJGbHBRWWVrVVlGOU12aXI4UjA1RUY3RmpndkUvczE2MDAvRml2ZSUyMHRyZW5kcyUyMGluJTIwb2ZmZW5zaXZlJTIwdXNlJTIwb2YlMjBBSSUyMChTb3VyY2UlMjAtJTIwUmVjb3JkZWQlMjBGdXR1cmUpLndlYnA"
-    },
-    {
-      "id": "at_51158390603",
-      "title": "Notion Customer Data Compromised in Fireworks AI Hack",
-      "url": "https://www.securityweek.com/notion-customer-data-compromised-in-fireworks-ai-hack/",
-      "summary": "The attackers accessed chat transcripts for fewer than 1% of Notion workspaces. Most transcripts were unattributable. The post Notion Customer Data Compromised in Fireworks AI Hack appeared first on SecurityWeek.",
-      "source": "Ionut Arghire via SecurityWeek",
-      "image": ""
-    },
-    {
-      "id": "at_51158368274",
-      "title": "Cyber Agony Aunts Launch Christmas Campaign to Tackle Period Poverty",
-      "url": "https://www.itsecurityguru.org/2026/11/12/cyber-agony-aunts-launch-christmas-campaign-to-tackle-period-poverty/?utm_source=rss&utm_medium=rss&utm_campaign=cyber-agony-aunts-launch-christmas-campaign-to-tackle-period-poverty",
-      "summary": "The Cyber Agony Aunts, Amelia Hewitt and Rebecca Taylor, have launched Periods of Kindness, a Christmas campaign encouraging the cybersecurity community to come together to tackle period poverty across the UK. The initiative invites individuals and organisations to donate essential period products, which will be distributed to four charities and community...",
-      "source": "Charley Nash via IT Security Guru",
-      "image": "https://www.inoreader.com/camo/snvA_jMgvrRFErx4Umb7GOVnf30wBBTvQNV999YZmtFk,q80,480x400,pf,b64/aHR0cHM6Ly93d3cuaXRzZWN1cml0eWd1cnUub3JnL3dwLWNvbnRlbnQvdXBsb2Fkcy8yMDI2LzExL0ZPUi1FRElUSU5HLTg2LnBuZw"
-    },
-    {
-      "id": "at_51158333109",
-      "title": "Google Chrome Fixes 83 Security Flaws, Including 5 Critical Ones that Could Enable RCE Attacks",
-      "url": "https://cybersecuritynews.com/google-chrome-fixes-83-security-flaws/",
-      "summary": "Google released a Chrome security update that addresses 83 vulnerabilities, including five critical use-after-free flaws that could allow remote code execution. According to the supplied release notice, the update covers Windows, macOS, and Linux, with fixes spanning browser rendering, graphics, JavaScript processing, and other core features....",
-      "source": "Abinaya via Cyber Security News",
-      "image": "https://www.inoreader.com/camo/sg5s-8AQKZ4wNsfXGZT2l9k1dl2o56eFbCip8_FmjOfA,q80,480x400,pf,b64/aHR0cHM6Ly9jeWJlcnNlY3VyaXR5bmV3cy5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjYvMTEvR29vZ2xlLUNocm9tZS1GaXhlcy04My1TZWN1cml0eS1GbGF3cy1JbmNsdWRpbmctNS1Dcml0aWNhbC1WdWxuZXJhYmlsaXRpZXMtVGhhdC1Db3VsZC1BbGxvdy1SZW1vdGUtQ29kZS1FeGVjdXRpb24ud2VicA"
-    },
-    {
-      "id": "at_51158333116",
-      "title": "Hackers Breach Global Shipping Giant Maersk and Claim Theft of 100GB of Logistics Data",
-      "url": "https://cybersecuritynews.com/hackers-breach-maersk/",
-      "summary": "A.P. Moller–Maersk has confirmed that hackers accessed an older IT system and extracted data, as a group calling itself WhiteArmor claims it stole 100GB of logistics records. The shipping giant disclosed the incident on November 11, 2026, but has not confirmed the attackers’ identity, the claimed data volume, or what was taken. In its...",
-      "source": "Abinaya via Cyber Security News",
-      "image": "https://www.inoreader.com/camo/sm7L70gODMmbmtie5LthPMg6o_B0dOrqPSW09miq-CBs,q80,480x400,pf,b64/aHR0cHM6Ly9jeWJlcnNlY3VyaXR5bmV3cy5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjYvMTEvSGFja2Vycy1CcmVhY2gtR2xvYmFsLVNoaXBwaW5nLUdpYW50LU1hZXJzay1hbmQtQ2xhaW0tVGhlZnQtb2YtMTAwR0Itb2YtTG9naXN0aWNzLURhdGEud2VicA"
-    },
-    {
-      "id": "at_51158084375",
-      "title": "Hackers Deploy Malware in Fresh ScreenConnect Campaign",
-      "url": "https://www.securityweek.com/hackers-deploy-malware-in-fresh-screenconnect-campaign/",
-      "summary": "The attackers exploited a vulnerability in a legitimate extension to bypass ScreenConnect authentication. The post Hackers Deploy Malware in Fresh ScreenConnect Campaign appeared first on SecurityWeek.",
-      "source": "Ionut Arghire via SecurityWeek",
-      "image": "https://www.inoreader.com/camo/s0TYeXKkI3UeqWQnkU9ZvI34piSv4hFC57L9sS7BTdKM,q80,480x400,pf,b64/aHR0cHM6Ly93d3cuc2VjdXJpdHl3ZWVrLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNC8wMi9Db25uZWN0V2lzZS5qcGVn"
-    },
-    {
-      "id": "at_51158016412",
-      "title": "Microsoft confirms Windows security updates installation issues",
-      "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-confirms-kb5132061-installation-issues-0x80070306-0x800f0989-0x800f0993-errors/",
-      "summary": "Microsoft has confirmed reports that the November 2026 security updates are failing to install on Windows 11 systems with the October preview update. [...]",
-      "source": "Sergiu Gatlan via Bleeping Computer",
-      "image": "https://www.inoreader.com/camo/s_qYtE7yFsMJMKuZ9Fcjsba8CLB504a3TR-xV_hpDbeU,q80,480x400,pf,b64/aHR0cHM6Ly93d3cuYmxlZXBzdGF0aWMuY29tL2NvbnRlbnQvaGwtaW1hZ2VzLzIwMjYvMTEvMTIvV2luZG93cy0xMS5qcGc"
-    },
-    {
-      "id": "at_51157747061",
-      "title": "Microsoft Warns Hackers Are Using GSocket Backdoors to Keep Linux Servers Compromised After Patching",
-      "url": "https://cybersecuritynews.com/gsocket-backdoors/",
-      "summary": "Microsoft has warned that attackers are using a free remote access tool called GSocket to stay inside Linux servers even after the original security hole is fixed. Many admins treat a patch as the end of an incident, but this activity shows that patching alone may leave the attacker’s access untouched. GSocket is an open source tool built...",
-      "source": "Tushar Subhra Dutta via Cyber Security News",
-      "image": "https://www.inoreader.com/camo/sUYoGiLi0b0Aeqtv481Mcu3dySFaVp2qI7Fr_0GGCgkI,q80,480x400,pf,b64/aHR0cHM6Ly9ibG9nZ2VyLmdvb2dsZXVzZXJjb250ZW50LmNvbS9pbWcvYi9SMjl2WjJ4bC9BVnZYc0VqNlhmRlJrY0V0c2dRVGstd3lxRG16OVBsMk0wZXdzalVZR0NqRDFwQ2VQT2o4WUJKdTdKeGlycjVZRHhJVWJuWDhlWThuZng1OHUyVUc4alptSnl6WWVwUmFSWVU5TVFHQkY1bWpBb0JkSjVUZDktNlhYQkdMaW1KRUFoMFFqQlpIOEtneElhMENxamRKNWNyZkZCVVJPSGZYNkUxcy1xZy1vWGRVdUFVZFdyNlZpeHd6dUZ6MVJ2bHlvckEvczE2MDAvQWZ0ZXIlMjBjb2RlJTIwZXhlY3V0aW9uJTIwb24lMjBhbiUyMGludGVybmV0LWZhY2luZyUyMGFwcGxpY2F0aW9uJTIwKFNvdXJjZSUyMC0lMjBNaWNyb3NvZnQpLndlYnA"
-    },
-    {
-      "id": "at_51157710843",
-      "title": "Critical Pre-Auth MongoDB Flaw (CVE-2026-118383) Can Crash Lagging Servers on Failover",
-      "url": "https://thehackernews.com/2026/11/critical-pre-auth-mongodb-flaw-cve-2026.html",
-      "summary": "A critical flaw in MongoDB Server allows an unauthenticated attacker to send two requests that trigger a crash on the database server. The crash occurs only if that server is later chosen to take over as the main server while it still lacks some recent changes. MongoDB, the company that makes the database, released fixed versions earlier this week....",
-      "source": "[email protected] (The Hacker News) via The Hacker News",
-      "image": "https://www.inoreader.com/camo/sdZ39mjNR-IsZezyEBB1eShrvPpo-ImVtODxI45V-a-s,q80,480x400,pf,b64/aHR0cHM6Ly9ibG9nZ2VyLmdvb2dsZXVzZXJjb250ZW50LmNvbS9pbWcvYi9SMjl2WjJ4bC9BVnZYc0VqNlJKTERTTTEzTXdlbnd4RzR4blotVGQyX3ptbnlhLVkzOUZMSGxOay03UDNoWjV3MXFHakczWEZxVC00Z2FlWkl4U2VwV1dOTTUzYktUSWtaQk5BLVhfdFZLc3JnV2J3OHU4MW1qTHpMNmRYdlR0dktmS2VULUZrd1N6NENzZE1vSE56YTJOUkZ5MFBKenptYU1ST0NyM0Q3ZTZBS1Q1VVIzTGg0ekZiXzF3OUhNbVhYS0t2QVRWV0hVLUUvczE2MDAvbW9uZ28tcG9jLmdpZg"
-    },
-    {
-      "id": "at_51157611851",
-      "title": "Hackers Target N-central Zero-Days as N-able Rushes Patches",
-      "url": "https://www.securityweek.com/hackers-target-n-central-zero-days-as-n-able-rushes-patches/",
-      "summary": "The malicious activity started shortly after a researcher dropped over 30 zero-days. N-able patched the unauthenticated ones. The post Hackers Target N-central Zero-Days as N-able Rushes Patches appeared first on SecurityWeek.",
-      "source": "Ionut Arghire via SecurityWeek",
-      "image": "https://www.inoreader.com/camo/sdz0mQFo1gZHhQIGBLm7QBQjUUZvehZhGzcGVdoUWiCg,q80,480x400,pf,b64/aHR0cHM6Ly93d3cuc2VjdXJpdHl3ZWVrLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNi8wOC9OLUFibGUuanBlZw"
-    },
-    {
-      "id": "at_51157563705",
-      "title": "Hackers plant GSocket on Linux servers for persistent access",
-      "url": "https://www.bleepingcomputer.com/news/security/hackers-plant-gsocket-on-linux-servers-for-persistent-access/",
-      "summary": "Multiple threat actors are abusing GSocket, a legitimate open-source remote access tool, to maintain access to Linux servers even after patching the vulnerabilities exploited to gain initial access. [...]",
-      "source": "Bill Toulas via Bleeping Computer",
-      "image": "https://www.inoreader.com/camo/szP5Tf-vxh2CxZLshBY8YdrxZoGNVa4Oe1tRX6JH6T0c,q80,480x400,pf,b64/aHR0cHM6Ly93d3cuYmxlZXBzdGF0aWMuY29tL2NvbnRlbnQvaGwtaW1hZ2VzLzIwMjQvMDMvMDUvaGFuZC5qcGc"
-    },
-    {
-      "id": "at_51157524306",
-      "title": "Critical Red Hat Quay Vulnerability Could Expose Private Container Images",
-      "url": "https://www.securityweek.com/critical-red-hat-quay-vulnerability-could-expose-private-container-images/",
-      "summary": "Attackers could exploit a critical Red Hat Quay flaw to steal private container images, overwrite repositories and maintain persistent access. The post Critical Red Hat Quay Vulnerability Could Expose Private Container Images appeared first on SecurityWeek.",
-      "source": "Eduard Kovacs via SecurityWeek",
-      "image": "https://www.inoreader.com/camo/s7LRzX5g0S4lGZhm-XAH_YU5PnJ4Re0MVG6C0_UAkcw8,q80,480x400,pf,b64/aHR0cHM6Ly93d3cuc2VjdXJpdHl3ZWVrLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNS8xMC9SZWQtSGF0LmpwZWc"
-    },
-    {
-      "id": "at_51157324188",
-      "title": "Node.js Fixes 16 Flaws, Including HTTP/2 Bugs That Crash Servers and Leak Other Connections' Data",
-      "url": "https://thehackernews.com/2026/11/nodejs-fixes-16-flaws-including-http2.html",
-      "summary": "A flaw fixed in Node.js this week lets unauthenticated clients crash servers that use the runtime's built-in HTTP/2 support on the 24.x and 26.x release lines. A second HTTP/2 flaw can cause a server to send a client pieces of its memory, including responses intended for other connections. Fixed versions were released for all three supported lines:...",
-      "source": "[email protected] (The Hacker News) via The Hacker News",
-      "image": "https://www.inoreader.com/camo/sVOQSONdsrhM5XovwuW20Mxot2Xpl6vPFJTP3oKA6c4s,q80,480x400,pf,b64/aHR0cHM6Ly9ibG9nZ2VyLmdvb2dsZXVzZXJjb250ZW50LmNvbS9pbWcvYi9SMjl2WjJ4bC9BVnZYc0VoRC05YllZVHhiNVdtdk9tZnR3c1RBZTVoRGNIeWptMTJZbFFqMzIwT2hUNldxSUNCT2UwRDZuUWYtUFBzbEUtSTBjMHI4eHZaZFRBWGZ5UHdHUXhIV1JpUTVIU0lQRVpHRWlOckUxNXlnRE5aQ1J6elZ2R3VnZFJsSXE2SUFSUWYzOGlKRy1NTi11bzdNdmRYWGNBMHdYSUdEbTAtb2xvdVBTd19TYkJtMi0yQ1lHSGI0dUhndFJFdjJ5Y0kvczE2MDAvbm9kZWtzLmpwZw"
-    },
-    {
-      "id": "at_51157214569",
-      "title": "Hackers Hijack 4,837 GitHub Accounts to Target 61,764 Repositories With CI Secret-Stealing Malware",
-      "url": "https://cybersecuritynews.com/github-accounts/",
-      "summary": "A threat actor has used stolen GitHub credentials to push a secret-stealing payload into tens of thousands of code repositories. The activity began on November 10, 2026, around 12:45 UTC. It aims at the secrets and cloud keys that sit inside GitHub Actions, the tool many teams use to build and ship code. So far, 4,837 hijacked accounts...",
-      "source": "Tushar Subhra Dutta via Cyber Security News",
-      "image": "https://www.inoreader.com/camo/spaeVgzWUXau42yPEl0BLTYbpn4EKz0kwCsoDcgBhITg,q80,480x400,pf,b64/aHR0cHM6Ly9jeWJlcnNlY3VyaXR5bmV3cy5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjYvMTEvSGFja2Vycy1IaWphY2stNDgzNy1HaXRIdWItQWNjb3VudHMtdG8tVGFyZ2V0LTYxNzY0LVJlcG9zaXRvcmllcy53ZWJw"
-    },
-    {
-      "id": "at_51157214570",
-      "title": "Palo Alto PAN-OS RCE Flaw Allows Attackers to Execute Arbitrary Code With Root Privileges",
-      "url": "https://cybersecuritynews.com/palo-alto-networks-pan-os-rce-vulnerability/",
-      "summary": "Palo Alto Networks has disclosed a remote code execution vulnerability in PAN-OS software running on Panorama. Tracked as CVE-2026-0330, the flaw allows an authenticated administrator with network access to execute arbitrary code with root privileges. The November 11, 2026, advisory urges users to patch affected Panorama deployments, while Cloud...",
-      "source": "Abinaya via Cyber Security News",
-      "image": "https://www.inoreader.com/camo/sbANJZki9vp2BzeSpFQnBmJfn7lYXgg5X7sxfsTnbdCY,q80,480x400,pf,b64/aHR0cHM6Ly9jeWJlcnNlY3VyaXR5bmV3cy5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjYvMTEvUGFsby1BbHRvLU5ldHdvcmtzLVBBTi1PUy1SQ0UtVnVsbmVyYWJpbGl0eS1BbGxvdy1BdHRhY2tlcnMtdG8tZXhlY3V0ZS1hcmJpdHJhcnktY29kZS13aXRoLXJvb3QtcHJpdmlsZWdlcy53ZWJw"
-    },
-    {
-      "id": "at_51157079886",
-      "title": "Maersk Confirms Data Theft Amid $5 Million Extortion Attempt",
-      "url": "https://www.securityweek.com/maersk-confirms-data-theft-amid-5-million-extortion-attempt/",
-      "summary": "The WhiteArmor ransomware group claims it stole 100GB of data from the shipping giant’s systems. The post Maersk Confirms Data Theft Amid $5 Million Extortion Attempt appeared first on SecurityWeek.",
-      "source": "Eduard Kovacs via SecurityWeek",
-      "image": "https://www.inoreader.com/camo/sCRguhzSSWcqq_XrulrVcUBoN0s-7CmnudVfKkhNkAJU,q80,480x400,pf,b64/aHR0cHM6Ly93d3cuc2VjdXJpdHl3ZWVrLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNi8xMS9NYWVyc2suanBlZw"
-    },
-    {
-      "id": "at_51156683909",
-      "title": "Top 10 Best Cybersecurity Maturity Assessment Tools in 2026 [Ranked & Scored]",
-      "url": "https://cybersecuritynews.com/best-maturity-assessment-tools/",
-      "summary": "The board’s simplest hard question “how good are we, versus whom?” has four honest answers that measure different things: framework self-assessment, live telemetry scores, outside-in benchmarks, and exposure mathematics. Averaging them misleads; running two and minding the gap informs. This countdown ranks ten tools with each lens declared,...",
-      "source": "Swathi via Cyber Security News",
-      "image": "https://www.inoreader.com/camo/seDrweI4zSJQPxSsB0SDmIEfvpicWnSvxcTpUTi28V_I,q80,480x400,pf,b64/aHR0cHM6Ly9ibG9nZ2VyLmdvb2dsZXVzZXJjb250ZW50LmNvbS9pbWcvYi9SMjl2WjJ4bC9BVnZYc0VoMFFQUTFsM2JxWXY5UzVQZTNEVGVvX1lpYnYxTk9WQTU5c1VsSG1ESS1SSGpJaVcyTVJaZ2xEUjZXaXZ5QjdBLVlLWFdjQkszTnYxMkM4US12cHo3bG4ta1JKQjRlbllvNExGb0Q1aExxNjJKbkNlYkxNUGZTZlM2VWUwSHNpSmd6RU4wdERGRW81cXpEdGs3eVk4Zm5XRF9zMkFBU0w4azQtT3Jqa19DRzJBaFdVYjZCMTYzb3hvMXExby1zL3MxNjAwL2Nsb3Vkd2F2ZS53ZWJw"
-    },
-    {
-      "id": "at_51156683911",
-      "title": "Top 10 Best GDPR Compliance Software in 2026 [Ranked & Scored]",
-      "url": "https://cybersecuritynews.com/best-gdpr-compliance-software/",
-      "summary": "GDPR enforcement punishes two failures: invalid consent at the banner and missed clocks on data-subject requests and the tooling market splits along exactly that line, with program suites running RoPAs and DPIAs above both. One honest count note: our source list named ten brands, but Cookiebot is a Usercentrics product, so we rank nine platforms...",
-      "source": "Swathi via Cyber Security News",
-      "image": "https://www.inoreader.com/camo/sN-2zASH_ezyWViliZrznABbQT1PN9O-zj_wX2j4e6Mc,q80,480x400,pf,b64/aHR0cHM6Ly9ibG9nZ2VyLmdvb2dsZXVzZXJjb250ZW50LmNvbS9pbWcvYi9SMjl2WjJ4bC9BVnZYc0VnUnRQOXlRZXRpNUVCYUxjei0zUWxfSXNhZF92azRhU3NnNC1pVmJJd1dhS0dBWEVzU2F4MjNUVkthWGc0NzZ4eHdIVlE1aUVYbW9jR3lXWGw2ZXhtUWlicEE0TUNOdUpzZ2FVbFhEdVduQ054YmN2MS0xNzZEQUFNdC14bDViYVpqUFF1d2FCa2R1SVF5V0hwVEtwOFBCRjdaNVYtalg3VWxCVjBEaG5zV25mR2s4RjRFY1RWOVFydkJqVy1FL3MxNjAwL29uZXRydXN0LndlYnA"
-    },
-    {
-      "id": "at_51156683918",
-      "title": "Top 10 Best HIPAA Compliance Software in 2026 [Ranked & Scored]",
-      "url": "https://cybersecuritynews.com/best-hipaa-compliance-software/",
-      "summary": "HIPAA software serves two buyers the market keeps conflating: covered entities needing risk assessments, training, and BAA tracking, and digital-health vendors needing to prove posture to enterprise healthcare customers usually alongside SOC 2 compliance. This countdown ranks ten options with the buyer declared per entry, because the practice’s...",
-      "source": "Swathi via Cyber Security News",
-      "image": "https://www.inoreader.com/camo/sSvVnwwBT_WIxoQ9UiIW_c-NJmi9pRODsMAC2zlPTYB8,q80,480x400,pf,b64/aHR0cHM6Ly9ibG9nZ2VyLmdvb2dsZXVzZXJjb250ZW50LmNvbS9pbWcvYi9SMjl2WjJ4bC9BVnZYc0VqUTBUU29PQWlOQm1yRzZxWFlIQ2VPYVpUZUFfY1pPRTdWYThsNDZxVk9EWERma0pfSXVQZnFQYkJMV2NvN1lPWC1iZUpKVENxeEZEVlZXZkpXODJ2aWhxN2JFVzh5ZkNFZUVkb3VlOVdfYmZMeHVDZDRnN1VydENYTXczSkpCcTRTRnZ2dEllakhiZDZLbGh2QW9fQmFuQXhkNHNNVVp0WlJVMl9sUTdVQjZFUmhIQV9oRThNNENaZWdrblF5L3MxNjAwL3ZhbnRhJTIwbmV3LndlYnA"
-    },
-    {
-      "id": "at_51156683924",
-      "title": "Top 10 Best PCI DSS Compliance Tools in 2026 [Ranked & Scored]",
-      "url": "https://cybersecuritynews.com/top-10-best-pci-dss-compliance-tools-in-2026-ranked-scored-best-pci-dss-compliance-tools/",
-      "summary": "PCI DSS is three purchases wearing one acronym scope-reduction architecture, continuous technical controls, and assessment itself and PCI 4.x sharpened all three with customized approaches and stricter authentication demands. This countdown ranks ten options across the lanes honestly: control platforms, merchant-program machines, automation stacks,...",
-      "source": "Kavichselvan via Cyber Security News",
-      "image": "https://www.inoreader.com/camo/sADZBl8l-se9wr6E5MSOoBQ7lwJrze1ATTNchmtdHatU,q80,480x400,pf,b64/aHR0cHM6Ly9ibG9nZ2VyLmdvb2dsZXVzZXJjb250ZW50LmNvbS9pbWcvYi9SMjl2WjJ4bC9BVnZYc0VpRkMtbHpEcnZzNUVIUzN5Y1d1RVQyazdhY1B4MGVkdDIySk9CRWxGRTIxMk8yMlVqTHgxWE1lYm8tZXRsSXN2LW93dllTXzVQUVdlcVNvREVvWnRDMVNVN2xRaFR1Z3dhNmhkcTNhSGFnZDBqdmpJa1hsdnI2NmIycmR4SDZWaGxnZDZ1WjNwZGo2SjhDbHY4aGtnd0tzQlRVczE3ZFZaQ0Y2eWQzZ21aUG9Sazc0d1N4STZiMUM3bUdRbW8vczE2MDAvcXVhbHlzJTIwJTIwKDMpLndlYnA"
-    },
-    {
-      "id": "at_51156683929",
-      "title": "Top 10 Best IT & Cyber Risk Management Tools in 2026 [Ranked & Scored]",
-      "url": "https://cybersecuritynews.com/best-it-cyber-risk-tools/",
-      "summary": "The risk register is a promise-tracking machine risks named, owners committed, treatments dated and the tooling decides whether those promises stay alive or quietly rot. This countdown ranks ten platforms on the workflow that fights staleness: intake through ownership, treatment, exception, and retirement, with scoring that can graduate from...",
-      "source": "Swathi via Cyber Security News",
-      "image": "https://www.inoreader.com/camo/sVaESwPdAqC8BSQGVCMAptZyYd9L5PG1w2NqQ2sVIuIs,q80,480x400,pf,b64/aHR0cHM6Ly9ibG9nZ2VyLmdvb2dsZXVzZXJjb250ZW50LmNvbS9pbWcvYi9SMjl2WjJ4bC9BVnZYc0VpVDlURUZCVHJMUWhMbGZfOWtlUW84UEtIeWNIXzNTRXZOemFMcXZhRWp2TnJWbVBOalFDekZwZDZETXJ5aHFNNnItcHRVQ1VBcmNiZFNySkw0MERURXI4UmliNkpzWFBoenZIeFczOFZHV18tVXNlSGZLM1loVWdtbkV0ek8yNnNfYmRZd18zMEtlcVhxWWlYQjhfOC1XSWNCUE83YzFhQ3NJNWxlS2x2R2JvTHc4SEM5R0RPN2lRX2NiMlBVL3MxNjAwL3NlcnZpY2Vub3cud2VicA"
-    },
-    {
-      "id": "at_51156683931",
-      "title": "Microsoft Discovers 59 Linux Kernel Security Bugs Using AI, Including Flaws Hidden for Over 20 Years",
-      "url": "https://cybersecuritynews.com/linux-kernel-security-bugs/",
-      "summary": "Microsoft’s FORGE Lab used an AI-driven scanning system to find 59 security bugs in the Linux kernel. Some of them sat unnoticed for more than 20 years. The work has so far led to 33 assigned CVEs, and Microsoft confirmed working root privilege-escalation exploits for eight of them. The team used a tool with the codename MDASH. It scanned...",
-      "source": "Tushar Subhra Dutta via Cyber Security News",
-      "image": "https://www.inoreader.com/camo/si5fdV25fgVnI1tUGKX8HFzIM-OvqtpOpxPTP0RNzpZE,q80,480x400,pf,b64/aHR0cHM6Ly9ibG9nZ2VyLmdvb2dsZXVzZXJjb250ZW50LmNvbS9pbWcvYi9SMjl2WjJ4bC9BVnZYc0VnTzBBRTc1WnVTdWRkZkZQVUVIQk5WYjFlREx5NDJxNVgxSGhONE1HVXdyand6b0swaF92UE5TRGE4Qk1hSi1HaTNfX2pCNnJLdHVsLXdvQTlxYUlfU2FiOHFIYnMyMjVBcEtlSTVVNEJUVlgySlp2NjAxX21keG9ONjV0dGZxblNISnFUd2RCTG5RaUw1Y3hBN2JjYk5UQnc0WjZXVWZuWUxXZTVfeGllcmNOZEdFR2Y2dHJWXzQ4T3lZNkEvczE2MDAvU2Nhbi10by1yZXBvcnQlMjB3b3JrZmxvdyUyMChTb3VyY2UlMjAtJTIwTWljcm9zb2Z0KS53ZWJw"
-    },
-    {
-      "id": "at_51156477677",
-      "title": "Attacker Used 4,837 Hijacked GitHub Accounts to Run a CI Secret Stealer in 1,806+ Repositories",
-      "url": "https://thehackernews.com/2026/11/4837-hijacked-github-accounts-ran-ci.html",
-      "summary": "Starting Tuesday, an attacker used stolen credentials for 4,837 GitHub accounts to plant a secret stealer in repositories those accounts could write to, according to Aikido Security, a security software company. The stealer is built to take the secrets and cloud credentials that a repository's CI workflows can reach. It ran in at least 1,806 repositories,...",
-      "source": "[email protected] (The Hacker News) via The Hacker News",
-      "image": "https://www.inoreader.com/camo/sp5pkP-SWI4sgDh1JNm8yWMffVYoQzkBFqGT3YAvvM1c,q80,480x400,pf,b64/aHR0cHM6Ly9ibG9nZ2VyLmdvb2dsZXVzZXJjb250ZW50LmNvbS9pbWcvYi9SMjl2WjJ4bC9BVnZYc0VoMS00T2lPa0dMY0szZkFyMkhkaEFMT2ZjX0JxUjIxNDQwVHNqVUl1Q056djRZTDBsV1JDM2x2VWpFMXZ1MlJkVmZqdW54aTgwZ01ReUdwanZVZFd6TVJ0dGhXOF8taEZPSjc5WWhGekpyTkdnb0tEUFlYbTJPYVdPc044a2dCRUxxT1BzNXM5UUtMNHF6UXp1XzNORUVxSHlncGZRektZeERSSVFlRmdNSGoyNG95UHlhc2xVZW1rZS1sb1UvczE2MDAvZ2l0aHViLmpwZw"
-    },
-    {
-      "id": "at_51156310902",
-      "title": "Poland takes its national e-government platform offline after a cyberattack",
-      "url": "https://securityaffairs.com/202895/security/poland-takes-its-national-e-government-platform-offline-after-a-cyberattack.html",
-      "summary": "Poland takes its e-government platform ePUAP offline after stopping a cyberattack, disrupting access to public services. Poland temporarily shut down ePUAP, the government platform citizens and businesses use to reach public services, after detecting and stopping a cyberattack. A notice on the government’s website says ePUAP electronic mailboxes...",
-      "source": "Pierluigi Paganini via Security Affairs",
-      "image": "https://www.inoreader.com/camo/st3HoiVTPMDQF2HsfZMap8eqofFHmvJI8hvBCmMbqe1g,q80,480x400,pf,b64/aHR0cHM6Ly9zZWN1cml0eWFmZmFpcnMuY29tL3dwLWNvbnRlbnQvdXBsb2Fkcy8yMDE5LzA5L1BvbGFuZC10by1lc3RhYmxpc2gtQ3liZXJzcGFjZS1EZWZlbmNlLUZvcmNlLWJ5LTIwMjQuanBn"
     }
   ]
 }
