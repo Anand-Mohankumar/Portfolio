@@ -1,6 +1,14 @@
 {
-  "updatedAt": "2026-11-15T22:49:01.420453+00:00",
+  "updatedAt": "2026-11-16T02:44:13.325949+00:00",
   "articles": [
+    {
+      "id": "at_51190674652",
+      "title": "The Microsoft Outage Left 15 Hotel Guests Poisoned by Chlorine",
+      "url": "https://securityaffairs.com/203189/security/the-microsoft-outage-left-15-hotel-guests-poisoned-by-chlorine.html",
+      "summary": "A Microsoft 365 outage stopped a hotel’s email chlorine alert in Germany, and 15 guests were poisoned. A hotel in Germany had a maintenance safety system for its sauna area. If the chlorine level got too high, the system emailed the operators. When Microsoft’s cloud services failed, those emails couldn’t go out, the chlorine rose, and 15 guests...",
+      "source": "Pierluigi Paganini via Security Affairs",
+      "image": "https://www.inoreader.com/camo/sDTCJ9lgcA0qyIdgshmZxR7PpC0IkC_4E2pUD8r3mM7E,q80,480x400,pf,b64/aHR0cHM6Ly9zZWN1cml0eWFmZmFpcnMuY29tL3dwLWNvbnRlbnQvdXBsb2Fkcy8yMDI2LzExL2ltYWdlLTI0LnBuZw"
+    },
     {
       "id": "at_51189205392",
       "title": "FBI warns ARTEX AI hacking tool is powering global cyberattacks",
@@ -1592,14 +1600,6 @@
       "summary": "Poland takes its e-government platform ePUAP offline after stopping a cyberattack, disrupting access to public services. Poland temporarily shut down ePUAP, the government platform citizens and businesses use to reach public services, after detecting and stopping a cyberattack. A notice on the government’s website says ePUAP electronic mailboxes...",
       "source": "Pierluigi Paganini via Security Affairs",
       "image": "https://www.inoreader.com/camo/st3HoiVTPMDQF2HsfZMap8eqofFHmvJI8hvBCmMbqe1g,q80,480x400,pf,b64/aHR0cHM6Ly9zZWN1cml0eWFmZmFpcnMuY29tL3dwLWNvbnRlbnQvdXBsb2Fkcy8yMDE5LzA5L1BvbGFuZC10by1lc3RhYmxpc2gtQ3liZXJzcGFjZS1EZWZlbmNlLUZvcmNlLWJ5LTIwMjQuanBn"
-    },
-    {
-      "id": "at_51156207325",
-      "title": "Hackers Abuse Windows Group Policy to Deploy Citrus Ransomware and Disable Microsoft Defender",
-      "url": "https://cybersecuritynews.com/hackers-abuse-windows-group-policy/",
-      "summary": "A new ransomware group called Citrus is using Windows Group Policy to push its malware across entire company networks and switch off Microsoft Defender first. Group Policy is a trusted Windows tool that admins use to manage many computers at once. Here, the attackers turn it into a delivery system. The group breaks in through stolen contractor...",
-      "source": "Tushar Subhra Dutta via Cyber Security News",
-      "image": "https://www.inoreader.com/camo/suopnZHU8GiIPxuw8ZKYSKlFbKJ0IUdD-SsOvM8eQlog,q80,480x400,pf,b64/aHR0cHM6Ly9ibG9nZ2VyLmdvb2dsZXVzZXJjb250ZW50LmNvbS9pbWcvYi9SMjl2WjJ4bC9BVnZYc0VpYzBhUnRjaWtWak16MXVNcTJQb0Q1cGpnVmtHYWVhZnRydHZGRWFlRlI3c0REekdlaGZEVHFuWXBFalM1cUpPdEo0ZUVoRWVldXUtWm9XMDNwQ1J1dFkwV1Rab2x2R1lId0lTX21QcldwYVdKS2FZTmpfdGJVVTkyazBpcVN1NEpJdXFGZkVaV2dNQ3F2T0VFdmF4UmtNcDljMUNrcjdQOGFleVNBMnZIMXNQaDJ0WnlmcnpQdVc1bEdxaEkvczE2MDAvQ2l0cnVzJTIwUmFuc29td2FyZSUyMExhdW5jaCUyMChTb3VyY2UlMjAtJTIwU2VjdXJlbGlzdCkud2VicA"
     }
   ]
 }

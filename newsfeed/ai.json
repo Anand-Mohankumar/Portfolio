@@ -1,6 +1,30 @@
 {
-  "updatedAt": "2026-11-15T22:49:01.247670+00:00",
+  "updatedAt": "2026-11-16T02:44:13.090497+00:00",
   "articles": [
+    {
+      "id": "at_51191548971",
+      "title": "Apple launches new app to study how people use AI for health",
+      "url": "https://techcrunch.com/2026/11/15/apple-launches-new-app-to-study-how-people-use-ai-for-health/",
+      "summary": "Apple's new app for a study will answer everyday medical questions",
+      "source": "Ivan Mehta via AI | TechCrunch",
+      "image": "https://www.inoreader.com/camo/szdqUiFJ9U2tvcstLcQ__Db8HDUV2XopqQz1SWnVFUrw,q80,480x400,pf,b64/aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNi8xMS9BcHBsZS1IZWFsdGgtQUktVXNhZ2UtU3R1ZHkuanBnP3Jlc2l6ZT0xNjAwLDEwNjc"
+    },
+    {
+      "id": "at_51191309865",
+      "title": "Apple’s new study looks to improve the effectiveness of AI health tools",
+      "url": "https://www.theverge.com/tech/1033355/apples-new-study-looks-to-improve-the-effectiveness-of-ai-health-tools",
+      "summary": "Apple announced a new study today with the goal of better understanding how people interact with conversational AI health tools and how useful their responses actually are. The company is conducting the Apple Health AI Usage Study in collaboration with OpenEvidence, a clinical AI platform used by healthcare professionals that generates...",
+      "source": "Andrew Liszewski via The Verge - Artificial Intelligences",
+      "image": "https://www.inoreader.com/camo/s4no1DURT2G9EvCOXgVS-JUBqW0UQ3LBxCjiRlX3fA2g,q80,480x400,pf,b64/aHR0cHM6Ly9wbGF0Zm9ybS50aGV2ZXJnZS5jb20vd3AtY29udGVudC91cGxvYWRzL3NpdGVzLzIvMjAyNi8xMS9hcHBsZXN0dWR5MWIuanBnP3F1YWxpdHk9OTAmc3RyaXA9YWxsJmNyb3A9MCwwLDEwMCwxMDA"
+    },
+    {
+      "id": "at_51190973588",
+      "title": "Indian chip startup Bharat Semi lands $24M seed round as it eyes global AI sensor market",
+      "url": "https://techcrunch.com/2026/11/15/indian-chip-startup-bharat-semi-lands-24m-seed-round-as-it-eyes-global-ai-sensor-market/",
+      "summary": "Bharat Semi says it has secured design wins for its AI-enabled sensor technology with companies including General Atomics.",
+      "source": "Jagmeet Singh via AI | TechCrunch",
+      "image": "https://www.inoreader.com/camo/svMuAPu-gkPOfOGwOR0Hjk9QJgbcEIomNSCrE8qsue1c,q80,480x400,pf,b64/aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNi8xMS9iaGFyYXQtc2VtaS1jby1mb3VuZGVycy12aW5heWFrLWRhbG1pYS12cmluZGEta2Fwb29yLmpwZz9yZXNpemU9MTYwMCwxMDY3"
+    },
     {
       "id": "at_51190364014",
       "title": "Is bad news for Jensen Huang also bad news for the AI industry?",
@@ -1576,30 +1600,6 @@
       "summary": "Presented by WEKARead more",
       "source": "via VentureBeat",
       "image": "https://www.inoreader.com/camo/sFfRgIpBY-tUKQjOgG7aHN9UzwBF28kSmlhMR3EDJI4U,q80,480x400,pf,b64/aHR0cHM6Ly9pbWFnZXMuY3RmYXNzZXRzLm5ldC9qZHR3cWh6dmMybjEvNW92b1hwQlZ2QUphdDhUeUtUNXg4Sy9mYTg5OTM5ZmExZTY3YTI0OGE2ODEwYzQ5ZTZiNjk5ZC9WZW50dXJlQmVhdDEwMjgyNi0yMjkxLmpwZz93PTE2MDAmcT04MA"
-    },
-    {
-      "id": "at_51138899655",
-      "title": "Meta’s AI agent Muse lands on Apple Watch and Android Wear OS",
-      "url": "https://techcrunch.com/2026/11/10/metas-ai-agent-muse-lands-on-apple-watch-and-wear-os/",
-      "summary": "Users can now interact with Meta’s AI assistant through voice calls, text messages, or dictation on their Apple Watch.",
-      "source": "Aisha Malik via AI | TechCrunch",
-      "image": "https://www.inoreader.com/camo/sYFIbMBNLmR3OvvXF8NfpLQYEAEl91N3ZQsc86_9fEUM,q80,480x400,pf,b64/aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNS8xMS9NdXNlQ2hhcm0ucG5nP3c9MTIwMA"
-    },
-    {
-      "id": "at_51138204750",
-      "title": "The global pledge to use AI for climate good is a cruel joke",
-      "url": "https://www.theverge.com/science/1030252/ai-data-center-climate-pledge-united-nations-cop31",
-      "summary": "Murat Kurum (left), Turkey’s minister of Environment, Urbanisation and Climate Change; and Chris Bowen, Australia's minister for Climate Change and Energy, raise their hands together at the COP31 UN Climate Change Conference in Antalya, Turkey, on November 9th, 2026. | Photo: AFP via Getty Images At this point, reading through the latest...",
-      "source": "Justine Calma via The Verge - Artificial Intelligences",
-      "image": "https://www.inoreader.com/camo/s2TAz9ejl1oe54p4TrovOmzQc9AMLj4OeB9aFT_Gos-U,q80,480x400,pf,b64/aHR0cHM6Ly9wbGF0Zm9ybS50aGV2ZXJnZS5jb20vd3AtY29udGVudC91cGxvYWRzL3NpdGVzLzIvMjAyNi8xMS9nZXR0eWltYWdlcy0yMzAzODQwNjQzLmpwZz9xdWFsaXR5PTkwJnN0cmlwPWFsbCZjcm9wPTAsMCwxMDAsMTAw"
-    },
-    {
-      "id": "at_51138082179",
-      "title": "Anthropic targets $1.4 trillion IPO",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/1030703/anthropic-ipo-1-4-trillion",
-      "summary": "Anthropic confirmed on Tuesday that its IPO could be one of the biggest ever, even while falling short of previous expectations. Its IPO price is expected to be between $70.00 and $78.00 per share, which would put its valuation as high as $1.4 trillion, according to the New York Times. The Wall Street Journal reports that according to...",
-      "source": "Stevie Bonifield via The Verge - Artificial Intelligences",
-      "image": "https://www.inoreader.com/camo/sSJ1orKm28EA_NsRgQFoaDp6XUEHR_tf5nwq0d_FS2CE,q80,480x400,pf,b64/aHR0cHM6Ly9wbGF0Zm9ybS50aGV2ZXJnZS5jb20vd3AtY29udGVudC91cGxvYWRzL3NpdGVzLzIvMjAyNi8wMS9TVEsyNjlfQU5USFJPUElDXzJfRC5qcGc_cXVhbGl0eT05MCZzdHJpcD1hbGwmY3JvcD0wLDAsMTAwLDEwMA"
     }
   ]
 }
