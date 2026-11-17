@@ -1,6 +1,46 @@
 {
-  "updatedAt": "2026-11-17T04:29:17.851163+00:00",
+  "updatedAt": "2026-11-17T14:26:08.487213+00:00",
   "articles": [
+    {
+      "id": "at_51208104396",
+      "title": "Nvidia’s first big move after Jensen Huang’s exit targets national security",
+      "url": "https://techcrunch.com/2026/11/17/nvidias-first-big-move-after-jensen-huangs-exit-targets-national-security/",
+      "summary": "The new standing committee will give board-level oversight of national security policies, export control compliance, and global trade risks, the company said.",
+      "source": "Kirsten Korosec via AI | TechCrunch",
+      "image": "https://www.inoreader.com/camo/snJK2-1FPutKQGHhbZWNPy5SDnB6F-F0YI1cEODZOTcQ,q80,480x400,pf,b64/aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNC8xMC9HZXR0eUltYWdlcy0yMDg3MzM1NDc1LmpwZz9yZXNpemU9MTYwMCwxMDY1"
+    },
+    {
+      "id": "at_51208104410",
+      "title": "Spotify’s new tool aims to stop deepfakes from being attributed to real artists",
+      "url": "https://techcrunch.com/2026/11/17/spotifys-new-tool-aims-to-stop-deepfakes-from-being-attributed-to-real-artists/",
+      "summary": "The update comes as Billboard reported last month that Sony Music had requested the removal of more than 260,000 deepfake songs from digital platforms, nearly double the number the label disclosed in March.",
+      "source": "Aisha Malik via AI | TechCrunch",
+      "image": "https://www.inoreader.com/camo/sMHVgd8tStE-WlDGmcgx-4imCQKqL9UePfCA3At2--xE,q80,480x400,pf,b64/aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNi8xMS9IZXJvLWFzc2V0LnBuZz9yZXNpemU9MTYwMCw5MDA"
+    },
+    {
+      "id": "at_51207234169",
+      "title": "Alibaba’s Qwen4-Max cuts AI task costs, but benchmarks show an uneven challenge to frontier rivals",
+      "url": "https://venturebeat.com/technology/alibabas-qwen4-max-cuts-ai-task-costs-but-benchmarks-show-an-uneven-challenge-to-frontier-rivals",
+      "summary": "Alibaba is making a practical pitch for its latest flagship AI model: businesses should be able to get more work done for less money, even if the model does not lead the overall intelligence rankings.Read more",
+      "source": "[email protected] (Carl Franzen) via VentureBeat",
+      "image": "https://www.inoreader.com/camo/s-gNK6jfdbREG5ZZuXTzdv5YqsioYyj-zhbetnkVAsdc,q80,480x400,pf,b64/aHR0cHM6Ly9pbWFnZXMuY3RmYXNzZXRzLm5ldC9qZHR3cWh6dmMybjEvNzNMY0tWNnNRZmp1RmFjaHhvR0RBRC8yNDRiYTJiNzdkODhmOTg1NDE0M2U5MzBjYzZjNTM5My80NzE0MTg2Ny1jZGUzLTQ5ZmYtYjhlMy01NGViNDhlMDY3NTIucG5nP3c9MTYwMCZxPTgw"
+    },
+    {
+      "id": "at_51207104955",
+      "title": "Read more: https://t.co/4twSUkIjd6",
+      "url": "https://x.com/TheRundownAI/status/2122653544188637678",
+      "summary": "Read more: therundownai.beehiiv.com/p/california-t…💬0🔄0❤️4👀1115📊1⚡ Powered by xgo.ing",
+      "source": "The Rundown AI (@TheRundownAI) via The Rundown AI(@TheRundownAI)",
+      "image": ""
+    },
+    {
+      "id": "at_51207104968",
+      "title": "Top stories in AI today: - California takes OpenAI to court over agent escapes - Trump set to crown...",
+      "url": "https://x.com/TheRundownAI/status/2122653539205792156",
+      "summary": "Top stories in AI today:- California takes OpenAI to court over agent escapes- Trump set to crown AI ‘national champions’- Make your AI usage go further with these tips- OpenAI tracks how scientists really use ChatGPT💬8🔄1❤️16👀3292📊9⚡ Powered by xgo.ing",
+      "source": "The Rundown AI (@TheRundownAI) via The Rundown AI(@TheRundownAI)",
+      "image": "https://www.inoreader.com/camo/sTMgl9whfEvMYlo8Dr-6NUcynC_woJCOZz2pagpv2ft0,q80,480x400,pf,b64/aHR0cHM6Ly9wYnMudHdpbWcuY29tL21lZGlhL0hYVXVKSmdXd0FFZXhOZC5wbmc"
+    },
     {
       "id": "at_51202080255",
       "title": "Cybersecurity AI startup Corma reaches $1B valuation in about 3 months",
@@ -1560,46 +1600,6 @@
       "summary": "Testing shows that the way Opus 5.5 does reasoning may have changed.",
       "source": "via TLDR AI Feed",
       "image": "https://www.inoreader.com/camo/sZZ0EFQ7XAmc03DMTS0Y2-58p3jPqw-0kJ-fv8aLwqck,q80,480x400,pf,b64/aHR0cHM6Ly90aHJlYWRyZWFkZXJhcHAuY29tL2ltYWdlcy9zY3JlZW5zaG90cy90aHJlYWQvMjExOTE5MjA3NTUwNTg5MzY5NS5qcGc"
-    },
-    {
-      "id": "at_51151982924",
-      "title": "Securing AI Agents 101 (Sponsor)",
-      "url": "https://www.wiz.io/lp/securing-ai-agents-101?sfcid=701Py00000RTEWMIA5&amp;utm_source=tldr-ai&amp;utm_medium=paid-email&amp;utm_campaign=FY26Q3_INB_FORM_Securing-AI-Agents-101&amp;utm_content=AI-Agents-101_header_securing_ai_agents&amp;utm_term=FY27Q4-tldr-ai-primary-november_2026-11-10_tldr_ai",
-      "summary": "AI agents are changing how work gets done. They take on tasks, orchestrate tools, and drive outcomes across environments.As adoption grows, they bring powerful new capabilities. At the same time, they introduce security challenges that require a clear understanding of how they work and how to secure them.Securing AI Agents 101 is a one-page resource...",
-      "source": "via TLDR AI Feed",
-      "image": "https://www.inoreader.com/camo/s0lyFC4omg_RFUKibQeDhIVRJA7Wk9B2DXHtb07WGCwc,q80,480x400,pf,b64/aHR0cHM6Ly93d3cuZGF0b2Ntcy1hc3NldHMuY29tLzc1MjMxLzE3NTgxNDEzNTYtMTYwMHg5MDAucG5n"
-    },
-    {
-      "id": "at_51151982927",
-      "title": "ChatGPT Enterprise on AWS Marketplace (1 minute read)",
-      "url": "https://openai.com/index/chatgpt-enterprise-aws-marketplace/?utm_source=tldrai",
-      "summary": "OpenAI made ChatGPT Enterprise available through AWS Marketplace, allowing organizations to purchase and manage subscriptions through existing AWS billing relationships and apply eligible spending toward AWS commitments.",
-      "source": "via TLDR AI Feed",
-      "image": ""
-    },
-    {
-      "id": "at_51151982929",
-      "title": "Google's New TPU Lineup (4 minute read)",
-      "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/tpu-8i-max-and-8tx/?utm_source=tldrai",
-      "summary": "Google introduced TPU 8i Max for massive context windows and higher compute density, alongside TPU 8tx for secure and confidential inference.",
-      "source": "via TLDR AI Feed",
-      "image": ""
-    },
-    {
-      "id": "at_51151901215",
-      "title": "Congress to call Jensen Huang in to answer for alleged Chinese spy affair",
-      "url": "https://techcrunch.com/2026/11/11/congress-to-call-jensen-huang-in-to-answer-for-alleged-chinese-spy-affair/",
-      "summary": "Nvidia CEO Jensen Huang has until the end of the day Wednesday to answer a call from House Republicans for a closed-door briefing on his affair with alleged Chinese spy.",
-      "source": "Rebecca Bellan via AI | TechCrunch",
-      "image": ""
-    },
-    {
-      "id": "at_51151391966",
-      "title": "NEW: Google DeepMind released AlphaGenome 2, its upgraded AI model that predicts what a DNA mutation...",
-      "url": "https://x.com/TheRundownAI/status/2120566567453036865",
-      "summary": "NEW: Google DeepMind released AlphaGenome 2, its upgraded AI model that predicts what a DNA mutation does in one specific kind of cell.What changed from the first AlphaGenome:- Zooms in on one kind of cell, where the original blended a whole tissue together- Catches nearly 2x the mutations that dial a gene up or down- Works on kinds of cells it has...",
-      "source": "The Rundown AI (@TheRundownAI) via The Rundown AI(@TheRundownAI)",
-      "image": ""
     }
   ]
 }
