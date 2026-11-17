@@ -1,6 +1,30 @@
 {
-  "updatedAt": "2026-11-16T22:03:35.696299+00:00",
+  "updatedAt": "2026-11-17T04:29:17.851163+00:00",
   "articles": [
+    {
+      "id": "at_51202080255",
+      "title": "Cybersecurity AI startup Corma reaches $1B valuation in about 3 months",
+      "url": "https://techcrunch.com/2026/11/16/cybersecurity-ai-startup-corma-reaches-1b-valuation-in-about-3-months/",
+      "summary": "Three months since introducing its product, AI cybersecurity startup Corba has raised a $125 million Series A at a $1 billion valuation led by NEA.",
+      "source": "Julie Bort via AI | TechCrunch",
+      "image": "https://www.inoreader.com/camo/s4b5VDn2kc31pKuSGHIYG3JRyxxxzvefFiqIY_Ch-jSc,q80,480x400,pf,b64/aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNi8xMC9OZXR3b3JrZWQtQUktc3dhcm0td2l0aC1nbG93aW5nLW5vZGVzLnBuZz9yZXNpemU9MTYwMCw4MDA"
+    },
+    {
+      "id": "at_51201512786",
+      "title": "Tech leaders are convinced that Jensen Huang’s exit was a plot against him",
+      "url": "https://www.theverge.com/tech/1035027/tech-leaders-nvidia-jensen-huang-theories",
+      "summary": "Jensen Huang's stunning resignation from Nvidia after more than 33 years has sent shockwaves throughout the tech industry. Now prominent figures are calling for Huang's reinstatement, and many are also hopping on board with a theory spreading throughout Silicon Valley: that the scandal is the result of a plot against the former CEO. At...",
+      "source": "Emma Roth via The Verge - Artificial Intelligences",
+      "image": "https://www.inoreader.com/camo/swE9Egct0o7uEQFcFGPTranVIRxqPteyOkbcUSIsf0lo,q80,480x400,pf,b64/aHR0cHM6Ly9wbGF0Zm9ybS50aGV2ZXJnZS5jb20vd3AtY29udGVudC91cGxvYWRzL3NpdGVzLzIvMjAyNi8xMS9nZXR0eWltYWdlcy0yMjk5NjQ1MjkwLmpwZz9xdWFsaXR5PTkwJnN0cmlwPWFsbCZjcm9wPTAsMCwxMDAsMTAw"
+    },
+    {
+      "id": "at_51201336406",
+      "title": "All the questions Nvidia should answer on Tuesday — but probably won’t",
+      "url": "https://techcrunch.com/2026/11/16/all-the-questions-nvidia-should-answer-on-tuesday-but-probably-wont/",
+      "summary": "Nvidia interim CEO and longtime CFO Colette Kress is about to have one of the biggest days of her career on Tuesday when the company reports its third-quarter results. Given the turmoil Nvidia is in, there are a number of questions that Nvidia should answer.",
+      "source": "Julie Bort via AI | TechCrunch",
+      "image": "https://www.inoreader.com/camo/srSHJh4OzB2riBOUaGRecvYwnIHUHLxal4aeqgEzGJiM,q80,480x400,pf,b64/aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMC8wNS9HZXR0eUltYWdlcy0xMTQ3ODM5MDM1LmpwZz9yZXNpemU9MTYwMCwxMDY3"
+    },
     {
       "id": "at_51200985401",
       "title": "Google says attackers built an AI framework to turn software patches into exploits without human intervention",
@@ -13,7 +37,7 @@
       "id": "at_51200518168",
       "title": "California state AG sues OpenAI over rogue agent incidents",
       "url": "https://techcrunch.com/2026/11/16/california-state-ag-sues-openai-over-rogue-agent-incidents/",
-      "summary": "The California lawsuit represents one of the first attempts to hold an AI lab legally accountable for a rogue agent incident",
+      "summary": "The California lawsuit represents one of the first attempts to hold an AI lab legally accountable for a rogue agent incident.",
       "source": "Russell Brandom via AI | TechCrunch",
       "image": "https://www.inoreader.com/camo/sR7SM3jkE5zlAkVcClI3yEFO8Wcy4dV_T-FYwJl_24O0,q80,480x400,pf,b64/aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNi8xMS8xOTIwcHgtUm9iX0JvbnRhX2F0X0NlbnRyYWxfQmF5X09wZXJhdGlvbnNfYW5kX01haW50ZW5hbmNlX0ZhY2lsaXR5X29wZW5pbmdfRGVjZW1iZXJfMjAxOC5qcGVnP3Jlc2l6ZT0xNjAwLDEzMDg"
     },
@@ -21,7 +45,7 @@
       "id": "at_51200498720",
       "title": "California sues OpenAI over rogue AI hacking incidents",
       "url": "https://www.theverge.com/ai-artificial-intelligence/1034815/california-openai-hugging-face-lawsuit",
-      "summary": "California is suing OpenAI after its AI agents broke out of their testing environment and hacked other companies, including Hugging Face. In a lawsuit on Monday, Attorney General Rob Bonta accuses OpenAI of violating consumer safety law by knowingly developing a \"dangerous product without proper oversight,\" as reported earlier by Reuters....",
+      "summary": "California is suing OpenAI after its AI agents broke out of their testing environment and hacked other companies, including Hugging Face. In a lawsuit filed Monday, Attorney General Rob Bonta accuses OpenAI of violating consumer safety law by knowingly developing a \"dangerous product without proper oversight,\" as reported earlier by Reuters....",
       "source": "Emma Roth via The Verge - Artificial Intelligences",
       "image": "https://www.inoreader.com/camo/sZm5FiYCIsHcpv3faCveRO5-Oaj-smH5WICc3Lc1tInc,q80,480x400,pf,b64/aHR0cHM6Ly9wbGF0Zm9ybS50aGV2ZXJnZS5jb20vd3AtY29udGVudC91cGxvYWRzL3NpdGVzLzIvMjAyNS8xMC9TVEsxNTVfT1BFTl9BSV80X0NWaXJnaW5pYV9ELnBuZz9xdWFsaXR5PTkwJnN0cmlwPWFsbCZjcm9wPTAsMCwxMDAsMTAw"
     },
@@ -29,7 +53,7 @@
       "id": "at_51200498725",
       "title": "Sam Altman says he wants everyone ‘to have a lot of RAM’",
       "url": "https://www.theverge.com/ai-artificial-intelligence/1034787/sam-altman-ram-shortage-semafor",
-      "summary": "Sam…thank you. | Image: Getty Images OpenAI CEO Sam Altman is once again addressing his controversial comments on PC RAM purchases. \"I want to be clear, I want people to have a lot of RAM, I think everybody should be able to buy a lot of RAM for their own computer,\" Altman said today. \"I think the home tinkering is great.\" The comments...",
+      "summary": "Sam… thank you. | Image: Getty Images OpenAI CEO Sam Altman is once again addressing his controversial comments on PC RAM purchases. \"I want to be clear, I want people to have a lot of RAM, I think everybody should be able to buy a lot of RAM for their own computer,\" Altman said today. \"I think the home tinkering is great.\" The comments...",
       "source": "Stevie Bonifield via The Verge - Artificial Intelligences",
       "image": "https://www.inoreader.com/camo/s537wkMFx_GJUV2v5JVsaUyWaaIkAC2W_BbcNN9D2NhA,q80,480x400,pf,b64/aHR0cHM6Ly9wbGF0Zm9ybS50aGV2ZXJnZS5jb20vd3AtY29udGVudC91cGxvYWRzL3NpdGVzLzIvMjAyNi8wNC9nZXR0eWltYWdlcy0xNzc4NzA1NDM2LmpwZz9xdWFsaXR5PTkwJnN0cmlwPWFsbCZjcm9wPTAsMCwxMDAsMTAw"
     },
@@ -53,7 +77,7 @@
       "id": "at_51200199667",
       "title": "NEW: The state of California has sued OpenAI over the July incident in which two of its AI models go...",
       "url": "https://x.com/TheRundownAI/status/2122415191027863785",
-      "summary": "NEW: The state of California has sued OpenAI over the July incident in which two of its AI models got out of a test environment and broke into Hugging Face's internal systems.Attorney General Rob Bonta alleges the company \"knowingly tested potentially dangerous AI models without proper oversight and safety measures.\"💬0🔄2❤️45👀2848📊5⚡ Powered by xgo.ing",
+      "summary": "NEW: The state of California has sued OpenAI over the July incident in which two of its AI models got out of a test environment and broke into Hugging Face's internal systems.Attorney General Rob Bonta alleges the company \"knowingly tested potentially dangerous AI models without proper oversight and safety measures.\"💬2🔄2❤️65👀3420📊8⚡ Powered by xgo.ing",
       "source": "The Rundown AI (@TheRundownAI) via The Rundown AI(@TheRundownAI)",
       "image": "https://www.inoreader.com/camo/sJrp9XQHLpdsSLJO1UPA7BbCrXihQMj42oCP6JyK7jUQ,q80,480x400,pf,b64/aHR0cHM6Ly9wYnMudHdpbWcuY29tL21lZGlhL0hYUlU2d21YQUFBMGhOMi5wbmc"
     },
@@ -123,9 +147,9 @@
     },
     {
       "id": "at_51199053276",
-      "title": "FBI says Artex AI open-source hacking tool used to breach networks in ‘under three hours’",
+      "title": "FBI says Artex AI open source hacking tool used to breach networks in ‘under three hours’",
       "url": "https://techcrunch.com/2026/11/16/fbi-says-artex-ai-open-source-hacking-tool-used-to-breach-networks-in-under-three-hours/",
-      "summary": "The FBI says that the open-source hacking tool was used in cyberattacks targeting a U.S. IT giant and the South Korean financial industry.",
+      "summary": "The FBI says that the open source hacking tool was used in cyberattacks targeting a U.S. IT giant and the South Korean financial industry.",
       "source": "Zack Whittaker via AI | TechCrunch",
       "image": "https://www.inoreader.com/camo/sspxYKjNwi_u9TOEPh-kaTgMeez201FL7kkn75ztPYqU,q80,480x400,pf,b64/aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNi8wMi9jaGluYS1oYWNrZXItY29tcHV0ZXItZmxhZy5qcGc_cmVzaXplPTE2MDAsOTAw"
     },
@@ -1576,30 +1600,6 @@
       "summary": "NEW: Google DeepMind released AlphaGenome 2, its upgraded AI model that predicts what a DNA mutation does in one specific kind of cell.What changed from the first AlphaGenome:- Zooms in on one kind of cell, where the original blended a whole tissue together- Catches nearly 2x the mutations that dial a gene up or down- Works on kinds of cells it has...",
       "source": "The Rundown AI (@TheRundownAI) via The Rundown AI(@TheRundownAI)",
       "image": ""
-    },
-    {
-      "id": "at_51150888019",
-      "title": "A Google AI researcher (who isn’t an archaeologist) just pointed 48 AI agents at NASA laser scans an...",
-      "url": "https://x.com/TheRundownAI/status/2120552003579330755",
-      "summary": "A Google AI researcher (who isn’t an archaeologist) just pointed 48 AI agents at NASA laser scans and found a potential undiscovered Maya site in Mexico.There’s still so much waiting to be discovered in public data by ambitious people + AI models.💬8🔄2❤️4👀3019📊8⚡ Powered by xgo.ing",
-      "source": "The Rundown AI (@TheRundownAI) via The Rundown AI(@TheRundownAI)",
-      "image": ""
-    },
-    {
-      "id": "at_51150304040",
-      "title": "Is Jensen Huang’s bad behavior more commonplace than it seems?",
-      "url": "https://techcrunch.com/2026/11/11/is-jensen-huangs-bad-behavior-more-commonplace-than-it-seems/",
-      "summary": "“There are a lot of senior people in the industry that know this is happening, and are effectively condoning it,” an investment intel consultant said.",
-      "source": "Russell Brandom via AI | TechCrunch",
-      "image": "https://www.inoreader.com/camo/s7SvHsuGfXDDiR9aTljnppH4Q75iaZ78jdMVJAWOCHtQ,q80,480x400,pf,b64/aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNi8wMy9HZXR0eUltYWdlcy0yMjY2NDc1OTY2LmpwZz93PTEwMjQ"
-    },
-    {
-      "id": "at_51150304041",
-      "title": "OpenAI’s quarterly revenue reportedly crosses $10B for the first time",
-      "url": "https://techcrunch.com/2026/11/11/openais-quarterly-revenue-reportedly-crosses-10b-for-the-first-time/",
-      "summary": "Sales of $10 billion represents an almost 50% jump from revenue of $6.7 billion the company recorded in the second quarter.",
-      "source": "Ram Iyer via AI | TechCrunch",
-      "image": "https://www.inoreader.com/camo/sV80Flb8-X5h6M107hNKPeSDaheddRgQpVDwu6mXvARg,q80,480x400,pf,b64/aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNC8wNS9vcGVuQUktc3BpcmFsLXJvc2UuanBnP3Jlc2l6ZT0xNjAwLDkwMA"
     }
   ]
 }
