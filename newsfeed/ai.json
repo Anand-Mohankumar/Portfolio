@@ -1,6 +1,70 @@
 {
-  "updatedAt": "2026-11-18T04:22:32.179182+00:00",
+  "updatedAt": "2026-11-18T13:59:34.613295+00:00",
   "articles": [
+    {
+      "id": "at_51219199406",
+      "title": "Vero launches free AI security community as enterprises confront the work of governing agents",
+      "url": "https://venturebeat.com/security/vero-launches-free-ai-security-community-as-enterprises-confront-the-work-of-governing-agents",
+      "summary": "Vero Security is launching a free community for the people tasked with keeping enterprise AI agents under control, pairing an educational roadmap with a commercial platform designed to turn security policies into restrictions that software can enforce.Read more",
+      "source": "[email protected] (Carl Franzen) via VentureBeat",
+      "image": "https://www.inoreader.com/camo/stBXwNpeOfPUayGfNrvr6ds36cWeXdN_vBM3HRwpzdbU,q80,480x400,pf,b64/aHR0cHM6Ly9pbWFnZXMuY3RmYXNzZXRzLm5ldC9qZHR3cWh6dmMybjEvNjg2UWs0NzIwT1NCM3lpZVQzN1JDdC9hMGNhYWVjYmIxODk1ZTAzZjBmNDc5YjgxMWEyOTg3Zi9UdXJxdW9pc2VfUGFkbG9ja19hbmRfQ2lyY3VpdF9JY29ucy5wbmc_dz0xNjAwJnE9ODA"
+    },
+    {
+      "id": "at_51218876679",
+      "title": "Nvidia isn’t selling any more AI chips to China",
+      "url": "https://www.theverge.com/tech/1036445/nvidia-h200-ai-chips-china-stop-selling",
+      "summary": "Nvidia has stopped sending its advanced AI chips to China, despite the approval it received from the White House to do so in December last year. The announcement was made by interim Nvidia CEO Colette Kress during an earnings call on Tuesday, marking a notable shift for the company that, under former CEO Jensen Huang, fought for the right...",
+      "source": "Jess Weatherbed via The Verge - Artificial Intelligences",
+      "image": "https://www.inoreader.com/camo/s6fcXZ76liGTupl1NUWlHFSjPcEXJ-2y9VZZs8nRfM2E,q80,480x400,pf,b64/aHR0cHM6Ly9wbGF0Zm9ybS50aGV2ZXJnZS5jb20vd3AtY29udGVudC91cGxvYWRzL3NpdGVzLzIvMjAyNS8wNC9TVEswODNfTlZJRElBX0MuanBnP3F1YWxpdHk9OTAmc3RyaXA9YWxsJmNyb3A9MCwwLDEwMCwxMDA"
+    },
+    {
+      "id": "at_51218824776",
+      "title": "Nvidia clarifies when it will — and won’t —keep financing neoclouds",
+      "url": "https://techcrunch.com/2026/11/18/nvidia-clarifies-when-it-will-and-wont-keep-financing-neoclouds/",
+      "summary": "If Nvidia is backstopping a data center loan, it won't be on the hook unless the neocould has independent financing and gets the facility built, with Nvidia gear installed, interim CEO Colette Kress explained.",
+      "source": "Julie Bort via AI | TechCrunch",
+      "image": "https://www.inoreader.com/camo/sI1HRhQgQjaOOBnYkTD5f4ute9I5Cs-LjHYaYf0l3ro4,q80,480x400,pf,b64/aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNi8wNC9kb2xsYXItc2lnbnMtZGF0YS1jZW50ZXIucG5nP3c9MTAyNA"
+    },
+    {
+      "id": "at_51218824782",
+      "title": "Felicis leads $7.5M bet on Unsiloed AI to make enterprise documents usable by AI agents",
+      "url": "https://techcrunch.com/2026/11/18/felicis-leads-7-5m-bet-on-unsiloed-ai-to-make-enterprise-documents-usable-by-ai-agents/",
+      "summary": "With a team of just seven, Unsiloed AI plans to compete with tech giants and specialized startups in the crowded AI document-processing market.",
+      "source": "Jagmeet Singh via AI | TechCrunch",
+      "image": "https://www.inoreader.com/camo/sD07rWXjrrLJqKg_LUEsGpK8uCA6vgOQNfAgx8bHR7NE,q80,480x400,pf,b64/aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNi8xMS91bnNpbG9lZC1BSS1mb3VuZGVycy1hZG5hbi1hYmJhcy1hbWFuLW1pc2hyYS5qcGc_cmVzaXplPTE2MDAsMTA2Nw"
+    },
+    {
+      "id": "at_51218294493",
+      "title": "India’s Humyn Labs raises $47M to feed U.S. robotics companies the data they need",
+      "url": "https://techcrunch.com/2026/11/18/accel-backs-indias-humyn-labs-to-supply-training-data-needed-by-u-s-robotics-ai-developers/",
+      "summary": "Founded in February, Humyn Labs competes with startups including Mecka AI and XDOF, with about 90% of its revenue coming from the U.S.",
+      "source": "Jagmeet Singh via AI | TechCrunch",
+      "image": "https://www.inoreader.com/camo/sQKAh4uAjYMc0s9ad0PKn8p6D2eIQxkm66TWr9BVkNTc,q80,480x400,pf,b64/aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNi8xMS9odW15bi1sYWJzLWNvLWZvdW5kZXJzXzE2NDYwMi5qcGc_cmVzaXplPTE2MDAsMTA2Nw"
+    },
+    {
+      "id": "at_51218243433",
+      "title": "Read more: https://t.co/uun0RMGeEE",
+      "url": "https://x.com/TheRundownAI/status/2123015937309675967",
+      "summary": "Read more: therundownai.beehiiv.com/p/openai-newes…💬0🔄0❤️0👀780⚡ Powered by xgo.ing",
+      "source": "The Rundown AI (@TheRundownAI) via The Rundown AI(@TheRundownAI)",
+      "image": ""
+    },
+    {
+      "id": "at_51218243435",
+      "title": "Top stories in AI today: - OpenAI drops GPT-6.2 Astra, Sol to mixed fanfare - Jensen Huang makes fi...",
+      "url": "https://x.com/TheRundownAI/status/2123015932544991521",
+      "summary": "Top stories in AI today:- OpenAI drops GPT-6.2 Astra, Sol to mixed fanfare- Jensen Huang makes first statement since resignation- Turn a spreadsheet into a data story with AI- AI finds a hole in Java as NATO taps OpenAI💬6🔄2❤️8👀2514📊6⚡ Powered by xgo.ing",
+      "source": "The Rundown AI (@TheRundownAI) via The Rundown AI(@TheRundownAI)",
+      "image": "https://www.inoreader.com/camo/scg3-rNk1VZYo277Fb6Oe1iQUC47Ne1RLYj00FRKeKgo,q80,480x400,pf,b64/aHR0cHM6Ly9wYnMudHdpbWcuY29tL21lZGlhL0hYWjN2SkxXOEFFX0lZYi5qcGc"
+    },
+    {
+      "id": "at_51217844930",
+      "title": "Suno now lets you make AI videos for your AI music",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1036415/suno-visuals-ai-generated-video-images-feature",
+      "summary": "Here are some of the examples that Suno provided to show what Visuals is capable of. | Image: Suno Suno has introduced image and video generation in its latest effort to expand beyond being an AI music platform. The new feature, called \"Visuals,\" allows users to turn Suno songs into AI-generated video clips that automatically lipsync to...",
+      "source": "Jess Weatherbed via The Verge - Artificial Intelligences",
+      "image": "https://www.inoreader.com/camo/sHHgDwYjmGlfYHMASwo6_jChgLmI_N9uDm0Y_zGsyP8k,q80,480x400,pf,b64/aHR0cHM6Ly9wbGF0Zm9ybS50aGV2ZXJnZS5jb20vd3AtY29udGVudC91cGxvYWRzL3NpdGVzLzIvMjAyNi8xMS9zdW5vLWFpLXZpc3VhbHMuanBnP3F1YWxpdHk9OTAmc3RyaXA9YWxsJmNyb3A9MCwwLDEwMCwxMDA"
+    },
     {
       "id": "at_51213894339",
       "title": "Nvidia’s startup stakes ballooned to $65B, but Huang’s exit puts future deals in doubt",
@@ -1536,70 +1600,6 @@
       "summary": "REPORT: Jensen Huang could soon be out as Nvidia CEO, with the board getting ready to remove him, according to the Wall Street Journal.The report comes hours after The New York Times linked Huang to another affair with a Nvidia vice president who answers to him.💬3🔄1❤️9👀3316📊5⚡ Powered by xgo.ing",
       "source": "The Rundown AI (@TheRundownAI) via The Rundown AI(@TheRundownAI)",
       "image": "https://www.inoreader.com/camo/soGWmZQdzEuW66CgVUqZUTwnRmn3euGFWZdHMtSqCx08,q80,480x400,pf,b64/aHR0cHM6Ly9wYnMudHdpbWcuY29tL21lZGlhL0hXNFJ1bWRYVUFBcG90QS5qcGc"
-    },
-    {
-      "id": "at_51153606446",
-      "title": "Nvidia’s stock drops as board reportedly preps to oust CEO Jensen Huang",
-      "url": "https://techcrunch.com/2026/11/11/nvidias-stock-drops-as-board-reportedly-preps-to-oust-ceo-jensen-huang/",
-      "summary": "As soon as Wednesday evening, Nvidia's board could decide to remove its founder and CEO of 33 years.",
-      "source": "Amanda Silberling via AI | TechCrunch",
-      "image": "https://www.inoreader.com/camo/sMkMoqdYlHmkFMPh-8fyX7zwqow68c9EBJu5Ce001h4U,q80,480x400,pf,b64/aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNi8wOS9KZW5zZW4tSHVhbmcuanBnP3Jlc2l6ZT0xNjAwLDEwNjc"
-    },
-    {
-      "id": "at_51153542631",
-      "title": "Jensen Huang accused of having another affair — with a Nvidia exec",
-      "url": "https://techcrunch.com/2026/11/11/jensen-huang-accused-of-having-another-affair-with-a-nvidia-exec/",
-      "summary": "Jensen Huang, who has come under fire for admitting to an affair with a woman accused of being a Chinese intelligence agent, has been accused of having a separate affair with an Nvidia subordinate.",
-      "source": "Lucas Ropek via AI | TechCrunch",
-      "image": ""
-    },
-    {
-      "id": "at_51153488289",
-      "title": "Attackers breached the Fireworks AI storage where Notion AI chats sat outside zero data retention",
-      "url": "https://venturebeat.com/security/attackers-breached-the-fireworks-ai-storage-where-notion-ai-chats-sat-outside-zero-data-retention",
-      "summary": "Attackers breached Fireworks AI storage that held Notion AI chat transcripts. The inference vendor’s documentation says, “Fireworks has Zero Data Retention by default.”Read more",
-      "source": "[email protected] (Louis Columbus) via VentureBeat",
-      "image": "https://www.inoreader.com/camo/sfJ5vyS9PHfcgz8dr2h9DWsnMrW5_6doI5evIWSMb38o,q80,480x400,pf,b64/aHR0cHM6Ly9pbWFnZXMuY3RmYXNzZXRzLm5ldC9qZHR3cWh6dmMybjEvNFRxTFJZR2hyTEIxeXk0RkpzdEFkcS9mYzNmNTI2M2MzMzM1MDgyMjJhNDE1MjIzZGFhYjJiMi9oZXJvX2Zvcl9maXJld29ya3NfYnJlYWNoLnBuZz93PTE2MDAmcT04MA"
-    },
-    {
-      "id": "at_51153429285",
-      "title": "Google’s Gemini Decision 1 model scores up to 1,000 questions in one API call",
-      "url": "https://venturebeat.com/technology/googles-gemini-decision-1-model-scores-up-to-1-000-questions-in-one-api-call",
-      "summary": "Google DeepMind released the Gemini Decisions API Wednesday for developers who need software to make a series of small judgments quickly. A claims intake system, for example, could send a scanned form, photos of the damage and notes from a customer call in one request. It could ask which queue should get the claim, whether evidence is missing and how...",
-      "source": "[email protected] (Carl Franzen) via VentureBeat",
-      "image": "https://www.inoreader.com/camo/sZ2NGWuKDA6BYsyhq7i43zhSD56vJqmohu-l9vWlUiWA,q80,480x400,pf,b64/aHR0cHM6Ly9pbWFnZXMuY3RmYXNzZXRzLm5ldC9qZHR3cWh6dmMybjEvMzlvb0hXUnRnVGk1eWpXTnF0a1hoay9jZTcyOTQ2ZTJjMzA5Yjk5Mjg3NGE3YzEwN2Q1MWE5OC9Sb2JvdF93YXRjaGVzX25lb25fcXVlc3Rpb25fbWFya3MucG5nP3c9MTYwMCZxPTgw"
-    },
-    {
-      "id": "at_51153319462",
-      "title": "Nvidia is reportedly preparing to fire Jensen Huang",
-      "url": "https://www.theverge.com/tech/1031652/jensen-huang-rumor",
-      "summary": "Nvidia's board is preparing to dismiss CEO Jensen Huang following a report from The New York Times about a second alleged extramarital affair, just days after he admitted to a separate affair with a woman alleged to be a Chinese spy, The Wall Street Journal reports. The second alleged affair was with an executive who reports to him, Nvidia's...",
-      "source": "Lauren Feiner via The Verge - Artificial Intelligences",
-      "image": "https://www.inoreader.com/camo/swVopi5zvkDei-E8JzvU9gndVFew_eSJUWqogMqpYcgU,q80,480x400,pf,b64/aHR0cHM6Ly9wbGF0Zm9ybS50aGV2ZXJnZS5jb20vd3AtY29udGVudC91cGxvYWRzL3NpdGVzLzIvY2hvcnVzL3VwbG9hZHMvY2hvcnVzX2Fzc2V0L2ZpbGUvMjU4MjQ5MzQvMjE5MjIyNDE5MS5qcGc_cXVhbGl0eT05MCZzdHJpcD1hbGwmY3JvcD0wLDAsMTAwLDEwMA"
-    },
-    {
-      "id": "at_51153053035",
-      "title": "United won’t let your AI agent book your flight",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/1031623/united-unauthorized-ai-agents",
-      "summary": "United says it won't let personal AI assistants book tickets on the airline, citing both privacy and regulatory concerns. The company says it hasn't yet seen many people try to use AI agents to book their flights, The Wall Street Journal reports, in line with observations from other businesses like Doordash. But United is concerned that...",
-      "source": "Lauren Feiner via The Verge - Artificial Intelligences",
-      "image": "https://www.inoreader.com/camo/sATFfvuGEgljS-aws2TAxqjdgKz4nGho1JhBM6PqU1PM,q80,480x400,pf,b64/aHR0cHM6Ly9wbGF0Zm9ybS50aGV2ZXJnZS5jb20vd3AtY29udGVudC91cGxvYWRzL3NpdGVzLzIvY2hvcnVzL3VwbG9hZHMvY2hvcnVzX2Fzc2V0L2ZpbGUvMjMxNzY0MzAvMTIzNzYyMTcwMi5qcGc_cXVhbGl0eT05MCZzdHJpcD1hbGwmY3JvcD0wLDAsMTAwLDEwMA"
-    },
-    {
-      "id": "at_51152318394",
-      "title": "Why the data center you dread might never even be built",
-      "url": "https://techcrunch.com/video/why-the-data-center-you-dread-might-never-even-be-built/",
-      "summary": "The data center boom is running into serious real-world obstacles, from widespread local opposition and permitting delays to a scramble for electricity. Before those challenges even come into play, though, there’s a more basic problem: A lot of the projects being announced may never get built in the first place. With billions of dollars in AI infrastructure...",
-      "source": "Theresa Loconsolo, Rebecca Bellan, Tim De Chant via AI | TechCrunch",
-      "image": "https://www.inoreader.com/camo/sXfLI_fZLpIIWRdu9T2U_zeqRy0aUV1wId1-3ttkyK8w,q80,480x400,pf,b64/aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNi8wOS81LURTQ0YxNjM0LmpwZz9yZXNpemU9MTYwMCwxMDY3"
-    },
-    {
-      "id": "at_51152318396",
-      "title": "Meta is losing its longtime head of infrastructure",
-      "url": "https://techcrunch.com/2026/11/11/meta-is-losing-its-longtime-head-of-infrastructure/",
-      "summary": "Santosh Janardhan, who originally joined the company in 2009, will be stepping down from his role.",
-      "source": "Lucas Ropek via AI | TechCrunch",
-      "image": "https://www.inoreader.com/camo/si6pL2lieJgxthpNrPQmolyRoPZ8-yn9pw5urMxq1JWo,q80,480x400,pf,b64/aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNi8wNi9NZXRhLWltYWdlLmpwZz93PTEwMjQ"
     }
   ]
 }
