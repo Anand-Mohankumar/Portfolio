@@ -1,6 +1,62 @@
 {
-  "updatedAt": "2026-11-17T22:52:59.445501+00:00",
+  "updatedAt": "2026-11-18T04:22:32.179182+00:00",
   "articles": [
+    {
+      "id": "at_51213894339",
+      "title": "Nvidia’s startup stakes ballooned to $65B, but Huang’s exit puts future deals in doubt",
+      "url": "https://techcrunch.com/2026/11/17/nvidias-startup-stakes-ballooned-to-65b-but-huangs-exit-puts-future-deals-in-doubt/",
+      "summary": "The value of Nvidia’s private investments has nearly tripled over the past nine months, fueled by Jensen Huang’s aggressive dealmaking and rising valuations of its existing portfolio companies.",
+      "source": "Dominic-Madori Davis, Marina Temkin via AI | TechCrunch",
+      "image": "https://www.inoreader.com/camo/sCYDgoRmf1_-qVMH1DUoKmLH8lBJWInwrsPxS9spRtiE,q80,480x400,pf,b64/aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNC8xMS9HZXR0eUltYWdlcy0yMTUwMTY3MjM5LmpwZz9yZXNpemU9MTYwMCwxMDI4"
+    },
+    {
+      "id": "at_51213522974",
+      "title": "Nvidia promises that revenue will keep soaring — for now",
+      "url": "https://techcrunch.com/2026/11/17/nvidia-promises-that-revenue-will-keep-soaring-for-now/",
+      "summary": "Despite the turmoil Nvidia is in after the departure of its disgraced founder and CEO Jensen Huang, the company projected that its streak of record-breaking revenue isn't about to stop.",
+      "source": "Julie Bort via AI | TechCrunch",
+      "image": "https://www.inoreader.com/camo/sz7Q8NNtuzRzRjhtgETaMHNcgG-7ycBdrmOyUShxLzBg,q80,480x400,pf,b64/aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNi8wMi9HZXR0eUltYWdlcy0xNTc1MDMxMDIuanBnP3Jlc2l6ZT0xNjAwLDEwMzU"
+    },
+    {
+      "id": "at_51213203347",
+      "title": "Nvidia is abandoning China after Jensen Huang’s ouster",
+      "url": "https://techcrunch.com/2026/11/17/nvidia-is-abandoning-china-after-jensen-huangs-ouster/",
+      "summary": "Nvidia's interim CEO says the company is done selling chips to China. How much will that cost?",
+      "source": "Tim Fernholz via AI | TechCrunch",
+      "image": "https://www.inoreader.com/camo/s6Z18HZOqeR8rTMaSQ4LZ83eWwy_Ebeq2BCIEJ2phgHk,q80,480x400,pf,b64/aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNi8wMy9qZW5zZW4taHVhbmctZ3RjLWdldHR5LmpwZz9yZXNpemU9MTYwMCwxMDQx"
+    },
+    {
+      "id": "at_51213031450",
+      "title": "Satya Nadella says he’s AGI-pilled now",
+      "url": "https://www.theverge.com/tech/1036111/satya-nadella-says-hes-agi-pilled-now",
+      "summary": "Microsoft CEO Satya Nadella onstage at Microsoft Ignite. | Image: Microsoft / YouTube Microsoft CEO Satya Nadella says he's AGI-pilled, at least when it comes to how AI might make startling changes to the structure of the economy and how politics might change because of it. \"I am AGI-pilled in the sense that at an economy level, what is...",
+      "source": "Nilay Patel via The Verge - Artificial Intelligences",
+      "image": "https://www.inoreader.com/camo/s0DqZsSDUQCx93yDFtfofRok4JIhEbrGSkbTTuV7KL74,q80,480x400,pf,b64/aHR0cHM6Ly9wbGF0Zm9ybS50aGV2ZXJnZS5jb20vd3AtY29udGVudC91cGxvYWRzL3NpdGVzLzIvMjAyNi8xMS9TY3JlZW5zaG90LTIwMjYtMTEtMTctYXQtMy4wMC4xNS1QTS5wbmc_cXVhbGl0eT05MCZzdHJpcD1hbGwmY3JvcD0wLDAsMTAwLDEwMA"
+    },
+    {
+      "id": "at_51212809121",
+      "title": "Nvidia says its open source AI strategy remains intact after Jensen Huang’s exit",
+      "url": "https://techcrunch.com/2026/11/17/nvidia-says-its-open-source-ai-strategy-remains-intact-after-jensen-huangs-exit/",
+      "summary": "Nvidia's interim CEO reaffirmed its open source AI strategy and plans to acquire Hugging Face, despite Jensen Huang's sudden departure.",
+      "source": "Sarah Perez via AI | TechCrunch",
+      "image": "https://www.inoreader.com/camo/sjmXXYy_UnKVpsAf5j4OT0-DNGqkObLKPvzNzymL6XJg,q80,480x400,pf,b64/aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNi8xMS9HZXR0eUltYWdlcy0yMjkwMDk3NTcwLmpwZz93PTEwMjQ"
+    },
+    {
+      "id": "at_51212809123",
+      "title": "Nvidia says it doesn’t plan to reappoint Jensen Huang as CEO",
+      "url": "https://techcrunch.com/2026/11/17/nvidia-says-it-doesnt-plan-to-reappoint-jensen-huang-as-ceo/",
+      "summary": "The former CEO offered to return to his top role at the company after his resignation last week.",
+      "source": "Lucas Ropek via AI | TechCrunch",
+      "image": ""
+    },
+    {
+      "id": "at_51212809125",
+      "title": "Amazon and Google will together own nearly 30% of Anthropic after its IPO",
+      "url": "https://techcrunch.com/2026/11/17/amazon-and-google-will-together-own-nearly-30-of-anthropic-after-its-ipo/",
+      "summary": "Amazon will own just under 15% of Anthropic after the IPO, with the option to go much higher. Google is a close second with holdings of nearly 14%.",
+      "source": "Julie Bort via AI | TechCrunch",
+      "image": "https://www.inoreader.com/camo/sbp7QsSUelVT4a98Ztjb8cCVDBHmYmEhNF-l6JL1x1vs,q80,480x400,pf,b64/aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMi8wOS9HZXR0eUltYWdlcy0xNDE1MDc4MDg1LmpwZz9yZXNpemU9MTYwMCw5NjE"
+    },
     {
       "id": "at_51212581614",
       "title": "'Essentially unusable': OpenAI launches GPT-6.2 Astra and Sol to negative reception from AI power users",
@@ -1544,62 +1600,6 @@
       "summary": "Santosh Janardhan, who originally joined the company in 2009, will be stepping down from his role.",
       "source": "Lucas Ropek via AI | TechCrunch",
       "image": "https://www.inoreader.com/camo/si6pL2lieJgxthpNrPQmolyRoPZ8-yn9pw5urMxq1JWo,q80,480x400,pf,b64/aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNi8wNi9NZXRhLWltYWdlLmpwZz93PTEwMjQ"
-    },
-    {
-      "id": "at_51152250938",
-      "title": "How backlash and red tape continue to slow data centers post-Blue Wave",
-      "url": "https://techcrunch.com/podcast/how-backlash-and-red-tape-continue-to-slow-data-centers-post-blue-wave/",
-      "summary": "The data center boom is running into serious real-world obstacles, from widespread local opposition and permitting delays to a scramble for electricity. Before those challenges even come into play, though, there’s a more basic problem: A lot of the projects being announced may never get built in the first place. With billions of dollars in AI infrastructure...",
-      "source": "Theresa Loconsolo, Rebecca Bellan, Tim De Chant via AI | TechCrunch",
-      "image": "https://www.inoreader.com/camo/sCa7SZb0hoTpRk7klVt-EF9Q0hOroBlc3SgDwZlXhobg,q80,480x400,pf,b64/aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNi8wMy9BU1ctQ2hpcF90b3VyLXNlcnZlcnMuanBnP3Jlc2l6ZT0xNjAwLDEyMDA"
-    },
-    {
-      "id": "at_51152181248",
-      "title": "CoreWeave turns to customer prepayments, shorter contracts to fund AI growth",
-      "url": "https://techcrunch.com/2026/11/11/coreweave-turns-to-customer-prepayments-shorter-contracts-to-fund-ai-growth/",
-      "summary": "CoreWeave is increasingly asking customers to pay up front, borrowing against specific contracts, and even looking to short-term deals that could lead to higher prices, according to the company’s third-quarter earnings.",
-      "source": "Rebecca Bellan via AI | TechCrunch",
-      "image": "https://www.inoreader.com/camo/smquMOWgww9NYcjCuMc64IcKr9gwk4cNLYWL6zmPofPE,q80,480x400,pf,b64/aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNi8xMS9HZXR0eUltYWdlcy0yMzA0Mzc2NDA2LmpwZz93PTEwMjQ"
-    },
-    {
-      "id": "at_51152043564",
-      "title": "With $720M round, Britain’s Fractile gets a leg up in the race for AI chips",
-      "url": "https://techcrunch.com/2026/11/11/with-720m-round-britains-fractile-gets-a-leg-up-in-the-race-for-ai-chips/",
-      "summary": "Fractile has now become one of the top-funded players in the race for purpose-built AI chips.",
-      "source": "Anna Heim via AI | TechCrunch",
-      "image": "https://www.inoreader.com/camo/sdN2o6EVDF8dPQtvy6zLGvEDQ-SKGgLnDiOSN7T8F-34,q80,480x400,pf,b64/aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNi8xMS9HZXR0eUltYWdlcy0yMTgzODk2Nzg5LmpwZz9yZXNpemU9MTYwMCwxMDY3"
-    },
-    {
-      "id": "at_51151982863",
-      "title": "More than 35,000 Grok-built apps were open to anyone with the link, including SpaceXSI's own (16 minute read)",
-      "url": "https://blog.claroc.io/ghostshares-grok-build-apps?utm_source=tldrai",
-      "summary": "Over 35,000 Grok-built apps were public to anyone with the link, including SpaceXSI staff tools and an ICU patient's lab results.",
-      "source": "via TLDR AI Feed",
-      "image": "https://www.inoreader.com/camo/sxofu_qn_TyPvNuLj0C04MWxIgMrckSYjD0rKpQEwc9k,q80,480x400,pf,b64/aHR0cHM6Ly9ibG9nLmNsYXJvYy5pby9fYXN0cm8vZ2hvc3RzaGFyZXMyLWhlcm8uNmRQOUxWRmNfMTBxYm1ZLmpwZw"
-    },
-    {
-      "id": "at_51151982865",
-      "title": "Anthropic's IPO Roadshow (2 minute read)",
-      "url": "https://www.anthropic.com/news/roadshow-launch?utm_source=tldrai",
-      "summary": "Anthropic launched the roadshow for its proposed IPO, planning to offer 825 million shares at $70–$78 each. The company applied to list on Nasdaq under the ticker ANT, with most proceeds from newly issued shares going to Anthropic.",
-      "source": "via TLDR AI Feed",
-      "image": ""
-    },
-    {
-      "id": "at_51151982866",
-      "title": "Your best agent, now working with your whole team (Sponsor)",
-      "url": "https://www.switchagents.ai/blog-posts/my-agent-is-my-best-teammate-now-it-works-with-my-whole-team?utm_source=tldrai&amp;utm_medium=newsletter&amp;utm_campaign=quicklink111126",
-      "summary": "See how a PM at Switch AI turned her personal agent from a solo helper into a teammate her whole team works with, in one shared room. Read her story.",
-      "source": "via TLDR AI Feed",
-      "image": "https://www.inoreader.com/camo/sm_Avx8q_-bG9Y6QSHzLeBBzfwlY4QV9Kfxo4OMOSAiA,q80,480x400,pf,b64/aHR0cHM6Ly9jZG4ucHJvZC53ZWJzaXRlLWZpbGVzLmNvbS82YTJjM2YwMjE4ZjhiYWYzNTZmMmM3ZDkvNmFkYTQxODA2NTg1OGUyMmYxOTEwY2I2X215LWFnZW50LXdob2xlLXRlYW0tYmxvZy10aHVtYm5haWwuanBn"
-    },
-    {
-      "id": "at_51151982867",
-      "title": "OpenAI acquires Odessia, travel startup created by Sonder founder (3 minute read)",
-      "url": "https://techcrunch.com/2026/11/10/openai-acquires-odessia-travel-startup-created-by-sonder-founder/?utm_source=tldrai",
-      "summary": "OpenAI has acquired an AI travel agent called Odessia. The deal appears to be an acqui-hire. OpenAI has not announced new travel-specific products or plans, but it has several travel-related companies as customers or partners. Odessia's founder previously founded a travel startup called Sonder, focused on short-term leasing of upscale apartments, as...",
-      "source": "via TLDR AI Feed",
-      "image": "https://www.inoreader.com/camo/suDayRIEc4Pz8dvQYzJNDaSpaPs2D_pG9YhEdf89iPCg,q80,480x400,pf,b64/aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNS8wNC9HZXR0eUltYWdlcy0yMjA3ODAxOTkyLmpwZz9yZXNpemU9MTYwMCwxMDY4"
     }
   ]
 }
