@@ -1,6 +1,30 @@
 {
-  "updatedAt": "2026-11-19T03:29:35.915412+00:00",
+  "updatedAt": "2026-11-19T13:09:49.147460+00:00",
   "articles": [
+    {
+      "id": "at_51229844358",
+      "title": "Canva adds an AI ‘off’ button",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1037126/canva-ai-features-off-button",
+      "summary": "Canva will now allow you to turn off its generative AI features. With this change, you can disable the graphic design platform's array of AI tools, such as its AI photo-extending Magic Expand feature, as well as turn off the ability to generate images with its Canva chatbot. This toggle doesn't turn off every AI-powered feature on Canva,...",
+      "source": "Emma Roth via The Verge - Artificial Intelligences",
+      "image": "https://www.inoreader.com/camo/sIYPzoasCtD0O1N5TfSnbM6QDTDyksSsJo8zGWza_1-w,q80,480x400,pf,b64/aHR0cHM6Ly9wbGF0Zm9ybS50aGV2ZXJnZS5jb20vd3AtY29udGVudC91cGxvYWRzL3NpdGVzLzIvY2hvcnVzL3VwbG9hZHMvY2hvcnVzX2Fzc2V0L2ZpbGUvMjUzNTU5NTcvU1RLMjYzX0NBTlZBX0QucG5nP3F1YWxpdHk9OTAmc3RyaXA9YWxsJmNyb3A9MCwwLDEwMCwxMDA"
+    },
+    {
+      "id": "at_51229616336",
+      "title": "Read more: https://t.co/ygqlZPp5WP",
+      "url": "https://x.com/TheRundownAI/status/2123378311225057657",
+      "summary": "Read more: therundownai.beehiiv.com/p/google-shipp…💬0🔄0❤️0👀411⚡ Powered by xgo.ing",
+      "source": "The Rundown AI (@TheRundownAI) via The Rundown AI(@TheRundownAI)",
+      "image": ""
+    },
+    {
+      "id": "at_51229616339",
+      "title": "Top stories in AI today: - Google’s shipping spree continues with Neon - Nate’s Notebook: Ask your...",
+      "url": "https://x.com/TheRundownAI/status/2123378306598813803",
+      "summary": "Top stories in AI today:- Google’s shipping spree continues with Neon - Nate’s Notebook: Ask your AI for more- Use AI to rewrite your LinkedIn profile- Pika turns AI video into a live film set💬3🔄0❤️4👀1696📊3⚡ Powered by xgo.ing",
+      "source": "The Rundown AI (@TheRundownAI) via The Rundown AI(@TheRundownAI)",
+      "image": "https://www.inoreader.com/camo/sXEtZnlWOraZ1-kCYS89oQA0XEcJX2qtOnONrANbbfjA,q80,480x400,pf,b64/aHR0cHM6Ly9wYnMudHdpbWcuY29tL21lZGlhL0hYZkJVTFJYa0FBdFVFTy5qcGc"
+    },
     {
       "id": "at_51224663846",
       "title": "Microsoft CEO Satya Nadella explains why he asked 60K employees to quit",
@@ -1576,30 +1600,6 @@
       "summary": "Helion's new compile-time heuristics boost kernel performance significantly without the need for time-consuming autotuning.",
       "source": "via TLDR AI Feed",
       "image": "https://www.inoreader.com/camo/shv0829-bK-y1Jim1yCPlzIST31a2eft284zNWas2BCg,q80,480x400,pf,b64/aHR0cHM6Ly9weXRvcmNoLm9yZy93cC1jb250ZW50L3VwbG9hZHMvMjAyNi8xMS9BbGwtUHlUb3JjaC1CbG9nLVNvY2lhbC1JbWFnZXMtMy5wbmc"
-    },
-    {
-      "id": "at_51181693707",
-      "title": "Meta's Muse Can Now Call Businesses (1 minute read)",
-      "url": "https://techcrunch.com/2026/11/12/muse-can-now-place-calls-to-u-s-businesses-if-you-pay/?utm_source=tldrai",
-      "summary": "Meta expanded Muse's AI-powered calling feature to all paid subscribers, letting the assistant contact US businesses on users' behalf.",
-      "source": "via TLDR AI Feed",
-      "image": "https://www.inoreader.com/camo/szLnYdpqfp-MZywSjTq48qFDjZhRc1QVqna6jbKV2ny0,q80,480x400,pf,b64/aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNi8xMS9tdXNlLWNhbGxzLmpwZz93PTExMDQ"
-    },
-    {
-      "id": "at_51181693708",
-      "title": "Frontier intelligence. Half the bill. (Sponsor)",
-      "url": "https://fireworks.ai/nexus?utm_source=tldr&amp;utm_medium=newsletter&amp;utm_campaign=tldr-nov-13&amp;utm_content=header_frontier_intelligence_half&amp;utm_term=2026-11-13_tldr_ai",
-      "summary": "AI coding spend is growing fast. But teams shouldn't have to choose between giving developers access to frontier intelligence and keeping token costs under control.Fireworks Nexus gives developers access to frontier open models in the harnesses they already use. With Nexus, each request is scored and routed to the optimal model for the task, while difficult...",
-      "source": "via TLDR AI Feed",
-      "image": "https://www.inoreader.com/camo/s0oNzo5eKGbVnMEsWygvBaevRmBAmmkrYp666T1aPdz0,q80,480x400,pf,b64/aHR0cHM6Ly9jZG4uc2FuaXR5LmlvL2ltYWdlcy9wdjM3aTB5bi9ob3Jpem9uLzNjMGYwNzY4YWQ2ZGNiMjYyNzZhYTUxMDlmZmY3Y2NkNDEyOTI1MmItMTQwMHg3ODgucG5nP3Y9MjAyNi0xMC0xOVQyMyUzQTI1JTNBMDVa"
-    },
-    {
-      "id": "at_51181693709",
-      "title": "Gemini 4 Hydrogen (14 minute read)",
-      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/?utm_source=tldrai",
-      "summary": "Google introduced Gemini 4 Hydrogen, a fast, efficient model optimized for coding and agentic workflows. It scored 51 on the Artificial Analysis Intelligence Index, surpassing Gemini 4 Argon, and is priced at $1.50 per million input tokens and $7.50 per million output tokens.",
-      "source": "via TLDR AI Feed",
-      "image": ""
     }
   ]
 }
