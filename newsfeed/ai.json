@@ -1,6 +1,102 @@
 {
-  "updatedAt": "2026-11-18T21:57:39.786879+00:00",
+  "updatedAt": "2026-11-19T03:29:35.915412+00:00",
   "articles": [
+    {
+      "id": "at_51224663846",
+      "title": "Microsoft CEO Satya Nadella explains why he asked 60K employees to quit",
+      "url": "https://techcrunch.com/2026/11/18/microsoft-ceo-satya-nadella-explains-why-he-asked-60k-employees-to-quit/",
+      "summary": "Microsoft CEO Satya Nadella explained why he offered buyouts to 60,000 of his employees in October, essentially urging them to voluntarily quit, rather than reducing the workforce via another massive layoff. The short answer is AI, but not in the way you might expect.",
+      "source": "Julie Bort via AI | TechCrunch",
+      "image": "https://www.inoreader.com/camo/smHwYBM9viNoGxXm7TBvkdofFFUJj27kAV88WzfZRHSs,q80,480x400,pf,b64/aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNi8xMS9NaWNyb3NvZnQtU2F0eWEtTmFkZWxsYS5qcGc_cmVzaXplPTE2MDAsMTA2Nw"
+    },
+    {
+      "id": "at_51224326011",
+      "title": "Amidst fears of AI cyberattacks, Satya Nadella says lots of critical infrastructure is ‘unpatchable’",
+      "url": "https://techcrunch.com/2026/11/18/amidst-fears-of-ai-cyberattacks-satya-nadella-says-lots-of-critical-infrastructure-is-unpatchable/",
+      "summary": "The Microsoft CEO downplayed the recent Outlook outage while noting that AI was causing both opportunities and new challenges for securing much of the connected world.",
+      "source": "Lucas Ropek via AI | TechCrunch",
+      "image": "https://www.inoreader.com/camo/slLycmZpO2AXZlkUt5ehFFPntCxKq8u5PcKukb2QAdNE,q80,480x400,pf,b64/aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNi8xMS9HZXR0eUltYWdlcy0yMzA1NzczNjk5LmpwZz9yZXNpemU9MTYwMCwyMjQw"
+    },
+    {
+      "id": "at_51224326012",
+      "title": "Elon Musk says ousting Jensen Huang is like ‘kicking Michael Jordan off your team’",
+      "url": "https://techcrunch.com/2026/11/18/elon-musk-says-ousting-jensen-huang-is-like-kicking-michael-jordan-off-your-team/",
+      "summary": "“I don’t think [Huang is] disloyal to the United States,\" Musk said.",
+      "source": "Amanda Silberling via AI | TechCrunch",
+      "image": "https://www.inoreader.com/camo/sTd47oNj7j7mobFlkgW023to7luptCELWSSKauyQYy0I,q80,480x400,pf,b64/aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNC8wOC9HZXR0eUltYWdlcy01MjQyMTI5MjQuanBnP3Jlc2l6ZT0xNjAwLDEwNjc"
+    },
+    {
+      "id": "at_51224326014",
+      "title": "Microsoft CEO Satya Nadella remains confident in Nvidia after Huang’s exit",
+      "url": "https://techcrunch.com/2026/11/18/microsoft-ceo-satya-nadella-remains-confident-in-nvidia-after-huangs-exit/",
+      "summary": "Microsoft CEO Satya Nadella expressed confidence in Jensen Huang's successor Colette Kress, who is serving as Nvidia's interim CEO.",
+      "source": "Amanda Silberling via AI | TechCrunch",
+      "image": "https://www.inoreader.com/camo/snNEB8VZtJQHOyjCtVVYwYNhVuNyhpJACXksy55sBYk4,q80,480x400,pf,b64/aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNC8wMi9HZXR0eUltYWdlcy0xOTMwNTE4NDkxLmpwZz9yZXNpemU9MTYwMCwxMDY3"
+    },
+    {
+      "id": "at_51224155331",
+      "title": "Google launches Gemini 4 Neon with Opus 5.5-level coding performance at 25% lower API token prices",
+      "url": "https://venturebeat.com/technology/google-launches-gemini-4-neon-with-opus-5-5-level-coding-performance-at-25-lower-api-token-prices",
+      "summary": "Google's new mid-ranged AI large language model is here: Gemini 4 Neon launched earlier today on the paid Gemini API in Google AI Studio and Android Studio, as well as in the Gemini app and AI-assisted development platform Google Antigravity for Google AI Pro and Ultra subscribers.Read more",
+      "source": "[email protected] (Carl Franzen) via VentureBeat",
+      "image": "https://www.inoreader.com/camo/sIS2Pr_NuqtJcyBvbabI5kgdOl36HEocbZqWHVsS1TKc,q80,480x400,pf,b64/aHR0cHM6Ly9pbWFnZXMuY3RmYXNzZXRzLm5ldC9qZHR3cWh6dmMybjEvMlFGN1NrenI5SW1zb3kxYjYwUmtRL2E5YzYxMzNkZTk5YzZlMzUwYjk0MDE0NjFhMGU3MjdmL05lb25fV29ya19TdHJlZXRfYXRfTmlnaHQucG5nP3c9MTYwMCZxPTgw"
+    },
+    {
+      "id": "at_51224094962",
+      "title": "The nation’s largest school districts consider ditching Google Search",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1037151/school-districts-ditching-google",
+      "summary": "New York, Los Angeles, and Chicago schools are considering Google alternatives after the company said it will disable Search for schools that opt out of its AI features, according to The New York Times. Starting next year, schools will not have the option to disable Gemini-powered features without also disabling Search. Chris Phillips,...",
+      "source": "Terrence O’Brien via The Verge - Artificial Intelligences",
+      "image": "https://www.inoreader.com/camo/sH0aYq1gW2bGJoz9Kc610ib_M-8Lj70Dqpg6Ydh_QuOI,q80,480x400,pf,b64/aHR0cHM6Ly9wbGF0Zm9ybS50aGV2ZXJnZS5jb20vd3AtY29udGVudC91cGxvYWRzL3NpdGVzLzIvMjAyNS8wMS9TVEsyNTVfR29vZ2xlX0dlbWluaV9ELmpwZz9xdWFsaXR5PTkwJnN0cmlwPWFsbCZjcm9wPTAsMCwxMDAsMTAw"
+    },
+    {
+      "id": "at_51223916351",
+      "title": "Satya Nadella predicts AI agents will reshuffle the economics of the web",
+      "url": "https://techcrunch.com/2026/11/18/satya-nadella-predicts-ai-agents-will-reshuffle-the-economics-of-the-web/",
+      "summary": "Microsoft's CEO says AI agents could disrupt advertising-driven business models, forcing companies like Amazon to rethink how they compete for customers.",
+      "source": "Sarah Perez via AI | TechCrunch",
+      "image": "https://www.inoreader.com/camo/s3WWLoJ7RXHoOQNkHhU8Ui8Edicp4v8onjt-IxV8vHz4,q80,480x400,pf,b64/aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNi8xMS9HZXR0eUltYWdlcy0yMzA1NzczMjExLmpwZz93PTU5NA"
+    },
+    {
+      "id": "at_51223916359",
+      "title": "Anthropic reportedly prices IPO at $83 a share, above projected range",
+      "url": "https://techcrunch.com/2026/11/18/anthropic-reportedly-prices-ipo-at-83-a-share-above-projected-range/",
+      "summary": "The long-awaited IPO reportedly values the company at $1.5 trillion on a fully diluted basis.",
+      "source": "Marina Temkin via AI | TechCrunch",
+      "image": ""
+    },
+    {
+      "id": "at_51223575879",
+      "title": "NEW: Google launched Gemini 4 Neon, the middle model in its Gemini 4 lineup, beating Claude Opus 5.5...",
+      "url": "https://x.com/TheRundownAI/status/2123169908338884712",
+      "summary": "NEW: Google launched Gemini 4 Neon, the middle model in its Gemini 4 lineup, beating Claude Opus 5.5 and GPT-6.2 Sol on 16 of 19 benchmarks in Google’s testing. Google puts Neon’s cost per task at roughly half to a fifth of rival frontier models, with API prices at $3/15 per million. Available now to Google AI Pro or Ultra subscribers.💬7🔄4❤️30👀2989📊10⚡...",
+      "source": "The Rundown AI (@TheRundownAI) via The Rundown AI(@TheRundownAI)",
+      "image": "https://www.inoreader.com/camo/sp3SwtXq0gXbMwEXgiFx9eHaDr6YHnER8iquS7n_QyZo,q80,480x400,pf,b64/aHR0cHM6Ly9wYnMudHdpbWcuY29tL21lZGlhL0hYY0RpdUhXRUFFeHl5Vy5wbmc"
+    },
+    {
+      "id": "at_51223520113",
+      "title": "Nvidia created a weird bit of intrigue by not filing a routine SEC report",
+      "url": "https://techcrunch.com/2026/11/18/nvidia-created-a-weird-bit-of-intrigue-by-not-filing-a-routine-sec-report/",
+      "summary": "One Wall Street analyst got to the bottom of Nvidia's surprise announcement that it wouldn't be filing its formal quarterly results document, the 10-Q, for weeks.",
+      "source": "Julie Bort via AI | TechCrunch",
+      "image": ""
+    },
+    {
+      "id": "at_51223520115",
+      "title": "Palmer Luckey warns AI-powered cyberattacks are outpacing defenses: ‘It’s time to start running’",
+      "url": "https://techcrunch.com/2026/11/18/palmer-luckey-warns-ai-powered-cyberattacks-are-outpacing-defenses-its-time-to-start-running/",
+      "summary": "The Anduril co-founder says outdated technology is leaving systems vulnerable to a new wave of AI-enabled attacks.",
+      "source": "Sarah Perez via AI | TechCrunch",
+      "image": "https://www.inoreader.com/camo/s2WEwfCf6TRiqgQn8FagQeRp_r_N33Hrqg1NUu8hUZSk,q80,480x400,pf,b64/aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNi8xMS9HZXR0eUltYWdlcy0yMzA1NzU3NTYzLU1lZGl1bS5qcGVnP3c9NTk0"
+    },
+    {
+      "id": "at_51223520116",
+      "title": "Palmer Luckey thinks China is ‘thrilled to have Jensen out,’ so he wants the ousted Nvidia CEO reinstated",
+      "url": "https://techcrunch.com/2026/11/18/palmer-luckey-thinks-china-is-thrilled-to-have-jensen-out-so-he-wants-the-ousted-nvidia-ceo-reinstated/",
+      "summary": "\"It makes America weaker to knock him out,\" the Anduril CEO said about ousted Nvidia leader Jensen Huang.",
+      "source": "Amanda Silberling via AI | TechCrunch",
+      "image": "https://www.inoreader.com/camo/scVTtGwFCYlK5ZqTRN8tS0mFn6hRHPQQOim3Gyk43c8g,q80,480x400,pf,b64/aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNC8xMS9HZXR0eUltYWdlcy0xNzI4NTEzNTc4LWUuanBnP3Jlc2l6ZT0xNjAwLDEwNjc"
+    },
     {
       "id": "at_51223269571",
       "title": "OpenAI's pre-release GPT-6.2 Astra was easier to jailbreak than its predecessor, UK government testers found",
@@ -475,11 +571,11 @@
     },
     {
       "id": "at_51222463156",
-      "title": "What’s next for Nvidia? Whatever doesn’t rock the mind-bogglingly profitable boat",
+      "title": "Nvidia’s rise, visualized",
       "url": "https://www.theverge.com/tech/1035924/nvidia-visualized-revenue-profit-earnings-after-huang",
       "summary": "If someone handed you $8,300 every second, what would you do? That's how much pure profit Nvidia now makes. By the time you finish reading this paragraph, Nvidia will likely have cleared $45,000 and change. (function(){function e(){window.addEventListener(`message`,function(e){if(e.data[`datawrapper-height`]!==void 0){var t=document.querySelectorAll(`iframe`);for(var...",
       "source": "Sean Hollister via The Verge - Artificial Intelligences",
-      "image": "https://www.inoreader.com/camo/s02ZVhWgfG-GiPb4fqyQJ7Zo92d5GGmE-SXZq-Dd1B9U,q80,480x400,pf,b64/aHR0cHM6Ly9wbGF0Zm9ybS50aGV2ZXJnZS5jb20vd3AtY29udGVudC91cGxvYWRzL3NpdGVzLzIvMjAyNi8xMS9hY2FzdHJvX1NUSzA4M18wMS5qcGc_cXVhbGl0eT05MCZzdHJpcD1hbGwmY3JvcD0wLDAsMTAwLDEwMA"
+      "image": "https://www.inoreader.com/camo/sWDHUxJfV7INCBM1LykSyAst13-jco0pJd28Qme8qUKk,q80,480x400,pf,b64/aHR0cHM6Ly9wbGF0Zm9ybS50aGV2ZXJnZS5jb20vd3AtY29udGVudC91cGxvYWRzL3NpdGVzLzIvY2hvcnVzL3VwbG9hZHMvY2hvcnVzX2Fzc2V0L2ZpbGUvMjQwMDI1MjYvYWNhc3Ryb19TVEswODNfMDEuanBnP3F1YWxpdHk9OTAmc3RyaXA9YWxsJmNyb3A9MCwwLDEwMCwxMDA"
     },
     {
       "id": "at_51222297678",
@@ -1504,102 +1600,6 @@
       "summary": "Google introduced Gemini 4 Hydrogen, a fast, efficient model optimized for coding and agentic workflows. It scored 51 on the Artificial Analysis Intelligence Index, surpassing Gemini 4 Argon, and is priced at $1.50 per million input tokens and $7.50 per million output tokens.",
       "source": "via TLDR AI Feed",
       "image": ""
-    },
-    {
-      "id": "at_51181386583",
-      "title": "Asian governments react to Nvidia CEO Jensen Huang’s exit",
-      "url": "https://techcrunch.com/2026/11/14/asian-governments-react-to-nvidia-ceo-jensen-huangs-exit/",
-      "summary": "Some governments moved to confirm chip supply commitments, while others are monitoring the impact on local projects or addressing ongoing investigations.",
-      "source": "Kate Park via AI | TechCrunch",
-      "image": ""
-    },
-    {
-      "id": "at_51180695835",
-      "title": "The OpenAI board member who fired Sam Altman says we still can’t trust AI CEOs",
-      "url": "https://www.theverge.com/podcast/1032907/helen-toner-openai-cset-ai-safety-policy-interview",
-      "summary": "Today, I’m talking with Helen Toner, the executive director of the Center for Security and Emerging Technology at Georgetown University. This episode is part two of our series on AI in real life. Helen is a well-known figure in the AI safety and policy community, though she is perhaps best known for having served on the board of OpenAI,...",
-      "source": "Nilay Patel via The Verge - Artificial Intelligences",
-      "image": "https://www.inoreader.com/camo/sE6SOt-mJmVEDXPu4KY6HHC_iL5xnqasmCWRZZQ7aa4c,q80,480x400,pf,b64/aHR0cHM6Ly9wbGF0Zm9ybS50aGV2ZXJnZS5jb20vd3AtY29udGVudC91cGxvYWRzL3NpdGVzLzIvMjAyNi8xMS9EQ0QtSGVsZW4tVG9uZXIuanBnP3F1YWxpdHk9OTAmc3RyaXA9YWxsJmNyb3A9MCwwLDEwMCwxMDA"
-    },
-    {
-      "id": "at_51179635291",
-      "title": "Jensen Huang and the decline of the visionary showman founder CEO",
-      "url": "https://www.theverge.com/tech/1033781/nvidia-jensen-huang-last-visionary-showman-founder-ceo",
-      "summary": "Nvidia CEO Jensen Huang at CES 2025 in Las Vegas, Nevada, on January 6, 2025. | Photo by Artur Widak/NurPhoto via Getty Images On January 6th, 2025, Nvidia CEO Jensen Huang got his rockstar moment at last. He strode triumphantly onstage, hand raised in the air, to the claps and cheers of a 14,000-person arena absolutely packed with influencers...",
-      "source": "Sean Hollister via The Verge - Artificial Intelligences",
-      "image": "https://www.inoreader.com/camo/sKf3TGU_5aB39U19a8Z6exsTkidbqw-9mF9ki4JQGChw,q80,480x400,pf,b64/aHR0cHM6Ly9wbGF0Zm9ybS50aGV2ZXJnZS5jb20vd3AtY29udGVudC91cGxvYWRzL3NpdGVzLzIvMjAyNi8xMS9nZXR0eWltYWdlcy0yMTk0NjIyOTMwLmpwZz9xdWFsaXR5PTkwJnN0cmlwPWFsbCZjcm9wPTAsMCwxMDAsMTAw"
-    },
-    {
-      "id": "at_51175805372",
-      "title": "Amazon has a plan to index the world’s online shopping data",
-      "url": "https://www.theverge.com/tech/1033697/amazon-world-product-graph-ai-search",
-      "summary": "Amazon has plans to build a vault of data on every product sold anywhere on the internet, even products Amazon doesn't sell, and make the information available through its own site, according to Reuters. The project, called the \"World Product Graph,\" is meant to make it less likely that shoppers leave Amazon to do their product research...",
-      "source": "Stevie Bonifield via The Verge - Artificial Intelligences",
-      "image": "https://www.inoreader.com/camo/szhmHFfBfLL9oNtsRG3fwunLLdBP3K55gL0TJBhD3xMQ,q80,480x400,pf,b64/aHR0cHM6Ly9wbGF0Zm9ybS50aGV2ZXJnZS5jb20vd3AtY29udGVudC91cGxvYWRzL3NpdGVzLzIvMjAyNS8wOS9hY2FzdHJvX1NUSzEwM19fMDMuanBnP3F1YWxpdHk9OTAmc3RyaXA9YWxsJmNyb3A9MCwwLDEwMCwxMDA"
-    },
-    {
-      "id": "at_51175638802",
-      "title": "Jensen Huang’s departure blasts big hole in AI startup funding, VCs and founders say",
-      "url": "https://techcrunch.com/2026/11/13/jensen-huangs-departure-blasts-big-hole-in-ai-startup-funding-vcs-and-founders-say/",
-      "summary": "Nvidia poured tens of billions into AI startups under Huang. Without him at the helm, founders and VCs are bracing for smaller checks and lower valuations.",
-      "source": "Marina Temkin, Dominic-Madori Davis via AI | TechCrunch",
-      "image": "https://www.inoreader.com/camo/ss2fdPaPqhZcXuYTBgiFGkLxqOANJf4dSY3yJEMbhAcc,q80,480x400,pf,b64/aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNi8xMS9KZW5zZW4tSHVhbmctbnZpZGlhLmpwZz93PTEwMjQ"
-    },
-    {
-      "id": "at_51174653075",
-      "title": "ChatGPT Wallet lets OpenAI’s Dots agents make purchases for you",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/1033425/openai-chatgpt-wallet",
-      "summary": "After launching its Dots AI agents platform earlier this year, OpenAI is launching a wallet for the agents. ChatGPT Wallet is rolling out starting today for ChatGPT Pro subscribers in the US aged 18 and older using a US billing address and \"eligible US-issued American Express, Chase, Mastercard and Visa cards.\" After adding a card to...",
-      "source": "Stevie Bonifield via The Verge - Artificial Intelligences",
-      "image": "https://www.inoreader.com/camo/sMqV78JQgNMzkDnVrg_rD754rP7UM6AKBKrJfp5OIemg,q80,480x400,pf,b64/aHR0cHM6Ly9wbGF0Zm9ybS50aGV2ZXJnZS5jb20vd3AtY29udGVudC91cGxvYWRzL3NpdGVzLzIvMjAyNi8xMC9TVEtTNTM5X0FJX0FHRU5UU19TSE9QUElOR19CLmpwZz9xdWFsaXR5PTkwJnN0cmlwPWFsbCZjcm9wPTAsMCwxMDAsMTAw"
-    },
-    {
-      "id": "at_51174356574",
-      "title": "AI agent startup LangChain hits $3B valuation",
-      "url": "https://techcrunch.com/2026/11/13/ai-agent-startup-langchain-hits-3b-valuation/",
-      "summary": "LangChain now claims 7,000 customers of its model and platform agnostic agent management tool LangSmith.",
-      "source": "Julie Bort via AI | TechCrunch",
-      "image": "https://www.inoreader.com/camo/suAzFVjNoEXRtHW5ynogLUhqB-0yJyKDiO_668yjZTlc,q80,480x400,pf,b64/aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNi8xMS9SYWlzaW5nLW1vbmV5LmpwZz9yZXNpemU9MTYwMCwxMTA1"
-    },
-    {
-      "id": "at_51173666592",
-      "title": "Export-banned Nvidia chips are behind China’s most powerful AI models—uh oh, Jensen!",
-      "url": "https://techcrunch.com/2026/11/13/export-banned-nvidia-chips-are-behind-chinas-most-powerful-ai-models-uh-oh-jensen/",
-      "summary": "New research shows the most advanced AI models from China were trained on banned Nvidia chips.",
-      "source": "Tim Fernholz via AI | TechCrunch",
-      "image": "https://www.inoreader.com/camo/sV5ifIn3ttQFOw-PGj3abKs8L6XKuQ6af_Z9qAciwHVY,q80,480x400,pf,b64/aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNi8xMS9HZXR0eUltYWdlcy0yMzAxMzI3ODgzLmpwZz9yZXNpemU9MTYwMCwxMDYw"
-    },
-    {
-      "id": "at_51172650038",
-      "title": "NEW: OpenAI launched ChatGPT Wallet, letting AI agents buy things for users without ever seeing an a...",
-      "url": "https://x.com/TheRundownAI/status/2121269456479597049",
-      "summary": "NEW: OpenAI launched ChatGPT Wallet, letting AI agents buy things for users without ever seeing an actual card number, built with American Express, Mastercard and Visa.Your browser does not support the video tag.🔗 View on Twitter💬39🔄7❤️92👀13114📊46⚡ Powered by xgo.ing",
-      "source": "The Rundown AI (@TheRundownAI) via The Rundown AI(@TheRundownAI)",
-      "image": ""
-    },
-    {
-      "id": "at_51172305996",
-      "title": "ChatGPT’s new Wallet lets AI agents shop and check out for you",
-      "url": "https://techcrunch.com/2026/11/13/chatgpts-new-wallet-lets-ai-agents-shop-and-check-out-for-you/",
-      "summary": "ChatGPT Wallet lets AI agents shop and check out on users' behalf, starting with a limited rollout to U.S. Pro subscribers.",
-      "source": "Sarah Perez via AI | TechCrunch",
-      "image": "https://www.inoreader.com/camo/sZyHy16WOH_vb9HDAxcKv_IuCXeOSpkWLUOkHTE4r53I,q80,480x400,pf,b64/aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNi8xMS9jaGF0Z3B0LXdhbGxldC5qcGc_cmVzaXplPTE2MDAsOTcy"
-    },
-    {
-      "id": "at_51172123243",
-      "title": "Read more: https://t.co/H1AbRVfiXe",
-      "url": "https://x.com/TheRundownAI/status/2121265009137160311",
-      "summary": "Read more: tech.therundown.ai/p/microsoft-s-…💬0🔄0❤️1👀1055⚡ Powered by xgo.ing",
-      "source": "The Rundown AI (@TheRundownAI) via The Rundown AI(@TheRundownAI)",
-      "image": ""
-    },
-    {
-      "id": "at_51172123252",
-      "title": "Top stories in tech today: - Microsoft’s Outlook outage drags into day two - Oura makes $625M push ...",
-      "url": "https://x.com/TheRundownAI/status/2121265003869122748",
-      "summary": "Top stories in tech today:- Microsoft’s Outlook outage drags into day two- Oura makes $625M push into AI healthcare- Pfizer chases the once-a-month GLP-1- Sweden gives data centers a Nordic twist💬3🔄2❤️17👀3177📊5⚡ Powered by xgo.ing",
-      "source": "The Rundown AI (@TheRundownAI) via The Rundown AI(@TheRundownAI)",
-      "image": "https://www.inoreader.com/camo/suju3QKeI1_Ij-PxwgPDhuAJzKFw18nc0fTPvCgc7seY,q80,480x400,pf,b64/aHR0cHM6Ly9wYnMudHdpbWcuY29tL21lZGlhL0hYQV9SdUlXVUFBUXc5Wi5qcGc"
     }
   ]
 }
