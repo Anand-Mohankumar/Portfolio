@@ -1,11 +1,339 @@
 {
-  "updatedAt": "2026-11-20T12:54:30.274920+00:00",
+  "updatedAt": "2026-11-20T21:06:00.095429+00:00",
   "articles": [
     {
+      "id": "at_51245574539",
+      "title": "Following outages, security industry focuses on availability and resilience",
+      "url": "https://www.scworld.com/news/following-outages-security-industry-focuses-on-availability-and-resilience",
+      "summary": "Widespread outages expose fragile digital infrastructure and raise concerns about recovery readiness.",
+      "source": "Steve Zurier via Latest articles from SC Magazine",
+      "image": "https://www.inoreader.com/camo/sNsyC7yjyV3qACG28EXc5o-V5A-5aW3_42aUxkvOWB6E,q80,480x400,pf,b64/aHR0cHM6Ly9maWxlcy5jeWJlcnJpc2thbGxpYW5jZS5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjYvMTEvMTEyMDI2X2FpX3JvYm90LmpwZw"
+    },
+    {
+      "id": "at_51244828237",
+      "title": "WhatsApp Patches 3 Security Flaws, Including Android Bug Suspected of Use in Scams",
+      "url": "https://thehackernews.com/2026/11/whatsapp-patches-3-security-flaws.html",
+      "summary": "Meta-owned WhatsApp has addressed security vulnerabilities, including one impacting its Android app that it suspects may have been exploited in connection with scam messages. The vulnerability, tracked as CVE-2026-23871, has been described as a case of incomplete validation of external ad-reply URLs in WhatsApp for Android and WhatsApp Business for...",
+      "source": "[email protected] (The Hacker News) via The Hacker News",
+      "image": "https://www.inoreader.com/camo/sRoi4ELKma4bItJbfhdJvnVIgxIGdVX-maynuQAl34cI,q80,480x400,pf,b64/aHR0cHM6Ly9ibG9nZ2VyLmdvb2dsZXVzZXJjb250ZW50LmNvbS9pbWcvYi9SMjl2WjJ4bC9BVnZYc0VoVVNiWVVKSmtCbFpzYUg5MFNYSWF4WUF2NWlKTjdaRXVzN1EyNEFfWjlmRE5ObG5PakZuTlozU25BNmVyLWl1TWdRbkU2azczbndWd0FFUFBrMUFqUlQxMk45bzhjSmZ0M19kUHFNWktlSmJwcTZRSWNHYk4xejFVYkVfUTNmWFR5cDFjMFhtcXluUXUybEpQZUlZb3JhcVhGY2dNLXdRSDRiMXJJQnJPS0YyMjFDSUtMbGRKSVpWSjRnN2NyL3MxNjAwL3doYXRzYXBwLmpwZw"
+    },
+    {
+      "id": "at_51244729490",
+      "title": "Bell Canada says 'agentic' hacker stole enterprise customer data",
+      "url": "https://www.bleepingcomputer.com/news/security/bell-canada-says-agentic-hacker-stole-enterprise-customer-data/",
+      "summary": "Bell Canada has confirmed that an \"agentic\" threat actor breached its systems on November 17, 2026, and stole enterprise customer data, including information from a system used to order and provision telecommunications circuits. [...]",
+      "source": "Lawrence Abrams via Bleeping Computer",
+      "image": "https://www.inoreader.com/camo/sOuIU8Lm9i2n482hqiFRlx9H003UZE3OhTm515KNXKJw,q80,480x400,pf,b64/aHR0cHM6Ly93d3cuYmxlZXBzdGF0aWMuY29tL2NvbnRlbnQvaGwtaW1hZ2VzLzIwMjYvMTEvMjAvYmVsbC1jYW5hZGEuanBn"
+    },
+    {
+      "id": "at_51244708621",
+      "title": "How to remove your personal information from FastPeopleSearch",
+      "url": "https://www.scworld.com/brief/how-to-remove-your-personal-information-from-fastpeoplesearch",
+      "summary": "HackRead disclosed that FastPeopleSearch exposes sensitive personal information, including home addresses, phone numbers and relative details, which poses significant security risks to users.",
+      "source": "SC Staff via Latest articles from SC Magazine",
+      "image": "https://www.inoreader.com/camo/sBxZDT57XCALBnDquY0ariA0yCsvSdhly4YxWFmcxDTc,q80,480x400,pf,b64/aHR0cHM6Ly9maWxlcy5jeWJlcnJpc2thbGxpYW5jZS5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjUvMTEvQWRvYmVTdG9ja18xNTEyODI5NDY5LXNjYWxlZC5qcGVn"
+    },
+    {
+      "id": "at_51244708629",
+      "title": "Metano launches with $12 million to secure enterprise AI agents",
+      "url": "https://www.scworld.com/brief/metano-launches-with-12-million-to-secure-enterprise-ai-agents",
+      "summary": "Metano Inc. has launched with $12 million in funding to provide security for artificial intelligence agents operating across enterprise endpoints, cloud infrastructure and software-as-a-service applications, based on information published by Silicon Angle.",
+      "source": "SC Staff via Latest articles from SC Magazine",
+      "image": "https://www.inoreader.com/camo/sWwi6CSf_gsChtEHZ2hrgON5h5Gwxq5wqUFWH4EYPzPY,q80,480x400,pf,b64/aHR0cHM6Ly9maWxlcy5jeWJlcnJpc2thbGxpYW5jZS5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjMvMTEvMTExNF9jYXNoX21vbmV5LmpwZw"
+    },
+    {
+      "id": "at_51244708632",
+      "title": "Microsoft develops lockdown mode for edge browser to enhance security",
+      "url": "https://www.scworld.com/brief/microsoft-develops-lockdown-mode-for-edge-browser-to-enhance-security",
+      "summary": "Microsoft is developing a new security feature for the Edge browser called Lockdown Mode, which aims to reduce the attack surface by disabling specific graphics APIs, with further coverage provided by Bleeping Computer.",
+      "source": "SC Staff via Latest articles from SC Magazine",
+      "image": "https://www.inoreader.com/camo/s0h7ZW2GC6IYXa6Fxbb6RZHnZq_Ao_jXPAEhiH1KSuT0,q80,480x400,pf,b64/aHR0cHM6Ly9maWxlcy5jeWJlcnJpc2thbGxpYW5jZS5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjQvMDMvMDMyODI0X21pY3Jvc29mdF9lZGdlLmpwZw"
+    },
+    {
+      "id": "at_51244708634",
+      "title": "Nvidia investigates potential security incident involving third-party partner",
+      "url": "https://www.scworld.com/brief/nvidia-investigates-potential-security-incident-involving-third-party-partner",
+      "summary": "As noted by Bleeping Computer, Nvidia is currently investigating claims of a security breach after the Gentlemen ransomware group listed the technology company on its dark web leak site.",
+      "source": "SC Staff via Latest articles from SC Magazine",
+      "image": "https://www.inoreader.com/camo/sfVApDKaGEYva6XpmE4Fp0XwIeN0zK4WxpxcoRnMjA-8,q80,480x400,pf,b64/aHR0cHM6Ly9maWxlcy5jeWJlcnJpc2thbGxpYW5jZS5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjQvMDUvMDUwNjI0X252aWRpYS5qcGc"
+    },
+    {
+      "id": "at_51244708635",
+      "title": "Security consultant highlights risks of physical password exposure",
+      "url": "https://www.scworld.com/brief/security-consultant-highlights-risks-of-physical-password-exposure",
+      "summary": "Poor security hygiene remains a significant threat to corporate networks, as demonstrated by a recent incident involving a password left on a sticky note, with further coverage provided by The Register.",
+      "source": "SC Staff via Latest articles from SC Magazine",
+      "image": "https://www.inoreader.com/camo/sm9tNxzBLHKPzvR18dGG9vrQq0NDEMIwbAoFi6aJWHGc,q80,480x400,pf,b64/aHR0cHM6Ly9maWxlcy5jeWJlcnJpc2thbGxpYW5jZS5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjYvMTEvMTEyMDI2X3N0aWNreV9ub3RlX3Bhc3N3b3JkLmpwZw"
+    },
+    {
+      "id": "at_51244708636",
+      "title": "Russian national arrested for alleged espionage against defense technology firm",
+      "url": "https://www.scworld.com/brief/russian-national-arrested-for-alleged-espionage-against-defense-technology-firm",
+      "summary": "A Russian national is in federal custody following his arrest for allegedly conducting surveillance on employees of a Palo Alto-based defense technology company.",
+      "source": "SC Staff via Latest articles from SC Magazine",
+      "image": "https://www.inoreader.com/camo/szaUser--YduNPuDBurRgNgmNO1KiHcO1GFR4KF1gGYQ,q80,480x400,pf,b64/aHR0cHM6Ly9maWxlcy5jeWJlcnJpc2thbGxpYW5jZS5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjMvMTEvMTExNV9oYW5kY3VmZnMuanBn"
+    },
+    {
+      "id": "at_51244708637",
+      "title": "How to determine if a tech outage is a cyberattack",
+      "url": "https://www.scworld.com/brief/how-to-determine-if-a-tech-outage-is-a-cyberattack",
+      "summary": "Ars Technica reports that recent clusters of technological failures across major infrastructure have sparked widespread public concern regarding potential cyberwarfare.",
+      "source": "SC Staff via Latest articles from SC Magazine",
+      "image": "https://www.inoreader.com/camo/sFhRdZZvzvwITwZuqiKtzmwA0ri-nQtmehFKwqJKSEkk,q80,480x400,pf,b64/aHR0cHM6Ly9maWxlcy5jeWJlcnJpc2thbGxpYW5jZS5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjQvMDQvMDQwMzI0X2N5YmVyYXR0YWNrLmpwZw"
+    },
+    {
+      "id": "at_51244111405",
+      "title": "Hackers use autonomous AI tool Cairn to find zero-day, take over server",
+      "url": "https://www.bleepingcomputer.com/news/security/hackers-use-autonomous-ai-tool-cairn-to-find-zero-day-take-over-server/",
+      "summary": "Threat actors used the open-source AI penetration-testing framework Cairn to find a previously unknown vulnerability in a medical imaging application. [...]",
+      "source": "Bill Toulas via Bleeping Computer",
+      "image": "https://www.inoreader.com/camo/slaaUW5XA-nK66oMzidBNn7B0n--FokbN_09hET0hMnU,q80,480x400,pf,b64/aHR0cHM6Ly93d3cuYmxlZXBzdGF0aWMuY29tL2NvbnRlbnQvaGwtaW1hZ2VzLzIwMjIvMDUvMTIvZXZpbC1oYWNrZXItYWkuanBn"
+    },
+    {
+      "id": "at_51243941617",
+      "title": "Bazuka Android Malware Uses Fake Screen Overlays to Hide Credential Theft and Device Control",
+      "url": "https://thehackernews.com/2026/11/bazuka-android-malware-uses-fake-screen.html",
+      "summary": "Cybersecurity researchers have disclosed details of a previously unknown Android malware framework called Bazuka that offers large language model (LLM) integration for victim management and control at scale. Dutch mobile security company ThreatFabric said it discovered the threat in late October 2026 during an investigation into an NFC-relay banking...",
+      "source": "[email protected] (The Hacker News) via The Hacker News",
+      "image": "https://www.inoreader.com/camo/sWel2ZuXNGTX0UvxC9Z43BkSRsmVQPwIm89_pNbzMB3o,q80,480x400,pf,b64/aHR0cHM6Ly9ibG9nZ2VyLmdvb2dsZXVzZXJjb250ZW50LmNvbS9pbWcvYi9SMjl2WjJ4bC9BVnZYc0VoTXM0dkJkaXZiRjNZLTR5ZDNQV3FqU1R1RzJQUER2Q2VtTTIxMXB6VmwySmhrdXM5ZDE0XzJNelJnZHJsTmhSeGFIYV8ycmxJTjM0a1VHSEFsVl9ZMmRNbmZtWUdsVUV6VWNhYjBjX3MzTjhab2U4UDNyY0otUkptbzJsdVZjaTliVnFtd3RGaHBMNHJmUjJVby1ad3ZxZnFGTXdSYl8zV3dvT3ZGSWF1blBkN1dNT0o0eVc5cmpiSEVLRHdmL3MxNjAwL2FuZHJvaWQtbWFsd2FyZS5qcGc"
+    },
+    {
+      "id": "at_51243848298",
+      "title": "Microsoft Investigates Attachment Upload Failures in New Outlook",
+      "url": "https://cybersecuritynews.com/microsoft-attachment-upload-failures/",
+      "summary": "Microsoft is investigating reports that some Microsoft 365 users cannot upload email attachments in New Outlook. In a November 20 service update, the company said attachment uploads still work in Outlook on the web and classic Outlook. Microsoft is tracking the issue in the Microsoft 365 admin center under EX1561765. We're investigating reports...",
+      "source": "Guru Baran via Cyber Security News",
+      "image": "https://www.inoreader.com/camo/seS7TF72VptR_6AeNvrGHYj2FoTmOXNLZMqJJFDnOWLg,q80,480x400,pf,b64/aHR0cHM6Ly9jeWJlcnNlY3VyaXR5bmV3cy5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjYvMTEvTWljcm9zb2Z0LUludmVzdGlnYXRlcy1BdHRhY2htZW50LVVwbG9hZC1GYWlsdXJlcy53ZWJw"
+    },
+    {
+      "id": "at_51243848328",
+      "title": "Over 100 Debian Packages Still Contain Distrusted CA Certificates Despite Security Updates",
+      "url": "https://cybersecuritynews.com/debian-packages-ca-certificates/",
+      "summary": "A scan of a Debian package mirror found that more than 100 packages still contained copies of distrusted certificate authority (CA) certificates after Debian removed them from its system trust store. Debian developer Steve McIntyre posted the scan results to the Debian developer mailing list on November 19. The findings show why updating the...",
+      "source": "Guru Baran via Cyber Security News",
+      "image": "https://www.inoreader.com/camo/sxDKFUoXggvf0o1ZRvrX4cFBSkFJSWIX7UDpMLm_y_74,q80,480x400,pf,b64/aHR0cHM6Ly9jeWJlcnNlY3VyaXR5bmV3cy5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjYvMTEvRGViaWFuLVBhY2thZ2VzLUNBLUNlcnRpZmljYXRlcy53ZWJw"
+    },
+    {
+      "id": "at_51243758426",
+      "title": "Introducing the new Sophos NDR",
+      "url": "https://www.sophos.com/en-us/blog/introducing-sophos-ndr",
+      "summary": "Sophos NDR brings behavioral detection and active prevention together to identify known and unknown threats across the AI-era network.",
+      "source": "via Naked Security",
+      "image": ""
+    },
+    {
+      "id": "at_51243680440",
+      "title": "Sophos' Alexandra Rose: Building a team of experts",
+      "url": "https://www.scworld.com/feature/sophos-alexandra-rose-building-a-team-of-experts",
+      "summary": "The Sophos executive says leadership is bringing together colleagues with different abilities and having them work toward a common goal.",
+      "source": "SC Staff via Latest articles from SC Magazine",
+      "image": "https://www.inoreader.com/camo/sC9l6lQIuyueUXmclyltWZx2Mo-Fo0WAZMEJJuObdcB8,q80,480x400,pf,b64/aHR0cHM6Ly9maWxlcy5jeWJlcnJpc2thbGxpYW5jZS5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjYvMTEvcm9zZS1hbGV4YW5kcmEtaGVhZHNob3QtcmVzaXplZC5qcGc"
+    },
+    {
+      "id": "at_51243680446",
+      "title": "Security risks associated with GitHub Actions cache",
+      "url": "https://www.scworld.com/brief/security-risks-associated-with-github-actions-cache",
+      "summary": "GitHub Actions cache functionality, while designed to improve development efficiency by reducing build times, presents a significant security vulnerability that allows unauthorized access to sensitive credentials, according to a recent report by HackRead.",
+      "source": "SC Staff via Latest articles from SC Magazine",
+      "image": "https://www.inoreader.com/camo/s-wnPmUaF6kW0uGKzTPkbdXUCroeFOmxMnI6BFWfQzPI,q80,480x400,pf,b64/aHR0cHM6Ly9maWxlcy5jeWJlcnJpc2thbGxpYW5jZS5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjUvMDQvMDQwODI1X2dpdGh1Yi5qcGc"
+    },
+    {
+      "id": "at_51243680448",
+      "title": "Retailers face heightened cyber threats during holiday shopping season",
+      "url": "https://www.scworld.com/brief/retailers-face-heightened-cyber-threats-during-holiday-shopping-season",
+      "summary": "Cybersecurity risks for retailers escalate significantly during the holiday shopping season as threat actors exploit increased transaction volumes and reduced staffing levels, with further coverage provided by Dark Reading.",
+      "source": "SC Staff via Latest articles from SC Magazine",
+      "image": "https://www.inoreader.com/camo/seFkW57d-OSG4I59z5oHiVx8JGPS_D3oPsmOT38ydtqk,q80,480x400,pf,b64/aHR0cHM6Ly9maWxlcy5jeWJlcnJpc2thbGxpYW5jZS5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjUvMTAvQWRvYmVTdG9ja18xMjg1ODA3MTk3LmpwZWc"
+    },
+    {
+      "id": "at_51243680449",
+      "title": "CISA adds four critical vulnerabilities to known exploited catalog",
+      "url": "https://www.scworld.com/brief/cisa-adds-four-critical-vulnerabilities-to-known-exploited-catalog",
+      "summary": "Per Security Affairs, the Cybersecurity and Infrastructure Security Agency added four critical vulnerabilities to its Known Exploited Vulnerabilities catalog. These flaws impact Apache Axis, Vanderbilt Research Electronic Data Capture, BerriAI LiteLLM and Synology DiskStation Manager.",
+      "source": "SC Staff via Latest articles from SC Magazine",
+      "image": "https://www.inoreader.com/camo/sGI0RWm-fHUhloxY74ektzCkn10lSLaOps5moqJBktKc,q80,480x400,pf,b64/aHR0cHM6Ly9maWxlcy5jeWJlcnJpc2thbGxpYW5jZS5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjYvMDIvY2lzYS1sb2dvLWNyb3BwZWQuanBn"
+    },
+    {
+      "id": "at_51243680450",
+      "title": "Rakuten Securities data breach impacts millions of customers",
+      "url": "https://www.scworld.com/brief/rakuten-securities-data-breach-impacts-millions-of-customers",
+      "summary": "A significant data breach at Rakuten Securities potentially exposed the personal information of nearly 16 million customers, according to a recent report by Infosecurity Magazine.",
+      "source": "SC Staff via Latest articles from SC Magazine",
+      "image": "https://www.inoreader.com/camo/sVH93x08F6rFH5EF5Si0dzLKiMYw6UUZ-7s0TTqoCWQY,q80,480x400,pf,b64/aHR0cHM6Ly9maWxlcy5jeWJlcnJpc2thbGxpYW5jZS5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjQvMDYvMDYxNDI0X2RhdGFfYnJlYWNoLmpwZw"
+    },
+    {
+      "id": "at_51243680451",
+      "title": "Transport for London reports cyber incident affecting photocard customers",
+      "url": "https://www.scworld.com/brief/transport-for-london-reports-cyber-incident-affecting-photocard-customers",
+      "summary": "Following insights from Infosecurity Magazine, Transport for London confirmed a cyber incident that potentially compromised the personal data of approximately 265,000 photocard customers.",
+      "source": "SC Staff via Latest articles from SC Magazine",
+      "image": "https://www.inoreader.com/camo/svYUZV3KotjduVdO51X-Y6eIbplDg3RRSjSLBm3BTPnM,q80,480x400,pf,b64/aHR0cHM6Ly9maWxlcy5jeWJlcnJpc2thbGxpYW5jZS5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjQvMDkvMDkzMDI0X2RhdGFfYnJlYWNoLmpwZw"
+    },
+    {
+      "id": "at_51243680453",
+      "title": "Researchers uncover massive payment card theft campaign",
+      "url": "https://www.scworld.com/brief/researchers-uncover-massive-payment-card-theft-campaign",
+      "summary": "Based on information from Tech Radar, a significant cyberattack compromised 782 point-of-sale systems, resulting in the theft of data from over one million credit and debit cards.",
+      "source": "SC Staff via Latest articles from SC Magazine",
+      "image": "https://www.inoreader.com/camo/sNBf_4m-uMaNcoVhAR48l9pLmbpqZgZy4JpCADWUnhCI,q80,480x400,pf,b64/aHR0cHM6Ly9maWxlcy5jeWJlcnJpc2thbGxpYW5jZS5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjYvMTAvQWRvYmVTdG9ja18yMTU2Nzk2NjAwX29rc2Ffc3R1ZGlvLTE2eDktY3JvcC1kb3duc2l6ZWQtc2NhbGVkLmpwZWc"
+    },
+    {
+      "id": "at_51243680455",
+      "title": "Cybersecurity experts warn of increased system outages due to AI",
+      "url": "https://www.scworld.com/brief/cybersecurity-experts-warn-of-increased-system-outages-due-to-ai",
+      "summary": "Based on information from Statescoop, state and local governments must prepare for more frequent system disruptions and maintenance-related downtime as artificial intelligence accelerates the discovery of software vulnerabilities.",
+      "source": "SC Staff via Latest articles from SC Magazine",
+      "image": "https://www.inoreader.com/camo/sKVLjupvfVDV2-mWsyt_nbfrY3LJUv9tiZt2BHp0PlLw,q80,480x400,pf,b64/aHR0cHM6Ly9maWxlcy5jeWJlcnJpc2thbGxpYW5jZS5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjQvMDMvMDMyNjI0X2FpX2NoaXAuanBn"
+    },
+    {
+      "id": "at_51243680457",
+      "title": "UK financial regulators issue new cybersecurity guidance",
+      "url": "https://www.scworld.com/brief/uk-financial-regulators-issue-new-cybersecurity-guidance",
+      "summary": "According to IT Pro, UK financial regulators released draft cybersecurity guidance aimed at bolstering the resilience of banks, insurers and other financial services providers against evolving digital threats.",
+      "source": "SC Staff via Latest articles from SC Magazine",
+      "image": "https://www.inoreader.com/camo/smCC6H8XAHuibzwaRz889KKVUtO9LmowgG_ZxBtTVTk4,q80,480x400,pf,b64/aHR0cHM6Ly9maWxlcy5jeWJlcnJpc2thbGxpYW5jZS5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjUvMDMvQWRvYmVTdG9ja18xMDk5Mjc2OTkwLmpwZw"
+    },
+    {
+      "id": "at_51243680459",
+      "title": "Cyberattack disrupts European Commission services",
+      "url": "https://www.scworld.com/brief/cyberattack-disrupts-european-commission-services",
+      "summary": "A cyberattack has disrupted internal European Commission systems for more than 10 days, impacting critical administrative functions including payroll, leave requests and medical reimbursements, based on information published by Security Affairs.",
+      "source": "SC Staff via Latest articles from SC Magazine",
+      "image": "https://www.inoreader.com/camo/sVoieUJnUKlrMK7fyTtXjvumEQqoXkmoEPO_GIzKNEpE,q80,480x400,pf,b64/aHR0cHM6Ly9maWxlcy5jeWJlcnJpc2thbGxpYW5jZS5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjQvMDIvMDIwOTI0X2N5YmVyYXR0YWNrLmpwZw"
+    },
+    {
+      "id": "at_51243267483",
+      "title": "WhatsApp Fixes Flaw Uncovered While Disrupting Scam Campaign",
+      "url": "https://www.securityweek.com/whatsapp-fixes-flaw-uncovered-while-disrupting-scam-campaign/",
+      "summary": "Tracked as CVE-2026-23871, the vulnerability was found by WhatsApp’s security team, and it may have been used to make scam messages more credible. The post WhatsApp Fixes Flaw Uncovered While Disrupting Scam Campaign appeared first on SecurityWeek.",
+      "source": "Eduard Kovacs via SecurityWeek",
+      "image": "https://www.inoreader.com/camo/s5tUYhCUA5clBsL7E3urmr_5d5yrr25TaAaKfHVQvS0c,q80,480x400,pf,b64/aHR0cHM6Ly93d3cuc2VjdXJpdHl3ZWVrLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNS8wNi9XaGF0c0FwcC1WdWxuZXJhYmlsaXR5LWF0dGFjay1lMTc2MTI5MjcwNzgwOS5qcGc"
+    },
+    {
+      "id": "at_51243151304",
+      "title": "Vendor data breach exposes Chase, Visa, Mastercard customer info",
+      "url": "https://www.bleepingcomputer.com/news/security/vendor-data-breach-exposes-chase-visa-mastercard-customer-info/",
+      "summary": "J.P. Morgan Chase warned it suffered a data breach after a cyberattack at a third-party service provider exposed customers' personal information and marketing data. [...]",
+      "source": "Bill Toulas via Bleeping Computer",
+      "image": "https://www.inoreader.com/camo/sn3NUxIapmBISahDEq7UVz3Z5Lok6RxyOuOnRgwH1O8I,q80,480x400,pf,b64/aHR0cHM6Ly93d3cuYmxlZXBzdGF0aWMuY29tL2NvbnRlbnQvaGwtaW1hZ2VzLzIwMjIvMTAvMjgvaGFuZC1zaWZ0aW5nLWRhdGEuanBn"
+    },
+    {
+      "id": "at_51242962446",
+      "title": "JPMorgan, Visa and Mastercard Report Third-Party Data Breaches After N0n Claims",
+      "url": "https://securityaffairs.com/203614/data-breach/jpmorgan-visa-and-mastercard-report-third-party-data-breaches-after-n0n-claims.html",
+      "summary": "JPMorgan, Visa and Mastercard disclose third-party data breaches after the N0n extortion group claims to have stolen customer information. The disclosures involving JPMorgan Chase, Visa and Mastercard highlight a familiar but often underestimated security problem: the risks introduced by third-party service providers. All three companies have...",
+      "source": "Pierluigi Paganini via Security Affairs",
+      "image": "https://www.inoreader.com/camo/sVfR3u_7hD-pDiKNAeCxHMJbAIlF9ILz12XjDuXs5wPw,q80,480x400,pf,b64/aHR0cHM6Ly9pMC53cC5jb20vc2VjdXJpdHlhZmZhaXJzLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNi8xMS9pbWFnZS01NS5wbmc_dz0xMTY1JnNzbD0x"
+    },
+    {
+      "id": "at_51242804553",
+      "title": "Critical Apache Tomcat Flaw Lets Remote Attackers Join Trusted Server Clusters Without Authentication",
+      "url": "https://cybersecuritynews.com/critical-apache-tomcat-flaw/",
+      "summary": "The Apache Software Foundation has disclosed a critical flaw in Apache Tomcat that allows a remote attacker to join a trusted server cluster without authentication. Tracked as CVE-2026-133325, the flaw affects clusters that use TLS 1.3 with a pre-shared key. Apache published the advisory on November 19, 2026, and credited researcher Mike Read...",
+      "source": "Guru Baran via Cyber Security News",
+      "image": "https://www.inoreader.com/camo/sAV7Tn1UlN0cDIXW9dtsQsCdgYcb8WuUJaVfMyP1IvEw,q80,480x400,pf,b64/aHR0cHM6Ly9jeWJlcnNlY3VyaXR5bmV3cy5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjYvMTEvQXBhY2hlLVRvbWNhdC1DbHVzdGVyLUF1dGhlbnRpY2F0aW9uLUJ5cGFzcy53ZWJw"
+    },
+    {
+      "id": "at_51242692932",
+      "title": "Still tracking company passwords in spreadsheets? You’re flying blind.",
+      "url": "https://www.bleepingcomputer.com/news/security/still-tracking-company-passwords-in-spreadsheets-youre-flying-blind/",
+      "summary": "Tracking company passwords in spreadsheets can leave IT administrators unaware of weak, reused, or compromised credentials stored and shared outside approved systems. NordPass explains how centralized password management can improve credential visibility, identify security risks, and simplify secure password sharing. [...]",
+      "source": "Sponsored by NordPass Business via Bleeping Computer",
+      "image": "https://www.inoreader.com/camo/sprbD1ygLk4W3vLc7WoiaVid6DZqqzCbSVYYw3rRHLBM,q80,480x400,pf,b64/aHR0cHM6Ly93d3cuYmxlZXBzdGF0aWMuY29tL2NvbnRlbnQvcG9zdHMvMjAyNi8xMS8xOS9ub3JkcGFzcy1oZWFkZXIuanBn"
+    },
+    {
+      "id": "at_51242657053",
+      "title": "In Other News: Norwegian Energy Firm Cyberattacks, Supercomputer Hack, New Nightmare Eclipse Exploit",
+      "url": "https://www.securityweek.com/in-other-news-norwegian-energy-firm-cyberattacks-supercomputer-hack-new-nightmare-eclipse-exploit/",
+      "summary": "Noteworthy stories that might have slipped under the radar: EU adds NoName057(16) to cyber sanctions list, malware targets CACs left in personal computers, Gemini agents targeted Epoch AI. The post In Other News: Norwegian Energy Firm Cyberattacks, Supercomputer Hack, New Nightmare Eclipse Exploit appeared first on SecurityWeek.",
+      "source": "SecurityWeek News via SecurityWeek",
+      "image": ""
+    },
+    {
+      "id": "at_51242486817",
+      "title": "New FastUnlock zero-day vulnerability affects Windows lock screens",
+      "url": "https://www.scworld.com/brief/new-fastunlock-zero-day-vulnerability-affects-windows-lock-screens",
+      "summary": "",
+      "source": "SC Staff via Latest articles from SC Magazine",
+      "image": "https://www.inoreader.com/camo/suLskrYWlsRXwIwjV9r4aEncNu3v67EG45UvaNtdG-4k,q80,480x400,pf,b64/aHR0cHM6Ly9maWxlcy5jeWJlcnJpc2thbGxpYW5jZS5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjYvMTEvQWRvYmVTdG9ja18yMDc3NTkxNzQxLTEtc2NhbGVkLmpwZWc"
+    },
+    {
+      "id": "at_51242486818",
+      "title": "Department of Agriculture takes applications offline following security incident",
+      "url": "https://www.scworld.com/brief/department-of-agriculture-takes-applications-offline-following-security-incident",
+      "summary": "",
+      "source": "SC Staff via Latest articles from SC Magazine",
+      "image": "https://www.inoreader.com/camo/sN3xWrMoO1IC7vHJk0hgBpHxciwanKqI50cc1rMGe_kI,q80,480x400,pf,b64/aHR0cHM6Ly9maWxlcy5jeWJlcnJpc2thbGxpYW5jZS5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjYvMTEvQWRvYmVTdG9ja18xMzQyOTM0MTUyX0VkaXRvcmlhbF9Vc2VfT25seS0yLmpwZWc"
+    },
+    {
+      "id": "at_51242486819",
+      "title": "Broadcom patches critical VMware vCenter vulnerability exploited by state-sponsored hackers",
+      "url": "https://www.scworld.com/brief/broadcom-patches-critical-vmware-vcenter-vulnerability-exploited-by-state-sponsored-hackers",
+      "summary": "",
+      "source": "SC Staff via Latest articles from SC Magazine",
+      "image": "https://www.inoreader.com/camo/s361mvNp17nI72ujWyj0Z12hgMatkqnQ61pa196WwEcI,q80,480x400,pf,b64/aHR0cHM6Ly9maWxlcy5jeWJlcnJpc2thbGxpYW5jZS5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjYvMTEvQWRvYmVTdG9ja184MTQyNzYwMjBfRWRpdG9yaWFsX1VzZV9Pbmx5LTEtc2NhbGVkLmpwZWc"
+    },
+    {
+      "id": "at_51242486820",
+      "title": "SBC Medical Group discloses data breach affecting 1.6 million people",
+      "url": "https://www.scworld.com/brief/sbc-medical-group-discloses-data-breach-affecting-1-6-million-people",
+      "summary": "",
+      "source": "SC Staff via Latest articles from SC Magazine",
+      "image": "https://www.inoreader.com/camo/s-uqp_TKoR7Z2-2aUP6HXztYTPyGEWPo5qAqWBIhJ7Tc,q80,480x400,pf,b64/aHR0cHM6Ly9maWxlcy5jeWJlcnJpc2thbGxpYW5jZS5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjYvMTEvQWRvYmVTdG9ja18xODI5NjE0MDI2LTEtc2NhbGVkLmpwZWc"
+    },
+    {
+      "id": "at_51241962485",
+      "title": "Germ Network launches encrypted messaging app for Android",
+      "url": "https://www.scworld.com/brief/germ-network-launches-encrypted-messaging-app-for-android",
+      "summary": "",
+      "source": "SC Staff via Latest articles from SC Magazine",
+      "image": "https://www.inoreader.com/camo/smNRWKFEHUz1MOECS8mBka2oR_qBX91yLIz_ME14sR1I,q80,480x400,pf,b64/aHR0cHM6Ly9maWxlcy5jeWJlcnJpc2thbGxpYW5jZS5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjYvMTEvQWRvYmVTdG9ja18yMTU1ODQ3NTM4LTEtc2NhbGVkLmpwZWc"
+    },
+    {
+      "id": "at_51241962492",
+      "title": "Black October and November’s outages show why businesses must rethink downtime",
+      "url": "https://www.scworld.com/perspective/black-october-and-novembers-outages-show-why-businesses-must-rethink-downtime",
+      "summary": "Here are three ways we can make faster patching more manageable.",
+      "source": "Jack Cherkas via Latest articles from SC Magazine",
+      "image": "https://www.inoreader.com/camo/sZhSYUyi1zCjAEKSVV8dsbnWej9yW05gUl80lC0VKAe8,q80,480x400,pf,b64/aHR0cHM6Ly9maWxlcy5jeWJlcnJpc2thbGxpYW5jZS5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjYvMTEvQWRvYmVTdG9ja18yMjQ1MzczNDU1LXNjYWxlZC5qcGVn"
+    },
+    {
+      "id": "at_51241775043",
+      "title": "Hackers Exploit Cisco Expressway Flaw CVE-2026-76466 to Breach Russian Organization",
+      "url": "https://securityaffairs.com/203598/hacking/hackers-exploit-cisco-expressway-flaw-cve-2026-76466-to-breach-russian-organization.html",
+      "summary": "Cisco Expressway flaw CVE-2026-76466 is being exploited to gain root access and move from exposed devices into internal networks. Attackers have exploited a critical flaw, tracked as CVE-2026-76466 (CVSS score of 9.8) in Cisco Expressway to breach a Russian organization, and they moved fast once a working exploit went public. “A vulnerability...",
+      "source": "Pierluigi Paganini via Security Affairs",
+      "image": "https://www.inoreader.com/camo/sGcBYJgKCVyTpmnLLpF3Ag2h3eiLp12yfhJyNdCJ_if0,q80,480x400,pf,b64/aHR0cHM6Ly9zZWN1cml0eWFmZmFpcnMuY29tL3dwLWNvbnRlbnQvdXBsb2Fkcy8yMDE0LzA3L2Npc2NvLWJ1aWxkaW5nLmpwZw"
+    },
+    {
+      "id": "at_51241768337",
+      "title": "Hackers Use 355 Domains to Spread Fake GTA 6 PC Launchers Delivering Malware",
+      "url": "https://cybersecuritynews.com/fake-gta-6-pc-launchers/",
+      "summary": "A malware campaign called CyberLeek is using more than 355 domains and subdomains to promote fake Grand Theft Auto VI PC launchers. The sites offer what they claim is a leaked or early Windows release of GTA 6. Instead of a playable game, the download delivers a ZIP archive containing a malicious program disguised as an installer. The...",
+      "source": "Tushar Subhra Dutta via Cyber Security News",
+      "image": "https://www.inoreader.com/camo/sWdzkGkp_dj6IjkZBti6HMjDLK4UeNoTk7OemBKokQgI,q80,480x400,pf,b64/aHR0cHM6Ly9ibG9nZ2VyLmdvb2dsZXVzZXJjb250ZW50LmNvbS9pbWcvYi9SMjl2WjJ4bC9BVnZYc0VoeTdsRldzVFdJb18xZ1JGZ0xFV3JhYmc5bDlEV0NmZjNXVUpuanB5TnNScFFvdnZseHAzRllGeG1yLTJPMVkzMkxYUExmcU95OHdYMW9BUnJjNkdNSkVFRTZzclB5a0N5OHhvZDE1ZE42WEV1bzktXzVtcEZXdDRGaC1fWG4wVXJ2WGEzeG9XT0YzWGhvQkJyUkFUYzJOMW9MdmphcXVrd19tMGFiczNxXzFmbXNkUC1lbk1uU2F5VXpKQmcvczE2MDAvRmFrZSUyMExhdW5jaGdlciUyME5vZGUlMjAoU291cmNlJTIwLSUyMFZlY2VydCUyMEZvdW5kYXRpb24pLndlYnA"
+    },
+    {
+      "id": "at_51241768366",
+      "title": "Hackers Turn Legitimate VPN Software Into a Stealthy Tool for Spying on Government Networks",
+      "url": "https://cybersecuritynews.com/legitimate-vpn-software/",
+      "summary": "Hackers have rebuilt the open-source SoftEther VPN Bridge to keep a quiet route into compromised networks. The modified Windows program, branded internally as NtMonitor VPN, can link an external network to a victim’s local network while leaving fewer of the traces defenders expect from a standard SoftEther installation. Researchers link the...",
+      "source": "Tushar Subhra Dutta via Cyber Security News",
+      "image": "https://www.inoreader.com/camo/si4oOMaa6d_IXiAqitNMncrlI7XkyFiQT_wbJk4OvEGo,q80,480x400,pf,b64/aHR0cHM6Ly9jeWJlcnNlY3VyaXR5bmV3cy5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjYvMTEvSGFja2Vycy1UdXJuLUxlZ2l0aW1hdGUtVlBOLVNvZnR3YXJlLUludG8tYS1TdGVhbHRoeS1Ub29sLWZvci1TcHlpbmctb24tR292ZXJubWVudC1OZXR3b3Jrcy53ZWJw"
+    },
+    {
+      "id": "at_51241718102",
+      "title": "N-able says recent security breach led to major service outage",
+      "url": "https://www.bleepingcomputer.com/news/microsoft/n-able-says-recent-security-breach-led-to-major-service-outage/",
+      "summary": "N-able says attackers who breached one of its servers have caused a major outage affecting Mail Assure and SpamExperts Hosted Cloud services worldwide. [...]",
+      "source": "Sergiu Gatlan via Bleeping Computer",
+      "image": "https://www.inoreader.com/camo/sIXYnwCxtTf574PSMmTE0xXKf0gyu-fi4CiN-bjslop8,q80,480x400,pf,b64/aHR0cHM6Ly93d3cuYmxlZXBzdGF0aWMuY29tL2NvbnRlbnQvaGwtaW1hZ2VzLzIwMjYvMTEvMjAvTi1hYmxlLmpwZw"
+    },
+    {
       "id": "at_51241347872",
-      "title": "Industry Reactions to Major Outages and AI Patching Questions: Feedback Friday",
+      "title": "Industry Reactions to Major Outages and AI Patching Debate: Feedback Friday",
       "url": "https://www.securityweek.com/industry-reactions-to-major-outages-and-ai-patching-questions-feedback-friday/",
-      "summary": "Experts commented on whether AI-accelerated patching played a role, the need for tested rollback plans, and the fragility of interconnected systems. The post Industry Reactions to Major Outages and AI Patching Questions: Feedback Friday appeared first on SecurityWeek.",
+      "summary": "Experts commented on whether AI-accelerated patching played a role, the need for tested rollback plans, and the fragility of interconnected systems. The post Industry Reactions to Major Outages and AI Patching Debate: Feedback Friday appeared first on SecurityWeek.",
       "source": "SecurityWeek News via SecurityWeek",
       "image": "https://www.inoreader.com/camo/saTZ9sAoanT3PUrcPyUO-VCal0FWJAJIHdbqhcRD7cnk,q80,480x400,pf,b64/aHR0cHM6Ly93d3cuc2VjdXJpdHl3ZWVrLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNi8wNi9GZWVkYmFjay1GcmlkYXkuanBlZw"
     },
@@ -1272,334 +1600,6 @@
       "summary": "Researchers have shown that someone with a laptop and a few cheap parts can guess a Windows Hello PIN in about 40 hours. With the lockout working as designed, the same job would take 69 days. The same trick also cuts the worst-case time to crack a default 6-digit BitLocker startup PIN from 19 years to 20 days. The work is called “Hello Again”...",
       "source": "Guru Baran via Cyber Security News",
       "image": "https://www.inoreader.com/camo/sfza7mifTLuZEVDqyLsfFpyz9BA17xCycSPkI4SXXuDg,q80,480x400,pf,b64/aHR0cHM6Ly9ibG9nZ2VyLmdvb2dsZXVzZXJjb250ZW50LmNvbS9pbWcvYi9SMjl2WjJ4bC9BVnZYc0VpTHdrcUdFb2YyTTIzaFZ0VTBUanRwV2F3ZHJLTXlCd2RhX1lMV2VxNk5sbUVIeEVmZUxMT3hiNmNzY1FFaGZsNkhoQ2lpeXg0NHcteGs2dmxCRTRkUFVSR1pSWkptR3ZwcFhCcHR0Q1MtQVdMaWpaSE1kT085bWp2QnhYOHNHZTRaaHpVWjl1QlBNTUtaWEtRT1VyN0dQY3VYS2p5YkExdkZoYXVMSUp3Y0l2d0FKbWtXb3BHT09sR3doc1JvL3c2NDAtaDQ4Mi9IZWxsbyUyMEF0dGFjayUyMEJ5cGFzc2VzJTIwV2luZG93cyUyMEhlbGxvJTIwYW5kJTIwQml0TG9ja2VyMS53ZWJw"
-    },
-    {
-      "id": "at_51219712533",
-      "title": "Microsoft’s AI Uncovers 99 Security Issues in Express, ImageMagick and Other Open-Source Projects",
-      "url": "https://cybersecuritynews.com/microsofts-ai-uncovers-99-security-issues/",
-      "summary": "Microsoft and GitHub sent 99 verified security reports to six open-source projects, including Express and ImageMagick, after an AI pilot identified thousands of potential vulnerabilities. In its Nov. 17 announcement, GitHub said maintainers had fixed 55 issues as of Nov. 15. However, only 14 of those fixes had made it into software releases....",
-      "source": "Abinaya via Cyber Security News",
-      "image": "https://www.inoreader.com/camo/slUSPyW7_AgbOi6Zv1CwsOY98x8xWzg1LnaFJqQap7J0,q80,480x400,pf,b64/aHR0cHM6Ly9ibG9nZ2VyLmdvb2dsZXVzZXJjb250ZW50LmNvbS9pbWcvYi9SMjl2WjJ4bC9BVnZYc0VoRllUTVpvWmp2TDV0eVpCQmQ4alI3dTh5T0JnZzhSOXRCMHpxdjZQLUN0bjNLRmZqTlJTdHBJdlNOeFNDS2NsZjRhT2VzdnVIWng0MWMxbFQ5cUlDSi02V2xXODFlNWktMGR2MUs5dXI5LVd5UGhROTBoM1NlX1lrR0Z4SExTOVRaNXY2RVc2Q3JXcURkb0xJXzlEbmFIS0FDbGVMQnh2NXpLOHJBTnc0VkliUzRrUmR3VTJnTGd6WDI4aEEvczE2MDAvU2NyZWVuc2hvdCUyMDIwMjYtMTEtMTglMjAxODAyMTMlMjAlMjgxJTI5LndlYnA"
-    },
-    {
-      "id": "at_51219712539",
-      "title": "Hackers Steal Exposed AWS Credentials From Docker Hub Images in Just 8 Seconds",
-      "url": "https://cybersecuritynews.com/hackers-steal-exposed-aws-credentials/",
-      "summary": "Automated bots used a decoy Amazon Web Services (AWS) access key just 7.86 seconds after researchers published the Docker Hub image containing it. That was the fastest case in a controlled Stony Brook University study, not the average. Still, the median time to the first AWS request was just 51.19 seconds, and all 100 keys in the first round...",
-      "source": "Abinaya via Cyber Security News",
-      "image": "https://www.inoreader.com/camo/stwWz0aHNB1TPYnnHBpLutUSmomRXNiEg5QhYqXHsruE,q80,480x400,pf,b64/aHR0cHM6Ly9ibG9nZ2VyLmdvb2dsZXVzZXJjb250ZW50LmNvbS9pbWcvYi9SMjl2WjJ4bC9BVnZYc0VoYXR0MUVUaXV1aElYOXNXXzB1MFZ3OURiYW95VTk1bkEzdmdNYnc2MXFjN1JNMFIySjNYTlg5Q1pPdzRBSjBSaHZRdTRNcFJkc0hSQXdxRTlGeEZTdTM3akMzMlBxeXRpVUw3azdLMjlYa2REUjAxWGEwVmM1aWI1NXpMMk9ZTWp0bXhfQmhObHRINlZPRnVUbG04V0FnMGVsS2JuUVpIRW5zUFlqMlI3Z2ZnczBLellGR1ExT1pPSE1kcWsvczE2MDAvU2NyZWVuc2hvdCUyMDIwMjYtMTEtMTglMjAxNjQ5NDMlMjAlMjgxJTI5LndlYnA"
-    },
-    {
-      "id": "at_51219440706",
-      "title": "New AI-powered phishing kit automates malicious email campaigns",
-      "url": "https://www.scworld.com/brief/new-ai-powered-phishing-kit-automates-malicious-email-campaigns",
-      "summary": "",
-      "source": "SC Staff via Latest articles from SC Magazine",
-      "image": "https://www.inoreader.com/camo/sw-QBiKo-1TSb7Y4KRXYNY0m560MVBOcWhlFWVxzwvIA,q80,480x400,pf,b64/aHR0cHM6Ly9maWxlcy5jeWJlcnJpc2thbGxpYW5jZS5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjYvMTEvQWRvYmVTdG9ja18yMjQwODExNDM2LTEtc2NhbGVkLmpwZWc"
-    },
-    {
-      "id": "at_51219440707",
-      "title": "OpenAI releases GPT-6.2 Astra and Sol models",
-      "url": "https://www.scworld.com/brief/openai-releases-gpt-6-2-astra-and-sol-models",
-      "summary": "",
-      "source": "SC Staff via Latest articles from SC Magazine",
-      "image": "https://www.inoreader.com/camo/sRnpmhYx06B3xoQH2xK0eacbL3DFs0l3_oLt-of_CoBA,q80,480x400,pf,b64/aHR0cHM6Ly9maWxlcy5jeWJlcnJpc2thbGxpYW5jZS5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjYvMTEvQWRvYmVTdG9ja18yMDcyNDY0NzUxX0VkaXRvcmlhbF9Vc2VfT25seS0xLXNjYWxlZC5qcGVn"
-    },
-    {
-      "id": "at_51219440708",
-      "title": "Apple and NSA services face outages as Equinor reports cyberattack",
-      "url": "https://www.scworld.com/brief/apple-and-nsa-services-face-outages-as-equinor-reports-cyberattack",
-      "summary": "",
-      "source": "SC Staff via Latest articles from SC Magazine",
-      "image": "https://www.inoreader.com/camo/sZhSYUyi1zCjAEKSVV8dsbnWej9yW05gUl80lC0VKAe8,q80,480x400,pf,b64/aHR0cHM6Ly9maWxlcy5jeWJlcnJpc2thbGxpYW5jZS5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjYvMTEvQWRvYmVTdG9ja18yMjQ1MzczNDU1LXNjYWxlZC5qcGVn"
-    },
-    {
-      "id": "at_51219440709",
-      "title": "Pentagon mandates artificial intelligence training for cyber workforce",
-      "url": "https://www.scworld.com/brief/pentagon-mandates-artificial-intelligence-training-for-cyber-workforce",
-      "summary": "",
-      "source": "SC Staff via Latest articles from SC Magazine",
-      "image": "https://www.inoreader.com/camo/sDP5MMZz58fKG8Wp25P4l2-IC40A-RrOennVvE7JECJc,q80,480x400,pf,b64/aHR0cHM6Ly9maWxlcy5jeWJlcnJpc2thbGxpYW5jZS5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjYvMTEvQWRvYmVTdG9ja18xMTkwNTM0MzMyLTEuanBlZw"
-    },
-    {
-      "id": "at_51219440710",
-      "title": "CISA urges immediate patching of critical Java vulnerability",
-      "url": "https://www.scworld.com/brief/cisa-urges-immediate-patching-of-critical-java-vulnerability",
-      "summary": "",
-      "source": "SC Staff via Latest articles from SC Magazine",
-      "image": "https://www.inoreader.com/camo/s6pqNMs082_X-2suzWwOIALbjLGDFq5ffjudb4ycu7Og,q80,480x400,pf,b64/aHR0cHM6Ly9maWxlcy5jeWJlcnJpc2thbGxpYW5jZS5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjYvMTEvQWRvYmVTdG9ja18yMTg1Njk3NjYxLTEtc2NhbGVkLmpwZWc"
-    },
-    {
-      "id": "at_51219146592",
-      "title": "The Gentlemen Ransomware Gang Allegedly Claims to Have Breached NVIDIA",
-      "url": "https://cybersecuritynews.com/nvidia-data-breach-claim/",
-      "summary": "The Gentlemen ransomware gang listed NVIDIA on its dark web leak site on November 18, 2026, but the post does not prove that the group broke into the chipmaker’s systems. The listing shows a countdown and references ransom talks, but includes no sample files. NVIDIA has not publicly confirmed a breach, and there is no verified evidence that the...",
-      "source": "Guru Baran via Cyber Security News",
-      "image": "https://www.inoreader.com/camo/ssPA_E5E5MENNe3fo2RKwyseci_uAn4lXNS-0qZooA-I,q80,480x400,pf,b64/aHR0cHM6Ly9ibG9nZ2VyLmdvb2dsZXVzZXJjb250ZW50LmNvbS9pbWcvYi9SMjl2WjJ4bC9BVnZYc0VnVFBWQmNOYThrVmd4Z2RaQll5REs3bDl1WlVoQThUeFFqdEhWc3FnNi1jY1Y2LThTRFh1Z3BkUy05blM0eTFQcGdTdHh6RFdQUldxUmFnbjFFcnljVS1tTERpN1B5UkFiSXNmdjRVSFdzLVQxY0RwV1RRa01Teko3SFFKZm1sRFJXaWdMcWEwdmVkQUFXejhIQ09DY0x2VjlmX3JyNWxtOFJwZ1BKeDdxeVFCWWVXdHBtUWE2R1B4Mjh1RXMyL3MxNjAwL05WSURJQSUyMERhdGElMjBCcmVhY2glMjBDbGFpbTEud2VicA"
-    },
-    {
-      "id": "at_51219117259",
-      "title": "Russian APT Poses as Employee of Hacked Firm to Breach Another US Organization",
-      "url": "https://www.securityweek.com/russian-apt-poses-as-employee-of-hacked-firm-to-breach-another-us-organization/",
-      "summary": "Star Blizzard weaponized data and identities stolen in late 2025 to phish and compromise a US organization. The post Russian APT Poses as Employee of Hacked Firm to Breach Another US Organization appeared first on SecurityWeek.",
-      "source": "Ionut Arghire via SecurityWeek",
-      "image": "https://www.inoreader.com/camo/sC-_ZRMdKYocqA9ubVMbgPImjmKe0O9nQSbferieFhns,q80,480x400,pf,b64/aHR0cHM6Ly93d3cuc2VjdXJpdHl3ZWVrLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNC8wOS9SdXNzaWFuLWhhY2tpbmcuanBlZw"
-    },
-    {
-      "id": "at_51219083151",
-      "title": "Token-replay campaign hijacks 97 Microsoft 365 accounts as Huntress extends SOC response across Defender",
-      "url": "https://www.itsecurityguru.org/2026/11/18/token-replay-campaign-hijacks-97-microsoft-365-accounts-as-huntress-extends-soc-response-across-defender/?utm_source=rss&utm_medium=rss&utm_campaign=token-replay-campaign-hijacks-97-microsoft-365-accounts-as-huntress-extends-soc-response-across-defender",
-      "summary": "Huntress has expanded its Agentic Security Platform so that its 24/7 security operations centre (SOC) can investigate and respond to incidents raised across the wider Microsoft Defender suite, not only Defender for Endpoint and Defender Antivirus. The move follows a token-replay campaign that Huntress tracked between 14 July and 22 September 2026,...",
-      "source": "Guru Writer via IT Security Guru",
-      "image": "https://www.inoreader.com/camo/s6SthFrDmhWlpT2ikYxVikb1wQNze5Za5hslGvlgT_D8,q80,480x400,pf,b64/aHR0cHM6Ly93d3cuaXRzZWN1cml0eWd1cnUub3JnL3dwLWNvbnRlbnQvdXBsb2Fkcy8yMDI2LzExL05lb24tU2hpZWxkLUN5YmVyc2VjdXJpdHktT3BlcmF0aW9ucy5wbmc"
-    },
-    {
-      "id": "at_51219023120",
-      "title": "Last of Five Defendants Sentenced in US Scattered Spider Hacking Case",
-      "url": "https://www.securityweek.com/last-of-five-defendants-sentenced-in-us-scattered-spider-hacking-case/",
-      "summary": "British national Tyler Robert Buchanan has been sentenced to 6 years in prison in the United States, the DOJ announced. The post Last of Five Defendants Sentenced in US Scattered Spider Hacking Case appeared first on SecurityWeek.",
-      "source": "Eduard Kovacs via SecurityWeek",
-      "image": "https://www.inoreader.com/camo/shZT9NLer5XwjYr3u8O8HH_M1jV40-7PVLDb7Q4io9vw,q80,480x400,pf,b64/aHR0cHM6Ly93d3cuc2VjdXJpdHl3ZWVrLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNC8wMy9oYWNrZXItcHJpc29uLXNlbnRlbmNlZC5qcGVn"
-    },
-    {
-      "id": "at_51218920832",
-      "title": "New Attack Bypasses TPM Lockout to Crack Windows Hello and BitLocker PINs in Days, Not Years",
-      "url": "https://thehackernews.com/2026/11/flash-chip-attack-bypasses-tpm-lockout.html",
-      "summary": "On AMD-based PCs and some Intel PCs, the TPM lockout for Windows Hello and BitLocker PINs can be reset by someone who opens the PC's case, researchers at Technische Universität Berlin say. That leaves short PINs open to guessing. In lab tests, the researchers found a four-digit Hello PIN on an AMD laptop and a 6-digit BitLocker PIN on an Intel laptop...",
-      "source": "[email protected] (The Hacker News) via The Hacker News",
-      "image": "https://www.inoreader.com/camo/s7MvNpwVF3kk2wMT5QUQdBtmfZSkrZuTwmjfxOZPY2YY,q80,480x400,pf,b64/aHR0cHM6Ly9ibG9nZ2VyLmdvb2dsZXVzZXJjb250ZW50LmNvbS9pbWcvYi9SMjl2WjJ4bC9BVnZYc0VncHN2NEd4QVViekNzSVYxdW1yeFpzNlZ4ZkQxZUZ3QWVDZ1JIUVFHX2ROYlAxZkxpWWU0OGhNLVdiZF84dzVJeGxhY0F3b2lkTHF5UWdCbUc3WUQ3cUtvMF9YY3FXMkdoZ2dmWHNodUsxdVh6OEJPbWEySDBKanM4ZmFiQ080SXhIQmZSb3BFVUZEZDB4SFJSdjQzZ01lb2c4NTJVc3Y0MHNmY1R3bk9fOWNveXh0SU1tdGVKeGVKSV9vUEEvczE2MDAvYml0bG9ja2VyLmpwZw"
-    },
-    {
-      "id": "at_51218586008",
-      "title": "Chinese APT Hackers Target Global Banks to Steal Financial Intelligence and Spy on Microsoft 365 Accounts",
-      "url": "https://cybersecuritynews.com/global-banks/",
-      "summary": "Chinese state-linked hacking groups are going after banks around the world, and their goal is intelligence rather than cash. Several of these groups are also reading email in Microsoft 365 accounts, according to new infrastructure research. The shift matters because nation-state hackers have usually hit banks to steal money. In 2020,...",
-      "source": "Tushar Subhra Dutta via Cyber Security News",
-      "image": "https://www.inoreader.com/camo/s17aYydLIEE8hD_WTHxX8wJah63zBhguNzySRWN7zlGQ,q80,480x400,pf,b64/aHR0cHM6Ly9ibG9nZ2VyLmdvb2dsZXVzZXJjb250ZW50LmNvbS9pbWcvYi9SMjl2WjJ4bC9BVnZYc0VnaWd2YTRKVXg0d244MDRMMS1FUDZ6V2JIa1RYNG5NaDNpZXdmb1hDNVpyQ3R1U3FQUEY5WkVwZ1RPUV9MbzY3U2xpLUl4eU1rbFJVUTZkRWlXb3BQMzlnbHZTUzZrRGlubTVzNWI2OEp1Wkc5cXNyWXlsVXpmQ0RHS1AtYTJqc2FVWEk0Vm1PcWtWZmNqT1pxT3ptaElHVFVCRnJjV1RUMEtuZTlJbTR5RUdaM21jdEZDcjdMdTlwbWt3ZjgvczE2MDAvVGhlJTIwUG9ydCUyMEJhbm5lciUyMG9mJTIwdGhlJTIwSVAlMjBhZGRyZXNzJTIwd2l0aCUyMGFuJTIwT3BlbiUyMERpcmVjdG9yeSUyMGNvbnRhaW5pbmclMjBmc2NhbiUyMGFuZCUyMFZzaGVsbCUyMChTb3VyY2UlMjAtJTIwVGVhbSUyMEN5bXJ1KS53ZWJw"
-    },
-    {
-      "id": "at_51218586015",
-      "title": "Hackers Impersonate Microsoft Exchange Online Alerts to Trick Users During Microsoft 365 Outage",
-      "url": "https://cybersecuritynews.com/hackers-impersonate-microsoft-exchange/",
-      "summary": "Hackers used a real Microsoft 365 outage to send fake Exchange Online alerts claiming that four emails were being held and would be deleted unless recipients restored them. The messages borrowed a genuine Microsoft incident number and sent users through several redirects to a page that looked like Microsoft’s sign-in screen. The outage was real;...",
-      "source": "Tushar Subhra Dutta via Cyber Security News",
-      "image": "https://www.inoreader.com/camo/sHXolOqKbcKm3Y-mR8hyHvrjNX0UjjQjgjdttiLluNvI,q80,480x400,pf,b64/aHR0cHM6Ly9ibG9nZ2VyLmdvb2dsZXVzZXJjb250ZW50LmNvbS9pbWcvYi9SMjl2WjJ4bC9BVnZYc0VqMHB3b2FfOUsxRkJ3aDh3QnR3bEttNDgyV3dwbVRabnBXTXRMdDM2WDB0dW5uc0U4c3pvODN0N25pSXk1bjAyRU50bW5oTlBHY29wNzNCcHdFbjBORzZVMTMzU1F4NFpmTjM0UmRXSENndDg0b1JHTnpGMXJFQTBHZFRucVc1bFVMaGtSZEFoWm1yd1JkZXhpaXVGVURaZDZsMkwxenQxS2RVb0l0QV9wSEtBQnZIbGxHMXZIbnU5eVZWa2MvczE2MDAvRW1haWwlMjBib2RpZXMlMjBzZWVuJTIwaW4lMjB0aGUlMjBNaWNyb3NvZnQlMjBvdXRhZ2UlMjBjYW1wYWlnbiUyMChTb3VyY2UlMjAtJTIwVHJlbGxpeCkud2VicA"
-    },
-    {
-      "id": "at_51218586023",
-      "title": "CISA Warns of Puppet Enterprise Vulnerability Actively Exploited in Attacks",
-      "url": "https://cybersecuritynews.com/puppet-enterprise-flaw-actively-exploited/",
-      "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) has warned that attackers are exploiting a critical vulnerability in Perforce Puppet Enterprise. The agency added CVE-2026-115731 to its Known Exploited Vulnerabilities (KEV) catalog on November 17, 2026, citing evidence of active exploitation. The flaw lets an attacker run code...",
-      "source": "Guru Baran via Cyber Security News",
-      "image": "https://www.inoreader.com/camo/sz8GXdPOPjIjc-QWNKGDMHnIR7XeANpVfoK9fGCVHqYo,q80,480x400,pf,b64/aHR0cHM6Ly9jeWJlcnNlY3VyaXR5bmV3cy5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjYvMTEvUHVwcGV0LUVudGVycHJpc2UtVnVsbmVyYWJpbGl0eS53ZWJw"
-    },
-    {
-      "id": "at_51218470562",
-      "title": "Norwegian Gas Giant Equinor Says It’s Under Cyberattack. Production Keeps Running",
-      "url": "https://securityaffairs.com/203394/hacking/norwegian-gas-giant-equinor-says-its-under-cyberattack-production-keeps-running.html",
-      "summary": "Norwegian Gas Giant Equinor confirms cyberattack on IT systems, with no impact on production or confirmed data theft. Equinor, Europe’s largest gas supplier, said on 17 November it had detected an ongoing cyberattack against some IT systems. The Norwegian company said the attack had not affected operations and production, and it had taken steps...",
-      "source": "Pierluigi Paganini via Security Affairs",
-      "image": "https://www.inoreader.com/camo/sqjWxrlE5pxZHE3N-johOtnoxajHi7MCa9seLAJmg-S8,q80,480x400,pf,b64/aHR0cHM6Ly9zZWN1cml0eWFmZmFpcnMuY29tL3dwLWNvbnRlbnQvdXBsb2Fkcy8yMDI2LzExL2ltYWdlLTQ3LnBuZw"
-    },
-    {
-      "id": "at_51218349030",
-      "title": "Microsoft Takes Perception Agentic Security Platform Out of Preview",
-      "url": "https://www.securityweek.com/microsoft-takes-perception-agentic-security-platform-out-of-preview/",
-      "summary": "Four blue team agents and the Recon Agent are now generally available, while integrations and vulnerability shielding are in preview. The post Microsoft Takes Perception Agentic Security Platform Out of Preview appeared first on SecurityWeek.",
-      "source": "Eduard Kovacs via SecurityWeek",
-      "image": "https://www.inoreader.com/camo/sCAhXeO7p-VQY5baDVE2N2QT0BnzJsz-HRpthRWAXF0g,q80,480x400,pf,b64/aHR0cHM6Ly93d3cuc2VjdXJpdHl3ZWVrLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNi8wNi9BZ2VudC1BSS1TZWN1cml0eS5qcGc"
-    },
-    {
-      "id": "at_51218349059",
-      "title": "AI Pentesting Checklist for Web Apps: 15 Questions to Ask Before Choosing a Vendor",
-      "url": "https://thehackernews.com/2026/11/ai-pentesting-checklist-for-web-apps-15.html",
-      "summary": "TL;DR Attackers move first. On average, exploitation now starts before a patch exists (Mandiant M-Trends 2026). In 1H 2026, 23% of vulnerabilities VulnCheck added to its exploited list were hit on or before disclosure day. AI pentesting vendors aren't interchangeable. Most look convincing in a demo. The gaps show up in your logged-in flows,...",
-      "source": "[email protected] (The Hacker News) via The Hacker News",
-      "image": "https://www.inoreader.com/camo/sqq1yWHL3mH9FKVM3FRCEs1vsNJUMKpCIS3V1xV6r2FU,q80,480x400,pf,b64/aHR0cHM6Ly9ibG9nZ2VyLmdvb2dsZXVzZXJjb250ZW50LmNvbS9pbWcvYi9SMjl2WjJ4bC9BVnZYc0VoZGIzRXlLQ0xIemFhNnAzYnpyRjJFa2tjSkpRZ3NoVHNvYVU2a3pnYTFDOE5HUkJFMXJEd2xzSHdoVktlaGttR3NPWXBmMERxLVZDUXBtRkRQWUxnbHhRSVFqRWl2M05ya0ZEUlBUYzN3VU9iZTFLYzBrbTcxbHdVRVhMVHRXSkdCUTNuTzZ3RmJScUtvT0pMY0J2Mmx3cEQtWkFZYzFjYW9oZmtJRmtDVmxMUWRTLVl1d21iZWNnQmYtc1EvczE2MDAvcmVmbGVjdGl6LmpwZw"
-    },
-    {
-      "id": "at_51218349095",
-      "title": "Quality Isn’t The Main Worry About AI Pentesting — Data Privacy and Production Safety Are",
-      "url": "https://thehackernews.com/2026/11/quality-isnt-main-worry-about-ai.html",
-      "summary": "AI is speeding up how software is built, which means more code, more changes, and more chances for vulnerabilities to reach production. It's speeding up how attackers find and exploit them too, with time-to-exploit now down to a single day. Security testing has to keep up with both. AI pentesting has emerged as a way to run in-depth tests whenever...",
-      "source": "[email protected] (The Hacker News) via The Hacker News",
-      "image": "https://www.inoreader.com/camo/sVx2Xhuw9r7Ym_YztiInvAS_eTweUSyRoNVpiVMY5sPY,q80,480x400,pf,b64/aHR0cHM6Ly9ibG9nZ2VyLmdvb2dsZXVzZXJjb250ZW50LmNvbS9pbWcvYi9SMjl2WjJ4bC9BVnZYc0VqMjc2UUVULW1hMi1lZHJBZ3NPZGJabHRtb1c1OGRfa0pUOEMtZzhEWFFmRFFBelBsbUNjUVl2LXRXY1gtRFhjU2lwUXB1X29GWV9wUHVudm4tZVhvb2czSDBCWVBMa2I0dVkzQjRBeDlUN0xtdFZCZ1ZEd1paSW5MYmo1UWdualZNSTVkMXphOGJnUjFhMlR2R2FKelpVSzJVdVNBRWszZ1NZLWVyS2lkZFlBWVRrTkU5a3hFcDB6Y3g1eDgvczE2MDAvaW50cnVkZXIuanBn"
-    },
-    {
-      "id": "at_51218338819",
-      "title": "Keeper Security Launches Global Emergency Breach Response Service for Organisations Under Cyberattack",
-      "url": "https://www.itsecurityguru.org/2026/11/18/keeper-security-launches-global-emergency-breach-response-service-for-organisations-under-cyberattack/?utm_source=rss&utm_medium=rss&utm_campaign=keeper-security-launches-global-emergency-breach-response-service-for-organisations-under-cyberattack",
-      "summary": "Keeper Security has announced the launch of a global emergency breach response service designed to help organisations contain active cyberattacks by rapidly securing compromised identities, credentials and infrastructure. The new initiative allows organisations experiencing a breach to bypass traditional sales and procurement processes, connecting...",
-      "source": "Guru Writer via IT Security Guru",
-      "image": "https://www.inoreader.com/camo/sTsPVUC8ksreHbBfoyL3f6JDP89Ak_Hd4WmgbHW9YOCs,q80,480x400,pf,b64/aHR0cHM6Ly93d3cuaXRzZWN1cml0eWd1cnUub3JnL3dwLWNvbnRlbnQvdXBsb2Fkcy8yMDI2LzExL0N5YmVyc2VjdXJpdHktU2hpZWxkLUFnYWluc3QtRGlnaXRhbC1UaHJlYXRzLnBuZw"
-    },
-    {
-      "id": "at_51218338828",
-      "title": "6 Cybersecurity Lessons We Can Learn from the Biggest Data Breaches",
-      "url": "https://www.itsecurityguru.org/2026/11/18/6-cybersecurity-lessons-we-can-learn-from-the-biggest-data-breaches/?utm_source=rss&utm_medium=rss&utm_campaign=6-cybersecurity-lessons-we-can-learn-from-the-biggest-data-breaches",
-      "summary": "From global retailers to healthcare giants, some of the world’s biggest organisations have fallen victim to devastating cybersecurity attacks in in the last few months alone. The PHP incident affected millions across the world and attacks are now even targeting fridges to disrupt organisations and the public. With millions of people’s personal information...",
-      "source": "The Gurus via IT Security Guru",
-      "image": "https://www.inoreader.com/camo/sLcE93zY2im0H57cWmbVlA2AaEQsAfSW2nawjmDk-ePc,q80,480x400,pf,b64/aHR0cHM6Ly93d3cuaXRzZWN1cml0eWd1cnUub3JnL3dwLWNvbnRlbnQvdXBsb2Fkcy8yMDI2LzExL0dsb3dpbmctQ3liZXJzZWN1cml0eS1TaGllbGQtb24tTGFwdG9wLnBuZw"
-    },
-    {
-      "id": "at_51218272679",
-      "title": "CISO Conversations: Patti Degnan – Part of the Job Is Deciding What Not to Do",
-      "url": "https://www.securityweek.com/ciso-conversations-patti-degnan-part-of-the-job-is-deciding-what-not-to-do/",
-      "summary": "Patti Degnan’s identity was stolen in 2006. It set her on a path to the CISO seat at endpoint security firm Glow. The post CISO Conversations: Patti Degnan – Part of the Job Is Deciding What Not to Do appeared first on SecurityWeek.",
-      "source": "Kevin Townsend via SecurityWeek",
-      "image": "https://www.inoreader.com/camo/sxEM7D2avtRMWRL-vd-qjOAU1qhmVhIKce55geyve1tU,q80,480x400,pf,b64/aHR0cHM6Ly93d3cuc2VjdXJpdHl3ZWVrLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNi8xMS9DSVNPLVBhdHRpLURlZ25hbi5qcGVn"
-    },
-    {
-      "id": "at_51218173559",
-      "title": "Chrome 158 Patches 204 Vulnerabilities",
-      "url": "https://www.securityweek.com/chrome-158-patches-204-vulnerabilities/",
-      "summary": "Google handed out $11,000 for five externally reported flaws but has yet to determine the amounts to be paid for 36 bugs. The post Chrome 158 Patches 204 Vulnerabilities appeared first on SecurityWeek.",
-      "source": "Ionut Arghire via SecurityWeek",
-      "image": ""
-    },
-    {
-      "id": "at_51218119030",
-      "title": "Dizigom illegal streaming service with 21M monthly visits shuts down",
-      "url": "https://www.bleepingcomputer.com/news/security/dizigom-illegal-streaming-service-with-21m-monthly-visits-shuts-down/",
-      "summary": "The Alliance for Creativity and Entertainment (ACE) has announced the shutdown of Dizigom, one of Turkey's largest piracy sites, after a settlement agreement with the site's operators. [...]",
-      "source": "Sergiu Gatlan via Bleeping Computer",
-      "image": "https://www.inoreader.com/camo/spSfDaQYz6o7mg944fjzZyapA-q-myFnlxzO1ZSW8ZP8,q80,480x400,pf,b64/aHR0cHM6Ly93d3cuYmxlZXBzdGF0aWMuY29tL2NvbnRlbnQvaGwtaW1hZ2VzLzIwMjYvMTEvMTgvUGlyYXRlLURpemlnb00uanBn"
-    },
-    {
-      "id": "at_51218061852",
-      "title": "Filigran’s OpenCTI Surpasses 400 Integrations",
-      "url": "https://www.itsecurityguru.org/2026/11/18/filigrans-opencti-surpasses-400-integrations/?utm_source=rss&utm_medium=rss&utm_campaign=filigrans-opencti-surpasses-400-integrations",
-      "summary": "Filigran, known for open-source XTM Platform for agentic CTEM, today announced that OpenCTI now offers more than 400 integrations. The threat intelligence platform’s ecosystem spans commercial and open-source threat feeds, enrichment services, and the SIEM, EDR, and SOAR platforms security teams use every day. By embedding intelligence directly into...",
-      "source": "Charley Nash via IT Security Guru",
-      "image": "https://www.inoreader.com/camo/s11Skd4BAW0ji_7b5z68kdoTs5_dwtsnIamEocGYUv74,q80,480x400,pf,b64/aHR0cHM6Ly93d3cuaXRzZWN1cml0eWd1cnUub3JnL3dwLWNvbnRlbnQvdXBsb2Fkcy8yMDI2LzExL05lb24tQ3liZXJzZWN1cml0eS1OZXR3b3JrLUh1Yi5wbmc"
-    },
-    {
-      "id": "at_51217952211",
-      "title": "65 Characters to RCE: Inside the Java4Shell Vulnerability",
-      "url": "https://securityaffairs.com/203387/hacking/65-characters-to-rce-inside-the-java4shell-vulnerability.html",
-      "summary": "Calif disclosed Java4Shell, a critical OpenJDK Base64 bug enabling pre-auth RCE in Jenkins, Jira, Keycloak and more. Patches are out. Update now. Calif researchers disclosed Java4Shell, a memory-corruption bug, tracked as CVE-2026-114938 (CVSS score of 9.2), in OpenJDK’s Base64 decoder. OpenJDK is the world’s most common Java runtime. OpenJDK...",
-      "source": "Pierluigi Paganini via Security Affairs",
-      "image": "https://www.inoreader.com/camo/skY1yoSJrsO_aADdUPEczurp7xVVZyRedoxxesx-HAhI,q80,480x400,pf,b64/aHR0cHM6Ly9pMC53cC5jb20vc2VjdXJpdHlhZmZhaXJzLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNi8xMS9pbWFnZS00Ni5wbmc_dz05MDAmc3NsPTE"
-    },
-    {
-      "id": "at_51217793686",
-      "title": "Microsoft Agent Framework Releases Poisoned With Credential Stealer",
-      "url": "https://www.securityweek.com/microsoft-agent-framework-releases-poisoned-with-credential-stealer/",
-      "summary": "Versions 1.26.1 and 1.26.2 of agent-framework on PyPI steal Azure, Azure DevOps, and GitHub Actions credentials when Python starts. The post Microsoft Agent Framework Releases Poisoned With Credential Stealer appeared first on SecurityWeek.",
-      "source": "Eduard Kovacs via SecurityWeek",
-      "image": "https://www.inoreader.com/camo/sEG-wW3uI6haW4vmZE-4bcwpGCFL9-aD1E-rv-A4Mq6M,q80,480x400,pf,b64/aHR0cHM6Ly93d3cuc2VjdXJpdHl3ZWVrLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNi8xMC9zdXBwbHktY2hhaW4tYXR0YWNrLmpwZWc"
-    },
-    {
-      "id": "at_51217781268",
-      "title": "Majority of Workplace AI Activity Takes Place Outside Enterprise Accounts",
-      "url": "https://www.itsecurityguru.org/2026/11/18/majority-of-workplace-ai-activity-takes-place-outside-enterprise-accounts/?utm_source=rss&utm_medium=rss&utm_campaign=majority-of-workplace-ai-activity-takes-place-outside-enterprise-accounts",
-      "summary": "New research from CultureAI has revealed that 81% of workplace AI interactions take place outside enterprise accounts, raising concerns about organisations’ ability to monitor AI usage and protect sensitive information. The AI security and governance company’s latest report, The Unmanaged Majority: What 1.7 million AI interactions reveal about enterprise...",
-      "source": "Guru Writer via IT Security Guru",
-      "image": "https://www.inoreader.com/camo/sOtpS1XlVwCEiiM__cIFPZI0PcMOJNCMhE8NByCLKpXs,q80,480x400,pf,b64/aHR0cHM6Ly93d3cuaXRzZWN1cml0eWd1cnUub3JnL3dwLWNvbnRlbnQvdXBsb2Fkcy8yMDI2LzExL05lb24tQUktSG9sb2dyYW1zLWluLXRoZS1PZmZpY2UtMS5wbmc"
-    },
-    {
-      "id": "at_51217619790",
-      "title": "AI Gets Hired, But Security Fundamentals Don't Retire and CIOs Need To Work w/ CISOs - Gary Brickhouse - BSW #474",
-      "url": "https://www.scworld.com/podcast-segment/15178-ai-gets-hired-but-security-fundamentals-dont-retire-and-cios-need-to-work-w-cisos-gary-brickhouse-bsw-474",
-      "summary": "",
-      "source": "Matt Alderman via Latest articles from SC Magazine",
-      "image": "https://www.inoreader.com/camo/sa_56NgL4M6403djRcIM7SvVqdqfuJXcvlZ7W_RtPVIw,q80,480x400,pf,b64/aHR0cHM6Ly9maWxlcy5jeWJlcnJpc2thbGxpYW5jZS5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjYvMTEvQlNXXzQ3NF9UaHVtYm5haWxfQlNXXzE5MjB4MTA4MF9kMDFmZmExNS05Y2NhLTRkYmMtODcxZi05MmJiMTY5MjllZTAuanBn"
-    },
-    {
-      "id": "at_51217498891",
-      "title": "Critical Perforce Puppet RCE Exploited in Attacks",
-      "url": "https://www.securityweek.com/critical-perforce-puppet-rce-exploited-in-attacks/",
-      "summary": "Tracked as CVE-2026-115731, it allows a client that holds any CA-signed agent certificate to execute code on the server. The post Critical Perforce Puppet RCE Exploited in Attacks appeared first on SecurityWeek.",
-      "source": "Ionut Arghire via SecurityWeek",
-      "image": "https://www.inoreader.com/camo/sVlo9kA0AAxcnhYwP59MpNz4llTUlTHD9pDeOwoKdG8s,q80,480x400,pf,b64/aHR0cHM6Ly93d3cuc2VjdXJpdHl3ZWVrLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNi8xMC9jeWJlcmF0dGFjay12dWxuZXJhYmlsaXR5LWV4cGxvaXRlZC5qcGVn"
-    },
-    {
-      "id": "at_51217485497",
-      "title": "Chrome 158 Fixes 204 Vulnerabilities, Including Critical Code Execution Flaws",
-      "url": "https://cybersecuritynews.com/chrome-158-fixes-204-vulnerabilities/",
-      "summary": "Google began rolling out Chrome 158 to Windows, macOS, and Linux on November 17, 2026, with 204 security fixes. The desktop release notes list six critical memory bugs that could lead to code execution. However, Google did not spell out the impact of each flaw. The patched builds are 158.0.8127.36 for Linux and 158.0.8127.36 or 158.0.8127.37...",
-      "source": "Abinaya via Cyber Security News",
-      "image": "https://www.inoreader.com/camo/sO3GlvLTWGu3WYU_S33ljVltWVU_G2Cl9gFbVuf5edOE,q80,480x400,pf,b64/aHR0cHM6Ly9jeWJlcnNlY3VyaXR5bmV3cy5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjYvMTEvQ2hyb21lLTE1OC1GaXhlcy0yMDQtVnVsbmVyYWJpbGl0aWVzLUluY2x1ZGluZy1Dcml0aWNhbC1Db2RlLUV4ZWN1dGlvbi1GbGF3cy53ZWJw"
-    },
-    {
-      "id": "at_51217485357",
-      "title": "Apache warns of Roller RCE vulnerability exploited in attacks",
-      "url": "https://www.bleepingcomputer.com/news/security/apache-warns-of-roller-rce-vulnerability-exploited-in-attacks/",
-      "summary": "Apache has released security updates to address a critical Roller flaw that threat actors are exploiting to gain code execution on vulnerable servers. [...]",
-      "source": "Sergiu Gatlan via Bleeping Computer",
-      "image": "https://www.inoreader.com/camo/sZB7XmOzG74oKRtVyoegJv9OIa22CmQZU_EEMqNKuT7A,q80,480x400,pf,b64/aHR0cHM6Ly93d3cuYmxlZXBzdGF0aWMuY29tL2NvbnRlbnQvaGwtaW1hZ2VzLzIwMjYvMDQvMTcvQXBhY2hlLmpwZw"
-    },
-    {
-      "id": "at_51217316755",
-      "title": "Hackers Hijack Old Bitly Links in Burger King, McDonald’s and Trump Posts to Redirect Users",
-      "url": "https://cybersecuritynews.com/hackers-hijack-old-bitly-links/",
-      "summary": "Old Bitly links shared by Burger King, McDonald’s, and other prominent X accounts now redirect users to unrelated websites, videos, and offensive content, exposing long-standing social media posts to link hijacking. According to CNN’s reporting, affected posts dated from 2009 to 2014. At least a dozen Trump posts contained links that led somewhere...",
-      "source": "Abinaya via Cyber Security News",
-      "image": "https://www.inoreader.com/camo/s1bHwleQsTF7jNbi5FhO16bxmE1bi_Devigk8G6UdVQQ,q80,480x400,pf,b64/aHR0cHM6Ly9jeWJlcnNlY3VyaXR5bmV3cy5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjYvMTEvSGFja2Vycy1IaWphY2stT2xkLUJpdGx5LUxpbmtzLWluLUJ1cmdlci1LaW5nLU1jRG9uYWxkcy1hbmQtVHJ1bXAtUG9zdHMtdG8tUmVkaXJlY3QtVXNlcnMtMS53ZWJw"
-    },
-    {
-      "id": "at_51217085557",
-      "title": "Anthropic Reduces Vulnerability Disclosure Deadline from 90 to 30 Days as AI Quickly Identifies Flaws",
-      "url": "https://cybersecuritynews.com/anthropic-cuts-critical-vulnerability-disclosure-deadline/",
-      "summary": "Anthropic is shrinking the time it gives software makers to fix serious security flaws before the details go public. The company says AI is now finding bugs so fast that the old 90-day window no longer makes sense. In an update to its coordinated vulnerability disclosure (CVD) policy, Anthropic cut the deadline for high- and critical-severity...",
-      "source": "Abinaya via Cyber Security News",
-      "image": "https://www.inoreader.com/camo/swCjYFgJv8fqjPm73dK7Z0c831jEdHM6n7oHcLrBsxY8,q80,480x400,pf,b64/aHR0cHM6Ly9jeWJlcnNlY3VyaXR5bmV3cy5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjYvMTEvQW50aHJvcGljLUN1dHMtQ3JpdGljYWwtVnVsbmVyYWJpbGl0eS1EaXNjbG9zdXJlLURlYWRsaW5lLUZyb20tOTAtRGF5cy10by0zMC1EYXlzLWFzLUFJLUZpbmRzLUJ1Z3MtRmFzdGVyLTEud2VicA"
-    },
-    {
-      "id": "at_51217085560",
-      "title": "Tails Released Emergency Tor Browser Update to fix uBlock Origin Flaw",
-      "url": "https://cybersecuritynews.com/tails-tor-browser-update-to-fix-ublock-origin-flaw/",
-      "summary": "The Tor Project released Tails 7.17.1 on November 17, 2026, to fix a critical security flaw in uBlock Origin, the ad blocker bundled with Tor Browser in Tails. The emergency update temporarily removes the extension. A malicious website could trick a visitor into clicking once and then run its own code on another site the visitor opens. The Tails...",
-      "source": "Abinaya via Cyber Security News",
-      "image": "https://www.inoreader.com/camo/s9mHkbbeT9gzSxJBO0Lw1m021WUgJ77i3oMMQ9x0j5_c,q80,480x400,pf,b64/aHR0cHM6Ly9jeWJlcnNlY3VyaXR5bmV3cy5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjYvMTEvVGFpbHMtUmVsZWFzZWQtRW1lcmdlbmN5LVRvci1Ccm93c2VyLVVwZGF0ZS10by1maXgtdUJsb2NrLU9yaWdpbi1GbGF3LndlYnA"
-    },
-    {
-      "id": "at_51217085562",
-      "title": "Atlassian Patches 318 Security Vulnerabilities Across Jira, Confluence, Bitbucket and Other Products",
-      "url": "https://cybersecuritynews.com/atlassian-patches-318-security-vulnerabilities/",
-      "summary": "Atlassian’s November 2026 security bulletin lists fixes for 318 vulnerability entries across Jira Software, Jira Service Management, Confluence, Bitbucket, Bamboo, Crowd, Fisheye and Crucible. Published on November 17, the bulletin covers fixes shipped in product releases over the previous month. Atlassian counted 266 high-severity entries and...",
-      "source": "Abinaya via Cyber Security News",
-      "image": "https://www.inoreader.com/camo/swaOtUCnHBP296pWpuJ8EeIX-WRJljLj1luMO6osZp1U,q80,480x400,pf,b64/aHR0cHM6Ly9jeWJlcnNlY3VyaXR5bmV3cy5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjYvMTEvQXRsYXNzaWFuLVBhdGNoZXMtMzE4LVNlY3VyaXR5LVZ1bG5lcmFiaWxpdGllcy1BY3Jvc3MtSmlyYS1Db25mbHVlbmNlLUJpdGJ1Y2tldC1hbmQtT3RoZXItUHJvZHVjdHMud2VicA"
-    },
-    {
-      "id": "at_51217085563",
-      "title": "Researchers Break AMD SEV-SNP Security to Read Encrypted Virtual Machine Memory Using a GPU",
-      "url": "https://cybersecuritynews.com/amd-sev-snp-security-bypassed/",
-      "summary": "An attack called Mior uses a graphics card to bypass AMD SEV-SNP, allowing access to confidential virtual machine memory, modification of guest memory, and making altered VMs appear to run trusted software. Tracked as CVE-2026-0462, the flaw carries a CVSS 4.0 score of 5.9. AMD Secure Encrypted Virtualization with Secure Nested Paging, or SEV-SNP,...",
-      "source": "Abinaya via Cyber Security News",
-      "image": "https://www.inoreader.com/camo/s-btEINYusREL8InsZ1vBsCWbt5vBkP4ivh_9oVVXtUg,q80,480x400,pf,b64/aHR0cHM6Ly9ibG9nZ2VyLmdvb2dsZXVzZXJjb250ZW50LmNvbS9pbWcvYi9SMjl2WjJ4bC9BVnZYc0VnY2FJdl9sMHMwdmZQaEliVEhSckI4QkNpY1g3Z2ExSUdhenVDRk9ERnJ1YWp2TTlqcTZlSVdHZlRyQzlLdlowSEJfUWJjVzNBb0NFeUI5eV9pblVfSFVnT09IVTZ1RTFXQTFDRThfaDYxaUlUM3R0a2k2OTZKN0daUDBPZ1VSclp3VGZlU0Exc0lzOVlGbTlhOU9VMTNESFFMMU9vSkVIXzdTNVhsajJMLVVjUjhXZy0xNGdGb2FGMU1xdjgvczE2MDAvU2NyZWVuc2hvdCUyMDIwMjYtMTEtMTglMjAxMDM5MTclMjAlMjgxJTI5LndlYnA"
-    },
-    {
-      "id": "at_51217085565",
-      "title": "4-Year-Old NVIDIA Linux GPU Flaw Lets Users Hijack Entire Shared Servers",
-      "url": "https://cybersecuritynews.com/4-year-old-nvidia-linux-gpu-flaw/",
-      "summary": "A four-year-old NVIDIA Linux GPU driver flaw, tracked as CVE-2026-47501 and dubbed ForgePtr, could let users with access to a vulnerable GPU take control of the entire server. The flaw allowed Stealthium researchers to gain root, the highest level of access on Linux, from inside an unprivileged container. The finding puts shared GPU servers used...",
-      "source": "Abinaya via Cyber Security News",
-      "image": "https://www.inoreader.com/camo/s4sDM9dPjx8wTKGL0syq1dmTLrHYa44DHvlHDL8j50XA,q80,480x400,pf,b64/aHR0cHM6Ly9jeWJlcnNlY3VyaXR5bmV3cy5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjYvMTEvNC1ZZWFyLU9sZC1OVklESUEtTGludXgtR1BVLUZsYXctTGV0cy1Vc2Vycy1IaWphY2stRW50aXJlLVNoYXJlZC1TZXJ2ZXJzLndlYnA"
-    },
-    {
-      "id": "at_51217052258",
-      "title": "Hackers Exploiting Critical Puppet RCE Flaw Affecting Enterprise Management Servers",
-      "url": "https://thehackernews.com/2026/11/hackers-exploiting-critical-puppet-rce.html",
-      "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Tuesday added a critical security flaw impacting Perforce Puppet, an enterprise infrastructure-as-code (IaC) and configuration management platform, to its Known Exploited Vulnerabilities (KEV) catalog, citing reports of active exploitation. The vulnerability, tracked as CVE-2026-115731...",
-      "source": "[email protected] (The Hacker News) via The Hacker News",
-      "image": "https://www.inoreader.com/camo/sGNkTlm1JbIj0VqeSHvspNsJQdKaYr3bjc8ApI2HzJV8,q80,480x400,pf,b64/aHR0cHM6Ly9ibG9nZ2VyLmdvb2dsZXVzZXJjb250ZW50LmNvbS9pbWcvYi9SMjl2WjJ4bC9BVnZYc0Vob0ZLTUZMUGJ6eU03UkdpODlYZHBWRlVmRnFMSDJDMFFuQUl5WmZUU1pJa3ZRTlQ4amhGRWRNZFczRDFxUFhFME1qdFYtcThmTTFBbGljejB3RXVOSjZmbklqT3MzQlk4RDdBQkJSV05xUGc2Tkd6OUZqaGJTUWhhcHdVRFpQRHlnM2tKRXk5Q1plVXdiY21aM041bkNVOGJINmJrQ280QmdMZmhsRTNSM0FkRGk5Q3ZMVmdqcWxNVzQyUG0yL3MxNjAwL3B1cHBldC5qcGc"
-    },
-    {
-      "id": "at_51217052270",
-      "title": "CISA Urges Immediate Patching of Java4Shell Flaw That Could Allow Remote Code Execution",
-      "url": "https://thehackernews.com/2026/11/cisa-urges-immediate-patching-of.html",
-      "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) has urged organizations to immediately patch a newly disclosed critical security flaw impacting Oracle Java. The flaw, tracked as CVE-2026-114938 (CVSS score: 8.1), refers to a case of out-of-bounds write that can lead to denial-of-service (DoS) or remote code execution under certain...",
-      "source": "[email protected] (The Hacker News) via The Hacker News",
-      "image": "https://www.inoreader.com/camo/skDcKnOK_cHTU3Rmf5QEu1d_97NRQxXBLKcwqo-hsJro,q80,480x400,pf,b64/aHR0cHM6Ly9ibG9nZ2VyLmdvb2dsZXVzZXJjb250ZW50LmNvbS9pbWcvYi9SMjl2WjJ4bC9BVnZYc0Vpdm1yc3oyZlZpRU40OVN1Mzg1Z211QVNoQ1BjeG9ic01GLUZiUjl0MXNYdzZhRWJPTXpGVVQ1WWt0VmlxQVNRVVhQM2JMVDEzSFlNQUUxd0JRVE4wWlJER1hXRkpVeV9FV09LaE9qUjdqU3otYmhFSzhqYXNfdjl3V1VZeGV2Q0FadDRQek9DYUdOTExDOTZrRHdGanRLQnVYVlcyTzNLMkJLOUFPNW55WnV0RmZfdUNhWnR2eWFRMnFmOGdLL3MxNjAwL2Npc2EtamF2YS5qcGc"
-    },
-    {
-      "id": "at_51216816212",
-      "title": "U.S. CISA adds Perforce Puppet Enterprise flaw to its Known Exploited Vulnerabilities catalog",
-      "url": "https://securityaffairs.com/203377/hacking/u-s-cisa-adds-perforce-puppet-enterprise-flaw-to-its-known-exploited-vulnerabilities-catalog.html",
-      "summary": "U.S. CISA adds Perforce Puppet Enterprise vulnerability CVE-2026-115731 to its Known Exploited Vulnerabilities catalog. The U.S. Cybersecurity and Infrastructure Security Agency (CISA) added a Perforce Puppet Enterprise flaw, tracked as CVE-2026-115731 (CVSS score of 9.4), to its Known Exploited Vulnerabilities (KEV) catalog. The critical...",
-      "source": "Pierluigi Paganini via Security Affairs",
-      "image": ""
     }
   ]
 }

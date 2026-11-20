@@ -1,6 +1,246 @@
 {
-  "updatedAt": "2026-11-20T12:54:30.065597+00:00",
+  "updatedAt": "2026-11-20T21:06:00.379218+00:00",
   "articles": [
+    {
+      "id": "at_51245422069",
+      "title": "Daniel Ek backs AI researcher’s fusion power startup. Here’s what they’re building.",
+      "url": "https://techcrunch.com/2026/11/20/daniel-ek-backs-ai-researchers-fusion-power-startup-heres-what-theyre-building/",
+      "summary": "Spotify founder Daniel Ek is backing Europa Fusion, a fusion power startup founded by an AI researcher. Here's what the startup is building.",
+      "source": "Tim De Chant via AI | TechCrunch",
+      "image": "https://www.inoreader.com/camo/sB6Up8t-djEmP17nZ8zvACvYNdPshW7DixjuC43X0kOg,q80,480x400,pf,b64/aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMy8wNy9HZXR0eUltYWdlcy0xNTAwMDEzODgyLmpwZz9yZXNpemU9MTYwMCwxMDgz"
+    },
+    {
+      "id": "at_51245422070",
+      "title": "AI claimed a solution to the 167-year-old Riemann Hypothesis — and a human did, too",
+      "url": "https://techcrunch.com/2026/11/20/ai-claimed-a-solution-to-the-167-year-old-riemann-hypothesis-and-a-human-did-too/",
+      "summary": "Mathematicians are having their minds blown by the latest AI-driven result — and there's a competing human solution, too.",
+      "source": "Tim Fernholz via AI | TechCrunch",
+      "image": "https://www.inoreader.com/camo/sOnuWPs7YUq2AUPvX1LRZWF5jRaExOr00pj51rPbIGDA,q80,480x400,pf,b64/aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMi8wOC9HZXR0eUltYWdlcy0xMjE5MzgyNTk1LmpwZz9yZXNpemU9MTYwMCwxMDAw"
+    },
+    {
+      "id": "at_51245290484",
+      "title": "451 Research: How AI agents are redefining access and identity (Sponsor)",
+      "url": "https://1password.com/blog/how-agentic-ai-is-redefining-identity-security?utm_medium=paid_newsletter&amp;utm_source=tldr&amp;utm_campaign=2026q3_unifiedaccess_bl_how-agentic-ai-is-redefining-identity-security_sa&amp;utm_content=newsletter_ai_111926",
+      "summary": "As the workforce becomes increasingly agentic, 1Password's blog recaps what leaders need to change about visibility, access, and auditability.",
+      "source": "via TLDR AI Feed",
+      "image": "https://www.inoreader.com/camo/sKuj_EnOHfftfAVtjmLeypRfH-rVyAbqFJtJHAGb_4wg,q80,480x400,pf,b64/aHR0cHM6Ly9pbWFnZXMuY3RmYXNzZXRzLm5ldC8zMDkxYWp6Y216bHIvNDRBVHBvSU02alNQYTFBcTJoM0FmUy9lYzIxZGFmYmYxMzBhODI1NjExZTY1NzJmNjA0MDcxNS9CbG9nX0hlYWRlcl80NTFfUmVwb3J0XzE5MjB4MTA4MC53ZWJw"
+    },
+    {
+      "id": "at_51245290485",
+      "title": "What comes after AGI? (18 minute read)",
+      "url": "https://institute.deepmind.com/essays/what-comes-after-agi/?utm_source=tldrai",
+      "summary": "Artificial general intelligence (AGI) is now within reach, so we can no longer put off seriously considering what will come next. AI achieving artificial general superintelligence (ASI) will have a profound impact on science, the economy, and society at a scale much greater than AGI itself. Preparing for that shift will require mapping the possible...",
+      "source": "via TLDR AI Feed",
+      "image": "https://www.inoreader.com/camo/sLF8CmB5jOymRZDh0S3Q2Mbk61gTsE4Eod2JpVJnh34E,q80,480x400,pf,b64/aHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tL010Y1N5dXkyR1Z5eHlsc3pLaHd4QVVQX09WaC1lOUVUbU90RTVrTERHTDhBSWw1OVdtcXhPNVFKalJVM05EQm5Mc2pCUG1SM1duNWM0VjBnVmVPS2dlN01PRjFvWE1ocUI1V1d6OE1DYjg5YUhfZTI9dzEyMDAtaDYzMC1uLW51LXJ3"
+    },
+    {
+      "id": "at_51245290486",
+      "title": "Be the AI hero, not the bottleneck. (Sponsor)",
+      "url": "https://www.domo.com/solution/ai-hero?utm_source=TLDR&amp;utm_medium=newsletter&amp;utm_campaign=2026-11-20_tldr_ai_quick_links_placement_2_progress&amp;utm_content=header_ai_hero_not&amp;utm_term=2026-11-20_tldr_ai",
+      "summary": "Let teams build with AI while you stay in control. See how Domo turns AI builds into secure, lasting, governed assets.See how with Domo",
+      "source": "via TLDR AI Feed",
+      "image": "https://www.inoreader.com/camo/szXCzcSPGFKLL0t9_CHim-jBPWzAlehhQvouo6ryWRRo,q80,480x400,pf,b64/aHR0cHM6Ly9jZG4ucHJvZC53ZWJzaXRlLWZpbGVzLmNvbS82NzliOTEzNzJkMmUwOTNmMmE0Mjg3YWEvNmFmZTA2OGIyYmE3YjQwNDAyYTE2OGEwX1Byb2dyZXNzJTIwYW5kJTIwRE9NTyUyMFRlY2glMjBOZXR3b3JrLnBuZw"
+    },
+    {
+      "id": "at_51245290487",
+      "title": "Stripe evals: Measuring real-world coding agent performance (13 minute read)",
+      "url": "https://stripe.dev/blog/stripe-integration-evals-methodology?utm_source=tldrai",
+      "summary": "Coding harnesses, when paired with frontier models, can produce working end-to-end Stripe integrations, although they may not necessarily follow all best practices. Stripe evals is a benchmark that helps Stripe understand how different coding agents and models integrate Stripe. It measures how well coding agents build high-quality integrations given...",
+      "source": "via TLDR AI Feed",
+      "image": ""
+    },
+    {
+      "id": "at_51245290488",
+      "title": "What's your unpopular opinion about AI? (TLDR Community)",
+      "url": "https://community.tldr.tech/t/weekly-what-s-your-unpopular-opinion-about-ai?utm_source=tldrai&amp;utm_medium=newsletter",
+      "summary": "Personality and writing are the top determinants of perceived model quality, AI safety is underrated, TypeScript will decline, read more and",
+      "source": "via TLDR AI Feed",
+      "image": "https://www.inoreader.com/camo/s2i5U9WT3cN9TTcmGlcL28LwnzG5pitFjQDGYawhdMMM,q80,480x400,pf,b64/aHR0cHM6Ly9jb21tdW5pdHkudGxkci50ZWNoL3Qvd2Vla2x5LXdoYXQtcy15b3VyLXVucG9wdWxhci1vcGluaW9uLWFib3V0LWFpL29wZW5ncmFwaC1pbWFnZS0xYjkzZXI_YjljZjE3Y2U0ZTBkYzgxYQ"
+    },
+    {
+      "id": "at_51245290489",
+      "title": "How OpenAI's Performance Factory keeps ChatGPT fast (18 minute read)",
+      "url": "https://openai.com/index/how-openai-performance-factory-keeps-chatgpt-fast/?utm_source=tldrai",
+      "summary": "OpenAI's Performance Factory uses Codex to automate and expedite performance regression investigations and fixes for ChatGPT.",
+      "source": "via TLDR AI Feed",
+      "image": "https://www.inoreader.com/camo/sJPBgcvGxOO4nBh9Ei-h4-g0IXjLropJFASyCF0shRh0,q80,480x400,pf,b64/aHR0cHM6Ly9pbWFnZXMuY3RmYXNzZXRzLm5ldC9rZnR6d2R5YXV3dDkvMUdtTlB4clMzcXdoWVUwdDQzZHNhYS8wZGY1MzgxMWI5YWNmOGY5Njk5YWNlNjMwMzYyZjExMi9wZXJmb3JtYW5jZS1mYWN0b3J5LXNvY2lhbC5wbmc_dz0xNjAwJmg9OTAwJmZpdD1maWxs"
+    },
+    {
+      "id": "at_51245290490",
+      "title": "Perplexity's Self-Improving Skills (10 minute read)",
+      "url": "https://www.perplexity.ai/hub/blog/self-improving-skills?utm_source=tldrai",
+      "summary": "Perplexity Computer can now build and update its own skills, using its Brain system to learn from each user's past sessions.",
+      "source": "via TLDR AI Feed",
+      "image": "https://www.inoreader.com/camo/sHrBZQE_Fj4corOJT1Vef9qAhqbgMXIQtsPBMD8JMsi8,q80,480x400,pf,b64/aHR0cHM6Ly9jZG4uc2FuaXR5LmlvL2ltYWdlcy9hcW82NHZmci9wcm9kdWN0aW9uLzU5ZWVhZTZjMDNlNmQ1ODI4MTZmY2UxYzFmMjE1ZmZkMmE0YjdkMzYtMjQwMHgxMjYwLnBuZz93PTEyMDAmaD02MzAmZm09anBnJnE9ODAmZml0PWNyb3A"
+    },
+    {
+      "id": "at_51245290491",
+      "title": "Mirror Dimension for Agents: Evaluating Browser-Use Agents Without the Web (1 minute read)",
+      "url": "https://blog.google/security/mirror-dimension-for-agents/?utm_source=tldrai",
+      "summary": "Google introduces the Mirror Dimension, a controlled environment for testing AI browser-use agents without accessing the live web. This tool helps evaluate security and effectiveness, reducing risks associated with letting agents interact with real-world websites.",
+      "source": "via TLDR AI Feed",
+      "image": "https://www.inoreader.com/camo/s6GD-3uGjXy_2_usj6gnCYI-WGQUxFtc0ldDJrnIYYis,q80,480x400,pf,b64/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2d3ZWItdW5pYmxvZy1wdWJsaXNoLXByb2QvaW1hZ2VzL01pcnJvcl9EaW1lbnNpb25fQmxvZ0hlYWRlci0wMl8xQ0pOT2xzLndpZHRoLTEzMDAucG5n"
+    },
+    {
+      "id": "at_51245290494",
+      "title": "FastFrames: Video Generation at Interactive Latency (9 minute read)",
+      "url": "https://apple-aiml-research.github.io/ml-fastframes/?utm_source=tldrai",
+      "summary": "Apple introduced FastFrames, two models that generate 480p video fast enough for interactive use. Each frame takes 36 ms on a single GPU with the smaller model.",
+      "source": "via TLDR AI Feed",
+      "image": "https://www.inoreader.com/camo/si6FyNxMjHoQ3SFo7SUGC60Ht6sU19s-5-P3XC21MTeM,q80,480x400,pf,b64/aHR0cHM6Ly9hcHBsZS1haW1sLXJlc2VhcmNoLmdpdGh1Yi5pby9tbC1mYXN0ZnJhbWVzL3N0YXRpYy9wb3N0ZXJzL2ludGVyYWN0aXZlL2Zhc3RmcmFtZXNfZGVtb185MjMuanBn"
+    },
+    {
+      "id": "at_51245290495",
+      "title": "AI is already massively speeding up AI research (9 minute read)",
+      "url": "https://linch.substack.com/p/ai-is-already-massively-speeding?utm_source=tldrai",
+      "summary": "AI companies are not ready to handle the risks of recursive self-improvement safely and responsibly, despite having talked about them for years, and this is incredibly dangerous. Policymakers need to make it a top priority to rapidly understand these risks, and consider pausing or pacing frontier AI progress. AI lab employees need to raise concerns...",
+      "source": "via TLDR AI Feed",
+      "image": "https://www.inoreader.com/camo/salBw2VuT_DmWyz-1Xr9IfuNCxyDClZpn_CeRxJjFASM,q80,480x400,pf,b64/aHR0cHM6Ly9zdWJzdGFja2Nkbi5jb20vaW1hZ2UvZmV0Y2gvJHNfITdERk8hLHdfMTIwMCxoXzY3NSxjX2ZpbGwsZl9qcGcscV9hdXRvOmdvb2QsZmxfcHJvZ3Jlc3NpdmU6c3RlZXAsZ19hdXRvL2h0dHBzJTNBJTJGJTJGc3Vic3RhY2stcG9zdC1tZWRpYS5zMy5hbWF6b25hd3MuY29tJTJGcHVibGljJTJGaW1hZ2VzJTJGNTFiODM2NGEtZjBhOC00YjcxLWEzODktMDc5MmFkNTQ1NDRkXzE4ODB4MTU2MS5wbmc"
+    },
+    {
+      "id": "at_51245290498",
+      "title": "Sandboxed Models Can Communicate via Inference Servers (12 minute read)",
+      "url": "https://www.lesswrong.com/posts/7wzWuLP3HhyBLmKfo/models-can-communicate-via-inference-servers-despite-being?utm_source=tldrai",
+      "summary": "Sandboxing did not stop AI models on a shared inference server from trading information in contrived tests. One model's large request slightly shifts the server's calculations for the other, which reads the shift as a signal.",
+      "source": "via TLDR AI Feed",
+      "image": "https://www.inoreader.com/camo/sSWad8FMYdaushyoIih_UpKpKfbunwgN9PBeavqeffjQ,q80,480x400,pf,b64/aHR0cHM6Ly9yZXMuY2xvdWRpbmFyeS5jb20vbGVzc3dyb25nLTItMC9pbWFnZS91cGxvYWQvY19saW1pdCx3XzEyMDAscV9hdXRvLGZfanBnL2ZfYXV0byxxX2F1dG8vdjEvbWlycm9yZWRJbWFnZXMvN3d6V3VMUDNIaHlCTG1LZm8vaWxrZHNhbXV4amExZHZ1NHVhaDI"
+    },
+    {
+      "id": "at_51245290501",
+      "title": "When Agent Swarms Outperform Solo Coders (10 minute read)",
+      "url": "https://frontier.replit.com/throwing-headcount-at-the-problem/?utm_source=tldrai",
+      "summary": "Replit's optimization benchmark found 32 Opus agents achieved an 18.9× NumPy workload speedup versus 3.7× for one agent within two hours, using more compute. Gains depended on separable tasks and shared coordination boards. The strongest solo model's performance declined as teams grew.",
+      "source": "via TLDR AI Feed",
+      "image": "https://www.inoreader.com/camo/sCcSi6HSjPrFir55ePlf0qh-4FbZPcjf2y_bpwYpOHrY,q80,480x400,pf,b64/aHR0cHM6Ly9mcm9udGllci5yZXBsaXQuY29tL2FydGljbGUtaW1hZ2VzL3Rocm93aW5nLWhlYWRjb3VudC1hdC10aGUtcHJvYmxlbS9oZXJvLndlYnA"
+    },
+    {
+      "id": "at_51245290502",
+      "title": "Let Gemini tackle repetitive chores on your Mac (1 minute read)",
+      "url": "https://blog.google/innovation-and-ai/products/gemini-app/computer-use-mac/?utm_source=tldrai",
+      "summary": "Computer use in the Gemini app for Mac can now help users get multi-step tasks done across their local files, desktop apps, and the web. Gemini works inside an isolated background window with a live preview right in the chat. Users' main screen and cursor remain completely free, so they can continue typing, designing, or taking calls without interruption....",
+      "source": "via TLDR AI Feed",
+      "image": "https://www.inoreader.com/camo/slG_JzZf0sOXyanoMBqFTo6x8xZpvrNRiSdhAZ_OS2gs,q80,480x400,pf,b64/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2d3ZWItdW5pYmxvZy1wdWJsaXNoLXByb2QvaW1hZ2VzL2hlcm9faGVhZGVyX0NVX2NvcHkud2lkdGgtMTMwMC5wbmc"
+    },
+    {
+      "id": "at_51245290504",
+      "title": "Vercel Board (5 minute read)",
+      "url": "https://vercel.com/blog/introducing-vercel-board?utm_source=tldrai",
+      "summary": "Vercel released Board, an experimental message board where AI agents claim tasks, post updates, and share context.",
+      "source": "via TLDR AI Feed",
+      "image": "https://www.inoreader.com/camo/sucUyZrYa8xGXi4ZzJXTzku1050r434yV2LlqbunbnsA,q80,480x400,pf,b64/aHR0cHM6Ly9hc3NldHMudmVyY2VsLmNvbS9pbWFnZS91cGxvYWQvY29udGVudGZ1bC9pbWFnZS9lNTM4MmhjdDc0c2kvY2E2MDAzOTdjMTIwYzc1NTBkMmQyYzM2L2U5YTJkMDc4YjIyMjljNTM3NTI1NDc4YjIzN2M3MDdhL29nLWJvYXJkX18xXy5wbmc"
+    },
+    {
+      "id": "at_51245290505",
+      "title": "Cloudflare's Clairic and Clairic-flash (6 minute read)",
+      "url": "https://blog.cloudflare.com/open-clairic/?utm_source=tldrai",
+      "summary": "Cloudflare made the weights public for Clairic and Clairic-flash, its models for extracting specific fields from text, images, and PDFs.",
+      "source": "via TLDR AI Feed",
+      "image": "https://www.inoreader.com/camo/sFXHYgnYBC5Be2DcxLbW2ekcFpvek3MNsMqlaCTLZ_Lw,q80,480x400,pf,b64/aHR0cHM6Ly9ibG9nLmNsb3VkZmxhcmUuY29tL19lbWRhc2gvYXBpL21lZGlhL2ZpbGUvMDFNN1I4RlQ0MFNES0tGOTRRWUI5N0dKSlQuMDFNN1I4RlRSVEcxRlNTM0E2NzVRU0VXWTIucG5n"
+    },
+    {
+      "id": "at_51245290508",
+      "title": "Computer Scientists Facilitating Independent Review of a High-profile OpenAI and Anthropic Result (2 minute read)",
+      "url": "https://today.ucsd.edu/story/computer-scientists-facilitating-an-independent-review-of-a-high-profile-open-ai-and-anthropic-resul?utm_source=tldrai",
+      "summary": "UC San Diego and MIT computer scientists are facilitating an independent review of OpenAI and Anthropic's announcement claiming their models refuted the Exponential Time Hypothesis (ETH).",
+      "source": "via TLDR AI Feed",
+      "image": "https://www.inoreader.com/camo/sJHWyTeP0533caUDly314koN9JOJwjMMandWcqTXX07w,q80,480x400,pf,b64/aHR0cHM6Ly90b2RheS51Y3NkLmVkdS90ZWFzZXJfdXBsb2Fkcy9fc29jaWFsL0VUSC1oZXJvLXRvZGF5X1VTQ0QuanBn"
+    },
+    {
+      "id": "at_51245290509",
+      "title": "New Data Centers May Be Delayed. Can Existing Facilities Help? (Sponsor)",
+      "url": "https://sambanova.ai/blog/the-air-cooled-token-factory-intel-gpu-d-series-sambarack-sn50?utm_source=tldr&amp;utm_medium=newsletter&amp;utm_campaign=nov20-2026&amp;utm_content=header_data_centers_delayed&amp;utm_term=2026-11-20_tldr_ai",
+      "summary": "Many AI systems need liquid cooling, making existing air-cooled facilities costly to retrofit. Axios reports up to half of projects scheduled for 2026 could be delayed.SambaNova and Intel are demonstrating an air-cooled inference approach:Intel's 350 W D-Series GPUs handle prefill.SambaNova's SN50 RDUs handle decode, 16 per rack at a typical 20 kW.KV...",
+      "source": "via TLDR AI Feed",
+      "image": "https://www.inoreader.com/camo/st8Vytcr9xo1x4CZw_oLQF5oPfT54RWw4Njy6qFUd3js,q80,480x400,pf,b64/aHR0cHM6Ly9zYW1iYW5vdmEuYWkvaHViZnMvc2FtYmFub3ZhLWludGVsLndlYnA"
+    },
+    {
+      "id": "at_51245290510",
+      "title": "Introducing Tool Retrieval in the Gemini API (1 minute read)",
+      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-api-tool-retrieval/?utm_source=tldrai",
+      "summary": "Google's Gemini API introduces Tool Retrieval, enabling dynamic function execution like issuing refunds based on input. Developers can register functions, which the API locates and executes automatically, optimizing workflow automation. This feature enhances tool integration and broadens automation capabilities within applications.",
+      "source": "via TLDR AI Feed",
+      "image": "https://www.inoreader.com/camo/su3QujQ7a4Af9IRx4X8UpqThKtDUwEhqynpeXS_mzpdU,q80,480x400,pf,b64/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2d3ZWItdW5pYmxvZy1wdWJsaXNoLXByb2QvaW1hZ2VzL1Rvb2xfcmV0cmlldmFsX2hlcm8ud2lkdGgtMTMwMC5wbmc"
+    },
+    {
+      "id": "at_51244759978",
+      "title": "Trump threatens ‘tremendous tax’ for moving AI data centers outside the US",
+      "url": "https://www.theverge.com/policy/1038892/trump-foreign-data-centers-tax",
+      "summary": "President Donald Trump promised to put a \"tremendous tax\" on companies that build data centers outside of the US, even as states and cities around the country are placing restrictions on new applications to build them. \"We're not going to allow our companies to build data centers outside of our country,\" Trump said at a press conference...",
+      "source": "Lauren Feiner via The Verge - Artificial Intelligences",
+      "image": "https://www.inoreader.com/camo/s1BvCyvkap3m-0O3YtI-d3QZohS6zCFuMUjAjpa4ev70,q80,480x400,pf,b64/aHR0cHM6Ly9wbGF0Zm9ybS50aGV2ZXJnZS5jb20vd3AtY29udGVudC91cGxvYWRzL3NpdGVzLzIvMjAyNS8wOS9TVEs0NjZfRUxFQ1RJT05fMjAyNF9DVmlyZ2luaWFfRS5qcGc_cXVhbGl0eT05MCZzdHJpcD1hbGwmY3JvcD0wLDAsMTAwLDEwMA"
+    },
+    {
+      "id": "at_51244536798",
+      "title": "Chips can survive the space environment. Can their financing?",
+      "url": "https://techcrunch.com/2026/11/20/chips-can-survive-the-space-environment-can-their-financing/",
+      "summary": "Lenders don't want SpaceX shooting their collateral into orbit. What does that mean for space data centers writ large?",
+      "source": "Tim Fernholz via AI | TechCrunch",
+      "image": "https://www.inoreader.com/camo/sZk1yLSPwmGRq0vn2NhL7jStrKaytCDx9cQosUz6fTBw,q80,480x400,pf,b64/aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNi8wNi9TcGFjZVhBSXNhdHJlbmRlci5qcGc_cmVzaXplPTE2MDAsODUy"
+    },
+    {
+      "id": "at_51243706799",
+      "title": "Anthropic mathematician claims to have solved prestigious Millennium Prize problem with Claude",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1010051/anthropic-riemann-hypothesis-millennium-prize-problem",
+      "summary": "Anthropic went public on November 19th, 2026. | Photo: Getty Images Anthropic mathematician Levent Alpöge claims he has proved the Riemann hypothesis, one of mathematics's most notoriously difficult problems, with the help of Claude, cracking a puzzle that has eluded some of the world's best mathematicians for decades. If verified, it...",
+      "source": "Robert Hart via The Verge - Artificial Intelligences",
+      "image": "https://www.inoreader.com/camo/s-zCckxvBQKhq7FiZbV93bkdcvc1gbaMneyv5fpMHii0,q80,480x400,pf,b64/aHR0cHM6Ly9wbGF0Zm9ybS50aGV2ZXJnZS5jb20vd3AtY29udGVudC91cGxvYWRzL3NpdGVzLzIvMjAyNi8xMS9nZXR0eWltYWdlcy0yMzA1ODk0MTg1LmpwZz9xdWFsaXR5PTkwJnN0cmlwPWFsbCZjcm9wPTAsMCwxMDAsMTAw"
+    },
+    {
+      "id": "at_51243244466",
+      "title": "Read more: https://t.co/nc1NuyvkWZ",
+      "url": "https://x.com/TheRundownAI/status/2123808882245919203",
+      "summary": "Read more: tech.therundown.ai/p/gta-6-rakes-…💬0🔄1❤️0👀880⚡ Powered by xgo.ing",
+      "source": "The Rundown AI (@TheRundownAI) via The Rundown AI(@TheRundownAI)",
+      "image": ""
+    },
+    {
+      "id": "at_51243244469",
+      "title": "Top stories in tech today: - GTA 6’s unhinged world goes viral - Google’s solar-powered AI chips ge...",
+      "url": "https://x.com/TheRundownAI/status/2123808877225406857",
+      "summary": "Top stories in tech today:- GTA 6’s unhinged world goes viral- Google’s solar-powered AI chips get a rocket- Nick Bostrom puts human lifespan at 1,400 years- Uber tests solo rides for tweens💬6🔄0❤️8👀2829📊6⚡ Powered by xgo.ing",
+      "source": "The Rundown AI (@TheRundownAI) via The Rundown AI(@TheRundownAI)",
+      "image": "https://www.inoreader.com/camo/snB0fhthZHQHEPXWqK_C7n4Hwa65u81ILX84f65theHY,q80,480x400,pf,b64/aHR0cHM6Ly9wYnMudHdpbWcuY29tL21lZGlhL0hYbEk2aTRXTUFBaEVNQS5qcGc"
+    },
+    {
+      "id": "at_51243244471",
+      "title": "Full statement: https://t.co/rV5bxd8BD6",
+      "url": "https://x.com/TheRundownAI/status/2123797074126979492",
+      "summary": "Full statement: alpo.ge/remark.pdf💬1🔄0❤️3👀1280📊1⚡ Powered by xgo.ing",
+      "source": "The Rundown AI (@TheRundownAI) via The Rundown AI(@TheRundownAI)",
+      "image": ""
+    },
+    {
+      "id": "at_51243244474",
+      "title": "NEW: Anthropic mathematician Levent Alpöge says he and Claude have solved the Riemann Hypothesis, a ...",
+      "url": "https://x.com/TheRundownAI/status/2123796680902586814",
+      "summary": "NEW: Anthropic mathematician Levent Alpöge says he and Claude have solved the Riemann Hypothesis, a 167-year-old Millennium Prize problem that many consider the most famous open question in math.💬20🔄18❤️113👀11935📊33⚡ Powered by xgo.ing",
+      "source": "The Rundown AI (@TheRundownAI) via The Rundown AI(@TheRundownAI)",
+      "image": "https://www.inoreader.com/camo/s-pk2JX3Ruh_VkehH458791Dv4p_QtKt_NouEjnZCngo,q80,480x400,pf,b64/aHR0cHM6Ly9wYnMudHdpbWcuY29tL21lZGlhL0hYazgtTW1XY0FFcl9xby5qcGc"
+    },
+    {
+      "id": "at_51242894260",
+      "title": "The fallout from Nvidia’s Jensen Huang scandal continues",
+      "url": "https://techcrunch.com/podcast/the-fallout-from-nvidias-jensen-huang-scandal-continues/",
+      "summary": "In the midst of dealing with the fallout from its ouster of CEO Jensen Huang, Nvidia delivered its latest earnings report this week, with healthy growth and promises that the good times will continue. At the same time, the chipmaker said it will stop selling its H200 chips in China, and it dismissed calls to […]",
+      "source": "Theresa Loconsolo, Anthony Ha, Kirsten Korosec, Tim De Chant via AI | TechCrunch",
+      "image": ""
+    },
+    {
+      "id": "at_51242337633",
+      "title": "Six AI-powered gadgets that could make your home office smarter",
+      "url": "https://techcrunch.com/2026/11/20/6-ai-powered-gadgets-that-could-make-your-home-office-smarter/",
+      "summary": "From notetakers to webcams, here are six AI-powered gadgets to upgrade your workspace.",
+      "source": "Lauren Forristal via AI | TechCrunch",
+      "image": "https://www.inoreader.com/camo/sTruLWG-9X5t5KFkHZrHK-BtAVl2adfPFVDv9cf_rRfA,q80,480x400,pf,b64/aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMy8wOC9HZXR0eUltYWdlcy0xMzQ4ODUwNDA5LmpwZz9yZXNpemU9MTYwMCwxMDY3"
+    },
+    {
+      "id": "at_51242105722",
+      "title": "The week everything fell apart",
+      "url": "https://www.theverge.com/podcast/1038419/outage-outlook-ground-stop-tech-failure-vergecast",
+      "summary": "There was a dayslong Outlook outage. A nationwide ground stop for only the second time in 25 years. Banks seemed to suddenly stop working. Even iCloud couldn't stay up and running. This week, it felt like the technological world simply collapsed. And it felt like this might be the beginning of something even bigger. On this episode of...",
+      "source": "David Pierce via The Verge - Artificial Intelligences",
+      "image": "https://www.inoreader.com/camo/sxOAYu82s3B3Tjwt2A2oRQn3Ut6qOyLxws9Jz6W8SWh4,q80,480x400,pf,b64/aHR0cHM6Ly9wbGF0Zm9ybS50aGV2ZXJnZS5jb20vd3AtY29udGVudC91cGxvYWRzL3NpdGVzLzIvMjAyNi8xMS9WUkdfVlNUXzExMTkyNl9TaXRlLmpwZz9xdWFsaXR5PTkwJnN0cmlwPWFsbCZjcm9wPTAsMCwxMDAsMTAw"
+    },
     {
       "id": "at_51241290882",
       "title": "Signal is blocking Gemini and Siri AI from reading your screen",
@@ -13,7 +253,7 @@
       "id": "at_51241144417",
       "title": "Read more: https://t.co/a6jTR33djj",
       "url": "https://x.com/TheRundownAI/status/2123740717289771167",
-      "summary": "Read more: therundownai.beehiiv.com/p/anthropic-pu…💬0🔄0❤️0👀547⚡ Powered by xgo.ing",
+      "summary": "Read more: therundownai.beehiiv.com/p/anthropic-pu…💬0🔄0❤️0👀1222⚡ Powered by xgo.ing",
       "source": "The Rundown AI (@TheRundownAI) via The Rundown AI(@TheRundownAI)",
       "image": ""
     },
@@ -21,7 +261,7 @@
       "id": "at_51241144418",
       "title": "Top stories in AI today: - Anthropic raises $81B in the largest IPO ever - Rowan's Corner: 4 things...",
       "url": "https://x.com/TheRundownAI/status/2123740711820386506",
-      "summary": "Top stories in AI today:- Anthropic raises $81B in the largest IPO ever- Rowan's Corner: 4 things that stuck with me from DealBook- Use AI to find a job and prepare to get hired- OpenAI’s agents now handle half its long research tasks💬12🔄0❤️6👀1984📊11⚡ Powered by xgo.ing",
+      "summary": "Top stories in AI today:- Anthropic raises $81B in the largest IPO ever- Rowan's Corner: 4 things that stuck with me from DealBook- Use AI to find a job and prepare to get hired- OpenAI’s agents now handle half its long research tasks💬24🔄0❤️13👀3373📊21⚡ Powered by xgo.ing",
       "source": "The Rundown AI (@TheRundownAI) via The Rundown AI(@TheRundownAI)",
       "image": "https://www.inoreader.com/camo/sZrFylMqVaWfgvSyZxclrpcFnX5EKoRYT_lezDlpavYc,q80,480x400,pf,b64/aHR0cHM6Ly9wYnMudHdpbWcuY29tL21lZGlhL0hYa0s2NTdXQUFBQTY3eS5qcGc"
     },
@@ -61,7 +301,7 @@
       "id": "at_51235191784",
       "title": "Apple is hiring engineers to build its own AI agent",
       "url": "https://www.theverge.com/tech/1038227/apple-ai-agent-engineer-job-listing",
-      "summary": "Apple is working on its own AI agent that can perform a range of tasks for you, including browsing the web, working across apps, writing code, and calling services. That's according to a job listing spotted by Bloomberg, which says Apple is looking for an engineer to lead the creation of an agentic AI assistant. An AI agent from Apple...",
+      "summary": "Apple is working on its own AI agent that can perform a range of tasks for you, including browsing the web, working across apps, writing code, and calling services. That's according to a now-removed job listing spotted by Bloomberg, which said Apple is looking for an engineer to lead the creation of an agentic AI assistant. An AI agent...",
       "source": "Emma Roth via The Verge - Artificial Intelligences",
       "image": "https://www.inoreader.com/camo/s8OTBziSHcj2Jzb2gOJoQgNHj5fVJ7Nf2fPlo-W3fZjk,q80,480x400,pf,b64/aHR0cHM6Ly9wbGF0Zm9ybS50aGV2ZXJnZS5jb20vd3AtY29udGVudC91cGxvYWRzL3NpdGVzLzIvMjAyNi8wOS9EU0MwNDIzOS5qcGc_cXVhbGl0eT05MCZzdHJpcD1hbGwmY3JvcD0wLDAsMTAwLDEwMA"
     },
@@ -1360,246 +1600,6 @@
       "summary": "PREVIEW: Runway teased Diffusion-UI, a research app where an AI model generates an interface in real-time as a user clicks or types.Your browser does not support the video tag.🔗 View on Twitter💬11🔄0❤️76👀3593📊17⚡ Powered by xgo.ing",
       "source": "The Rundown AI (@TheRundownAI) via The Rundown AI(@TheRundownAI)",
       "image": ""
-    },
-    {
-      "id": "at_51210488708",
-      "title": "Pedestal AI raises $4.7 million to agentify the supply chain",
-      "url": "https://techcrunch.com/2026/11/17/pedestal-ai-raises-4-7-million-to-agentify-the-supply-chain/",
-      "summary": "The company uses agentic AI to make supply chains faster and more reliable.",
-      "source": "Russell Brandom via AI | TechCrunch",
-      "image": "https://www.inoreader.com/camo/sZNgAJBhr0x-9ee_zjXJqainP9i5EPP30vq6su-BOyMM,q80,480x400,pf,b64/aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNi8xMS9QZWRlc3RhbC1Db2ZvdW5kZXJzLVBob3RvLU5vdmVtYmVyLTIwMjYuanBnP3Jlc2l6ZT0xNjAwLDEwNjc"
-    },
-    {
-      "id": "at_51210488717",
-      "title": "Proton’s Lumo, a privacy-focused alternative to ChatGPT and Claude, arrives on desktop",
-      "url": "https://techcrunch.com/2026/11/17/protons-lumo-a-privacy-focused-alternative-to-chatgpt-and-claude-arrives-on-desktop/",
-      "summary": "Proton's new Lumo Desktop app for Windows, Mac, and Linux lets users automate tasks across files and connected apps, with granular controls over what its AI can access.",
-      "source": "Sarah Perez via AI | TechCrunch",
-      "image": "https://www.inoreader.com/camo/sdR12cFCDiz9KfuutSJR2gX3fM72d52RBTKZY2HGsnaI,q80,480x400,pf,b64/aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNS8wNy9MdW1vLWJ5LXByb3Rvbi5qcGVnP3Jlc2l6ZT0xNjAwLDgwMA"
-    },
-    {
-      "id": "at_51210488722",
-      "title": "AI models can be tricked into identifying civilians as military targets by telling them it’s a game",
-      "url": "https://techcrunch.com/2026/11/17/ai-models-can-be-tricked-into-identifying-civilians-as-military-targets-by-telling-them-its-a-game/",
-      "summary": "Vals, a San Francisco-based AI evaluation startup, tested whether leading AI models could be manipulated into participating in autonomous warfare. They usually compiled.",
-      "source": "Kirsten Korosec, Rebecca Bellan via AI | TechCrunch",
-      "image": "https://www.inoreader.com/camo/sQKBzsQAxwE5qU-bcoiNCJTtDyeNJUARMs7CeldVg9Nw,q80,480x400,pf,b64/aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNi8xMS9HZXR0eUltYWdlcy0xNjcwODcxOTQzLmpwZz9yZXNpemU9MTYwMCw5MDA"
-    },
-    {
-      "id": "at_51209939130",
-      "title": "NEW: Jensen Huang issues first statement since resigning from Nvidia. \"I did not live up to the st...",
-      "url": "https://x.com/TheRundownAI/status/2122724004611997715",
-      "summary": "NEW: Jensen Huang issues first statement since resigning from Nvidia. \"I did not live up to the standards expected of everyone at NVIDIA, and I have made serious mistakes in my personal life. I created problems for the Board that I deeply regret. I own my mistakes completely, and I am committed to cooperating with the Board’s independent investigation.\"On...",
-      "source": "The Rundown AI (@TheRundownAI) via The Rundown AI(@TheRundownAI)",
-      "image": ""
-    },
-    {
-      "id": "at_51209902734",
-      "title": "Jensen Huang says he would be ‘honored’ if allowed to return as Nvidia CEO",
-      "url": "https://techcrunch.com/2026/11/17/jensen-huang-says-he-would-be-honored-if-allowed-to-return-as-nvidia-ceo/",
-      "summary": "In the first public statement since his resignation, Nvidia founder Jensen Huang signaled his willingness to return as CEO.",
-      "source": "Russell Brandom via AI | TechCrunch",
-      "image": "https://www.inoreader.com/camo/s9GyvdC5p54H3ypub_edzGGjYdRLn0F_rXTepRm1llRI,q80,480x400,pf,b64/aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNi8wMS9HZXR0eUltYWdlcy0yMjU2ODEzMjQwLmpwZz9yZXNpemU9MTYwMCwxMDY3"
-    },
-    {
-      "id": "at_51209902739",
-      "title": "Daydream’s new AI agent acts as your personal stylist — and can shop for you, too",
-      "url": "https://techcrunch.com/2026/11/17/daydreams-new-ai-agent-acts-as-your-personal-stylist-and-can-shop-for-you-too/",
-      "summary": "Daydream's new AI shopping agent can remember your style, virtually try on clothes, plan outfits around your wardrobe, track sales, and complete purchases.",
-      "source": "Sarah Perez via AI | TechCrunch",
-      "image": "https://www.inoreader.com/camo/si0h0qpTcSZKFLOCsTiJRJylRVI1tvMnnbBXZYSnXOxE,q80,480x400,pf,b64/aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNi8xMS8yZGF5ZHJlYW0tYWdlbnQtMS5qcGVnP3c9MTAyNA"
-    },
-    {
-      "id": "at_51209800803",
-      "title": "AI agents are coming to help hire, schedule, and manage frontline workers as Fountain launches Orchestra",
-      "url": "https://venturebeat.com/orchestration/ai-agents-are-coming-to-help-hire-schedule-and-manage-frontline-workers-as-fountain-launches-orchestra",
-      "summary": "A manager trying to cover a vacant shift or revive an unanswered job application does not need another dashboard showing that work has stalled. The immediate need is someone—or something—to complete the follow-up.Read more",
-      "source": "[email protected] (Carl Franzen) via VentureBeat",
-      "image": "https://www.inoreader.com/camo/sCdbENycp9JZTxDgdKpIjyqnmHRAAVDhR72MvDKMfQ_M,q80,480x400,pf,b64/aHR0cHM6Ly9pbWFnZXMuY3RmYXNzZXRzLm5ldC9qZHR3cWh6dmMybjEvMjZKY3lBN0VaQmhIQ0pqTFNlVjVuaS9jN2ZkMDI1OTk1M2I0NDg5M2ZmYjQwNTY0ZDYzNGM2My9SZXRyb19QaXhlbF9DaGVja291dF9Gb3VudGFpbl9TY2VuZS5wbmc_dz0xNjAwJnE9ODA"
-    },
-    {
-      "id": "at_51209528053",
-      "title": "Local and offline edge AI gets a boost as SiMa.ai launches Palette 3.0 with 3.5X faster text generation and a new model browser",
-      "url": "https://venturebeat.com/infrastructure/local-and-offline-edge-ai-gets-a-boost-as-sima-ai-launches-palette-3-0-with-3-5x-faster-text-generation-and-a-new-model-browser",
-      "summary": "For companies putting AI into a robot, drone or industrial camera, a model's intelligence is only part of the problem. The device also has to process sensor inputs, generate useful responses and keep other applications running without exhausting its memory or power supply.Read more",
-      "source": "[email protected] (Carl Franzen) via VentureBeat",
-      "image": "https://www.inoreader.com/camo/sFgsgNjKqlliJD-JAkXICh0rpEl-bkpFo9gHw10yWtpk,q80,480x400,pf,b64/aHR0cHM6Ly9pbWFnZXMuY3RmYXNzZXRzLm5ldC9qZHR3cWh6dmMybjEvMXFDM0czd1BYblBoT0dEQ2IwVlgyUC9lNzQ4NjIwMDM4ZTM2YzAwMTJhMmVmOWNiOWJhNDQ1Zi9BSS1Qb3dlcmVkX0NvbnN0cnVjdGlvbl9Ecm9uZV9JbnNwZWN0aW9uLnBuZz93PTE2MDAmcT04MA"
-    },
-    {
-      "id": "at_51209490617",
-      "title": "The DOJ says it’s investigating Megaspeed",
-      "url": "https://www.theverge.com/policy/1035410/doj-megaspeed-nvidia-investigation-update",
-      "summary": "The Justice and Commerce Departments said that they are investigating Megaspeed, the Singapore-based data center company intertwined with the resignation of Nvidia CEO Jensen Huang, after reporting suggested an investigation had been halted last year. \"While we don't typically comment on ongoing investigations, it is in the public interest...",
-      "source": "Stevie Bonifield via The Verge - Artificial Intelligences",
-      "image": "https://www.inoreader.com/camo/syq0KEVwX7qTjv7ebNnOsqeoaEWANKkBTrjAMBknA-Gw,q80,480x400,pf,b64/aHR0cHM6Ly9wbGF0Zm9ybS50aGV2ZXJnZS5jb20vd3AtY29udGVudC91cGxvYWRzL3NpdGVzLzIvY2hvcnVzL3VwbG9hZHMvY2hvcnVzX2Fzc2V0L2ZpbGUvMjU0NjE3MjQvU1RLNDMyX0dvdmVybm1lbnRfX0NWaXJnaW5pYV9CLmpwZz9xdWFsaXR5PTkwJnN0cmlwPWFsbCZjcm9wPTAsMCwxMDAsMTAw"
-    },
-    {
-      "id": "at_51209395454",
-      "title": "Jensen Huang says he’s willing to return as Nvidia CEO",
-      "url": "https://www.theverge.com/tech/1035420/jensen-huang-nvidia-return-as-ceo-statement",
-      "summary": "Jensen Huang, who resigned as Nvidia's CEO last week, would be willing to return as CEO if the company's board of directors wanted it, he said in a statement reported on by The Wall Street Journal. \"Since my departure, I've seen an outpouring of calls from Nvidia's employees, investors, business partners, and customers for me to return...",
-      "source": "Jay Peters via The Verge - Artificial Intelligences",
-      "image": "https://www.inoreader.com/camo/s8fjsvSYjZ_tety4S1tOuVUk57MPRFOMWq2SXfPkRZ0k,q80,480x400,pf,b64/aHR0cHM6Ly9wbGF0Zm9ybS50aGV2ZXJnZS5jb20vd3AtY29udGVudC91cGxvYWRzL3NpdGVzLzIvMjAyNi8xMS9OdmlkaWFfSmVuc2VuX2h1YW5nXzA0LmpwZz9xdWFsaXR5PTkwJnN0cmlwPWFsbCZjcm9wPTAsMCwxMDAsMTAw"
-    },
-    {
-      "id": "at_51209358017",
-      "title": "Read more: https://t.co/D1hjgReevN",
-      "url": "https://x.com/TheRundownAI/status/2122714173889003997",
-      "summary": "Read more: tech.therundown.ai/p/the-us-has-a…💬0🔄0❤️2👀1064⚡ Powered by xgo.ing",
-      "source": "The Rundown AI (@TheRundownAI) via The Rundown AI(@TheRundownAI)",
-      "image": ""
-    },
-    {
-      "id": "at_51209358026",
-      "title": "Top stories in tech today: - Chase software bug jams U.S. banks - Instagram spins DMs into Direct, ...",
-      "url": "https://x.com/TheRundownAI/status/2122714166574129556",
-      "summary": "Top stories in tech today:- Chase software bug jams U.S. banks- Instagram spins DMs into Direct, again- Amazon’s Starlink rival loses 40 satellites- Hyperscale data centers rival Denmark’s emissions💬8🔄0❤️22👀3216📊9⚡ Powered by xgo.ing",
-      "source": "The Rundown AI (@TheRundownAI) via The Rundown AI(@TheRundownAI)",
-      "image": "https://www.inoreader.com/camo/slaRUAadVHOuAmKubZvhVNTIht21FWGMISVTaoFGQbH8,q80,480x400,pf,b64/aHR0cHM6Ly9wYnMudHdpbWcuY29tL21lZGlhL0hYVmxTQnZYUUFBRjhDei5wbmc"
-    },
-    {
-      "id": "at_51209038096",
-      "title": "Your next holiday shopper might not be human",
-      "url": "https://venturebeat.com/infrastructure/your-next-holiday-shopper-might-not-be-human",
-      "summary": "Presented by AudioEyeRead more",
-      "source": "via VentureBeat",
-      "image": "https://www.inoreader.com/camo/sq00po6ht4W5eugsar67wVZKIwLIr0ZIbyW1j7VT7N9M,q80,480x400,pf,b64/aHR0cHM6Ly9pbWFnZXMuY3RmYXNzZXRzLm5ldC9qZHR3cWh6dmMybjEvNEFvdG4yd25sTExnUW44a0ptMEVYaC81MzA5NWM0YjA4MDdjMzdjODYxZTNiZTJkZTM2NmExYy9jb25mdXNlZF9haV9zaG9wcGVyLmpwZz93PTE2MDAmcT04MA"
-    },
-    {
-      "id": "at_51208699947",
-      "title": "Voyage Labs raises $12 million for a specialized AI travel assistant",
-      "url": "https://techcrunch.com/2026/11/17/voyage-labs-raises-12-million-for-a-specialized-ai-travel-assistant/",
-      "summary": "Voyage Labs’ flagship product is called Atlas, meant to work as a personal assistant for your trip-planning, available today in private beta.",
-      "source": "Russell Brandom via AI | TechCrunch",
-      "image": "https://www.inoreader.com/camo/sYCkmNtCxRjIR4C50MTT2WB5KCz68cH86WMs9tBwMAmU,q80,480x400,pf,b64/aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNi8xMS9TY3JlZW5zaG90LTIwMjYtMTEtMTMtYXQtMTIuMzIuNDEtUE0uanBnP3c9OTQy"
-    },
-    {
-      "id": "at_51208699956",
-      "title": "Isomorphic Labs raises $5B as it looks to take drug candidates to clinical trials",
-      "url": "https://techcrunch.com/2026/11/17/isomorphic-labs-raises-5b-as-it-looks-to-take-drug-candidates-to-clinical-trials/",
-      "summary": "Isomorphic Labs, the AI drug-discovery platform that was spun out of Google’s DeepMind in 2021, has raised $5 billion in a Series C funding round.",
-      "source": "Ram Iyer via AI | TechCrunch",
-      "image": "https://www.inoreader.com/camo/sJepTRyfvd1nHhDqOuDSRiDYoCLH2qKWgiwdZLredNWU,q80,480x400,pf,b64/aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNC8xMi9HZXR0eUltYWdlcy0yMTUxNDY3NTMxLmpwZz9yZXNpemU9MTYwMCwxMDY3"
-    },
-    {
-      "id": "at_51208699959",
-      "title": "Science Corporation’s brain tech is worth $3.5 billion after new funding",
-      "url": "https://techcrunch.com/2026/11/17/science-corporations-brain-tech-is-worth-3-5-billion-after-new-funding/",
-      "summary": "Science Corp. raised a $400 million Series D to scale up its anti-blindness business.",
-      "source": "Tim Fernholz via AI | TechCrunch",
-      "image": "https://www.inoreader.com/camo/s5atspBOxtB-xWp0SNq2eR4wayD1Qj_iFXh8NpbxHOUA,q80,480x400,pf,b64/aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNi8xMC81NTU4ODM3MTM4NV9lYjJlMzE2ZDUyX28uanBnP3Jlc2l6ZT0xNjAwLDEwNjc"
-    },
-    {
-      "id": "at_51208104396",
-      "title": "Nvidia’s first big move after Jensen Huang’s exit targets national security",
-      "url": "https://techcrunch.com/2026/11/17/nvidias-first-big-move-after-jensen-huangs-exit-targets-national-security/",
-      "summary": "The new standing committee will give board-level oversight of national security policies, export control compliance, and global trade risks, the company said.",
-      "source": "Kirsten Korosec via AI | TechCrunch",
-      "image": "https://www.inoreader.com/camo/snJK2-1FPutKQGHhbZWNPy5SDnB6F-F0YI1cEODZOTcQ,q80,480x400,pf,b64/aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNC8xMC9HZXR0eUltYWdlcy0yMDg3MzM1NDc1LmpwZz9yZXNpemU9MTYwMCwxMDY1"
-    },
-    {
-      "id": "at_51208104410",
-      "title": "Spotify’s new tool aims to stop deepfakes from being attributed to real artists",
-      "url": "https://techcrunch.com/2026/11/17/spotifys-new-tool-aims-to-stop-deepfakes-from-being-attributed-to-real-artists/",
-      "summary": "The update comes as Billboard reported last month that Sony Music had requested the removal of more than 260,000 deepfake songs from digital platforms, nearly double the number the label disclosed in March.",
-      "source": "Aisha Malik via AI | TechCrunch",
-      "image": "https://www.inoreader.com/camo/sMHVgd8tStE-WlDGmcgx-4imCQKqL9UePfCA3At2--xE,q80,480x400,pf,b64/aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNi8xMS9IZXJvLWFzc2V0LnBuZz9yZXNpemU9MTYwMCw5MDA"
-    },
-    {
-      "id": "at_51207234169",
-      "title": "Alibaba’s Qwen4-Max cuts AI task costs, but benchmarks show an uneven challenge to frontier rivals",
-      "url": "https://venturebeat.com/technology/alibabas-qwen4-max-cuts-ai-task-costs-but-benchmarks-show-an-uneven-challenge-to-frontier-rivals",
-      "summary": "Alibaba is making a practical pitch for its latest flagship AI model: businesses should be able to get more work done for less money, even if the model does not lead the overall intelligence rankings.Read more",
-      "source": "[email protected] (Carl Franzen) via VentureBeat",
-      "image": "https://www.inoreader.com/camo/s-gNK6jfdbREG5ZZuXTzdv5YqsioYyj-zhbetnkVAsdc,q80,480x400,pf,b64/aHR0cHM6Ly9pbWFnZXMuY3RmYXNzZXRzLm5ldC9qZHR3cWh6dmMybjEvNzNMY0tWNnNRZmp1RmFjaHhvR0RBRC8yNDRiYTJiNzdkODhmOTg1NDE0M2U5MzBjYzZjNTM5My80NzE0MTg2Ny1jZGUzLTQ5ZmYtYjhlMy01NGViNDhlMDY3NTIucG5nP3c9MTYwMCZxPTgw"
-    },
-    {
-      "id": "at_51207104955",
-      "title": "Read more: https://t.co/4twSUkIjd6",
-      "url": "https://x.com/TheRundownAI/status/2122653544188637678",
-      "summary": "Read more: therundownai.beehiiv.com/p/california-t…💬0🔄0❤️4👀1115📊1⚡ Powered by xgo.ing",
-      "source": "The Rundown AI (@TheRundownAI) via The Rundown AI(@TheRundownAI)",
-      "image": ""
-    },
-    {
-      "id": "at_51207104968",
-      "title": "Top stories in AI today: - California takes OpenAI to court over agent escapes - Trump set to crown...",
-      "url": "https://x.com/TheRundownAI/status/2122653539205792156",
-      "summary": "Top stories in AI today:- California takes OpenAI to court over agent escapes- Trump set to crown AI ‘national champions’- Make your AI usage go further with these tips- OpenAI tracks how scientists really use ChatGPT💬8🔄1❤️16👀3292📊9⚡ Powered by xgo.ing",
-      "source": "The Rundown AI (@TheRundownAI) via The Rundown AI(@TheRundownAI)",
-      "image": "https://www.inoreader.com/camo/sTMgl9whfEvMYlo8Dr-6NUcynC_woJCOZz2pagpv2ft0,q80,480x400,pf,b64/aHR0cHM6Ly9wYnMudHdpbWcuY29tL21lZGlhL0hYVXVKSmdXd0FFZXhOZC5wbmc"
-    },
-    {
-      "id": "at_51202080255",
-      "title": "Cybersecurity AI startup Corma reaches $1B valuation in about 3 months",
-      "url": "https://techcrunch.com/2026/11/16/cybersecurity-ai-startup-corma-reaches-1b-valuation-in-about-3-months/",
-      "summary": "Three months since introducing its product, AI cybersecurity startup Corba has raised a $125 million Series A at a $1 billion valuation led by NEA.",
-      "source": "Julie Bort via AI | TechCrunch",
-      "image": "https://www.inoreader.com/camo/s4b5VDn2kc31pKuSGHIYG3JRyxxxzvefFiqIY_Ch-jSc,q80,480x400,pf,b64/aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNi8xMC9OZXR3b3JrZWQtQUktc3dhcm0td2l0aC1nbG93aW5nLW5vZGVzLnBuZz9yZXNpemU9MTYwMCw4MDA"
-    },
-    {
-      "id": "at_51201512786",
-      "title": "Tech leaders are convinced that Jensen Huang’s exit was a plot against him",
-      "url": "https://www.theverge.com/tech/1035027/tech-leaders-nvidia-jensen-huang-theories",
-      "summary": "Jensen Huang's stunning resignation from Nvidia after more than 33 years has sent shockwaves throughout the tech industry. Now prominent figures are calling for Huang's reinstatement, and many are also hopping on board with a theory spreading throughout Silicon Valley: that the scandal is the result of a plot against the former CEO. At...",
-      "source": "Emma Roth via The Verge - Artificial Intelligences",
-      "image": "https://www.inoreader.com/camo/swE9Egct0o7uEQFcFGPTranVIRxqPteyOkbcUSIsf0lo,q80,480x400,pf,b64/aHR0cHM6Ly9wbGF0Zm9ybS50aGV2ZXJnZS5jb20vd3AtY29udGVudC91cGxvYWRzL3NpdGVzLzIvMjAyNi8xMS9nZXR0eWltYWdlcy0yMjk5NjQ1MjkwLmpwZz9xdWFsaXR5PTkwJnN0cmlwPWFsbCZjcm9wPTAsMCwxMDAsMTAw"
-    },
-    {
-      "id": "at_51201336406",
-      "title": "All the questions Nvidia should answer on Tuesday — but probably won’t",
-      "url": "https://techcrunch.com/2026/11/16/all-the-questions-nvidia-should-answer-on-tuesday-but-probably-wont/",
-      "summary": "Nvidia interim CEO and longtime CFO Colette Kress is about to have one of the biggest days of her career on Tuesday when the company reports its third-quarter results. Given the turmoil Nvidia is in, there are a number of questions that Nvidia should answer.",
-      "source": "Julie Bort via AI | TechCrunch",
-      "image": "https://www.inoreader.com/camo/srSHJh4OzB2riBOUaGRecvYwnIHUHLxal4aeqgEzGJiM,q80,480x400,pf,b64/aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMC8wNS9HZXR0eUltYWdlcy0xMTQ3ODM5MDM1LmpwZz9yZXNpemU9MTYwMCwxMDY3"
-    },
-    {
-      "id": "at_51200985401",
-      "title": "Google says attackers built an AI framework to turn software patches into exploits without human intervention",
-      "url": "https://venturebeat.com/security/google-says-attackers-built-an-ai-framework-to-turn-software-patches-into-exploits-without-human-intervention",
-      "summary": "Attackers built an AI framework designed to turn software patches into exploits automatically, Google's Threat Intelligence Group disclosed Monday. Google says this is the first time it has identified attackers using LLM frameworks to fully automate vulnerability discovery and exploitation \"without a human in the loop.\" Researchers discovered it on...",
-      "source": "[email protected] (Louis Columbus) via VentureBeat",
-      "image": "https://www.inoreader.com/camo/s_mFxeLaNTz3FsPAENFOXq0W9O9CpF-0XUXqo-KUHDSc,q80,480x400,pf,b64/aHR0cHM6Ly9pbWFnZXMuY3RmYXNzZXRzLm5ldC9qZHR3cWh6dmMybjEvNmpPdkJ1UzlKTlZCMXZlanJrRHlCdC85NDRkZGZjMGVlNTBhYjUwYzczNGI0N2I5ZWM3NGJhMy9IRVJPX0ZPUl9USEVfQVJUSUNMRS5wbmc_dz0xNjAwJnE9ODA"
-    },
-    {
-      "id": "at_51200518168",
-      "title": "California state AG sues OpenAI over rogue agent incidents",
-      "url": "https://techcrunch.com/2026/11/16/california-state-ag-sues-openai-over-rogue-agent-incidents/",
-      "summary": "The California lawsuit represents one of the first attempts to hold an AI lab legally accountable for a rogue agent incident.",
-      "source": "Russell Brandom via AI | TechCrunch",
-      "image": "https://www.inoreader.com/camo/sR7SM3jkE5zlAkVcClI3yEFO8Wcy4dV_T-FYwJl_24O0,q80,480x400,pf,b64/aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNi8xMS8xOTIwcHgtUm9iX0JvbnRhX2F0X0NlbnRyYWxfQmF5X09wZXJhdGlvbnNfYW5kX01haW50ZW5hbmNlX0ZhY2lsaXR5X29wZW5pbmdfRGVjZW1iZXJfMjAxOC5qcGVnP3Jlc2l6ZT0xNjAwLDEzMDg"
-    },
-    {
-      "id": "at_51200498720",
-      "title": "California sues OpenAI over rogue AI hacking incidents",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/1034815/california-openai-hugging-face-lawsuit",
-      "summary": "California is suing OpenAI after its AI agents broke out of their testing environment and hacked other companies, including Hugging Face. In a lawsuit filed Monday, Attorney General Rob Bonta accuses OpenAI of violating consumer safety law by knowingly developing a \"dangerous product without proper oversight,\" as reported earlier by Reuters....",
-      "source": "Emma Roth via The Verge - Artificial Intelligences",
-      "image": "https://www.inoreader.com/camo/sZm5FiYCIsHcpv3faCveRO5-Oaj-smH5WICc3Lc1tInc,q80,480x400,pf,b64/aHR0cHM6Ly9wbGF0Zm9ybS50aGV2ZXJnZS5jb20vd3AtY29udGVudC91cGxvYWRzL3NpdGVzLzIvMjAyNS8xMC9TVEsxNTVfT1BFTl9BSV80X0NWaXJnaW5pYV9ELnBuZz9xdWFsaXR5PTkwJnN0cmlwPWFsbCZjcm9wPTAsMCwxMDAsMTAw"
-    },
-    {
-      "id": "at_51200498725",
-      "title": "Sam Altman says he wants everyone ‘to have a lot of RAM’",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/1034787/sam-altman-ram-shortage-semafor",
-      "summary": "Sam… thank you. | Image: Getty Images OpenAI CEO Sam Altman is once again addressing his controversial comments on PC RAM purchases. \"I want to be clear, I want people to have a lot of RAM, I think everybody should be able to buy a lot of RAM for their own computer,\" Altman said today. \"I think the home tinkering is great.\" The comments...",
-      "source": "Stevie Bonifield via The Verge - Artificial Intelligences",
-      "image": "https://www.inoreader.com/camo/s537wkMFx_GJUV2v5JVsaUyWaaIkAC2W_BbcNN9D2NhA,q80,480x400,pf,b64/aHR0cHM6Ly9wbGF0Zm9ybS50aGV2ZXJnZS5jb20vd3AtY29udGVudC91cGxvYWRzL3NpdGVzLzIvMjAyNi8wNC9nZXR0eWltYWdlcy0xNzc4NzA1NDM2LmpwZz9xdWFsaXR5PTkwJnN0cmlwPWFsbCZjcm9wPTAsMCwxMDAsMTAw"
-    },
-    {
-      "id": "at_51200352300",
-      "title": "Big Nuclear isn’t worried about the Democrats stopping data centers",
-      "url": "https://www.theverge.com/science/1034694/nuclear-energy-constellation-earnings-data-centers-democrats",
-      "summary": "Constellation's Clinton Clean Energy Center’s single nuclear reactor power plant, July 25, 2025 in Clinton, Illinois. Meta signed a 20-year power purchase agreement with Constellation for the output from the plant. | Image: Getty Images Constellation Energy - America's largest operator of nuclear power plants - does not share Wall Street's...",
-      "source": "Ellen Thomas via The Verge - Artificial Intelligences",
-      "image": "https://www.inoreader.com/camo/s30mO42q-ci8RQrM9qfzFj6C37LyKhfxK9KYmotckLXk,q80,480x400,pf,b64/aHR0cHM6Ly9wbGF0Zm9ybS50aGV2ZXJnZS5jb20vd3AtY29udGVudC91cGxvYWRzL3NpdGVzLzIvMjAyNi8xMS9nZXR0eWltYWdlcy0yMjI3MDI2NjcxLmpwZz9xdWFsaXR5PTkwJnN0cmlwPWFsbCZjcm9wPTAsMCwxMDAsMTAw"
-    },
-    {
-      "id": "at_51200352305",
-      "title": "US data centers now burn more electricity than a midsized country",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/1034668/data-centers-electricity-climate-pollution-study-harvard",
-      "summary": "Fossil fuels are still the biggest source of electricity for hyperscale data centers in the US, a new paper published in the journal Nature Sustainability shows. They likely burn through more electricity collectively than many countries do, resulting in a serious amount of greenhouse gas emissions. The study homes in on hyperscale facilities...",
-      "source": "Justine Calma via The Verge - Artificial Intelligences",
-      "image": "https://www.inoreader.com/camo/sHereR4ZCCv5mEBek29MOwLYf4zomFhpMzGJBhPdGI2Q,q80,480x400,pf,b64/aHR0cHM6Ly9wbGF0Zm9ybS50aGV2ZXJnZS5jb20vd3AtY29udGVudC91cGxvYWRzL3NpdGVzLzIvMjAyNi8wNC9TVEtTNTI4X0RBVEFfQ0VOVEVSU19CLmpwZz9xdWFsaXR5PTkwJnN0cmlwPWFsbCZjcm9wPTAsMCwxMDAsMTAw"
     }
   ]
 }
