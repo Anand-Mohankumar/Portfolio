@@ -1,6 +1,70 @@
 {
-  "updatedAt": "2026-11-19T21:36:06.569544+00:00",
+  "updatedAt": "2026-11-20T03:17:25.826796+00:00",
   "articles": [
+    {
+      "id": "at_51236942428",
+      "title": "8.8 Million NGINX Services Still Potentially Exposed to Critical NGINX2Root Vulnerability",
+      "url": "https://cybersecuritynews.com/nginx2root-vulnerability/",
+      "summary": "Around 8.8 million NGINX services may still be open to the NGINX2Root flaws. Censys live tracker counts 8,823,450 services that run an affected version and offer HTTP/2. Another 441,489 services that were once exposed have since been patched or have turned HTTP/2 off. NGINX2Root is a set of five memory bugs in NGINX that Xint disclosed on 18...",
+      "source": "Guru Baran via Cyber Security News",
+      "image": "https://www.inoreader.com/camo/sRdGsYWhLHDbVRjbtmdmkiICKLbxNLA_DS7zL_ugzdIg,q80,480x400,pf,b64/aHR0cHM6Ly9jeWJlcnNlY3VyaXR5bmV3cy5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjYvMTEvTkdJTlgyUm9vdC53ZWJw"
+    },
+    {
+      "id": "at_51236627516",
+      "title": "Hackers Exploit VMware vCenter 0-Day Since September to Hijack Admin Accounts and Steal VM Data",
+      "url": "https://cybersecuritynews.com/hackers-exploit-vmware-vcenter-0-day/",
+      "summary": "A suspected China-linked espionage group exploited a VMware vCenter Server zero-day in early September 2026, gaining administrator access and stealing files from a Windows virtual machine. Mandiant and Google Threat Intelligence Group (GTIG) attributed the intrusion to ARMORY CASTLE, formerly tracked as UNC5221. Broadcom disclosed the flaw, CVE-2026-123890,...",
+      "source": "Guru Baran via Cyber Security News",
+      "image": "https://www.inoreader.com/camo/s9cjUatUbfPTQB3IJtjdovuFWO0AQiq3Gyc6Ae9XkHKc,q80,480x400,pf,b64/aHR0cHM6Ly9ibG9nZ2VyLmdvb2dsZXVzZXJjb250ZW50LmNvbS9pbWcvYi9SMjl2WjJ4bC9BVnZYc0VoeHBKQ3g0VUZybHIyNEpual9qZGJzb1dtSVB3eVJEUVJxc1NQRnhhRVZoT1Izb2FDREZ4UE9TWTFUTEw0ZUFKSEtyaGIwWlZQbGo1UVRWSWRPTi1DdEtqXy1TWlc4WE1ETXFXYklpQmdXVF9HYXRjZDNMRFI0dDJnZnRZd0JGLUlneDh6M2M2NXh2ZGdiMG9XVU9WWkJpbVk1VzE4V1BkMjlWQ1dnc1ZPd1ZXWkF5M2t6UXo4UDRJMDVLWWpNL3MxNjAwL1ZNd2FyZSUyMHZDZW50ZXIlMjAwLURheV9BUk1PUllfQ0FTVExFX2xhdGVyYWxfbW92ZW1lbnRfYW4ubWF4LTEyMDB4MTIwMC53ZWJw"
+    },
+    {
+      "id": "at_51236282665",
+      "title": "New Windows 11 Narrator Lock Screen 0-Day Allows Attackers to Bypass BitLocker Protections",
+      "url": "https://cybersecuritynews.com/windows-11-narrator-lock-screen-0-day/",
+      "summary": "A newly disclosed Windows 11 zero-day called FastUnlock lets someone with physical access bypass parts of the Windows lock screen and run code without signing in. The flaw affects Narrator, Microsoft’s built-in screen reader, and can expose a running PC even when BitLocker is enabled. The reported bypass does not break BitLocker encryption or...",
+      "source": "Guru Baran via Cyber Security News",
+      "image": "https://www.inoreader.com/camo/scG1nTpwRxLAoXOIwaTCPVsbqMNuMrYBPXrEWi0tUUyQ,q80,480x400,pf,b64/aHR0cHM6Ly9jeWJlcnNlY3VyaXR5bmV3cy5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjYvMTEvV2luZG93cy0xMS0wLURheS53ZWJw"
+    },
+    {
+      "id": "at_51235988050",
+      "title": "VMware patches vCenter zero-day exploited in attacks since September",
+      "url": "https://www.bleepingcomputer.com/news/security/vmware-patches-vcenter-zero-day-exploited-in-attacks-since-september/",
+      "summary": "Broadcom has released security updates to fix a critical VMware vCenter Server authentication bypass vulnerability that Chinese-linked hackers have exploited in zero-day attacks since September 2026. [...]",
+      "source": "Lawrence Abrams via Bleeping Computer",
+      "image": "https://www.inoreader.com/camo/su0nTq4tun70Sm1jaZWZNheI5h16PIl4CXBIpoVhM7KQ,q80,480x400,pf,b64/aHR0cHM6Ly93d3cuYmxlZXBzdGF0aWMuY29tL2NvbnRlbnQvaGwtaW1hZ2VzLzIwMjMvMTAvMjUvVk13YXJlX3JlZC5qcGc"
+    },
+    {
+      "id": "at_51235422004",
+      "title": "Ukrainian authorities arrest four suspects in international ransomware operation",
+      "url": "https://www.scworld.com/brief/ukrainian-authorities-arrest-four-suspects-in-international-ransomware-operation",
+      "summary": "Reported by Bleeping Computer, Ukrainian authorities, in collaboration with the Federal Bureau of Investigation, arrested four suspected members of an international ransomware organization linked to more than $40.5 million in ransom payments.",
+      "source": "SC Staff via Latest articles from SC Magazine",
+      "image": "https://www.inoreader.com/camo/sWBb0yrN33Pl7EgMQAXJifKJQVcO7WyrAKw-mFdAUBcs,q80,480x400,pf,b64/aHR0cHM6Ly9maWxlcy5jeWJlcnJpc2thbGxpYW5jZS5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjUvMTAvQWRvYmVTdG9ja18xNTI4MDY0NjQuanBn"
+    },
+    {
+      "id": "at_51235422006",
+      "title": "MiTM Emulated Android Apps, Keep Calm And Carry On - PSW #953",
+      "url": "https://www.scworld.com/podcast-segment/15260-mitm-emulated-android-apps-keep-calm-and-carry-on-psw-953",
+      "summary": "",
+      "source": "Paul Asadoorian via Latest articles from SC Magazine",
+      "image": "https://www.inoreader.com/camo/sd5-iYdpfcwYOA9UMJm64eBR1HJ98NCqQNkOfNvh1zNI,q80,480x400,pf,b64/aHR0cHM6Ly9maWxlcy5jeWJlcnJpc2thbGxpYW5jZS5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjYvMTEvUFNXXzk1M19UaHVtYm5haWxfUFNXXzE5MjB4MTA4MF82YjE0MTJkMS1kNDM3LTQ4NjEtOGEwMC1kNzRkNDdlZGM5YmMuanBn"
+    },
+    {
+      "id": "at_51235246525",
+      "title": "Chaotic Eclipse Releases FastUnlock, a New Windows Zero-Day Vulnerability",
+      "url": "https://securityaffairs.com/203537/hacking/chaotic-eclipse-releases-fastunlock-a-new-windows-zero-day-vulnerability.html",
+      "summary": "The researcher Chaotic Eclipse released FastUnlock, a new Windows zero-day vulnerability exploiting Narrator to bypass the lock screen. Security researcher Chaotic Eclipse, also known as INFINITE NIGHTMARE, MSNightmare and Nightmare-Eclipse, released a new Windows zero-day vulnerability, dubbed FastUnlock, exploiting Narrator to bypass the...",
+      "source": "Pierluigi Paganini via Security Affairs",
+      "image": "https://www.inoreader.com/camo/sDwPzRwXbx3R_kidHb7C99fDJuEfhTS127UN7Ryzsxfw,q80,480x400,pf,b64/aHR0cHM6Ly9pMC53cC5jb20vc2VjdXJpdHlhZmZhaXJzLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNi8xMS9pbWFnZS01MC5wbmc_cmVzaXplPTIwNDglMkMxMjgwJnNzbD0x"
+    },
+    {
+      "id": "at_51235207092",
+      "title": "Hackers steal data of 1.6 million SBC Medical Group customers",
+      "url": "https://www.bleepingcomputer.com/news/security/hackers-steal-data-of-16-million-sbc-medical-group-customers/",
+      "summary": "SBC Medical Group has warned in a filing with the U.S. Securities and Exchange Commission (SEC) that two cybersecurity incidents exposed sensitive customer and employee information, including personal data belonging to 1.6 million people. [...]",
+      "source": "Bill Toulas via Bleeping Computer",
+      "image": "https://www.inoreader.com/camo/srzoPnoZFV0Q8uj22BUFglzNTLlwqZDw21QZKgNwjZqo,q80,480x400,pf,b64/aHR0cHM6Ly93d3cuYmxlZXBzdGF0aWMuY29tL2NvbnRlbnQvaGwtaW1hZ2VzLzIwMjIvMDgvMjIvaGVhbHRoY2FyZS1jeWJlci5qcGc"
+    },
     {
       "id": "at_51234611827",
       "title": "ASUS warns of critical hard-coded key flaw in Control Center Express",
@@ -1536,70 +1600,6 @@
       "summary": "Attackers exploit a critical ScreenConnect flaw to target MSP technicians, risking downstream clients.",
       "source": "Steve Zurier via Latest articles from SC Magazine",
       "image": "https://www.inoreader.com/camo/siU9FrI-yHqd4C-2E6w9tL7DSWjXVthO1prC8Y2bNhsI,q80,480x400,pf,b64/aHR0cHM6Ly9maWxlcy5jeWJlcnJpc2thbGxpYW5jZS5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjQvMDUvQ29ubmVjdFdpc2VfQWRvYmVTdG9ja0ltYWdlcy1jcm9wcGVkLXNjYWxlZC5qcGc"
-    },
-    {
-      "id": "at_51212692358",
-      "title": "Apple updates macos security to address risks from ai agents",
-      "url": "https://www.scworld.com/brief/apple-updates-macos-security-to-address-risks-from-ai-agents",
-      "summary": "As outlined in TechCrunch, Apple has introduced significant security updates to its macOS platform to mitigate risks associated with the rise of artificial intelligence agents.",
-      "source": "SC Staff via Latest articles from SC Magazine",
-      "image": "https://www.inoreader.com/camo/s-bfV4gGVMH2a_WY1EkRb3z5lXU5-t7MKrYtDcoBNJhU,q80,480x400,pf,b64/aHR0cHM6Ly9maWxlcy5jeWJlcnJpc2thbGxpYW5jZS5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjYvMDIvMDIwNDI2X21hY19vc19maW5kZXIuanBn"
-    },
-    {
-      "id": "at_51212692359",
-      "title": "Sweden privacy regulator challenges proposed facial biometric database",
-      "url": "https://www.scworld.com/brief/sweden-privacy-regulator-challenges-proposed-facial-biometric-database",
-      "summary": "As outlined in Biometric Update, the Swedish privacy regulator, Integritetsskyddsmyndigheten, has formally rejected a government proposal to establish a centralized register for facial biometric data linked to national identity cards and passports.",
-      "source": "SC Staff via Latest articles from SC Magazine",
-      "image": "https://www.inoreader.com/camo/s9Kps5tdVQzQhV1C6Zql9cT28ub6Jyox5ijX_ew6r6WY,q80,480x400,pf,b64/aHR0cHM6Ly9maWxlcy5jeWJlcnJpc2thbGxpYW5jZS5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjUvMDcvMDczMDI1X2ZpbmdlcnByaW50X2lkZW50aXR5LmpwZw"
-    },
-    {
-      "id": "at_51212692362",
-      "title": "European Parliament seeks fundamental rights protections against deepfakes",
-      "url": "https://www.scworld.com/brief/european-parliament-seeks-fundamental-rights-protections-against-deepfakes",
-      "summary": "Deepfakes have emerged as a significant challenge to global institutional integrity and individual rights, prompting the European Parliament to adopt a resolution aimed at curbing the misuse of AI-generated media, according to a recent report by Biometric Update.",
-      "source": "SC Staff via Latest articles from SC Magazine",
-      "image": "https://www.inoreader.com/camo/shujEijm0-x_MA3wdN2D5n74qXSls-6lI3rrpw2doCcQ,q80,480x400,pf,b64/aHR0cHM6Ly9maWxlcy5jeWJlcnJpc2thbGxpYW5jZS5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjUvMDkvQWRvYmVTdG9ja18xMjc1MjkxNzE1LXNjYWxlZC5qcGVn"
-    },
-    {
-      "id": "at_51212692364",
-      "title": "What Uber's breach notice says about giving data to AI vendors",
-      "url": "https://www.scworld.com/perspective/what-ubers-breach-notice-says-about-giving-data-to-ai-vendors",
-      "summary": "Uber's data breach exposes the risks of vendor credentials and sensitive data shared with AI platforms.",
-      "source": "Nukri Basharuli via Latest articles from SC Magazine",
-      "image": "https://www.inoreader.com/camo/s_rRTGGCTBpdrv-YX1n_qaLTQ-oPzcLzRWxPCl4qCkR8,q80,480x400,pf,b64/aHR0cHM6Ly9maWxlcy5jeWJlcnJpc2thbGxpYW5jZS5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjYvMTEvMTExNzI2X3ViZXIuanBn"
-    },
-    {
-      "id": "at_51212121162",
-      "title": "Apple Services Disrupted as NSA Network Goes Down and Equinor Faces Cyberattack",
-      "url": "https://securityaffairs.com/203354/security/apple-outages-add-to-growing-concerns-over-technology-service-disruptions.html",
-      "summary": "Apple and NSA services faced outages as Equinor reported a cyberattack, highlighting the risks facing increasingly connected infrastructure. Apple customers faced widespread service problems on November 17, with issues affecting iCloud, the App Store, Apple Music and AppleCare on Device. The disruption came after a week of technical...",
-      "source": "Pierluigi Paganini via Security Affairs",
-      "image": "https://www.inoreader.com/camo/s9C4wBCuiCH2lTNB7IvT3jB1WtXqSTMLS22kkDHRtslU,q80,480x400,pf,b64/aHR0cHM6Ly9pMC53cC5jb20vc2VjdXJpdHlhZmZhaXJzLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNi8xMS9pbWFnZS00NS5wbmc_dz0xODQyJnNzbD0x"
-    },
-    {
-      "id": "at_51212105656",
-      "title": "Cloud keys leaked in Docker Hub images are stolen within seconds",
-      "url": "https://www.bleepingcomputer.com/news/security/cloud-keys-leaked-in-docker-hub-images-are-stolen-within-seconds/",
-      "summary": "Credentials and access secrets exposed in public Docker Hub images are being extracted and exploited by attackers within as little as eight seconds of publication. [...]",
-      "source": "Bill Toulas via Bleeping Computer",
-      "image": "https://www.inoreader.com/camo/sEF6WAhA5MQzqTHx13_LSEUhhdgDDoKUrZoHKyyLbSSY,q80,480x400,pf,b64/aHR0cHM6Ly93d3cuYmxlZXBzdGF0aWMuY29tL2NvbnRlbnQvaGwtaW1hZ2VzLzIwMjYvMTEvMTcvRG9ja2VyLmpwZw"
-    },
-    {
-      "id": "at_51211817411",
-      "title": "Japan takes Fugaku supercomputer offlline after cyberattack",
-      "url": "https://www.bleepingcomputer.com/news/security/japan-takes-fugaku-supercomputer-offlline-after-cyberattack/",
-      "summary": "The Fugaku supercomputer operated by Japan's RIKEN Center for Computational Science has been taken offline following a security breach. [...]",
-      "source": "Bill Toulas via Bleeping Computer",
-      "image": "https://www.inoreader.com/camo/snlWoHVtzg-8J0wrtRzEsO_xGEKdExlqr19S0cuh5zp0,q80,480x400,pf,b64/aHR0cHM6Ly93d3cuYmxlZXBzdGF0aWMuY29tL2NvbnRlbnQvaGwtaW1hZ2VzLzIwMjYvMTEvMTcvUklLRU4uanBn"
-    },
-    {
-      "id": "at_51211591934",
-      "title": "Researchers Claim Two RCE Exploits That Bypass Telegram’s New Android Defenses",
-      "url": "https://thehackernews.com/2026/11/researchers-claim-two-rce-exploits-that.html",
-      "summary": "A malicious widget can bypass the security filter that Telegram added to its Android app last week and run code outside it, according to NebuSec, a security company. Widgets are small interactive blocks that bots send inside chat messages, and their JavaScript runs on the user's phone. The researchers ran their demonstration on a Telegram test server,...",
-      "source": "[email protected] (The Hacker News) via The Hacker News",
-      "image": "https://www.inoreader.com/camo/sHwBCZxwx6Y4wfgAwIYAzxXzz7BUqDzsNsF5o-IpotlY,q80,480x400,pf,b64/aHR0cHM6Ly9ibG9nZ2VyLmdvb2dsZXVzZXJjb250ZW50LmNvbS9pbWcvYi9SMjl2WjJ4bC9BVnZYc0VncFZsblFyeFEtUURhd29zeE5wUWRjUHRJVHpVUUt1WWVxVXRPazBnY3R3UmhpLThQOVFpXzlMNzJjU3drSFJkR05TOTRIYUlESEVrcWViME5UUHczbUlaeUZzdE4zWk0xRmxVb013ZUtQTno0aVRrQWt4bHhGU05kRTkyREFGbGZMTUZlMGdUWFdFNzhlT0hST1NiSVNWTWdkbUZPZVZobTBTUzItMXdYck54UEdrblRWTUdyb1EwcFJxWWcvczE2MDAvdGVsZWdyYW0tcmNlLmpwZw"
     }
   ]
 }

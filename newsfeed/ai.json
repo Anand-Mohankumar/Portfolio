@@ -1,6 +1,62 @@
 {
-  "updatedAt": "2026-11-19T21:36:06.667959+00:00",
+  "updatedAt": "2026-11-20T03:17:25.666899+00:00",
   "articles": [
+    {
+      "id": "at_51236476726",
+      "title": "Apple may be developing its own AI agent that runs your Mac",
+      "url": "https://techcrunch.com/2026/11/19/apple-may-be-developing-its-own-ai-agent-that-runs-your-mac/",
+      "summary": "The iPhone maker appears to be building agents that can compete with the likes of Meta Muse, Instinct, Claude, and OpenAI Dots.",
+      "source": "Lucas Ropek via AI | TechCrunch",
+      "image": "https://www.inoreader.com/camo/szNfdIkvIG1ZHZv4v9hP0kyK2_e1B_3-aiTmDv_xZYag,q80,480x400,pf,b64/aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNi8wNi9pcGhvbmUtdXNiLWNhYmxlLmpwZz9yZXNpemU9MTYwMCwxMDY3"
+    },
+    {
+      "id": "at_51236134551",
+      "title": "Anthropic’s 7 founders cashed out nearly $2B in record-breaking IPO",
+      "url": "https://techcrunch.com/2026/11/19/anthropics-7-founders-cashed-out-nearly-2b-in-record-breaking-ipo/",
+      "summary": "At the upgraded $83/share IPO price, Anthropic's seven founders each pocketed $280 million, while the company nabbed nearly $105 billion.",
+      "source": "Julie Bort via AI | TechCrunch",
+      "image": "https://www.inoreader.com/camo/sml2rnEZy3ENpuu59FvlJQHMgxnd3GDol-v79SMXMiK8,q80,480x400,pf,b64/aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNi8xMS9hbnRyaG9waWMtb3BlbmluZ2RheS1nZXR0eS5qcGc_cmVzaXplPTE2MDAsMTA2OA"
+    },
+    {
+      "id": "at_51235488524",
+      "title": "REPORT: Apple is hiring to build an AI agent that runs your computer on its own, according to new Ap...",
+      "url": "https://x.com/TheRundownAI/status/2123551782341107813",
+      "summary": "REPORT: Apple is hiring to build an AI agent that runs your computer on its own, according to new Apple job listings and Bloomberg.“Imagine an AI agent that can use a computer the way a capable person does,” one posting says.Bloomberg reported that Apple is aiming to launch the agent as soon as late 2027 and has made it harder for rival tools to control...",
+      "source": "The Rundown AI (@TheRundownAI) via The Rundown AI(@TheRundownAI)",
+      "image": "https://www.inoreader.com/camo/sup_5f2zjH5SjJuaDmNgYbpD7lPV53kV59wpOEy76a2U,q80,480x400,pf,b64/aHR0cHM6Ly9wYnMudHdpbWcuY29tL21lZGlhL0hYaGRvemhYa0FFOW5GMy5qcGc"
+    },
+    {
+      "id": "at_51235287222",
+      "title": "Meta’s new Muse Charm device may cost $300",
+      "url": "https://techcrunch.com/2026/11/19/metas-new-muse-charm-device-may-cost-300/",
+      "summary": "Meta hasn't denied the reporting from The Information, saying only that it will \"have more to share soon\" about its upcoming AI wearable.",
+      "source": "Lucas Ropek via AI | TechCrunch",
+      "image": "https://www.inoreader.com/camo/sActP57k05z2kPMQJRW9IUgyH64T3MhEqTWAghWeiLTI,q80,480x400,pf,b64/aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNi8wOS9tZXRhLW11c2UtY2hhcm0ucG5nP3Jlc2l6ZT0xNjAwLDg4OQ"
+    },
+    {
+      "id": "at_51235191784",
+      "title": "Apple is hiring engineers to build its own AI agent",
+      "url": "https://www.theverge.com/tech/1038227/apple-ai-agent-engineer-job-listing",
+      "summary": "Apple is working on its own AI agent that can perform a range of tasks for you, including browsing the web, working across apps, writing code, and calling services. That's according to a job listing spotted by Bloomberg, which says Apple is looking for an engineer to lead the creation of an agentic AI assistant. An AI agent from Apple...",
+      "source": "Emma Roth via The Verge - Artificial Intelligences",
+      "image": "https://www.inoreader.com/camo/s8OTBziSHcj2Jzb2gOJoQgNHj5fVJ7Nf2fPlo-W3fZjk,q80,480x400,pf,b64/aHR0cHM6Ly9wbGF0Zm9ybS50aGV2ZXJnZS5jb20vd3AtY29udGVudC91cGxvYWRzL3NpdGVzLzIvMjAyNi8wOS9EU0MwNDIzOS5qcGc_cXVhbGl0eT05MCZzdHJpcD1hbGwmY3JvcD0wLDAsMTAwLDEwMA"
+    },
+    {
+      "id": "at_51234975735",
+      "title": "A brief history of Nvidia’s recent stock fluctuations",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1038063/nvidia-stock-market-price-earnings",
+      "summary": "Traders work on the floor of the New York Stock Exchange during morning trading on November 18, 2026 in New York City. | Image: Getty Images \"We've got this,\" Colette Kress, interim CEO of Nvidia, said Tuesday night as she closed out the embattled chip company's third quarter earnings call. By Thursday, the company's stock price was hovering...",
+      "source": "Ellen Thomas via The Verge - Artificial Intelligences",
+      "image": "https://www.inoreader.com/camo/soKQoCDaTUChac5Oezvr3KhncE8oohyNQ4Ihr-xJ_zMQ,q80,480x400,pf,b64/aHR0cHM6Ly9wbGF0Zm9ybS50aGV2ZXJnZS5jb20vd3AtY29udGVudC91cGxvYWRzL3NpdGVzLzIvMjAyNi8xMS9nZXR0eWltYWdlcy0yMzA1NzE2ODIzLmpwZz9xdWFsaXR5PTkwJnN0cmlwPWFsbCZjcm9wPTAsMCwxMDAsMTAw"
+    },
+    {
+      "id": "at_51234866199",
+      "title": "These tech outages are giving Y2K, AI agent style",
+      "url": "https://techcrunch.com/2026/11/19/these-tech-outages-are-giving-y2k-ai-agent-style/",
+      "summary": "Are the recent outages in the airline booking systems, banking platforms, and productivity platforms really a coincidence? There's actually likely something deeper going on, cybersecurity experts say.",
+      "source": "Dominic-Madori Davis via AI | TechCrunch",
+      "image": "https://www.inoreader.com/camo/s5ktN8QnaD2NEF5J5rDW7gFWETOM2dYeGm24EYDO-07Y,q80,480x400,pf,b64/aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNi8xMS9NdWhhcnJlbS1odW5lci5qcGc_cmVzaXplPTE2MDAsMTA2Nw"
+    },
     {
       "id": "at_51234499262",
       "title": "Uber blew through its AI budget, then dialed back context and reasoning in its AI coding tools",
@@ -1544,62 +1600,6 @@
       "summary": "Apple released betas of iOS 27.3, iPadOS 27.3, and macOS 27.3 today, and the company is using the update to test new per device daily usage limits for some Siri AI and Apple Intelligence features, according to MacRumors. Basic Siri commands and requests will remain free and unlimited, but more advanced features that rely on cloud-based...",
       "source": "Andrew Liszewski via The Verge - Artificial Intelligences",
       "image": "https://www.inoreader.com/camo/sq7oMor7GkzRTX42HGikJB1Qo52qSIL7g9IGYKqSz-PA,q80,480x400,pf,b64/aHR0cHM6Ly9wbGF0Zm9ybS50aGV2ZXJnZS5jb20vd3AtY29udGVudC91cGxvYWRzL3NpdGVzLzIvMjAyNi8wNi9zaXJpLWFpLmpwZz9xdWFsaXR5PTkwJnN0cmlwPWFsbCZjcm9wPTAsMCwxMDAsMTAw"
-    },
-    {
-      "id": "at_51199912809",
-      "title": "OpenAI wants to stop deepfakes from overwhelming child abuse tiplines",
-      "url": "https://www.theverge.com/policy/1034527/openai-csam-classifier",
-      "summary": "OpenAI is announcing a tool that it says will help child sexual abuse investigators cut through the noise to find harmful material they can act on quickly. At a Monday press briefing in Washington, DC, OpenAI announced a classifier it says can better detect abusive imagery of kids, including whether it's AI-generated. It's also offering...",
-      "source": "Lauren Feiner via The Verge - Artificial Intelligences",
-      "image": "https://www.inoreader.com/camo/s5LKA_K3kNzP9C4SUAdCVVka5ZN3xDengsBCnXqz5FYk,q80,480x400,pf,b64/aHR0cHM6Ly9wbGF0Zm9ybS50aGV2ZXJnZS5jb20vd3AtY29udGVudC91cGxvYWRzL3NpdGVzLzIvMjAyNi8wOC9TVEsxNTVfT1BFTl9BSV9DVmlyZ2luaWFfQy0xLmpwZz9xdWFsaXR5PTkwJnN0cmlwPWFsbCZjcm9wPTAsMCwxMDAsMTAw"
-    },
-    {
-      "id": "at_51199719200",
-      "title": "Your move @alexandr_wang",
-      "url": "https://x.com/TheRundownAI/status/2122397155482870213",
-      "summary": "Your move @alexandr_wangGrok Bot@botEvery driver needs their crew.Your browser does not support the video tag.🔗 View on Twitter🔗 View Quoted Tweet💬0🔄0❤️26👀3334📊2⚡ Powered by xgo.ing",
-      "source": "The Rundown AI (@TheRundownAI) via The Rundown AI(@TheRundownAI)",
-      "image": "https://www.inoreader.com/camo/sgMpRVf4tHt9Idj7g7sKotI65vvUEFoEh0XXKfpa5-fs,q80,480x400,pf,b64/aHR0cHM6Ly9wYnMudHdpbWcuY29tL21lZGlhL0hYUkU4dHBXNEFBSXAzci5qcGc"
-    },
-    {
-      "id": "at_51199622011",
-      "title": "Sam Altman on Nvidia without Jensen Huang: the industry will be ‘fine’",
-      "url": "https://techcrunch.com/2026/11/16/sam-altman-on-nvidia-without-jensen-huang-the-industry-will-be-fine/",
-      "summary": "OpenAI CEO Sam Altman acknowledged the special role Nvidia CEO Jensen Huang has played in the AI boom, but ultimately thinks the industry will be “fine” without him at the helm.",
-      "source": "Rebecca Bellan via AI | TechCrunch",
-      "image": "https://www.inoreader.com/camo/sT9LVkhUsagvH2me2q6v9pYFbpYT34X4CMn1w1_DrtAY,q80,480x400,pf,b64/aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNi8xMS9HZXR0eUltYWdlcy0yMjk3MjA5MzM4LmpwZz93PTEwMjQ"
-    },
-    {
-      "id": "at_51199588097",
-      "title": "Nvidia’s board is reportedly ‘not considering’ hiring Jensen Huang back",
-      "url": "https://www.theverge.com/tech/1034501/nvidia-board-jensen-huang-not-bringing-back",
-      "summary": "Nvidia's board of directors \"isn't considering\" having Jensen Huang return as CEO, according to a report from CNBC. A source tells the outlet the board \"is focused on an investigation into Huang, and is not in discussions to bring him back.\" Since Huang's resignation last week, tech executives, along with current and former Nvidia employees,...",
-      "source": "Emma Roth via The Verge - Artificial Intelligences",
-      "image": "https://www.inoreader.com/camo/s-B8UE0xDlouRilAOvBAAvJdLdbnZhfdLKRnMXwNux1I,q80,480x400,pf,b64/aHR0cHM6Ly9wbGF0Zm9ybS50aGV2ZXJnZS5jb20vd3AtY29udGVudC91cGxvYWRzL3NpdGVzLzIvY2hvcnVzL3VwbG9hZHMvY2hvcnVzX2Fzc2V0L2ZpbGUvMjU4MzU3MzkvU1RLUDIxMF9KRU5TRU5fSFVBTkdfQi5qcGc_cXVhbGl0eT05MCZzdHJpcD1hbGwmY3JvcD0wLDAsMTAwLDEwMA"
-    },
-    {
-      "id": "at_51199222132",
-      "title": "OpenAI also named Transluce and Goodfire as part of the \"first phase\" of embedded assessments. Tra...",
-      "url": "https://x.com/TheRundownAI/status/2122382376802144728",
-      "summary": "OpenAI also named Transluce and Goodfire as part of the \"first phase\" of embedded assessments. Transluce will check how thorough OpenAI’s alignment tests really are, and Goodfire is bringing tools that read what’s happening inside a model while it trains.A report today from The Information revealed that a senior OpenAI exec floated buying Goodfire this...",
-      "source": "The Rundown AI (@TheRundownAI) via The Rundown AI(@TheRundownAI)",
-      "image": "https://www.inoreader.com/camo/sxLRVgnJ69rMMoV3XqYsLaADnMRoTfKzDrnRJJZuenIM,q80,480x400,pf,b64/aHR0cHM6Ly9wYnMudHdpbWcuY29tL21lZGlhL0hYUTFMbFdYUUFFMzVfNy5qcGc"
-    },
-    {
-      "id": "at_51199222142",
-      "title": "NEW: OpenAI is letting two outside AI safety groups, METR and Apollo Research, look inside its model...",
-      "url": "https://x.com/TheRundownAI/status/2122379979694707134",
-      "summary": "NEW: OpenAI is letting two outside AI safety groups, METR and Apollo Research, look inside its model training to check whether its AI behaves as intended.Apollo is placing six evaluators at OpenAI for four months to test whether models try to work around the systems meant to watch them.METR gets transcripts and model snapshots from OpenAI’s largest...",
-      "source": "The Rundown AI (@TheRundownAI) via The Rundown AI(@TheRundownAI)",
-      "image": "https://www.inoreader.com/camo/sxLRVgnJ69rMMoV3XqYsLaADnMRoTfKzDrnRJJZuenIM,q80,480x400,pf,b64/aHR0cHM6Ly9wYnMudHdpbWcuY29tL21lZGlhL0hYUTFMbFdYUUFFMzVfNy5qcGc"
-    },
-    {
-      "id": "at_51199053276",
-      "title": "FBI says Artex AI open source hacking tool used to breach networks in ‘under three hours’",
-      "url": "https://techcrunch.com/2026/11/16/fbi-says-artex-ai-open-source-hacking-tool-used-to-breach-networks-in-under-three-hours/",
-      "summary": "The FBI says that the open source hacking tool was used in cyberattacks targeting a U.S. IT giant and the South Korean financial industry.",
-      "source": "Zack Whittaker via AI | TechCrunch",
-      "image": "https://www.inoreader.com/camo/sspxYKjNwi_u9TOEPh-kaTgMeez201FL7kkn75ztPYqU,q80,480x400,pf,b64/aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNi8wMi9jaGluYS1oYWNrZXItY29tcHV0ZXItZmxhZy5qcGc_cmVzaXplPTE2MDAsOTAw"
     }
   ]
 }
