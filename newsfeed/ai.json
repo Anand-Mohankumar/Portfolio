@@ -1,6 +1,30 @@
 {
-  "updatedAt": "2026-11-20T03:17:25.666899+00:00",
+  "updatedAt": "2026-11-20T12:54:30.065597+00:00",
   "articles": [
+    {
+      "id": "at_51241290882",
+      "title": "Signal is blocking Gemini and Siri AI from reading your screen",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1038390/signal-blocking-ai-agent-screenshots-mobile-app",
+      "summary": "Signal users on iOS will see this option to toggle blocking screenshots and preventing Siri AI from scanning on-screen content. | Image: Signal Signal is restricting the ability to take screenshots on Android and iOS devices in an effort to prevent AI agents from reading users' messages and other data. The agentic AI capabilities built...",
+      "source": "Jess Weatherbed via The Verge - Artificial Intelligences",
+      "image": "https://www.inoreader.com/camo/s5vQFql6kDm5mRy9x2CY5_zbx4pTDJ20Bbdm-UEUr7CI,q80,480x400,pf,b64/aHR0cHM6Ly9wbGF0Zm9ybS50aGV2ZXJnZS5jb20vd3AtY29udGVudC91cGxvYWRzL3NpdGVzLzIvMjAyNi8xMS9wcm90ZWN0aW5nLXlvdXItcHJpdmFjeS0xLnBuZz9xdWFsaXR5PTkwJnN0cmlwPWFsbCZjcm9wPTAsMCwxMDAsMTAw"
+    },
+    {
+      "id": "at_51241144417",
+      "title": "Read more: https://t.co/a6jTR33djj",
+      "url": "https://x.com/TheRundownAI/status/2123740717289771167",
+      "summary": "Read more: therundownai.beehiiv.com/p/anthropic-pu…💬0🔄0❤️0👀547⚡ Powered by xgo.ing",
+      "source": "The Rundown AI (@TheRundownAI) via The Rundown AI(@TheRundownAI)",
+      "image": ""
+    },
+    {
+      "id": "at_51241144418",
+      "title": "Top stories in AI today: - Anthropic raises $81B in the largest IPO ever - Rowan's Corner: 4 things...",
+      "url": "https://x.com/TheRundownAI/status/2123740711820386506",
+      "summary": "Top stories in AI today:- Anthropic raises $81B in the largest IPO ever- Rowan's Corner: 4 things that stuck with me from DealBook- Use AI to find a job and prepare to get hired- OpenAI’s agents now handle half its long research tasks💬12🔄0❤️6👀1984📊11⚡ Powered by xgo.ing",
+      "source": "The Rundown AI (@TheRundownAI) via The Rundown AI(@TheRundownAI)",
+      "image": "https://www.inoreader.com/camo/sZrFylMqVaWfgvSyZxclrpcFnX5EKoRYT_lezDlpavYc,q80,480x400,pf,b64/aHR0cHM6Ly9wYnMudHdpbWcuY29tL21lZGlhL0hYa0s2NTdXQUFBQTY3eS5qcGc"
+    },
     {
       "id": "at_51236476726",
       "title": "Apple may be developing its own AI agent that runs your Mac",
@@ -1576,30 +1600,6 @@
       "summary": "Fossil fuels are still the biggest source of electricity for hyperscale data centers in the US, a new paper published in the journal Nature Sustainability shows. They likely burn through more electricity collectively than many countries do, resulting in a serious amount of greenhouse gas emissions. The study homes in on hyperscale facilities...",
       "source": "Justine Calma via The Verge - Artificial Intelligences",
       "image": "https://www.inoreader.com/camo/sHereR4ZCCv5mEBek29MOwLYf4zomFhpMzGJBhPdGI2Q,q80,480x400,pf,b64/aHR0cHM6Ly9wbGF0Zm9ybS50aGV2ZXJnZS5jb20vd3AtY29udGVudC91cGxvYWRzL3NpdGVzLzIvMjAyNi8wNC9TVEtTNTI4X0RBVEFfQ0VOVEVSU19CLmpwZz9xdWFsaXR5PTkwJnN0cmlwPWFsbCZjcm9wPTAsMCwxMDAsMTAw"
-    },
-    {
-      "id": "at_51200199667",
-      "title": "NEW: The state of California has sued OpenAI over the July incident in which two of its AI models go...",
-      "url": "https://x.com/TheRundownAI/status/2122415191027863785",
-      "summary": "NEW: The state of California has sued OpenAI over the July incident in which two of its AI models got out of a test environment and broke into Hugging Face's internal systems.Attorney General Rob Bonta alleges the company \"knowingly tested potentially dangerous AI models without proper oversight and safety measures.\"💬2🔄2❤️65👀3420📊8⚡ Powered by xgo.ing",
-      "source": "The Rundown AI (@TheRundownAI) via The Rundown AI(@TheRundownAI)",
-      "image": "https://www.inoreader.com/camo/sJrp9XQHLpdsSLJO1UPA7BbCrXihQMj42oCP6JyK7jUQ,q80,480x400,pf,b64/aHR0cHM6Ly9wYnMudHdpbWcuY29tL21lZGlhL0hYUlU2d21YQUFBMGhOMi5wbmc"
-    },
-    {
-      "id": "at_51200070063",
-      "title": "Trump says ex-Nvidia CEO Jensen Huang’s affair with an alleged Chinese spy did not threaten national security",
-      "url": "https://techcrunch.com/2026/11/16/trump-says-ex-nvidia-ceo-jensen-huangs-affair-with-an-alleged-chinese-spy-did-not-threaten-national-security/",
-      "summary": "Trump contradicted his own government's intelligence officials, who reportedly concluded that Alice Huang is a Chinese spy.",
-      "source": "Amanda Silberling via AI | TechCrunch",
-      "image": "https://www.inoreader.com/camo/srVYOotpXHH3QxVLns9dgZgBSFiCtOrR0xNy4jsosW0E,q80,480x400,pf,b64/aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNi8xMC9HZXR0eUltYWdlcy0yMjk3NTcyMTA5LmpwZz93PTEwMjQ"
-    },
-    {
-      "id": "at_51199912805",
-      "title": "Apple is testing daily usage limits for more complex Siri AI interactions",
-      "url": "https://www.theverge.com/tech/1034581/apple-intelligence-siri-ai-daily-usage-limits-icloud-subscription",
-      "summary": "Apple released betas of iOS 27.3, iPadOS 27.3, and macOS 27.3 today, and the company is using the update to test new per device daily usage limits for some Siri AI and Apple Intelligence features, according to MacRumors. Basic Siri commands and requests will remain free and unlimited, but more advanced features that rely on cloud-based...",
-      "source": "Andrew Liszewski via The Verge - Artificial Intelligences",
-      "image": "https://www.inoreader.com/camo/sq7oMor7GkzRTX42HGikJB1Qo52qSIL7g9IGYKqSz-PA,q80,480x400,pf,b64/aHR0cHM6Ly9wbGF0Zm9ybS50aGV2ZXJnZS5jb20vd3AtY29udGVudC91cGxvYWRzL3NpdGVzLzIvMjAyNi8wNi9zaXJpLWFpLmpwZz9xdWFsaXR5PTkwJnN0cmlwPWFsbCZjcm9wPTAsMCwxMDAsMTAw"
     }
   ]
 }
