@@ -1,6 +1,30 @@
 {
-  "updatedAt": "2026-11-21T09:56:34.242755+00:00",
+  "updatedAt": "2026-11-21T17:33:31.866984+00:00",
   "articles": [
+    {
+      "id": "at_51252130880",
+      "title": "Is selling an AI version of your face to this microdrama startup the future of Hollywood?",
+      "url": "https://techcrunch.com/2026/11/21/is-selling-an-ai-version-of-your-face-to-this-microdrama-startup-the-future-of-hollywood/",
+      "summary": "An actor has licensed his face to a microdrama startup — in a trend that's already popular in China. Experts question the long-term consequences if this becomes a trend in Hollywood, too.",
+      "source": "Lucas Ropek via AI | TechCrunch",
+      "image": "https://www.inoreader.com/camo/sWdXIxfzxHAKpo0dWjJaXnU0IPbl1QdJ9PsLO47SzHCE,q80,480x400,pf,b64/aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNi8xMS9JbmV2aXRhYmxlLUtleS1BcnRfM3g0LWZ1bGwtc2l6ZS5qcGc_cmVzaXplPTE2MDAsMjEzNg"
+    },
+    {
+      "id": "at_51251469366",
+      "title": "Can Anthropic afford to put safety first?",
+      "url": "https://www.theverge.com/podcast/1038701/anthropic-ipo-ai-safety-openai-nvidia-structure",
+      "summary": "Today, I’m talking with Hayden Field, The Verge’s senior AI reporter, about the Anthropic IPO for the third and final episode in our series about AI in real life. The AI lab behind Claude went public on the Nasdaq last Thursday. The numbers are gigantic, but not really that important for this conversation, except to say that Anthropic...",
+      "source": "Nilay Patel via The Verge - Artificial Intelligences",
+      "image": "https://www.inoreader.com/camo/syzQUgmqZWiWCumG8rUGQHMpB1DkIjyOs08tHXeyZKjA,q80,480x400,pf,b64/aHR0cHM6Ly9wbGF0Zm9ybS50aGV2ZXJnZS5jb20vd3AtY29udGVudC91cGxvYWRzL3NpdGVzLzIvMjAyNi8xMS9WUkdfRENEXzExMjFfU2l0ZS5qcGc_cXVhbGl0eT05MCZzdHJpcD1hbGwmY3JvcD0wLDAsMTAwLDEwMA"
+    },
+    {
+      "id": "at_51251111956",
+      "title": "Chess.com’s next move is a new hub for classic games, from mahjong to sudoku",
+      "url": "https://www.theverge.com/games/1038099/chess-classic-games-expansion-ai",
+      "summary": "Chess.com is ready to go a lot bigger than chess. After launching Gambit, a gambling-free poker site, earlier this year, the company is now adding 10 more games: backgammon, checkers, go, hearts, mahjong, shogi, sudoku, solitaire, xiangqi, and a Scrabble alternative called word. They're all part of Chess's new Classic Games platform,...",
+      "source": "Stevie Bonifield via The Verge - Artificial Intelligences",
+      "image": "https://www.inoreader.com/camo/sWi9EKcJRRRA7w7Ioa80gc7B2fveFxd-UQl-eqk2A9W0,q80,480x400,pf,b64/aHR0cHM6Ly9wbGF0Zm9ybS50aGV2ZXJnZS5jb20vd3AtY29udGVudC91cGxvYWRzL3NpdGVzLzIvMjAyNi8xMS9jbGFzc2ljLWdhbWVzLWhvbWUtcGFnZS10cmltbWVkLmpwZWc_cXVhbGl0eT05MCZzdHJpcD1hbGwmY3JvcD0wLDAsMTAwLDEwMA"
+    },
     {
       "id": "at_51247012379",
       "title": "Amazon says attackers' AI agents found and exploited a zero-day in 11 minutes, but no patched release is available",
@@ -1576,30 +1600,6 @@
       "summary": "Gemini's Task mode can help users coordinate calls, log into websites, and even make purchases on the user's behalf.",
       "source": "Lucas Ropek via AI | TechCrunch",
       "image": "https://www.inoreader.com/camo/sOi7Hm20TpXmni1gYx5uDlDgCJT8YAvItE5ku8pS906Q,q80,480x400,pf,b64/aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNi8wNi9nZW1pbmktYXBwLUdldHR5SW1hZ2VzLTIyNzYyMDQ0NzItMS5qcGc_dz0xMDI0"
-    },
-    {
-      "id": "at_51211001109",
-      "title": "Google to keep Gemini chats for 2 months, up from 72 hours, even with history off",
-      "url": "https://techcrunch.com/2026/11/17/google-to-keep-gemini-chats-for-two-months-up-from-72-hours-even-with-history-off/",
-      "summary": "Google's Gemini update extending chat retention will roll out globally over the coming weeks.",
-      "source": "Jagmeet Singh via AI | TechCrunch",
-      "image": "https://www.inoreader.com/camo/soeWSbF7HC8jg0XWEnYXnPpqy2MaXaPoPG2SmbsMdOzk,q80,480x400,pf,b64/aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNi8xMS9nb29nbGUtZ2VtaW5pLWFwcC5qcGc_cmVzaXplPTE2MDAsMTA2Nw"
-    },
-    {
-      "id": "at_51211001117",
-      "title": "As decision model use skyrockets, is customization the next frontier?",
-      "url": "https://techcrunch.com/2026/11/17/as-decision-model-use-skyrockets-is-customization-is-the-next-frontier/",
-      "summary": "Sqwish Labs has a new wrinkle on the decision model: Train it with your own data to max its capabilities.",
-      "source": "Tim Fernholz via AI | TechCrunch",
-      "image": "https://www.inoreader.com/camo/sgWzHuQggkZ4SRaI0Xc4QsXa3nY8IErXsqgIY9bgCMDw,q80,480x400,pf,b64/aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNi8xMS9hdHRhY2htZW50LTEuanBlZz9yZXNpemU9MTYwMCw5NzM"
-    },
-    {
-      "id": "at_51210982971",
-      "title": "Google’s Spark AI agent becomes ‘Tasks’ — and now it’s free",
-      "url": "https://www.theverge.com/tech/1035756/google-spark-ai-tasks-free",
-      "summary": "You can now switch from the “Chat” toggle to “Tasks.” | Image: Google Google is rebranding its Spark AI agent as \"Tasks\" and making it free to use. The feature, which is powered by Google's new Gemini 4 Hydrogen AI model, can do things like create meal plans, manage your calendar, and dig through your emails to find recurring expenses...",
-      "source": "Emma Roth via The Verge - Artificial Intelligences",
-      "image": "https://www.inoreader.com/camo/swodOAix9CSmYrxBVLdieLlm8euYhCoEFUp-9H-grYbo,q80,480x400,pf,b64/aHR0cHM6Ly9wbGF0Zm9ybS50aGV2ZXJnZS5jb20vd3AtY29udGVudC91cGxvYWRzL3NpdGVzLzIvMjAyNi8xMS9UYXNrcy1pbi1HZW1pbmkucG5nP3F1YWxpdHk9OTAmc3RyaXA9YWxsJmNyb3A9MCwwLDEwMCwxMDA"
     }
   ]
 }

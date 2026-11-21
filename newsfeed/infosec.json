@@ -1,6 +1,70 @@
 {
-  "updatedAt": "2026-11-21T09:56:34.251887+00:00",
+  "updatedAt": "2026-11-21T17:33:31.611244+00:00",
   "articles": [
+    {
+      "id": "at_51252113117",
+      "title": "U.S. CISA adds Cisco Expressway, SAP NetWeaver, Broadcom VMware vCenter, and Apache Roller flaws to its Known Exploited Vulnerabilities catalog",
+      "url": "https://securityaffairs.com/203639/security/u-s-cisa-adds-cisco-expressway-sap-netweaver-broadcom-vmware-vcenter-and-apache-roller-flaws-to-its-known-exploited-vulnerabilities-catalog.html",
+      "summary": "U.S. Cybersecurity and Infrastructure Security Agency (CISA) adds Cisco Expressway, SAP NetWeaver, Broadcom VMware vCenter, and Apache Roller flaws to its Known Exploited Vulnerabilities catalog. The U.S. Cybersecurity and Infrastructure Security Agency (CISA) added Cisco Expressway, SAP NetWeaver, Broadcom VMware vCenter, and Apache Roller...",
+      "source": "Pierluigi Paganini via Security Affairs",
+      "image": ""
+    },
+    {
+      "id": "at_51251583631",
+      "title": "BADBOX 3.0 botnet returns with record-breaking 40 billion daily ad requests",
+      "url": "https://www.bleepingcomputer.com/news/security/badbox-30-botnet-returns-with-record-breaking-40-billion-daily-ad-requests/",
+      "summary": "The BADBOX malware found in a broad range of generic Android TV boxes has returned to large-scale ad-fraud operations following last year's disruptions. [...]",
+      "source": "Bill Toulas via Bleeping Computer",
+      "image": "https://www.inoreader.com/camo/sa-b8l-TG9fPlK_LHmX8V3ftGzOymitEWnVoxPh_sz0k,q80,480x400,pf,b64/aHR0cHM6Ly93d3cuYmxlZXBzdGF0aWMuY29tL2NvbnRlbnQvaGwtaW1hZ2VzLzIwMjQvMTIvMTkvYW5kcm9pZC1tYWx3YXJlLWJvdG5ldC5qcGc"
+    },
+    {
+      "id": "at_51251292271",
+      "title": "FBI reportedly hacked again, this time targeting nationwide police database",
+      "url": "https://www.bleepingcomputer.com/news/security/fbi-reportedly-hacked-again-this-time-targeting-nationwide-police-database/",
+      "summary": "FBI systems have reportedly been breached for the second time in two months, this time targeting the agency's National Crime Information Center (NCIC), which is used to share information between local, state, and federal law enforcement agencies. [...]",
+      "source": "Lawrence Abrams via Bleeping Computer",
+      "image": "https://www.inoreader.com/camo/sjdNwdVUllKrAa-K33DeSgT_wSYw7dM5XEVjqvgtcMsA,q80,480x400,pf,b64/aHR0cHM6Ly93d3cuYmxlZXBzdGF0aWMuY29tL2NvbnRlbnQvaGwtaW1hZ2VzLzIwMjIvMTIvMTYvRkJJX19oZWFkcGljLmpwZw"
+    },
+    {
+      "id": "at_51250871126",
+      "title": "CrowdStrike in Talks to Acquire Zscaler in One of the Biggest Cybersecurity Deals Ever",
+      "url": "https://cybersecuritynews.com/crowdstrike-to-acquire-zscaler/",
+      "summary": "CrowdStrike is in talks to acquire Zscaler in a deal that could rank among the largest in cybersecurity history. Bloomberg first reported the discussions on Friday, November 20, citing two people familiar with the matter who said talks were ongoing. The discussions could still end without an agreement. Neither company has announced a deal or...",
+      "source": "Guru Baran via Cyber Security News",
+      "image": "https://www.inoreader.com/camo/sfCGTkaj0Go9PCA8fqfACZVViHbtyFdVmhPTjmsKrC-U,q80,480x400,pf,b64/aHR0cHM6Ly9jeWJlcnNlY3VyaXR5bmV3cy5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjYvMTEvQ3Jvd2RTdHJpa2UtdG8tQWNxdWlyZS1ac2NhbGVyLndlYnA"
+    },
+    {
+      "id": "at_51250448717",
+      "title": "Amazon: China-Linked Hackers’ AI Agents Exploited Medical Software Zero-Day",
+      "url": "https://www.securityweek.com/amazon-china-linked-hackers-ai-agents-exploited-medical-software-zero-day/",
+      "summary": "A threat actor used autonomous Cairn AI agents to discover and exploit a critical MONAI Label vulnerability. The post Amazon: China-Linked Hackers’ AI Agents Exploited Medical Software Zero-Day appeared first on SecurityWeek.",
+      "source": "Eduard Kovacs via SecurityWeek",
+      "image": "https://www.inoreader.com/camo/s97z2hhWJIevGGEeW1Ywy52x6BPOgXUcQwb_gfftXirc,q80,480x400,pf,b64/aHR0cHM6Ly93d3cuc2VjdXJpdHl3ZWVrLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNi8wNC9BcnRpZmljaWFsLUludGVsbGlnZW5jZS12cy1BSS5qcGVn"
+    },
+    {
+      "id": "at_51250427646",
+      "title": "A Single Malicious Webpage Let Researchers Hijack Meta Muse and Access Private Chats",
+      "url": "https://thehackernews.com/2026/11/a-single-malicious-webpage-let.html",
+      "summary": "A malicious webpage could extract a Meta Muse user's private conversations and stored memories from the assistant without triggering any approval prompt, researchers have shown. The same attack could be extended to reach the credentials Muse stores for the user's connected accounts. The work was a laboratory demonstration, not an attack on real...",
+      "source": "[email protected] (The Hacker News) via The Hacker News",
+      "image": "https://www.inoreader.com/camo/sRcLTw-r_KU2zmd3KOF2nRKFhsxpkSUcXWrrkHRmTqDA,q80,480x400,pf,b64/aHR0cHM6Ly9ibG9nZ2VyLmdvb2dsZXVzZXJjb250ZW50LmNvbS9pbWcvYi9SMjl2WjJ4bC9BVnZYc0VpWWlWcmJmbjNGV2ZJX3VOeWpqOHE5U1ozOGQybUhLdTJlaGR0WVlLUHd5Zy0wNXlLSkJZVUFQRWFWeEpxNUtER3dVMTFYMnRtRUtOVUtQSUhRWTlzNjdlMUs5d184TlJkRU94VkNESnFxTWJRNkYyN2tmT2ozR0tqY1EzLTBXSEZOZzd1WVQ2UWVJVTkwcVgxWVdfWnZ5bjdXaFp3cFY0MWk1UGo2d2F0UXNGN1RpOE5OMUdJUUx4dy1qUGMvczE2MDAvbXVzZS1haS5qcGc"
+    },
+    {
+      "id": "at_51250201494",
+      "title": "GnuPG Warns Critical GPGME Flaw Could Expose App Data via Malicious OpenPGP Keys",
+      "url": "https://thehackernews.com/2026/11/gnupg-warns-critical-gpgme-flaw-could.html",
+      "summary": "A malicious OpenPGP key with an unusually long user ID can trigger a critical memory bug in GPGME, the standard library that programs use to work with GnuPG. The GnuPG project warned yesterday that the flaw could be used to steal data from affected applications and has released fixed versions. The bug, tracked as CVE-2026-129975, affects all software...",
+      "source": "[email protected] (The Hacker News) via The Hacker News",
+      "image": "https://www.inoreader.com/camo/sT5xMRw25vwWOogBJ5JyzP62pfI-BvLqBJRTYBmuQeE0,q80,480x400,pf,b64/aHR0cHM6Ly9ibG9nZ2VyLmdvb2dsZXVzZXJjb250ZW50LmNvbS9pbWcvYi9SMjl2WjJ4bC9BVnZYc0VpVG1YNGF5V3p2TTBFelB0dFo2MTBCMjgzN0ZwcGVVNUFFbVFtenRMSDJsYWk3OEVEUXRqcnA0d1ZJX2J1YlNlMmMyTkdCRTVzcUJUOVB5MW1La0hRS04yZmFCa096VTcwZDdGbnRycFlEN0V0MmVlQnhMTnkyZ3pCeUFvMWk4QWF3X1ZNQlpENjJSbkJNWTJtZDNpTmZlZ0s5TV9OUjVxVFJEQnc4czB1d0t5MXc3Sm9UVjB6a0RTXzE3THNlL3MxNjAwL3BncC5qcGc"
+    },
+    {
+      "id": "at_51250201514",
+      "title": "Attackers' AI Agents Found a Zero-Day in Medical-Imaging Software and Gained Root Access",
+      "url": "https://thehackernews.com/2026/11/attackers-ai-agents-found-zero-day-in.html",
+      "summary": "Suspected China-linked hackers used autonomous AI agents to find a previously unknown flaw in MONAI Label, an open-source medical imaging server, and gain root access to a university server, Amazon Threat Intelligence said this week. The flaw allows an attacker with no account to write files outside the server's storage folder, and it affects MONAI...",
+      "source": "[email protected] (The Hacker News) via The Hacker News",
+      "image": "https://www.inoreader.com/camo/soG_xk4xn2uCcTv7xlEwGLu2v2UXewv80usPbCDVljAs,q80,480x400,pf,b64/aHR0cHM6Ly9ibG9nZ2VyLmdvb2dsZXVzZXJjb250ZW50LmNvbS9pbWcvYi9SMjl2WjJ4bC9BVnZYc0VoRUlHNldnaTN3R1FYcnNkR0tFZjRPUlBGakhWR3BSa29TVVByYU9KZktoR21CMHZZRm9qTHEybUN1T1AzYTcxX1hwTlp1c3ZuNDVaRGExSjNhN2VRMFdFM1hKWTBGR3VuSFZXQjF5SEJsdUpUNXZTRENtemtoYUZHaUhqZUtibm9haDZub3laM21OSW5TLW1qSksxR2ZjZjdqVDNBNjBaWVJfZWtuU2d0X3NFYTZNTkdNLURBNS1hTFhNYlo1L3MxNjAwL21lZGljYWwtYWkuanBn"
+    },
     {
       "id": "at_51249385306",
       "title": "Signal Blocks AI Agents From Reading Private Chats via Screenshots on Android and iOS",
@@ -1536,70 +1600,6 @@
       "summary": "As noted by Bleeping Computer, attackers are rapidly exploiting credentials and access secrets exposed in public Docker Hub images, with some instances occurring in less than eight seconds after publication.",
       "source": "SC Staff via Latest articles from SC Magazine",
       "image": "https://www.inoreader.com/camo/s-BVr16ZWfyNYDminnB-I6F7OC41hGAZiVs71GYvWYeg,q80,480x400,pf,b64/aHR0cHM6Ly9maWxlcy5jeWJlcnJpc2thbGxpYW5jZS5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjYvMDQvQWRvYmVTdG9ja182MjM3ODU5NjBfRWRpdG9yaWFsX1VzZV9Pbmx5LmpwZw"
-    },
-    {
-      "id": "at_51222823733",
-      "title": "Autonomous orchestration addresses rising cloud costs for AI agents",
-      "url": "https://www.scworld.com/brief/autonomous-orchestration-addresses-rising-cloud-costs-for-ai-agents",
-      "summary": "Autonomous orchestration is emerging as a critical solution for managing the unpredictable resource demands of AI agents, as first reported by Silicon Angle.",
-      "source": "SC Staff via Latest articles from SC Magazine",
-      "image": "https://www.inoreader.com/camo/si5Ed-2NYVApL7VeSo5d8PT6vdGiQ2EM0qtr6Mf55zRc,q80,480x400,pf,b64/aHR0cHM6Ly9maWxlcy5jeWJlcnJpc2thbGxpYW5jZS5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjYvMDkvMDkyMjI2X2Nsb3VkLmpwZw"
-    },
-    {
-      "id": "at_51222823734",
-      "title": "Lessons learned from the recent critical PHP vulnerabilities",
-      "url": "https://www.scworld.com/brief/lessons-learned-from-the-recent-critical-php-vulnerabilities",
-      "summary": "Critical vulnerabilities in the PHP programming language recently triggered a global security scramble, forcing organizations to rapidly patch systems or take them offline to prevent potential remote code execution, according to a recent report by IT Pro.",
-      "source": "SC Staff via Latest articles from SC Magazine",
-      "image": "https://www.inoreader.com/camo/s9Ut45E6NU52uNVr9ZnyPJHMb3Jds2kAffjw-PH0SkAI,q80,480x400,pf,b64/aHR0cHM6Ly9maWxlcy5jeWJlcnJpc2thbGxpYW5jZS5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjYvMTAvMTAyMjI2X3BocF9jb2RlLmpwZw"
-    },
-    {
-      "id": "at_51222823736",
-      "title": "Google addresses false reports of gmail service outage",
-      "url": "https://www.scworld.com/brief/google-addresses-false-reports-of-gmail-service-outage",
-      "summary": "Google confirmed that its Gmail service is operating normally following social media speculation regarding a potential disruption, according to a recent report by TechCrunch.",
-      "source": "SC Staff via Latest articles from SC Magazine",
-      "image": "https://www.inoreader.com/camo/sp66SM-QjNAUMVb1PoQAE9YalbC6sYHezGQnr3n8eEtc,q80,480x400,pf,b64/aHR0cHM6Ly9maWxlcy5jeWJlcnJpc2thbGxpYW5jZS5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjUvMDQvQWRvYmVTdG9ja18xMjA1NTk2Nzg0X0VkaXRvcmlhbF9Vc2VfT25seS5qcGc"
-    },
-    {
-      "id": "at_51222823738",
-      "title": "Microsoft agent-framework package compromised to steal credentials",
-      "url": "https://www.scworld.com/brief/microsoft-agent-framework-package-compromised-to-steal-credentials",
-      "summary": "Threat actors recently compromised the official Microsoft agent-framework package on the Python Package Index to distribute a credential-stealing payload, with further coverage provided by The Hacker News.",
-      "source": "SC Staff via Latest articles from SC Magazine",
-      "image": "https://www.inoreader.com/camo/sTJDbrfFht4om9rsic134t13PatSN8z2gTnTTndanZqU,q80,480x400,pf,b64/aHR0cHM6Ly9maWxlcy5jeWJlcnJpc2thbGxpYW5jZS5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjQvMDUvMDUwMzI0X21pY3Jvc29mdF9henVyZS5qcGc"
-    },
-    {
-      "id": "at_51222823740",
-      "title": "Accelerating DFIR: How agentic AI changes the investigation",
-      "url": "https://www.scworld.com/resource/accelerating-dfir-how-agentic-ai-changes-the-investigation",
-      "summary": "Here's what agentic AI means for digital forensics and incident response, and why humans still need to be in charge.",
-      "source": "Paul Wagenseil via Latest articles from SC Magazine",
-      "image": "https://www.inoreader.com/camo/sKy45frV6OulI070gXp0_jqE1V0VT6IYWgd0FKUVAqxE,q80,480x400,pf,b64/aHR0cHM6Ly9maWxlcy5jeWJlcnJpc2thbGxpYW5jZS5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjMvMDUvR2V0dHlJbWFnZXMtMTMyODc4NDU5Ni5qcGc"
-    },
-    {
-      "id": "at_51222823741",
-      "title": "Why did attackers target refrigerators this fall?",
-      "url": "https://www.scworld.com/perspective/why-are-attackers-targeting-refrigerators",
-      "summary": "While authorities tie the refrigerator attacks to Iran, we still don't know the broader end goal.",
-      "source": "Erik Bloch via Latest articles from SC Magazine",
-      "image": "https://www.inoreader.com/camo/skdi-0Y9u_0HpfXCKmAPNz6PEk7u_c9Gf1ccqbYPeOsk,q80,480x400,pf,b64/aHR0cHM6Ly9maWxlcy5jeWJlcnJpc2thbGxpYW5jZS5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjMvMTAvMTAxOV9pcmFuX2ZsYWcuanBn"
-    },
-    {
-      "id": "at_51222554277",
-      "title": "Data breach impacts 40 Irish credit unions in reported IT provider hack",
-      "url": "https://www.bleepingcomputer.com/news/security/data-breach-impacts-40-irish-credit-unions-in-reported-it-provider-hack/",
-      "summary": "A reported cyberattack on Wellington IT has exposed sensitive information belonging to members of 50 credit unions, the majority of which are located in Ireland. [...]",
-      "source": "Bill Toulas via Bleeping Computer",
-      "image": "https://www.inoreader.com/camo/sAlQBfvuG5WpGxQk0rmarqdat09bJCj6bIYEjDtUuzfE,q80,480x400,pf,b64/aHR0cHM6Ly93d3cuYmxlZXBzdGF0aWMuY29tL2NvbnRlbnQvaGwtaW1hZ2VzLzIwMjYvMTEvMTgvaXJlbGFuZC5qcGc"
-    },
-    {
-      "id": "at_51222407388",
-      "title": "10-Year-Old NGINX HTTP/2 Flaw Lets Unauthenticated Attackers Execute Code on Servers",
-      "url": "https://thehackernews.com/2026/11/10-year-old-nginx-http2-flaw-lets.html",
-      "summary": "A flaw in NGINX's HTTP/2 support can allow an attacker to run code on servers with HTTP/2 enabled, without needing to log in. The decade-old flaw, CVE-2026-123007, dubbed \"nginx2root,\" has been present in NGINX's open-source code since version 1.9.5, released on September 22, 2015. Fixed versions 1.31.9 and 1.30.7 came out today. F5, the company...",
-      "source": "[email protected] (The Hacker News) via The Hacker News",
-      "image": "https://www.inoreader.com/camo/sZsDPee8Dk5Ui5hTubWdPDURBI-E_BOxxvozF1FF07lM,q80,480x400,pf,b64/aHR0cHM6Ly9ibG9nZ2VyLmdvb2dsZXVzZXJjb250ZW50LmNvbS9pbWcvYi9SMjl2WjJ4bC9BVnZYc0VpN19xcVBvcGhvb0lhdVgxNmZNV20zS0IyNHR6UTNGZDdyQ3VzZUNYZk1rRFBQR3BJZ21IcVd2WmpuX2pmZkRxSHdOV0t1OFpmNTdRZUtiNHFzUkZnZGdpc1NBbjBzTWo1OUNzY2ltUjE2UkxYSTFrc3BIMHc3VllRZ3JzTV9oUGNlUFFPRkw4UVV5REMycDlXN0FWMFVqSDNzVzdvT3ZkV1BXQVpXNkRJVER2cUlIYUNfNjk2ZTVrSFRpZVkvczE2MDAvbmdpbngtcmNlLmpwZw"
     }
   ]
 }
