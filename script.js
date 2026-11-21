@@ -391,7 +391,7 @@ function updateSidebar(viewName) {
   // Close any open popups first
   document.querySelectorAll('.sidebar-popup-grid').forEach(grid => grid.classList.remove('visible'));
 
-  document.querySelectorAll('.sidebar-item').forEach(item => {
+  document.querySelectorAll('.sidebar-item[data-view]').forEach(item => {
     // 1. Reset
     item.classList.remove('active');
     item.setAttribute('aria-pressed', 'false');
@@ -812,13 +812,38 @@ function closeWindow(viewName) { hideWindow(viewName, false); }
 function minimizeWindow(viewName) { hideWindow(viewName, true); }
 
 // Dock activation uses the same lifecycle for new, visible, and minimized windows.
-document.querySelectorAll('.sidebar-item').forEach(item => {
+document.querySelectorAll('.sidebar-item[data-view]').forEach(item => {
   item.addEventListener('click', () => {
     item.classList.remove('wiggle');
     showView(item.dataset.view);
   });
 });
 
+const classroomLaunch = document.querySelector('.classroom-launch');
+const classroomIcon = classroomLaunch?.querySelector('svg');
+let classroomLaunching = false;
+
+classroomLaunch?.addEventListener('click', event => {
+  if (!event.isTrusted || event.defaultPrevented || event.button !== 0 ||
+      event.ctrlKey || event.metaKey || event.shiftKey || event.altKey ||
+      windowReducedMotion.matches || !classroomIcon?.animate) return;
+
+  event.preventDefault();
+  if (classroomLaunching) return;
+  classroomLaunching = true;
+
+  const duration = 240;
+  classroomIcon.animate([
+    { transform: 'translateY(1px) scale(.94)' },
+    { transform: 'translateY(-6px) scale(1.12)', offset: .55 },
+    { transform: 'translateY(-2px) scale(1)' }
+  ], { duration, easing: 'cubic-bezier(.25, .8, .25, 1)' });
+
+  window.setTimeout(() => {
+    classroomLaunching = false;
+    classroomLaunch.click();
+  }, duration);
+});
 
 // Topbar navigation (Logo and Home Tab)
 document.querySelector('.app-logo').addEventListener('click', () => showView('home'));
