@@ -11,7 +11,6 @@ A personal portfolio for Anand Mohankumar, built as an interactive, OS-themed si
 There is no build step for the main site — it is static files served directly.
 
 - **Run locally:** open `index.html` in a browser (no server required), or serve the directory with any static server, e.g. `python -m http.server`.
-- **Rebuild lecture-note pages:** `pwsh scripts/build-lecture-notes-v2.ps1`. This reads pre-extracted HTML bodies from `scripts/*.tmp` and regenerates the standalone `index.html` files under `labs-research-and-ctf/lecture-notes/`. The `.tmp` bodies come from `scripts/extract-bodies.ps1`, which strips Evernote-exported HTML.
 - No tests, no linter, no CI configured.
 
 ## Architecture
@@ -36,7 +35,7 @@ A secondary in-page app (`#markdownifyCard`): a rich-text editor that serializes
 
 Resource content lives in topic directories that are linked from the desktop and opened in iframes (`openInIframe` in `script.js`):
 
-- `labs-research-and-ctf/` — Labs, CTF writeups, and `lecture-notes/` (generated HTML, see build command above).
+- `labs-research-and-ctf/` — Labs and CTF writeups. Legacy notebook URLs under `lecture-notes/` redirect to Classroom.
 - `ai-and-automation/` — `n8n-workflows/` and `prompts/` (incl. `prompts/Image Generation/`). The AI & Automation windows have buttons for these sections; sections with no content yet are wired to a "coming soon" `alert()` (search `coming soon` in `index.html`). When real content is added, replace that placeholder with a button that opens the proper window/view.
 - `infographics/` — image gallery. Full-size PNGs are organized into category subfolders that mirror the website's window nesting: `infographics/AI/{AI Fundamentals, AI Advanced, Codex}/`. `infographics/thumbnails/` mirrors the same subfolder tree (`thumbnails/AI/<Category>/`). In `index.html`, each infographic's thumbnail `<img src>` points at the `thumbnails/AI/<Category>/<file>` path and its `onclick` opens the full-size GitHub raw URL `…/blob/main/infographics/AI/<Category>/<file>?raw=true`. **Whenever folders or files are added to `infographics/`, `index.html` must also be edited so they show up in the UI** (the directory and the site are kept one-to-one):
   - **New image in an existing category** → place the full-size image and its thumbnail under the matching `AI/<Category>/` path in both trees, and add an `infographic-item` (thumbnail `<img src>` with `loading="lazy" decoding="async"` + full-size `onclick`) to the correct category window (`#aiFundamentalsCard` / `#aiAdvancedCard` / `#aiClaudeCard`).
@@ -66,7 +65,7 @@ ai-and-automation/                      "AI & Automation" window (#aiCard)
             └─ Ride Stats/After.png                  └─ the image + prompt shown inside that window
 ```
 
-Likewise: the top-level **Resources** window holds buttons for `labs`, `lectureNotes`, `ai`, `infographics` (matching the top-level content folders); the **Labs** button → `labs-research-and-ctf/Labs/` window; **Lecture Notes** button → `labs-research-and-ctf/lecture-notes/` window; **CTF** → `labs-research-and-ctf/CTF/`. A real article like `labs-research-and-ctf/Labs/n8nZeroclaw/index.html` is a leaf, so its button uses `window.open('https://cyberamo.work/labs-research-and-ctf/Labs/n8nZeroclaw/')`.
+The **Resources** window links to **Labs, Research & CTF**, **AI & Automation**, and **Infographics**. **Labs** opens the `labs-research-and-ctf/Labs/` window. A real article like `labs-research-and-ctf/Labs/n8nZeroclaw/index.html` is a leaf, so its button uses `window.open('https://cyberamo.work/labs-research-and-ctf/Labs/n8nZeroclaw/')`.
 
 **When adding content, replicate the structure on both sides:** create the folder/page under the matching directory (the live URL is then just `https://cyberamo.work/<that same path>/`), and in `index.html` either add a leaf button that opens that URL, or — if it is a new sub-level — add a new `window-card` + `viewConfig` entry and a `showView('<newView>')` button inside its parent window.
 
