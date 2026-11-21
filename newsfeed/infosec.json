@@ -1,6 +1,38 @@
 {
-  "updatedAt": "2026-11-21T17:33:31.611244+00:00",
+  "updatedAt": "2026-11-21T23:17:45.541206+00:00",
   "articles": [
+    {
+      "id": "at_51254096855",
+      "title": "Rackspace Spot breach let hackers access customer Kubernetes secrets",
+      "url": "https://www.bleepingcomputer.com/news/security/rackspace-spot-breach-let-hackers-access-customer-kubernetes-secrets/",
+      "summary": "Rackspace warned customers that hackers breached its Rackspace Spot cloud platform using compromised credentials, allowing them to deploy unauthorized workloads and access Kubernetes secrets in customer clusters. [...]",
+      "source": "Lawrence Abrams via Bleeping Computer",
+      "image": "https://www.inoreader.com/camo/sKuhxTd9gd0jrKcQ7nhFSUXF1t2bo7bJpuHjQnUdtjdQ,q80,480x400,pf,b64/aHR0cHM6Ly93d3cuYmxlZXBzdGF0aWMuY29tL2NvbnRlbnQvaGwtaW1hZ2VzLzIwMjIvMTIvMDkvUmFja3NwYWNlLmpwZw"
+    },
+    {
+      "id": "at_51252857418",
+      "title": "Cyberattack on Austrian Foreign Ministry Exposes Diplomatic Staff Data",
+      "url": "https://securityaffairs.com/203680/hacking/cyberattack-on-austrian-foreign-ministry-exposes-diplomatic-staff-data.html",
+      "summary": "Austrian Foreign Ministry Hacked, Staff Contact Details Accessed Hackers accessed Austrian Foreign Ministry records containing staff contact details, including employees at diplomatic missions abroad. Austrian Foreign Ministry confirmed a cyberattack against its website that exposed staff contact information, including details of employees...",
+      "source": "Pierluigi Paganini via Security Affairs",
+      "image": "https://www.inoreader.com/camo/sdavNbU75-Fbbmrt6Js1emuba_q_T0PqRQyZc1Z2jp4k,q80,480x400,pf,b64/aHR0cHM6Ly9zZWN1cml0eWFmZmFpcnMuY29tL3dwLWNvbnRlbnQvdXBsb2Fkcy8yMDI2LzExL0F1c3RyaWEtRmxhZy5qcGc"
+    },
+    {
+      "id": "at_51252637684",
+      "title": "Microsoft Entra Connect Health flaw exploited to steal tenant data",
+      "url": "https://www.bleepingcomputer.com/news/security/microsoft-entra-connect-health-flaw-exploited-to-steal-tenant-data/",
+      "summary": "Microsoft is warning organizations that it suffered a data breach after attackers exploited a vulnerability in its Entra Connect Health service to gain unauthorized access to administrator email addresses and tenant configuration information. [...]",
+      "source": "Lawrence Abrams via Bleeping Computer",
+      "image": "https://www.inoreader.com/camo/s26kBNC22xJPh47QDreYebKAxfM3dgHlJRRzdzk3i-5w,q80,480x400,pf,b64/aHR0cHM6Ly93d3cuYmxlZXBzdGF0aWMuY29tL2NvbnRlbnQvaGwtaW1hZ2VzLzIwMjQvMDEvMjYvbWljcm9zb2Z0LXJlZC1oZWFkZXIuanBn"
+    },
+    {
+      "id": "at_51252503541",
+      "title": "Cairn AI Framework Used in Autonomous Zero-Day Exploitation",
+      "url": "https://securityaffairs.com/203664/ai/cairn-ai-framework-used-in-autonomous-zero-day-exploitation.html",
+      "summary": "Amazon uncovered AI-powered attacks on universities, where autonomous agents found a zero-day and gained root access without human guidance. Amazon’s threat intelligence team found a Chinese-nexus actor running Cairn, an open-source AI pentesting framework, with one instruction for the agents: obtain shell access. No human chose the next step...",
+      "source": "Pierluigi Paganini via Security Affairs",
+      "image": "https://www.inoreader.com/camo/s66MSYuZb43pEpkSOez3WsciDcFgwOFpSo_mTgG5StBA,q80,480x400,pf,b64/aHR0cHM6Ly9zZWN1cml0eWFmZmFpcnMuY29tL3dwLWNvbnRlbnQvdXBsb2Fkcy8yMDI2LzExL2ltYWdlLTU2LnBuZw"
+    },
     {
       "id": "at_51252113117",
       "title": "U.S. CISA adds Cisco Expressway, SAP NetWeaver, Broadcom VMware vCenter, and Apache Roller flaws to its Known Exploited Vulnerabilities catalog",
@@ -1568,38 +1600,6 @@
       "summary": "The first conversation with a DFIR first responder team may feel like an initial scoping exercise. In reality, the details captured during those first minutes can become valuable context for the investigation that follows.",
       "source": "via Naked Security",
       "image": ""
-    },
-    {
-      "id": "at_51223037058",
-      "title": "Coinbase blocks $4.7 million in transfers to Elon Musk deepfake scam",
-      "url": "https://www.bleepingcomputer.com/news/security/coinbase-blocks-47-million-in-transfers-to-elon-musk-deepfake-scam/",
-      "summary": "Coinbase says it blocked $4.7 million in cryptocurrency transfers to scammers promoting a fake giveaway using an AI-generated deepfake of Elon Musk during a Tesla livestream that attracted more than 500,000 viewers. [...]",
-      "source": "Lawrence Abrams via Bleeping Computer",
-      "image": "https://www.inoreader.com/camo/sclkOBherMMFMOQDhQOhWrYLBAjA1lpGdHAHtlH41GYg,q80,480x400,pf,b64/aHR0cHM6Ly93d3cuYmxlZXBzdGF0aWMuY29tL2NvbnRlbnQvaGwtaW1hZ2VzLzIwMjIvMDUvMjIvZWxvbi1tdXNrLXNwYWNlLWJyaWdodC5qcGc"
-    },
-    {
-      "id": "at_51222862775",
-      "title": "Apache Roller RCE Flaw CVE-2026-129448 Under Active Attack",
-      "url": "https://securityaffairs.com/203419/security/apache-roller-rce-flaw-cve-2026-129448-under-active-attack.html",
-      "summary": "Attackers are exploiting a critical Apache Roller flaw that allows unauthenticated remote code execution, prompting urgent security updates. A critical vulnerability, tracked as CVE-2026-129448 (CVSS score of 9.8), in Apache Roller could allow an unauthenticated attacker to execute arbitrary code on a vulnerable server. Apache Roller is an...",
-      "source": "Pierluigi Paganini via Security Affairs",
-      "image": "https://www.inoreader.com/camo/sDIQAxkWyvQtgcQVf2BFZeEsUB1XsYmtzkfz6udhPlDk,q80,480x400,pf,b64/aHR0cHM6Ly9zZWN1cml0eWFmZmFpcnMuY29tL3dwLWNvbnRlbnQvdXBsb2Fkcy8yMDI2LzExL2ltYWdlLTQ4LnBuZw"
-    },
-    {
-      "id": "at_51222823729",
-      "title": "Russian cyber espionage group Cold Relic leverages cloud compromises for linked intrusions",
-      "url": "https://www.scworld.com/brief/russian-cyber-espionage-group-cold-relic-leverages-cloud-compromises-for-linked-intrusions",
-      "summary": "The Russia-linked cyber espionage group Cold Relic has been observed weaponizing single cloud compromises into launchpads for a series of linked intrusions, as first reported by The Hacker News.",
-      "source": "SC Staff via Latest articles from SC Magazine",
-      "image": "https://www.inoreader.com/camo/sm8H5r1o7lJPhe0Br8GaYHfBF9_mdbCkrD46WqNEdHDc,q80,480x400,pf,b64/aHR0cHM6Ly9maWxlcy5jeWJlcnJpc2thbGxpYW5jZS5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjMvMTIvMTIwOF9ydXNzaWEuanBn"
-    },
-    {
-      "id": "at_51222823731",
-      "title": "Researchers find attackers exploit leaked credentials in docker hub images within seconds",
-      "url": "https://www.scworld.com/brief/researchers-find-attackers-exploit-leaked-credentials-in-docker-hub-images-within-seconds",
-      "summary": "As noted by Bleeping Computer, attackers are rapidly exploiting credentials and access secrets exposed in public Docker Hub images, with some instances occurring in less than eight seconds after publication.",
-      "source": "SC Staff via Latest articles from SC Magazine",
-      "image": "https://www.inoreader.com/camo/s-BVr16ZWfyNYDminnB-I6F7OC41hGAZiVs71GYvWYeg,q80,480x400,pf,b64/aHR0cHM6Ly9maWxlcy5jeWJlcnJpc2thbGxpYW5jZS5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjYvMDQvQWRvYmVTdG9ja182MjM3ODU5NjBfRWRpdG9yaWFsX1VzZV9Pbmx5LmpwZw"
     }
   ]
 }

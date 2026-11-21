@@ -1,6 +1,46 @@
 {
-  "updatedAt": "2026-11-21T17:33:31.866984+00:00",
+  "updatedAt": "2026-11-21T23:17:45.855689+00:00",
   "articles": [
+    {
+      "id": "at_51253975918",
+      "title": "Even the fastest AI clusters can be held back by their release pipelines",
+      "url": "https://venturebeat.com/orchestration/even-the-fastest-ai-clusters-can-be-held-back-by-their-release-pipelines",
+      "summary": "A firmware rollout I was running had been moving zone by zone for six days when it stopped itself. The page always comes as a silent vibration first, but at 1:14 AM it feels like a fire alarm. In one zone, the share of hosts that rebooted uncleanly during the update had crossed the safety threshold, so the automation froze the rollout and flagged it...",
+      "source": "via VentureBeat",
+      "image": "https://www.inoreader.com/camo/sNrr1s0MQVY_bugnGs6VF_UHXhkIqrT0TK1yUOBowet4,q80,480x400,pf,b64/aHR0cHM6Ly9pbWFnZXMuY3RmYXNzZXRzLm5ldC9qZHR3cWh6dmMybjEvcjZVZ0NuWVZZWmVBQWJuSXJCVUo5LzFkNWI4MDIyMTBmMmJlYjM3MWFlYWJlZDJhODQ2MTJiL3U3Mjc3Mjg5NDQyX0FfbW9kZXJuX2RhdGFfc3RhY2suX0RhdGFfZmxvd3NfaW5fYWxsX2RpcmVjdGlvbnNfY2JhNzRlNGYtNTBhMC00MWZhLWFlNzEtYThjZDU1ZWE4ZWM2XzAucG5nP3c9MTYwMCZxPTgw"
+    },
+    {
+      "id": "at_51253960930",
+      "title": "Signal restricts mobile screenshots as it confronts ‘existential threat’ of AI surveillance",
+      "url": "https://techcrunch.com/2026/11/21/signal-restricts-mobile-screenshots-as-it-confronts-existential-threat-of-ai-surveillance/",
+      "summary": "Signal is limiting users' ability to take screenshots in both its Android and iOS apps.",
+      "source": "Anthony Ha via AI | TechCrunch",
+      "image": ""
+    },
+    {
+      "id": "at_51253689837",
+      "title": "A tale of two Nvidias",
+      "url": "https://techcrunch.com/2026/11/21/a-tale-of-two-nvidias/",
+      "summary": "We got two very different pictures of Nvidia — the company’s latest earnings report vs. the tech executives loudly calling for Jensen Huang’s return.",
+      "source": "Anthony Ha via AI | TechCrunch",
+      "image": "https://www.inoreader.com/camo/s9GyvdC5p54H3ypub_edzGGjYdRLn0F_rXTepRm1llRI,q80,480x400,pf,b64/aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNi8wMS9HZXR0eUltYWdlcy0yMjU2ODEzMjQwLmpwZz9yZXNpemU9MTYwMCwxMDY3"
+    },
+    {
+      "id": "at_51253416993",
+      "title": "The UN fails to agree on rules regulating ‘killer robots’",
+      "url": "https://www.theverge.com/tech/1039554/un-regulations-killer-robots",
+      "summary": "One of the items on the agenda for UN diplomats meeting in Geneva this week was working towards rules regarding the use of autonomous weapons, or so-called \"killer robots.\" Eventually, representatives left the meetings agreeing to \"start discussing options\" after a largely fruitless week of negotiations. According to NPR: Before...",
+      "source": "Terrence O’Brien via The Verge - Artificial Intelligences",
+      "image": "https://www.inoreader.com/camo/sciJTqvurP9TFAOneLUyPUhkoDERBnaUDuJBJdyytaxg,q80,480x400,pf,b64/aHR0cHM6Ly9wbGF0Zm9ybS50aGV2ZXJnZS5jb20vd3AtY29udGVudC91cGxvYWRzL3NpdGVzLzIvY2hvcnVzL3VwbG9hZHMvY2hvcnVzX2Fzc2V0L2ZpbGUvMTM2MTE2MzEvNTAzODMxNTY0LmpwZy5qcGc_cXVhbGl0eT05MCZzdHJpcD1hbGwmY3JvcD0wLDAsMTAwLDEwMA"
+    },
+    {
+      "id": "at_51252785176",
+      "title": "Thinking Machines wows with Inkling 2 Mini looped transformer model that runs locally on laptops",
+      "url": "https://venturebeat.com/technology/thinking-machines-wows-with-inkling-2-mini-looped-transformer-model-that-runs-locally-on-laptops",
+      "summary": "Thinking Machines Lab, the San Francisco-based AI startup started and led by former OpenAI chief technology officer Mira Murati, is challenging the dominant paradigm of cloud-based AI frontier models with the release yesterday of Inkling 2 Mini, an open-weights multimodal model engineered to run offline on a 32GB MacBook Pro or a single desktop GPU.Read...",
+      "source": "[email protected] (Carl Franzen) via VentureBeat",
+      "image": "https://www.inoreader.com/camo/sUEBE_yLchejbmYuCuKeAybwgvu0aaDzZvzzihUF6E28,q80,480x400,pf,b64/aHR0cHM6Ly9pbWFnZXMuY3RmYXNzZXRzLm5ldC9qZHR3cWh6dmMybjEvMzVDWkE0OW5vV2FxaXBDZ2xjRnZJOS8wNzlkZjRhYTM4Yzc0NTliNDkwZTZjOWQ0MGVjNGViMy9EMzJCRUM3Qy0zRjRCLTRGMjQtOTA4MC01MEI5RDJGODBBMTEucG5nP3c9MTYwMCZxPTgw"
+    },
     {
       "id": "at_51252130880",
       "title": "Is selling an AI version of your face to this microdrama startup the future of Hollywood?",
@@ -1560,46 +1600,6 @@
       "summary": "With tech outages seemingly everywhere, Google took the unusual step of announcing that Gmail is working just fine, actually.",
       "source": "Sarah Perez via AI | TechCrunch",
       "image": ""
-    },
-    {
-      "id": "at_51212298996",
-      "title": "Amazon says hackers are using stolen AI API keys to power agents that hunt for more",
-      "url": "https://venturebeat.com/security/amazon-says-hackers-are-using-stolen-ai-api-keys-to-power-agents-that-hunt-for-more",
-      "summary": "AI agents in a cybercrime campaign used stolen API keys to access the AI models helping them hunt for more keys, according to records captured by Amazon's MadPot decoy sensors between Oct. 3 and Nov. 5. Amazon did not observe the attacks directly and could not independently verify the outcomes described in the records.Read more",
-      "source": "[email protected] (Louis Columbus) via VentureBeat",
-      "image": "https://www.inoreader.com/camo/sw0BDv9rpHotlh6EJETQMhTDrxXCubO8tQiFgjoBID4w,q80,480x400,pf,b64/aHR0cHM6Ly9pbWFnZXMuY3RmYXNzZXRzLm5ldC9qZHR3cWh6dmMybjEvMUhFOVNXRFFGQXcxcmJ2SmFpVTFNbC80YzU1YjQ4YmU3NGJkY2MxMmM0NWMzNGNkYTdmYzdkMy9HZW1pbmlfR2VuZXJhdGVkX0ltYWdlXzhqMHN1djhqMHN1djhqMHMuanBnP3c9MTYwMCZxPTgw"
-    },
-    {
-      "id": "at_51212280904",
-      "title": "Nvidia’s Q3 earnings hit the mark, without mentioning the whole Jensen Huang thing",
-      "url": "https://www.theverge.com/tech/1036032/nvidia-q3-2027-jensen-huang",
-      "summary": "Interim Nvidia CEO Colette Kress announced the company's Q3 earnings on Tuesday, without initially mentioning former CEO Jensen Huang or the details of his departure, or possible attempt at a return. On the earnings call accompanying the release, board chair Harvey Jones kicked things off by saying the board \"does not intend to reinstate...",
-      "source": "Jay Peters via The Verge - Artificial Intelligences",
-      "image": "https://www.inoreader.com/camo/s-B8UE0xDlouRilAOvBAAvJdLdbnZhfdLKRnMXwNux1I,q80,480x400,pf,b64/aHR0cHM6Ly9wbGF0Zm9ybS50aGV2ZXJnZS5jb20vd3AtY29udGVudC91cGxvYWRzL3NpdGVzLzIvY2hvcnVzL3VwbG9hZHMvY2hvcnVzX2Fzc2V0L2ZpbGUvMjU4MzU3MzkvU1RLUDIxMF9KRU5TRU5fSFVBTkdfQi5qcGc_cXVhbGl0eT05MCZzdHJpcD1hbGwmY3JvcD0wLDAsMTAwLDEwMA"
-    },
-    {
-      "id": "at_51211919816",
-      "title": "Not even Sam Altman is safe from AI deepfakes on Instagram",
-      "url": "https://www.theverge.com/news/1035957/meta-alexandr-wang-sam-altman-instagram-ai-deepfake",
-      "summary": "Open AI CEO Sam Altman does a television interview | Getty Images Instagram is filled with people posting deepfaked content - including, as of late, from one of Meta's most prominent executives. Earlier in November, Alexandr Wang, Meta's chief AI officer, shared a short clip to promote Muse, the company's consumer AI agent. In the AI-generated...",
-      "source": "Mia Sato via The Verge - Artificial Intelligences",
-      "image": "https://www.inoreader.com/camo/slVUKJNctEFWrhAvYaaDRilAHE9NK9qeExX5wl5-0R9Y,q80,480x400,pf,b64/aHR0cHM6Ly9wbGF0Zm9ybS50aGV2ZXJnZS5jb20vd3AtY29udGVudC91cGxvYWRzL3NpdGVzLzIvMjAyNi8xMS9nZXR0eWltYWdlcy0yMjk3Nzg1NjQ0LmpwZz9xdWFsaXR5PTkwJnN0cmlwPWFsbCZjcm9wPTAsMCwxMDAsMTAw"
-    },
-    {
-      "id": "at_51211508667",
-      "title": "Model ML raises $250M to automate investment banking grunt work",
-      "url": "https://techcrunch.com/2026/11/17/model-ml-raises-250m-to-automate-investment-banking-grunt-work/",
-      "summary": "The startup says its agents understand the full context of deals that bankers and consultants are working on and can automatically update financial models and presentations when new developments affect their analysis.",
-      "source": "Marina Temkin via AI | TechCrunch",
-      "image": "https://www.inoreader.com/camo/sgGNypPIicYRIiGeThzJoY9P23OVmfhvuc9NocT8UioQ,q80,480x400,pf,b64/aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNi8wOS9HZXR0eUltYWdlcy0xMjgzNjkyMzMyLmpwZz9yZXNpemU9MTYwMCw4NDQ"
-    },
-    {
-      "id": "at_51211001098",
-      "title": "Google expands access to Gemini Tasks, which can help with calls, purchases",
-      "url": "https://techcrunch.com/2026/11/17/google-expands-access-to-gemini-tasks-which-can-help-with-calls-purchases/",
-      "summary": "Gemini's Task mode can help users coordinate calls, log into websites, and even make purchases on the user's behalf.",
-      "source": "Lucas Ropek via AI | TechCrunch",
-      "image": "https://www.inoreader.com/camo/sOi7Hm20TpXmni1gYx5uDlDgCJT8YAvItE5ku8pS906Q,q80,480x400,pf,b64/aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNi8wNi9nZW1pbmktYXBwLUdldHR5SW1hZ2VzLTIyNzYyMDQ0NzItMS5qcGc_dz0xMDI0"
     }
   ]
 }
