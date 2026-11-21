@@ -1,6 +1,46 @@
 {
-  "updatedAt": "2026-11-21T02:16:13.610035+00:00",
+  "updatedAt": "2026-11-21T09:56:34.251887+00:00",
   "articles": [
+    {
+      "id": "at_51249385306",
+      "title": "Signal Blocks AI Agents From Reading Private Chats via Screenshots on Android and iOS",
+      "url": "https://thehackernews.com/2026/11/signal-blocks-ai-agents-from-reading.html",
+      "summary": "Signal has announced that it will restrict screenshots by default to stop artificial intelligence (AI) agents from reading private chats on Android and iOS devices, but conceded that the protection is \"incomplete.\" The feature applies to agentic systems built into iOS 27 and on Android versions where the encrypted messaging platform can detect an...",
+      "source": "[email protected] (The Hacker News) via The Hacker News",
+      "image": "https://www.inoreader.com/camo/s7M6EjulQXGyZA6ONqRwmPnrzIQwCnDR11LgXTCwNhcY,q80,480x400,pf,b64/aHR0cHM6Ly9ibG9nZ2VyLmdvb2dsZXVzZXJjb250ZW50LmNvbS9pbWcvYi9SMjl2WjJ4bC9BVnZYc0VqMWNWWDFEWlVETVRrU2Mza0djTzhLc0dkLU1JQnI2cHkzOVN1YVJ4RzF3Q3hWVmZLSVFoaVFheXdScGpuOTVGUVY0dE15MGRXeU5jNDk3NDVjd3FCQkxwR3pWS19ldXQtREdMQmFpZGlpWUNkSUg2NWJYR3RvcHVQSjdkb2ZKekFKVko2Y1dyS3AySkpiNWdOck9EUXVXdEs3dlpacDgyNGVjcno0X0RIV1dKSWFDNXdTNmFZZnNNc0tzaGc0L3MxNjAwL3NpZ25hbC5qcGc"
+    },
+    {
+      "id": "at_51249385310",
+      "title": "Hackers Exploit Critical VMware, Cisco, and Apache Flaws as Espionage Attacks Emerge",
+      "url": "https://thehackernews.com/2026/11/hackers-exploit-critical-vmware-cisco.html",
+      "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Friday added four flaws impacting Apache Roller, Cisco Expressway, SAP NetWeaver, and Broadcom VMware vCenter to its Known Exploited Vulnerabilities (KEV), citing evidence of active exploitation. The vulnerabilities are listed below - CVE-2026-129448 (CVSS score: 9.8) - A...",
+      "source": "[email protected] (The Hacker News) via The Hacker News",
+      "image": "https://www.inoreader.com/camo/s7XIgy3e32IMRQs32YxFgmHsqpI12DyBZQfS-yj9LWUE,q80,480x400,pf,b64/aHR0cHM6Ly9ibG9nZ2VyLmdvb2dsZXVzZXJjb250ZW50LmNvbS9pbWcvYi9SMjl2WjJ4bC9BVnZYc0VoRm5XbkJEaWd3OFJvZ0JUU0luWGt0bjF2VUlTYnp3akhtNUd1QUZCTlgwX0NsTEJrODNXT2EyQllpSFViZ3R2YTc2VFk4T3oya0p2RVp0dkVqcVpsRkZDdXZRLXUtbC00bDVkem8yTVh3N3pITEV1a2x2X0duMW1CLWY1VEw5R1BfM24xTnhRa3prWi1mQVg3VXBjcWZacVVlZlFpUlFabTIxc3E2SVpPem15dVExaFlzNEFGSFdRQWo4M1dYL3MxNjAwL3Ztd2FyZS1jaXNjby5qcGc"
+    },
+    {
+      "id": "at_51247693376",
+      "title": "6 Critical F5 BIG-IP Vulnerabilities Could Let Hackers Disrupt Websites and Execute Malicious Code",
+      "url": "https://cybersecuritynews.com/critical-f5-big-ip-vulnerabilities/",
+      "summary": "F5 released emergency fixes for six critical BIG-IP vulnerabilities that could let remote attackers take websites and other services offline without logging in. The flaws affect specific traffic-handling configurations. An attacker who can reach a vulnerable service could crash the BIG-IP process that handles client traffic. F5 also warned that...",
+      "source": "Guru Baran via Cyber Security News",
+      "image": "https://www.inoreader.com/camo/syIIbrUJKMZTBmAArgGqI8FokD9QKGXrffyqkPtpd2tI,q80,480x400,pf,b64/aHR0cHM6Ly9jeWJlcnNlY3VyaXR5bmV3cy5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjYvMTEvQ3JpdGljYWwtRjUtQklHLUlQLVZ1bG5lcmFiaWxpdGllcy53ZWJw"
+    },
+    {
+      "id": "at_51247693377",
+      "title": "WhatsApp Android Flaws Could Let Hackers Delete Users’ Files and Expose IP Addresses",
+      "url": "https://cybersecuritynews.com/whatsapp-android-flaws/",
+      "summary": "WhatsApp’s November 2026 security update describes three flaws that could let attackers delete files stored by WhatsApp on Android, expose a user’s IP address, or bypass a security check for Meta AI’s Private Processing service. Of the three, only the IP exposure flaw was flagged for possible abuse. The advisory says it may have been used alongside...",
+      "source": "Guru Baran via Cyber Security News",
+      "image": "https://www.inoreader.com/camo/ssh50lHn-6Toxy3urAMxJB2A7OTnzA1v5NDP1n50NImY,q80,480x400,pf,b64/aHR0cHM6Ly9jeWJlcnNlY3VyaXR5bmV3cy5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjYvMTEvV2hhdHNBcHAtQW5kcm9pZC1GbGF3cy53ZWJw"
+    },
+    {
+      "id": "at_51247416242",
+      "title": "14 Best Enterprise Risk Management Tools 2027",
+      "url": "https://cybersecuritynews.com/enterprise-risk-management-tools/",
+      "summary": "Enterprise Risk Management (ERM) tools empower organizations to identify, assess, and mitigate risks amid 2026’s complex, threat-laden business landscape. Evolving rapidly, these platforms harness AI, machine learning, and automation for real-time insights, process streamlining, and holistic coverage of operational, financial, compliance, and...",
+      "source": "CISO Advisory via Cyber Security News",
+      "image": "https://www.inoreader.com/camo/sjDeLcc6gLwvAXt7_V003II30_ynxWawwwEGm2k5Ng8I,q80,480x400,pf,b64/aHR0cHM6Ly9ibG9nZ2VyLmdvb2dsZXVzZXJjb250ZW50LmNvbS9pbWcvYi9SMjl2WjJ4bC9BVnZYc0VqRXEyREM1OUlhQkNwaXU4RnNUQnU1U3VSV3lhN1h5ZkVGcHZyRVZ6X1Q1cnZHTnpFM1JWby1mLXlDUTFla2g1SkI3aU9odmpJaGRCX05NNC1tMS1FWVZDZVRyUlZkYzFsSGU5a2ZtdmxnbjhlMlg4cEpncEZrM2N6UTVKUUcwV201VUVQRVlFa3BQMzh5b1VGcVA0NzVKVi16aDExRU9xRkJveUFxSWM2ZUZOTUdwYmVtZFRfRlFZMThhUXRBL3MxNjAwMC9NZXRyaWMlMjBzdHJlYW0ud2VicA"
+    },
     {
       "id": "at_51247306955",
       "title": "Security researchers track rising mail bombing and helpdesk impersonation campaigns",
@@ -133,7 +173,7 @@
       "id": "at_51244828237",
       "title": "WhatsApp Patches 3 Security Flaws, Including Android Bug Suspected of Use in Scams",
       "url": "https://thehackernews.com/2026/11/whatsapp-patches-3-security-flaws.html",
-      "summary": "Meta-owned WhatsApp has addressed security vulnerabilities, including one impacting its Android app that it suspects may have been exploited in connection with scam messages. The vulnerability, tracked as CVE-2026-23871, has been described as a case of incomplete validation of external ad-reply URLs in WhatsApp for Android and WhatsApp Business for...",
+      "summary": "Meta-owned WhatsApp has addressed security vulnerabilities, including one impacting its Android app that it suspects may have been exploited in connection with scam messages. The vulnerability, tracked as CVE-2026-23871 (CVSS score: 3.5), has been described as a case of incomplete validation of external ad-reply URLs in WhatsApp for Android and WhatsApp...",
       "source": "[email protected] (The Hacker News) via The Hacker News",
       "image": "https://www.inoreader.com/camo/sRoi4ELKma4bItJbfhdJvnVIgxIGdVX-maynuQAl34cI,q80,480x400,pf,b64/aHR0cHM6Ly9ibG9nZ2VyLmdvb2dsZXVzZXJjb250ZW50LmNvbS9pbWcvYi9SMjl2WjJ4bC9BVnZYc0VoVVNiWVVKSmtCbFpzYUg5MFNYSWF4WUF2NWlKTjdaRXVzN1EyNEFfWjlmRE5ObG5PakZuTlozU25BNmVyLWl1TWdRbkU2azczbndWd0FFUFBrMUFqUlQxMk45bzhjSmZ0M19kUHFNWktlSmJwcTZRSWNHYk4xejFVYkVfUTNmWFR5cDFjMFhtcXluUXUybEpQZUlZb3JhcVhGY2dNLXdRSDRiMXJJQnJPS0YyMjFDSUtMbGRKSVpWSjRnN2NyL3MxNjAwL3doYXRzYXBwLmpwZw"
     },
@@ -1560,46 +1600,6 @@
       "summary": "A flaw in NGINX's HTTP/2 support can allow an attacker to run code on servers with HTTP/2 enabled, without needing to log in. The decade-old flaw, CVE-2026-123007, dubbed \"nginx2root,\" has been present in NGINX's open-source code since version 1.9.5, released on September 22, 2015. Fixed versions 1.31.9 and 1.30.7 came out today. F5, the company...",
       "source": "[email protected] (The Hacker News) via The Hacker News",
       "image": "https://www.inoreader.com/camo/sZsDPee8Dk5Ui5hTubWdPDURBI-E_BOxxvozF1FF07lM,q80,480x400,pf,b64/aHR0cHM6Ly9ibG9nZ2VyLmdvb2dsZXVzZXJjb250ZW50LmNvbS9pbWcvYi9SMjl2WjJ4bC9BVnZYc0VpN19xcVBvcGhvb0lhdVgxNmZNV20zS0IyNHR6UTNGZDdyQ3VzZUNYZk1rRFBQR3BJZ21IcVd2WmpuX2pmZkRxSHdOV0t1OFpmNTdRZUtiNHFzUkZnZGdpc1NBbjBzTWo1OUNzY2ltUjE2UkxYSTFrc3BIMHc3VllRZ3JzTV9oUGNlUFFPRkw4UVV5REMycDlXN0FWMFVqSDNzVzdvT3ZkV1BXQVpXNkRJVER2cUlIYUNfNjk2ZTVrSFRpZVkvczE2MDAvbmdpbngtcmNlLmpwZw"
-    },
-    {
-      "id": "at_51222407413",
-      "title": "F5 Warns 6 Critical BIG-IP Flaws Can Crash Traffic in Specific Setups, May Allow RCE",
-      "url": "https://thehackernews.com/2026/11/f5-warns-6-critical-big-ip-flaws-can.html",
-      "summary": "Six critical vulnerabilities in F5 BIG-IP allow an attacker to crash the Traffic Management Microkernel (TMM) without logging in, disrupting traffic until the TMM restarts. Each flaw needs a specific setup on a virtual server: an iRule that uses a particular command, or an APM policy that includes two particular kinds of agent. F5, which makes...",
-      "source": "[email protected] (The Hacker News) via The Hacker News",
-      "image": "https://www.inoreader.com/camo/snupwVk_LID3IEMtCvnCfH7Ih9L2DVjhbm615DiAZx_I,q80,480x400,pf,b64/aHR0cHM6Ly9ibG9nZ2VyLmdvb2dsZXVzZXJjb250ZW50LmNvbS9pbWcvYi9SMjl2WjJ4bC9BVnZYc0VpekUzWDN0VVNQcHhJWW5OeU05MWh5cGhlbmh5cGhlbnpaT1M2ampkSG5DTG11Ym40dXBPWUtabjNNZGpVcUpRR0VqSUJHdFoySkhLNnlnZ0g2UnhTUUNBTmh0RjcteklXSjBFZkdxQTdpWTJLUVdNN3Z0b2lDc2MtX0tlRlplSGVEbS1UT3BNX29MX0VWek92UHJ1X2NNVnp4M3dKTDhrYUxFZ1h1elB6eG0zaVluVGl5dTU3cXVoZ0JnTVkxTmI3Vl9zWEc0L3MxNjAwL2Y1LnBuZw"
-    },
-    {
-      "id": "at_51222407438",
-      "title": "Critical Apache Roller RCE Flaw Under Active Exploitation, No Authentication Required",
-      "url": "https://thehackernews.com/2026/11/critical-apache-roller-rce-flaw-under.html",
-      "summary": "A critical security flaw in Apache Roller, an open-source, Java-based blogging platform, has come under active exploitation in the wild, according to the Apache Software Foundation (ASF) The vulnerability, tracked as CVE-2026-129448 (CVSS score: 9.8), is a case of unauthenticated deserialization in the XML-RPC endpoint that could lead to remote code...",
-      "source": "[email protected] (The Hacker News) via The Hacker News",
-      "image": "https://www.inoreader.com/camo/snJNpH3TcAMHhDiwMaKiJUyyF9juxjcQryECJ28rS360,q80,480x400,pf,b64/aHR0cHM6Ly9ibG9nZ2VyLmdvb2dsZXVzZXJjb250ZW50LmNvbS9pbWcvYi9SMjl2WjJ4bC9BVnZYc0VnYmlDWUpEN25laV9UQlNuVWxRRzU5aWRxOW1vQ2JzZzk3Zm56c2lYTmk0S3ZRYXBoWllBNGhISXpYdjA4dDJPc3ZWWm9relBJZGhaUHp4VGtYb0VnelRzRmJ5LXJCdlFYNkNZNnlQbzFJdjhEUG5TbVBlT2VoM09RWEY3OVE2MEhxM1VJN2tWZGhtRUtHTDJiVXdtNDJKTy04Q19DbExIcFRwR2tXcG5mbEFRTXJERGdqSXZNS3EwOURFc2tyL3MxNjAwL2FwYWNoZS5qcGc"
-    },
-    {
-      "id": "at_51222380239",
-      "title": "Patches released for critical ‘NGINX2Root’ vulnerabilities",
-      "url": "https://www.sophos.com/en-us/blog/patches-released-for-critical-nginx2root-vulnerabilities",
-      "summary": "",
-      "source": "via Naked Security",
-      "image": ""
-    },
-    {
-      "id": "at_51222323579",
-      "title": "Fake FMCSA, DAT, and TIMOCOM Portals Attack US Logistics Firms",
-      "url": "https://cybersecuritynews.com/fake-fmcsa-dat-timocom-portals-target-us-logistics/",
-      "summary": "Attackers are impersonating carrier-verification, broker-onboarding, and load-board platforms to steal identities and fuel-card credentials, deploy backdoors, and take remote control of dispatch workstations. US trucking and logistics companies are being targeted by three separate cybercrime campaigns that disguise attacks as routine freight...",
-      "source": "Balaji N via Cyber Security News",
-      "image": "https://www.inoreader.com/camo/sEfq_RiwKk_F0s-C6D7TCDhahwyOdPlRZ-s-CP4D_oTY,q80,480x400,pf,b64/aHR0cHM6Ly9ibG9nZ2VyLmdvb2dsZXVzZXJjb250ZW50LmNvbS9pbWcvYi9SMjl2WjJ4bC9BVnZYc0VpeldKRWVCa3Zfc25jNjVvWVJJTlpaTGVxZy00bU9EeTlGSnJ6VHJyNGZETjNRMk1mWmJMREhhd0VDZnpZVWJwM2ZuUG1UTG10ZDE0bXdFcVZLVEdnVVhZY3BDTXdUN1B2elJ4Q0R4MGNBMHpZNWI0SWxyLThGUmF5anR2eGQ4enZkTl92WEJHcC1XOTVmWXk4UDNKWU1XeHZtRERaU0FjeDhOMFdNOGhzSFppUFIyWXJOSWE4QWJmNnBTRmVNL3MxNjAwL1RocmVlX0NhbXBhaWducy0xMDI0eDEwMjQud2VicA"
-    },
-    {
-      "id": "at_51221955297",
-      "title": "Hackers Use GhostMap eBPF Rootkit to Hide IronWorm Malware From Linux Security Tools",
-      "url": "https://cybersecuritynews.com/hackers-use-ghostmap-ebpf-rootkit/",
-      "summary": "Hackers are using a Linux rootkit called GhostMap to hide IronWorm malware from tools administrators rely on to inspect running systems. The rootkit can make selected processes, files, and network sockets disappear from routine listings without removing them. In one test, a malware listener vanished from /proc/net/tcp but remained visible...",
-      "source": "Tushar Subhra Dutta via Cyber Security News",
-      "image": "https://www.inoreader.com/camo/sHu44c0oBdtjXQASix05dS92IjhH9LD05y3t6x86pIMg,q80,480x400,pf,b64/aHR0cHM6Ly9ibG9nZ2VyLmdvb2dsZXVzZXJjb250ZW50LmNvbS9pbWcvYi9SMjl2WjJ4bC9BVnZYc0VqR3c4Ml9hVkJlb09HTTh2Y0JfTWlUVHpRWWFJOEtLRkNVQ2thYVlPdVFiZUMtRTNOSU94TTUwZVYwV1hjZGRZU08wcE5iakdxWG5zM2xBSWtlamg1YUdVTXYxMFBaQVlqeHBRZThRNjhtT3RYMVRRbXNaa0V5XzBfU1RtMllNOFRXTUZGR2ZVLUdLOFJGeEdyRWZuVFVDdmxrUzd6Mmstd2ZHYmxYRGZaZHJoN1RqUjdBV2xMUnhCWmUyRTAvczE2MDAvVHdvJTIwZGVsaXZlcnklMjBjaGFubmVscyUyMChTb3VyY2UlMjAtJTIwQXF1YXNlYykud2VicA"
     }
   ]
 }
