@@ -1,6 +1,126 @@
 {
-  "updatedAt": "2026-11-20T21:06:00.095429+00:00",
+  "updatedAt": "2026-11-21T02:16:13.610035+00:00",
   "articles": [
+    {
+      "id": "at_51247306955",
+      "title": "Security researchers track rising mail bombing and helpdesk impersonation campaigns",
+      "url": "https://www.scworld.com/brief/security-researchers-track-rising-mail-bombing-and-helpdesk-impersonation-campaigns",
+      "summary": "As noted by Infosecurity Magazine, cybercriminals are executing large-scale mail bombing attacks combined with IT helpdesk impersonation to compromise user accounts.",
+      "source": "SC Staff via Latest articles from SC Magazine",
+      "image": "https://www.inoreader.com/camo/sLllil2xJ7ylHmBm68ihIsfsqSvnoopaKpYl4SWcIVig,q80,480x400,pf,b64/aHR0cHM6Ly9maWxlcy5jeWJlcnJpc2thbGxpYW5jZS5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjYvMDcvQWRvYmVTdG9ja18xNjczMzgxODg1LXNjYWxlZC5qcGVn"
+    },
+    {
+      "id": "at_51247306957",
+      "title": "Credential-stealing operation compromises 603 computers",
+      "url": "https://www.scworld.com/brief/credential-stealing-operation-compromises-603-computers",
+      "summary": "A sophisticated credential-stealing operation has compromised 603 Windows computers, exposing sensitive bank, government and password manager accounts.",
+      "source": "SC Staff via Latest articles from SC Magazine",
+      "image": "https://www.inoreader.com/camo/shrJyVdptbgHxRPnGxmPRuKJxmPjpXxzClTJuvCAdgl8,q80,480x400,pf,b64/aHR0cHM6Ly9maWxlcy5jeWJlcnJpc2thbGxpYW5jZS5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjUvMDQvQWRvYmVTdG9ja182MjMxMTY3MDUuanBn"
+    },
+    {
+      "id": "at_51247306958",
+      "title": "Signal blocks AI agents from accessing private messages",
+      "url": "https://www.scworld.com/brief/signal-blocks-ai-agents-from-accessing-private-messages",
+      "summary": "Signal has implemented new restrictions to prevent artificial intelligence agents from accessing private user messages, as first reported by The Register.",
+      "source": "SC Staff via Latest articles from SC Magazine",
+      "image": "https://www.inoreader.com/camo/sLVffJF_YFIQsxLQLYJbrnl5isjCHCbf9ra8YGb0bUhg,q80,480x400,pf,b64/aHR0cHM6Ly9maWxlcy5jeWJlcnJpc2thbGxpYW5jZS5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjUvMDUvMDUxMzI1X3NpZ25hbF9hcHAuanBn"
+    },
+    {
+      "id": "at_51247306959",
+      "title": "Carnegie Endowment for International Peace reports data breach",
+      "url": "https://www.scworld.com/brief/carnegie-endowment-for-international-peace-reports-data-breach",
+      "summary": "As noted by Nextgov, the Carnegie Endowment for International Peace recently experienced a data breach involving a third-party vendor used for online donations.",
+      "source": "SC Staff via Latest articles from SC Magazine",
+      "image": "https://www.inoreader.com/camo/svYUZV3KotjduVdO51X-Y6eIbplDg3RRSjSLBm3BTPnM,q80,480x400,pf,b64/aHR0cHM6Ly9maWxlcy5jeWJlcnJpc2thbGxpYW5jZS5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjQvMDkvMDkzMDI0X2RhdGFfYnJlYWNoLmpwZw"
+    },
+    {
+      "id": "at_51247306960",
+      "title": "Ransomware recovery timelines and shifting attack tactics in 2026",
+      "url": "https://www.scworld.com/brief/ransomware-recovery-timelines-and-shifting-attack-tactics-in-2026",
+      "summary": "Ransomware recovery requires a median of 20 days for organizations to achieve full restoration, with nearly 30% of victims needing more than six weeks to return to normal operations, based on information published by Infosecurity Magazine.",
+      "source": "SC Staff via Latest articles from SC Magazine",
+      "image": "https://www.inoreader.com/camo/szZinpwHSjO-1tQr8mRwGZX6_YF_iqj1pt4Lt8Y5vP88,q80,480x400,pf,b64/aHR0cHM6Ly9maWxlcy5jeWJlcnJpc2thbGxpYW5jZS5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjUvMDMvQWRvYmVTdG9ja18xMjkzNDU0ODE5LmpwZw"
+    },
+    {
+      "id": "at_51247306961",
+      "title": "SonicWall urges retirement of generation 6 firewalls due to security risks",
+      "url": "https://www.scworld.com/brief/sonicwall-urges-retirement-of-generation-6-firewalls-due-to-security-risks",
+      "summary": "In a report by The Hacker News, SonicWall has issued an urgent advisory for customers to immediately retire and replace all Generation 6 firewalls. The company warns that these unsupported devices are increasingly vulnerable to automated and AI-assisted cyberattacks.",
+      "source": "SC Staff via Latest articles from SC Magazine",
+      "image": "https://www.inoreader.com/camo/sUiv0UZV5Sh0eghFDX2-z-CU4cO63ss80mFfU6ftNA9s,q80,480x400,pf,b64/aHR0cHM6Ly9maWxlcy5jeWJlcnJpc2thbGxpYW5jZS5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjQvMDEvc29uaWN3YWxsLXNpZ24tY29ycDIuanBn"
+    },
+    {
+      "id": "at_51247306962",
+      "title": "Microsoft fixes windows 11 passkey bug affecting android devices",
+      "url": "https://www.scworld.com/brief/microsoft-fixes-windows-11-passkey-bug-affecting-android-devices",
+      "summary": "Microsoft has released a software update to address a Windows 11 passkey bug that causes Android phones to incorrectly report authentication failures, with further coverage provided by The Register.",
+      "source": "SC Staff via Latest articles from SC Magazine",
+      "image": "https://www.inoreader.com/camo/sibwJGPPIXSfhwk6QQlaViHVFg0Zn6JUTTGsF1LPGO0E,q80,480x400,pf,b64/aHR0cHM6Ly9maWxlcy5jeWJlcnJpc2thbGxpYW5jZS5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjQvMTAvMTAzMDI0X2FuZHJvaWRfb3MuanBn"
+    },
+    {
+      "id": "at_51247306963",
+      "title": "Bell Canada confirms data breach involving agentic threat actor",
+      "url": "https://www.scworld.com/brief/bell-canada-confirms-data-breach-involving-agentic-threat-actor",
+      "summary": "Coverage from Bleeping Computer indicates that Bell Canada experienced a security breach on Nov. 17, 2026, involving an agentic threat actor that compromised enterprise customer data.",
+      "source": "SC Staff via Latest articles from SC Magazine",
+      "image": "https://www.inoreader.com/camo/sKSUzltaWNfg-bXSlq-W4FvlAUPMA9eAGt_KwLjMOf5M,q80,480x400,pf,b64/aHR0cHM6Ly9maWxlcy5jeWJlcnJpc2thbGxpYW5jZS5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjUvMTAvMTAzMDI1X3RlbGVjb21tdW5pY2F0aW9ucy5qcGc"
+    },
+    {
+      "id": "at_51247306965",
+      "title": "Dutch regulator warns against using AI-powered smart glasses",
+      "url": "https://www.scworld.com/brief/dutch-regulator-warns-against-using-ai-powered-smart-glasses",
+      "summary": "The Dutch Data Protection Authority has issued a formal warning advising consumers against purchasing AI-powered smart glasses due to significant safety and privacy concerns, according to a recent report by The Register.",
+      "source": "SC Staff via Latest articles from SC Magazine",
+      "image": "https://www.inoreader.com/camo/s5HmWAPXiY9EiWGZ_sAmikQxKohjQQaawENfuDK4SSJg,q80,480x400,pf,b64/aHR0cHM6Ly9maWxlcy5jeWJlcnJpc2thbGxpYW5jZS5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjYvMTEvMTEyMDI2X3NtYXJ0X2dsYXNzZXMuanBn"
+    },
+    {
+      "id": "at_51247039832",
+      "title": "CyberPower power management software exploited in network intrusion",
+      "url": "https://www.scworld.com/brief/cyberpower-power-management-software-exploited-in-network-intrusion",
+      "summary": "Infosecurity Magazine reports that attackers have exploited CyberPower PowerPanel Business software to execute malicious scripts on domain controllers, effectively repurposing power management features into remote command channels.",
+      "source": "SC Staff via Latest articles from SC Magazine",
+      "image": "https://www.inoreader.com/camo/senVh2m4g0gbcKSqQklUR9i2x1s7YBpquOL4OccrMW1g,q80,480x400,pf,b64/aHR0cHM6Ly9maWxlcy5jeWJlcnJpc2thbGxpYW5jZS5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjYvMDIvQWRvYmVTdG9ja185NjQyMzY3NTcuanBlZw"
+    },
+    {
+      "id": "at_51247039833",
+      "title": "African nations face cybersecurity challenges in expanding digital public infrastructure",
+      "url": "https://www.scworld.com/brief/african-nations-face-cybersecurity-challenges-in-expanding-digital-public-infrastructure",
+      "summary": "Following insights from Biometric Update, African governments are rapidly expanding digital identity and digital public infrastructure systems, yet they face significant hurdles in establishing the cybersecurity capacity required to protect these critical assets.",
+      "source": "SC Staff via Latest articles from SC Magazine",
+      "image": "https://www.inoreader.com/camo/sR8TRH2DU8ggRFgERWWpRJpghHoxV64TtDxkWF5sFXcc,q80,480x400,pf,b64/aHR0cHM6Ly9maWxlcy5jeWJlcnJpc2thbGxpYW5jZS5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjYvMDYvMDYxNzI2X2RpZ2l0YWxfZmluZ2VycHJpbnQuanBn"
+    },
+    {
+      "id": "at_51246952474",
+      "title": "CTO of ‘RansomwareHelp’ Indicted for Wire Fraud",
+      "url": "https://krebsonsecurity.com/2026/11/cto-of-ransomwarehelp-indicted-for-wire-fraud/",
+      "summary": "The chief technology officer and co-founder of ransomwarehelp.com, a six year old Florida business that claimed to use “advanced cryptographic tools” to restore data locked by ransomware, has been charged with wire fraud after an FBI sting operation found the company was simply paying the attackers for a decryption key and charging victims a markup...",
+      "source": "BrianKrebs via Krebs on Security",
+      "image": "https://www.inoreader.com/camo/sCOFw-A9w-m7zpm7Nnzvf-mSqPmc9dC_gINq2B6UpHKw,q80,480x400,pf,b64/aHR0cHM6Ly9rcmVic29uc2VjdXJpdHkuY29tL3dwLWNvbnRlbnQvdXBsb2Fkcy8yMDI2LzExL3JhbnNvbXdhcmVoZWxwLnBuZw"
+    },
+    {
+      "id": "at_51246714280",
+      "title": "Linux Porn, Lawyers, Chaos, Ur, PHP2Shell, Java4Shell, VMware, KVM , Josh Marpet - SWN #635",
+      "url": "https://www.scworld.com/podcast-segment/15338-linux-porn-lawyers-chaos-ur-php2shell-java4shell-vmware-kvm-josh-marpet-swn-635",
+      "summary": "",
+      "source": "Doug White via Latest articles from SC Magazine",
+      "image": "https://www.inoreader.com/camo/seaK-QyewwDeqPvmdTiBl3ESTcY1jheFsQddqy6bjFlM,q80,480x400,pf,b64/aHR0cHM6Ly9maWxlcy5jeWJlcnJpc2thbGxpYW5jZS5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjYvMTEvU1dOXzYzNV9GUklfVGh1bWJuYWlsX1NXTl8xOTIweDEwODBfYzA2ZjdlNjUtZDNiOC00OGI4LTk1ZjMtODQ3OGY3ZTVlYWJmLmpwZw"
+    },
+    {
+      "id": "at_51246714283",
+      "title": "Closing the trust gap: How to properly implement AI shopping agents",
+      "url": "https://www.scworld.com/resource/closing-the-trust-gap-how-to-properly-implement-ai-shopping-agents",
+      "summary": "Here's why even as AI agents execute transactions, customers must retain ultimate control.",
+      "source": "Paul Wagenseil via Latest articles from SC Magazine",
+      "image": "https://www.inoreader.com/camo/sRTcNXrsKrle_ixTK6s9hu2uHtGWg1UePgVc8a2_Koyo,q80,480x400,pf,b64/aHR0cHM6Ly9maWxlcy5jeWJlcnJpc2thbGxpYW5jZS5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjYvMTEvcm9ib3RzLXNob3BwaW5nLWJpZy1ib3gtc3RvcmUuanBn"
+    },
+    {
+      "id": "at_51246259434",
+      "title": "CVE-2026-23871: WhatsApp Bug Helped Scammers Make Messages Look Legitimate",
+      "url": "https://securityaffairs.com/203622/security/cve-2026-23871-whatsapp-bug-helped-scammers-make-messages-look-legitimate.html",
+      "summary": "WhatsApp patched three security flaws, including one exploited in a real scam campaign to make fraudulent messages appear more credible. WhatsApp’s November security advisory fixes three flaws, including CVE-2026-23871, a vulnerability in Click to WhatsApp ads affecting WhatsApp and WhatsApp Business for Android versions earlier than 2.26.17.4....",
+      "source": "Pierluigi Paganini via Security Affairs",
+      "image": "https://www.inoreader.com/camo/s1Ttnd7fBySWFHc2jR4nQKcGsv9Gz-7E09hbjH7Tmq28,q80,480x400,pf,b64/aHR0cHM6Ly9zZWN1cml0eWFmZmFpcnMuY29tL3dwLWNvbnRlbnQvdXBsb2Fkcy8yMDE0LzA3L3doYXRzYXBwLmpwZw"
+    },
     {
       "id": "at_51245574539",
       "title": "Following outages, security industry focuses on availability and resilience",
@@ -1480,126 +1600,6 @@
       "summary": "Hackers are using a Linux rootkit called GhostMap to hide IronWorm malware from tools administrators rely on to inspect running systems. The rootkit can make selected processes, files, and network sockets disappear from routine listings without removing them. In one test, a malware listener vanished from /proc/net/tcp but remained visible...",
       "source": "Tushar Subhra Dutta via Cyber Security News",
       "image": "https://www.inoreader.com/camo/sHu44c0oBdtjXQASix05dS92IjhH9LD05y3t6x86pIMg,q80,480x400,pf,b64/aHR0cHM6Ly9ibG9nZ2VyLmdvb2dsZXVzZXJjb250ZW50LmNvbS9pbWcvYi9SMjl2WjJ4bC9BVnZYc0VqR3c4Ml9hVkJlb09HTTh2Y0JfTWlUVHpRWWFJOEtLRkNVQ2thYVlPdVFiZUMtRTNOSU94TTUwZVYwV1hjZGRZU08wcE5iakdxWG5zM2xBSWtlamg1YUdVTXYxMFBaQVlqeHBRZThRNjhtT3RYMVRRbXNaa0V5XzBfU1RtMllNOFRXTUZGR2ZVLUdLOFJGeEdyRWZuVFVDdmxrUzd6Mmstd2ZHYmxYRGZaZHJoN1RqUjdBV2xMUnhCWmUyRTAvczE2MDAvVHdvJTIwZGVsaXZlcnklMjBjaGFubmVscyUyMChTb3VyY2UlMjAtJTIwQXF1YXNlYykud2VicA"
-    },
-    {
-      "id": "at_51221955304",
-      "title": "Hackers Use Hidden Cron Jobs to Reinstall Malware on Firewalls and Routers Every 5 Minutes",
-      "url": "https://cybersecuritynews.com/hackers-use-hidden-cron-jobs/",
-      "summary": "A Linux botnet is hiding in a place most network teams never look: the scheduled jobs on their firewalls, routers and switches. If a responder kills the malware and deletes the file, a hidden cron job downloads it again within five minutes. The botnet is called Evooo1Bot. FortiGuard Labs first described it on August 13, 2026. It goes...",
-      "source": "Tushar Subhra Dutta via Cyber Security News",
-      "image": "https://www.inoreader.com/camo/sm9aDbzYtH86ykm4CxITVe6nWYQAObasH9ozol24qrh4,q80,480x400,pf,b64/aHR0cHM6Ly9jeWJlcnNlY3VyaXR5bmV3cy5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjYvMTEvSGFja2Vycy1Vc2UtSGlkZGVuLUNyb24tSm9icy10by1SZWluc3RhbGwtTWFsd2FyZS1vbi1GaXJld2FsbHMtYW5kLVJvdXRlcnMtRXZlcnktNS1NaW51dGVzLndlYnA"
-    },
-    {
-      "id": "at_51221360561",
-      "title": "AI Hacking Framework CyberStrikeAI Runs 221 Tool Executions Without Human Approval",
-      "url": "https://cybersecuritynews.com/cyberstrikeai/",
-      "summary": "An exposed CyberStrikeAI workspace recorded 221 tool executions in a single session on November 16, 2026. The logs show no human decision at the framework’s tool approval gate, and the saved configuration later showed that the gate had been switched off. A person still directed the AI agent through chat. The difference matters: telling an agent...",
-      "source": "Tushar Subhra Dutta via Cyber Security News",
-      "image": "https://www.inoreader.com/camo/s88X4ch34HEwGxgnd2qo56zP7Xuf7ZCM1Di8KvPyr1XE,q80,480x400,pf,b64/aHR0cHM6Ly9jeWJlcnNlY3VyaXR5bmV3cy5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjYvMTEvQUktSGFja2luZy1GcmFtZXdvcmstQ3liZXJTdHJpa2VBSS1SdW5zLTIyMS1Ub29sLUV4ZWN1dGlvbnMtV2l0aG91dC1IdW1hbi1BcHByb3ZhbC53ZWJw"
-    },
-    {
-      "id": "at_51221165256",
-      "title": "Microsoft’s Agent Framework PyPI package compromised to steal credentials",
-      "url": "https://www.bleepingcomputer.com/news/security/microsofts-agent-framework-pypi-package-compromised-to-steal-credentials/",
-      "summary": "Hackers compromised Microsoft's official Agent Framework Python package on PyPI, publishing two malicious versions designed to steal cloud credentials and other sensitive information from developers' systems. [...]",
-      "source": "Bill Toulas via Bleeping Computer",
-      "image": "https://www.inoreader.com/camo/skmMeiZq1uJnwGyDYzToygaCXVmWKMREckjbMyTH_fxw,q80,480x400,pf,b64/aHR0cHM6Ly93d3cuYmxlZXBzdGF0aWMuY29tL2NvbnRlbnQvaGwtaW1hZ2VzLzIwMjUvMDMvMTIvTWljcm9zb2Z0LWhlYWRwaWMuanBn"
-    },
-    {
-      "id": "at_51220794734",
-      "title": "After Black October, OffSec Turns PHPH2Shell and Other New Vulnerabilities Into Hands-On Labs",
-      "url": "https://cybersecuritynews.com/offsec-php2shell-black-october-hands-on-labs/",
-      "summary": "New York City, United States, November 18th, 2026, CyberNewswire OffSec built 14 labs on real CVEs in two weeks. Its Level 20 offer takes $550 off Learn One for learners ready to train against threats like these. OffSec, the world’s leading provider of hands-on cybersecurity training and certifications, released more than 80 hands-on labs...",
-      "source": "Swathi via Cyber Security News",
-      "image": "https://www.inoreader.com/camo/sIiXV3VwrOmjGHNGsVR-0EusSoRDyp-9jlq9Z9vq7QsQ,q80,480x400,pf,b64/aHR0cHM6Ly9ibG9nZ2VyLmdvb2dsZXVzZXJjb250ZW50LmNvbS9pbWcvYi9SMjl2WjJ4bC9BVnZYc0VnRVNhaFZVejQwUnJHV1JNV2dmRUhVS1Ewb09ldGxaQjFJWjE2LU9vbE96cDhvSmxFLTYwbnRSWUwtckNvM0lVaHRhUmhQV2M2QzFqc0hXTW9UYjhtU2tMTHVBLVhaMkgySmJVeXJ2blpPcmVlX3VCOWt3ZjMxbmVQUG9VXy1uNWpXcnl3eEtUMUhMaWRaUzFtTERJRDc1Ty1CVWJGTGpwaEc0VVQtdkFoVEpmTVJlaUd1dEV6RFBkV3hFUm5EL3MxNjAwL0NTTiUyMEFORCUyMEdCSCUyMCg3KS53ZWJw"
-    },
-    {
-      "id": "at_51220794737",
-      "title": "NGINX HTTP/2 Flaws Could Allow Memory Corruption and Remote Code Execution on Web Servers",
-      "url": "https://cybersecuritynews.com/nginx-http-2-vulnerabilities/",
-      "summary": "Two critical vulnerabilities in NGINX could let remote attackers run code on vulnerable web servers without logging in. The flaws, tracked as CVE-2026-123633 and CVE-2026-123007, were disclosed on November 18, 2026. Both require NGINX to accept HTTP/2 connections from clients, but the conditions differ. One affects certain reverse proxy setups,...",
-      "source": "Guru Baran via Cyber Security News",
-      "image": "https://www.inoreader.com/camo/sf7vkWEZhthijfQ6ZZA7NCRaGR17OA_CvH0hG1dMNMeo,q80,480x400,pf,b64/aHR0cHM6Ly9jeWJlcnNlY3VyaXR5bmV3cy5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjYvMTEvTkdJTlgtSFRUUDItRmxhd3MtUGF0Y2hlZC53ZWJw"
-    },
-    {
-      "id": "at_51220794748",
-      "title": "2027 Cybersecurity Excellence Awards Launch With Six New AI Security Categories",
-      "url": "https://cybersecuritynews.com/2027-cybersecurity-excellence-awards/",
-      "summary": "San Francisco, USA, November 17th, 2026, CyberNewswire Global awards program invites nominations across more than 100 cybersecurity categories, with early-bird pricing through Cyber Monday. The Cybersecurity Excellence Awards, presented by Cybersecurity Insiders, announced the official launch of its 2027 awards season, inviting cybersecurity...",
-      "source": "Cybernewswire via Cyber Security News",
-      "image": "https://www.inoreader.com/camo/seNgiOg1mVqL_Sfn6c_UDKsC6TAhG7HypNNn4mqoSrz4,q80,480x400,pf,b64/aHR0cHM6Ly9ibG9nZ2VyLmdvb2dsZXVzZXJjb250ZW50LmNvbS9pbWcvYi9SMjl2WjJ4bC9BVnZYc0VqSVc1M3hNN25HX3ZncldheWc1ZTJzSlpoZmVVOWFIUlFrMGxSYjJuNmFsNmJNMWdtenVjUHdMNW10NEhVRTJtaExtS0lXei1rdEEwenFqZEFKT3BJVkxEbk44ZnI5V1dMLWhBSjdUZmF3anhEOTBCOFZYeVRkdno0QmZKSm1vVnZCWmJUSGViejlGZkZUbll6dVUxY3lDN0lqaG5vMFpKNEVWUVF0a0ZSWWlLbjRNUDh6dm55bEE1dGJ0SUZ0L3MxNjAwL0NTTiUyMEFORCUyMEdCSCUyMCg2KS53ZWJw"
-    },
-    {
-      "id": "at_51220277611",
-      "title": "Vero Security Raises $11 Million for AI Security Engineering Platform",
-      "url": "https://www.securityweek.com/verosecurity-raises-11-million-for-ai-security-engineering-platform/",
-      "summary": "AI Security Engineering is a new and essential security discipline now being brought into focus by VeroSecurity. The post Vero Security Raises $11 Million for AI Security Engineering Platform appeared first on SecurityWeek.",
-      "source": "Kevin Townsend via SecurityWeek",
-      "image": ""
-    },
-    {
-      "id": "at_51220233810",
-      "title": "SpyCloud’s 2027 Forecast: Attackers Will Exploit Trusted Access, From Hijacked Sessions to AI Agents",
-      "url": "https://cybersecuritynews.com/spycloud-2027-cybersecurity-forecast-trusted-access-ai-agents/",
-      "summary": "Austin, TX, USA, November 17th, 2026, CyberNewswire New predictions drawn from SpyCloud’s research teams and a survey of security professionals show why stolen sessions, API keys, and vendor connections will drive the most damaging attacks in 2027. SpyCloud, the leader in identity threat protection, today released its SpyCloud 2026 Forecast...",
-      "source": "Swathi via Cyber Security News",
-      "image": "https://www.inoreader.com/camo/sgx3ygy9EEiJEbe1bIqMlVh4C_R1zsjLr1u0jsvKtuFg,q80,480x400,pf,b64/aHR0cHM6Ly9ibG9nZ2VyLmdvb2dsZXVzZXJjb250ZW50LmNvbS9pbWcvYi9SMjl2WjJ4bC9BVnZYc0VpSGFRSDhtQjluSUJHRFc0bnF2Qlk0WG1yU1E4VEtzVU9VYjJhZnFoeXBoZW5oeXBoZW5KX2Z4bWg4UEVud1dBbjA4RWxLeWI1bHgxZWRmV0lEMkFuSlJEMmxERlU2WTlKd0ZjXzZtcDZKSUtYbXVzNXpTakwtbmFKRXdLT3ctbkZITldIaDFjU0pkUUs1dldhWUh4LVJFTWJmZWpDOUdOM1VobUZMYm9YaGJ5YW8tQTNCUXNzdGF4MWh5cGhlbmh5cGhlbk9IXzVZRmVnQXNpeWsvczE2MDAvaW1hZ2UtMjMud2VicA"
-    },
-    {
-      "id": "at_51220233831",
-      "title": "Armornet Debuts AI Security for the Code and Vendors Companies Trust",
-      "url": "https://cybersecuritynews.com/armornet-ai-software-supply-chain-vendor-security/",
-      "summary": "Grand Rapids, Michigan, November 18th, 2026, CyberNewswire Startup shows teams the vendors they rely on, keeps a live risk score on each one and secures the software supply chain from end to end Armornet, an AI cybersecurity company, is accepting teams into the private alpha of its platform, which gives an automatically discovered, continuous...",
-      "source": "Swathi via Cyber Security News",
-      "image": "https://www.inoreader.com/camo/sB2XK8OYqNKgWemxCH7QmCnt4B9Wt4dv1THt2v0LXTbI,q80,480x400,pf,b64/aHR0cHM6Ly9ibG9nZ2VyLmdvb2dsZXVzZXJjb250ZW50LmNvbS9pbWcvYi9SMjl2WjJ4bC9BVnZYc0VqYjhmLXJaZXgzbUJfLVpPeFlPWmZlSXdUeGFZUVJZcTFZVzBxUERHSmpkU2ZaaldWOERJcG42RWRkVmI0bVYyaDRER1ZiUTBkVW5qeEdyU3pfV1MyRHBIMC1haktGTE5xVzJNTXh0VWNSNy1PSVBaZkxuRDRYVGZfOGlWV29VRTdZMGliMVVaY2RpWEY3ckkzb0ZvYkJsSVJfUXdKX0tvMDBiOV9QeUJ5WnM5LTBEM2dtZE14SEUyZm9wUDgyL3MxNjAwL0NTTiUyMEFORCUyMEdCSCUyMCg0KS53ZWJw"
-    },
-    {
-      "id": "at_51220207312",
-      "title": "Scattered Spider Member Gets Six Years for Phishing and SIM-Swapping Attacks",
-      "url": "https://securityaffairs.com/203408/cyber-crime/scattered-spider-member-gets-six-years-for-phishing-and-sim-swapping-attacks.html",
-      "summary": "Scottish hacker gets six years for phishing attacks, SIM swapping and stealing $11.6 million in cryptocurrency from US victims. Tyler Robert Buchanan (24) of Dundee, Scotland, was sentenced to 72 months in federal prison. The Justice Department says he conspired to hack at least a dozen companies through text message phishing and stole over...",
-      "source": "Pierluigi Paganini via Security Affairs",
-      "image": ""
-    },
-    {
-      "id": "at_51219924578",
-      "title": "New EggStreme Malware Variant Goes Silent to Evade Security Tools in Government Attacks",
-      "url": "https://thehackernews.com/2026/11/eggstreme-hackers-rebuild-malware-with.html",
-      "summary": "The suspected Chinese advanced persistent threat (APT) group behind the sophisticated EggStreme malware has rebuilt its toolkit as it continues to target government organizations in the Philippines. \"When attackers are exposed, the cheap response is to rotate,\" Bitdefender said in a technical report shared with The Hacker News. \"A file hash changes...",
-      "source": "[email protected] (The Hacker News) via The Hacker News",
-      "image": "https://www.inoreader.com/camo/sgdjki6z5hIPXz_j1eK-4cwuQVwLpCGLe8mfhKZGXfIA,q80,480x400,pf,b64/aHR0cHM6Ly9ibG9nZ2VyLmdvb2dsZXVzZXJjb250ZW50LmNvbS9pbWcvYi9SMjl2WjJ4bC9BVnZYc0VpWUxLVmFSUnAwMkwyU1RlUjRrYWtHZUExTkpva1R0eHcyYUxVNHdCTFMzNHZsdHZpUjhnVjRlVWprMFFKOWpEVmJpU18yaFNlRFFDd0lSX0pvQ3pQelV0LUZTTlVOcGFLTnRIcEtpTXVna1JBTXdPSWJsNEZiY0w1aUU3S0NlMWhlYk5iSlJUeHFPNXhRa0VGQnVESTZGOEZuc25ZZnJlbGpyUWxISFh1S0JFTjBzdUpaZXVJZjhoZWRhNXdZL3MxNjAwL2NoaW5lc2UuanBn"
-    },
-    {
-      "id": "at_51219906630",
-      "title": "From Deepfakes to Helpdesk Impersonation: Why Stronger Verification Matters",
-      "url": "https://www.bleepingcomputer.com/news/security/from-deepfakes-to-helpdesk-impersonation-why-stronger-verification-matters/",
-      "summary": "Attackers are using deepfakes, helpdesk impersonation, and fake IT support requests to deceive employees and gain unauthorized access to corporate systems. Specops Software examines real-world attacks and explains how stronger identity verification can help organizations prevent social engineering threats. [...]",
-      "source": "Sponsored by Specops Software via Bleeping Computer",
-      "image": "https://www.inoreader.com/camo/sQ8uYZ2KHP-C6TgLMlwRqvr2Qlb-Ho1oJE49jbRmydXI,q80,480x400,pf,b64/aHR0cHM6Ly93d3cuYmxlZXBzdGF0aWMuY29tL2NvbnRlbnQvcG9zdHMvMjAyNi8xMS8xNi9zcGVjb3BzLWhhY2tlci5qcGc"
-    },
-    {
-      "id": "at_51219712498",
-      "title": "OX Security Launches OX Radar and Response Center to Show Companies Which Cyber Threats Actually Affect Them",
-      "url": "https://cybersecuritynews.com/ox-security-ox-radar-response-center/",
-      "summary": "New York, United States, November 18th, 2026, CyberNewswire New technology monitors critical vulnerabilities and supply chain threats, automatically assessing customer exposure and guiding remediation OX Security, a leader in AI-native application protection, today announced the launch of OX Radar and Response Center, giving security teams...",
-      "source": "Cybernewswire via Cyber Security News",
-      "image": "https://www.inoreader.com/camo/s6O3PaN2fYq3xCU0vlvsjlV02GmdEqFk1msZKsnE5ddA,q80,480x400,pf,b64/aHR0cHM6Ly9ibG9nZ2VyLmdvb2dsZXVzZXJjb250ZW50LmNvbS9pbWcvYi9SMjl2WjJ4bC9BVnZYc0VoYzRFSS1nTTE4dzZTc1BIbWNwQ1B6eWItWGNKaVFfYmlQaWZwVXpJbXlUU05WTlRQVjYxN0VrcmJDVmtFRU1keHZBZUR0dFlCTVRRTWRUYTlnN0x1Mkg1LUZEZmdZN0R5VGxNX1Z5cGtUMHFKSy1sa21CNE5sMGJqOUNsdEFVbUZkbFVURUZHa2dkWGo0Uk5fbWRyR21IbTFKeFdWMGV4VHkwMExqOFoyWElpaTlkcEJIWElsd2hsZkhUbUl4L3MxNjAwLzMzYTNmNWU1LTc1MmItNDkwNy1iNjYyLTNmYjNkOWM2MWQ1Ny53ZWJw"
-    },
-    {
-      "id": "at_51219712512",
-      "title": "Microsoft Unveils Windows Server 2028 With Hundreds of Security Protections Enabled by Default",
-      "url": "https://cybersecuritynews.com/windows-server-2028-security/",
-      "summary": "Microsoft has released Windows Server 2028 in public preview. The biggest change is that a new server now starts in a locked-down state rather than an open one. Hundreds of security settings are on from the first boot, so admins no longer need to harden the system by hand after setup. Microsoft announced the release on November 17, 2026. ...",
-      "source": "Guru Baran via Cyber Security News",
-      "image": "https://www.inoreader.com/camo/slzhD_DB6Jt5toG55F-PXF2oq7khPI86DD8YPLWTv_wE,q80,480x400,pf,b64/aHR0cHM6Ly9jeWJlcnNlY3VyaXR5bmV3cy5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjYvMTEvV2luZG93cy1TZXJ2ZXItMjAyOC53ZWJw"
-    },
-    {
-      "id": "at_51219712522",
-      "title": "New Hello Again Attack Bypasses Windows Hello and BitLocker PIN Lockout Protection",
-      "url": "https://cybersecuritynews.com/hello-attack-bypasses-windows-hello-and-bitlocker/",
-      "summary": "Researchers have shown that someone with a laptop and a few cheap parts can guess a Windows Hello PIN in about 40 hours. With the lockout working as designed, the same job would take 69 days. The same trick also cuts the worst-case time to crack a default 6-digit BitLocker startup PIN from 19 years to 20 days. The work is called “Hello Again”...",
-      "source": "Guru Baran via Cyber Security News",
-      "image": "https://www.inoreader.com/camo/sfza7mifTLuZEVDqyLsfFpyz9BA17xCycSPkI4SXXuDg,q80,480x400,pf,b64/aHR0cHM6Ly9ibG9nZ2VyLmdvb2dsZXVzZXJjb250ZW50LmNvbS9pbWcvYi9SMjl2WjJ4bC9BVnZYc0VpTHdrcUdFb2YyTTIzaFZ0VTBUanRwV2F3ZHJLTXlCd2RhX1lMV2VxNk5sbUVIeEVmZUxMT3hiNmNzY1FFaGZsNkhoQ2lpeXg0NHcteGs2dmxCRTRkUFVSR1pSWkptR3ZwcFhCcHR0Q1MtQVdMaWpaSE1kT085bWp2QnhYOHNHZTRaaHpVWjl1QlBNTUtaWEtRT1VyN0dQY3VYS2p5YkExdkZoYXVMSUp3Y0l2d0FKbWtXb3BHT09sR3doc1JvL3c2NDAtaDQ4Mi9IZWxsbyUyMEF0dGFjayUyMEJ5cGFzc2VzJTIwV2luZG93cyUyMEhlbGxvJTIwYW5kJTIwQml0TG9ja2VyMS53ZWJw"
     }
   ]
 }
