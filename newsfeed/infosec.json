@@ -1,6 +1,46 @@
 {
-  "updatedAt": "2026-11-22T15:18:42.734058+00:00",
+  "updatedAt": "2026-11-22T21:46:02.268619+00:00",
   "articles": [
+    {
+      "id": "at_51259906091",
+      "title": "Signal Is Blocking AI Agents From Reading Your Screen",
+      "url": "https://securityaffairs.com/203742/ai/signal-is-blocking-ai-agents-from-reading-your-screen.html",
+      "summary": "Signal is blocking OS-level AI agents from reading its app on iOS 27 and Android, warning that Gemini and Siri AI threaten its privacy guarantees. Signal is restricting new AI agents built into iOS 27 and Android from capturing its data, president Meredith Whittaker announced. The company already did something similar on Windows last year,...",
+      "source": "Pierluigi Paganini via Security Affairs",
+      "image": "https://www.inoreader.com/camo/s3veWWrQC4zWFYdamxGyNB8xmwhuYj6bVzZkv2MakBgw,q80,480x400,pf,b64/aHR0cHM6Ly9zZWN1cml0eWFmZmFpcnMuY29tL3dwLWNvbnRlbnQvdXBsb2Fkcy8yMDE2LzA4L3NpZ25hbC1hcHAucG5n"
+    },
+    {
+      "id": "at_51259885920",
+      "title": "Hackers exploit GL.iNet cloud flaw to infect routers, KVM devices",
+      "url": "https://www.bleepingcomputer.com/news/security/hackers-exploit-glinet-cloud-flaw-to-infect-routers-kvm-devices/",
+      "summary": "GL.iNet has confirmed that hackers exploited a vulnerability in its cloud remote management services to install custom malware on customers' routers and KVM devices, with some affected users reporting backdoors and reverse shells giving remote access to infected devices. [...]",
+      "source": "Lawrence Abrams via Bleeping Computer",
+      "image": "https://www.inoreader.com/camo/sYWq5VNI4KOUUO3c83aEZq4B-Nrc17wqv6qfkwfbGfx0,q80,480x400,pf,b64/aHR0cHM6Ly93d3cuYmxlZXBzdGF0aWMuY29tL2NvbnRlbnQvaGwtaW1hZ2VzLzIwMjYvMTEvMjIvcm91dGVycy1rdm1zLmpwZw"
+    },
+    {
+      "id": "at_51259444770",
+      "title": "VirusTotal’s New Ransomware Detection Catches Malware Missed by All 75 Antivirus Engines",
+      "url": "https://cybersecuritynews.com/virustotal-ransomware-detection/",
+      "summary": "VirusTotal has rolled out a ransomware detection update that checks whether suspicious files actually encrypt user documents during execution. The new checks caught a Python ransomware sample that recorded zero detections across 75 antivirus engines at the time of analysis, showing how behavior checks can expose threats that static scanning misses....",
+      "source": "Abinaya via Cyber Security News",
+      "image": "https://www.inoreader.com/camo/sgTh2eHxNYk2CUdMbBfCrKlKro_qtSiHLDQKlj58cuRk,q80,480x400,pf,b64/aHR0cHM6Ly9ibG9nZ2VyLmdvb2dsZXVzZXJjb250ZW50LmNvbS9pbWcvYi9SMjl2WjJ4bC9BVnZYc0VqTGhKclNpdV8zZGxVWkp1aGowa01rd3B2MEZsOWYwWHdYRlNSSmgwTFc2bEJvRjRMd2s3YUo3Sk1YdHZnSnJQWWsyLTJpWHd3cVR2dzlnTzBFVDZwVnp6MWlhcTdGcW1DMUtpUlZ0R2wzQTdyS2NjWnp6eTRvTnh6U2s0ZE1aZGs0OU45YVBzNmJFQl9OSEJaVEVWSVNfNlNHdFdCQzNMRXltSTdWXzRnUzlsSTdnd053ZVB3VnRiVnZYR3cvczE2MDAvU2NyZWVuc2hvdCUyMDIwMjYtMTEtMjAlMjAxNzE3NDElMjAlMjgxJTI5LndlYnA"
+    },
+    {
+      "id": "at_51258841548",
+      "title": "Cleverbridge warns hackers stole credit card numbers, CVVs in data breach",
+      "url": "https://www.bleepingcomputer.com/news/security/cleverbridge-warns-hackers-stole-credit-card-numbers-cvvs-in-data-breach/",
+      "summary": "E-commerce platform Cleverbridge is warning that hackers breached its systems and stole customers' payment card information, including credit card numbers and CVV security codes. [...]",
+      "source": "Lawrence Abrams via Bleeping Computer",
+      "image": "https://www.inoreader.com/camo/s41GMTX1Fe0FhR2uvpCPWaXKmO7FrpXv43yNUy5vmLgI,q80,480x400,pf,b64/aHR0cHM6Ly93d3cuYmxlZXBzdGF0aWMuY29tL2NvbnRlbnQvaGwtaW1hZ2VzLzIwMjYvMTEvMjIvY3JlZGl0LWNhcmRzLmpwZw"
+    },
+    {
+      "id": "at_51258655717",
+      "title": "Signal to block Siri, Gemini AI from capturing chats on iOS, Android",
+      "url": "https://www.bleepingcomputer.com/news/security/signal-to-block-siri-gemini-ai-from-capturing-chats-on-ios-android/",
+      "summary": "Signal has announced new protections that block screenshots on iOS 27 and prevent AI assistants from capturing conversations on supported Android devices. [...]",
+      "source": "Bill Toulas via Bleeping Computer",
+      "image": "https://www.inoreader.com/camo/sZikMInB4p09BHzjPiAYrRivgXilJu25-WC-6uPluKbw,q80,480x400,pf,b64/aHR0cHM6Ly93d3cuYmxlZXBzdGF0aWMuY29tL2NvbnRlbnQvaGwtaW1hZ2VzLzIwMjUvMDkvMDgvU2lnbmFsLmpwZw"
+    },
     {
       "id": "at_51258477334",
       "title": "SECURITY AFFAIRS AI-CYBERSECURITY NEWSLETTER ROUND 9",
@@ -1560,46 +1600,6 @@
       "summary": "The maintainers of the PHP programming language on Wednesday issued an advisory announcing an upcoming security release that addresses critical flaws. The release is scheduled for November 19, 2026, between 2 and 2:30 p.m. UTC. \"These releases are part of PHP's regular four-week release cycle and will address security vulnerabilities affecting...",
       "source": "[email protected] (The Hacker News) via The Hacker News",
       "image": "https://www.inoreader.com/camo/sXh7bfKP5RBd9QUiAPqCgULISvtT1S6NuDixIsL4ZwcI,q80,480x400,pf,b64/aHR0cHM6Ly9ibG9nZ2VyLmdvb2dsZXVzZXJjb250ZW50LmNvbS9pbWcvYi9SMjl2WjJ4bC9BVnZYc0VqODZZQTBadlByZGxvdU42R3ZTWjVQX0k1SENhWUxtMlBCc19KQTc0d1VEZ0hsOGFud2NxRU41X1owa1RsQWdnZjA5MDZlbkptcnRVbk5fNmpuOWtxRDhLZ3VHOG5PZWgxeUdTNkFBUG8xLUpIT1JMUTVuWmNwbVM1U3M3bGl1cWdoRnNxOEJiNG9vYWJLMjlVY0NiWmx3V0dNNkh0eVJQczRUeTV6djVkNEZDNVNvNnRWRlVPYUVoVXlsSUZVL3MxNjAwL3BocC1mbGF3cy5qcGc"
-    },
-    {
-      "id": "at_51225816370",
-      "title": "Hackers Abuse CyberPower UPS Software to Execute SYSTEM Commands and Dump Active Directory Data",
-      "url": "https://cybersecuritynews.com/hackers-abuse-cyberpower-ups-software/",
-      "summary": "Exploited CyberPower PowerPanel Business software for managing uninterruptible power supplies (UPS) to gain SYSTEM-level access to a Windows domain controller. Symantec reported on November 18 that the attackers used a built-in scripting feature to copy the Active Directory database and launch malware that kept running after the collection activity....",
-      "source": "Abinaya via Cyber Security News",
-      "image": "https://www.inoreader.com/camo/susfXbXPQfYhVNpCTTmDmHgmPWtUgSsJ9o9_0eU-oUPw,q80,480x400,pf,b64/aHR0cHM6Ly9ibG9nZ2VyLmdvb2dsZXVzZXJjb250ZW50LmNvbS9pbWcvYi9SMjl2WjJ4bC9BVnZYc0VpNGtpOG92RTNjdXN0NWZKWWFHSUdMQU00Q3ByMmMtYnVMNWktcnZWRHpSeVNGMnU0aVdiVE1VX1ZhNUNod05qTUxvRC1TQTVsaklwX1ZLSUNDTVloN2tNUDljLWNKeVlQU3ZCdDhxOHkxY1NUQzc3U0ZNaXBlc3pvNEZqX2lGTDBGLVZKcnI4amduYzd2S0MyMEo5cTZRWXZvakRscXQ3WDUweF9xQzZHOGp4d0JMOC1GZDRiZ1NvVjc2V1kvczE2MDAvU2NyZWVuc2hvdCUyMDIwMjYtMTEtMTglMjAxODQyNTIlMjAlMjgxJTI5LndlYnA"
-    },
-    {
-      "id": "at_51225540397",
-      "title": "Palo Alto Networks to Buy AI Startup Applied Compute for $4.5 Billion",
-      "url": "https://www.securityweek.com/palo-alto-networks-to-buy-ai-startup-applied-compute-for-4-5-billion/",
-      "summary": "The all-stock deal will give the cybersecurity company a platform for fine-tuning and running open-weight AI models in public and sovereign clouds. The post Palo Alto Networks to Buy AI Startup Applied Compute for $4.5 Billion appeared first on SecurityWeek.",
-      "source": "SecurityWeek News via SecurityWeek",
-      "image": "https://www.inoreader.com/camo/sBVFIJD6Ku5S08l9QEF58EButTgO3Ve_hq9UbkoMwXtg,q80,480x400,pf,b64/aHR0cHM6Ly93d3cuc2VjdXJpdHl3ZWVrLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNC8wNC9QYWxvLUFsdG8tTmV0d29ya3MuanBlZw"
-    },
-    {
-      "id": "at_51225511505",
-      "title": "Hackers Exploiting Java4Shell RCE Flaw Using ARTEX Disguise Themselves as Chrome",
-      "url": "https://cybersecuritynews.com/java4shell-rce-flaw-exploited/",
-      "summary": "Cloudflare’s Cloudforce One reported a Java4Shell exploit attempt that looked like ordinary Google Chrome traffic in web logs. The team said a source IP first scanned a target using a User-Agent header that gave away the scanning tool. About 17 hours later, the same address sent an exploit attempt to the same target, this time claiming to be Chrome....",
-      "source": "Guru Baran via Cyber Security News",
-      "image": "https://www.inoreader.com/camo/sb8ZTn38Pw71Vn9t6ALWJ04wXV9pAXOut7S9sX9KsH-4,q80,480x400,pf,b64/aHR0cHM6Ly9jeWJlcnNlY3VyaXR5bmV3cy5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjYvMTEvSmF2YTRTaGVsbC1SQ0UtRmxhdy1FeHBsb2l0ZWQud2VicA"
-    },
-    {
-      "id": "at_51225134016",
-      "title": "WordPress 7.1.5 Patches 20 Security Issues, Including Potential RCE and SQL Injection Flaws",
-      "url": "https://cybersecuritynews.com/wordpress-7-1-5-patches-20-security-issues/",
-      "summary": "WordPress released version 7.1.5 on November 18, 2026, to address 20 security issues in WordPress Core. The update fixes a flaw that could allow someone without an account to run code on a vulnerable server, two SQL injection flaws, and a weakness that could let an administrator of one site take over a WordPress Multisite network. WordPress recommends...",
-      "source": "Guru Baran via Cyber Security News",
-      "image": "https://www.inoreader.com/camo/sSJFDYRdyBMp5_1Z1dG2hcSKTLmjIwHK6OnECfTHtnRU,q80,480x400,pf,b64/aHR0cHM6Ly9jeWJlcnNlY3VyaXR5bmV3cy5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjYvMTEvV29yZFByZXNzLTcuMS41LVBhdGNoZXMtMjAtU2VjdXJpdHktSXNzdWVzLndlYnA"
-    },
-    {
-      "id": "at_51225134021",
-      "title": "PHP Security Team Warns of Critical Vulnerabilities, Urges Users to Prepare for November 19 Updates",
-      "url": "https://cybersecuritynews.com/php-critical-vulnerabilities/",
-      "summary": "The PHP security team plans to release security updates on Thursday, November 19, 2026, between 14:00 and 14:30 UTC. In its November 18 security notice, the team said the releases will address vulnerabilities across all supported PHP branches, with the highest severity rated critical. It urged users to prepare now and install the updates promptly once...",
-      "source": "Guru Baran via Cyber Security News",
-      "image": "https://www.inoreader.com/camo/sS0Sfk_ALJbNJ-hLF1ngzRFVM9-rACnKSycTYvKcAZRU,q80,480x400,pf,b64/aHR0cHM6Ly9jeWJlcnNlY3VyaXR5bmV3cy5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjYvMTEvUEhQLUNyaXRpY2FsLVZ1bG5lcmFiaWxpdGllcy53ZWJw"
     }
   ]
 }

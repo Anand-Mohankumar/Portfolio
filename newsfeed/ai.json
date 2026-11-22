@@ -1,6 +1,30 @@
 {
-  "updatedAt": "2026-11-22T15:18:42.678880+00:00",
+  "updatedAt": "2026-11-22T21:46:02.193415+00:00",
   "articles": [
+    {
+      "id": "at_51260760652",
+      "title": "OpenAI’s chief scientist has thoughts on how to limit AI development",
+      "url": "https://techcrunch.com/2026/11/22/openais-chief-scientist-has-thoughts-on-how-to-limit-ai-development/",
+      "summary": "To establish a speed limit on AI development, you need to agree on how to measure speed.",
+      "source": "Anthony Ha via AI | TechCrunch",
+      "image": ""
+    },
+    {
+      "id": "at_51259854212",
+      "title": "Why data centers are at the center of the Big Tech backlash",
+      "url": "https://techcrunch.com/2026/11/22/why-data-centers-are-at-the-center-of-the-big-tech-backlash/",
+      "summary": "Journalist Paris Marx unpacks his new book \"Hyperscale.\"",
+      "source": "Anthony Ha via AI | TechCrunch",
+      "image": "https://www.inoreader.com/camo/s5ZDA4epfp9TphuNKWPm69H9QY2cmWTkc-_Yvv6BosDY,q80,480x400,pf,b64/aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNi8wOC9HZXR0eUltYWdlcy0yMjgzMTEzOTM2LW1hbGxlci5qcGc_dz0xMDI0"
+    },
+    {
+      "id": "at_51259456027",
+      "title": "Binding of Isaac developer removes AI music from Repentance Plus",
+      "url": "https://www.theverge.com/games/1039770/binding-of-isaac-ai-music",
+      "summary": "The Binding of Isaac: Repentance Plus has spent the last few days getting review-bombed on Steam after it was discovered that a particular segment of the game used AI music. Reddit user ShweetsStuff discovered the songs used during a Grand Theft Auto-themed section. They found several audio files with Suno metadata that pointed back to...",
+      "source": "Terrence O’Brien via The Verge - Artificial Intelligences",
+      "image": "https://www.inoreader.com/camo/smn213AeRwmhCMskvmOYH5ZLfZa5b6SqYkgLT5lZ2OMI,q80,480x400,pf,b64/aHR0cHM6Ly9wbGF0Zm9ybS50aGV2ZXJnZS5jb20vd3AtY29udGVudC91cGxvYWRzL3NpdGVzLzIvMjAyNi8xMS9qN3lQbWJOQ1A0SS1IRC5qcGc_cXVhbGl0eT05MCZzdHJpcD1hbGwmY3JvcD0wLDAsMTAwLDEwMA"
+    },
     {
       "id": "at_51257873625",
       "title": "The vibe-coding revolution is coming to all the gadgets",
@@ -1576,30 +1600,6 @@
       "summary": "Amazon will own just under 15% of Anthropic after the IPO, with the option to go much higher. Google is a close second with holdings of nearly 14%.",
       "source": "Julie Bort via AI | TechCrunch",
       "image": "https://www.inoreader.com/camo/sbp7QsSUelVT4a98Ztjb8cCVDBHmYmEhNF-l6JL1x1vs,q80,480x400,pf,b64/aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMi8wOS9HZXR0eUltYWdlcy0xNDE1MDc4MDg1LmpwZz9yZXNpemU9MTYwMCw5NjE"
-    },
-    {
-      "id": "at_51212581614",
-      "title": "'Essentially unusable': OpenAI launches GPT-6.2 Astra and Sol to negative reception from AI power users",
-      "url": "https://venturebeat.com/technology/essentially-unusable-openai-launches-gpt-6-2-astra-and-sol-to-negative-reception-from-ai-power-users",
-      "summary": "OpenAI released its new AI models GPT‑6.2 Astra and GPT‑6.2 Sol on Tuesday, both with new high benchmark scores and the former with a 20% price cut over the application programming interface (API) — so why are the new models drawing sharp criticism from several AI power users who tested them before launch?Read more",
-      "source": "[email protected] (Carl Franzen) via VentureBeat",
-      "image": "https://www.inoreader.com/camo/s1qQVaept4s2Hln4Zk2Ic1VQbIIhTNpXXtusoPtILcc8,q80,480x400,pf,b64/aHR0cHM6Ly9pbWFnZXMuY3RmYXNzZXRzLm5ldC9qZHR3cWh6dmMybjEvM1c0REltYkYzOUN3Q3J4dHdKdDYzNy80ZmUwZmQ1ODc2OTRiNmU5NzUwN2ZhYjVhYTdiMWJlYS9WaWN0b3JpYW5fTmlnaHRfU3RyZWV0X3dpdGhfR290aGljX0tub3RfXzFfLnBuZz93PTE2MDAmcT04MA"
-    },
-    {
-      "id": "at_51212398804",
-      "title": "SHIPPING: Microsoft introduced seven MAI models at its Ignite event, including new systems for codin...",
-      "url": "https://x.com/TheRundownAI/status/2122805949203148959",
-      "summary": "SHIPPING: Microsoft introduced seven MAI models at its Ignite event, including new systems for coding, cyber defense, image editing, live voice, and more.Highlights include:MAI Code 2: within a few points of Claude Opus 5.5 on coding benchmarks, for a twentieth of what Anthropic charges.MAI Image 2.7: moves to No. 1 on Artificial Analysis’ image editing...",
-      "source": "The Rundown AI (@TheRundownAI) via The Rundown AI(@TheRundownAI)",
-      "image": ""
-    },
-    {
-      "id": "at_51212388608",
-      "title": "SEC reportedly investigating Nvidia amid Huang exit",
-      "url": "https://techcrunch.com/2026/11/17/sec-reportedly-investigating-nvidia-amid-huang-exit/",
-      "summary": "The SEC is opening a probe into Nvidia following the departure of CEO Jensen Huang, who admitted to an affair with an alleged Chinese spy, reports The Wall Street Journal.",
-      "source": "Rebecca Bellan via AI | TechCrunch",
-      "image": ""
     }
   ]
 }
