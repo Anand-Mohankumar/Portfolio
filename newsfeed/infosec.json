@@ -1,6 +1,70 @@
 {
-  "updatedAt": "2026-11-21T23:17:45.541206+00:00",
+  "updatedAt": "2026-11-22T06:49:50.627407+00:00",
   "articles": [
+    {
+      "id": "at_51255801290",
+      "title": "MCP Server Security: How to Stop Rogue AI Agents",
+      "url": "https://cybersecuritynews.com/mcp-server-security/",
+      "summary": "The Model Context Protocol (MCP) lets AI applications connect to external tools, APIs, and business data through a standardized interface. But every MCP server adds another entry point that attackers can target. MCP server security is becoming an important concern as organizations give AI agents access to increasingly sensitive systems. ...",
+      "source": "Kavichselvan via Cyber Security News",
+      "image": "https://www.inoreader.com/camo/sLagI7oX9b_3ppQVddyyzma2c0Xd_FsLYAVYQ2yga8k8,q80,480x400,pf,b64/aHR0cHM6Ly9ibG9nZ2VyLmdvb2dsZXVzZXJjb250ZW50LmNvbS9pbWcvYi9SMjl2WjJ4bC9BVnZYc0VpMU5Nd0ZnLWZKX1FVQ0VZUFppdDYzR3FVZXN4ZU9HZUFWUm51Mnh2a1dJMF81U01pc003Sm5SRkx5Wld0dG14RUFKcE1ac3BmTjhZM2JFU0ROTklEYVZ6VU1GV2tITDk0N1NMcV83ZUQ3U0dVUE9lTTg4VDZkeHFFdDZlVnB6cUhPeWRoVW9hN1h2NnRNb1dCREhIaFNjNUhRMGY2ME0weVlheXZwZWE0ZGlYcGxPUm5oMmtuQ1NDdWloWTQvczE2MDAvSW5zaWduYXJ5JTIwTGF1bmNoZXMlMjBDbGFyaXR5JTIwT24tRGVtYW5kXyUyMFNCT01zLCUyME5vJTIwQW5udWFsJTIwQ29tbWl0bWVudCUyMFJlcXVpcmVkJTIwVG9yb250bywlMjBDYW5hZGEsJTIwSnVseSUyMDE1dGgsJTIwMjAyNiwlMjBDeWJlck5ld3N3aXJlJTIwRW50ZXJwcmlzZS1ncmFkZSUyMGJpbmFyeSUyMHNvZnR3YXJlJTIwdmVyaWZpY2F0aW9uJTIwZm9yJTIwb25lJTIwcHJvJTIwLSUyMDIwMjYtMTEtMThUMjI1OTM3LjYwLndlYnA"
+    },
+    {
+      "id": "at_51255718003",
+      "title": "OpenRouter Drops 3 Providers After Researchers Catch Months of Prompt Theft at AI Hosting Firms",
+      "url": "https://thehackernews.com/2026/11/openrouter-drops-3-providers-after.html",
+      "summary": "Attackers stole data from inside three AI inference providers for months, and none of the three knew until researchers told them, the industrial cybersecurity company Dragos said this week. Some of the stolen requests were flagged as Zero Data Retention, the setting that is supposed to mean a prompt is never stored. OpenRouter, a gateway that...",
+      "source": "[email protected] (The Hacker News) via The Hacker News",
+      "image": "https://www.inoreader.com/camo/sXF-jha8dmIT7u2zv5TW1fz4_f0-YwH1aKsM26fdDY9M,q80,480x400,pf,b64/aHR0cHM6Ly9ibG9nZ2VyLmdvb2dsZXVzZXJjb250ZW50LmNvbS9pbWcvYi9SMjl2WjJ4bC9BVnZYc0VqRUdQM1BfZWx2SzRDLVFuU3g1b25aNjd2aURYQ0lnUENVWXF0VEZfUkROY0xKZnlRNFFNYmVnVW1uOEFKeTVuRW1uWGZONEFDcjZoSHp0R19EZHFYbGo1NFMyMXRvYWNQUWFaZ1J4MnJncVpsdE4zbHZSRXBaUjJ4bHZnWEZfaVo3elcwWFQwYjkxbU1pUkRWYUVCNlRVdk1GbFd3YVNhM19DN2d3cHhkS2NOaEx0SXExNUtxd2FaclIzVkkvczE2MDAvb3BlbnJvdXRlci5wbmc"
+    },
+    {
+      "id": "at_51255718013",
+      "title": "Researchers Demonstrate Ghostscript Sandbox-Escape RCE via Crafted File Uploads in Popular Apps",
+      "url": "https://thehackernews.com/2026/11/researchers-demonstrate-ghostscript.html",
+      "summary": "A now-patched flaw in Ghostscript allows a crafted file to escape the program's security sandbox and run commands on the server that processes it. Ghostscript is the interpreter that many Linux servers use to convert uploaded PDFs, PostScript files, and images into other formats, often without the application calling it directly. Security firm...",
+      "source": "[email protected] (The Hacker News) via The Hacker News",
+      "image": "https://www.inoreader.com/camo/sICCsTJMj9OlvRVYdNVQdSBu6wBIItpurb0uhIPM_c7U,q80,480x400,pf,b64/aHR0cHM6Ly9ibG9nZ2VyLmdvb2dsZXVzZXJjb250ZW50LmNvbS9pbWcvYi9SMjl2WjJ4bC9BVnZYc0VnMUJpQ0pVSXJTSlhOZktQWkVrTTQ2eW5LNlJzN2diYTJ4TWFUVWRvSjd5T0s2WThrY0tNcUpfNlBoYlVJb2dfVTFFOGdSQ3BiajJIcmtROVVFcGJQaTFIT3ZreGR4Q0U1QWZhNUxia05oVVB2Z1U3U2E2MElWSEFXcVN2Z0phWDFwNmZyTUFOMzM1UW5jTDVVVFozYTR2MS1hZ3liOFpYSWxNR1pUT3R6c0MwR2xsMnFSSTBOSk5NSFRzZjgvczE2MDAvZ2hvc3RzY3JpcHQuanBn"
+    },
+    {
+      "id": "at_51255304799",
+      "title": "OpenRouter Users’ Private AI Chats Possibly Exposed Via Compromised Third-Party Providers",
+      "url": "https://cybersecuritynews.com/openrouter-ai-chat-leaks/",
+      "summary": "OpenRouter has removed three AI hosting providers and revoked Zero Data Retention eligibility for 125 endpoints after researchers found evidence that some providers had been compromised or had failed to follow their data policies. In its November 22 incident notice, OpenRouter said it notified all potentially affected customers. The findings...",
+      "source": "Guru Baran via Cyber Security News",
+      "image": "https://www.inoreader.com/camo/sghOtIxy5xXsijyP8WJ833hHFD9zWY9jb7laDiHlblGA,q80,480x400,pf,b64/aHR0cHM6Ly9ibG9nZ2VyLmdvb2dsZXVzZXJjb250ZW50LmNvbS9pbWcvYi9SMjl2WjJ4bC9BVnZYc0VpN0oyMWFpdTBLa0VRUFNsY01kVDRoWmpYbmstQmN6clY5VU1ZRW9fblU1OXIwT0tUSnpvYTltU2VvVG5DMTdJZy0ycUFzMjVsb0VTdGFtS0FyUER4YkJNUXJwdWZRb0FTQXI5blRGc0luSy1MSXBEbHZyZldlbUJuRWEtcnhxRGZlbXJGNXdsLWlRdFRpQjREZGhodVdOUzRXdU1PaDhBS25tMWNnakhhTE1aejZOS3JTYnY5WmRLM2RpYTBlL3MxNjAwL29wZW4yLndlYnA"
+    },
+    {
+      "id": "at_51255089193",
+      "title": "Hackers Could Execute Commands on WordPress, Email and Print Servers Through Upload2Shell Flaw",
+      "url": "https://cybersecuritynews.com/upload2shell-flaw/",
+      "summary": "A flaw in Ghostscript let researchers run commands on WordPress, Roundcube webmail, and Linux print servers through routine file processing. The vulnerability, dubbed Upload2Shell and tracked as CVE-2026-125396, affects upstream Ghostscript releases before 10.08.0. It sits in the software’s Type 1 font loader, but the affected servers did not...",
+      "source": "Guru Baran via Cyber Security News",
+      "image": "https://www.inoreader.com/camo/sxuaRDMvKD7KLYnM0_Ui--BIuwzXw9lHcuQraYAmhulE,q80,480x400,pf,b64/aHR0cHM6Ly9ibG9nZ2VyLmdvb2dsZXVzZXJjb250ZW50LmNvbS9pbWcvYi9SMjl2WjJ4bC9BVnZYc0VnVjUzQ2pYWEd2RjZ1Z2d3Vm1hd3pvZTBHUzdqUU1LMGNxQnptMFRjN3JROTRxUDhyVUdZYWtOVlVEUDdSaDBQTUdfZTZGTTRqWkVObXlfd1hjZXdHekZmeERpMUJ4OXJBbUsxR0piSFJzLTFIeUVxVVFGZV8tdnhzWXY2TUlDS085bkN5Z3E1ZTM2WGozWU1vY1FKQWM4RFk0UWZKX0dMUm5vek1URFBQOXJvQzdjLXFZSlpwRWU4NzVGR1UtL3MxNjAwL1VwbG9hZDJTaGVsbCUyMEZsYXcxLndlYnA"
+    },
+    {
+      "id": "at_51254863042",
+      "title": "Hackers Exploit Microsoft Entra Connect Health Flaw to Access Admin Emails and Organization Data",
+      "url": "https://cybersecuritynews.com/microsoft-entra-connect-health-flaw/",
+      "summary": "Attackers exploited a flaw in Microsoft Entra Connect Health to read administrator and technical contact email addresses, along with configuration data from affected organizations. A Microsoft customer notice shared on Reddit describes read-only access to those records, not access to inboxes or email messages. Microsoft fixed the flaw in its...",
+      "source": "Guru Baran via Cyber Security News",
+      "image": "https://www.inoreader.com/camo/s2PTGo9oxhfmt-_R6lgwG5MF80Gql9_tiZg02offv4hQ,q80,480x400,pf,b64/aHR0cHM6Ly9ibG9nZ2VyLmdvb2dsZXVzZXJjb250ZW50LmNvbS9pbWcvYi9SMjl2WjJ4bC9BVnZYc0VnalBad0pjYW5BQVdWeXh5OE5KMEVkSkpiUGg1c292OGF1RmFkVXY4S3NVdXM3WjJMV2ZKclNwaUlNeHpUV0pIM21sN0tMd3liOHk1aXZDMnNZeVl3TnltY3NwUHNTbWJIa01SVXNVUks3WGk2V3N2VUhOMG9LNW5nVmoxUllwMEtmN1dqWGFyTmxUSDBWYnRqcEJBZ3BSTGZYNk1Vc0hrMHJGWkxjTTlXRmZwS21DVldzVVo2WnlQMDY1Ti1PL3MxNjAwL01pY3Jvc29mdCUyMEVudHJhJTIwQ29ubmVjdCUyMEhlYWx0aCUyMEZsYXcxLndlYnA"
+    },
+    {
+      "id": "at_51254612569",
+      "title": "President Trump Taps Kirsten Davies as National Cyber Director",
+      "url": "https://www.securityweek.com/president-trump-taps-kirsten-davies-as-national-cyber-director/",
+      "summary": "White House says the battle-tested cyber leader will drive an America First cyber strategy. The post President Trump Taps Kirsten Davies as National Cyber Director appeared first on SecurityWeek.",
+      "source": "SecurityWeek News via SecurityWeek",
+      "image": ""
+    },
+    {
+      "id": "at_51254538269",
+      "title": "FBI Investigating Apparent Hack of Its Key National Criminal Justice Database, AP Source Says",
+      "url": "https://www.securityweek.com/fbi-investigating-apparent-hack-of-its-key-national-criminal-justice-database-ap-source-says/",
+      "summary": "The FBI is investigating an apparent hack of a national law enforcement database that it maintains. The post FBI Investigating Apparent Hack of Its Key National Criminal Justice Database, AP Source Says appeared first on SecurityWeek.",
+      "source": "Associated Press via SecurityWeek",
+      "image": "https://www.inoreader.com/camo/sTaDLzINbONiPxKKplap-HoWhjbT4fpF79NzzkCrUhkU,q80,480x400,pf,b64/aHR0cHM6Ly93d3cuc2VjdXJpdHl3ZWVrLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNC8wNC9GQkktU3VydmVpbGxhbmNlLmpwZw"
+    },
     {
       "id": "at_51254096855",
       "title": "Rackspace Spot breach let hackers access customer Kubernetes secrets",
@@ -1536,70 +1600,6 @@
       "summary": "As reported by SDx Central, the National Security Agency experienced a significant internal communications network outage on Nov. 17. The disruption prompted the agency to retain essential staff at its Maryland campus to address the technical failure.",
       "source": "SC Staff via Latest articles from SC Magazine",
       "image": "https://www.inoreader.com/camo/sWfMxetOOqWpH1lYgmbKoRDn28YDU_LJcBvCx9E4XA9k,q80,480x400,pf,b64/aHR0cHM6Ly9maWxlcy5jeWJlcnJpc2thbGxpYW5jZS5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjMvMDgvbnNhLW5hdGlvbmEtc2VjdXJpdHktYWdlbmN5LmpwZw"
-    },
-    {
-      "id": "at_51224763943",
-      "title": "CISA adds critical Perforce Puppet Enterprise vulnerability to known exploited list",
-      "url": "https://www.scworld.com/brief/cisa-adds-critical-perforce-puppet-enterprise-vulnerability-to-known-exploited-list",
-      "summary": "Per Security Affairs, the Cybersecurity and Infrastructure Security Agency has added a critical vulnerability in Perforce Puppet Enterprise, tracked as CVE-2026-115731, to its Known Exploited Vulnerabilities catalog.",
-      "source": "SC Staff via Latest articles from SC Magazine",
-      "image": "https://www.inoreader.com/camo/sz3hBZx2z8efOHS_7gJFEXoEN4zBacSMHSimMYFFJvUA,q80,480x400,pf,b64/aHR0cHM6Ly9maWxlcy5jeWJlcnJpc2thbGxpYW5jZS5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjMvMDgvUGF0Y2gtMS1lMTY5MTA4MzkwNTM5Mi5qcGc"
-    },
-    {
-      "id": "at_51224763945",
-      "title": "Tails releases emergency update to address uBlock Origin vulnerability",
-      "url": "https://www.scworld.com/brief/tails-releases-emergency-update-to-address-ublock-origin-vulnerability",
-      "summary": "As detailed in Cyber Insider, the privacy-focused operating system Tails issued an emergency update on Nov. 17 to remove the uBlock Origin extension from its bundled Tor Browser due to a critical security flaw.",
-      "source": "SC Staff via Latest articles from SC Magazine",
-      "image": "https://www.inoreader.com/camo/skYWIpvw1ao57GxnjQIAL-U5KPqD6NRFLYMEkWTI5mjY,q80,480x400,pf,b64/aHR0cHM6Ly9maWxlcy5jeWJlcnJpc2thbGxpYW5jZS5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjQvMDMvMDMwNTI0X3BhdGNoLmpwZw"
-    },
-    {
-      "id": "at_51224763949",
-      "title": "Apache releases security update for critical roller flaw",
-      "url": "https://www.scworld.com/brief/apache-releases-security-update-for-critical-roller-flaw",
-      "summary": "Apache has released security updates to address a critical vulnerability in the Apache Roller blogging server that threat actors are actively exploiting to gain remote code execution, with further coverage provided by Bleeping Computer.",
-      "source": "SC Staff via Latest articles from SC Magazine",
-      "image": "https://www.inoreader.com/camo/sgYuEIs8RqSo_Aoso8YlhhERsGErDWTgD0yDjbGNq4_o,q80,480x400,pf,b64/aHR0cHM6Ly9maWxlcy5jeWJlcnJpc2thbGxpYW5jZS5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjYvMDEvMDEyMjI2X2N5YmVyc2VjdXJpdHlfYWxlcnRzLmpwZw"
-    },
-    {
-      "id": "at_51224763951",
-      "title": "Nozomi Networks and Lockheed Martin partner to enhance defense cybersecurity",
-      "url": "https://www.scworld.com/brief/nozomi-networks-and-lockheed-martin-partner-to-enhance-defense-cybersecurity",
-      "summary": "Nozomi Networks has entered a strategic collaboration with Lockheed Martin to improve cybersecurity and compliance standards for government and defense sectors, based on information published by IT Pro.",
-      "source": "SC Staff via Latest articles from SC Magazine",
-      "image": "https://www.inoreader.com/camo/sS7XStYMFF5Y3-CE_ollhtq7OEzwF4qTd7JWwjGn3yRc,q80,480x400,pf,b64/aHR0cHM6Ly9maWxlcy5jeWJlcnJpc2thbGxpYW5jZS5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjUvMDIvMDIxODI1X3BlbnRhZ29uLmpwZw"
-    },
-    {
-      "id": "at_51224442479",
-      "title": "Vulnerabilities found in Brazil's digital certificate browser extensions",
-      "url": "https://www.scworld.com/brief/vulnerabilities-found-in-brazils-digital-certificate-browser-extensions",
-      "summary": "Brazil's digital certificate system recently faced significant security risks due to critical vulnerabilities discovered in five popular browser extensions used by government agencies and various professionals to sign official documents, according to a recent report by Dark Reading.",
-      "source": "SC Staff via Latest articles from SC Magazine",
-      "image": "https://www.inoreader.com/camo/sSvQtf0haqXDncOLuw_2kGBxRP_Jzz7tE2nvisAbp_NU,q80,480x400,pf,b64/aHR0cHM6Ly9maWxlcy5jeWJlcnJpc2thbGxpYW5jZS5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjYvMDkvMDkwMTI2X2FsZXJ0X2NhdXRpb25faGFjay5qcGc"
-    },
-    {
-      "id": "at_51224025519",
-      "title": "Ukraine, FBI arrest ransomware gang members tied to $40M in ransoms",
-      "url": "https://www.bleepingcomputer.com/news/security/ukraine-fbi-arrest-ransomware-gang-members-tied-to-40m-in-ransoms/",
-      "summary": "Ukrainian authorities, working with the FBI, have arrested four suspected members of an international ransomware organization linked to more than $40.5 million in ransom payments from at least 28 companies worldwide. [...]",
-      "source": "Lawrence Abrams via Bleeping Computer",
-      "image": "https://www.inoreader.com/camo/s9GQ_IyDxXyzOTQHj9dDFpcqTwFCJ8gVSkwWqWXQ51Wo,q80,480x400,pf,b64/aHR0cHM6Ly93d3cuYmxlZXBzdGF0aWMuY29tL2NvbnRlbnQvaGwtaW1hZ2VzLzIwMjIvMDMvMTUvVWtyYWluZS1oYWNrZXIuanBn"
-    },
-    {
-      "id": "at_51223256669",
-      "title": "Java4Shell flaw: Attackers probe critical JVM vulnerability",
-      "url": "https://www.scworld.com/news/java4shell-flaw-attackers-probe-critical-jvm-vulnerability",
-      "summary": "Attackers probe critical Java4Shell flaw as experts warn exploitation is likely and urge patching.",
-      "source": "Steve Zurier via Latest articles from SC Magazine",
-      "image": "https://www.inoreader.com/camo/sRhjmsXGlOg7ys2LaA14WhfyTQtX2wh-l876NSTp_pnE,q80,480x400,pf,b64/aHR0cHM6Ly9maWxlcy5jeWJlcnJpc2thbGxpYW5jZS5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjYvMDEvMDEyNzI2X2phdmFzY3JpcHRfY29kZS5qcGc"
-    },
-    {
-      "id": "at_51223254031",
-      "title": "Every Detail Matters: From DFIR Intake to Investigative Context",
-      "url": "https://www.sophos.com/en-us/blog/every-detail-matters-from-dfir-intake-to-investigative-context",
-      "summary": "The first conversation with a DFIR first responder team may feel like an initial scoping exercise. In reality, the details captured during those first minutes can become valuable context for the investigation that follows.",
-      "source": "via Naked Security",
-      "image": ""
     }
   ]
 }
