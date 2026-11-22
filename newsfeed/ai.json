@@ -1,6 +1,14 @@
 {
-  "updatedAt": "2026-11-22T06:49:50.922316+00:00",
+  "updatedAt": "2026-11-22T15:18:42.678880+00:00",
   "articles": [
+    {
+      "id": "at_51257873625",
+      "title": "The vibe-coding revolution is coming to all the gadgets",
+      "url": "https://www.theverge.com/column/1039139/vibe-coding-gadgets-tv-camera",
+      "summary": "This is The Stepback, a weekly newsletter breaking down one essential story from the tech world. For more on the vibe-hacking of everything, follow David Pierce. The Stepback arrives in our subscribers' inboxes on Sunday at 8AM ET. Opt in for The Stepback here. How it started Like so many things with AI, it's not that large language...",
+      "source": "David Pierce via The Verge - Artificial Intelligences",
+      "image": "https://www.inoreader.com/camo/sbkW895F9q9S7pL1l2OkxZ9K7-lyQJFF3LC_Doqw7wPc,q80,480x400,pf,b64/aHR0cHM6Ly9wbGF0Zm9ybS50aGV2ZXJnZS5jb20vd3AtY29udGVudC91cGxvYWRzL3NpdGVzLzIvMjAyNi8xMS9BSV92aWJlX2NvZGluZ19oYWNrZXJfaGFyZHdhcmUuanBnP3F1YWxpdHk9OTAmc3RyaXA9YWxsJmNyb3A9MCwwLDEwMCwxMDA"
+    },
     {
       "id": "at_51253975918",
       "title": "Even the fastest AI clusters can be held back by their release pipelines",
@@ -1591,14 +1599,6 @@
       "url": "https://techcrunch.com/2026/11/17/sec-reportedly-investigating-nvidia-amid-huang-exit/",
       "summary": "The SEC is opening a probe into Nvidia following the departure of CEO Jensen Huang, who admitted to an affair with an alleged Chinese spy, reports The Wall Street Journal.",
       "source": "Rebecca Bellan via AI | TechCrunch",
-      "image": ""
-    },
-    {
-      "id": "at_51212388614",
-      "title": "Google joins the tech outage trend by announcing it’s not having one",
-      "url": "https://techcrunch.com/2026/11/17/google-joins-the-tech-outage-trend-by-announcing-its-not-having-one/",
-      "summary": "With tech outages seemingly everywhere, Google took the unusual step of announcing that Gmail is working just fine, actually.",
-      "source": "Sarah Perez via AI | TechCrunch",
       "image": ""
     }
   ]

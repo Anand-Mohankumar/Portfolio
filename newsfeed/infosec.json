@@ -1,6 +1,30 @@
 {
-  "updatedAt": "2026-11-22T06:49:50.627407+00:00",
+  "updatedAt": "2026-11-22T15:18:42.734058+00:00",
   "articles": [
+    {
+      "id": "at_51258477334",
+      "title": "SECURITY AFFAIRS AI-CYBERSECURITY NEWSLETTER ROUND 9",
+      "url": "https://securityaffairs.com/203725/ai/security-affairs-ai-cybersecurity-newsletter-round-9.html",
+      "summary": "Security Affairs AI-CYBERSECURITY newsletter includes a collection of the best articles and research on AI in the international landscape Artificial intelligence is rapidly changing cybersecurity, reshaping both the techniques used by attackers and the tools available to defenders. AI agents can automate tasks, analyze large amounts of data,...",
+      "source": "Pierluigi Paganini via Security Affairs",
+      "image": "https://www.inoreader.com/camo/s42GZOiAxz8ZmoIpg3wtjxiAD2Hr5eczP5aXTEmEJRsQ,q80,480x400,pf,b64/aHR0cHM6Ly9zZWN1cml0eWFmZmFpcnMuY29tL3dwLWNvbnRlbnQvdXBsb2Fkcy8yMDI2LzA5L1NlY3VyaXR5LUFmZmFpcnMtTmV3c0xldHRlci1BSS1DeWJlci5qcGc"
+    },
+    {
+      "id": "at_51258477338",
+      "title": "SECURITY AFFAIRS MALWARE NEWSLETTER ROUND 123",
+      "url": "https://securityaffairs.com/203714/malware/security-affairs-malware-newsletter-round-123-2.html",
+      "summary": "Security Affairs Malware newsletter includes a collection of the best articles and research on malware in the international landscape Malware Newsletter MMD-073-2026 – Linux/EasyShell, a new Rust RAT implant and beacon aims Linux and MacOS Supply chain attack: BO Team in a software developer’s infrastructure 0% GPU utilization:...",
+      "source": "Pierluigi Paganini via Security Affairs",
+      "image": ""
+    },
+    {
+      "id": "at_51258132795",
+      "title": "Security Affairs newsletter Round 605 by Pierluigi Paganini – INTERNATIONAL EDITION",
+      "url": "https://securityaffairs.com/203701/breaking-news/security-affairs-newsletter-round-605-by-pierluigi-paganini-international-edition.html",
+      "summary": "A new round of the weekly Security Affairs newsletter has arrived! Every week, the best security articles from Security Affairs are free in your email box. Enjoy a new round of the weekly SecurityAffairs newsletter, including international press. Cyberattack on Austrian Foreign Ministry Exposes Diplomatic Staff DataCairn AI Framework...",
+      "source": "Pierluigi Paganini via Security Affairs",
+      "image": "https://www.inoreader.com/camo/sipvOyBoxz2AXi2WIy_ZqJtpjI--D-5iZYnS_Khjf8nk,q80,480x400,pf,b64/aHR0cHM6Ly9zZWN1cml0eWFmZmFpcnMuY29tL3dwLWNvbnRlbnQvdXBsb2Fkcy8yMDI2LzA5L3NlY3VyaXR5YWZmYWlycy1uZXdzbGV0dGVyLmpwZw"
+    },
     {
       "id": "at_51255801290",
       "title": "MCP Server Security: How to Stop Rogue AI Agents",
@@ -1576,30 +1600,6 @@
       "summary": "The PHP security team plans to release security updates on Thursday, November 19, 2026, between 14:00 and 14:30 UTC. In its November 18 security notice, the team said the releases will address vulnerabilities across all supported PHP branches, with the highest severity rated critical. It urged users to prepare now and install the updates promptly once...",
       "source": "Guru Baran via Cyber Security News",
       "image": "https://www.inoreader.com/camo/sS0Sfk_ALJbNJ-hLF1ngzRFVM9-rACnKSycTYvKcAZRU,q80,480x400,pf,b64/aHR0cHM6Ly9jeWJlcnNlY3VyaXR5bmV3cy5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjYvMTEvUEhQLUNyaXRpY2FsLVZ1bG5lcmFiaWxpdGllcy53ZWJw"
-    },
-    {
-      "id": "at_51224763937",
-      "title": "Alliance for Creativity and Entertainment shuts down major Turkish piracy site",
-      "url": "https://www.scworld.com/brief/alliance-for-creativity-and-entertainment-shuts-down-major-turkish-piracy-site",
-      "summary": "As detailed in Bleeping Computer, the Alliance for Creativity and Entertainment has successfully shut down Dizigom, a prominent Turkish piracy service that previously attracted approximately 21 million monthly visitors.",
-      "source": "SC Staff via Latest articles from SC Magazine",
-      "image": "https://www.inoreader.com/camo/sMZL1dyGQqQp8mbzoDtTr4fIMfdcI7VGFJ6K8mgAUVxo,q80,480x400,pf,b64/aHR0cHM6Ly9maWxlcy5jeWJlcnJpc2thbGxpYW5jZS5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjUvMDgvMDgwMTI1X2V4cGxvaXQuanBn"
-    },
-    {
-      "id": "at_51224763939",
-      "title": "Federal officials address digital infrastructure concerns following recent tech outages",
-      "url": "https://www.scworld.com/brief/federal-officials-address-digital-infrastructure-concerns-following-recent-tech-outages",
-      "summary": "Federal officials are working to address public concerns regarding potential foreign interference following a series of significant digital service disruptions that impacted the United States over the past week, based on information published by Nextgov.",
-      "source": "SC Staff via Latest articles from SC Magazine",
-      "image": "https://www.inoreader.com/camo/syybq_f2ZRt9dYWlTrmfLlfqd2FkLlb7sZN_uFSoxznM,q80,480x400,pf,b64/aHR0cHM6Ly9maWxlcy5jeWJlcnJpc2thbGxpYW5jZS5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjUvMTAvMTAwMTI1X3VzX2NhcGl0b2wuanBn"
-    },
-    {
-      "id": "at_51224763942",
-      "title": "National Security Agency network outage linked to routine patching",
-      "url": "https://www.scworld.com/brief/national-security-agency-network-outage-linked-to-routine-patching",
-      "summary": "As reported by SDx Central, the National Security Agency experienced a significant internal communications network outage on Nov. 17. The disruption prompted the agency to retain essential staff at its Maryland campus to address the technical failure.",
-      "source": "SC Staff via Latest articles from SC Magazine",
-      "image": "https://www.inoreader.com/camo/sWfMxetOOqWpH1lYgmbKoRDn28YDU_LJcBvCx9E4XA9k,q80,480x400,pf,b64/aHR0cHM6Ly9maWxlcy5jeWJlcnJpc2thbGxpYW5jZS5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjMvMDgvbnNhLW5hdGlvbmEtc2VjdXJpdHktYWdlbmN5LmpwZw"
     }
   ]
 }
