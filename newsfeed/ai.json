@@ -1,6 +1,30 @@
 {
-  "updatedAt": "2026-11-22T21:46:02.193415+00:00",
+  "updatedAt": "2026-11-23T02:45:42.042714+00:00",
   "articles": [
+    {
+      "id": "at_51261828714",
+      "title": "How Notable Capital, GIC, and Baillie Gifford bet big on Anthropic before its IPO",
+      "url": "https://techcrunch.com/2026/11/22/how-notable-capital-gic-and-baillie-gifford-bet-big-on-anthropic-before-its-ipo/",
+      "summary": "Three significant backers share what gave them conviction to bet billions on Anthropic.",
+      "source": "Marina Temkin via AI | TechCrunch",
+      "image": ""
+    },
+    {
+      "id": "at_51261043168",
+      "title": "We haven’t seen the last of the major tech outages",
+      "url": "https://www.theverge.com/tech/1039851/major-tech-outages",
+      "summary": "Over the last week or so, we have seen a nationwide FAA ground stop, a multi-day Outlook outage that brought entire companies to a standstill, and a banking outage at JPMorgan Chase. But the consensus is that there are more to come. Director of National Intelligence Jay Clayton told CNN: \"The American people should be prepared for...",
+      "source": "Terrence O’Brien via The Verge - Artificial Intelligences",
+      "image": "https://www.inoreader.com/camo/sdsfaeWUI0ALhE5MCXiK4NDNrMiWCc_UxeZTRLKFkoAk,q80,480x400,pf,b64/aHR0cHM6Ly9wbGF0Zm9ybS50aGV2ZXJnZS5jb20vd3AtY29udGVudC91cGxvYWRzL3NpdGVzLzIvY2hvcnVzL3VwbG9hZHMvY2hvcnVzX2Fzc2V0L2ZpbGUvMjMzMTg0MzMvYWtyYWxlc18yMjAzMDlfNDk3N18wMTgyLmpwZz9xdWFsaXR5PTkwJnN0cmlwPWFsbCZjcm9wPTAsMCwxMDAsMTAw"
+    },
+    {
+      "id": "at_51260844243",
+      "title": "Your ML model passed every test. Here’s what those tests might have missed",
+      "url": "https://venturebeat.com/orchestration/your-ml-model-passed-every-test-heres-what-those-tests-might-have-missed",
+      "summary": "Most ML models are tested the way students cram for an exam: On clean, familiar material, under comfortable conditions. Then they graduate into production — where the inputs are messy, the labels drift, and nobody is grading on a curve. The result is the most common failure mode in applied ML: A model that looked excellent in the lab and silently degrades...",
+      "source": "via VentureBeat",
+      "image": "https://www.inoreader.com/camo/sXqL0ZsFf-_0huJfvOnDoDz02jmQ5ffwfCCYTDpeqNqw,q80,480x400,pf,b64/aHR0cHM6Ly9pbWFnZXMuY3RmYXNzZXRzLm5ldC9qZHR3cWh6dmMybjEvMUxxb0xWVGU2aXdsVTB2bWJ0Mmx0Wi8zOTMzNDBjODQ0MDYyNTVjMjY5MGNjZjI0ZjlkZGUxZS91NzI3NzI4OTQ0Ml9Bbl9BSV9yb2JvdF9pc19zaXR0aW5nX2F0X2Ffc2Nob29sX2Rlc2suX1RoZXlfYXJlXzUzYWZkMjk4LTgzMmYtNGMyMC1iYjFmLTdmZmU5MmM2MTgxYl8wLnBuZz93PTE2MDAmcT04MA"
+    },
     {
       "id": "at_51260760652",
       "title": "OpenAI’s chief scientist has thoughts on how to limit AI development",
@@ -1576,30 +1600,6 @@
       "summary": "Microsoft CEO Satya Nadella onstage at Microsoft Ignite. | Image: Microsoft / YouTube Microsoft CEO Satya Nadella says he's AGI-pilled, at least when it comes to how AI might make startling changes to the structure of the economy and how politics might change because of it. \"I am AGI-pilled in the sense that at an economy level, what is...",
       "source": "Nilay Patel via The Verge - Artificial Intelligences",
       "image": "https://www.inoreader.com/camo/s0DqZsSDUQCx93yDFtfofRok4JIhEbrGSkbTTuV7KL74,q80,480x400,pf,b64/aHR0cHM6Ly9wbGF0Zm9ybS50aGV2ZXJnZS5jb20vd3AtY29udGVudC91cGxvYWRzL3NpdGVzLzIvMjAyNi8xMS9TY3JlZW5zaG90LTIwMjYtMTEtMTctYXQtMy4wMC4xNS1QTS5wbmc_cXVhbGl0eT05MCZzdHJpcD1hbGwmY3JvcD0wLDAsMTAwLDEwMA"
-    },
-    {
-      "id": "at_51212809121",
-      "title": "Nvidia says its open source AI strategy remains intact after Jensen Huang’s exit",
-      "url": "https://techcrunch.com/2026/11/17/nvidia-says-its-open-source-ai-strategy-remains-intact-after-jensen-huangs-exit/",
-      "summary": "Nvidia's interim CEO reaffirmed its open source AI strategy and plans to acquire Hugging Face, despite Jensen Huang's sudden departure.",
-      "source": "Sarah Perez via AI | TechCrunch",
-      "image": "https://www.inoreader.com/camo/sjmXXYy_UnKVpsAf5j4OT0-DNGqkObLKPvzNzymL6XJg,q80,480x400,pf,b64/aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNi8xMS9HZXR0eUltYWdlcy0yMjkwMDk3NTcwLmpwZz93PTEwMjQ"
-    },
-    {
-      "id": "at_51212809123",
-      "title": "Nvidia says it doesn’t plan to reappoint Jensen Huang as CEO",
-      "url": "https://techcrunch.com/2026/11/17/nvidia-says-it-doesnt-plan-to-reappoint-jensen-huang-as-ceo/",
-      "summary": "The former CEO offered to return to his top role at the company after his resignation last week.",
-      "source": "Lucas Ropek via AI | TechCrunch",
-      "image": ""
-    },
-    {
-      "id": "at_51212809125",
-      "title": "Amazon and Google will together own nearly 30% of Anthropic after its IPO",
-      "url": "https://techcrunch.com/2026/11/17/amazon-and-google-will-together-own-nearly-30-of-anthropic-after-its-ipo/",
-      "summary": "Amazon will own just under 15% of Anthropic after the IPO, with the option to go much higher. Google is a close second with holdings of nearly 14%.",
-      "source": "Julie Bort via AI | TechCrunch",
-      "image": "https://www.inoreader.com/camo/sbp7QsSUelVT4a98Ztjb8cCVDBHmYmEhNF-l6JL1x1vs,q80,480x400,pf,b64/aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMi8wOS9HZXR0eUltYWdlcy0xNDE1MDc4MDg1LmpwZz9yZXNpemU9MTYwMCw5NjE"
     }
   ]
 }
