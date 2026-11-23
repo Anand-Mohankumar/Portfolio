@@ -1,6 +1,14 @@
 {
-  "updatedAt": "2026-11-23T02:45:42.042714+00:00",
+  "updatedAt": "2026-11-23T12:44:10.356772+00:00",
   "articles": [
+    {
+      "id": "at_51265312153",
+      "title": "Meta Muse can do your Black Friday shopping at Walmart",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1039874/walmart-agent-gateway-meta-muse-black-friday",
+      "summary": "Muse can find Walmart’s Black Friday deals so that you don’t have to. | Image: Walmart Walmart will let Meta's Muse shop on its website on your behalf, allowing the AI agent to find and purchase Black Friday deals. Tomorrow, on Tuesday November 24th, the retail giant will roll out a live implementation of the Agent Gateway it announced...",
+      "source": "Jess Weatherbed via The Verge - Artificial Intelligences",
+      "image": "https://www.inoreader.com/camo/s5xAG7gfvfZAfwd2oaIzdSmkfUeSb5y1QJC0QqU61MH0,q80,480x400,pf,b64/aHR0cHM6Ly9wbGF0Zm9ybS50aGV2ZXJnZS5jb20vd3AtY29udGVudC91cGxvYWRzL3NpdGVzLzIvMjAyNi8xMS9XYWxtYXJ0LU1ldGEtTXVzZS1BZ2VudC1HYXRld2F5LmpwZz9xdWFsaXR5PTkwJnN0cmlwPWFsbCZjcm9wPTAsMCwxMDAsMTAw"
+    },
     {
       "id": "at_51261828714",
       "title": "How Notable Capital, GIC, and Baillie Gifford bet big on Anthropic before its IPO",
@@ -1592,14 +1600,6 @@
       "summary": "Nvidia's interim CEO says the company is done selling chips to China. How much will that cost?",
       "source": "Tim Fernholz via AI | TechCrunch",
       "image": "https://www.inoreader.com/camo/s6Z18HZOqeR8rTMaSQ4LZ83eWwy_Ebeq2BCIEJ2phgHk,q80,480x400,pf,b64/aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNi8wMy9qZW5zZW4taHVhbmctZ3RjLWdldHR5LmpwZz9yZXNpemU9MTYwMCwxMDQx"
-    },
-    {
-      "id": "at_51213031450",
-      "title": "Satya Nadella says he’s AGI-pilled now",
-      "url": "https://www.theverge.com/tech/1036111/satya-nadella-says-hes-agi-pilled-now",
-      "summary": "Microsoft CEO Satya Nadella onstage at Microsoft Ignite. | Image: Microsoft / YouTube Microsoft CEO Satya Nadella says he's AGI-pilled, at least when it comes to how AI might make startling changes to the structure of the economy and how politics might change because of it. \"I am AGI-pilled in the sense that at an economy level, what is...",
-      "source": "Nilay Patel via The Verge - Artificial Intelligences",
-      "image": "https://www.inoreader.com/camo/s0DqZsSDUQCx93yDFtfofRok4JIhEbrGSkbTTuV7KL74,q80,480x400,pf,b64/aHR0cHM6Ly9wbGF0Zm9ybS50aGV2ZXJnZS5jb20vd3AtY29udGVudC91cGxvYWRzL3NpdGVzLzIvMjAyNi8xMS9TY3JlZW5zaG90LTIwMjYtMTEtMTctYXQtMy4wMC4xNS1QTS5wbmc_cXVhbGl0eT05MCZzdHJpcD1hbGwmY3JvcD0wLDAsMTAwLDEwMA"
     }
   ]
 }
