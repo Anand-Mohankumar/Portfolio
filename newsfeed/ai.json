@@ -1,6 +1,30 @@
 {
-  "updatedAt": "2026-11-25T04:12:45.455794+00:00",
+  "updatedAt": "2026-11-25T14:24:46.686610+00:00",
   "articles": [
+    {
+      "id": "at_51289193335",
+      "title": "Amazon is reportedly in talks to end Muse AI shopping block",
+      "url": "https://www.theverge.com/tech/1042071/meta-amazon-muse-ai-shopping-discussions",
+      "summary": "Amazon has held talks about letting Meta's Muse AI agent shop on its online marketplace, according to a report from Fortune. The discussions, which could end Amazon's block on Muse, reportedly center on the kinds of products the AI agent recommends and the potential impact on the ecommerce giant's advertising revenue. As reported by...",
+      "source": "Emma Roth via The Verge - Artificial Intelligences",
+      "image": "https://www.inoreader.com/camo/sNxjTJuwW5_K1z1UAcwN2bCq3TdTw5ClWDzUJyFlDgKU,q80,480x400,pf,b64/aHR0cHM6Ly9wbGF0Zm9ybS50aGV2ZXJnZS5jb20vd3AtY29udGVudC91cGxvYWRzL3NpdGVzLzIvMjAyNi8wOS9TVEtCMzk0X01VU0VfQUlfQ1ZJUkdJTklBX0QucG5nP3F1YWxpdHk9OTAmc3RyaXA9YWxsJmNyb3A9MCwwLDEwMCwxMDA"
+    },
+    {
+      "id": "at_51288965482",
+      "title": "The questions Jensen Huang and Nvidia will still have to answer about Megaspeed",
+      "url": "https://techcrunch.com/2026/11/25/the-questions-jensen-huang-and-nvidia-will-still-have-to-answer-about-megaspeed/",
+      "summary": "Huang still faces questions from Congress and his own board about his romantic relationship with an alleged chip smuggler.",
+      "source": "Tim Fernholz via AI | TechCrunch",
+      "image": "https://www.inoreader.com/camo/sR-XgsVm0BUEMHK5SDh1KFbzzENHn_FYcMIoU6Pa2Lr0,q80,480x400,pf,b64/aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNi8xMS9HZXR0eUltYWdlcy0yMjQ5MTI3MjM3LmpwZz9yZXNpemU9MTYwMCwxMDY3"
+    },
+    {
+      "id": "at_51288522636",
+      "title": "Has vibe coding made open source the new normal for synths?",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1040081/vibe-coding-open-source-music-firmware",
+      "summary": "The emergence of powerful vibe-coding agents and tools like Reverse Engineer Anything has caused chaos in the music gear world, leaving companies scrambling to figure out how to respond. While some, like Roland, have remained silent for now, others have embraced the modding community. In the last several weeks, as it's become clear that...",
+      "source": "Terrence O’Brien via The Verge - Artificial Intelligences",
+      "image": "https://www.inoreader.com/camo/s6gF2qWa1yMpgINSVl1uROJRbgu9uZugAJ7o9OdSFrOU,q80,480x400,pf,b64/aHR0cHM6Ly9wbGF0Zm9ybS50aGV2ZXJnZS5jb20vd3AtY29udGVudC91cGxvYWRzL3NpdGVzLzIvMjAyNi8xMS92aWJlX2NvZGluZ19zeW50aHNfLmpwZz9xdWFsaXR5PTkwJnN0cmlwPWFsbCZjcm9wPTAsMCwxMDAsMTAw"
+    },
     {
       "id": "at_51283103949",
       "title": "Yale’s Sonnenfeld: Nvidia is a ‘detriment’ to U.S. industrial might — not a champion",
@@ -1576,30 +1600,6 @@
       "summary": "New York, Los Angeles, and Chicago schools are considering Google alternatives after the company said it will disable Search for schools that opt out of its AI features, according to The New York Times. Starting next year, schools will not have the option to disable Gemini-powered features without also disabling Search. Chris Phillips,...",
       "source": "Terrence O’Brien via The Verge - Artificial Intelligences",
       "image": "https://www.inoreader.com/camo/sH0aYq1gW2bGJoz9Kc610ib_M-8Lj70Dqpg6Ydh_QuOI,q80,480x400,pf,b64/aHR0cHM6Ly9wbGF0Zm9ybS50aGV2ZXJnZS5jb20vd3AtY29udGVudC91cGxvYWRzL3NpdGVzLzIvMjAyNS8wMS9TVEsyNTVfR29vZ2xlX0dlbWluaV9ELmpwZz9xdWFsaXR5PTkwJnN0cmlwPWFsbCZjcm9wPTAsMCwxMDAsMTAw"
-    },
-    {
-      "id": "at_51223916351",
-      "title": "Satya Nadella predicts AI agents will reshuffle the economics of the web",
-      "url": "https://techcrunch.com/2026/11/18/satya-nadella-predicts-ai-agents-will-reshuffle-the-economics-of-the-web/",
-      "summary": "Microsoft's CEO says AI agents could disrupt advertising-driven business models, forcing companies like Amazon to rethink how they compete for customers.",
-      "source": "Sarah Perez via AI | TechCrunch",
-      "image": "https://www.inoreader.com/camo/s3WWLoJ7RXHoOQNkHhU8Ui8Edicp4v8onjt-IxV8vHz4,q80,480x400,pf,b64/aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNi8xMS9HZXR0eUltYWdlcy0yMzA1NzczMjExLmpwZz93PTU5NA"
-    },
-    {
-      "id": "at_51223916359",
-      "title": "Anthropic reportedly prices IPO at $83 a share, above projected range",
-      "url": "https://techcrunch.com/2026/11/18/anthropic-reportedly-prices-ipo-at-83-a-share-above-projected-range/",
-      "summary": "The long-awaited IPO reportedly values the company at $1.5 trillion on a fully diluted basis.",
-      "source": "Marina Temkin via AI | TechCrunch",
-      "image": ""
-    },
-    {
-      "id": "at_51223575879",
-      "title": "NEW: Google launched Gemini 4 Neon, the middle model in its Gemini 4 lineup, beating Claude Opus 5.5...",
-      "url": "https://x.com/TheRundownAI/status/2123169908338884712",
-      "summary": "NEW: Google launched Gemini 4 Neon, the middle model in its Gemini 4 lineup, beating Claude Opus 5.5 and GPT-6.2 Sol on 16 of 19 benchmarks in Google’s testing. Google puts Neon’s cost per task at roughly half to a fifth of rival frontier models, with API prices at $3/15 per million. Available now to Google AI Pro or Ultra subscribers.💬7🔄4❤️30👀2989📊10⚡...",
-      "source": "The Rundown AI (@TheRundownAI) via The Rundown AI(@TheRundownAI)",
-      "image": "https://www.inoreader.com/camo/sp3SwtXq0gXbMwEXgiFx9eHaDr6YHnER8iquS7n_QyZo,q80,480x400,pf,b64/aHR0cHM6Ly9wYnMudHdpbWcuY29tL21lZGlhL0hYY0RpdUhXRUFFeHl5Vy5wbmc"
     }
   ]
 }
