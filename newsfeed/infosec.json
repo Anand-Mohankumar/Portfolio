@@ -1,6 +1,54 @@
 {
-  "updatedAt": "2026-11-24T21:12:11.279058+00:00",
+  "updatedAt": "2026-11-25T04:12:45.099399+00:00",
   "articles": [
+    {
+      "id": "at_51283947702",
+      "title": "Microsoft Declares Code Red After Historic 24-Hour Outage Disrupts Outlook, Teams and Copilot",
+      "url": "https://cybersecuritynews.com/microsoft-declares-code-red/",
+      "summary": "Microsoft has declared an internal “Code Red” after a nearly 24-hour Microsoft 365 outage disrupted Outlook, Teams, Copilot and Exchange Online on November 12 and 13, 2026. Reuters reported that the company is making it a top priority to prevent major service failures and recover faster when they happen. CEO Satya Nadella publicly apologized....",
+      "source": "Guru Baran via Cyber Security News",
+      "image": "https://www.inoreader.com/camo/sGRZTQN_TwnqzAeKxN41aYT4oCBUhmwyseumPFtGvvkY,q80,480x400,pf,b64/aHR0cHM6Ly9jeWJlcnNlY3VyaXR5bmV3cy5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjYvMTEvTWljcm9zb2Z0LURlY2xhcmVzLUNvZGUtUmVkLndlYnA"
+    },
+    {
+      "id": "at_51283735316",
+      "title": "CIA and ODNI Reportedly Suffer Cyberattack Exposing Unclassified U.S. Intelligence Information",
+      "url": "https://cybersecuritynews.com/cia-and-odni-suffer-cyberattack/",
+      "summary": "The Central Intelligence Agency (CIA) and the Office of the Director of National Intelligence (ODNI) recently discovered a cyberattack that exposed some unclassified U.S. intelligence information. The intrusion affected a shared network used to analyze publicly available material. The New York Times first reported the breach on November 24, citing...",
+      "source": "Guru Baran via Cyber Security News",
+      "image": "https://www.inoreader.com/camo/s1o8r0fL97thmYwRpzaGBuNrYFWIqqTz9GfddVYyYn5g,q80,480x400,pf,b64/aHR0cHM6Ly9jeWJlcnNlY3VyaXR5bmV3cy5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjYvMTEvQ0lBLWFuZC1PRE5JLVN1ZmZlci1DeWJlcmF0dGFjay53ZWJw"
+    },
+    {
+      "id": "at_51282803047",
+      "title": "VMware patches critical vCenter authentication bypass and ESX flaws",
+      "url": "https://securityaffairs.com/203931/security/vmware-patches-critical-vcenter-authentication-bypass-and-esx-flaws.html",
+      "summary": "Broadcom patches 23 VMware flaws, including a critical vCenter authentication bypass and three flaws allowing code execution on ESX hosts. Broadcom has released security updates to address 23 vulnerabilities affecting multiple VMware products, including vCenter, ESX, Workstation, Fusion, VMware Tools, and Avi Load Balancer. The security advisory...",
+      "source": "Pierluigi Paganini via Security Affairs",
+      "image": ""
+    },
+    {
+      "id": "at_51282672397",
+      "title": "Rinoa Poison : The Repoisoning - SWN #636",
+      "url": "https://www.scworld.com/podcast-segment/15340-rinoa-poison-the-repoisoning-swn-636",
+      "summary": "",
+      "source": "Doug White via Latest articles from SC Magazine",
+      "image": "https://www.inoreader.com/camo/s4NTaBNt2Im8RtyBhvOGszYNhrbdlTxZz2KPUYeqQyDY,q80,480x400,pf,b64/aHR0cHM6Ly9maWxlcy5jeWJlcnJpc2thbGxpYW5jZS5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjYvMTEvU1dOXzYzNl9UVUVTX1RodW1ibmFpbF9TV05fMTkyMHgxMDgwX2RiMjJmMGQxLTZiZjQtNDQ5NS1hN2YwLTI4MzNjNTQwNmRmYy5qcGc"
+    },
+    {
+      "id": "at_51282401155",
+      "title": "An Unclassified CIA System Was Breached in a Cyberattack, AP Source Says",
+      "url": "https://www.securityweek.com/an-unclassified-cia-system-was-breached-in-a-cyberattack-ap-source-says/",
+      "summary": "It was not clear what specific information was compromised or who was responsible. The post An Unclassified CIA System Was Breached in a Cyberattack, AP Source Says appeared first on SecurityWeek.",
+      "source": "Associated Press via SecurityWeek",
+      "image": "https://www.inoreader.com/camo/skYeaDjB6QBavqU6iJoGdh8Ng1ttNoaUrqMv_EWc5ync,q80,480x400,pf,b64/aHR0cHM6Ly93d3cuc2VjdXJpdHl3ZWVrLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNi8xMS9DSUFfSGFja2VkLmpwZw"
+    },
+    {
+      "id": "at_51281985578",
+      "title": "Rackspace shuts down Spot cloud platform after security breach",
+      "url": "https://www.bleepingcomputer.com/news/security/rackspace-shuts-down-spot-cloud-platform-after-security-breach/",
+      "summary": "Rackspace is shutting down its Rackspace Spot cloud platform after a security breach allowed hackers to access customer Kubernetes clusters and secrets, giving customers until December 8 to migrate their services and download their data. [...]",
+      "source": "Lawrence Abrams via Bleeping Computer",
+      "image": "https://www.inoreader.com/camo/sKuhxTd9gd0jrKcQ7nhFSUXF1t2bo7bJpuHjQnUdtjdQ,q80,480x400,pf,b64/aHR0cHM6Ly93d3cuYmxlZXBzdGF0aWMuY29tL2NvbnRlbnQvaGwtaW1hZ2VzLzIwMjIvMTIvMDkvUmFja3NwYWNlLmpwZw"
+    },
     {
       "id": "at_51281638204",
       "title": "EU Academy Users’ Names and Emails Exposed in EU Commission Hack",
@@ -1552,54 +1600,6 @@
       "summary": "As noted by Infosecurity Magazine, cybercriminals are executing large-scale mail bombing attacks combined with IT helpdesk impersonation to compromise user accounts.",
       "source": "SC Staff via Latest articles from SC Magazine",
       "image": "https://www.inoreader.com/camo/sLllil2xJ7ylHmBm68ihIsfsqSvnoopaKpYl4SWcIVig,q80,480x400,pf,b64/aHR0cHM6Ly9maWxlcy5jeWJlcnJpc2thbGxpYW5jZS5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjYvMDcvQWRvYmVTdG9ja18xNjczMzgxODg1LXNjYWxlZC5qcGVn"
-    },
-    {
-      "id": "at_51247306957",
-      "title": "Credential-stealing operation compromises 603 computers",
-      "url": "https://www.scworld.com/brief/credential-stealing-operation-compromises-603-computers",
-      "summary": "A sophisticated credential-stealing operation has compromised 603 Windows computers, exposing sensitive bank, government and password manager accounts.",
-      "source": "SC Staff via Latest articles from SC Magazine",
-      "image": "https://www.inoreader.com/camo/shrJyVdptbgHxRPnGxmPRuKJxmPjpXxzClTJuvCAdgl8,q80,480x400,pf,b64/aHR0cHM6Ly9maWxlcy5jeWJlcnJpc2thbGxpYW5jZS5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjUvMDQvQWRvYmVTdG9ja182MjMxMTY3MDUuanBn"
-    },
-    {
-      "id": "at_51247306958",
-      "title": "Signal blocks AI agents from accessing private messages",
-      "url": "https://www.scworld.com/brief/signal-blocks-ai-agents-from-accessing-private-messages",
-      "summary": "Signal has implemented new restrictions to prevent artificial intelligence agents from accessing private user messages, as first reported by The Register.",
-      "source": "SC Staff via Latest articles from SC Magazine",
-      "image": "https://www.inoreader.com/camo/sLVffJF_YFIQsxLQLYJbrnl5isjCHCbf9ra8YGb0bUhg,q80,480x400,pf,b64/aHR0cHM6Ly9maWxlcy5jeWJlcnJpc2thbGxpYW5jZS5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjUvMDUvMDUxMzI1X3NpZ25hbF9hcHAuanBn"
-    },
-    {
-      "id": "at_51247306959",
-      "title": "Carnegie Endowment for International Peace reports data breach",
-      "url": "https://www.scworld.com/brief/carnegie-endowment-for-international-peace-reports-data-breach",
-      "summary": "As noted by Nextgov, the Carnegie Endowment for International Peace recently experienced a data breach involving a third-party vendor used for online donations.",
-      "source": "SC Staff via Latest articles from SC Magazine",
-      "image": "https://www.inoreader.com/camo/svYUZV3KotjduVdO51X-Y6eIbplDg3RRSjSLBm3BTPnM,q80,480x400,pf,b64/aHR0cHM6Ly9maWxlcy5jeWJlcnJpc2thbGxpYW5jZS5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjQvMDkvMDkzMDI0X2RhdGFfYnJlYWNoLmpwZw"
-    },
-    {
-      "id": "at_51247306960",
-      "title": "Ransomware recovery timelines and shifting attack tactics in 2026",
-      "url": "https://www.scworld.com/brief/ransomware-recovery-timelines-and-shifting-attack-tactics-in-2026",
-      "summary": "Ransomware recovery requires a median of 20 days for organizations to achieve full restoration, with nearly 30% of victims needing more than six weeks to return to normal operations, based on information published by Infosecurity Magazine.",
-      "source": "SC Staff via Latest articles from SC Magazine",
-      "image": "https://www.inoreader.com/camo/szZinpwHSjO-1tQr8mRwGZX6_YF_iqj1pt4Lt8Y5vP88,q80,480x400,pf,b64/aHR0cHM6Ly9maWxlcy5jeWJlcnJpc2thbGxpYW5jZS5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjUvMDMvQWRvYmVTdG9ja18xMjkzNDU0ODE5LmpwZw"
-    },
-    {
-      "id": "at_51247306961",
-      "title": "SonicWall urges retirement of generation 6 firewalls due to security risks",
-      "url": "https://www.scworld.com/brief/sonicwall-urges-retirement-of-generation-6-firewalls-due-to-security-risks",
-      "summary": "In a report by The Hacker News, SonicWall has issued an urgent advisory for customers to immediately retire and replace all Generation 6 firewalls. The company warns that these unsupported devices are increasingly vulnerable to automated and AI-assisted cyberattacks.",
-      "source": "SC Staff via Latest articles from SC Magazine",
-      "image": "https://www.inoreader.com/camo/sUiv0UZV5Sh0eghFDX2-z-CU4cO63ss80mFfU6ftNA9s,q80,480x400,pf,b64/aHR0cHM6Ly9maWxlcy5jeWJlcnJpc2thbGxpYW5jZS5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjQvMDEvc29uaWN3YWxsLXNpZ24tY29ycDIuanBn"
-    },
-    {
-      "id": "at_51247306962",
-      "title": "Microsoft fixes windows 11 passkey bug affecting android devices",
-      "url": "https://www.scworld.com/brief/microsoft-fixes-windows-11-passkey-bug-affecting-android-devices",
-      "summary": "Microsoft has released a software update to address a Windows 11 passkey bug that causes Android phones to incorrectly report authentication failures, with further coverage provided by The Register.",
-      "source": "SC Staff via Latest articles from SC Magazine",
-      "image": "https://www.inoreader.com/camo/sibwJGPPIXSfhwk6QQlaViHVFg0Zn6JUTTGsF1LPGO0E,q80,480x400,pf,b64/aHR0cHM6Ly9maWxlcy5jeWJlcnJpc2thbGxpYW5jZS5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjQvMTAvMTAzMDI0X2FuZHJvaWRfb3MuanBn"
     }
   ]
 }
