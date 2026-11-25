@@ -1,6 +1,270 @@
 {
-  "updatedAt": "2026-11-25T14:24:46.686610+00:00",
+  "updatedAt": "2026-11-25T23:38:00.265193+00:00",
   "articles": [
+    {
+      "id": "at_51293570196",
+      "title": "MCP servers can now deliver AI agent skills, changing what companies approve when they connect one",
+      "url": "https://venturebeat.com/technology/mcp-servers-can-now-deliver-ai-agent-skills-changing-what-companies-approve-when-they-connect-one",
+      "summary": "Anthropic is adding support for Skills over MCP in Claude and Claude Code in public beta, two years after introducing the Model Context Protocol (MCP).Read more",
+      "source": "via VentureBeat",
+      "image": "https://www.inoreader.com/camo/s1AiH04Lv6bdUw8jfMoyG1mY4DiEFnErHXx39A0dVp8I,q80,480x400,pf,b64/aHR0cHM6Ly9pbWFnZXMuY3RmYXNzZXRzLm5ldC9qZHR3cWh6dmMybjEvMVoxazVMSVh4MUQ4UjNGQmU0d3dNSy9jYjI2ZTg4ZjU5ZmZiNzg4NmJiNTQxYTliMzg5ZDRkMC9tY3Atc2tpbGxzLXNtazEucG5nP3c9MTYwMCZxPTgw"
+    },
+    {
+      "id": "at_51293405015",
+      "title": "S&P considers Nvidia credit downgrade over governance and ‘key man’ risks",
+      "url": "https://techcrunch.com/2026/11/25/sp-considers-nvidia-credit-downgrade-over-governance-and-key-man-risks/",
+      "summary": "The credit rating agency may lower Nvidia's credit rating to AA-, the fourth-highest rating.",
+      "source": "Marina Temkin via AI | TechCrunch",
+      "image": ""
+    },
+    {
+      "id": "at_51293122485",
+      "title": "Google’s patent for custom AI video feeds paints a bleak picture of entertainment’s future",
+      "url": "https://www.theverge.com/entertainment/1042221/google-my-channel-ai-video-patent",
+      "summary": "Last year, Google filed a patent for a system called My Channel that's designed to create feeds filled with personalized, AI-generated videos and advertisements based on information the company knows about its users. The patent has been rejected, but unfortunately, Google might appeal or resubmit an amended version, and we could see this...",
+      "source": "Charles Pulliam-Moore via The Verge - Artificial Intelligences",
+      "image": "https://www.inoreader.com/camo/sks5adAVgMcrjvWVXsiWACH1S6R6CYbLGGuF__8J7SUE,q80,480x400,pf,b64/aHR0cHM6Ly9wbGF0Zm9ybS50aGV2ZXJnZS5jb20vd3AtY29udGVudC91cGxvYWRzL3NpdGVzLzIvMjAyNi8xMS9TY3JlZW5zaG90LTIwMjYtMTEtMjUtYXQtMTEuMzQuMDctQU0ucG5nP3F1YWxpdHk9OTAmc3RyaXA9YWxsJmNyb3A9Mi44NTkzNzUsMy43MjE4MDI3MjM4NDk0LDkzLjc4ODEyMjU1ODU5NCw5MS42NTgyMjE2MzkzMDM"
+    },
+    {
+      "id": "at_51292996658",
+      "title": "ML compiler eng, your job is NP-hard (4 minute read)",
+      "url": "https://ianbarber.blog/2026/11/24/ml-compiler-eng-your-job-is-np-hard/?utm_source=tldrai",
+      "summary": "Layout search is computationally hard. However, in reality, there are generally just a few places to put a conversion in a specific kernel. The tricky part is picking an option, as this requires relying on a potentially inaccurate model of how expensive those ops are given the subsequent software stack and the hardware itself.",
+      "source": "via TLDR AI Feed",
+      "image": ""
+    },
+    {
+      "id": "at_51292996660",
+      "title": "Verda Inference: Kimi K3.1 Pro and DeepSeek V4.1 Flash, 75% off your next top-up (Sponsor)",
+      "url": "https://verda.com/inference?utm_source=tldr&amp;utm_medium=email&amp;utm_campaign=tldr_inference_q4_2026&amp;utm_content=quicklinks_20261125_headline",
+      "summary": "Run both through one OpenAI-compatible API, with up to 10x faster time to first token on long-context work. Get every model at full quality and speed. Use code TLDR-75.Start building on Verda Inference →",
+      "source": "via TLDR AI Feed",
+      "image": "https://www.inoreader.com/camo/slL5tsc7TYrczN7EdLqlFCsjG4DFtjjhWYzWu2Bl2nbE,q80,480x400,pf,b64/aHR0cHM6Ly9hc3NldHMudmVyZGEuY29tL3JlbGVhc2VzLzBjYThkN2Y2ODRhMC9hc3NldHMvc3NyLWltYWdlcy9vcGVuLWdyYXBoLWhvbWUuRERoaFFqcGRfUDZ1QktLbC0uanBlZw"
+    },
+    {
+      "id": "at_51292996663",
+      "title": "GPT-6 models demonstrate intrinsic protein-design capabilities (13 minute read)",
+      "url": "https://openai.com/index/gpt-6-models-demonstrate-intrinsic-protein-design-capabilities/?utm_source=tldrai",
+      "summary": "OpenAI said its GPT-6 models can design new proteins using reasoning and code alone, without calling specialized biology models. Lab tests with a research partner confirmed that some designs worked, though the work still relied on specialist tools to screen candidates.",
+      "source": "via TLDR AI Feed",
+      "image": "https://www.inoreader.com/camo/sGuQpmzUEV6XiB0IumkY5tL6UE8BAntajIVhlcWs6HHo,q80,480x400,pf,b64/aHR0cHM6Ly9pbWFnZXMuY3RmYXNzZXRzLm5ldC9rZnR6d2R5YXV3dDkvRWc1bUN3d2FBM0txbnpuT1ZDaDBuLzhlNmRlYWVmMjVmZDUwOGQ5ODUzZmY4NmE5NTE4N2MxL2dwdC02LW1vZGVscy1kZW1vbnN0cmF0ZS1pbnRyaW5zaWMtcHJvdGVpbi1kZXNpZ24tY2FwYWJpbGl0aWVzLXNvY2lhbC5wbmc_dz0xNjAwJmg9OTAwJmZpdD1maWxs"
+    },
+    {
+      "id": "at_51292996664",
+      "title": "Amazon says hackers' AI agents found and exploited 0-day with little human input (5 minute read)",
+      "url": "https://arstechnica.com/security/2026/11/amazon-says-hackers-ai-agents-found-and-exploited-0-day-with-little-human-input/?utm_source=tldrai",
+      "summary": "Amazon said AI agents running on Cairn, an open source penetration-testing framework, found and exploited a zero-day in a medical imaging AI app on a university server with no human oversight beyond a goal prompt. Palo Alto Networks separately tracked a Cairn campaign that ran 25 autonomous operations against at least 19 organizations in the semiconductor,...",
+      "source": "via TLDR AI Feed",
+      "image": "https://www.inoreader.com/camo/sLXhD1uRzfnIx2Q90bjZhD9ySx6_asbUUdZOQ7KHvcgw,q80,480x400,pf,b64/aHR0cHM6Ly9jZG4uYXJzdGVjaG5pY2EubmV0L3dwLWNvbnRlbnQvdXBsb2Fkcy8yMDI2LzExL2NhaXJuLWJhbm5lci5qcGc"
+    },
+    {
+      "id": "at_51292996666",
+      "title": "Become a founding member of TLDR’s AI community (2 minute form)",
+      "url": "https://danni763618.typeform.com/to/H1tYViME",
+      "summary": "TLDR is launching a curated community for AI builders to discuss major news and launches. The best links and comments will be featured in TLDR AI. Apply here to join.",
+      "source": "via TLDR AI Feed",
+      "image": ""
+    },
+    {
+      "id": "at_51292996669",
+      "title": "The matrix multiplication exponent is nine fourths (6 hour read)",
+      "url": "https://github.com/openai/math/blob/main/preprints/The-matrix-multiplication-exponent-is-nine-fourths-November-24-2026/paper.pdf?utm_source=tldrai",
+      "summary": "The exponent of square matrix multiplication is 9/4 over every field. A smaller exponent would compress tensor networks enough to violate a lower bound for testing whether the entries in each of several independent lists are distinct.",
+      "source": "via TLDR AI Feed",
+      "image": ""
+    },
+    {
+      "id": "at_51292996672",
+      "title": "72% of CX Executives Don't Monitor AI Accuracy (Sponsor)",
+      "url": "https://go.parloa.com/cx-observability-2026?utm_campaign=2026-q4-paid-awareness-cxobservabilityreport&amp;utm_source=tldr&amp;utm_medium=newsletter-secondary-11-25",
+      "summary": "Parloa and Metric Sherpa's 2026 Observability survey of 700+ CX operators and executives found that 78.5% of teams don't track hallucinations and 41.2% of operators have never shared a CX insight outside of their team. Score your team with the CX Observability Index and learn why overconfidence in AI leads to underperformance. Read the report.",
+      "source": "via TLDR AI Feed",
+      "image": "https://www.inoreader.com/camo/sJXCq2B5ekJbwKW-IauaACI3OPyW1T2oCc1qD2u0F-EY,q80,480x400,pf,b64/aHR0cHM6Ly9mcmFtZXJ1c2VyY29udGVudC5jb20vYXNzZXRzL0FNbE1JRGx6ZGx6ekhxcUFkNjA5Y3NRdXBQVS5qcGc"
+    },
+    {
+      "id": "at_51292996673",
+      "title": "Meta brings its Muse AI assistant directly into Instagram DMs (3 minute read)",
+      "url": "https://techcrunch.com/2026/11/24/meta-brings-its-muse-ai-assistant-directly-into-instagram-dms/?utm_source=tldrai",
+      "summary": "Meta now integrates its Muse AI assistant directly into Instagram DMs, allowing users to chat with Muse for context on posts, places, or products.",
+      "source": "via TLDR AI Feed",
+      "image": "https://www.inoreader.com/camo/sYFIbMBNLmR3OvvXF8NfpLQYEAEl91N3ZQsc86_9fEUM,q80,480x400,pf,b64/aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNS8xMS9NdXNlQ2hhcm0ucG5nP3c9MTIwMA"
+    },
+    {
+      "id": "at_51292996675",
+      "title": "Swarms do not yet raise the roof (46 minute read)",
+      "url": "https://www.paradigm3.org/research/swarms?utm_source=tldrai",
+      "summary": "Swarm-based LLM configurations, coordinated groups of agents, deliver faster but less efficient results compared to single agents at equal token budgets. Adding more agents to a swarm introduces a performance penalty that grows with size, leading to quality degradation. Experiments reveal that previous \"swarm premiums\" result from single agents becoming...",
+      "source": "via TLDR AI Feed",
+      "image": ""
+    },
+    {
+      "id": "at_51292996676",
+      "title": "What VP ≠ VNP Means (3 minute read)",
+      "url": "https://www.friedgil.com/vpvnp?utm_source=tldrai",
+      "summary": "The Anthropic proof that VP≠VNP means that there is no way to find the permanent of a matrix of 0s and 1s if we are limited to arithmetic circuits of size polynomial in the input-size. This means that for P to equal NP, there must be some trick to computing permanents using AND/OR/NOT on the bits of the input that is better than addition and multiplication....",
+      "source": "via TLDR AI Feed",
+      "image": "https://www.inoreader.com/camo/sxUbtsgogeqpdCHrmryFqacqQgwCqxX_5edbDHnDyLnM,q80,480x400,pf,b64/aHR0cHM6Ly93d3cuZnJpZWRnaWwuY29tL2ltYWdlLnBuZw"
+    },
+    {
+      "id": "at_51292996678",
+      "title": "Jensen Huang Reinstated As Nvidia CEO at Behest of President Trump (45 minute read)",
+      "url": "https://thezvi.substack.com/p/jensen-huang-reinstated-as-nvidia?utm_source=tldrai",
+      "summary": "Jensen Huang's reinstatement as Nvidia's CEO is a sign of the state of US democracy, the country's free market economy and rule of law, and the integrity of its government. It will factor into every decision made and every trade on the stock market for years to come. Nvidia will likely go back to maximizing how many chips it can sell to China. The situation...",
+      "source": "via TLDR AI Feed",
+      "image": "https://www.inoreader.com/camo/sTB7lVokE3I2VIdZG-62HD3w0d488Ls8dX3nLwp1V8Kg,q80,480x400,pf,b64/aHR0cHM6Ly9zdWJzdGFja2Nkbi5jb20vaW1hZ2UvZmV0Y2gvJHNfIWloV20hLHdfMTIwMCxoXzY3NSxjX2ZpbGwsZl9qcGcscV9hdXRvOmdvb2QsZmxfcHJvZ3Jlc3NpdmU6c3RlZXAsZ19hdXRvL2h0dHBzJTNBJTJGJTJGc3Vic3RhY2stcG9zdC1tZWRpYS5zMy5hbWF6b25hd3MuY29tJTJGcHVibGljJTJGaW1hZ2VzJTJGODMxMzRmOWItNTEyMy00MTI2LWEyYTEtZDg1ZWUwNGNhYTA4XzkzOHg2OTMuanBlZw"
+    },
+    {
+      "id": "at_51292996679",
+      "title": "Claude Artifacts Become Mac and Windows Apps (3 minute read)",
+      "url": "https://claude.com/resources/articles/install-as-app?utm_source=tldrai",
+      "summary": "Claude artifacts can now be installed as Mac and Windows apps, in beta on all plans. Each app gets its own icon and window, updates when the artifact changes, and can be shared.",
+      "source": "via TLDR AI Feed",
+      "image": "https://www.inoreader.com/camo/s_w9kIUMWg-gl-xrCK5KNrxLfkqgOmA27Z3WzKdG0dBg,q80,480x400,pf,b64/aHR0cHM6Ly9jbGF1ZGUuY29tL3Jlc291cmNlcy9hcnRpY2xlcy9pbnN0YWxsLWFzLWFwcC9vcGVuZ3JhcGgtaW1hZ2Uvb2c"
+    },
+    {
+      "id": "at_51292996681",
+      "title": "Introducing Ternary Bonsai 2.5 27B: Powering Agentic Coding and Private Knowledge Work (4 minute read)",
+      "url": "https://prismml.com/news/bonsai-2-5-27b?utm_source=tldrai",
+      "summary": "Ternary Bonsai 2.5 27B has substantially stronger agentic coding, multi-turn tool use, and multi-step task execution abilities than its predecessor. It retains the previous release's 5.9 GB footprint while significantly improving the capabilities developers need to build agents that work with private files and tools on-device. It is by far the strongest...",
+      "source": "via TLDR AI Feed",
+      "image": "https://www.inoreader.com/camo/smsKITtDutVNQD8Vej5H8Enil0SuEwLcL-X0VXdzbe1c,q80,480x400,pf,b64/aHR0cHM6Ly9jZG4ucHJvZC53ZWJzaXRlLWZpbGVzLmNvbS82OTk2MDRjYzJiOWRkODliZGJkYTA2MDgvNmE2ZDBlMGJjMGQ1ZjlhOTdhNTE2NGMwXzY5Y2MwODk2NjlhYjBkZjI2ZTkyMWFhY19wcmlzbS1vZy1pbWclMjUyMCgyKS5wbmc"
+    },
+    {
+      "id": "at_51292996682",
+      "title": "Be the AI hero, not the bottleneck. (Sponsor)",
+      "url": "https://www.domo.com/solution/ai-hero?utm_source=tldr&amp;utm_medium=paid-email&amp;utm_campaign=2026-11-20_tldr_ai_quick_links_placement_2_progress&amp;utm_content=header_ai_hero_not&amp;utm_term=2026-11-25_ai_headline",
+      "summary": "Let teams build with AI while you stay in control. See how Domo turns AI builds into secure, lasting, governed assets.See how with Domo",
+      "source": "via TLDR AI Feed",
+      "image": ""
+    },
+    {
+      "id": "at_51292996684",
+      "title": "Announcing vLLM-GR: Efficient Inference for Generative Recommendation (14 minute read)",
+      "url": "https://vllm.ai/blog/2026-11-24-vllm-gr-announcement?utm_source=tldrai",
+      "summary": "vLLM-GR is an open-source framework enhancing vLLM to improve inference for generative recommendation models with efficient beam searches. It enables rapid candidate generation on NVIDIA GPUs and Ascend NPUs by reusing user history and optimizing cache use.",
+      "source": "via TLDR AI Feed",
+      "image": "https://www.inoreader.com/camo/sxVxnV624_driPD0aZbuPCjKQXdK_eptZunFxhOBkOp8,q80,480x400,pf,b64/aHR0cHM6Ly92bGxtLmFpL2Jsb2ctYXNzZXRzL2ZpZ3VyZXMvMjAyNi0xMS0yNC12bGxtLWdyLWFubm91bmNlbWVudC92TExNLUdSLmpwZw"
+    },
+    {
+      "id": "at_51292996686",
+      "title": "OpenAI prepares dedicated email inboxes for ChatGPT Dots (2 minute read)",
+      "url": "https://www.testingcatalog.com/openai-prepares-dedicated-email-inboxes-for-chatgpt-dots/?utm_source=tldrai",
+      "summary": "OpenAI is developing dedicated email addresses for Dots in ChatGPT, allowing them to send and receive emails independently.",
+      "source": "via TLDR AI Feed",
+      "image": "https://www.inoreader.com/camo/shH37FX7Ay-j9QN2agHvhHVnu7ZVyFLPCYtjQazfhT-E,q80,480x400,pf,b64/aHR0cHM6Ly9zdG9yYWdlLmdob3N0LmlvL2MvMmEvMWIvMmExYjE3ODItODUwNi00ZDdkLWJmNTMtYWQzZmI1MmUyYTBmL2NvbnRlbnQvaW1hZ2VzL3NpemUvdzEyMDAvMjAyNi8xMS9TY3JlZW5zaG90LTIwMjYtMTEtMjQtYXQtMDEuMzEuMDgucG5n"
+    },
+    {
+      "id": "at_51292996688",
+      "title": "Pushing the US Open-Weight Frontier (21 minute read)",
+      "url": "https://www.harvey.ai/blog/applying-the-harvey-tenet-training-recipe-to-us-open-weight-models?utm_source=tldrai",
+      "summary": "Post-training leads to substantial gains in both agentic legal reasoning and task completion.",
+      "source": "via TLDR AI Feed",
+      "image": "https://www.inoreader.com/camo/sUKOJY5uT3ciCgAmtKCtWZYT5WB4Gfw4QLbh-XDWgOo8,q80,480x400,pf,b64/aHR0cHM6Ly9jZG4uc2FuaXR5LmlvL2ltYWdlcy8wN3MwcjVyNi9wcm9kdWN0aW9uL2M4MGZhNTgxYmMxNTFlODg0NTMyNzk1YjM4YWU1NTZmMzgwMzkyZDAtMjQwMHgxMzUwLnBuZz93PTEyMDAmaD02NzUmZm09anBnJnE9OTUmZml0PWNyb3A"
+    },
+    {
+      "id": "at_51292996689",
+      "title": "Most orgs aren't on track for a successful human-robot workforce; here's how to fix that (Sponsor)",
+      "url": "https://www.intel.com/content/www/us/en/content-details/932012/the-robotics-readiness-blueprint.html?utm_source=tldr&amp;utm_medium=newsletter&amp;utm_campaign=ih-q4-ai",
+      "summary": "When decisions are siloed or delayed, projects get stuck in redesign, rework, and unexpected costs.It's happening in robotics. Our recent research showed that only four in 10 organizations are structured to turn robotics into real-world advantage.We developed a blueprint and set of tools to help cross-functional teams change that. Address gaps in:Embedding...",
+      "source": "via TLDR AI Feed",
+      "image": ""
+    },
+    {
+      "id": "at_51292996690",
+      "title": "Google Adds Task Checklists to Antigravity (2 minute read)",
+      "url": "https://www.testingcatalog.com/google-adds-task-checklists-to-antigravity-and-carbon-for-pro/?utm_source=tldrai",
+      "summary": "Google's Antigravity coding app now shows live checklists for long tasks and lets users pick separate planner and executor models.",
+      "source": "via TLDR AI Feed",
+      "image": "https://www.inoreader.com/camo/ssfi80O29B7ooEsd0V7R-7vfW9HbGFRBtsVPlZxi5rlg,q80,480x400,pf,b64/aHR0cHM6Ly9zdG9yYWdlLmdob3N0LmlvL2MvMmEvMWIvMmExYjE3ODItODUwNi00ZDdkLWJmNTMtYWQzZmI1MmUyYTBmL2NvbnRlbnQvaW1hZ2VzL3NpemUvdzEyMDAvMjAyNi8xMS8xX1dMa0YtZ1BDb3UxMVdZbEtaVVRDX2cuanBn"
+    },
+    {
+      "id": "at_51292996691",
+      "title": "Cognition's SWE-2.1 (3 minute read)",
+      "url": "https://cognition.com/blog/swe-2-1?utm_source=tldrai",
+      "summary": "Cognition released SWE-2.1, an upgraded coding and agent model trained with reinforcement learning on top of Kimi K3. It roughly doubles SWE-2's score on the Terminal-Bench 4.1 coding benchmark to 50.0 and adds stronger security skills.",
+      "source": "via TLDR AI Feed",
+      "image": "https://www.inoreader.com/camo/sS3wFq1nLTTN4uWZHh-S_1-0SzTb5lG1gRBk4qWKX6Mg,q80,480x400,pf,b64/aHR0cHM6Ly9jb2duaXRpb24uY29tL2ltYWdlcy9zd2UtMi0xL2NvdmVyLmpwZw"
+    },
+    {
+      "id": "at_51292669613",
+      "title": "OpenAI says heavy ChatGPT users may hit limits sooner as it merges Chat and Work",
+      "url": "https://techcrunch.com/2026/11/25/openai-says-heavy-chatgpt-users-may-hit-limits-sooner-as-it-merges-chat-and-work/",
+      "summary": "OpenAI will introduce a single usage meter across ChatGPT as it combines the Chat and Work experiences.",
+      "source": "Jagmeet Singh via AI | TechCrunch",
+      "image": "https://www.inoreader.com/camo/sBSAXKtIt67aIxkbKKWE2AUZL0LTIxDe_kM-RRtUriro,q80,480x400,pf,b64/aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNi8xMS9vcGVuYWktY2hhdGdwdC5qcGc_cmVzaXplPTE2MDAsMTA2Nw"
+    },
+    {
+      "id": "at_51292669620",
+      "title": "Jensen Huang broke Nvidia’s code of conduct, and his employees may not forget it",
+      "url": "https://techcrunch.com/2026/11/25/jensen-huang-broke-nvidias-code-of-conduct-and-his-employees-may-not-forget-it/",
+      "summary": "Most codes of conduct serve as a reflection of corporate culture. In Nvidia's case, that could have consequences.",
+      "source": "Russell Brandom via AI | TechCrunch",
+      "image": ""
+    },
+    {
+      "id": "at_51292220102",
+      "title": "Anthropic’s Dario Amodei calls accusations of surrendering human control to AI ‘absurd’",
+      "url": "https://techcrunch.com/2026/11/25/anthropics-dario-amodei-calls-accusations-of-surrendering-human-control-to-ai-absurd/",
+      "summary": "Anthropic CEO Dario Amodei pushes back against rivals’ accusations that he favors surrendering human agency to AI, even as leading AI companies increasingly automate their own research and model development.",
+      "source": "Rebecca Bellan via AI | TechCrunch",
+      "image": "https://www.inoreader.com/camo/ssATs0S8urXygYBOvnwZbFsXdurhVjdYviWWltntu9Ow,q80,480x400,pf,b64/aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNi8wMy9EYXJpby1BbW9kZWktQW50aHJvcGljLXZpdmEtdGVjaC5qcGc_dz0xMDI0"
+    },
+    {
+      "id": "at_51291768721",
+      "title": "Want to buy your kid an AI toy this Christmas? Not in New York",
+      "url": "https://techcrunch.com/2026/11/25/want-to-buy-your-kid-an-ai-toy-this-christmas-not-in-new-york/",
+      "summary": "New York has banned AI chatbot toys for five years as new research from Common Sense Media reveals troubling safety failures, including exposure to inappropriate content and risks to emotional development.",
+      "source": "Rebecca Bellan via AI | TechCrunch",
+      "image": "https://www.inoreader.com/camo/sCVfxxMo9q8uzR7srJFLXyqLoiKMBLpXI7Znx5R39p28,q80,480x400,pf,b64/aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNi8xMS9HZXR0eUltYWdlcy0yMjM3NjYwMTI3LmpwZz9yZXNpemU9MTYwMCwxMDY3"
+    },
+    {
+      "id": "at_51291310255",
+      "title": "State AGs fight Character AI’s plan to auction off users’ private chats",
+      "url": "https://techcrunch.com/2026/11/25/state-ags-fight-character-ais-plan-to-auction-off-users-private-chats/",
+      "summary": "The proposed Character.ai bankruptcy sale includes sensitive personal data from more than 21 million U.S. accounts, including 2.1 million registered to minors, the state AGs said.",
+      "source": "Sarah Perez via AI | TechCrunch",
+      "image": "https://www.inoreader.com/camo/s9MRLKhFaOrazQdCxZcbNwn3EU8SUUUmu4-5mXiFKoAU,q80,480x400,pf,b64/aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNC8wNi9DaGFyYWN0ZXItQ2FsbHMtSW1hZ2UtZmVhdC5qcGc_cmVzaXplPTE2MDAsOTAw"
+    },
+    {
+      "id": "at_51291249956",
+      "title": "FCC signs off on SpaceX’s plan to put up to 1 million data center satellites into space",
+      "url": "https://www.theverge.com/science/1042278/spacex-fcc-starmind-ai-space-data-centers",
+      "summary": "In an announcement on Wednesday, the FCC says it authorized SpaceX to deploy up to 1 million AI chip-equipped satellites as part of the Elon Musk-owned company's \"Starmind\" initiative. With several others also pursuing the idea of putting AI data centers in space, including Google and Blue Origin, this is the first approval the agency...",
+      "source": "Emma Roth via The Verge - Artificial Intelligences",
+      "image": "https://www.inoreader.com/camo/sP988Ltfri8zSGgfYRSuLbTpUvvL_SjimgQRwS7nI6wg,q80,480x400,pf,b64/aHR0cHM6Ly9wbGF0Zm9ybS50aGV2ZXJnZS5jb20vd3AtY29udGVudC91cGxvYWRzL3NpdGVzLzIvMjAyNi8wNS9nZXR0eWltYWdlcy0yMjY5NTgwNjUwLmpwZz9xdWFsaXR5PTkwJnN0cmlwPWFsbCZjcm9wPTAsMCwxMDAsMTAw"
+    },
+    {
+      "id": "at_51290265315",
+      "title": "Nothing offers a full look at its AI earbuds and charging case",
+      "url": "https://www.theverge.com/gadgets/1042162/nothing-ear-note-ai-earbuds-reveal",
+      "summary": "Nothing is showing off a much more detailed look at its upcoming AI earbuds ahead of their December 8th release. The Ear Note buds can record your calls, while their charging case can record, transcribe, and summarize your conversations. Like the Ear 3, the Ear Note's microphone-equipped case comes with a \"Talk\" button that you can use...",
+      "source": "Emma Roth via The Verge - Artificial Intelligences",
+      "image": "https://www.inoreader.com/camo/s7CFzW07kWqFNFEVraxzdvVrZcTvNjR69XD7ApdnVAx4,q80,480x400,pf,b64/aHR0cHM6Ly9wbGF0Zm9ybS50aGV2ZXJnZS5jb20vd3AtY29udGVudC91cGxvYWRzL3NpdGVzLzIvMjAyNi8xMS9lYXItbm90ZS1ub3RoaW5nLmpwZWc_cXVhbGl0eT05MCZzdHJpcD1hbGwmY3JvcD0wLDAsMTAwLDEwMA"
+    },
+    {
+      "id": "at_51290088810",
+      "title": "AI data centers are becoming harder to build, and neoclouds are feeling it",
+      "url": "https://techcrunch.com/podcast/ai-data-centers-are-becoming-harder-to-build-and-neoclouds-are-feeling-it/",
+      "summary": "⁠Nvidia has made clear⁠ it won’t backstop an AI data center until it’s nearly ready to run, and that’s landing just as neoclouds report construction delays and more expensive debt. The message to developers is that land, power, and a finished building matter more than a pitch deck. ⁠Anita Verma-Lallian⁠ has been selling exactly that. […]",
+      "source": "Theresa Loconsolo, Rebecca Bellan via AI | TechCrunch",
+      "image": "https://www.inoreader.com/camo/sn38HC8WSvWinOd1ybz_S0Q-gRVlRACaCetBm3x0qwmI,q80,480x400,pf,b64/aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNi8xMS9Bbml0YS1WZXJtYS1MYWxsaWFuLTIuanBnP3c9MTAyNA"
+    },
+    {
+      "id": "at_51289614037",
+      "title": "Can you give AI agents live data without rebuilding your data stack?",
+      "url": "https://venturebeat.com/data/can-you-give-ai-agents-live-data-without-rebuilding-your-data-stack",
+      "summary": "Presented by EnterpriseDBRead more",
+      "source": "via VentureBeat",
+      "image": "https://www.inoreader.com/camo/sSYKW35l1XPZDQn3GmR1PiOnz85X5AFtYjH5NzExZG8I,q80,480x400,pf,b64/aHR0cHM6Ly9pbWFnZXMuY3RmYXNzZXRzLm5ldC9qZHR3cWh6dmMybjEvNW1KUzFYOThibjBBYzNvZ0w0VjBHMC9mNDAzNzljMWViOTRiNGEzNmMyY2M4MTZiMTMwN2E4ZS9HZW1pbmlfR2VuZXJhdGVkX0ltYWdlX3o5d2FwMHo5d2FwMHo5d2EuanBlZz93PTE2MDAmcT04MA"
+    },
+    {
+      "id": "at_51289549128",
+      "title": "Amazon and Meta reportedly in talks to lift blockade on AI agent Muse",
+      "url": "https://techcrunch.com/2026/11/25/amazon-and-meta-reportedly-in-talks-to-lift-blockade-on-ai-agent-muse/",
+      "summary": "Amazon and Meta are discussing a potential deal that would end a two-month-long blockade of Muse.",
+      "source": "Lauren Forristal via AI | TechCrunch",
+      "image": ""
+    },
     {
       "id": "at_51289193335",
       "title": "Amazon is reportedly in talks to end Muse AI shopping block",
@@ -13,7 +277,7 @@
       "id": "at_51288965482",
       "title": "The questions Jensen Huang and Nvidia will still have to answer about Megaspeed",
       "url": "https://techcrunch.com/2026/11/25/the-questions-jensen-huang-and-nvidia-will-still-have-to-answer-about-megaspeed/",
-      "summary": "Huang still faces questions from Congress and his own board about his romantic relationship with an alleged chip smuggler.",
+      "summary": "The central question for investigators is what Nvidia knew about where those chips ended up and whether Huang's affair with a Megaspeed executive gave the company reason to doubt Megaspeed's assurances.",
       "source": "Tim Fernholz via AI | TechCrunch",
       "image": "https://www.inoreader.com/camo/sR-XgsVm0BUEMHK5SDh1KFbzzENHn_FYcMIoU6Pa2Lr0,q80,480x400,pf,b64/aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNi8xMS9HZXR0eUltYWdlcy0yMjQ5MTI3MjM3LmpwZz9yZXNpemU9MTYwMCwxMDY3"
     },
@@ -1336,270 +1600,6 @@
       "summary": "Anthropic spent nearly $10 billion on compute and infrastructure in the third quarter of 2026.",
       "source": "via TLDR AI Feed",
       "image": "https://www.inoreader.com/camo/ssTr6X4skVTi09HtF3DVO0fKGcP16fOpNoNrOQBcGXH0,q80,480x400,pf,b64/aHR0cHM6Ly9lcG9jaC5haS9hc3NldHMvaW1hZ2VzL2RhdGEtaW5zaWdodHMvYW50aHJvcGljLW9wZW5haS1jb21wdXRlLXNwZW5kLWdyb3d0aC90LWFudGhyb3BpYy1vcGVuYWktY29tcHV0ZS1zcGVuZC1ncm93dGgucG5n"
-    },
-    {
-      "id": "at_51234058213",
-      "title": "Wispr Flow Notetaker is now on iPhone. Capture the conversations that happen away from your desk (Sponsor)",
-      "url": "https://ref.wisprflow.ai/tldr-nov19-ai-primary-headline?sp=emSyAlq16PoccIRFrTLfUwAq",
-      "summary": "The best conversations about what you're building rarely happen on a call. They happen over coffee with a user, in the hallway after standup, or on a walk while you think out loud.Wispr Flow Notetaker now runs on iPhone. Hit record and stay in the conversation. Afterward you get a clean summary and a full transcript.It keeps recording when your phone...",
-      "source": "via TLDR AI Feed",
-      "image": ""
-    },
-    {
-      "id": "at_51234058215",
-      "title": "Gemini 4 Neon (12 minute read)",
-      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/?utm_source=tldrai",
-      "summary": "Google introduced Gemini 4 Neon, a fast, frontier-level model for complex coding, knowledge work, and science tasks. It scored 61 on the Artificial Analysis Intelligence Index and is priced at $3 per million input tokens and $15 per million output tokens.",
-      "source": "via TLDR AI Feed",
-      "image": ""
-    },
-    {
-      "id": "at_51234058218",
-      "title": "Introducing Stitch Loop: A new way to build and evolve products (1 minute read)",
-      "url": "https://blog.google/innovation-and-ai/models-and-research/google-labs/stitch-loop/?utm_source=tldrai",
-      "summary": "Stitch Loop is a new tool from Google Labs designed to facilitate iterative product development.",
-      "source": "via TLDR AI Feed",
-      "image": "https://www.inoreader.com/camo/sgbtkT2SztK22wiYKZV2GiyMYeCzp46JVBvLPa-covZM,q80,480x400,pf,b64/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2d3ZWItdW5pYmxvZy1wdWJsaXNoLXByb2QvaW1hZ2VzL2ZyYW1lX3pqUWx0aDQud2lkdGgtMTMwMC5wbmc"
-    },
-    {
-      "id": "at_51233889792",
-      "title": "Anthropic’s IPO could deliver $156 billion to charity",
-      "url": "https://techcrunch.com/2026/11/19/anthropics-ipo-could-deliver-156-billion-to-charity/",
-      "summary": "At a stock price of $95, the frontier lab's Public Benefit Foundation, its employee donations, and the company's match tot up to $156 billion.",
-      "source": "Tim Fernholz via AI | TechCrunch",
-      "image": "https://www.inoreader.com/camo/siSUT6EXA7onqcULMkORQERBoxP0iDSoxSzlCHzCLODQ,q80,480x400,pf,b64/aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNi8wMS9HZXR0eUltYWdlcy0yMjU2NjY0NDc5LmpwZz9yZXNpemU9MTYwMCwxMDY3"
-    },
-    {
-      "id": "at_51233561819",
-      "title": "Full essay via Google's DeepMind Institute: https://t.co/EnYOrT8qoF",
-      "url": "https://x.com/TheRundownAI/status/2123480646530043904",
-      "summary": "Full essay via Google's DeepMind Institute: institute.deepmind.com/essays/what-co…💬0🔄0❤️0👀1047⚡ Powered by xgo.ing",
-      "source": "The Rundown AI (@TheRundownAI) via The Rundown AI(@TheRundownAI)",
-      "image": ""
-    },
-    {
-      "id": "at_51233561820",
-      "title": "NEW: Google DeepMind researcher Tim Genewein published an essay on how AI could get from human-level...",
-      "url": "https://x.com/TheRundownAI/status/2123480546244264291",
-      "summary": "NEW: Google DeepMind researcher Tim Genewein published an essay on how AI could get from human-level (AGI) to superintelligence (ASI).Genewein says the count of today's AI agents the world can run might grow more than 1,000x by 2030 and pass a billion times within a decade.Beyond just numbers, he names four routes: bigger models trained on more data,...",
-      "source": "The Rundown AI (@TheRundownAI) via The Rundown AI(@TheRundownAI)",
-      "image": "https://www.inoreader.com/camo/sotJGFWDklia-9mToRC5XaQF_BMMialQt2XiY1RcWxLA,q80,480x400,pf,b64/aHR0cHM6Ly9wYnMudHdpbWcuY29tL21lZGlhL0hYZ2RSdFBYQUFBbFVYMy5wbmc"
-    },
-    {
-      "id": "at_51233458280",
-      "title": "Google gives Gemini the ability to use your Mac for you",
-      "url": "https://techcrunch.com/2026/11/19/google-gives-gemini-the-ability-to-use-your-mac-for-you/",
-      "summary": "Google's latest update to Gemini brings an AI agent to the Mac that can organize files, fill out forms, and tackle multistep workflows.",
-      "source": "Sarah Perez via AI | TechCrunch",
-      "image": "https://www.inoreader.com/camo/sfY2jPm12CUlslnrPCwm0xqxXRHGwM_o2eiYwD-SKMNQ,q80,480x400,pf,b64/aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNi8xMS9oZXJvX2hlYWRlcl9DVV9jb3B5LndpZHRoLTIyMDAuZm9ybWF0LXdlYnAuanBlZz9yZXNpemU9MTYwMCw5MDA"
-    },
-    {
-      "id": "at_51233239433",
-      "title": "Gemini on Mac can now use your computer",
-      "url": "https://www.theverge.com/tech/1037902/google-gemini-macos-ai-computer-use",
-      "summary": "Google's Gemini app for macOS now has computer use, meaning it can help you \"get multi-step tasks done across your local files, desktop apps, and the web,\" the company says. Google suggests the feature might be useful for things like speeding up workflows, filling in forms, making presentations, and listing items for sale. Users will...",
-      "source": "Jay Peters via The Verge - Artificial Intelligences",
-      "image": "https://www.inoreader.com/camo/saBB9QClNbcmyPaZiqh5pkdowqpW43jsTRdmaI9Nzg2M,q80,480x400,pf,b64/aHR0cHM6Ly9wbGF0Zm9ybS50aGV2ZXJnZS5jb20vd3AtY29udGVudC91cGxvYWRzL3NpdGVzLzIvMjAyNi8xMS9NNl9NQlBfaGVybzIuanBnP3F1YWxpdHk9OTAmc3RyaXA9YWxsJmNyb3A9MCwwLDEwMCwxMDA"
-    },
-    {
-      "id": "at_51233073422",
-      "title": "PUBLIC: Anthropic stock is now live on the Nasdaq. $ANT opened at $111.50, which is $28.50 more tha...",
-      "url": "https://x.com/TheRundownAI/status/2123461918367351073",
-      "summary": "PUBLIC: Anthropic stock is now live on the Nasdaq.$ANT opened at $111.50, which is $28.50 more than IPO buyers paid and puts the company near a $2T valuation.The $81.3B it raised passes SpaceX’s $75B from June as the largest IPO ever.Your browser does not support the video tag.🔗 View on Twitter💬5🔄2❤️9👀3600📊6⚡ Powered by xgo.ing",
-      "source": "The Rundown AI (@TheRundownAI) via The Rundown AI(@TheRundownAI)",
-      "image": ""
-    },
-    {
-      "id": "at_51232955620",
-      "title": "Meta’s AI agent Muse is mixing up conversations and exposing private data, report says",
-      "url": "https://techcrunch.com/2026/11/19/metas-ai-agent-muse-is-mixing-up-conversations-and-exposing-private-data-report-says/",
-      "summary": "In some of these instances, employees said Muse surfaced messages about childcare requests they never made, career advice they never asked for, product orders they never placed, and bank account balances that didn't belong to them.",
-      "source": "Aisha Malik via AI | TechCrunch",
-      "image": "https://www.inoreader.com/camo/sbo2YrlyQ6T0TcO1ElBO11plu8aUhlmdxtckPPRsx-TM,q80,480x400,pf,b64/aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNi8wOS9tdXNlLWFpLW1ldGEuanBnP3c9MTIwMA"
-    },
-    {
-      "id": "at_51232955628",
-      "title": "Former Alibaba exec’s Everful raises $48.5M to connect retailers with Chinese factories",
-      "url": "https://techcrunch.com/2026/11/19/former-alibaba-execs-everful-raises-48-5m-to-connect-retailers-with-chinese-factories/",
-      "summary": "Everful has raised $48.5 million to expand its factory-direct sourcing platform, helping retailers source products from overseas manufacturers.",
-      "source": "Kate Park via AI | TechCrunch",
-      "image": "https://www.inoreader.com/camo/sMpWB1kOBA9DkgIIg2h93pRdLuTmxIjW9BsEsEGnKzwg,q80,480x400,pf,b64/aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNi8xMS9FdmVyZnVsLWZvdW5kZXJzLmpwZz9yZXNpemU9MTYwMCwxMDY3"
-    },
-    {
-      "id": "at_51232955630",
-      "title": "Anthropic hits Nasdaq exchanges at $111, 33% above IPO price",
-      "url": "https://techcrunch.com/2026/11/19/anthropic-hits-nasdaq-exchanges-at-110-27-above-ipo-price/",
-      "summary": "Anthropic's IPO price was set at $83, representing more than $80 billion in new capital raised.",
-      "source": "Russell Brandom via AI | TechCrunch",
-      "image": "https://www.inoreader.com/camo/s8h3w7fD-OmRtOBm02BFB3VRAqoD21sdTc0vXzSnmjps,q80,480x400,pf,b64/aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNi8xMS9hbnRocm9waWMtb3BlbmluZy1HZXR0eS5qcGc_cmVzaXplPTE2MDAsMTA2OA"
-    },
-    {
-      "id": "at_51232662741",
-      "title": "Exclusive: OpenAI reveals Performance Factory, a Codex-powered software optimization system that keeps ChatGPT fast",
-      "url": "https://venturebeat.com/orchestration/exclusive-openai-reveals-performance-factory-a-codex-powered-software-optimization-system-that-keeps-chatgpt-fast",
-      "summary": "When a software update slows down an application, engineers need to go through multiple stages, including inspecting metrics, tracing requests across services, identifying the responsible code, and testing potential solutions.Read more",
-      "source": "[email protected] (Ben Dickson) via VentureBeat",
-      "image": "https://www.inoreader.com/camo/sehMdoizeiKBl1zvhf30Pk6CX4O0JLzZ3Exd7s21LTDY,q80,480x400,pf,b64/aHR0cHM6Ly9pbWFnZXMuY3RmYXNzZXRzLm5ldC9qZHR3cWh6dmMybjEvVjkzNUhybjYwUzAxS1dkTDVTUDh0LzVjMzcwYTAwYmZjZDA5N2ZiMzdlOGI0M2Q5NjMwMWEwL0FJX0NvZGVfRGVidWdnaW5nX0ZhY3RvcnkucG5nP3c9MTYwMCZxPTgw"
-    },
-    {
-      "id": "at_51232468614",
-      "title": "Anthropic starts trading on Wall Street",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/1035384/anthropic-ipo-trading-nasdaq",
-      "summary": "Anthropic CEO Dario Amodei speaks at the Nasdaq ahead of his company’s public debut. | Photo: Michael Nagle / Bloomberg via Getty Images Anthropic has officially gone public. It began trading on the Nasdaq under the ticker symbol \"ANT\" at $111.50 per share, up from its initial $83 per share price that put company's value at around $1.5...",
-      "source": "Emma Roth via The Verge - Artificial Intelligences",
-      "image": "https://www.inoreader.com/camo/sabkRwFzin9xKWXsbc2xrjN-XbX87b-uI9RmVfRObnKQ,q80,480x400,pf,b64/aHR0cHM6Ly9wbGF0Zm9ybS50aGV2ZXJnZS5jb20vd3AtY29udGVudC91cGxvYWRzL3NpdGVzLzIvMjAyNi8xMS9nZXR0eWltYWdlcy0yMzA1MzM0NTYwLmpwZz9xdWFsaXR5PTkwJnN0cmlwPWFsbCZjcm9wPTAsMCwxMDAsMTAw"
-    },
-    {
-      "id": "at_51232334303",
-      "title": "At Nasdaq opening bell, Anthropic CEO recommits to pacing AI development",
-      "url": "https://techcrunch.com/2026/11/19/at-nasdaq-opening-bell-anthropic-ceo-recommits-to-pacing-ai-development/",
-      "summary": "In his Nasdaq opening bell speech, Dario Amodei reiterated Anthropic's commitment to pacing AI development, regardless of business or political pressure.",
-      "source": "Sarah Perez via AI | TechCrunch",
-      "image": "https://www.inoreader.com/camo/sFfSrxXoxzIgnfPhklaGjKgTjDKq5s1neGuClJN0sPd8,q80,480x400,pf,b64/aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNi8xMS9HZXR0eUltYWdlcy0yMzA1Mjk4Mjc1LmpwZz93PTU5NA"
-    },
-    {
-      "id": "at_51232258949",
-      "title": "Most security teams can't spot a rogue AI agent, says former FBI cyber investigator",
-      "url": "https://venturebeat.com/security/most-security-teams-cant-spot-a-rogue-ai-agent-says-former-fbi-cyber-investigator",
-      "summary": "Presented by WGURead more",
-      "source": "via VentureBeat",
-      "image": "https://www.inoreader.com/camo/sAEFAJ_OIOS6JfT0WXFOH9xouYhWxscK934iF1EBFG7A,q80,480x400,pf,b64/aHR0cHM6Ly9pbWFnZXMuY3RmYXNzZXRzLm5ldC9qZHR3cWh6dmMybjEvMkR2bjlFVnpoWWo4RkdjMUdYZXFwVS9iOWRkYWNhNmY3NWFmNTNlNTFiMjkwODBiMWQwM2I0MC8yMDI2LTExLTEyLVZCSW1wYWN0LTAwOTUtWDUuanBnP3c9MTYwMCZxPTgw"
-    },
-    {
-      "id": "at_51232006386",
-      "title": "Read more: https://t.co/u5suEM4pIF",
-      "url": "https://x.com/TheRundownAI/status/2123438816375570721",
-      "summary": "Read more: robotnews.therundown.ai/p/waymo-shuts-…💬0🔄0❤️0👀925⚡ Powered by xgo.ing",
-      "source": "The Rundown AI (@TheRundownAI) via The Rundown AI(@TheRundownAI)",
-      "image": ""
-    },
-    {
-      "id": "at_51232006390",
-      "title": "Top stories in robotics today: - Waymo pulls robotaxis off freeways - Boston Dynamics sends Atlas t...",
-      "url": "https://x.com/TheRundownAI/status/2123438811627552983",
-      "summary": "Top stories in robotics today:- Waymo pulls robotaxis off freeways- Boston Dynamics sends Atlas to the fab- Genesis AI raises $500M for glove-trained robots- MIT’s robotic insect lands on a sunflower💬6🔄0❤️10👀2997📊7⚡ Powered by xgo.ing",
-      "source": "The Rundown AI (@TheRundownAI) via The Rundown AI(@TheRundownAI)",
-      "image": "https://www.inoreader.com/camo/sP6RXs86y260ipidGYQM-R06znR4OMrqpIS99BQtwOHU,q80,480x400,pf,b64/aHR0cHM6Ly9wYnMudHdpbWcuY29tL21lZGlhL0hYZjRXQVpXRUFBUGVWai5qcGc"
-    },
-    {
-      "id": "at_51231704859",
-      "title": "Anthropic’s IPO puts AI’s circular financing boom to the test",
-      "url": "https://techcrunch.com/2026/11/19/anthropics-ipo-puts-ais-circular-financing-boom-to-the-test/",
-      "summary": "Anthropic faces enormous compute commitments as it goes public, but its biggest infrastructure partners, including Amazon and Google, could continue profiting from AI even if Anthropic loses its lead.",
-      "source": "Rebecca Bellan via AI | TechCrunch",
-      "image": "https://www.inoreader.com/camo/sN6pwKzGKduI8iylhRdkI-Zu1BhzTrFxSLInZgCjuTQs,q80,480x400,pf,b64/aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNi8xMS9HZXR0eUltYWdlcy0yMzA0NTM4Mzg5LmpwZz93PTEwMjQ"
-    },
-    {
-      "id": "at_51231535000",
-      "title": "Firecrawl launches Alexandria to connect your AI agents to more than 550 specialized data sources",
-      "url": "https://venturebeat.com/data/firecrawl-launches-alexandria-to-connect-your-ai-agents-to-more-than-550-specialized-data-sources",
-      "summary": "An AI agent researching a company can read its website and still miss the information needed to make a useful decision: financial records, recent hiring, regulatory filings or the people responsible for buying software. Firecrawl is betting that connecting agents directly to those sources—and paying information suppliers—will make the software more...",
-      "source": "[email protected] (Carl Franzen) via VentureBeat",
-      "image": "https://www.inoreader.com/camo/st81CNkkUhWynudqdq7MNY9JhkUHNGEVZPz52ZRZzXGs,q80,480x400,pf,b64/aHR0cHM6Ly9pbWFnZXMuY3RmYXNzZXRzLm5ldC9qZHR3cWh6dmMybjEvNG85cnF3dVl6MW52dHRtc04xcFJ4bi83OTlhNWQwYTg4ZmU2NzFmZDgxODY4YjJhM2I3NDM5OC9Ub3JjaGxpdF9jb252ZXJzYXRpb25fYWJvdmVfQWxleGFuZHJpYV9fMV8ucG5nP3c9MTYwMCZxPTgw"
-    },
-    {
-      "id": "at_51231464444",
-      "title": "ChatGPT can transcribe as you speak now with Live Dictation",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/1037634/openai-chatgpt-live-dictation",
-      "summary": "ChatGPT can receive audio prompts from your microphone faster now with a Live Dictation feature that transcribes as you speak, rather than waiting until you finish recording. It's rolling out now globally on all ChatGPT plans on the web, desktop app, and iOS and Android apps. While using dictation in ChatGPT, you can tap or click the...",
-      "source": "Stevie Bonifield via The Verge - Artificial Intelligences",
-      "image": "https://www.inoreader.com/camo/sE81VTkrVSACd72SuC9JHPCmJQPNgWYzOYqMyyjZZZKU,q80,480x400,pf,b64/aHR0cHM6Ly9wbGF0Zm9ybS50aGV2ZXJnZS5jb20vd3AtY29udGVudC91cGxvYWRzL3NpdGVzLzIvMjAyNi8xMS9jaGF0Z3B0LWxpdmUtZGljdGF0aW9uLXByb21vLXNjcmVlbnNob3QuanBlZz9xdWFsaXR5PTkwJnN0cmlwPWFsbCZjcm9wPTAsMCwxMDAsMTAw"
-    },
-    {
-      "id": "at_51231067182",
-      "title": "Superhuman pushes its Go assistant everywhere",
-      "url": "https://techcrunch.com/2026/11/19/superhuman-pushes-its-go-assistant-everywhere/",
-      "summary": "Superhuman is making Go its central agent and making it available in Docs and Mail.",
-      "source": "Ivan Mehta via AI | TechCrunch",
-      "image": "https://www.inoreader.com/camo/sYljqZGcRmbUJLZSVSYsSTzoB_SrmAXBrjpJmnMjG6f8,q80,480x400,pf,b64/aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNi8xMS9TdGF0aWNfR28tUHJvYWN0aXZlLmpwZWc_cmVzaXplPTE2MDAsOTAw"
-    },
-    {
-      "id": "at_51230952299",
-      "title": "With the biggest IPO of all time, Anthropic’s ‘good guy’ reputation is on the line",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/1037459/anthropic-ipo-safe-ai-reputation-power-structure",
-      "summary": "Today is a new beginning for Anthropic: a years-in-the-making IPO that beat out SpaceX for most valuable of all time, having raised $81.3 billion and set an important precedent for the other public AI lab debuts to come. But it's not simply a financial milestone. Anthropic was founded on the idea that it prioritized safety more than...",
-      "source": "Hayden Field via The Verge - Artificial Intelligences",
-      "image": "https://www.inoreader.com/camo/sNA-t9KLjoRGzvRiZLHyMobTR9So4r0HOVhLNFMnJ6og,q80,480x400,pf,b64/aHR0cHM6Ly9wbGF0Zm9ybS50aGV2ZXJnZS5jb20vd3AtY29udGVudC91cGxvYWRzL3NpdGVzLzIvMjAyNi8wMy9TVEsyMDJfREFSSU9fQU1PREVJX0NWSVJHSU5JQV9ELmpwZz9xdWFsaXR5PTkwJnN0cmlwPWFsbCZjcm9wPTAsMCwxMDAsMTAw"
-    },
-    {
-      "id": "at_51230134179",
-      "title": "I let Apple’s always-listening AI summarize my life for two weeks",
-      "url": "https://www.theverge.com/tech/1037100/apple-siri-recap-audio-intelligence-hands-on",
-      "summary": "Siri Recap can be turned on or off manually from the wrist. Was it worth it? I've been asking myself this quite a bit over the last month or so while testing both the Amazon Bee Frontier and Siri Recap on the Apple Watch Ultra 4. Both enable a wearable to ambiently listen to your conversations and, using AI, summarize them for you. Why?...",
-      "source": "Victoria Song via The Verge - Artificial Intelligences",
-      "image": "https://www.inoreader.com/camo/s4ObSM2DKA3WD-_RteEhE3zd0DSDc4o9pcVoA8kjc-RE,q80,480x400,pf,b64/aHR0cHM6Ly9wbGF0Zm9ybS50aGV2ZXJnZS5jb20vd3AtY29udGVudC91cGxvYWRzL3NpdGVzLzIvMjAyNi8xMS8yNjg4NzRfc2lyaV9yZWNhcHNfQUtyYWxlc18wMDcwLmpwZz9xdWFsaXR5PTkwJnN0cmlwPWFsbCZjcm9wPTAsMCwxMDAsMTAw"
-    },
-    {
-      "id": "at_51229844358",
-      "title": "Canva adds an AI ‘off’ button",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/1037126/canva-ai-features-off-button",
-      "summary": "Canva will now allow you to turn off its generative AI features. With this change, you can disable the graphic design platform's array of AI tools, such as its AI photo-extending Magic Expand feature, as well as turn off the ability to generate images with its Canva chatbot. This toggle doesn't turn off every AI-powered feature on Canva,...",
-      "source": "Emma Roth via The Verge - Artificial Intelligences",
-      "image": "https://www.inoreader.com/camo/sIYPzoasCtD0O1N5TfSnbM6QDTDyksSsJo8zGWza_1-w,q80,480x400,pf,b64/aHR0cHM6Ly9wbGF0Zm9ybS50aGV2ZXJnZS5jb20vd3AtY29udGVudC91cGxvYWRzL3NpdGVzLzIvY2hvcnVzL3VwbG9hZHMvY2hvcnVzX2Fzc2V0L2ZpbGUvMjUzNTU5NTcvU1RLMjYzX0NBTlZBX0QucG5nP3F1YWxpdHk9OTAmc3RyaXA9YWxsJmNyb3A9MCwwLDEwMCwxMDA"
-    },
-    {
-      "id": "at_51229616336",
-      "title": "Read more: https://t.co/ygqlZPp5WP",
-      "url": "https://x.com/TheRundownAI/status/2123378311225057657",
-      "summary": "Read more: therundownai.beehiiv.com/p/google-shipp…💬0🔄0❤️1👀1095⚡ Powered by xgo.ing",
-      "source": "The Rundown AI (@TheRundownAI) via The Rundown AI(@TheRundownAI)",
-      "image": ""
-    },
-    {
-      "id": "at_51229616339",
-      "title": "Top stories in AI today: - Google’s shipping spree continues with Neon - Nate’s Notebook: Ask your...",
-      "url": "https://x.com/TheRundownAI/status/2123378306598813803",
-      "summary": "Top stories in AI today:- Google’s shipping spree continues with Neon - Nate’s Notebook: Ask your AI for more- Use AI to rewrite your LinkedIn profile- Pika turns AI video into a live film set💬7🔄0❤️13👀3173📊7⚡ Powered by xgo.ing",
-      "source": "The Rundown AI (@TheRundownAI) via The Rundown AI(@TheRundownAI)",
-      "image": "https://www.inoreader.com/camo/sXEtZnlWOraZ1-kCYS89oQA0XEcJX2qtOnONrANbbfjA,q80,480x400,pf,b64/aHR0cHM6Ly9wYnMudHdpbWcuY29tL21lZGlhL0hYZkJVTFJYa0FBdFVFTy5qcGc"
-    },
-    {
-      "id": "at_51224663846",
-      "title": "Microsoft CEO Satya Nadella explains why he asked 60K employees to quit",
-      "url": "https://techcrunch.com/2026/11/18/microsoft-ceo-satya-nadella-explains-why-he-asked-60k-employees-to-quit/",
-      "summary": "Microsoft CEO Satya Nadella explained why he offered buyouts to 60,000 of his employees in October, essentially urging them to voluntarily quit, rather than reducing the workforce via another massive layoff. The short answer is AI, but not in the way you might expect.",
-      "source": "Julie Bort via AI | TechCrunch",
-      "image": "https://www.inoreader.com/camo/smHwYBM9viNoGxXm7TBvkdofFFUJj27kAV88WzfZRHSs,q80,480x400,pf,b64/aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNi8xMS9NaWNyb3NvZnQtU2F0eWEtTmFkZWxsYS5qcGc_cmVzaXplPTE2MDAsMTA2Nw"
-    },
-    {
-      "id": "at_51224326011",
-      "title": "Amidst fears of AI cyberattacks, Satya Nadella says lots of critical infrastructure is ‘unpatchable’",
-      "url": "https://techcrunch.com/2026/11/18/amidst-fears-of-ai-cyberattacks-satya-nadella-says-lots-of-critical-infrastructure-is-unpatchable/",
-      "summary": "The Microsoft CEO downplayed the recent Outlook outage while noting that AI was causing both opportunities and new challenges for securing much of the connected world.",
-      "source": "Lucas Ropek via AI | TechCrunch",
-      "image": "https://www.inoreader.com/camo/slLycmZpO2AXZlkUt5ehFFPntCxKq8u5PcKukb2QAdNE,q80,480x400,pf,b64/aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNi8xMS9HZXR0eUltYWdlcy0yMzA1NzczNjk5LmpwZz9yZXNpemU9MTYwMCwyMjQw"
-    },
-    {
-      "id": "at_51224326012",
-      "title": "Elon Musk says ousting Jensen Huang is like ‘kicking Michael Jordan off your team’",
-      "url": "https://techcrunch.com/2026/11/18/elon-musk-says-ousting-jensen-huang-is-like-kicking-michael-jordan-off-your-team/",
-      "summary": "“I don’t think [Huang is] disloyal to the United States,\" Musk said.",
-      "source": "Amanda Silberling via AI | TechCrunch",
-      "image": "https://www.inoreader.com/camo/sTd47oNj7j7mobFlkgW023to7luptCELWSSKauyQYy0I,q80,480x400,pf,b64/aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNC8wOC9HZXR0eUltYWdlcy01MjQyMTI5MjQuanBnP3Jlc2l6ZT0xNjAwLDEwNjc"
-    },
-    {
-      "id": "at_51224326014",
-      "title": "Microsoft CEO Satya Nadella remains confident in Nvidia after Huang’s exit",
-      "url": "https://techcrunch.com/2026/11/18/microsoft-ceo-satya-nadella-remains-confident-in-nvidia-after-huangs-exit/",
-      "summary": "Microsoft CEO Satya Nadella expressed confidence in Jensen Huang's successor Colette Kress, who is serving as Nvidia's interim CEO.",
-      "source": "Amanda Silberling via AI | TechCrunch",
-      "image": "https://www.inoreader.com/camo/snNEB8VZtJQHOyjCtVVYwYNhVuNyhpJACXksy55sBYk4,q80,480x400,pf,b64/aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNC8wMi9HZXR0eUltYWdlcy0xOTMwNTE4NDkxLmpwZz9yZXNpemU9MTYwMCwxMDY3"
-    },
-    {
-      "id": "at_51224155331",
-      "title": "Google launches Gemini 4 Neon with Opus 5.5-level coding performance at 25% lower API token prices",
-      "url": "https://venturebeat.com/technology/google-launches-gemini-4-neon-with-opus-5-5-level-coding-performance-at-25-lower-api-token-prices",
-      "summary": "Google's new mid-ranged AI large language model is here: Gemini 4 Neon launched earlier today on the paid Gemini API in Google AI Studio and Android Studio, as well as in the Gemini app and AI-assisted development platform Google Antigravity for Google AI Pro and Ultra subscribers.Read more",
-      "source": "[email protected] (Carl Franzen) via VentureBeat",
-      "image": "https://www.inoreader.com/camo/sIS2Pr_NuqtJcyBvbabI5kgdOl36HEocbZqWHVsS1TKc,q80,480x400,pf,b64/aHR0cHM6Ly9pbWFnZXMuY3RmYXNzZXRzLm5ldC9qZHR3cWh6dmMybjEvMlFGN1NrenI5SW1zb3kxYjYwUmtRL2E5YzYxMzNkZTk5YzZlMzUwYjk0MDE0NjFhMGU3MjdmL05lb25fV29ya19TdHJlZXRfYXRfTmlnaHQucG5nP3c9MTYwMCZxPTgw"
-    },
-    {
-      "id": "at_51224094962",
-      "title": "The nation’s largest school districts consider ditching Google Search",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/1037151/school-districts-ditching-google",
-      "summary": "New York, Los Angeles, and Chicago schools are considering Google alternatives after the company said it will disable Search for schools that opt out of its AI features, according to The New York Times. Starting next year, schools will not have the option to disable Gemini-powered features without also disabling Search. Chris Phillips,...",
-      "source": "Terrence O’Brien via The Verge - Artificial Intelligences",
-      "image": "https://www.inoreader.com/camo/sH0aYq1gW2bGJoz9Kc610ib_M-8Lj70Dqpg6Ydh_QuOI,q80,480x400,pf,b64/aHR0cHM6Ly9wbGF0Zm9ybS50aGV2ZXJnZS5jb20vd3AtY29udGVudC91cGxvYWRzL3NpdGVzLzIvMjAyNS8wMS9TVEsyNTVfR29vZ2xlX0dlbWluaV9ELmpwZz9xdWFsaXR5PTkwJnN0cmlwPWFsbCZjcm9wPTAsMCwxMDAsMTAw"
     }
   ]
 }
