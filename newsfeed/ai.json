@@ -1,6 +1,22 @@
 {
-  "updatedAt": "2026-11-26T08:19:32.452385+00:00",
+  "updatedAt": "2026-11-26T19:00:34.023203+00:00",
   "articles": [
+    {
+      "id": "at_51301308043",
+      "title": "As Anthropic IPOs, Grand Theft Auto VI proves why efficiency isn’t a virtue",
+      "url": "https://techcrunch.com/2026/11/26/as-anthropic-ipos-grand-theft-auto-vi-proves-why-efficiency-isnt-a-virtue/",
+      "summary": "On the same day that Anthropic entered the public market, a painstakingly human video game became one of most successful entertainment launches of all time.",
+      "source": "Amanda Silberling via AI | TechCrunch",
+      "image": "https://www.inoreader.com/camo/sQFYqThk_2RSXXajjkw8XwDzrbnsCc0PQGg6eSxI2tX4,q80,480x400,pf,b64/aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNi8xMS9KYXNvbl9hbmRfTHVjaWFfMTcuMTE3X2IxMXIxM21nNS5qcGc_cmVzaXplPTE2MDAsOTAw"
+    },
+    {
+      "id": "at_51297788372",
+      "title": "42 state AGs are trying to stop Character.AI from selling users’ chats",
+      "url": "https://www.theverge.com/policy/1042620/character-ai-sale-state-ags-block-selling-users-chats",
+      "summary": "A coalition of 42 state attorneys general is trying to prevent Character.AI from selling off user data as it navigates Chapter 11 bankruptcy proceedings. In a deluge of nearly identical press releases, the various AGs accuse the company of planning to auction off \"the private chat histories of more than 21 million U.S. accounts - more...",
+      "source": "Terrence O’Brien via The Verge - Artificial Intelligences",
+      "image": "https://www.inoreader.com/camo/sImZWbHjo0txF67JLdlpNLNfJvxlW8FdklU8oym2q2I0,q80,480x400,pf,b64/aHR0cHM6Ly9wbGF0Zm9ybS50aGV2ZXJnZS5jb20vd3AtY29udGVudC91cGxvYWRzL3NpdGVzLzIvY2hvcnVzL3VwbG9hZHMvY2hvcnVzX2Fzc2V0L2ZpbGUvMjU1NTczOTEvU1RLMjc4X2NoYXJhY3Rlcl9haV9CLmpwZz9xdWFsaXR5PTkwJnN0cmlwPWFsbCZjcm9wPTAsMCwxMDAsMTAw"
+    },
     {
       "id": "at_51293570196",
       "title": "MCP servers can now deliver AI agent skills, changing what companies approve when they connect one",
@@ -1584,22 +1600,6 @@
       "summary": "OpenAI's agents now complete nearly half of two-to-four-hour research tasks on their own. However, humans are still central to AI development. Agent use is surging, and the heaviest users are pulling further ahead. Researchers are devoting increasing human effort to Safety and alignment.",
       "source": "via TLDR AI Feed",
       "image": "https://www.inoreader.com/camo/s_ecJY2qtrUMstRVtXgigiPUeCXKoZZGK32aaeollji0,q80,480x400,pf,b64/aHR0cHM6Ly9pbWFnZXMuY3RmYXNzZXRzLm5ldC9rZnR6d2R5YXV3dDkvMllTOHlXaUdwS2ZsaGxFbkFrY0xVL2Y1MWVhZDQzOTE3MDZmNmMzMTk4ZjBkNjFhMGYxNDdhL3Jlc2VhcmNoLWFjY2VsZXJhdGlvbi10aGUtamFnZ2VkLWZyb250aWVyLXNvY2lhbC5wbmc"
-    },
-    {
-      "id": "at_51234058210",
-      "title": "How Meta Uses AI Agents to Scale ML Innovations Across Ads Ranking Models (12 minute read)",
-      "url": "https://engineering.fb.com/2026/11/18/ml-applications/ai-agents-to-scale-ml-innovations-across-ads-ranking-models/?utm_source=tldrai",
-      "summary": "Meta uses AI agents to efficiently propagate ML technique improvements across diverse ads ranking models.",
-      "source": "via TLDR AI Feed",
-      "image": "https://www.inoreader.com/camo/sDMNI3Fc1OMCT0vyeflTnycAlF-NyNHjPvPGyPev8mSs,q80,480x400,pf,b64/aHR0cHM6Ly9lbmdpbmVlcmluZy5mYi5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjYvMTEvTWV0YS1TY2FsaW5nLVRlY2huaXF1ZXMtaW1hZ2UtMi0yLnBuZw"
-    },
-    {
-      "id": "at_51234058211",
-      "title": "Anthropic's compute spending is increasing by 4x per year, outpacing OpenAI's 3x (6 minute read)",
-      "url": "https://epoch.ai/data-insights/anthropic-openai-compute-spend-growth?utm_source=tldrai",
-      "summary": "Anthropic spent nearly $10 billion on compute and infrastructure in the third quarter of 2026.",
-      "source": "via TLDR AI Feed",
-      "image": "https://www.inoreader.com/camo/ssTr6X4skVTi09HtF3DVO0fKGcP16fOpNoNrOQBcGXH0,q80,480x400,pf,b64/aHR0cHM6Ly9lcG9jaC5haS9hc3NldHMvaW1hZ2VzL2RhdGEtaW5zaWdodHMvYW50aHJvcGljLW9wZW5haS1jb21wdXRlLXNwZW5kLWdyb3d0aC90LWFudGhyb3BpYy1vcGVuYWktY29tcHV0ZS1zcGVuZC1ncm93dGgucG5n"
     }
   ]
 }
