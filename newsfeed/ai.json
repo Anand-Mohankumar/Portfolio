@@ -1,6 +1,22 @@
 {
-  "updatedAt": "2026-11-27T10:52:14.707185+00:00",
+  "updatedAt": "2026-11-27T19:57:41.858616+00:00",
   "articles": [
+    {
+      "id": "at_51312808736",
+      "title": "AI is collapsing centuries of math and science research into days — is The Singularity upon us?",
+      "url": "https://venturebeat.com/technology/ai-is-collapsing-centuries-of-math-and-science-research-into-days-is-the-singularity-upon-us",
+      "summary": "For most of human history, a landmark mathematical conjecture fell perhaps once a decade, usually after a lone scholar spent years pacing a quiet office, filling chalkboards with dead ends.Read more",
+      "source": "[email protected] (Carl Franzen) via VentureBeat",
+      "image": "https://www.inoreader.com/camo/sLIquH3aonrF5gG57LwvuhJcJi7lDfRHc5bA_UeTagpk,q80,480x400,pf,b64/aHR0cHM6Ly9pbWFnZXMuY3RmYXNzZXRzLm5ldC9qZHR3cWh6dmMybjEvNENZRlQza2Q0bjU1aU9XZzBDQ2phNC80MjdjNjJhOWNiZjY4MGYwYWFmMGZmZWQ5NzA5NzM2Ny9DYXJsX0ZyYW56ZW5fbG9uZ19zaG90X2hpZ2hfYW5nbGVfY2luZW1hdGljXzM1bW1fY3J0dl9yZWNvcmRpbmdfYmM3MmYyNmEtNjIxNC00ZTdlLTliOTMtMzI1YWU3YWI3NGYwX18xXy5wbmc_dz0xNjAwJnE9ODA"
+    },
+    {
+      "id": "at_51310255975",
+      "title": "Android’s DIY widgets are a bit of vibe-coding fun",
+      "url": "https://www.theverge.com/tech/1041801/android-intelligence-create-my-widget-gemini",
+      "summary": "Widgets, your way. | Photo: Allison Johnson / The Verge Aside from dealing with my calendar, there's one thing I want AI to do: tell me if I'm about to miss the bus. What I need is a widget. It needs to tell me real-time arrivals for the bus stop near my house. Tapping around on my phone screen to open the right app and select my stop...",
+      "source": "Allison Johnson via The Verge - Artificial Intelligences",
+      "image": "https://www.inoreader.com/camo/sNAJvyMoYLZxvL4bQxvxf85mhmdBSMRQPN8iw5E5ds7Y,q80,480x400,pf,b64/aHR0cHM6Ly9wbGF0Zm9ybS50aGV2ZXJnZS5jb20vd3AtY29udGVudC91cGxvYWRzL3NpdGVzLzIvMjAyNi8xMS9EU0MwNDQwNV9wcm9jZXNzZWQuanBnP3F1YWxpdHk9OTAmc3RyaXA9YWxsJmNyb3A9MCwwLDEwMCwxMDA"
+    },
     {
       "id": "at_51303526628",
       "title": "Trying /swarm in Google Antigravity (13 minute read)",
@@ -1584,22 +1600,6 @@
       "summary": "Meta hasn't denied the reporting from The Information, saying only that it will \"have more to share soon\" about its upcoming AI wearable.",
       "source": "Lucas Ropek via AI | TechCrunch",
       "image": "https://www.inoreader.com/camo/sActP57k05z2kPMQJRW9IUgyH64T3MhEqTWAghWeiLTI,q80,480x400,pf,b64/aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNi8wOS9tZXRhLW11c2UtY2hhcm0ucG5nP3Jlc2l6ZT0xNjAwLDg4OQ"
-    },
-    {
-      "id": "at_51235191784",
-      "title": "Apple is hiring engineers to build its own AI agent",
-      "url": "https://www.theverge.com/tech/1038227/apple-ai-agent-engineer-job-listing",
-      "summary": "Apple is working on its own AI agent that can perform a range of tasks for you, including browsing the web, working across apps, writing code, and calling services. That's according to a now-removed job listing spotted by Bloomberg, which said Apple is looking for an engineer to lead the creation of an agentic AI assistant. An AI agent...",
-      "source": "Emma Roth via The Verge - Artificial Intelligences",
-      "image": "https://www.inoreader.com/camo/s8OTBziSHcj2Jzb2gOJoQgNHj5fVJ7Nf2fPlo-W3fZjk,q80,480x400,pf,b64/aHR0cHM6Ly9wbGF0Zm9ybS50aGV2ZXJnZS5jb20vd3AtY29udGVudC91cGxvYWRzL3NpdGVzLzIvMjAyNi8wOS9EU0MwNDIzOS5qcGc_cXVhbGl0eT05MCZzdHJpcD1hbGwmY3JvcD0wLDAsMTAwLDEwMA"
-    },
-    {
-      "id": "at_51234975735",
-      "title": "A brief history of Nvidia’s recent stock fluctuations",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/1038063/nvidia-stock-market-price-earnings",
-      "summary": "Traders work on the floor of the New York Stock Exchange during morning trading on November 18, 2026 in New York City. | Image: Getty Images \"We've got this,\" Colette Kress, interim CEO of Nvidia, said Tuesday night as she closed out the embattled chip company's third quarter earnings call. By Thursday, the company's stock price was hovering...",
-      "source": "Ellen Thomas via The Verge - Artificial Intelligences",
-      "image": "https://www.inoreader.com/camo/soKQoCDaTUChac5Oezvr3KhncE8oohyNQ4Ihr-xJ_zMQ,q80,480x400,pf,b64/aHR0cHM6Ly9wbGF0Zm9ybS50aGV2ZXJnZS5jb20vd3AtY29udGVudC91cGxvYWRzL3NpdGVzLzIvMjAyNi8xMS9nZXR0eWltYWdlcy0yMzA1NzE2ODIzLmpwZz9xdWFsaXR5PTkwJnN0cmlwPWFsbCZjcm9wPTAsMCwxMDAsMTAw"
     }
   ]
 }
