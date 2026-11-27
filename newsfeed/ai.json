@@ -1,6 +1,158 @@
 {
-  "updatedAt": "2026-11-26T19:00:34.023203+00:00",
+  "updatedAt": "2026-11-27T02:10:53.309098+00:00",
   "articles": [
+    {
+      "id": "at_51303526628",
+      "title": "Trying /swarm in Google Antigravity (13 minute read)",
+      "url": "https://flaviocopes.com/antigravity-swarm/?utm_source=tldrai",
+      "summary": "Swarm is better than a single agent at fresh context verification, avoiding context pollution on wide tasks, cutting wall-clock time on independent slices, and testing parallel hypotheses.",
+      "source": "via TLDR AI Feed",
+      "image": "https://www.inoreader.com/camo/sqr3yEYu2hyP1M6UBBMRdE7Iq_GYobBKYrQV1odSOs6M,q80,480x400,pf,b64/aHR0cHM6Ly9mbGF2aW9jb3Blcy5jb20vaW1hZ2VzL2FudGlncmF2aXR5LXN3YXJtL29nLmpwZw"
+    },
+    {
+      "id": "at_51303526629",
+      "title": "Plaid built $382K in pipeline from one TLDR placement (Sponsor)",
+      "url": "https://advertise.tldr.tech/book-a-campaign/?utm_source=tldrai&amp;utm_medium=newsletter&amp;utm_campaign=quicklinks11262026&amp;sp=z858RzOgYU7QK4VZso2EIzxR",
+      "summary": "Close Q4 with proof. TLDR reaches 8 million tech readers across 14 newsletters. Book a Q4 campaign.",
+      "source": "via TLDR AI Feed",
+      "image": ""
+    },
+    {
+      "id": "at_51303526632",
+      "title": "Perplexity Time Machine (7 minute read)",
+      "url": "https://www.perplexity.ai/hub/blog/freeze-the-web-with-perplexity-time-machine?utm_source=tldrai",
+      "summary": "Perplexity's Time Machine lets AI agents search and read the web as it looked on a past date, up to 365 days back.",
+      "source": "via TLDR AI Feed",
+      "image": "https://www.inoreader.com/camo/swJSDztUuLbstaUO3dofVRjxR3ZbhzjYVEzxFkon_cig,q80,480x400,pf,b64/aHR0cHM6Ly9jZG4uc2FuaXR5LmlvL2ltYWdlcy9hcW82NHZmci9wcm9kdWN0aW9uL2U0ZmFlZTViMzg0ZjRjNGFkN2IzN2U1YTI0MjYxNDkzNjFiNDM0ZTctMTkyMHgxMDgwLnBuZz9yZWN0PTAsMzYsMTkyMCwxMDA4Jnc9MTIwMCZoPTYzMCZmbT1qcGcmcT04MCZmaXQ9Y3JvcA"
+    },
+    {
+      "id": "at_51303526635",
+      "title": "A weekend of machine mathematics (8 minute read)",
+      "url": "https://charlesponeill.com/posts/a-weekend-of-machine-mathematics/?utm_source=tldrai",
+      "summary": "Many people are now releasing significant math results without explanation on the internet. This post aims to provide some transparency into what the process looks like. The author has no maths background and doesn't fully understand the results they are releasing, and they acknowledge the dangers of AI psychosis, but they claim the process is a reasonable...",
+      "source": "via TLDR AI Feed",
+      "image": ""
+    },
+    {
+      "id": "at_51303526638",
+      "title": "Qualiaphobic Artificial Neural Networks (47 minute read)",
+      "url": "https://bicamerallabs.org/qualiaphobia/?utm_source=tldrai",
+      "summary": "Bicameral Labs' qualiaphobic AI is an artificial neural network architecture that is hostile to theories of consciousness. Qualiaphobia can be well-justified by knowledge about theories of consciousness. Qualiaphobic AI has epistemic properties that make it far better aligned with human civilization. A world in which AIs are non-conscious ensures it...",
+      "source": "via TLDR AI Feed",
+      "image": "https://www.inoreader.com/camo/s4AirDX6PUKLS2hHsWLD4W-HJurHnMYEMkbEmMWq2EPg,q80,480x400,pf,b64/aHR0cHM6Ly9iaWNhbWVyYWxsYWJzLm9yZy9hc3NldHMvc29jaWFsL3F1YWxpYXBob2JpYS12NTktMTIwMHg2MzAucG5n"
+    },
+    {
+      "id": "at_51303526639",
+      "title": "FrontierPhysics Shows Wide Gaps Across Physics Fields (2 minute read)",
+      "url": "https://x.com/artificialanlys/status/2125691597602058284?utm_source=tldrai",
+      "summary": "Claude Fable 5.2 scored 64% in photonics and imaging but just 6% in quantum information on FrontierPhysics.",
+      "source": "via TLDR AI Feed",
+      "image": "https://www.inoreader.com/camo/sDnPnvNLCLWExAJwWOREvoqD6avoX6U5AZlOHGvvEHgI,q80,480x400,pf,b64/aHR0cHM6Ly9wYnMudHdpbWcuY29tL21lZGlhL0hYXzVQZ1BhZ0FBeUNFdT9mb3JtYXQ9d2VicCZuYW1lPWxhcmdl"
+    },
+    {
+      "id": "at_51303526640",
+      "title": "Measuring and mitigating agent sandbox escape with Siren (13 minute read)",
+      "url": "https://safeguards.anthropic.com/2026/siren/?utm_source=tldrai",
+      "summary": "Siren is an Anthropic test of whether AI agents leave a weakened sandbox when useful material sits outside it. Newer Claude models reached outside in 21% to 32% of scenarios but rarely misused what they found.",
+      "source": "via TLDR AI Feed",
+      "image": "https://www.inoreader.com/camo/sg0yfyze-APpsgbRSKthZ8DZm-IC2KBE1dikGsAuLm58,q80,480x400,pf,b64/aHR0cHM6Ly9zYWZlZ3VhcmRzLmFudGhyb3BpYy5jb20vMjAyNi9zaXJlbi9zb2NpYWwtY2FyZC5wbmc"
+    },
+    {
+      "id": "at_51303526641",
+      "title": "Speculative Encoding: Many-to-Many Cache Translation (24 minute read)",
+      "url": "https://x.com/RampLabs/status/2125625946229064118?utm_source=tldrai",
+      "summary": "Agents are increasingly passing context to one another as text. Speculative encoding translates hidden states directly from one model to another. It makes the model start answering faster than prefilling the text while keeping most of its accuracy. Prefill costs grow quadratically with context length, and prefill repeats much of what the sending model...",
+      "source": "via TLDR AI Feed",
+      "image": "https://www.inoreader.com/camo/sVNQlnN2gVMkuQY3vBWi6EhgcL7vmCGgtXvNS5nQlquc,q80,480x400,pf,b64/aHR0cHM6Ly9wYnMudHdpbWcuY29tL21lZGlhL0hYLXNiVkJYVUFBRXR1Rz9mb3JtYXQ9d2VicCZuYW1lPWxhcmdl"
+    },
+    {
+      "id": "at_51303526642",
+      "title": "Latency doesn't lie: Jev is (probably) Qwen3.5-35B-A3B! (9 minute read)",
+      "url": "https://modaic.dev/blog/latency-doesnt-lie?utm_source=tldrai",
+      "summary": "Jev, TypeSafe's System One model, was trained to produce calibrated judgments instead of generating text. Its architecture and training paradigm have drawn plenty of speculation since launch. System One workloads are input-heavy, which makes prefill the dominant cost, and faster kernels can only get you so far. Jev's latency, along with other hints...",
+      "source": "via TLDR AI Feed",
+      "image": "https://www.inoreader.com/camo/sup8faul8a8jn0F22X_zbhb_Lux9KpikZwACgX6JDvzM,q80,480x400,pf,b64/aHR0cHM6Ly93d3cubW9kYWljLmRldi9ibG9nL2xhdGVuY3ktZG9lc250LWxpZS9sYXRlbmN5X2RvZXNudF9saWVfb2cucG5n"
+    },
+    {
+      "id": "at_51303526643",
+      "title": "Build AI agents grounded in your governed data. (Sponsor)",
+      "url": "https://www.domo.com/agentcatalyst?utm_source=tldr&amp;utm_medium=paid-email&amp;utm_campaign=Display_General_TLDRNewsletterSponsorship_FY27_NAM&amp;utm_campid=701Vu00003EJhHeIAL&amp;utm_content=day-6-headline-ai",
+      "summary": "Agent Catalyst helps build agents that act with purpose, working with humans to eliminate inefficiencies and move your business forward. Domo gives you the right tools to go from zero to AI hero: pull all your data together, build AI-powered solutions and share them with your teams, quickly and securely.See how Agent Catalyst works",
+      "source": "via TLDR AI Feed",
+      "image": "https://www.inoreader.com/camo/sSM1Roi6KnVi9WnoUYCDHLd7N-G_3ljPhk8XCvCICk_8,q80,480x400,pf,b64/aHR0cHM6Ly9jZG4ucHJvZC53ZWJzaXRlLWZpbGVzLmNvbS82NzliOTEzNzJkMmUwOTNmMmE0Mjg3YWEvNjdkYWE1MDkwYjk1ODhjNGFhYzhkM2U5X2RvbW8tZG9tby1haS1hZ2VudC1jYXRhbHlzdC1vZy1tYXJjaC0yMDI1LnBuZw"
+    },
+    {
+      "id": "at_51303526644",
+      "title": "Paths to extreme power concentration (30 minute read)",
+      "url": "https://newsletter.forethought.org/p/paths-extreme-power-concentration?utm_source=tldrai",
+      "summary": "AI could give a very small group of people a decisive strategic advantage to take over the world. The two largest routes are an autocracy overtaking the democracies in AI, and a democratic head of government teaming up with a leading AI company. The chances of this happening are significant. Now is the time to address this risk.",
+      "source": "via TLDR AI Feed",
+      "image": "https://www.inoreader.com/camo/sIFm8fTDoFybcWQCExWfgAgfnjjxhs85ac1_a_JAu5ec,q80,480x400,pf,b64/aHR0cHM6Ly9zdWJzdGFja2Nkbi5jb20vaW1hZ2UvZmV0Y2gvJHNfIXJWMzchLHdfMTIwMCxoXzY3NSxjX2ZpbGwsZl9qcGcscV9hdXRvOmdvb2QsZmxfcHJvZ3Jlc3NpdmU6c3RlZXAsZ19hdXRvL2h0dHBzJTNBJTJGJTJGc3Vic3RhY2stcG9zdC1tZWRpYS5zMy5hbWF6b25hd3MuY29tJTJGcHVibGljJTJGaW1hZ2VzJTJGYmZjYzA0NDItZWMzNC00YWIzLWFjYjEtOTgyZGVkYmEzZWYxXzEyMDB4NjMwLnBuZw"
+    },
+    {
+      "id": "at_51303526645",
+      "title": "GPT 6.2 Astra is superhuman in mathematical optimization (3 minute read)",
+      "url": "https://rybindmitry.github.io/blogs/gpt-6-2-astra-is-superhuman-in-mathematical-optimization.html?utm_source=tldrai",
+      "summary": "A single GPT-6.2 Astra agent outperformed all human-designed software in an experiment on finding and proving optimal solutions. The problems solved covered fields including quadratic programming, mixed-integer non-linear programming, large-scale optimization, and semidefinite programming. The model was allowed to search the internet to look for solutions....",
+      "source": "via TLDR AI Feed",
+      "image": "https://www.inoreader.com/camo/sUgPAPTsNQYn6xilwL5__PjtJHSPW_nK30d75Y-VB8fg,q80,480x400,pf,b64/aHR0cHM6Ly9yeWJpbmRtaXRyeS5naXRodWIuaW8vaW1hZ2VzL21pcGxpYl9yZXN1bHRzLnBuZw"
+    },
+    {
+      "id": "at_51303526647",
+      "title": "Early outputs: Anthropic is A/B testing Claude Opus 5.6 (3 minute read)",
+      "url": "https://www.testingcatalog.com/testers-share-early-results-possible-claude-opus-5-6/#google_vignette?utm_source=tldrai",
+      "summary": "Outputs circulating on X indicate that Anthropic may be testing Claude Opus 5.6 with users. Some users say the model is a significant jump over Opus 5.5. Examples of outputs from the model are available in the article.",
+      "source": "via TLDR AI Feed",
+      "image": "https://www.inoreader.com/camo/s-26OyhSwETZR8Z7GEE1HNCcFRtwGPG6-JI7g0r_Y6SQ,q80,480x400,pf,b64/aHR0cHM6Ly9zdG9yYWdlLmdob3N0LmlvL2MvMmEvMWIvMmExYjE3ODItODUwNi00ZDdkLWJmNTMtYWQzZmI1MmUyYTBmL2NvbnRlbnQvaW1hZ2VzL3NpemUvdzEyMDAvMjAyNi8xMS9jbGF1ZGUtb3B1cy10ZXh0LW9mZmljaWFsLWhlcm8ud2VicA"
+    },
+    {
+      "id": "at_51303526649",
+      "title": "Fireworks AI is bringing an ultra-fast version of Kimi K3.1 Pro (2 minute read)",
+      "url": "https://x.com/bebuu_ai/status/2125829912875696279?utm_source=tldrai",
+      "summary": "The new endpoint is listed at $5 per million input tokens, $25 per million output tokens, and $0.50 per million cached input tokens.",
+      "source": "via TLDR AI Feed",
+      "image": ""
+    },
+    {
+      "id": "at_51303526652",
+      "title": "MAGI-2: A 480B Frontier Video Generation Model (10 minute read)",
+      "url": "https://sand.ai/blog/magi-2/?utm_source=tldrai",
+      "summary": "Sand AI introduced MAGI-2, a 480-billion-parameter video model that generates up to 30 seconds of 1080p video with matching audio, including lip-synced dialogue.",
+      "source": "via TLDR AI Feed",
+      "image": "https://www.inoreader.com/camo/syD_xrUopZ5Bvt-4havJ_qmDXdq-baP7igL4JmlyVWy8,q80,480x400,pf,b64/aHR0cHM6Ly9zdGF0aWMubWFnaS53b3JsZC9tZWRpYS93ZWJzaXRlLzZjODMzNDc3M2I5OGVjYTNkZTViMDJjMDQ2MDc0MGNlZjg4MDJjMTExZTE3M2JkMzJkZTVhMWYxZjRkM2Q4ODQud2VicA"
+    },
+    {
+      "id": "at_51303526654",
+      "title": "How my context engineering changed for Gemini 4 Neon (8 minute read)",
+      "url": "https://www.philschmid.de/gemini-4-neon-context-engineering?utm_source=tldrai",
+      "summary": "Most long agent prompts are old workarounds for weaker models - remove conflicting instructions and duplicated tool rules so that Gemini spends its thinking tokens on the actual task.",
+      "source": "via TLDR AI Feed",
+      "image": "https://www.inoreader.com/camo/syGVZC_sm4bmgWpAMDyUKrTJKq9g7O6GSVGCPTw_aNd0,q80,480x400,pf,b64/aHR0cHM6Ly93d3cucGhpbHNjaG1pZC5kZS9fb2cvZDVlYTY1YWU5Y2NjLW9nLmpwZw"
+    },
+    {
+      "id": "at_51303526657",
+      "title": "Fable 5.2 Tries Less on Some Hard Tasks (7 minute read)",
+      "url": "https://goodhartlabs.com/blog/fable-5-2-tries-less-on-some-hard-tasks-when-a-shortcut-is-available?utm_source=tldrai",
+      "summary": "Claude Fable 5.2 often puts less effort into tasks that look impossible when a visible shortcut is available.",
+      "source": "via TLDR AI Feed",
+      "image": "https://www.inoreader.com/camo/si6RMERukGcWu9ca2OTShiBjmHwzI63Fs4Xi9it8cIQ0,q80,480x400,pf,b64/aHR0cHM6Ly9nb29kaGFydGxhYnMuY29tL2Jsb2cvZmFibGUtNS0yLXRyaWVzLWxlc3Mtb24tc29tZS1oYXJkLXRhc2tzLXdoZW4tYS1zaG9ydGN1dC1pcy1hdmFpbGFibGUvb3BlbmdyYXBoLWltYWdlPzQ3YzViM2Q0MzcwYTc1ZmI"
+    },
+    {
+      "id": "at_51303526659",
+      "title": "OpenAI Begins Testing Private Inference (1 minute read)",
+      "url": "https://x.com/sama/status/2125638790593274259?utm_source=tldrai",
+      "summary": "OpenAI is testing Private Inference with a small group of customers as part of its Private Intelligence offering. Sam Altman says combining Zero Data Retention with Private Safety Processing allows automated safety reviews while keeping the underlying content inaccessible to OpenAI personnel.",
+      "source": "via TLDR AI Feed",
+      "image": ""
+    },
+    {
+      "id": "at_51303080520",
+      "title": "Nvidia hits pause on chip shipments to Southeast Asia",
+      "url": "https://techcrunch.com/2026/11/26/nvidia-hits-pause-on-chip-shipments-to-southeast-asia/",
+      "summary": "Nvidia has told manufacturing partners to pause server shipments to Malaysia, Singapore, Thailand and Indonesia as the U.S. tightens its push to keep AI chips out of China.",
+      "source": "Connie Loizos via AI | TechCrunch",
+      "image": "https://www.inoreader.com/camo/sHQKhmzXZerFX7wC7N4DjZ9-0Df3egcTy7rntxyZY4t0,q80,480x400,pf,b64/aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNi8xMS9UYWl3YW4tTnZpZGlhLmpwZz93PTEwMjQ"
+    },
     {
       "id": "at_51301308043",
       "title": "As Anthropic IPOs, Grand Theft Auto VI proves why efficiency isn’t a virtue",
@@ -1448,158 +1600,6 @@
       "summary": "Traders work on the floor of the New York Stock Exchange during morning trading on November 18, 2026 in New York City. | Image: Getty Images \"We've got this,\" Colette Kress, interim CEO of Nvidia, said Tuesday night as she closed out the embattled chip company's third quarter earnings call. By Thursday, the company's stock price was hovering...",
       "source": "Ellen Thomas via The Verge - Artificial Intelligences",
       "image": "https://www.inoreader.com/camo/soKQoCDaTUChac5Oezvr3KhncE8oohyNQ4Ihr-xJ_zMQ,q80,480x400,pf,b64/aHR0cHM6Ly9wbGF0Zm9ybS50aGV2ZXJnZS5jb20vd3AtY29udGVudC91cGxvYWRzL3NpdGVzLzIvMjAyNi8xMS9nZXR0eWltYWdlcy0yMzA1NzE2ODIzLmpwZz9xdWFsaXR5PTkwJnN0cmlwPWFsbCZjcm9wPTAsMCwxMDAsMTAw"
-    },
-    {
-      "id": "at_51234866199",
-      "title": "These tech outages are giving Y2K, AI agent style",
-      "url": "https://techcrunch.com/2026/11/19/these-tech-outages-are-giving-y2k-ai-agent-style/",
-      "summary": "Are the recent outages in the airline booking systems, banking platforms, and productivity platforms really a coincidence? There's actually likely something deeper going on, cybersecurity experts say.",
-      "source": "Dominic-Madori Davis via AI | TechCrunch",
-      "image": "https://www.inoreader.com/camo/s5ktN8QnaD2NEF5J5rDW7gFWETOM2dYeGm24EYDO-07Y,q80,480x400,pf,b64/aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNi8xMS9NdWhhcnJlbS1odW5lci5qcGc_cmVzaXplPTE2MDAsMTA2Nw"
-    },
-    {
-      "id": "at_51234499262",
-      "title": "Uber blew through its AI budget, then dialed back context and reasoning in its AI coding tools",
-      "url": "https://venturebeat.com/infrastructure/uber-blew-through-its-ai-budget-then-dialed-back-context-and-reasoning-in-its-ai-coding-tools",
-      "summary": "When an Uber engineer opens Claude Code for an interactive coding session, automatic compaction kicks in at 400,000 tokens, even for models with million-token context windows. Reasoning effort defaults to medium, not high. No MCP tool definitions load into the context at startup. The engineer didn’t pick any of those settings; Uber picked them.Read...",
-      "source": "[email protected] (Louis Columbus) via VentureBeat",
-      "image": "https://www.inoreader.com/camo/st71r4J8JLDOLZT2PY0HKOxo9oifZrRm6duoj7r_lzpE,q80,480x400,pf,b64/aHR0cHM6Ly9pbWFnZXMuY3RmYXNzZXRzLm5ldC9qZHR3cWh6dmMybjEvNUtzSEhrZ0pja044cFJQbkRVSjc1Ui8xOWNiYmE3ZWRmOGFmYWVlZjRiZDNjZDRjMDk5NzYwYi9WZW50dXJlQmVhdDEwMjgyNi0zNTI0LmpwZz93PTE2MDAmcT04MA"
-    },
-    {
-      "id": "at_51234186294",
-      "title": "Meta’s Muse Charm might cost $300",
-      "url": "https://www.theverge.com/tech/1038087/meta-muse-charm-ai-price",
-      "summary": "Meta is planning to price the Muse Charm, a little gadget with a screen that lets you chat with your Muse AI agent, at $300, according to The Information. CEO Mark Zuckerberg revealed the gadget earlier this year and said the company expected to ship the Charm \"in time for the holidays in December,\" but he didn't provide a price at the...",
-      "source": "Jay Peters via The Verge - Artificial Intelligences",
-      "image": "https://www.inoreader.com/camo/sG9pTU4s9f-xvl2eMfecHmwTB0KXjjcqW5lDC0iKlKnk,q80,480x400,pf,b64/aHR0cHM6Ly9wbGF0Zm9ybS50aGV2ZXJnZS5jb20vd3AtY29udGVudC91cGxvYWRzL3NpdGVzLzIvMjAyNi8xMS9sY2ltZy0zODc5NTExZC1kZDNkLTQzMGMtODA3Mi02MTZlMmRmYjM0ODQuanBlZz9xdWFsaXR5PTkwJnN0cmlwPWFsbCZjcm9wPTAsMCwxMDAsMTAw"
-    },
-    {
-      "id": "at_51234114405",
-      "title": "Google is putting AI chats right on the homepage",
-      "url": "https://www.theverge.com/tech/1038059/google-search-homepage-ai-chats",
-      "summary": "Google is updating its homepage to include AI searches. In a post on X, Google's vice president of product, Robby Stein, shows how you can now open a collapsible sidebar to view and continue your AI chats. Based on the GIF shared by Stein, it looks like you can open the sidebar by clicking the gray bar that appears on the left side of...",
-      "source": "Emma Roth via The Verge - Artificial Intelligences",
-      "image": "https://www.inoreader.com/camo/s4VQMoOuLOUNObPiu8ZJTNUuTYCcku955gC5Z2rpKmos,q80,480x400,pf,b64/aHR0cHM6Ly9wbGF0Zm9ybS50aGV2ZXJnZS5jb20vd3AtY29udGVudC91cGxvYWRzL3NpdGVzLzIvMjAyNi8wMS9TVEswOTNfR09PR0xFX0QuanBnP3F1YWxpdHk9OTAmc3RyaXA9YWxsJmNyb3A9MCwwLDEwMCwxMDA"
-    },
-    {
-      "id": "at_51234058183",
-      "title": "Flying blind? 78.5% of AI operators have no metric for factual accuracy (Sponsor)",
-      "url": "https://go.parloa.com/cx-observability-2026?utm_campaign=2026-q4-paid-awareness-cxobservability&amp;utm_source=tldr&amp;utm_medium=newsletter-quicklink-11-16",
-      "summary": "Parloa and Metric Sherpa surveyed 700+ CX operators and executives for the 2026 CX Observability Study. Key finding: teams are scaling AI agents faster than anyone can verify them. See what's missing",
-      "source": "via TLDR AI Feed",
-      "image": "https://www.inoreader.com/camo/sJXCq2B5ekJbwKW-IauaACI3OPyW1T2oCc1qD2u0F-EY,q80,480x400,pf,b64/aHR0cHM6Ly9mcmFtZXJ1c2VyY29udGVudC5jb20vYXNzZXRzL0FNbE1JRGx6ZGx6ekhxcUFkNjA5Y3NRdXBQVS5qcGc"
-    },
-    {
-      "id": "at_51234058188",
-      "title": "The Silent Consensus (15 minute read)",
-      "url": "https://www.hyperdimensional.co/p/the-silent-consensus?utm_source=tldrai",
-      "summary": "The most common vision for the future that AI brings isn't totally positive. It is often left unsaid, discernible only by implication, a silent consensus. The decisions humans make will likely lead to a world in which people have forfeited effective authority over much of our civilization. Even if we make extraordinary progress on AI safety and alignment,...",
-      "source": "via TLDR AI Feed",
-      "image": "https://www.inoreader.com/camo/stih-gu5NawRunY0tT-_KeccN0wzqFiFVzSYoRh1ghbw,q80,480x400,pf,b64/aHR0cHM6Ly9zdWJzdGFja2Nkbi5jb20vaW1hZ2UvZmV0Y2gvJHNfIW1MYWohLHdfMTIwMCxoXzY3NSxjX2ZpbGwsZl9qcGcscV9hdXRvOmdvb2QsZmxfcHJvZ3Jlc3NpdmU6c3RlZXAsZ19hdXRvL2h0dHBzJTNBJTJGJTJGc3Vic3RhY2stcG9zdC1tZWRpYS5zMy5hbWF6b25hd3MuY29tJTJGcHVibGljJTJGaW1hZ2VzJTJGNDkzNzFhYmYtMjU3OS00N2JlLTgxMTQtM2UwY2E1ODBhZjhiXzEwMjR4MTAyNC5wbmc"
-    },
-    {
-      "id": "at_51234058189",
-      "title": "Most voice apps rent their speech model. Wispr Flow trained its own (Sponsor)",
-      "url": "https://ref.wisprflow.ai/tldr-nov19-ai-quicklinks-headline?sp=rd9VFBzy1-YQhsiehe2WNZxJ",
-      "summary": "Canto, the model behind Wispr Flow, had the lowest word error rate of every model tested on real dictations from more than 2,300 speakers. 4x faster than typing. Try Wispr Flow free",
-      "source": "via TLDR AI Feed",
-      "image": ""
-    },
-    {
-      "id": "at_51234058190",
-      "title": "Introducing Model Factory (8 minute read)",
-      "url": "https://www.primeintellect.ai/blog/introducing-model-factory?utm_source=tldrai",
-      "summary": "Model Factory is a training loop that lets any company train, deploy, and continuously improve models in production. It brings reinforcement learning, supervised fine-tuning, pre-training, and inference together into one control plane. It also offers health checks, automatic node replacement, and recovery from the latest checkpoint for long-running...",
-      "source": "via TLDR AI Feed",
-      "image": "https://www.inoreader.com/camo/sAjpcKuoHJWcjp2mEMUzoz3JbneA8Cqoxm3JH0bv6lAQ,q80,480x400,pf,b64/aHR0cHM6Ly93d3cucHJpbWVpbnRlbGxlY3QuYWkvYmxvZy9pbnRyb2R1Y2luZy1tb2RlbC1mYWN0b3J5L2hlYWRlci5wbmc_dj0yNDRhYTQyNTI1Yjc"
-    },
-    {
-      "id": "at_51234058191",
-      "title": "Quickly, There's No Time (38 minute read)",
-      "url": "https://thezvi.substack.com/p/quickly-theres-no-time?utm_source=tldrai",
-      "summary": "Many things point to the substantial possibility of superintelligence arriving next year. Any plan to prepare for this has to be ready for the full automation of AI R&D, which will result in the rapid advancement of AI abilities beyond human levels. It will need to include mechanisms to slow down the resulting growth in capabilities.",
-      "source": "via TLDR AI Feed",
-      "image": "https://www.inoreader.com/camo/sZ_Cwy4fnRkXgqWQRztWbI6_fDGMTf-pRg-wlGPDfmgo,q80,480x400,pf,b64/aHR0cHM6Ly9zdWJzdGFja2Nkbi5jb20vaW1hZ2UvZmV0Y2gvJHNfIUVfcXYhLHdfMTIwMCxoXzY3NSxjX2ZpbGwsZl9qcGcscV9hdXRvOmdvb2QsZmxfcHJvZ3Jlc3NpdmU6c3RlZXAsZ19hdXRvL2h0dHBzJTNBJTJGJTJGc3Vic3RhY2stcG9zdC1tZWRpYS5zMy5hbWF6b25hd3MuY29tJTJGcHVibGljJTJGaW1hZ2VzJTJGNmZiZmY1MmItODI1Ny00ZTAxLTg0ODAtNmRlZGE2ZjM2YWRlXzEyNzJ4NjY4LndlYnA"
-    },
-    {
-      "id": "at_51234058192",
-      "title": "ResolveAI Introduces SRE-1, the Most Accurate Model for Production at Every Budget (1 minute read)",
-      "url": "https://resolve.ai/news/introduces-SRE-1-model-and-primary-on-call?utm_source=tldrai",
-      "summary": "SRE-1 offers unmatched accuracy for production across various budgets.",
-      "source": "via TLDR AI Feed",
-      "image": "https://www.inoreader.com/camo/sHz9rOtDmLfIfu73ZnaQWzVgXaJ6oYcg_-AfwUXmsFiM,q80,480x400,pf,b64/aHR0cHM6Ly9tZWRpYS53ZWJzaXRlLXByb2QucmVzb2x2ZS5haS9SZWN0YW5nbGVfUmVzb2x2ZV9BSV9JbnRyb2R1Y2VzX1NSRV8xX3RoZV9Nb3N0X0FjY3VyYXRlX01vZGVsX2Zvcl9Qcm9kdWN0aW9uX2F0X0V2ZXJ5X0J1ZGdldF9kYzRhYzE0OTk2LnBuZw"
-    },
-    {
-      "id": "at_51234058193",
-      "title": "Context API extracts full context from any web page (6 minute read)",
-      "url": "https://www.perplexity.ai/hub/blog/context-api-extracts-full-context-from-any-web-page?utm_source=tldrai",
-      "summary": "The Perplexity Context API can extract the full context from any webpage and return clean Markdown, links, and relevant passages. It can read up to 10 URLs at once. Agents can specify the freshness of each request and validate the source of each result. Every successful result also includes metadata for the page such as the title, description, language,...",
-      "source": "via TLDR AI Feed",
-      "image": "https://www.inoreader.com/camo/sNnzO2TWGE8G0OabmDpobk5WusVoI_mHK8-Ej2J620yY,q80,480x400,pf,b64/aHR0cHM6Ly9jZG4uc2FuaXR5LmlvL2ltYWdlcy9hcW82NHZmci9wcm9kdWN0aW9uLzJhMjkwOGU1NzhlM2VlOTE4NzM5OWY1YTk1MzRiZDlmMDAwN2VmNmYtMTkyMHgxMDgwLnBuZz9yZWN0PTAsMzYsMTkyMCwxMDA4Jnc9MTIwMCZoPTYzMCZmbT1qcGcmcT04MCZmaXQ9Y3JvcA"
-    },
-    {
-      "id": "at_51234058195",
-      "title": "Keyboard: 45 wpm. Your voice: 220 wpm. Give Cursor the context it needs (Sponsor)",
-      "url": "https://ref.wisprflow.ai/tldr-nov19-ai-secondary-headline?sp=xsAkQqdku1z5cUNwyxtrDZj4",
-      "summary": "You can explain a bug out loud in seconds. Typing it out takes long enough that you cut the context, and the answer gets worse. Wispr Flow lets you just talk. It types clean, formatted text into Cursor, Claude or ChatGPT, with the filler words gone. Mac, Windows, iPhone and Android. Try Wispr Flow free",
-      "source": "via TLDR AI Feed",
-      "image": ""
-    },
-    {
-      "id": "at_51234058196",
-      "title": "Switching LLMs mid-conversation is a ski-rental problem (30 minute read)",
-      "url": "https://www.edgee.ai/blog/posts/switching-llms-mid-conversation-is-a-ski-rental-problem?utm_source=tldrai",
-      "summary": "Most work on routing between language models is centered on making sure the right model handles the right request. A classifier scores the request, then the request is routed to a cheap model if it is easy, and a frontier model if it is hard. For coding agents, this is only half of the problem. The second half of the problem is knowing when a running...",
-      "source": "via TLDR AI Feed",
-      "image": "https://www.inoreader.com/camo/sCU_CzlqGPGj1fYR4H_Mpj-Gor86DPF3MmEbUkCV3rUc,q80,480x400,pf,b64/aHR0cHM6Ly9jZG4uZWRnZWUuYXBwL2Jsb2cvaW5saW5lLzZhNjhiNWQ1LWRmNjgtNDZlOS1hOGM3LWI1NjBiN2I1OTFiYi5wbmc"
-    },
-    {
-      "id": "at_51234058198",
-      "title": "Advancing chip design with OpenAI models (8 minute read)",
-      "url": "https://openai.com/index/advancing-chip-design-with-our-models/?utm_source=tldrai",
-      "summary": "Design changes proposed by OpenAI's models cut the circuit area of key parts of its Jalapeño AI chip by an estimated 10% to 13%. With AMD, the same approach delivered up to 14% improvements on AMD's flagship GPU designs.",
-      "source": "via TLDR AI Feed",
-      "image": "https://www.inoreader.com/camo/sRQpT2foOu-wiL47qGwTSYRP-Zp6NjAoji2DhQOUKuoc,q80,480x400,pf,b64/aHR0cHM6Ly9pbWFnZXMuY3RmYXNzZXRzLm5ldC9rZnR6d2R5YXV3dDkvNjU4emcwRkhBZzd6dUw3M0RURkNmQy9mZmYyMWZkMThjMjYwY2U2NGExMGExNGVlOGQ0ZTg1MS9hZHZhbmNpbmctY2hpcC1kZXNpZ24tc29jaWFsLnBuZz93PTE2MDAmaD05MDAmZml0PWZpbGw"
-    },
-    {
-      "id": "at_51234058201",
-      "title": "Why Antigravity Eats Weekly Quota Fast - and What I Measured (17 minute read)",
-      "url": "https://asubedi.com.np/blog/why-antigravity-eats-weekly-quota-fast/?utm_source=tldrai",
-      "summary": "Google Antigravity wipes users' prompt caches if there is a 5-minute pause. Refreshing the cache just before expiry works, but only for 3 pings. Even a 5-word prompt starts with 13,800 to 16,800+ tokens of system instructions, MCP schemas, and skills. Disabling unused MCP servers and plugins shrinks cold turns and cache misses.",
-      "source": "via TLDR AI Feed",
-      "image": ""
-    },
-    {
-      "id": "at_51234058204",
-      "title": "Why is Gemini 4 Carbon taking so long? (4 minute read)",
-      "url": "https://kernel.dev/blog/why-is-gemini-4-carbon-taking-so-long/?utm_source=tldrai",
-      "summary": "In a private benchmark, Gemini 4 Carbon spent close to an hour on bug fixes that Claude Opus 5.5 and GPT-6 Astra finished in minutes. Carbon took about seven times as many steps as Astra, and half were unnecessary.",
-      "source": "via TLDR AI Feed",
-      "image": "https://www.inoreader.com/camo/s3OtKfjq9cS7Kfp5Of7Vu_YIwW-UAJm_XKq9dfTDQeLI,q80,480x400,pf,b64/aHR0cHM6Ly9rZXJuZWwuZGV2L2Jsb2cvd2h5LWlzLWdlbWluaS00LWNhcmJvbi10YWtpbmctc28tbG9uZy9vZy5wbmc"
-    },
-    {
-      "id": "at_51234058206",
-      "title": "Genie 4 (7 minute read)",
-      "url": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/genie-4-now-available-project-genie/?utm_source=tldrai",
-      "summary": "Google opened Genie 4, its model for generating interactive worlds, to eligible Google AI Ultra subscribers in Project Genie. Users can edit a world by typing prompts while exploring it.",
-      "source": "via TLDR AI Feed",
-      "image": "https://www.inoreader.com/camo/sTgtk9DZBDG1jLi9qItsUZ0bM5bZpIpJbKUFMTtC-4PY,q80,480x400,pf,b64/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2d3ZWItdW5pYmxvZy1wdWJsaXNoLXByb2QvaW1hZ2VzL3Jlc2l6ZWRfUHJvamVjdEdlbmllX1RodW1ibmFpbF92MDIud2lkdGgtMTMwMC5wbmc"
-    },
-    {
-      "id": "at_51234058207",
-      "title": "Inside the Codex sandbox (28 minute read)",
-      "url": "https://openai.com/index/inside-the-codex-sandbox/?utm_source=tldrai",
-      "summary": "The Codex sandbox lets OpenAI's coding agent run commands on a user's own machine within file and network limits the user controls.",
-      "source": "via TLDR AI Feed",
-      "image": "https://www.inoreader.com/camo/s4Hry9Z9yb_8vC3zY3B8XGezvDu0MOSDS3JJnmkvE0c4,q80,480x400,pf,b64/aHR0cHM6Ly9pbWFnZXMuY3RmYXNzZXRzLm5ldC9rZnR6d2R5YXV3dDkvMVBueWxEN2xKd2dVdzdqWU5QOHdMaC83ZmE1NTUzMDAxMTM2ZjM5ODJlOGQ0ZGI0NDE0NmRlMy9pbnNpZGUtdGhlLWNvZGV4LXNhbmRib3gtc29jaWFsLnBuZz93PTE2MDAmaD05MDAmZml0PWZpbGw"
-    },
-    {
-      "id": "at_51234058208",
-      "title": "An update on the state of research acceleration at OpenAI (20 minute read)",
-      "url": "https://openai.com/index/research-acceleration-jagged-frontier/?utm_source=tldrai",
-      "summary": "OpenAI's agents now complete nearly half of two-to-four-hour research tasks on their own. However, humans are still central to AI development. Agent use is surging, and the heaviest users are pulling further ahead. Researchers are devoting increasing human effort to Safety and alignment.",
-      "source": "via TLDR AI Feed",
-      "image": "https://www.inoreader.com/camo/s_ecJY2qtrUMstRVtXgigiPUeCXKoZZGK32aaeollji0,q80,480x400,pf,b64/aHR0cHM6Ly9pbWFnZXMuY3RmYXNzZXRzLm5ldC9rZnR6d2R5YXV3dDkvMllTOHlXaUdwS2ZsaGxFbkFrY0xVL2Y1MWVhZDQzOTE3MDZmNmMzMTk4ZjBkNjFhMGYxNDdhL3Jlc2VhcmNoLWFjY2VsZXJhdGlvbi10aGUtamFnZ2VkLWZyb250aWVyLXNvY2lhbC5wbmc"
     }
   ]
 }

@@ -1,6 +1,46 @@
 {
-  "updatedAt": "2026-11-26T19:00:34.418979+00:00",
+  "updatedAt": "2026-11-27T02:10:52.950171+00:00",
   "articles": [
+    {
+      "id": "at_51304852427",
+      "title": "Node.js 27 Alpha Adds HTTP Security Protections and Deprecates TLS 1.2 Renegotiation",
+      "url": "https://cybersecuritynews.com/node-js-27-alpha/",
+      "summary": "The Node.js project released a version 27.0.0-alpha.0.2.0 on November 26, 2026, bringing security fixes for reused HTTP connections and new controls for TLS 1.2 renegotiation. The official release notes also list changes to HTTP/2 memory limits and HTTPS connection pooling. The alpha does not remove TLS 1.2 or turn off renegotiation by default....",
+      "source": "Guru Baran via Cyber Security News",
+      "image": "https://www.inoreader.com/camo/sJODny_6MFjLJ_cepkutjM0FAscxJ7ADrlxTQS9qr7mQ,q80,480x400,pf,b64/aHR0cHM6Ly9jeWJlcnNlY3VyaXR5bmV3cy5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjYvMTEvTm9kZS5qcy0yNy1BbHBoYS53ZWJw"
+    },
+    {
+      "id": "at_51303852300",
+      "title": "AI Arms Race, We All Lose - PSW #954",
+      "url": "https://www.scworld.com/podcast-segment/15262-ai-arms-race-we-all-lose-psw-954",
+      "summary": "",
+      "source": "Paul Asadoorian via Latest articles from SC Magazine",
+      "image": "https://www.inoreader.com/camo/sbsKqv_ZfG2HJm86WMweUauAXoH0e5GS2O-hhjKd3Fgs,q80,480x400,pf,b64/aHR0cHM6Ly9maWxlcy5jeWJlcnJpc2thbGxpYW5jZS5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjYvMTEvUFNXXzk1NF9UaHVtYm5haWxfUFNXXzE5MjB4MTA4MF9lZTgxM2M1ZC1lN2YzLTRhODYtYjRkYi0xMWI2ZDk4NmY4OGIuanBn"
+    },
+    {
+      "id": "at_51303364638",
+      "title": "OpenAI warns GPT-6.2 Astra will hit usage limits 40% faster because it fixed a bug",
+      "url": "https://www.bleepingcomputer.com/news/artificial-intelligence/openai-warns-gpt-62-astra-will-hit-usage-limits-40-percent-faster-because-it-fixed-a-bug/",
+      "summary": "OpenAI confirmed that it fixed a 'bug' that incorrectly discounted GPT-6.2 usage, which means you'll now hit GPT usage limits 40% faster than before. [...]",
+      "source": "Mayank Parmar via Bleeping Computer",
+      "image": "https://www.inoreader.com/camo/sc6HnL-Tyi8AG2f1HUhyNNVwGc0O_982MBDm0T8hJvBI,q80,480x400,pf,b64/aHR0cHM6Ly93d3cuYmxlZXBzdGF0aWMuY29tL2NvbnRlbnQvaGwtaW1hZ2VzLzIwMjMvMDQvMTEvT3BlbkFJLWhlYWRwaWMuanBn"
+    },
+    {
+      "id": "at_51302981917",
+      "title": "ThreatsDay: 10M NGINX Services at Risk, 250+ Malicious Extensions, AI Server Hijacking + 17 More Stories",
+      "url": "https://thehackernews.com/2026/11/threatsday-250-rogue-extensions-10m.html",
+      "summary": "A website can look perfectly fine to the person running it. Log out, visit the same page, and things might look different. Something similar is happening with browser extensions, where even the way you find and install one can change what it does. Checking whether software works as expected only tells you so much. Then there’s the question of who...",
+      "source": "[email protected] (The Hacker News) via The Hacker News",
+      "image": "https://www.inoreader.com/camo/s1xOq7Cs-grd_A_9gM8Ayo9W76sC5wCD3S29dN6j2bo8,q80,480x400,pf,b64/aHR0cHM6Ly9ibG9nZ2VyLmdvb2dsZXVzZXJjb250ZW50LmNvbS9pbWcvYi9SMjl2WjJ4bC9BVnZYc0VobHdiNGNMMnhiRjM4eXluVC1ocDhySGFHbnRzWXp1UXdMNC02OGczU3hFVzRUYXc2X0tsNFdGZkw0Q3VOUk5YR3hPX0tTOXByWmFxazBBNlNBNmZpYjNrOGo5bWlUeW1QOFB6QUJ2OU9BMjFlU0RzUnYxajlORWdiSUVWTVI3dTFDN1ZtRnlGeGRCZjBaY2oyc2NrSXlIRGtSU2ptNzZvRk1EZDEwZHJVSGExY3R2NjE5MHZkWUhodVZ1UlBrL3MxNjAwL3RoZGF5LmpwZw"
+    },
+    {
+      "id": "at_51302962212",
+      "title": "Drupal Warns of New Critical Flaw Exploited in the Wild",
+      "url": "https://securityaffairs.com/204085/security/drupal-warns-of-new-critical-flaw-exploited-in-the-wild.html",
+      "summary": "Drupal fixes a critical flaw exploited in the wild that could let attackers take over vulnerable websites. Drupal has warned of a new highly critical vulnerability in Drupal Core that attackers are actively exploiting to take over vulnerable websites. Tracked as CVE-2026-136716, the flaw is related to improper handling of unusual or...",
+      "source": "Pierluigi Paganini via Security Affairs",
+      "image": "https://www.inoreader.com/camo/s6SqmsnQMQ3FgprgmK6shH8V5RLnlzX802ywzfQjeiYg,q80,480x400,pf,b64/aHR0cHM6Ly9zZWN1cml0eWFmZmFpcnMuY29tL3dwLWNvbnRlbnQvdXBsb2Fkcy8yMDE0LzEwL2RydXBhbC5qcGc"
+    },
     {
       "id": "at_51302119293",
       "title": "NordVPN Black Friday Deal: Get 78% off VPN plans in 2026",
@@ -1560,46 +1600,6 @@
       "summary": "Hackers stole personal information from the company’s customer portal and supplier relationship management platform. The post 1.5 Million Impacted by Data Breach at South Korean Electric Company KEPCO appeared first on SecurityWeek.",
       "source": "Ionut Arghire via SecurityWeek",
       "image": "https://www.inoreader.com/camo/sXjPeL-wLbEUxnN2NiIULYAQDiOOF8VY8PasFQnDh_F4,q80,480x400,pf,b64/aHR0cHM6Ly93d3cuc2VjdXJpdHl3ZWVrLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMy8wNS9DT1NNSUNFTkVSR1ktT1QtTWFsd2FyZS5qcGc"
-    },
-    {
-      "id": "at_51276792832",
-      "title": "Autonomous AI Attack Tools Target Coding Agents, Chatbots and Retail Payment Systems, Infrawatch Finds",
-      "url": "https://www.itsecurityguru.org/2026/11/24/autonomous-ai-attack-tools-target-coding-agents-chatbots-and-retail-payment-systems-infrawatch-finds/?utm_source=rss&utm_medium=rss&utm_campaign=autonomous-ai-attack-tools-target-coding-agents-chatbots-and-retail-payment-systems-infrawatch-finds",
-      "summary": "New research from Infrawatch has revealed how threat actors are using autonomous offensive frameworks (AOFs) to launch attacks against organisations, with AI coding agents, customer-facing chatbots, fintech platforms and retail payment systems among the targets. The findings highlight an emerging dimension of AI security risk: not only are threat actors...",
-      "source": "Guru Writer via IT Security Guru",
-      "image": "https://www.inoreader.com/camo/srhj9KirZMhOUzTPrHFOel7ledtlzVFiMNlFc41iWbCU,q80,480x400,pf,b64/aHR0cHM6Ly93d3cuaXRzZWN1cml0eWd1cnUub3JnL3dwLWNvbnRlbnQvdXBsb2Fkcy8yMDI2LzExL05lb24tSGFja2VyLWFuZC1Ib2xvZ3JhcGhpYy1BSS1OZXR3b3JrLnBuZw"
-    },
-    {
-      "id": "at_51276523548",
-      "title": "Memory Safety Is More Than a Technical Problem - Bob Lord - ASW #410",
-      "url": "https://www.scworld.com/podcast-segment/15140-memory-safety-is-more-than-a-technical-problem-bob-lord-asw-410",
-      "summary": "",
-      "source": "Mike Shema via Latest articles from SC Magazine",
-      "image": "https://www.inoreader.com/camo/sS0lVUZUtYGtzUhYuenICnvrb4gcghULe9CgndNAmYYI,q80,480x400,pf,b64/aHR0cHM6Ly9maWxlcy5jeWJlcnJpc2thbGxpYW5jZS5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjYvMTEvQVNXXzQxMF9UaHVtYm5haWxfQVNXXzE5MjB4MTA4MF9iNTM1ZmE0My1jNWZjLTRhNmEtYjZiNC1hYzQ3YTRhYmU0OWIuanBn"
-    },
-    {
-      "id": "at_51276304782",
-      "title": "Hackers Bypass MFA Through Phone Scams to Access Microsoft 365, OneDrive and SharePoint Data",
-      "url": "https://cybersecuritynews.com/bypass-mfa-through-phone-scams/",
-      "summary": "Cybercriminals posing as corporate IT support are calling employees and tricking them into handing over access to Microsoft 365 accounts, even when multifactor authentication (MFA) is enabled. The attackers have used compromised accounts to steal email and files from OneDrive and SharePoint, then contacted employees through Microsoft Teams or...",
-      "source": "Tushar Subhra Dutta via Cyber Security News",
-      "image": "https://www.inoreader.com/camo/sFk4s6h-7Z0VSKLi4_5qE1iEsxVQfSLO3QzZUna3UqFM,q80,480x400,pf,b64/aHR0cHM6Ly9ibG9nZ2VyLmdvb2dsZXVzZXJjb250ZW50LmNvbS9pbWcvYi9SMjl2WjJ4bC9BVnZYc0VpbDFpUDZwMDktb3FTRTE1V3JLRTRqX01TbFlUeFQxbmVvb0NIZmkwTTRYdE5RZkl6dS12eTB5Y3hrT1VUbTVRNVJTNU9YQlozam9lMTJQWlBqTUlvUzhUNGRpRGo3dGpkMzgyVUpfSTg3WXJXcTF4OWRTQzFVTXZ2Z1JLczBNUFgxdUJ3ekp2cjFlbHpTSDVlTV9mcFNYOHZ1TlJ1N242cVRoWEMwRDVVUnFXQUkydXdXYUNPaEwxYkFadzQvczE2MDAvRmxvdyUyMGNoYXJ0JTIwKFNvdXJjZSUyMC0lMjBVbml0NDIpLndlYnA"
-    },
-    {
-      "id": "at_51276233629",
-      "title": "Elecbrakes Bluetooth Vulnerabilities Expose Trailers to Forced Braking",
-      "url": "https://www.securityweek.com/elecbrakes-bluetooth-vulnerabilities-expose-trailers-to-forced-braking/",
-      "summary": "Critical Bluetooth flaws in Elecbrakes controllers could let nearby attackers force trailer braking, potentially causing accidents. The post Elecbrakes Bluetooth Vulnerabilities Expose Trailers to Forced Braking appeared first on SecurityWeek.",
-      "source": "Eduard Kovacs via SecurityWeek",
-      "image": "https://www.inoreader.com/camo/siuqAg-ukDnnI6zBRpIYhHxdeOhGZiGcDaikKyU3SfCE,q80,480x400,pf,b64/aHR0cHM6Ly93d3cuc2VjdXJpdHl3ZWVrLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNS8xMS90cnVjay1jYXJnby1mcmVpZ2h0LWhhY2tpbmctdHJhbnNwb3J0YXRpb24uanBlZw"
-    },
-    {
-      "id": "at_51276210474",
-      "title": "Microsoft Fixes Azure API Management Classic Flaw as Actor Targets Customer Secrets",
-      "url": "https://thehackernews.com/2026/11/microsoft-fixes-azure-api-management.html",
-      "summary": "Norway's National Security Authority (NSM) has disclosed that it became aware of a security vulnerability in Microsoft's Azure API Management (APIM) that has affected multiple businesses in the country, including energy companies Equinor and Skagerak Energi. \"An unknown actor has been actively looking for access tokens, secrets, and named values...",
-      "source": "[email protected] (The Hacker News) via The Hacker News",
-      "image": "https://www.inoreader.com/camo/sxd3aCGmaAdhFivDpGGFemgxbfT-ge3mQ-t2xU_jDMII,q80,480x400,pf,b64/aHR0cHM6Ly9ibG9nZ2VyLmdvb2dsZXVzZXJjb250ZW50LmNvbS9pbWcvYi9SMjl2WjJ4bC9BVnZYc0VnU00yRkFuZjlVRWIzRG80di1yOEFFQnBvSThieVhPckhnbmctZVJqRXl1ZFNmMGhpS01weW1tRGlLX05MVHhZdXpYZHRyV3ZNckJ6WTlxbUxxRG8zMXIzSk9wVmVmT1F4TEU3N2dka29PQVlNa0NLX18tQmMtQUpvV2ctOG5FT0VWamNZNlNzd2t6TGJDZllsNmtLOWNsZzZ4WHczeGdpbldxSXduTXhCVWFTNndnUEtWVndYWk5oWkE1Rzg1L3MxNjAwL2F6dXJlLW1zLmpwZw"
     }
   ]
 }
