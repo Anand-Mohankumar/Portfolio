@@ -1,6 +1,46 @@
 {
-  "updatedAt": "2026-11-28T02:41:40.807674+00:00",
+  "updatedAt": "2026-11-28T11:46:33.485509+00:00",
   "articles": [
+    {
+      "id": "at_51317663228",
+      "title": "Booba Ransomware Attack on Water Plant Reveals Monitoring Blind Spot",
+      "url": "https://securityaffairs.com/204166/cyber-crime/booba-ransomware-attack-on-water-plant-reveals-monitoring-blind-spot.html",
+      "summary": "Booba ransomware spread from a US water plant to local government systems, exposing a critical security gap between two networks. Booba ransomware hit an East Coast water treatment plant in November, then reached the network of the local government overseeing it. ThreatDown, which reported the incident, found no evidence that it disrupted water...",
+      "source": "Pierluigi Paganini via Security Affairs",
+      "image": "https://www.inoreader.com/camo/s--UQ8lloFnT8KTq4T4bC25wQl-aXZhvDUPwKpPxnBSQ,q80,480x400,pf,b64/aHR0cHM6Ly9zZWN1cml0eWFmZmFpcnMuY29tL3dwLWNvbnRlbnQvdXBsb2Fkcy8yMDI2LzA3L2ltYWdlLTg0LnBuZw"
+    },
+    {
+      "id": "at_51317392110",
+      "title": "Critical Erlang/OTP Flaw Could Let Hackers Impersonate TLS Servers and Intercept Encrypted Traffic",
+      "url": "https://cybersecuritynews.com/critical-erlang-otp-flaw/",
+      "summary": "A critical Erlang/OTP flaw, CVE-2026-124286 (CVSS 9.1), disclosed on November 24, 2026, allows attackers to impersonate trusted servers and intercept or modify TLS-protected traffic. The flaw affects TLS 1.2 clients, even those with server identity verification enabled, but does not impact TLS 1.3 connections. During the TLS handshake, clients...",
+      "source": "Abinaya via Cyber Security News",
+      "image": "https://www.inoreader.com/camo/sgf1vVTbHfzQPRDDF1f5LdRdn_YCDV3anzosgpX8jJCY,q80,480x400,pf,b64/aHR0cHM6Ly9jeWJlcnNlY3VyaXR5bmV3cy5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjYvMTEvQ3JpdGljYWwtRXJsYW5nX09UUC1GbGF3LUNvdWxkLUxldC1IYWNrZXJzLUltcGVyc29uYXRlLVRMUy1TZXJ2ZXJzLWFuZC1JbnRlcmNlcHQtRW5jcnlwdGVkLVRyYWZmaWMud2VicA"
+    },
+    {
+      "id": "at_51317060431",
+      "title": "Kenya eCitizen Data Breach – Hackers Reportedly Leak Identity Records of 32 Million Kenyans",
+      "url": "https://cybersecuritynews.com/kenya-ecitizen-data-breach/",
+      "summary": "Hackers have reportedly begun publishing identity records from Kenya’s eCitizen platform on the dark web. Nation’s review of the leaked eCitizen files found that the attackers had accessed data on 32,128,394 Kenyans. The figure reflects the reported scale of access. It does not mean every record has been published, and Kenyan authorities have not confirmed...",
+      "source": "Guru Baran via Cyber Security News",
+      "image": "https://www.inoreader.com/camo/szUNDg5YQaRa64P3gGQt0zfRtTeOtbyF_94JuarI8P8Y,q80,480x400,pf,b64/aHR0cHM6Ly9jeWJlcnNlY3VyaXR5bmV3cy5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjYvMTEvS2VueWEtZUNpdGl6ZW4tRGF0YS1CcmVhY2gud2VicA"
+    },
+    {
+      "id": "at_51316924561",
+      "title": "pCloud Password Manager Hit by Cyber Attack Involving Email Address Exposure and Login Attempts",
+      "url": "https://thehackernews.com/2026/11/pcloud-password-manager-hit-by-cyber.html",
+      "summary": "Cross-platform password manager pCloud Pass has confirmed it was targeted by a cyber attack after users reported seeing unknown devices being connected to their accounts. \"A cyber attack targeting pCloud Pass occurred, which was promptly contained by the pCloud team,\" the Swiss company said in response to a number of posts on Reddit. \"Unfortunately,...",
+      "source": "[email protected] (The Hacker News) via The Hacker News",
+      "image": "https://www.inoreader.com/camo/sKqT-_-ouwSDvwK4Eb0kaXOoDtNB96SoUXRUma0kMAh4,q80,480x400,pf,b64/aHR0cHM6Ly9ibG9nZ2VyLmdvb2dsZXVzZXJjb250ZW50LmNvbS9pbWcvYi9SMjl2WjJ4bC9BVnZYc0VpenlTQ2t2dGY1bVhIXzN6b3h6dWstUXlFZFVuWW1zcGdsRXNWWWRxUklUbG9VRnJVRFpDUUpjd3RRRzA5dGVGbVhvMklKT2tuT1FiN0NYaFVwaktqR25hZEQ2VHVPSXZWV0lvV21LY2F4YjgtMXV3Zi0zQWlYWlBZQ0ZmMlJ6RGtITlowNmQyUTVPUzZBY0NWN0pIalRBQ0NKSDJmNWFpcEM4dmxscE93ajFkU0JZUUp0cUpfd0RjNW5YUXdVL3MxNjAwL3BjbG91ZC5qcGc"
+    },
+    {
+      "id": "at_51315775172",
+      "title": "Telegram Warns iPhone Users Are Being Hacked on a Massive Scale; Just Visiting a Website Could Be Enough",
+      "url": "https://cybersecuritynews.com/iphone-users-are-being-hacked/",
+      "summary": "Telegram is sending security alerts to iPhone users running older versions of iOS, CEO Pavel Durov said on November 27. In a post on X, Durov said iPhone users were being hacked “on a massive scale” and warned that opening a website could be enough to break into a vulnerable device. The alert tells users to install the latest iOS update offered in their...",
+      "source": "Guru Baran via Cyber Security News",
+      "image": "https://www.inoreader.com/camo/siqDqg8oVI64x5e6gSUaE1-59RXor9_t_Z8rZIpFL4tc,q80,480x400,pf,b64/aHR0cHM6Ly9jeWJlcnNlY3VyaXR5bmV3cy5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjYvMTEvaVBob25lLVVzZXJzLUFyZS1CZWluZy1IYWNrZWQud2VicA"
+    },
     {
       "id": "at_51314841847",
       "title": "Fake Government App Exposes Italy’s Expanding Spyware Surveillance Industry",
@@ -1560,46 +1600,6 @@
       "summary": "The edtech company says the systems are fully operational and safe to use while it investigates the incident. The post Plagiarism Checker Turnitin Investigating Cyberattack appeared first on SecurityWeek.",
       "source": "Ionut Arghire via SecurityWeek",
       "image": "https://www.inoreader.com/camo/sJdbE0FY7QQxbC2s9ZGcNCvtUJr6D7ZYEU21qDlG0Sf0,q80,480x400,pf,b64/aHR0cHM6Ly93d3cuc2VjdXJpdHl3ZWVrLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNC8wNi9IYWNrZXItTG9nLWZpbGVzLmpwZw"
-    },
-    {
-      "id": "at_51287237133",
-      "title": "Making time to make a difference",
-      "url": "https://www.sophos.com/en-us/blog/wiesbaden-volunteering",
-      "summary": "At Sophos, making an impact goes beyond the work we do every day. Through up to 40 hours of annual volunteering leave, employees have dedicated time to support their communities, build stronger connections with colleagues and contribute to something bigger.",
-      "source": "via Naked Security",
-      "image": "https://www.inoreader.com/camo/s4gjLnVz0laSjidXphQjfdyjfpNARwIZpXsF96AgF55Y,q80,480x400,pf,b64/aHR0cHM6Ly9pbWFnZXMuY29udGVudHN0YWNrLmlvL3YzL2Fzc2V0cy9ibHQzOGYxZjQwMWI2NjEwMGFkL2JsdDk0NzZiYmNmMDNiYThkYWQvNmIwNmI5YmMxMGY0NzA0YWZiMTNmNDcyL1NUWkJpZWJyaWNoX1AtMjAyNi04NDJfMjAyNjA2MTlfa3NfODQyNS5qcGc"
-    },
-    {
-      "id": "at_51287188044",
-      "title": "Hisense Smart TV Found Tracking What Users Watch Even With Personalized Ads Turned Off",
-      "url": "https://cybersecuritynews.com/hisense-smart-tv-tracking-users/",
-      "summary": "A Hisense smart TV continued sending audio fingerprints to advertising firm Nexxen even with personalized ads disabled, while a separate Enhanced Viewing Service setting kept viewing tracking active. Testing a Hisense 55U65QEVS running VIDAA U09.60 revealed that disabling personalized ads does not stop viewing data collection. The technical...",
-      "source": "Abinaya via Cyber Security News",
-      "image": "https://www.inoreader.com/camo/sKBkzmGR7Wq23cvmob5DWCG5l9u4rKz-DCwagDu7UaG4,q80,480x400,pf,b64/aHR0cHM6Ly9ibG9nZ2VyLmdvb2dsZXVzZXJjb250ZW50LmNvbS9pbWcvYi9SMjl2WjJ4bC9BVnZYc0VoS3dFcHhqUDRtZjZoTW54bkRNeGtSWUFtRmRocXVLNF9kTnJFcHdQTjRQY2FvbTJqbi1DRnVuR1VpZ3kzMG9DR2lDUmNXelZGN0xMZTVVVldCd3BVcmt1dllvdE5QaXpySXZWXzNValVCNHduc1d5OUtxLVU4Q3o3X0k2MHVoTUwyUV93aGZhLWVUUUpfV1VheXRtV1ZuZDBZQURiNnA2Y1lDYmVhN3NJNHNtRXh4cVhlYzd0cm9KT2pyMm8vczE2MDAvU2NyZWVuc2hvdCUyMDIwMjYtMTEtMjUlMjAxNTA5MTElMjAlMjgxJTI5LndlYg"
-    },
-    {
-      "id": "at_51287012648",
-      "title": "Critical 9.9 Dell Enterprise SONiC Flaw Could Let Hackers Execute Malicious Commands on Network Switches",
-      "url": "https://cybersecuritynews.com/critical-dell-enterprise-sonic-flaw/",
-      "summary": "Dell Technologies has patched a critical flaw in Dell Enterprise SONiC Distribution that could let a remote attacker with limited privileges run commands of their choice on an affected network switch. The vulnerability, tracked as CVE-2026-103782, could also expose files and directories the attacker is not authorized to access. It affects software...",
-      "source": "Abinaya via Cyber Security News",
-      "image": "https://www.inoreader.com/camo/sYHZsUcaWXOMCMD4TZPM_ikJUSUzBxEGzgTeoPAvaEio,q80,480x400,pf,b64/aHR0cHM6Ly9jeWJlcnNlY3VyaXR5bmV3cy5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMjYvMTEvQ3JpdGljYWwtOS45LURlbGwtRW50ZXJwcmlzZS1TT05pQy1GbGF3LUNvdWxkLUxldC1IYWNrZXJzLUV4ZWN1dGUtTWFsaWNpb3VzLUNvbW1hbmRzLW9uLU5ldHdvcmstU3dpdGNoZXMud2VicA"
-    },
-    {
-      "id": "at_51286950644",
-      "title": "Hackers now exploit critical Drupal RCE flaw to hijack sites",
-      "url": "https://www.bleepingcomputer.com/news/security/hackers-now-exploit-critical-drupal-rce-flaw-to-hijack-sites/",
-      "summary": "The Drupal security team has confirmed that a critical vulnerability that lets attackers hijack unpatched sites has been actively exploited since at least Thursday. [...]",
-      "source": "Sergiu Gatlan via Bleeping Computer",
-      "image": "https://www.inoreader.com/camo/sji1HKs3kzG2LcwelL2hIZbyUpFkzv1Q3BOaNtIc3tuw,q80,480x400,pf,b64/aHR0cHM6Ly93d3cuYmxlZXBzdGF0aWMuY29tL2NvbnRlbnQvaGwtaW1hZ2VzLzIwMjYvMTEvMTkvRHJ1cGFsLWhlYWRwaWMuanBn"
-    },
-    {
-      "id": "at_51286710752",
-      "title": "Hackers Exploited CVSS 10.0 Hex.pm RCE Flaw to Compromise 6 Package Registry Servers",
-      "url": "https://thehackernews.com/2026/11/hackers-exploited-cvss-100-hexpm-rce.html",
-      "summary": "An attacker ran operating system commands on Monday on six production servers of Hex.pm, the package registry that Elixir and Erlang developers fetch their dependencies from. The flaw used in the attack had been in the registry's code since February 2016, and the team that maintains the service had every server on a patched build within about 15...",
-      "source": "[email protected] (The Hacker News) via The Hacker News",
-      "image": "https://www.inoreader.com/camo/sIcb67xPtpgkFMk6a2R4roUNVD2moxpAs_HFYBlX2QLg,q80,480x400,pf,b64/aHR0cHM6Ly9ibG9nZ2VyLmdvb2dsZXVzZXJjb250ZW50LmNvbS9pbWcvYi9SMjl2WjJ4bC9BVnZYc0VqQnh5NFZJT2VrT3VtWmZtOFJFbFdKbDZaVEtvSUoxUUxjM1U3eW5MUThwOVBDcW1fa1lYMVQtYWt3Ylp3YnRoVFljTndmVlctYVdiUkI0d0lrdmJVZU1fZ3ZRbW53OEVILWhwWTA1NDJqQ3dGVUFhSTJtTkVYR0UzZGN0OUs0SktGVVJWMXNtZEVSWmx4NHRWMXpDeTNBYlNfTndGNG85MjZfS1NXLU9LTVBmRFhUMmdXYmJaNGxLakZtNlkvczE2MDAvaGV4LWhhY2suanBn"
     }
   ]
 }
