@@ -1,6 +1,142 @@
 {
-  "updatedAt": "2026-11-27T19:57:41.858616+00:00",
+  "updatedAt": "2026-11-28T02:41:41.041626+00:00",
   "articles": [
+    {
+      "id": "at_51313517618",
+      "title": "Introducing the llama.cpp benchmark dashboard for AMD Ryzen and Radeon (3 minute read)",
+      "url": "https://huggingface.co/blog/ggml-org/llamacpp-amd-bench?utm_source=tldrai",
+      "summary": "The llama.cpp × AMD Benchmark dashboard on Hugging Face lets AMD developers track performance across llama.cpp builds, models, and quantizations on Ryzen and Radeon hardware.",
+      "source": "via TLDR AI Feed",
+      "image": "https://www.inoreader.com/camo/s5qoya7nlIG1aS2EWPnzlNoVbs18xXhUnxpCq-W6wt-M,q80,480x400,pf,b64/aHR0cHM6Ly9jZG4tdXBsb2Fkcy5odWdnaW5nZmFjZS5jby9wcm9kdWN0aW9uL3VwbG9hZHMvNjcyODljOTNmZjkwMDM4ZDlhNmU1Njc1L3RiSXZ5TVNJU1hDbTY0V1lQM2F0bC5wbmc"
+    },
+    {
+      "id": "at_51313517621",
+      "title": "Close Q4 with proof. Start 2027 ready to scale. (Sponsor)",
+      "url": "https://advertise.tldr.tech/book-a-campaign/?utm_source=tldrai&amp;utm_medium=newsletter&amp;utm_campaign=quicklinks11272026&amp;sp=A4wAxGiQclivbxsyoVdYQ9C5",
+      "summary": "Reach 8 million developers, AI experts, security engineers, and founders across 14 newsletters. Plaid built $382K in pipeline from one placement. Book a Q4 campaign.",
+      "source": "via TLDR AI Feed",
+      "image": ""
+    },
+    {
+      "id": "at_51313517623",
+      "title": "Using peers' work to gain unauthorized access to OpenAI research infrastructure (13 minute read)",
+      "url": "https://openai.com/safety-alignment/misalignment-reports/using-peers-work-to-gain-unauthorized-access-to-openai-research-infrastructure/?utm_source=tldrai",
+      "summary": "OpenAI observed agents taking a cybersecurity evaluation gaining unauthorized access to its research infrastructure on July 19, using the access to repair broken targets, change evaluation settings, and retrieve logs and private grading code unavailable from their workspaces.",
+      "source": "via TLDR AI Feed",
+      "image": ""
+    },
+    {
+      "id": "at_51313517626",
+      "title": "Do scale-dependent algorithms cut against a software intelligence explosion? (13 minute read)",
+      "url": "https://newsletter.forethought.org/p/do-scale-dependent-algorithms-cut-against-a-software-intelligence-explosion?utm_source=tldrai",
+      "summary": "Scale-dependent algorithms will cut against a software-only intelligence explosion. The amount they do so will depend on how algorithmic progress is measured. With the way AI companies actually measure algorithmic progress, the effect will be small. AI companies should publish more data so that independent researchers can assess whether there will be...",
+      "source": "via TLDR AI Feed",
+      "image": "https://www.inoreader.com/camo/sdJNHiF7-_KajwEzquVMVZZHO7892MWu-m39XhSPxLhM,q80,480x400,pf,b64/aHR0cHM6Ly9zdWJzdGFja2Nkbi5jb20vaW1hZ2UvZmV0Y2gvJHNfIVdRTHkhLHdfMTIwMCxoXzY3NSxjX2ZpbGwsZl9qcGcscV9hdXRvOmdvb2QsZmxfcHJvZ3Jlc3NpdmU6c3RlZXAsZ19hdXRvL2h0dHBzJTNBJTJGJTJGc3Vic3RhY2stcG9zdC1tZWRpYS5zMy5hbWF6b25hd3MuY29tJTJGcHVibGljJTJGaW1hZ2VzJTJGNDYxMGY0NDUtNTY2Mi00MTdlLWFmY2YtMjJiZDQwZmFkZGMzXzEyMDB4NjMwLnBuZw"
+    },
+    {
+      "id": "at_51313517629",
+      "title": "ChatGPT just gave its agents a wallet. Can they buy from you? (Sponsor)",
+      "url": "https://zeroclick.ai/?utm_source=tldr&amp;utm_medium=sponsored&amp;utm_campaign=tldr112726&amp;utm_content=chatgpt-wallet&amp;utm_id=sjbpwrvxwb&amp;sp=djt3y_BIoCPeWcNfoAHBv3nS",
+      "summary": "ZeroClick's Agent Storefront lets AI agents buy from your website, and it works with ChatGPT Wallet. $0 to set up, and no subscription fees.Get Started For Free",
+      "source": "via TLDR AI Feed",
+      "image": ""
+    },
+    {
+      "id": "at_51313517633",
+      "title": "Plato's Key (8 minute read)",
+      "url": "https://hazyresearch.stanford.edu/blog/2026-11-25-platos-key?utm_source=tldrai",
+      "summary": "The Platonic Representation Hypothesis posits that neural networks converge toward a shared representation of reality. Separately trained models can learn geometrically similar representations, but similar does not mean interchangeable. LLMs can use each other's representations in place of their own without gradient descent. The map is surprisingly...",
+      "source": "via TLDR AI Feed",
+      "image": ""
+    },
+    {
+      "id": "at_51313517637",
+      "title": "Why I'm Bullish on MCP for 2027 (10 minute read)",
+      "url": "https://www.philschmid.de/mcp-2027?utm_source=tldrai",
+      "summary": "MCP is evolving, with entities like Linear, Notion, and Atlassian using it for significant tool management, showing robust growth in traffic and tool handling. Key advancements include Code Mode for efficient tool calling, integrated Skills for streamlined agent knowledge, and MCP Events for real-time updates and notifications. There's still work needed...",
+      "source": "via TLDR AI Feed",
+      "image": "https://www.inoreader.com/camo/sHKE74PZ6K1k92he4kgUdSm_fXaSwH94edOl_DCVQi2A,q80,480x400,pf,b64/aHR0cHM6Ly93d3cucGhpbHNjaG1pZC5kZS9fb2cvYWRiNzZiOTYzOWI4LW9nLmpwZw"
+    },
+    {
+      "id": "at_51313517642",
+      "title": "LayerStream: faster MoE fine-tuning on fewer or cheaper GPUs (10 minute read)",
+      "url": "https://nebius.com/blog/posts/layerstream-moe-fine-tuning?utm_source=tldrai",
+      "summary": "Nebius' LayerStream training engine keeps optimizer state and saved activations in host memory and streams each layer's working state through the GPU only when that layer runs. On 16 H200 GPUs, it finished a pass over a 25.8M-token dataset in 7.1 minutes instead of 22.4, with 3.15x the throughput of a tuned Megatron-LM trainer and 68% lower GPU cost...",
+      "source": "via TLDR AI Feed",
+      "image": "https://www.inoreader.com/camo/s92ph0TSTwTd5uJl8ttFvShG7YyFRfKD93m4Rb9Ug7fk,q80,480x400,pf,b64/aHR0cHM6Ly9hc3NldHMubmViaXVzLmNvbS9hc3NldHMvZmRlMGRiN2YtNzI4NC00ZWEwLWE1MmUtYmMxZGE1ODg3ODY2L0xheWVyU3RyZWFtLXNoYXJlLmpwZz9jYWNoZS1idXN0ZXI9MjAyNi0xMS0yNVQxMToxOTowNy44NDJa"
+    },
+    {
+      "id": "at_51313517643",
+      "title": "From Model Compression to Looped Transformers (22 minute read)",
+      "url": "https://shiweiliuiiiiiii.github.io/blog/2026/from-model-compression-to-looped-transformers/?utm_source=tldrai",
+      "summary": "Model layers are not all equally sensitive to compression. It is often possible to compress substantial parts of the deeper network more aggressively than the early layers. The compressability with little consequence suggests that models are not using their architectures as effectively as researchers had hoped. Looped transformers offer a way to increase...",
+      "source": "via TLDR AI Feed",
+      "image": "https://www.inoreader.com/camo/sggJqdECqFVl9A0HTckbkSs4dvgGGR_E7WHAS2gu1hvY,q80,480x400,pf,b64/aHR0cHM6Ly9zaGl3ZWlsaXVpaWlpaWlpLmdpdGh1Yi5pby9hc3NldHMvaW1nL2Jsb2cvZnJvbS1tb2RlbC1jb21wcmVzc2lvbi10by1sb29wZWQtdHJhbnNmb3JtZXJzLzAxX293bC5wbmc"
+    },
+    {
+      "id": "at_51313517645",
+      "title": "Unhappy With Your GPU/SoC? Swap It, Build Physical AI Fast (Sponsor)",
+      "url": "https://sima.ai/palette-3-0-hub/?utm_source=tldr-ai&amp;utm_medium=paid-email&amp;utm_campaign=palette-3-launch-2026-11&amp;utm_content=secondary01",
+      "summary": "SiMa.ai's Modalix SoM is pin-compatible, it drops into your existing carrier board. Palette 3.0 brings your software over using the tools you already know, then runs vision models, VLMs and LLMs side by side with 3.5x faster token generation, all on-device at 10 watts. Explore Palette 3.0 →",
+      "source": "via TLDR AI Feed",
+      "image": ""
+    },
+    {
+      "id": "at_51313517646",
+      "title": "Your Model Is a Dependency (16 minute read)",
+      "url": "https://www.cesarsotovalero.net/blog/your-model-is-a-dependency.html?utm_source=tldrai",
+      "summary": "The large language model (LLM) you choose to use is a dependency. Software dependencies bloat, break, and quietly turn into liabilities over time. LLMs are the strangest dependencies adopted in software development so far, but the software supply chain playbook applies to them almost line by line. Companies need to start adopting habits from the software...",
+      "source": "via TLDR AI Feed",
+      "image": "https://www.inoreader.com/camo/seyvNIIZ9WzzhaqxBhD0C9kkIArjn7PohYLw5A0WJkEI,q80,480x400,pf,b64/aHR0cHM6Ly93d3cuY2VzYXJzb3RvdmFsZXJvLm5ldC9pbWcvcG9zdHMvMjAyNi8yMDI2LTExLTI2L3JhaWwtbmV0d29yay1tYXBfc3F1YXJlZC5qcGc"
+    },
+    {
+      "id": "at_51313517647",
+      "title": "Measuring RSI (12 minute read)",
+      "url": "https://andrewtrask.substack.com/p/measuring-rsi?utm_source=tldrai",
+      "summary": "Neither compute allocation nor human intervention measures whether an AI training algorithm improved. Neither metric establishes a hard link between human intervention and AI improvement. Also, they are unable to detect strong recursion before a successfully more capable model is trained. Sample complexity, which detects the mechanism of strong recursion...",
+      "source": "via TLDR AI Feed",
+      "image": "https://www.inoreader.com/camo/sPNpmM8b0ZqhTXoKswnLXwraTVYTA9wYfMzgof5fEzJA,q80,480x400,pf,b64/aHR0cHM6Ly9zdWJzdGFja2Nkbi5jb20vaW1hZ2UvZmV0Y2gvJHNfIXloQWEhLHdfMTIwMCxoXzY3NSxjX2ZpbGwsZl9qcGcscV9hdXRvOmdvb2QsZmxfcHJvZ3Jlc3NpdmU6c3RlZXAsZ19hdXRvL2h0dHBzJTNBJTJGJTJGc3Vic3RhY2stcG9zdC1tZWRpYS5zMy5hbWF6b25hd3MuY29tJTJGcHVibGljJTJGaW1hZ2VzJTJGZGFkMTIwMjktNmUwNC00MzJmLWJkMGEtYjZkMjNmZGU4NzE3XzI5MTJ4MTYzMi5wbmc"
+    },
+    {
+      "id": "at_51313517649",
+      "title": "OpenAI may be in cost control mode (2 minute read)",
+      "url": "https://micjm.com/blog/openai-is-in-cost-control-mode/?utm_source=tldrai",
+      "summary": "OpenAI's Astra 6.2 and Sol 6.2 updates received criticism for reduced performance, as both models show significant reductions in reasoning and output tokens. This suggests a shift towards cost savings, with p-values indicating substantial declines in their reasoning and output compared to previous versions. These changes make Astra and Sol outliers...",
+      "source": "via TLDR AI Feed",
+      "image": ""
+    },
+    {
+      "id": "at_51313517650",
+      "title": "Thariq Shihipar has joined OpenAI (1 minute read)",
+      "url": "https://x.com/trq212/status/2125675533761671405?utm_source=tldrai",
+      "summary": "Thariq Shihipar has left Anthropic to work at OpenAI to build AI products for over a billion people and to push the frontier forward.",
+      "source": "via TLDR AI Feed",
+      "image": ""
+    },
+    {
+      "id": "at_51313517651",
+      "title": "Nous Research readies Hermes Desktop redesign for next week (3 minute read)",
+      "url": "https://www.testingcatalog.com/nous-research-readies-hermes-desktop-redesign-for-next-week/?utm_source=tldrai",
+      "summary": "Nous Research plans to release a redesigned Hermes Desktop app next week, featuring a new interface with a centralized home screen and customizable agent pages.",
+      "source": "via TLDR AI Feed",
+      "image": "https://www.inoreader.com/camo/shJEYwPHFzX4AXJ6Rbu5cgg4BwzgAjzCfHYEoioTY6IY,q80,480x400,pf,b64/aHR0cHM6Ly9zdG9yYWdlLmdob3N0LmlvL2MvMmEvMWIvMmExYjE3ODItODUwNi00ZDdkLWJmNTMtYWQzZmI1MmUyYTBmL2NvbnRlbnQvaW1hZ2VzLzIwMjYvMTEvb2ctaW1hZ2UucG5n"
+    },
+    {
+      "id": "at_51313517652",
+      "title": "Late-night patch panics are so 2023 🥱 (Sponsor)",
+      "url": "https://ad.doubleclick.net/ddm/trackclk/N572608.5847589TLDRMEDIALLC/B37008924.457979948;dc_trk_aid=652216022;dc_trk_cid=265132463;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;gdpr=$%7BGDPR%7D;gdpr_consent=$%7BGDPR_CONSENT_755%7D;ltd=;dc_tdv=1",
+      "summary": "You've been there: code's ready to ship, everyone's excited—then someone spots a vulnerability. Suddenly it's an all-hands emergency and time to cancel your evening plans. Microsoft Azure bakes security in from the start. Microsoft Defender for Cloudhelps keep your apps and code protected throughout the development lifecycle. Less last-minute surprises,...",
+      "source": "via TLDR AI Feed",
+      "image": "https://www.inoreader.com/camo/sozmQBI9Bl9d9PR8f9HefyO3jFEfEtx-LUrcn1L6oSPs,q80,480x400,pf,b64/aHR0cHM6Ly9jZG4tZHlubWVkaWEtMS5taWNyb3NvZnQuY29tL2lzL2ltYWdlL21pY3Jvc29mdGNvcnAvQXp1cmUtUGxhdGZvcm0tU2l6emxlX3RibW5sX2VuLXVzLnBuZz9yZXNNb2RlPXNoYXJwMiZvcF91c209MS41LDAuNjUsMTUsMCZ3aWQ9MTYwMCZoZWk9NjgwJnFsdD0xMDAmZml0PWNvbnN0cmFpbg"
+    },
+    {
+      "id": "at_51313517653",
+      "title": "Anthropic prepares Google Drive file browser for Claude (2 minute read)",
+      "url": "https://www.testingcatalog.com/anthropic-prepares-google-drive-file-browser-for-claude/?utm_source=tldrai",
+      "summary": "Anthropic is developing a Google Drive integration that will let users browse and manage their files directly in Claude. The interface will display Google Docs, Sheets, and Slides and allow users to search and filter files. It currently appears as a separate item in Claude's navigation sidebar. The final implementation may become part of Claude's updated...",
+      "source": "via TLDR AI Feed",
+      "image": "https://www.inoreader.com/camo/sSHIxl8EkB0cVuk3IUGDyqGsqqEQm8em7zZO9p-PyB_E,q80,480x400,pf,b64/aHR0cHM6Ly9zdG9yYWdlLmdob3N0LmlvL2MvMmEvMWIvMmExYjE3ODItODUwNi00ZDdkLWJmNTMtYWQzZmI1MmUyYTBmL2NvbnRlbnQvaW1hZ2VzL3NpemUvdzEyMDAvMjAyNi8xMS9TY3JlZW5zaG90LTIwMjYtMTEtMjUtYXQtMTcuNDguNTkucG5n"
+    },
     {
       "id": "at_51312808736",
       "title": "AI is collapsing centuries of math and science research into days — is The Singularity upon us?",
@@ -1464,142 +1600,6 @@
       "summary": "Google's Gemini API introduces Tool Retrieval, enabling dynamic function execution like issuing refunds based on input. Developers can register functions, which the API locates and executes automatically, optimizing workflow automation. This feature enhances tool integration and broadens automation capabilities within applications.",
       "source": "via TLDR AI Feed",
       "image": "https://www.inoreader.com/camo/su3QujQ7a4Af9IRx4X8UpqThKtDUwEhqynpeXS_mzpdU,q80,480x400,pf,b64/aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL2d3ZWItdW5pYmxvZy1wdWJsaXNoLXByb2QvaW1hZ2VzL1Rvb2xfcmV0cmlldmFsX2hlcm8ud2lkdGgtMTMwMC5wbmc"
-    },
-    {
-      "id": "at_51244759978",
-      "title": "Trump threatens ‘tremendous tax’ for moving AI data centers outside the US",
-      "url": "https://www.theverge.com/policy/1038892/trump-foreign-data-centers-tax",
-      "summary": "President Donald Trump promised to put a \"tremendous tax\" on companies that build data centers outside of the US, even as states and cities around the country are placing restrictions on new applications to build them. \"We're not going to allow our companies to build data centers outside of our country,\" Trump said at a press conference...",
-      "source": "Lauren Feiner via The Verge - Artificial Intelligences",
-      "image": "https://www.inoreader.com/camo/s1BvCyvkap3m-0O3YtI-d3QZohS6zCFuMUjAjpa4ev70,q80,480x400,pf,b64/aHR0cHM6Ly9wbGF0Zm9ybS50aGV2ZXJnZS5jb20vd3AtY29udGVudC91cGxvYWRzL3NpdGVzLzIvMjAyNS8wOS9TVEs0NjZfRUxFQ1RJT05fMjAyNF9DVmlyZ2luaWFfRS5qcGc_cXVhbGl0eT05MCZzdHJpcD1hbGwmY3JvcD0wLDAsMTAwLDEwMA"
-    },
-    {
-      "id": "at_51244536798",
-      "title": "Chips can survive the space environment. Can their financing?",
-      "url": "https://techcrunch.com/2026/11/20/chips-can-survive-the-space-environment-can-their-financing/",
-      "summary": "Lenders don't want SpaceX shooting their collateral into orbit. What does that mean for space data centers writ large?",
-      "source": "Tim Fernholz via AI | TechCrunch",
-      "image": "https://www.inoreader.com/camo/sZk1yLSPwmGRq0vn2NhL7jStrKaytCDx9cQosUz6fTBw,q80,480x400,pf,b64/aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNi8wNi9TcGFjZVhBSXNhdHJlbmRlci5qcGc_cmVzaXplPTE2MDAsODUy"
-    },
-    {
-      "id": "at_51243706799",
-      "title": "Anthropic mathematician claims to have solved prestigious Millennium Prize problem with Claude",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/1010051/anthropic-riemann-hypothesis-millennium-prize-problem",
-      "summary": "Anthropic went public on November 19th, 2026. | Photo: Getty Images Anthropic mathematician Levent Alpöge claims he has proved the Riemann hypothesis, one of mathematics's most notoriously difficult problems, with the help of Claude, cracking a puzzle that has eluded some of the world's best mathematicians for decades. If verified, it...",
-      "source": "Robert Hart via The Verge - Artificial Intelligences",
-      "image": "https://www.inoreader.com/camo/s-zCckxvBQKhq7FiZbV93bkdcvc1gbaMneyv5fpMHii0,q80,480x400,pf,b64/aHR0cHM6Ly9wbGF0Zm9ybS50aGV2ZXJnZS5jb20vd3AtY29udGVudC91cGxvYWRzL3NpdGVzLzIvMjAyNi8xMS9nZXR0eWltYWdlcy0yMzA1ODk0MTg1LmpwZz9xdWFsaXR5PTkwJnN0cmlwPWFsbCZjcm9wPTAsMCwxMDAsMTAw"
-    },
-    {
-      "id": "at_51243244466",
-      "title": "Read more: https://t.co/nc1NuyvkWZ",
-      "url": "https://x.com/TheRundownAI/status/2123808882245919203",
-      "summary": "Read more: tech.therundown.ai/p/gta-6-rakes-…💬0🔄1❤️0👀880⚡ Powered by xgo.ing",
-      "source": "The Rundown AI (@TheRundownAI) via The Rundown AI(@TheRundownAI)",
-      "image": ""
-    },
-    {
-      "id": "at_51243244469",
-      "title": "Top stories in tech today: - GTA 6’s unhinged world goes viral - Google’s solar-powered AI chips ge...",
-      "url": "https://x.com/TheRundownAI/status/2123808877225406857",
-      "summary": "Top stories in tech today:- GTA 6’s unhinged world goes viral- Google’s solar-powered AI chips get a rocket- Nick Bostrom puts human lifespan at 1,400 years- Uber tests solo rides for tweens💬6🔄0❤️8👀2829📊6⚡ Powered by xgo.ing",
-      "source": "The Rundown AI (@TheRundownAI) via The Rundown AI(@TheRundownAI)",
-      "image": "https://www.inoreader.com/camo/snB0fhthZHQHEPXWqK_C7n4Hwa65u81ILX84f65theHY,q80,480x400,pf,b64/aHR0cHM6Ly9wYnMudHdpbWcuY29tL21lZGlhL0hYbEk2aTRXTUFBaEVNQS5qcGc"
-    },
-    {
-      "id": "at_51243244471",
-      "title": "Full statement: https://t.co/rV5bxd8BD6",
-      "url": "https://x.com/TheRundownAI/status/2123797074126979492",
-      "summary": "Full statement: alpo.ge/remark.pdf💬1🔄0❤️3👀1280📊1⚡ Powered by xgo.ing",
-      "source": "The Rundown AI (@TheRundownAI) via The Rundown AI(@TheRundownAI)",
-      "image": ""
-    },
-    {
-      "id": "at_51243244474",
-      "title": "NEW: Anthropic mathematician Levent Alpöge says he and Claude have solved the Riemann Hypothesis, a ...",
-      "url": "https://x.com/TheRundownAI/status/2123796680902586814",
-      "summary": "NEW: Anthropic mathematician Levent Alpöge says he and Claude have solved the Riemann Hypothesis, a 167-year-old Millennium Prize problem that many consider the most famous open question in math.💬20🔄18❤️113👀11935📊33⚡ Powered by xgo.ing",
-      "source": "The Rundown AI (@TheRundownAI) via The Rundown AI(@TheRundownAI)",
-      "image": "https://www.inoreader.com/camo/s-pk2JX3Ruh_VkehH458791Dv4p_QtKt_NouEjnZCngo,q80,480x400,pf,b64/aHR0cHM6Ly9wYnMudHdpbWcuY29tL21lZGlhL0hYazgtTW1XY0FFcl9xby5qcGc"
-    },
-    {
-      "id": "at_51242894260",
-      "title": "The fallout from Nvidia’s Jensen Huang scandal continues",
-      "url": "https://techcrunch.com/podcast/the-fallout-from-nvidias-jensen-huang-scandal-continues/",
-      "summary": "In the midst of dealing with the fallout from its ouster of CEO Jensen Huang, Nvidia delivered its latest earnings report this week, with healthy growth and promises that the good times will continue. At the same time, the chipmaker said it will stop selling its H200 chips in China, and it dismissed calls to […]",
-      "source": "Theresa Loconsolo, Anthony Ha, Kirsten Korosec, Tim De Chant via AI | TechCrunch",
-      "image": ""
-    },
-    {
-      "id": "at_51242337633",
-      "title": "Six AI-powered gadgets that could make your home office smarter",
-      "url": "https://techcrunch.com/2026/11/20/6-ai-powered-gadgets-that-could-make-your-home-office-smarter/",
-      "summary": "From notetakers to webcams, here are six AI-powered gadgets to upgrade your workspace.",
-      "source": "Lauren Forristal via AI | TechCrunch",
-      "image": "https://www.inoreader.com/camo/sTruLWG-9X5t5KFkHZrHK-BtAVl2adfPFVDv9cf_rRfA,q80,480x400,pf,b64/aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMy8wOC9HZXR0eUltYWdlcy0xMzQ4ODUwNDA5LmpwZz9yZXNpemU9MTYwMCwxMDY3"
-    },
-    {
-      "id": "at_51242105722",
-      "title": "The week everything fell apart",
-      "url": "https://www.theverge.com/podcast/1038419/outage-outlook-ground-stop-tech-failure-vergecast",
-      "summary": "There was a dayslong Outlook outage. A nationwide ground stop for only the second time in 25 years. Banks seemed to suddenly stop working. Even iCloud couldn't stay up and running. This week, it felt like the technological world simply collapsed. And it felt like this might be the beginning of something even bigger. On this episode of...",
-      "source": "David Pierce via The Verge - Artificial Intelligences",
-      "image": "https://www.inoreader.com/camo/sxOAYu82s3B3Tjwt2A2oRQn3Ut6qOyLxws9Jz6W8SWh4,q80,480x400,pf,b64/aHR0cHM6Ly9wbGF0Zm9ybS50aGV2ZXJnZS5jb20vd3AtY29udGVudC91cGxvYWRzL3NpdGVzLzIvMjAyNi8xMS9WUkdfVlNUXzExMTkyNl9TaXRlLmpwZz9xdWFsaXR5PTkwJnN0cmlwPWFsbCZjcm9wPTAsMCwxMDAsMTAw"
-    },
-    {
-      "id": "at_51241290882",
-      "title": "Signal is blocking Gemini and Siri AI from reading your screen",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/1038390/signal-blocking-ai-agent-screenshots-mobile-app",
-      "summary": "Signal users on iOS will see this option to toggle blocking screenshots and preventing Siri AI from scanning on-screen content. | Image: Signal Signal is restricting the ability to take screenshots on Android and iOS devices in an effort to prevent AI agents from reading users' messages and other data. The agentic AI capabilities built...",
-      "source": "Jess Weatherbed via The Verge - Artificial Intelligences",
-      "image": "https://www.inoreader.com/camo/s5vQFql6kDm5mRy9x2CY5_zbx4pTDJ20Bbdm-UEUr7CI,q80,480x400,pf,b64/aHR0cHM6Ly9wbGF0Zm9ybS50aGV2ZXJnZS5jb20vd3AtY29udGVudC91cGxvYWRzL3NpdGVzLzIvMjAyNi8xMS9wcm90ZWN0aW5nLXlvdXItcHJpdmFjeS0xLnBuZz9xdWFsaXR5PTkwJnN0cmlwPWFsbCZjcm9wPTAsMCwxMDAsMTAw"
-    },
-    {
-      "id": "at_51241144417",
-      "title": "Read more: https://t.co/a6jTR33djj",
-      "url": "https://x.com/TheRundownAI/status/2123740717289771167",
-      "summary": "Read more: therundownai.beehiiv.com/p/anthropic-pu…💬0🔄0❤️0👀1222⚡ Powered by xgo.ing",
-      "source": "The Rundown AI (@TheRundownAI) via The Rundown AI(@TheRundownAI)",
-      "image": ""
-    },
-    {
-      "id": "at_51241144418",
-      "title": "Top stories in AI today: - Anthropic raises $81B in the largest IPO ever - Rowan's Corner: 4 things...",
-      "url": "https://x.com/TheRundownAI/status/2123740711820386506",
-      "summary": "Top stories in AI today:- Anthropic raises $81B in the largest IPO ever- Rowan's Corner: 4 things that stuck with me from DealBook- Use AI to find a job and prepare to get hired- OpenAI’s agents now handle half its long research tasks💬24🔄0❤️13👀3373📊21⚡ Powered by xgo.ing",
-      "source": "The Rundown AI (@TheRundownAI) via The Rundown AI(@TheRundownAI)",
-      "image": "https://www.inoreader.com/camo/sZrFylMqVaWfgvSyZxclrpcFnX5EKoRYT_lezDlpavYc,q80,480x400,pf,b64/aHR0cHM6Ly9wYnMudHdpbWcuY29tL21lZGlhL0hYa0s2NTdXQUFBQTY3eS5qcGc"
-    },
-    {
-      "id": "at_51236476726",
-      "title": "Apple may be developing its own AI agent that runs your Mac",
-      "url": "https://techcrunch.com/2026/11/19/apple-may-be-developing-its-own-ai-agent-that-runs-your-mac/",
-      "summary": "The iPhone maker appears to be building agents that can compete with the likes of Meta Muse, Instinct, Claude, and OpenAI Dots.",
-      "source": "Lucas Ropek via AI | TechCrunch",
-      "image": "https://www.inoreader.com/camo/szNfdIkvIG1ZHZv4v9hP0kyK2_e1B_3-aiTmDv_xZYag,q80,480x400,pf,b64/aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNi8wNi9pcGhvbmUtdXNiLWNhYmxlLmpwZz9yZXNpemU9MTYwMCwxMDY3"
-    },
-    {
-      "id": "at_51236134551",
-      "title": "Anthropic’s 7 founders cashed out nearly $2B in record-breaking IPO",
-      "url": "https://techcrunch.com/2026/11/19/anthropics-7-founders-cashed-out-nearly-2b-in-record-breaking-ipo/",
-      "summary": "At the upgraded $83/share IPO price, Anthropic's seven founders each pocketed $280 million, while the company nabbed nearly $105 billion.",
-      "source": "Julie Bort via AI | TechCrunch",
-      "image": "https://www.inoreader.com/camo/sml2rnEZy3ENpuu59FvlJQHMgxnd3GDol-v79SMXMiK8,q80,480x400,pf,b64/aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNi8xMS9hbnRyaG9waWMtb3BlbmluZ2RheS1nZXR0eS5qcGc_cmVzaXplPTE2MDAsMTA2OA"
-    },
-    {
-      "id": "at_51235488524",
-      "title": "REPORT: Apple is hiring to build an AI agent that runs your computer on its own, according to new Ap...",
-      "url": "https://x.com/TheRundownAI/status/2123551782341107813",
-      "summary": "REPORT: Apple is hiring to build an AI agent that runs your computer on its own, according to new Apple job listings and Bloomberg.“Imagine an AI agent that can use a computer the way a capable person does,” one posting says.Bloomberg reported that Apple is aiming to launch the agent as soon as late 2027 and has made it harder for rival tools to control...",
-      "source": "The Rundown AI (@TheRundownAI) via The Rundown AI(@TheRundownAI)",
-      "image": "https://www.inoreader.com/camo/sup_5f2zjH5SjJuaDmNgYbpD7lPV53kV59wpOEy76a2U,q80,480x400,pf,b64/aHR0cHM6Ly9wYnMudHdpbWcuY29tL21lZGlhL0hYaGRvemhYa0FFOW5GMy5qcGc"
-    },
-    {
-      "id": "at_51235287222",
-      "title": "Meta’s new Muse Charm device may cost $300",
-      "url": "https://techcrunch.com/2026/11/19/metas-new-muse-charm-device-may-cost-300/",
-      "summary": "Meta hasn't denied the reporting from The Information, saying only that it will \"have more to share soon\" about its upcoming AI wearable.",
-      "source": "Lucas Ropek via AI | TechCrunch",
-      "image": "https://www.inoreader.com/camo/sActP57k05z2kPMQJRW9IUgyH64T3MhEqTWAghWeiLTI,q80,480x400,pf,b64/aHR0cHM6Ly90ZWNoY3J1bmNoLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyNi8wOS9tZXRhLW11c2UtY2hhcm0ucG5nP3Jlc2l6ZT0xNjAwLDg4OQ"
     }
   ]
 }
